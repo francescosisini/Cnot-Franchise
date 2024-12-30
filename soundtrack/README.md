@@ -17,5 +17,57 @@ Una tonalità atmosferica che evoca l'esplorazione dei mondi digitali
 - ***SUNO***
 Atmospheric synth pads, subtle arpeggios, and ethereal tones for a dreamy, immersive vibe
 
+## Neon Labyrinth
+ Una melodia ipnotica che riflette il labirinto senza fine del magazzino di Bamazon.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+Hypnotic rhythms with layered synth melodies and a steady, pulsing beat to evoke mystery
 
+## Ion Trap Waltz
+Un brano inquietante e strutturato che rappresenta la prigionia di Caterina nella trappola ionica.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+Haunting, minimalist melody with dark, resonant synths and occasional dissonance.
+
+## Encrypted Shadows 
+Un pezzo carico di suspense, che richiama il mistero del codice RSA e delle chiavi nascoste.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+low, suspenseful build with deep bass drones and glitchy, distorted effects
+
+## Laura’s Reckoning 
+Una traccia energica e risoluta che accompagna i momenti di decisione di Laura.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+
+## Bell State Blues 
+Un pezzo riflessivo che richiama l’entanglement quantistico e i legami tra i personaggi.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+Melancholic yet hopeful tones with gentle synth leads and a subtle rhythm.
+
+## CH4 Takeover 
+Un brano dinamico e potente, legato alla scena in cui Laura prende possesso del drone.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+Aggressive, fast-tempo synthwave with heavy bass drops and sharp transitions.
+
+## Collapse of the Commissary 
+ Un brano epico e catartico che accompagna la caduta del Commissario.
+- ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+Epic, cinematic layers of synths with crescendos and a dramatic tone.
+## Last Exit: Quantum Channel 
+ Un brano conclusivo e malinconico, che richiama l’incertezza del futuro dei personaggi.
+ - ***MelodyCraft***
+ (da definire)
+- ***SUNO***
+Reflective and bittersweet melody with soft, evolving synth textures.
 
