@@ -3,6 +3,15 @@ La colonna sonora di Cnot è costruita su una progressione emotiva e narrativa c
 
 Con il progredire della narrazione, le tonalità diventano più strutturate e inquietanti, come il Bbm di "Ion Trap Waltz", per poi crescere in energia e risolutezza con brani come "Laura’s Reckoning" in Am. Verso la fine, tonalità epiche come il C#m di "Collapse of the Commissary" e malinconiche come il Bb di "Last Exit: Quantum Channel" chiudono il cerchio, accompagnando il pubblico in un viaggio emotivo che oscilla tra tensione, introspezione e catarsi.
 
+## Colonna Sonora
+
+La prima versione della colonna sonora del libro *CNOT* è ora disponibile! Ogni traccia è stata progettata con cura per catturare l'atmosfera e i temi della storia.
+
+🎵 Ascoltala qui: [Colonna Sonora di CNOT su Suno](https://suno.com/playlist/4c1425dc-1eb0-48b5-b0a8-dc8b207294b5)
+
+Sentiti libero di contribuire alla colonna sonora o suggerire nuovi brani! Consulta la sezione `issues` per maggiori dettagli su come partecipare.
+
+
 ## **quantum_pulse**
 Una traccia pulsante che cattura il ritmo incalzante della fuga e della tensione narrativa.
 - ***MelodyCraft***
