@@ -63,8 +63,13 @@ Questo progetto utilizza:
 ---
 
 ## 🌟 **Come Contribuire**
-1. Fai un fork del repository.
-2. Crea una nuova branch per il tuo contributo:
-   ```bash
-   git checkout -b my-feature
+
+Per partecipare al progetto, segui questi semplici passaggi:
+1. Vai alla sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
+2. Trova un'attività che ti interessa e leggi i requisiti.
+3. Aggiungi il tuo contributo direttamente come commento all'Issue corrispondente.
+4. Il tuo contributo verrà revisionato e integrato nel repository!
+
+   
+   
 
