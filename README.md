@@ -37,6 +37,18 @@ Contribuisci alla mappa nella cartella [map](map).
 
 ---
 
+## 🌐 **Esplora gli Spazi Virtuali su Spatial.io**
+Gli spazi virtuali di **CNOT** su [Spatial.io](https://www.spatial.io/s/Cnot-Presentazione-6777f2362fa1edbc86c3b351?share=254166736093461738) rappresentano i principali luoghi della storia, collegati tra loro attraverso portali esplorabili:
+- Ogni spazio corrisponde a un luogo narrativo, come la stanza di Laura o la trappola ionica.
+- Gli spazi sono attualmente vuoti, ma chiunque può controllare i collegamenti, segnalare errori o caricare contenuti come immagini, video e oggetti.
+- Chi ha esperienza con Unity3D può contribuire a sviluppare ambienti più dettagliati.
+
+L'editing degli spazi è abilitato per favorire la collaborazione creativa. Segnala i tuoi contributi o suggerimenti nella sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
+
+➡️ Per dettagli tecnici sul progetto Spatial.io, consulta [spatialproject.md](spatialproject.md).
+
+---
+
 ## 🌌 **Partecipa al Franchise**
 CNOT è più di un libro: è una piattaforma collaborativa per espandere un universo narrativo. Puoi partecipare in molti modi:
 - **🎨 Aggiungere creazioni artistiche**: Schizzi, illustrazioni, render 3D.
