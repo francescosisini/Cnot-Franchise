@@ -1,6 +1,6 @@
 ## Esplorare il Mondo di *Cnot* su Spatial.io
 
-Su [Spatial.io]((https://www.spatial.io/s/Cnot-Presentazione-6777f2362fa1edbc86c3b351?share=254166736093461738) è stato creato un progetto per rappresentare il mondo di *Cnot* in una dimensione virtuale. Ogni luogo della storia è riprodotto come spazio virtuale e collegato agli altri tramite portali, offrendo un'esperienza immersiva e interattiva.
+Su [Spatial.io](https://www.spatial.io/s/Cnot-Presentazione-6777f2362fa1edbc86c3b351?share=254166736093461738) è stato creato un progetto per rappresentare il mondo di *Cnot* in una dimensione virtuale. Ogni luogo della storia è riprodotto come spazio virtuale e collegato agli altri tramite portali, offrendo un'esperienza immersiva e interattiva.
 
 ### Caratteristiche del progetto
 
