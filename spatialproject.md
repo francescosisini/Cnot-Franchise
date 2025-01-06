@@ -2,6 +2,8 @@
 
 Su [Spatial.io](https://www.spatial.io/s/Cnot-Presentazione-6777f2362fa1edbc86c3b351?share=254166736093461738) è stato creato un progetto per rappresentare il mondo di *Cnot* in una dimensione virtuale. Ogni luogo della storia è riprodotto come spazio virtuale e collegato agli altri tramite portali, offrendo un'esperienza immersiva e interattiva.
 
+![CNOT Banner](artwork/cnotworlds.png)
+
 ### Caratteristiche del progetto
 
 - **Spazi dedicati ai luoghi della storia:** Ogni ambiente narrativo, come la stanza di Laura, la sala di Caterina, la *Classical Control Unit* o il *Quantum Annealing*, è rappresentato come spazio virtuale. Attualmente, gli spazi sono vuoti, ma i collegamenti tra di essi sono già funzionanti e possono essere verificati.
