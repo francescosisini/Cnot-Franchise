@@ -3,6 +3,19 @@ La colonna sonora di Cnot è costruita su una progressione emotiva e narrativa c
 
 Con il progredire della narrazione, le tonalità diventano più strutturate e inquietanti, come il Bbm di "Ion Trap Waltz", per poi crescere in energia e risolutezza con brani come "Laura’s Reckoning" in Am. Verso la fine, tonalità epiche come il C#m di "Collapse of the Commissary" e malinconiche come il Bb di "Last Exit: Quantum Channel" chiudono il cerchio, accompagnando il pubblico in un viaggio emotivo che oscilla tra tensione, introspezione e catarsi.
 
+### Libertà di Contribuire e Creare
+
+Tutti i brani della colonna sonora sono distribuiti con licenza **GNU GPL v3.0**, che garantisce piena libertà di utilizzo. Puoi scaricarli, riprodurli, remixarli, integrarli in video o altri progetti creativi, e persino pubblicarli, purché venga rispettata la licenza. Questa scelta mira a promuovere la collaborazione e la creatività, rendendo *Cnot* un progetto aperto e inclusivo.
+
+**Cosa significa rispettare la licenza?**
+- Citare l’autore originale.
+- Condividere eventuali modifiche o remix con la stessa licenza **GNU GPL v3.0**.
+- Non imporre restrizioni ulteriori sul materiale derivato.
+
+I file audio sono disponibili nella cartella [soundtrack](soundtrack). Sentiti libero di esplorare, modificare e condividere il tuo lavoro con la comunità!
+
+
+
 ## Colonna Sonora
 
 La prima versione della colonna sonora del libro *CNOT* è ora disponibile! Ogni traccia è stata progettata con cura per catturare l'atmosfera e i temi della storia.
