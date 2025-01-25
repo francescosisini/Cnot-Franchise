@@ -9,21 +9,3 @@ Benvenuto nel progetto **CNOT Animation**, un'animazione interattiva che combina
    Consigliata la versione 3.7 o successiva. Puoi controllare eseguendo:
    ```bash
    python --version
-oppure:
-
-python3 --version
-
-2.    Installa la libreria Pygame: Utilizza il comando:
-
-pip install pygame
-
-3. Clona il repository e naviga nella directory del progetto:
-
-git clone https://github.com/tuo-nome-utente/cnot-animation.git
-cd cnot-animation
-
-4. Aggiungi un file musicale: Assicurati di avere un file musicale denominato background_music.mp3 nella stessa directory dello script. Puoi utilizzare un file a tua scelta.
-5. Esegui lo script: Avvia l'animazione con:
-
-
-python cnot_animation.py
