@@ -27,6 +27,16 @@ Le tracce sono disponibili nella cartella [soundtrack](soundtrack) e sono distri
 
 ---
 
+## 🎞️ **Animazioni**
+Immergiti nell'estetica visiva di CNOT con una serie di animazioni ispirate alla narrazione. Scopri il movimento della molecola di CH₄, la griglia dinamica e i messaggi animati che prendono vita sullo schermo:
+- **Rotazione CH₄**: Una molecola che danza in rotazione, rappresentando il legame tra scienza e immaginazione.
+- **Griglia dinamica**: Una rete colorata in continua evoluzione.
+- **Messaggi significativi**: Testi animati che accompagnano l'esperienza visiva.
+
+Le animazioni sono disponibili nella cartella [digital_realms](digital realms) e includono istruzioni per l'esecuzione. Contribuisci aggiungendo nuove idee o miglioramenti per arricchire l'universo visivo di CNOT!
+
+---
+
 ## 🗺️ **Esplora il Mondo**
 Stiamo costruendo una mappa interattiva dei luoghi descritti nel romanzo:
 - **Quantum Channel**: Il punto di fuga finale.
