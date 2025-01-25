@@ -20,6 +20,7 @@ Benvenuti nella sezione **Animazioni** del progetto CNOT! Questa animazione comb
    ```bash
      pip install pygame
 
+
 ### 4️⃣ Avvia l'animazione:
    ```bash
      python3 ch4drift.py
