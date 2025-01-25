@@ -22,7 +22,7 @@ L'universo di *CNOT* continua a espandersi grazie ai talentuosi contributi della
 
 Contribuisci anche tu con la tua creatività musicale! Scrivi una canzone ispirata a *CNOT*, carica il tuo lavoro, e diventa parte del progetto. Ogni contributo è valorizzato e riconosciuto ufficialmente. Per maggiori dettagli su come partecipare, visita la sezione `issues`.
 
-👉 **Un esempio?** Leggi e ascolta il primo contributo ufficiale della comunità qui: [Caterina e Laura - Una Canzone](community_expansion/caterina_e_laura.md).
+👉 **Un esempio?** Leggi e ascolta il primo contributo ufficiale della comunità qui: [Caterina e Laura - Una Canzone](community_expansions/caterina_e_laura.md).
 
 
 ## Colonna Sonora
