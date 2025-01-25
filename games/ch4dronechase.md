@@ -41,7 +41,7 @@ Benvenuti in **CH4 Drone Chase**, un gioco ispirato all'universo narrativo di CN
    pip install pygame
    git clone https://github.com/your-repo/Cnot-Franchise.git
    cd Cnot-Franchise/digital_realms
-   python3 ch4_drone_chase.py
+   python3 ch4dronechase.py
 
    
 ## 🌟 Contribuisci
