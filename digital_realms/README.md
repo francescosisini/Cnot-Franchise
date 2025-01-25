@@ -1,28 +1,26 @@
-# CNOT Animation: Molecola di CH₄ e Testo Animato
+# Animazioni di CNOT: Molecola CH₄ e Griglia Dinamica
 
-Benvenuto nel progetto **CNOT Animation**, un'animazione interattiva che combina elementi visivi e narrativi ispirati al romanzo **CNOT**. Questa animazione presenta una molecola di CH₄ (metano) che ruota dinamicamente e si muove su uno sfondo animato, accompagnata da una griglia colorata e un testo specchiato.
+Benvenuti nella sezione **Animazioni** del progetto CNOT! Questa animazione combina elementi visivi e musicali per creare un’esperienza unica ispirata al romanzo. Con Python e Pygame, potrete visualizzare la molecola di CH₄ in rotazione, una griglia colorata dinamica e un testo in movimento accompagnato da musica.
 
 ---
 
-## 🔧 **Come Installare e Provare**
-1. **Verifica di avere Python installato**:
-   Consigliata la versione 3.7 o successiva. Puoi controllare eseguendo:
-   ```bash
-   python --version
-oppure:
+## 🛠️ Come Usare l'Animazione
 
-python3 --version
+### 1️⃣ Scarica i file necessari
+- Assicurati di avere tutti i file inclusi nella cartella di questo progetto.
+- Verifica che ci sia il file `background_music.mp3` per la colonna sonora.
 
-2. Installa la libreria Pygame: Utilizza il comando:
-      ```bash
-      pip install pygame
+### 2️⃣ Installa Python e Pygame
+- Installa Python (versione 3.8 o superiore):
+  ```bash
+  sudo apt update
+  sudo apt install python3 python3-pip
 
-3. Clona il repository e naviga nella directory del progetto:
-```bash
-	git clone https://github.com/tuo-nome-utente/cnot-animation.git
-	cd cnot-animation
+###  3️⃣ Installa Pygame tramite pip:
+     ```bash
+     pip install pygame
 
-4. Aggiungi un file musicale: Assicurati di avere un file musicale denominato background_music.mp3 nella stessa directory dello script. Puoi utilizzare un file a tua scelta.
-5. Esegui lo script: Avvia l'animazione con:
-   ```bash
-   python cnot_animation.py
+###  3️⃣ Avvia l'animazione:
+     ```bash
+     python3 ch4drift.py
+
