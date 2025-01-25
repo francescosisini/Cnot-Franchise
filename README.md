@@ -33,7 +33,7 @@ Immergiti nell'estetica visiva di CNOT con una serie di animazioni ispirate alla
 - **Griglia dinamica**: Una rete colorata in continua evoluzione.
 - **Messaggi significativi**: Testi animati che accompagnano l'esperienza visiva.
 
-Le animazioni sono disponibili nella cartella [digital_realms](digital realms) e includono istruzioni per l'esecuzione. Contribuisci aggiungendo nuove idee o miglioramenti per arricchire l'universo visivo di CNOT!
+Le animazioni sono disponibili nella cartella [digital_realms](digital_realms) e includono istruzioni per l'esecuzione. Contribuisci aggiungendo nuove idee o miglioramenti per arricchire l'universo visivo di CNOT!
 
 ---
 
