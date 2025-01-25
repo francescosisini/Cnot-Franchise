@@ -32,7 +32,7 @@ Immergiti ancora di più nell'universo di CNOT con i giochi ispirati alla storia
 
 - **CH4 Drone Chase**: Pilota il drone CH4 di Laura attraverso un labirinto quantistico, evita i qubit, sconfiggi i droni nemici e salva Caterina dalla trappola ionica. Raggiungi il tuo obiettivo e diventa il protagonista della tua avventura!
 
-Trova i dettagli su come installare e giocare nella cartella dedicata: [Games](games/README.md).
+Trova i dettagli su come installare e giocare nella cartella dedicata: [Games](games/ch4dronechase.md).
 
 Contribuisci anche tu con nuove idee o miglioramenti ai giochi esistenti!
 
