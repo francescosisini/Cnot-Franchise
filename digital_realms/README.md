@@ -16,12 +16,12 @@ Benvenuti nella sezione **Animazioni** del progetto CNOT! Questa animazione comb
   sudo apt update
   sudo apt install python3 python3-pip
 
-### 3️⃣ Installa Pygame tramite pip:
+- Installa Pygame tramite pip:
    ```bash
      pip install pygame
 
 
-### 4️⃣ Avvia l'animazione:
+### 3️⃣ Avvia l'animazione:
    ```bash
      python3 ch4drift.py
 
