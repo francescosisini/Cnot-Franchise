@@ -27,6 +27,17 @@ Le tracce sono disponibili nella cartella [soundtrack](soundtrack) e sono distri
 
 ---
 
+## 🎮 **Games**
+Immergiti ancora di più nell'universo di CNOT con i giochi ispirati alla storia. Ogni gioco ti permette di esplorare aspetti unici del racconto, interagendo con i suoi temi e personaggi:
+
+- **CH4 Drone Chase**: Pilota il drone CH4 di Laura attraverso un labirinto quantistico, evita i qubit, sconfiggi i droni nemici e salva Caterina dalla trappola ionica. Raggiungi il tuo obiettivo e diventa il protagonista della tua avventura!
+
+Trova i dettagli su come installare e giocare nella cartella dedicata: [Games](games/README.md).
+
+Contribuisci anche tu con nuove idee o miglioramenti ai giochi esistenti!
+
+---
+
 ## 🎞️ **Animazioni**
 Immergiti nell'estetica visiva di CNOT con una serie di animazioni ispirate alla narrazione. Scopri il movimento della molecola di CH₄, la griglia dinamica e i messaggi animati che prendono vita sullo schermo:
 - **Rotazione CH₄**: Una molecola che danza in rotazione, rappresentando il legame tra scienza e immaginazione.
