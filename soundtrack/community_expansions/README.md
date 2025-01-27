@@ -22,7 +22,7 @@ Una ballata emozionante che cattura il legame profondo tra Caterina e Laura ment
 
 ---
 
-### [Intrecci Invisibilixs](intrecci_invisibili.md)
+### [Intrecci Invisibili](intrecci_invisibili.md)
 ## Autore: Marco
 Un brano poetico che esplora i legami invisibili tra le anime e il mistero dell’entanglement quantistico, ispirato ai temi di *CNOT*.  
 - **Ascolta su SUNO**: [Intrecci Invisibili](https://suno.com/song/bca62117-d5dd-4e48-a314-415dc53a08dd)
