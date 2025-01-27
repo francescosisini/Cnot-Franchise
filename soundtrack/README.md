@@ -12,13 +12,13 @@ Tutti i brani della colonna sonora sono distribuiti con licenza **GNU GPL v3.0**
 - Condividere eventuali modifiche o remix con la stessa licenza **GNU GPL v3.0**.
 - Non imporre restrizioni ulteriori sul materiale derivato.
 
-I file audio sono disponibili nella cartella [soundtrack](soundtrack). Sentiti libero di esplorare, modificare e condividere il tuo lavoro con la comunità!
+I file audio sono disponibili in questa stessa cartella [soundtrack](.). Sentiti libero di esplorare, modificare e condividere il tuo lavoro con la comunità!
 
 ## 🌟 Contributi Musicali della Comunità
 
 L'universo di *CNOT* continua a espandersi grazie ai talentuosi contributi della comunità! Oltre alla colonna sonora ufficiale, questa sezione raccoglie i brani creati dai fan per celebrare e arricchire il progetto.
 
-🎵 Esplora i brani della comunità nella cartella: [Contributi Musicali della Comunità](community_expansion/soundtrack).
+🎵 Esplora i brani della comunità nella cartella: [Contributi Musicali della Comunità](community_expansion/).
 
 Contribuisci anche tu con la tua creatività musicale! Scrivi una canzone ispirata a *CNOT*, carica il tuo lavoro, e diventa parte del progetto. Ogni contributo è valorizzato e riconosciuto ufficialmente. Per maggiori dettagli su come partecipare, visita la sezione `issues`.
 
