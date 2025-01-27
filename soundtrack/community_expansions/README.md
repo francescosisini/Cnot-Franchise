@@ -14,7 +14,7 @@ Ogni contributo è accompagnato dal testo della canzone e da un link per ascolta
 
 ## 🎶 **Canzoni disponibili**
 
-### [Caterina e Laura: La Canzone Ufficiale](caterina_laura_song.md)
+### [Caterina e Laura](caterina_laura_song.md)
 ## Autore: Marco
 Una ballata emozionante che cattura il legame profondo tra Caterina e Laura mentre affrontano sfide quantistiche e personali.  
 - **Ascolta su SUNO**: [Caterina e Laura](https://suno.com/song/db0c5ad2-6e4c-4162-93de-e14b04033eb9)
@@ -22,7 +22,7 @@ Una ballata emozionante che cattura il legame profondo tra Caterina e Laura ment
 
 ---
 
-### [Intrecci Invisibili: La Canzone della Comunità](intrecci_invisibili.md)
+### [Intrecci Invisibilixs](intrecci_invisibili.md)
 ## Autore: Marco
 Un brano poetico che esplora i legami invisibili tra le anime e il mistero dell’entanglement quantistico, ispirato ai temi di *CNOT*.  
 - **Ascolta su SUNO**: [Intrecci Invisibili](https://suno.com/song/bca62117-d5dd-4e48-a314-415dc53a08dd)
