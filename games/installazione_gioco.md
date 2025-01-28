@@ -41,7 +41,8 @@ Aprire il terminale e spostarti nella cartella:
    cd PERCORSO_CARTELLA
 
 ad esempio
-    ```bash
+
+   ```bash
     cd C:\Users\TuoNome\Desktop\Cnot-Franchise-main\games
 
 ## 4. Eseguire il gioco
