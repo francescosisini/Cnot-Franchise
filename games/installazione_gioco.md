@@ -46,11 +46,11 @@ ad esempio
 
 ## 4. Eseguire il gioco
 
-    1. Nel Prompt dei Comandi, digita il seguente comando e premi Invio:
+1. Nel Prompt dei Comandi, digita il seguente comando e premi Invio:
     ```bash
     python ch4dronechase.py
 
-    2. Il gioco dovrebbe avviarsi in una nuova finestra!
+2. Il gioco dovrebbe avviarsi in una nuova finestra!
 
 
 ## Problemi Comuni
