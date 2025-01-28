@@ -35,6 +35,7 @@ Benvenuti in **CH4 Drone Chase**, un gioco ispirato all'universo narrativo di CN
 ---
 
 ## 🛠️ **Installazione e avvio**
+***se non sei esperto segui queste [istruzioni complete](installazione_gioco.md)
 
 1. Assicurati di avere **Python** e **Pygame** installati sul tuo sistema:
    ```bash
