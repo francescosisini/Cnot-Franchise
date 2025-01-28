@@ -41,7 +41,6 @@ Aprire il terminale e spostarti nella cartella:
    cd PERCORSO_CARTELLA
 
 ad esempio
-
    ```bash
    cd C:\Users\TuoNome\Desktop\Cnot-Franchise-main\games
 
@@ -51,7 +50,6 @@ ad esempio
     python ch4dronechase.py
 
 2. Il gioco dovrebbe avviarsi in una nuova finestra!
-
 
 ## Problemi Comuni
 
