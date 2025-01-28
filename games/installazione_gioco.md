@@ -43,10 +43,9 @@ Aprire il terminale e spostarti nella cartella:
 ad esempio
 
    ```bash
-    cd C:\Users\TuoNome\Desktop\Cnot-Franchise-main\games
+   cd C:\Users\TuoNome\Desktop\Cnot-Franchise-main\games
 
 ## 4. Eseguire il gioco
-
 1. Nel Prompt dei Comandi, digita il seguente comando e premi Invio:
     ```bash
     python ch4dronechase.py
