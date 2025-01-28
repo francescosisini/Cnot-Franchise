@@ -1,0 +1,95 @@
+import pygame
+import random
+
+# Inizializza Pygame
+pygame.init()
+
+# Imposta dimensioni della finestra
+WIDTH, HEIGHT = 800, 600
+TILE_SIZE = 40
+ROWS = HEIGHT // TILE_SIZE
+COLS = WIDTH // TILE_SIZE
+
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Labirinto di Bamazon")
+
+# Colori
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+GRAY = (150, 150, 150)
+BLUE = (0, 0, 255)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
+
+# Labirinto
+labirinto = [[1 if random.random() > 0.7 else 0 for _ in range(COLS)] for _ in range(ROWS)]
+labirinto[0][0] = 0  # Inizio
+labirinto[ROWS - 1][COLS - 1] = 0  # Uscita
+
+# Laura
+laura_pos = [0, 0]
+
+# Punti di interesse (codici logistici)
+num_codici = 5
+codici = [(random.randint(0, COLS - 1), random.randint(0, ROWS - 1)) for _ in range(num_codici)]
+codici = [c for c in codici if labirinto[c[1]][c[0]] == 0]  # Solo posizioni libere
+
+# Funzione per disegnare il labirinto
+def draw_labirinto():
+    for row in range(ROWS):
+        for col in range(COLS):
+            color = GRAY if labirinto[row][col] == 1 else WHITE
+            pygame.draw.rect(screen, color, (col * TILE_SIZE, row * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+    for c in codici:
+        pygame.draw.circle(screen, BLUE, (c[0] * TILE_SIZE + TILE_SIZE // 2, c[1] * TILE_SIZE + TILE_SIZE // 2), TILE_SIZE // 4)
+
+# Funzione per disegnare Laura
+def draw_laura():
+    pygame.draw.circle(screen, GREEN, (laura_pos[0] * TILE_SIZE + TILE_SIZE // 2, laura_pos[1] * TILE_SIZE + TILE_SIZE // 2), TILE_SIZE // 3)
+
+# Funzione per verificare il movimento
+def can_move(x, y):
+    if 0 <= x < COLS and 0 <= y < ROWS and labirinto[y][x] == 0:
+        return True
+    return False
+
+# Ciclo principale
+running = True
+clock = pygame.time.Clock()
+
+while running:
+    screen.fill(BLACK)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN:
+            new_x, new_y = laura_pos[0], laura_pos[1]
+            if event.key == pygame.K_LEFT:
+                new_x -= 1
+            elif event.key == pygame.K_RIGHT:
+                new_x += 1
+            elif event.key == pygame.K_UP:
+                new_y -= 1
+            elif event.key == pygame.K_DOWN:
+                new_y += 1
+            if can_move(new_x, new_y):
+                laura_pos = [new_x, new_y]
+
+    # Controlla se Laura interagisce con un codice
+    for c in codici:
+        if laura_pos == list(c):
+            codici.remove(c)  # Rimuovi il codice trovato
+            print("Codice decodificato!")  # Qui puoi aggiungere un mini-gioco
+
+    # Controlla vittoria
+    if laura_pos == [COLS - 1, ROWS - 1] and not codici:
+        print("Hai trovato l'uscita!")
+        running = False
+
+    # Disegna tutto
+    draw_labirinto()
+    draw_laura()
+    pygame.display.flip()
+    clock.tick(30)
+
+pygame.quit()

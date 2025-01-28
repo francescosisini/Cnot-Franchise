@@ -23,7 +23,7 @@ Esplora l'universo sonoro di CNOT con una colonna sonora originale che accompagn
 - **Circuit Dreams**: L'introspezione nei mondi digitali.
 - **Last Exit: Quantum Channel**: La malinconia di un finale incerto.
 
-Le tracce sono disponibili nella cartella [soundtrack](soundtrack) e sono distribuite con licenza **GNU GPL v3.0**. Puoi contribuire ad ampliarle o remixarle!
+Le tracce sono disponibili nella cartella [soundtrack](soundtrack/README.md) e sono distribuite con licenza **GNU GPL v3.0**. Puoi contribuire ad ampliarle o remixarle!
 
 ---
 

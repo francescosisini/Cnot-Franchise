@@ -7,7 +7,7 @@ pygame.init()
 pygame.mixer.init()
 
 # Imposta dimensioni della finestra
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 600, 800
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Quantum Tunnel Chase")
 
