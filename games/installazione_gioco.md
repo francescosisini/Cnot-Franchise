@@ -25,7 +25,7 @@ Installare Pygame:
 2. Nel Prompt dei Comandi, digita il seguente comando e premi **Invio**:
    ```bash
    pip install pygame
-
+   ```
 Se ricevi un messaggio di errore, controlla che Python sia installato correttamente e che l'opzione "Add Python to PATH" sia stata selezionata.
 
 ## 3. Spostarti nella cartella del gioco
@@ -39,16 +39,16 @@ Aprire il terminale e spostarti nella cartella:
 2. Nel Prompt dei Comandi, digita il seguente comando, sostituendo `PERCORSO_CARTELLA` con il percorso della cartella che hai copiato:
    ```bash
    cd PERCORSO_CARTELLA
-
+   ```
 ad esempio
    ```bash
    cd C:\Users\TuoNome\Desktop\Cnot-Franchise-main\games
-
+   ```
 ## 4. Eseguire il gioco
 1. Nel Prompt dei Comandi, digita il seguente comando e premi Invio:
     ```bash
     python ch4dronechase.py
-
+    ```
 2. Il gioco dovrebbe avviarsi in una nuova finestra!
 
 ## Problemi Comuni
