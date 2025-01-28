@@ -77,7 +77,7 @@ CNOT è più di un libro: è una piattaforma collaborativa per espandere un univ
 - **🗓️ Sviluppare la timeline**: Per tenere traccia degli eventi della storia.
 - **🌐 Espandere lo spazio virtuale su Spatial.io**: Trasforma il mondo di CNOT in un ambiente virtuale esplorabile.
 
-Trova gli issue aperti o suggerisci i tuoi nella sezione [Issues](https://github.com/your-repo/issues).
+Trova gli issue aperti o suggerisci i tuoi nella sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
 
 ---
 
