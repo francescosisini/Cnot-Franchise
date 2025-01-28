@@ -25,3 +25,39 @@ Installare Pygame:
 2. Nel Prompt dei Comandi, digita il seguente comando e premi **Invio**:
    ```bash
    pip install pygame
+
+Se ricevi un messaggio di errore, controlla che Python sia installato correttamente e che l'opzione "Add Python to PATH" sia stata selezionata.
+
+## 3. Spostarti nella cartella del gioco
+1. Vai nella cartella dove hai estratto i file (ad esempio sul Desktop).
+2. Apri la sottocartella `games`.
+3. Copia il percorso completo della cartella:
+   - Su Windows, clicca con il tasto destro sulla barra degli indirizzi della cartella e seleziona **Copia come testo**.
+
+Aprire il terminale e spostarti nella cartella:
+1. Apri il menu Start, digita **cmd** e premi **Invio**.
+2. Nel Prompt dei Comandi, digita il seguente comando, sostituendo `PERCORSO_CARTELLA` con il percorso della cartella che hai copiato:
+   ```bash
+   cd PERCORSO_CARTELLA
+
+ad esempio
+    ```bash
+    cd C:\Users\TuoNome\Desktop\Cnot-Franchise-main\games
+
+## 4. Eseguire il gioco
+
+    1. Nel Prompt dei Comandi, digita il seguente comando e premi Invio:
+    ```bash
+    python ch4dronechase.py
+
+    2. Il gioco dovrebbe avviarsi in una nuova finestra!
+
+
+## Problemi Comuni
+
+    - Errore: "pip non è riconosciuto come comando"
+    Assicurati di aver selezionato l'opzione "Add Python to PATH" durante l'installazione di Python.
+    - Il gioco non si avvia
+    Controlla di aver scaricato tutti i file necessari e di essere nella cartella corretta.
+
+Con questi passaggi, dovresti essere pronto a giocare! Buon divertimento!
