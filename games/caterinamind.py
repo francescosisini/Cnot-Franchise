@@ -34,7 +34,7 @@ except Exception as e:
 # Impostazioni di gioco
 NUM_NODES = 20
 MAX_DEGREE = 4   # grado massimo di connessioni per ogni neurone
-MIN_NODE_DISTANCE = 40  # distanza minima tra nodi
+MIN_NODE_DISTANCE = 80  # distanza minima tra nodi
 
 # Colori
 BLACK = (0, 0, 0)       # sfondo scuro
@@ -117,11 +117,10 @@ MOD_EFFECTS = {
 # Stato iniziale del modello FSM
 fsm_state = "n"
 
-# Definizione della lista dei tipi di neurone (stati) per i nodi.
-# Questi corrispondono agli stati di destinazione possibili.
+# Lista dei tipi di neurone per i nodi (stati)
 neuron_types = ["n", "e", "ap", "am", "c"]
 
-# Posizionamento dei nodi: la regione verrà generata nella metà sinistra, a partire da x = 200.
+# Posizionamento dei nodi: generati nella metà sinistra, a partire da x = 200
 margin_x = 200
 margin_y = 50
 region_width = (WIDTH // 2) - 100
@@ -147,21 +146,20 @@ class Node:
         self.id = node_id
         self.x = x
         self.y = y
-        self.neuron_type = neuron_type  # Questo rappresenta lo "stato di destinazione"
+        self.neuron_type = neuron_type  # Stato di destinazione per la transizione FSM
         self.neighbors = []
 
     def draw(self, surface, is_current=False, is_goal=False):
         color = GOAL_COLOR if is_goal else (NEURON_COLOR if not is_current else (0, 255, 0))
         pygame.draw.circle(surface, color, (self.x, self.y), 15)
         font = pygame.font.SysFont(None, 20)
-        text = font.render(self.neuron_type, True, TEXT_COLOR)
+        # Se il nodo è l'obiettivo, mostra solo "Oculus"
+        if is_goal:
+            text = font.render("Oculus", True, TEXT_COLOR)
+        else:
+            text = font.render(self.neuron_type, True, TEXT_COLOR)
         text_rect = text.get_rect(center=(self.x, self.y))
         surface.blit(text, text_rect)
-        if is_goal:
-            goal_font = pygame.font.SysFont(None, 16)
-            goal_text = goal_font.render("Oculus", True, TEXT_COLOR)
-            goal_rect = goal_text.get_rect(midbottom=(self.x, self.y - 20))
-            surface.blit(goal_text, goal_rect)
 
 # Genera i nodi casuali evitando sovrapposizioni
 nodes = []
@@ -170,7 +168,7 @@ for i in range(NUM_NODES):
     neuron_type = neuron_types[i % len(neuron_types)]
     nodes.append(Node(i, x, y, neuron_type))
 
-# Genera la matrice di adiacenza casuale e costruisce le liste di vicinato
+# Genera la matrice di adiacenza casuale e costruisci le liste di vicinato
 adj_matrix = [[0 for _ in range(NUM_NODES)] for _ in range(NUM_NODES)]
 degrees = [0 for _ in range(NUM_NODES)]
 p_connect = 0.15
@@ -201,6 +199,7 @@ for i in range(NUM_NODES):
 # Seleziona il nodo iniziale e il nodo obiettivo (Oculus)
 current_node = nodes[0]
 goal_node = nodes[-1]
+# Riposiziona il nodo obiettivo in alto a destra della regione
 goal_node.x = margin_x + region_width
 goal_node.y = margin_y + 20
 
@@ -210,6 +209,15 @@ def update_profile_fsm(next_state):
     key = (fsm_state, next_state)
     mod_symbol = TRANSITIONS.get(key, "X")
     delta = MOD_EFFECTS.get(mod_symbol, (0, 0, 0, 0, 0))
+    dims = ['n', 'e', 'ap', 'am', 'c']
+    for i, d in enumerate(dims):
+        profile[d] += delta[i]
+    fsm_state = next_state
+
+# Se il nodo successivo è il nodo Oculus, forziamo la transizione neutra ("X")
+def update_profile_fsm_neutral(next_state):
+    global fsm_state, profile
+    delta = MOD_EFFECTS.get("X", (0, 0, 0, 0, 0))
     dims = ['n', 'e', 'ap', 'am', 'c']
     for i, d in enumerate(dims):
         profile[d] += delta[i]
@@ -255,7 +263,8 @@ def draw_edges(surface, blink_factor):
                 draw_curved_edge(surface, start, end, blink_factor)
                 drawn.add((node.id, neighbor.id))
 
-# Disegna l'istogramma del profilo (parte sinistra, da x=0)
+# Funzione per disegnare l'istogramma del profilo
+# Se il valore corrente è inferiore al target, la barra è azzurra; se superiore, rossa; se uguale, verde.
 def draw_profile(surface):
     bar_width = 20
     spacing = 10
@@ -264,10 +273,17 @@ def draw_profile(surface):
     font = pygame.font.SysFont(None, 24)
     dims = ['n', 'e', 'ap', 'am', 'c']
     for i, d in enumerate(dims):
-        bar_height = profile[d] * 2
+        value = profile[d]
+        target = target_profile[d]
+        if value < target:
+            bar_color = (135, 206, 250)  # Azzurro
+        elif value > target:
+            bar_color = (255, 0, 0)      # Rosso
+        else:
+            bar_color = (0, 255, 0)      # Verde
+        bar_height = value * 2
         x = x_start + i * (bar_width + spacing)
         y = y_base - bar_height
-        bar_color = (255, 0, 0) if abs(profile[d] - target_profile[d]) > TOLERANCE else (0, 255, 0)
         pygame.draw.rect(surface, bar_color, (x, y, bar_width, bar_height))
         label = font.render(d, True, TEXT_COLOR)
         label_rect = label.get_rect(center=(x + bar_width // 2, y_base + 15))
@@ -333,14 +349,14 @@ def show_intro():
         "Preparati a immergerti in Cnot, capitolo 2..."
     ]
     screen.fill(BLACK)
-    intro_rect = intro_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 150))
+    intro_rect = intro_text.get_rect(center=(WIDTH//2, HEIGHT//2 - 150))
     screen.blit(intro_text, intro_rect)
     for i, line in enumerate(lore_lines):
         line_text = sub_font.render(line, True, TEXT_COLOR)
-        line_rect = line_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 50 + i * 40))
+        line_rect = line_text.get_rect(center=(WIDTH//2, HEIGHT//2 - 50 + i * 40))
         screen.blit(line_text, line_rect)
     prompt_text = sub_font.render("Premi un tasto per continuare", True, TEXT_COLOR)
-    prompt_rect = prompt_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + 150))
+    prompt_rect = prompt_text.get_rect(center=(WIDTH//2, HEIGHT//2 + 150))
     screen.blit(prompt_text, prompt_rect)
     pygame.display.flip()
     waiting = True
@@ -368,14 +384,14 @@ def show_explanation():
         "Trova il percorso giusto e salva l'identità di Caterina."
     ]
     screen.fill(BLACK)
-    exp_rect = exp_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 200))
+    exp_rect = exp_text.get_rect(center=(WIDTH//2, HEIGHT//2 - 200))
     screen.blit(exp_text, exp_rect)
     for i, line in enumerate(explanation_lines):
         line_text = sub_font.render(line, True, TEXT_COLOR)
-        line_rect = line_text.get_rect(center=(WIDTH // 2, HEIGHT // 2 - 100 + i * 35))
+        line_rect = line_text.get_rect(center=(WIDTH//2, HEIGHT//2 - 100 + i * 35))
         screen.blit(line_text, line_rect)
     prompt_text = sub_font.render("Premi un tasto per iniziare il gioco", True, TEXT_COLOR)
-    prompt_rect = prompt_text.get_rect(center=(WIDTH // 2, HEIGHT - 100))
+    prompt_rect = prompt_text.get_rect(center=(WIDTH//2, HEIGHT - 100))
     screen.blit(prompt_text, prompt_rect)
     pygame.display.flip()
     waiting = True
@@ -408,7 +424,11 @@ while True:
                     index = arrow_mapping[event.key]
                     if len(current_node.neighbors) > index:
                         next_node = current_node.neighbors[index]
-                        update_profile_fsm(next_node.neuron_type)
+                        # Se il nodo successivo è il nodo Oculus, forziamo la transizione neutra ("X")
+                        if next_node == goal_node:
+                            update_profile_fsm_neutral("X")
+                        else:
+                            update_profile_fsm(next_node.neuron_type)
                         current_node = next_node
                         if node_sound is not None:
                             node_sound.play()
