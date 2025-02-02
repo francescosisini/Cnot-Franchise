@@ -32,7 +32,8 @@ except Exception as e:
     tick_sound = None
 
 # Impostazioni di gioco
-NUM_NODES = 20
+# Aumentiamo il numero di nodi da 20 a 30 (3/2 * 20)
+NUM_NODES = 30
 MAX_DEGREE = 4   # grado massimo di connessioni per ogni neurone
 MIN_NODE_DISTANCE = 80  # distanza minima tra nodi
 
@@ -46,9 +47,9 @@ BLINK_BASE = (150, 150, 250)
 
 # Colori per le direzioni (lampeggianti)
 arrow_colors = {
-    pygame.K_LEFT: (135, 206, 250),  # Azzurro
+    pygame.K_LEFT: (170, 0, 255),  # viola
     pygame.K_UP: (0, 255, 0),         # Verde
-    pygame.K_RIGHT: (255, 255, 0),    # Giallo
+    pygame.K_RIGHT: (255, 0, 102),    # Giallo
     pygame.K_DOWN: (255, 255, 255)    # Bianco
 }
 
@@ -65,51 +66,51 @@ TOLERANCE = 4  # tolleranza ±4 per la vittoria
 
 # Tabella delle transizioni (stato corrente, stato destinazione) -> simbolo
 TRANSITIONS = {
-    ("n", "n"): "X",
-    ("n", "e"): "+e",
-    ("n", "ap"): "-c",
-    ("n", "am"): "-e",
-    ("n", "c"): "-n",
+    ("n", "n"): "n+",
+    ("n", "e"): "n-",
+    ("n", "ap"): "x",
+    ("n", "am"): "x",
+    ("n", "c"): "x",
 
-    ("e", "n"): "+n",
-    ("e", "e"): "X",
-    ("e", "ap"): "+ap",
-    ("e", "am"): "-n",
-    ("e", "c"): "+c",
+    ("e", "n"): "e-",
+    ("e", "e"): "x",
+    ("e", "ap"): "e+",
+    ("e", "am"): "x",
+    ("e", "c"): "x",
 
-    ("ap", "n"): "-ap",
-    ("ap", "e"): "-c",
-    ("ap", "ap"): "X",
-    ("ap", "am"): "+am",
-    ("ap", "c"): "-c",
+    ("ap", "n"): "x",
+    ("ap", "e"): "ap+",
+    ("ap", "ap"): "x",
+    ("ap", "am"): "x",
+    ("ap", "c"): "ap-",
 
-    ("am", "n"): "-am",
-    ("am", "e"): "+am",
-    ("am", "ap"): "+ap",
-    ("am", "am"): "X",
-    ("am", "c"): "-am",
+    ("am", "n"): "x",
+    ("am", "e"): "x",
+    ("am", "ap"): "am+",
+    ("am", "am"): "x",
+    ("am", "c"): "am-",
 
-    ("c", "n"): "+N",
-    ("c", "e"): "+e+",
-    ("c", "ap"): "+e",
-    ("c", "am"): "-am",
-    ("c", "c"): "X"
+    ("c", "n"): "x",
+    ("c", "e"): "x",
+    ("c", "ap"): "x",
+    ("c", "am"): "c-",
+    ("c", "c"): "c+"
 }
 
 # Dizionario che traduce il simbolo in modifica al profilo.
 # L'ordine delle componenti del vettore è: (n, e, ap, am, c)
 MOD_EFFECTS = {
-    "X":    (0, 0, 0, 0, 0),
-    "+e":   (0, 10, 0, 0, 0),
-    "-c":   (0, 0, 0, 0, -5),
-    "-e":   (0, -5, 0, 0, 0),
-    "-n":   (-5, 0, 0, 0, 0),
-    "+n":   (10, 0, 0, 0, 0),
-    "+ap":  (0, 0, 10, 0, 0),
-    "+c":   (0, 0, 0, 0, 10),
-    "-ap":  (0, 0, -5, 0, 0),
-    "+am":  (0, 0, 0, 10, 0),
-    "-am":  (0, 0, 0, -5, 0),
+    "x":    (0, 0, 0, 0, 0),
+    "n+":   (5, 0, 0, 0, 0),
+    "n-":   (-5, 0, 0, 0, 0),
+    "e+":   (0, 5, 0, 0, 0),
+    "e-":   (0, -5, 0, 0, 0),
+    "ap+":  (0, 0, 5, 0, 0),
+    "ap-":  (0, 0, -5, 0, 0),
+    "am+":  (0, 0, 0, 5, 0),
+    "am-":  (0, 0, 0, -5, 0),
+    "c+":   (0, 0, 0, 0, 5),
+    "c-":   (0, 0, 0, 0, -5),
     "+N":   (10, 0, 0, 0, 0),
     "+e+":  (0, 15, 0, 0, 0)
 }
@@ -125,6 +126,123 @@ margin_x = 200
 margin_y = 50
 region_width = (WIDTH // 2) - 100
 region_height = HEIGHT - 2 * margin_y
+
+def rotate_vector(vec, angle):
+    """Ruota il vettore 'vec' di 'angle' radianti."""
+    cos_a = math.cos(angle)
+    sin_a = math.sin(angle)
+    return (vec[0]*cos_a - vec[1]*sin_a, vec[0]*sin_a + vec[1]*cos_a)
+
+def draw_curved_edge_with_control(surface, start, end, control, blink_factor):
+    points = []
+    for t in range(21):
+        t_norm = t / 20
+        # Curva di Bézier quadratica: (1-t)^2 * start + 2*(1-t)*t * control + t^2 * end
+        x = (1 - t_norm)**2 * start[0] + 2 * (1 - t_norm) * t_norm * control[0] + t_norm**2 * end[0]
+        y = (1 - t_norm)**2 * start[1] + 2 * (1 - t_norm) * t_norm * control[1] + t_norm**2 * end[1]
+        points.append((x, y))
+    color = (int(BLINK_BASE[0] * blink_factor),
+             int(BLINK_BASE[1] * blink_factor),
+             int(BLINK_BASE[2] * blink_factor))
+    pygame.draw.lines(surface, color, False, points, 2)
+
+def show_transition_diagram():
+    # Definisce i cinque stati e li dispone in cerchio.
+    states = ["n", "e", "ap", "am", "c"]
+    center_x = WIDTH // 2
+    center_y = HEIGHT // 2
+    radius = 200
+    state_positions = {}
+    for i, state in enumerate(states):
+        angle = 2 * math.pi * i / len(states)
+        x = int(center_x + radius * math.cos(angle))
+        y = int(center_y + radius * math.sin(angle))
+        state_positions[state] = (x, y)
+    
+    # Tabella delle transizioni attive (solo quelle specificate)
+    TRANSITIONS = {
+        ("n", "n"): "n+",
+        ("n", "e"): "n-",
+        ("e", "n"): "e-",
+        ("e", "ap"): "e+",
+        ("ap", "e"): "ap+",
+        ("ap", "c"): "ap-",
+        ("am", "ap"): "am+",
+        ("am", "c"): "am-",
+        ("c", "am"): "c-",
+        ("c", "c"): "c+",
+    }
+    
+    # Raggruppa le transizioni per stato sorgente (esclusi i self-loop, che tratteremo separatamente)
+    transitions_by_source = {}
+    self_loops = {}
+    for (src, tgt), symbol in TRANSITIONS.items():
+        if src == tgt:
+            self_loops.setdefault(src, []).append(symbol)
+        else:
+            transitions_by_source.setdefault(src, []).append((tgt, symbol))
+    
+    # Per ciascuno stato sorgente, le transizioni verso altri stati saranno disposte lungo un arco di 300°
+    arc_span = 300 * math.pi / 180  # 300° in radianti
+    # Scegliamo come riferimento l'angolo verticale in alto (-pi/2), e centriamo l'arco.
+    base_angle = -math.pi/2 - arc_span/2
+
+    start_time = pygame.time.get_ticks()
+    while pygame.time.get_ticks() - start_time < 10000:
+        blink_factor = 0.75 + 0.25 * math.sin(pygame.time.get_ticks() * 0.005)
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit(); sys.exit()
+        screen.fill(BLACK)
+        
+        # Disegna i cerchi per ciascuno stato
+        for state, pos in state_positions.items():
+            pygame.draw.circle(screen, NEURON_COLOR, pos, 30)
+            font = pygame.font.SysFont(None, 24)
+            text = font.render(state, True, WHITE)
+            text_rect = text.get_rect(center=pos)
+            screen.blit(text, text_rect)
+        
+        # Disegna i self-loop (transizioni in cui source == target)
+        for state, symbols in self_loops.items():
+            pos = state_positions[state]
+            # Disegna un self-loop come un piccolo arco: ad esempio, un cerchio piccolo spostato dall'origine
+            loop_radius = 40
+            loop_center = (pos[0] + loop_radius, pos[1] - loop_radius)
+            pygame.draw.circle(screen, WHITE, loop_center, 10, 2)
+            font2 = pygame.font.SysFont(None, 20)
+            # Se ci sono più self-loop, prendi il primo (o potresti combinarli)
+            symbol_text = font2.render(symbols[0], True, WHITE)
+            symbol_rect = symbol_text.get_rect(center=loop_center)
+            screen.blit(symbol_text, symbol_rect)
+        
+        # Disegna le transizioni non-self, per ciascuno stato sorgente
+        for src, transitions in transitions_by_source.items():
+            src_pos = state_positions[src]
+            m = len(transitions)
+            if m == 0:
+                continue
+            for i, (tgt, symbol) in enumerate(transitions):
+                tgt_pos = state_positions[tgt]
+                # Distribuisci gli archi lungo l'arco di 300° per questo stato sorgente
+                if m > 1:
+                    angle_offset = base_angle + (arc_span * i / (m - 1))
+                else:
+                    angle_offset = -math.pi/2
+                # Calcola il punto di controllo: partiamo dal nodo sorgente e spostiamo lungo una direzione data dalla rotazione della verticale
+                control_radius = 100  # determina la curvatura
+                control_point = (int(src_pos[0] + control_radius * math.cos(angle_offset)),
+                                 int(src_pos[1] + control_radius * math.sin(angle_offset)))
+                draw_curved_edge_with_control(screen, src_pos, tgt_pos, control_point, blink_factor)
+                # Posiziona il simbolo al punto di controllo (o leggermente spostato)
+                font2 = pygame.font.SysFont(None, 20)
+                symbol_text = font2.render(symbol, True, WHITE)
+                symbol_rect = symbol_text.get_rect(center=control_point)
+                screen.blit(symbol_text, symbol_rect)
+        
+        pygame.display.flip()
+        clock.tick(FPS)
+
 
 # Funzione per generare una posizione casuale non sovrapposta
 def generate_random_position(margin_x, margin_y, region_width, region_height, existing_nodes, min_distance):
@@ -153,7 +271,6 @@ class Node:
         color = GOAL_COLOR if is_goal else (NEURON_COLOR if not is_current else (0, 255, 0))
         pygame.draw.circle(surface, color, (self.x, self.y), 15)
         font = pygame.font.SysFont(None, 20)
-        # Se il nodo è l'obiettivo, mostra solo "Oculus"
         if is_goal:
             text = font.render("Oculus", True, TEXT_COLOR)
         else:
@@ -168,7 +285,7 @@ for i in range(NUM_NODES):
     neuron_type = neuron_types[i % len(neuron_types)]
     nodes.append(Node(i, x, y, neuron_type))
 
-# Genera la matrice di adiacenza casuale e costruisci le liste di vicinato
+# Genera la matrice di adiacenza casuale e costruisce le liste di vicinato
 adj_matrix = [[0 for _ in range(NUM_NODES)] for _ in range(NUM_NODES)]
 degrees = [0 for _ in range(NUM_NODES)]
 p_connect = 0.15
@@ -200,8 +317,25 @@ for i in range(NUM_NODES):
 current_node = nodes[0]
 goal_node = nodes[-1]
 # Riposiziona il nodo obiettivo in alto a destra della regione
-goal_node.x = margin_x + region_width
+goal_node.x = margin_x + region_width+50
 goal_node.y = margin_y + 20
+
+# Assicurati che il nodo iniziale non sia collegato direttamente a Oculus
+if goal_node in current_node.neighbors:
+    current_node.neighbors.remove(goal_node)
+if current_node in goal_node.neighbors:
+    goal_node.neighbors.remove(current_node)
+
+
+# Forza il nodo Oculus ad avere almeno 4 connessioni periferiche.
+# Scegliamo 4 nodi casuali (escluso il nodo obiettivo) e, se non già connessi, li aggiungiamo.
+peripheral_candidates = [node for node in nodes if node != goal_node]
+random.shuffle(peripheral_candidates)
+for candidate in peripheral_candidates[:4]:
+    if candidate not in goal_node.neighbors:
+        goal_node.neighbors.append(candidate)
+    if goal_node not in candidate.neighbors:
+        candidate.neighbors.append(goal_node)
 
 # Funzione per applicare la transizione FSM e aggiornare il profilo
 def update_profile_fsm(next_state):
@@ -372,17 +506,19 @@ def show_explanation():
     exp_font = pygame.font.SysFont(None, 48)
     exp_text = exp_font.render("Spiegazione Biologica", True, TEXT_COLOR)
     sub_font = pygame.font.SysFont(None, 28)
+
     explanation_lines = [
-        "Nel cervello di Caterina, ogni neurone agisce come un operatore",
-        "che modula l'equilibrio dei suoi tratti: n, e, ap, am, c.",
-        "Il modello a stati finiti determina la transizione tra questi stati.",
-        "Ad ogni transizione, la combinazione dello stato corrente",
-        "e del tipo del nodo determina un impulso (es. +e, -n, +ap, ecc.)",
-        "che modifica il profilo di Caterina.",
-        "Se il percorso scelto fa annullare gli impulsi, l'effetto netto è nullo",
-        "e il profilo rimane in equilibrio: questo è il percorso identitario.",
-        "Trova il percorso giusto e salva l'identità di Caterina."
+        "Il profilo psicologico di Caterina è definito dai valori di:",
+        "Neuroticismo, Estroversione, Apertura, Amicalità e Coscienziosità.",
+    "I neuroni nel labirinto invia impulsi  che aumentano o diminuiscono questi tratti.",
+    "Ogni spostamento potrebbe modificare il profilo.",
+    "Osserva gli effetti degli impulsi mentre avanzi e scopri come si bilanciano.",
+    "Solo seguendo il giusto percorso potrai mantenere intatta l'identità di Caterina fino agli oculus e vincere!"
     ]
+
+
+    
+    
     screen.fill(BLACK)
     exp_rect = exp_text.get_rect(center=(WIDTH//2, HEIGHT//2 - 200))
     screen.blit(exp_text, exp_rect)
@@ -405,6 +541,7 @@ def show_explanation():
 # Mostra le schermate iniziali
 show_intro()
 show_explanation()
+show_transition_diagram()
 
 # Stato del gioco
 game_over = False
