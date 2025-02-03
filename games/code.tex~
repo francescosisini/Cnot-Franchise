@@ -1,0 +1,45 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{listings}
+
+% Configurazione per il codice Python
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    columns=fullflexible,
+    captionpos=b
+}
+
+\title{Neural Labyrinth - Codice sorgente}
+\author{CNOT Franchise}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Questo documento contiene il codice sorgente del gioco \textbf{Neural Labyrinth}, presentato su due colonne per una migliore leggibilità. Il gioco è basato su \texttt{pygame} e simula un labirinto neurale in cui Caterina deve mantenere il suo profilo psicologico mentre naviga attraverso la rete sinaptica.
+\end{abstract}
+
+\begin{multicols}{2}
+
+\section{Introduzione}
+\textit{Neural Labyrinth} è un gioco ispirato alla storia di CNOT, in cui il giocatore controlla Caterina all'interno di una simulazione cerebrale progettata da Eva. Lo scopo è evitare alterazioni critiche del proprio profilo psicologico mentre si cerca l'uscita dal labirinto.
+
+\section{Codice sorgente}
+\lstinputlisting[caption=Neural Labyrinth - Python Code, label=lst:code]{cateinamind.py}
+
+\end{multicols}
+
+\end{document}
