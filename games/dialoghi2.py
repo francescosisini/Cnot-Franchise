@@ -129,40 +129,64 @@ def pixelate_image(image, scale_factor):
     pixelated = pygame.transform.scale(small, orig_size)
     return small
 
-def show_intro_images():
-    """Mostra in sequenza una serie di immagini al centro dello schermo."""
-    # Lista dei percorsi alle immagini (assicurati di averle nella cartella assets)
-    image_files = [
-        "assets/cnot_1.jpeg",
-        "assets/cnot_2.jpeg",
-        "assets/cnot_3.jpeg"
-    ]
-    # Carica le immagini e applica l'effetto pixelato (scegli il fattore, ad esempio 8)
-    intro_images = []
-    for filename in image_files:
+
+def show_intro_images(mode="intro"):
+    """
+    Mostra una sequenza di immagini con didascalia.
+    Il parametro mode può essere "intro" oppure "outro" per differenziare le sequenze.
+    """
+    if mode == "intro":
+        # Lista di tuple: (percorso immagine, didascalia) per la schermata introduttiva
+        images_with_captions = [
+            ("assets/cnot_1.jpeg", "Caterina benvenuta. Mi dispiace per il disguido con il file"),
+            ("assets/cnot_2.jpeg", "Comprendo i tuoi dubbi..."),
+            ("assets/cnot_3.jpeg", "Per questo motivo ho preparato qualcosa che potrebbe rassicurarti."),
+            ("assets/cnot_3.2.jpeg", "Possiamo parlarne?")
+            
+        ]
+    elif mode == "outro":
+        # Lista di tuple per la schermata finale (puoi personalizzarla)
+        images_with_captions = [
+            ("assets/cnot_4.jpeg", "Didascalia per intro1"),
+            ("assets/cnot_5.jpeg", "Didascalia per intro2"),
+            ("assets/cnot_6.jpeg", "Didascalia per intro3")
+            
+        ]
+    else:
+        images_with_captions = []
+    
+    # Carica e pixelizza le immagini
+    intro_items = []
+    for filename, caption in images_with_captions:
         try:
             img = pygame.image.load(filename).convert_alpha()
-            # Applica pixelation: scegli scale_factor in base al livello di pixelation desiderato
+            # La funzione pixelate_image la definiamo come in precedenza
             img_pixelated = pixelate_image(img, scale_factor=2)
-            intro_images.append(img_pixelated)
+            intro_items.append((img_pixelated, caption))
         except Exception as e:
             print("Errore nel caricamento dell'immagine", filename, ":", e)
     
-    # Durata (in millisecondi) per ogni immagine
+    # Durata per ogni immagine (in millisecondi)
     duration = 2000  
-    for image in intro_images:
+    font_caption = pygame.font.SysFont(None, 34)
+    
+    for image, caption in intro_items:
         start_time = pygame.time.get_ticks()
         # Centra l'immagine
         img_rect = image.get_rect(center=(WIDTH//2, HEIGHT//2))
+        # Prepara la didascalia: posiziona la didascalia sotto l'immagine con un po' di margine
+        caption_surface = font_caption.render(caption, True, WHITE)
+        caption_rect = caption_surface.get_rect(midtop=(img_rect.centerx, img_rect.bottom + 10))
+        
         while pygame.time.get_ticks() - start_time < duration:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit(); sys.exit()
             screen.fill(BLACK)
             screen.blit(image, img_rect)
+            screen.blit(caption_surface, caption_rect)
             pygame.display.flip()
             clock.tick(FPS)
-
 
 def sign(x):
     if x > 0:
@@ -599,7 +623,7 @@ def show_explanation():
 
 # Schermate introduttive
 show_intro_images()
-show_intro()
+#show_intro()
 show_explanation()
 show_transition_diagram()
 
@@ -724,11 +748,18 @@ while True:
     
     # Disegna la finestra di dialogo (con il rettangolo di sfondo commentato come nel tuo codice)
     draw_dialogue_window(screen, current_node)
-    
+
     if game_over:
         msg = "VITTORIA!" if victory else "GAME OVER: Profilo errato! Premi R per riprovare"
         text = pygame.font.SysFont(None, 48).render(msg, True, (255, 0, 0))
         text_rect = text.get_rect(center=(WIDTH//2, 50))
         screen.blit(text, text_rect)
+        pygame.display.flip()
+        # Attesa di 3 secondi
+        pygame.time.wait(3000)
+        # Mostra la sequenza di immagini "outro"
+        show_intro_images(mode="outro")
+        pygame.quit()
+        sys.exit()
     
     pygame.display.flip()
