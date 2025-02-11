@@ -7,7 +7,7 @@ import math
 pygame.init()
 
 # Imposta le dimensioni della finestra: 1200 x 800
-WIDTH, HEIGHT = 1300, 900
+WIDTH, HEIGHT = 1400, 980
 FPS = 30
 
 # Caricamento file audio
@@ -116,6 +116,15 @@ margin_y_top = 10
 region_width = (WIDTH // 1.2) - 100
 region_height = HEIGHT - margin_y_bottom - margin_y_top
 
+def reset_game():
+    global profile, current_node, fsm_state, start_ticks, game_over, victory, prev_tick_second
+    profile = target_profile.copy()
+    current_node = levels_nodes[0][0]  # Nodo iniziale (livello 0)
+    fsm_state = "n"
+    start_ticks = pygame.time.get_ticks()
+    prev_tick_second = int(game_duration)
+    game_over = False
+    victory = False
 
 
 def pixelate_image(image, scale_factor):
@@ -510,7 +519,8 @@ def draw_profile(surface):
     bar_width = 20
     spacing = 10
     x_start = 0
-    y_base = HEIGHT - 50
+    #y_base = HEIGHT - 50
+    y_base = 250
     font = pygame.font.SysFont(None, 24)
     dims = ['n', 'e', 'ap', 'am', 'c']
     for i, d in enumerate(dims):
@@ -648,14 +658,14 @@ victory = False
 def draw_dialogue_window(surface, current_node):
     panel_width = 300
     panel_height = 350
-    panel_x = 200  # posizione orizzontale (lasciamo il rettangolo commentato come nel tuo codice)
+    panel_x = 20  # posizione orizzontale (lasciamo il rettangolo commentato come nel tuo codice)
     panel_y = HEIGHT - (panel_height)
     # Le righe per disegnare il rettangolo di sfondo rimangono commentate
     # pygame.draw.rect(surface, (30,30,30), (panel_x, panel_y, panel_width, panel_height))
     # pygame.draw.rect(surface, WHITE, (panel_x, panel_y, panel_width, panel_height), 2)
     
     font = pygame.font.SysFont(None, 20)
-    small_font = pygame.font.SysFont(None, 18)
+    small_font = pygame.font.SysFont(None, 20)
     y_offset = panel_y + 25
     max_text_width = panel_width - 20
 
@@ -750,16 +760,17 @@ while True:
     draw_dialogue_window(screen, current_node)
 
     if game_over:
-        msg = "VITTORIA!" if victory else "GAME OVER: Profilo errato! Premi R per riprovare"
-        text = pygame.font.SysFont(None, 48).render(msg, True, (255, 0, 0))
-        text_rect = text.get_rect(center=(WIDTH//2, 50))
-        screen.blit(text, text_rect)
-        pygame.display.flip()
-        # Attesa di 3 secondi
-        pygame.time.wait(3000)
-        # Mostra la sequenza di immagini "outro"
-        show_intro_images(mode="outro")
-        pygame.quit()
-        sys.exit()
+       msg = "VITTORIA!" if victory else "GAME OVER: Profilo errato! Premi R per riprovare"
+       text = pygame.font.SysFont(None, 48).render(msg, True, (255, 0, 0))
+       text_rect = text.get_rect(center=(WIDTH//2, 50))
+       screen.blit(text, text_rect)
+       pygame.display.flip()
+       # Attesa di 3 secondi
+       pygame.time.wait(3000)
+       # Mostra la sequenza di immagini "outro"
+       show_intro_images(mode="outro")
+       # Ricomincia il gioco: resetta le variabili e riparte il loop principale
+       reset_game()
+
     
     pygame.display.flip()
