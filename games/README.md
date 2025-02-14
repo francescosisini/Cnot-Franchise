@@ -1,0 +1,44 @@
+I Videogiochi di Cnot
+
+Benvenuto nella sezione dedicata ai videogiochi ispirati ai capitoli del libro Cnot. Ogni capitolo del libro è stato trasformato in un gioco interattivo che permette di esplorare le tematiche e le dinamiche della storia in modo coinvolgente.
+
+Caratteristiche principali
+
+Un gioco per ogni capitolo: Ogni capitolo di Cnot ha un videogioco dedicato, offrendo una prospettiva unica sulla narrazione e sulle scelte dei personaggi.
+
+Sviluppati in Python: Tutti i giochi sono realizzati con Python utilizzando librerie come Pygame per garantire un'esperienza fluida e immersiva.
+
+Codice accessibile: Il codice sorgente di ciascun gioco è disponibile liberamente nel repository GitHub, permettendo a chiunque di studiarlo, modificarlo e contribuire allo sviluppo.
+
+Arcade Style: I giochi sono progettati con una meccanica arcade, intuitiva e immediata, in modo che siano facili da giocare ma allo stesso tempo stimolanti e strategici.
+
+Elenco dei giochi
+
+Di seguito l'elenco dei giochi attualmente disponibili:
+
+Gioco 1 - Nel labirinto (da sviluppare)
+
+Gioco 2 - Metti gli [oculus](game_2/intro_illustration.md)
+
+Gioco 3 - ...
+
+Gioco 4 - ...
+
+Gioco 5 - ...
+
+Gioco 6 - ...
+
+Gioco 7 - ...
+
+Gioco 8 - ...
+
+Gioco 9 - ...
+
+Gioco 10 - Conclusione della storia
+
+Partecipa allo sviluppo
+
+Il progetto è aperto a contributi! Se vuoi proporre miglioramenti, aggiungere contenuti o collaborare alla creazione dei giochi, visita il nostro repository su GitHub. Al momento, il Gioco 2 è in fase di sviluppo collaborativo e puoi contribuire inviando illustrazioni o suggerimenti per la sequenza introduttiva.
+
+📌 Segui il progetto su TikTok e GitHub per rimanere aggiornato!
+
