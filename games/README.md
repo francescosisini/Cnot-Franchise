@@ -1,7 +1,29 @@
 # I Videogiochi di Cnot  
 
 Benvenuto nella sezione dedicata ai videogiochi ispirati ai capitoli del libro *Cnot*.  
-Ogni capitolo del libro è stato trasformato in un gioco interattivo che permette di esplorare le tematiche e le dinamiche della storia in modo coinvolgente.  
+Ogni capitolo del libro è stato trasformato in un gioco interattivo che permette di esplorare le tematiche e le dinamiche della storia in modo coinvolgente.
+
+## 📰 Novità: Collaborazione Aperta per il **Gioco 2 - Quantum Deception**  
+
+🎨 **Sei un illustratore, un creativo o un appassionato di storytelling?**  
+Abbiamo aperto una collaborazione per arricchire l'introduzione del gioco **Quantum Deception** con una sequenza di **illustrazioni fatte a mano** accompagnate da estratti del libro *Cnot*!  
+
+💡 **Di cosa si tratta?**  
+Stiamo creando una sequenza di immagini per immergere il giocatore nella storia prima di iniziare l'avventura. Chiunque voglia contribuire può proporre una propria versione delle illustrazioni e dei testi associati.  
+
+📌 **Come partecipare?**  
+Tutti i dettagli e le istruzioni per contribuire si trovano nel file **[docs/game_2_collaborazione.md](game_2/docs/intro_illustration.md)**.  
+
+🛠️ **Cosa puoi fare?**  
+- Disegnare un'illustrazione per una scena chiave  
+- Proporre un estratto di testo o adattarlo per la sequenza  
+- Suggerire idee per migliorare l’esperienza visiva e narrativa  
+
+💬 **Hai domande o vuoi proporre il tuo lavoro?**  
+Lascia un commento sulla [issue dedicata su GitHub](https://github.com/francescosisini/Cnot-Franchise/issues) e allega i tuoi file seguendo le istruzioni.  
+
+🔔 **Unisciti al progetto e porta la tua creatività in Quantum Deception!**  
+
 
 ## 🔹 Caratteristiche principali  
 
