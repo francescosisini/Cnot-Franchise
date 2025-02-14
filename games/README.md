@@ -21,7 +21,7 @@ Di seguito l'elenco dei giochi attualmente disponibili. **Solo i giochi 2 e 6 so
 | 3️⃣ | **Supervised Prison** – Prigioniera del controllo quantistico | In sviluppo | ❌        |
 | 4️⃣ | **The Quantum Interrogation** – Seduzione e inganno nella stanza del commissario | In sviluppo | ❌        |
 | 5️⃣ | **Ion Trap Escape** – Intrappolata tra ioni e scelte impossibili | In sviluppo | ❌        |
-| 6️⃣ | **Drone CH4 Takeover** – La corsa per il controllo del drone ribelle | Pronto      | ✅ [Gioca](/game_6/python/) |
+| 6️⃣ | **Drone CH4 Takeover** – La corsa per il controllo del drone ribelle | Pronto      | ✅ [Gioca](game_6/python) |
 | 7️⃣ | **Hadamard Gate Shift** – Il passo nell'incertezza della sovrapposizione | In sviluppo | ❌        |
 | 8️⃣ | **Entangled Pursuit** – Un inseguimento quantistico in stato di entanglement | In sviluppo | ❌        |
 | 9️⃣ | **Breaking RSA** – La sfida per decifrare il codice e liberare Caterina | In sviluppo | ❌        |
