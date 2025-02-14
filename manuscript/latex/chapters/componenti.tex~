@@ -1,0 +1,254 @@
+\section*{Schede Tecniche dei Componenti del Computer Quantistico}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{PZZIA (Quantum AI System)}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+PZZIA è un sistema di Intelligenza Artificiale avanzato basato su machine learning quantistico. Opera in un ambiente quantistico, sfruttando le proprietà dei qubit per eseguire calcoli complessi in modo efficiente. PZZIA è integrato nell'infrastruttura dell'azienda \emph{Pet Micro Robot} ed è utilizzato per processi decisionali avanzati, tra cui la valutazione dei candidati.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Architettura}: Basata su reti neurali quantistiche.
+    \item \textbf{Capacità di Calcolo}: Elevata parallelizzazione grazie al superamento dei limiti classici.
+    \item \textbf{Funzionalità}: Analisi dati, apprendimento automatico, elaborazione linguistica naturale.
+    \item \textbf{Interfaccia}: Può operare sia in background che essere integrata in robot fisici.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+PZZIA è in grado di mantenere processi reversibili, tipici dei sistemi quantistici. L'informazione non può essere cancellata senza lasciare traccia, il che implica considerazioni etiche e tecniche sulla gestione dei dati.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Qubit Array}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Qubit Array} è il cuore del computer quantistico, una matrice di qubit che rappresenta lo spazio di calcolo quantistico. Ogni qubit può esistere in sovrapposizione di stati, permettendo un'enorme capacità di calcolo parallelo.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Tipo di Qubit}: Superconduttivi, fotonici, o basati su spin elettronici.
+    \item \textbf{Coerenza Quantistica}: Tempo di coerenza elevato grazie a sistemi di isolamento avanzati.
+    \item \textbf{Entanglement}: Utilizza l'entanglement per operazioni logiche complesse.
+    \item \textbf{Scalabilità}: Progettato per essere modulare e facilmente espandibile.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+La presenza di qubit non autorizzati o difettosi nel \emph{Qubit Array} può causare errori di calcolo e instabilità nel sistema, rendendo necessarie misure di controllo rigorose.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Quantum Control Electronics}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+La \emph{Quantum Control Electronics} è responsabile del controllo e della manipolazione dei qubit all'interno del computer quantistico. Gestisce i segnali di controllo necessari per eseguire operazioni quantistiche precise.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Precisione}: Controllo ad altissima precisione dei segnali elettrici e magnetici.
+    \item \textbf{Interfaccia}: Comunicazione tra sistemi classici e quantistici.
+    \item \textbf{Correzione di Errori}: Implementa protocolli per minimizzare gli errori durante le operazioni.
+    \item \textbf{Sicurezza}: Include misure per prevenire accessi non autorizzati e manipolazioni esterne.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Gli agenti della \emph{Quantum Control Electronics} monitorano il sistema per rilevare e correggere anomalie, come la presenza di qubit difettosi o non autorizzati.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Classical Control Unit}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+La \emph{Classical Control Unit} è il componente che gestisce i processi classici di controllo e monitoraggio all'interno del sistema quantistico. Interagisce con il computer quantistico per eseguire operazioni di input/output e per l'interpretazione dei risultati.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Interfaccia Classica-Quantistica}: Traduzione di comandi classici in operazioni quantistiche.
+    \item \textbf{Monitoraggio}: Sorveglia lo stato dei qubit e del sistema nel suo complesso.
+    \item \textbf{Sistemi di Allarme}: Rileva anomalie e avvisa i supervisori in caso di problemi.
+    \item \textbf{Sicurezza}: Include protocolli per la protezione dei dati e del sistema.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Il supervisore e gli agenti della \emph{Classical Control Unit} sono responsabili della gestione quotidiana del sistema e della risoluzione di eventuali problemi operativi.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Quantum Error Correction (QEC)}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Quantum Error Correction} è un insieme di protocolli e tecniche utilizzate per proteggere le informazioni quantistiche dagli errori causati da decoerenza e rumore quantistico.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Codici di Correzione}: Utilizza codici come il codice di Shor o il codice di Steane.
+    \item \textbf{Ridondanza}: Implementa qubit aggiuntivi per rilevare e correggere errori.
+    \item \textbf{Monitoraggio Continuo}: Sorveglia costantemente lo stato dei qubit.
+    \item \textbf{Compatibilità}: Integrato con altri sistemi come il \emph{Fault Tolerance Coding}.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Il \emph{QEC} è fondamentale per il funzionamento stabile del computer quantistico, soprattutto in applicazioni su larga scala dove gli errori possono compromettere l'intero calcolo.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Fault Tolerance Coding}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Fault Tolerance Coding} permette al computer quantistico di continuare a funzionare correttamente anche in presenza di errori nei qubit o nelle operazioni quantistiche.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Architettura Modulare}: Progettato per isolare e gestire errori locali.
+    \item \textbf{Operazioni Fault-Tolerant}: Utilizza gate quantistici resistenti agli errori.
+    \item \textbf{Sovrapposizione di Codici}: Combina diversi codici di correzione per maggiore robustezza.
+    \item \textbf{Integrazione}: Lavora in sinergia con il \emph{Quantum Error Correction}.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Il \emph{Fault Tolerance Coding} è essenziale per eseguire calcoli quantistici affidabili, soprattutto in presenza di qubit instabili o difettosi come quelli presenti nel \emph{Faulty Qubit Space}.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Quantum Resource Management (QRM)}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Quantum Resource Management} è il sistema responsabile della gestione delle risorse quantistiche, inclusi i qubit e le operazioni quantistiche all'interno del computer.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Allocazione Risorse}: Distribuisce i qubit ai processi in esecuzione.
+    \item \textbf{Monitoraggio Utilizzo}: Tiene traccia dell'utilizzo dei qubit e delle operazioni.
+    \item \textbf{Ottimizzazione}: Migliora l'efficienza dei calcoli attraverso una gestione intelligente delle risorse.
+    \item \textbf{Sicurezza}: Verifica l'autorizzazione per l'implementazione di nuovi qubit.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Il QRM comunica con la \emph{Classical Control Unit} e altri sistemi per garantire un funzionamento armonioso del computer quantistico.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Noemografo}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Noemografo} è un dispositivo avanzato sviluppato nel corso di nanotech per leggere e condividere i pensieri tra individui. Funziona attraverso interfacce neurali che captano segnali cerebrali e li trasmettono.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Interfaccia Neurale}: Sensori avanzati per la lettura dei segnali cerebrali.
+    \item \textbf{Trasmissione Dati}: Comunicazione sicura tra dispositivi indossati da diversi utenti.
+    \item \textbf{Elaborazione in Tempo Reale}: Minima latenza nella trasmissione dei pensieri.
+    \item \textbf{Sicurezza e Privacy}: Protocollo di criptazione per proteggere le informazioni personali.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+L'uso del \emph{Noemografo} comporta implicazioni etiche significative riguardo alla privacy e al consenso informato. Nel romanzo, ha un ruolo cruciale nella connessione tra Laura e Caterina.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Quantum Measurement}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Quantum Measurement} è il processo attraverso il quale uno stato quantistico viene misurato, causando il collasso della funzione d'onda e determinando uno stato definitivo.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Irreversibilità}: Una volta effettuata la misura, lo stato quantistico collassa.
+    \item \textbf{Interazione con l'Ambiente}: Sensibile a qualsiasi disturbo esterno.
+    \item \textbf{Rischi}: Misure non controllate possono compromettere il calcolo quantistico.
+    \item \textbf{Applicazioni}: Utilizzato per leggere i risultati finali dei calcoli.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Nel contesto del romanzo, il \emph{Quantum Measurement} rappresenta un luogo o stato estremamente pericoloso per i qubit (e per i personaggi), dove la probabilità di "collasso" è elevata.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Quantum Teleportation Buffer}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+Il \emph{Quantum Teleportation Buffer} è un dispositivo o sistema che consente la trasmissione di stati quantistici da un luogo a un altro senza trasferire fisicamente il qubit.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Entanglement}: Utilizza coppie di qubit entangled per la teleportazione.
+    \item \textbf{Buffering}: Memorizza temporaneamente stati quantistici per la sincronizzazione.
+    \item \textbf{Sicurezza}: Protegge gli stati quantistici durante la trasmissione.
+    \item \textbf{Efficienza}: Minimizza la perdita di coerenza durante il trasferimento.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Nella storia, viene utilizzato come strumento per evitare che l'entanglement leghi ulteriormente i personaggi al \emph{Faulty Qubit Space}.
+
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{CH4 Drones}]
+\begin{multicols}{2}
+\textbf{Descrizione Generale}:
+
+I \emph{CH4 Drones} sono droni avanzati utilizzati per la sorveglianza e il controllo all'interno del sistema quantistico.
+
+\textbf{Caratteristiche Tecniche}:
+\begin{itemize}
+    \item \textbf{Mobilità}: Altamente agili, in grado di muoversi rapidamente attraverso il sistema.
+    \item \textbf{Sensori Avanzati}: Dotati di strumenti per rilevare anomalie quantistiche.
+    \item \textbf{Comunicazione}: Connessi in tempo reale con i centri di controllo.
+    \item \textbf{Funzioni di Intervento}: Possono eseguire azioni per neutralizzare minacce o catturare qubit instabili.
+\end{itemize}
+
+\textbf{Note Aggiuntive}:
+
+Rappresentano una minaccia per i protagonisti, in quanto strumenti delle autorità per mantenere l'ordine e prevenire fughe o ribellioni all'interno del sistema.
+
+\end{multicols}
+\end{tcolorbox}

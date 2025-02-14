@@ -1,0 +1,99 @@
+\begin{tcolorbox}[colback=gray!5,colframe=gray!80,title=\textbf{Timeline del Primo Capitolo}]
+\begin{itemize}
+    \item \textbf{Luogo}: Pet $\mu$ Robot
+    \item \textbf{Giorno}: Lunedì
+    \item \textbf{Ora}: 09:30
+    \item \textbf{Situazione}: Caterina ha sostenuto una preselezione guidata dall'AI PZZIA, ora deve passare la seconda selezione.
+\end{itemize}
+
+\textbf{Eventi Principali}:
+\begin{enumerate}
+    \item \textbf{Caterina al Colloquio con Eva}
+    \begin{itemize}
+        \item Caterina entra nella sala colloqui e incontra Eva, responsabile delle risorse umane.
+        \item Viene interrogata sulle sue opinioni riguardo all'ambiente, al cambiamento climatico e alla presenza di IA nelle aziende.
+        \item Eva le pone domande specifiche sull'adozione dell'elettrico e sulle fonti di energia rinnovabile.
+        \item Caterina risponde con sincerità, esprimendo preoccupazioni genuine sull'impatto ambientale.
+        \item Eva, insoddisfatta delle risposte, le assegna un inaspettato test di programmazione avanzata.
+        \item Caterina, sorpresa, completa il test ma con qualche incertezza.
+    \end{itemize}
+
+    \item \textbf{Incontro con Laura dopo il Colloquio}
+    \begin{itemize}
+        \item Caterina esce dall'edificio visibilmente provata e incontra Laura che l'aspettava fuori.
+        \item Decidono di andare in una caffetteria per discutere dell'accaduto.
+        \item Caterina condivide le sue preoccupazioni riguardo al colloquio e al test di programmazione.
+        \item Laura la aiuta a risolvere l'algoritmo del test, alleviando un po' la sua ansia.
+    \end{itemize}
+
+    \item \textbf{Martedì, Ore 12:30 — Laura al Magazzino Amazon}
+    \begin{itemize}
+        \item Laura è al lavoro nel magazzino Amazon ma non riesce a trovare la corretta ubicazione di stoccaggio per un pacco nel sistema di gestione del magazzino (WMS).
+        \item Si smarrisce tra le scaffalature e le coordinate logistiche.
+        \item Si imbatte in un portale con un cartello "Accesso riservato – Stoccaggi speciali".
+        \item Tenta di accedere ma viene fermata da Ising, un tecnico che le spiega che quell'area è riservata.
+    \end{itemize}
+
+    \item \textbf{Laura si Prepara per l'Esame di Crittografia Quantistica}
+    \begin{itemize}
+        \item Tornata a casa, Laura decide di ripassare per l'esame imminente.
+        \item Ha ancora dei dubbi sull'algoritmo di Shor e sull'aritmetica modulare.
+        \item Esegue alcuni calcoli ma non riesce a comprendere tutti i passaggi.
+    \end{itemize}
+
+    \item \textbf{Esame con il Professor Shor}
+    \begin{itemize}
+        \item Laura si presenta all'esame ma si sente insicura.
+        \item Il professor Shor le chiede della complessità dell'algoritmo classico di fattorizzazione.
+        \item Laura esita e, nonostante l'aiuto del professore, non fornisce una risposta completa.
+        \item Riceve una proposta di voto che non la soddisfa e decide di riprovare all'appello successivo.
+    \end{itemize}
+
+    \item \textbf{Cena con Caterina}
+    \begin{itemize}
+        \item Laura torna a casa e si prepara per la cena con Caterina.
+        \item Caterina arriva dopo aver avuto una discussione con il fidanzato Mark.
+        \item Discutono delle loro giornate, delle difficoltà incontrate e dei dubbi personali.
+        \item Laura mostra a Caterina i suoi appunti e parlano di tecnologia e marketing.
+    \end{itemize}
+
+    \item \textbf{Passeggiata e Confidenze}
+    \begin{itemize}
+        \item Decidono di fare una passeggiata con Roky, il cane di Laura.
+        \item Durante la passeggiata, approfondiscono il discorso sulla tecnologia obsoleta e sul marketing etico.
+        \item Caterina rivela i suoi dubbi sulla relazione con Mark e sulla sua carriera.
+        \item Laura le suggerisce di verificare il file di valutazione generato dall'IA.
+    \end{itemize}
+
+    \item \textbf{Riflessioni Notturne di Caterina}
+    \begin{itemize}
+        \item Tornata a casa, Caterina riflette sulla sua carriera e sulla relazione con Mark.
+        \item Prepara una tisana e riguarda le foto con il fidanzato, sentendosi distaccata.
+        \item Decide di prendere in mano la situazione e scrive un'email a Eva chiedendo il documento valutativo.
+    \end{itemize}
+
+    \item \textbf{Risposta di Eva}
+    \begin{itemize}
+        \item La mattina successiva, Caterina riceve una risposta da Eva.
+        \item Eva afferma che il documento è stato cancellato per errore ma propone un incontro per discutere di persona.
+        \item Caterina si sente frustrata ma decide di accettare l'invito.
+    \end{itemize}
+
+    \item \textbf{Incontro con Laura Prima dell'Appuntamento con Eva}
+    \begin{itemize}
+        \item Caterina passa da Laura per un saluto rapido prima di incontrare Eva.
+        \item Laura le mostra il \emph{Noemografo} e sperimentano insieme una connessione mentale.
+        \item Durante l'esperimento, entrambe percepiscono frammenti dei pensieri dell'altra.
+        \item Caterina lascia Laura per recarsi all'appuntamento con Eva.
+    \end{itemize}
+
+    \item \textbf{La Trappola di Eva}
+    \begin{itemize}
+        \item Caterina arriva all'incontro con Eva alla \emph{Pet Micro Robot}.
+        \item Eva le propone di indossare un visore 3D per rivedere il colloquio.
+        \item Caterina, pur sospettando qualcosa, accetta.
+        \item Nel momento in cui indossa il visore, si rende conto che è una trappola.
+        \item Contemporaneamente, Laura avverte strane sensazioni e realizza che la connessione con Caterina non si è interrotta.
+    \end{itemize}
+\end{enumerate}
+\end{tcolorbox}

@@ -1,0 +1,116 @@
+
+\section*{Schede dei Personaggi}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Caterina}]
+\begin{multicols}{2}
+\textbf{Occupazione}: In cerca di lavoro nel settore marketing.
+
+\textbf{Età}: Circa 25 anni.
+
+\textbf{Descrizione}: Caterina è una giovane donna determinata e sensibile, impegnata nelle questioni ambientali. Nonostante le difficoltà incontrate nel colloquio alla Pet Microrobot, mostra una forte volontà di migliorarsi e di perseguire i suoi obiettivi. È fidanzata, ma nutre dubbi sulla sincerità dei propri sentimenti.
+
+\textbf{Caratteristiche Principali}:
+\begin{itemize}
+    \item Impegnata nelle tematiche ambientali.
+    \item Desiderosa di crescere professionalmente.
+    \item Affronta insicurezze personali e sentimentali.
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Laura}]
+\begin{multicols}{2}
+\textbf{Occupazione}: Studentessa universitaria, appassionata di informatica e tecnologia.
+
+\textbf{Età}: Circa 21 anni.
+
+\textbf{Descrizione}: Laura è un'amica fidata di Caterina, più giovane di lei ma matura e responsabile. Ha una forte passione per l'informatica, iniziata fin da piccola grazie ai vecchi computer di famiglia. Attualmente si prepara per l'esame di crittografia e partecipa a progetti innovativi come il \emph{Noemografo}.
+
+\textbf{Caratteristiche Principali}:
+\begin{itemize}
+    \item Appassionata di tecnologia vintage e moderna.
+    \item Empatica e disponibile verso gli amici.
+    \item Curiosa e sempre in cerca di nuove sfide.
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Eva}]
+\begin{multicols}{2}
+\textbf{Occupazione}: Responsabile delle risorse umane presso Pet Microrobot.
+
+\textbf{Età}: Circa 35 anni.
+
+\textbf{Descrizione}: Eva è una figura autoritaria e fredda. Durante il colloquio con Caterina, si mostra scettica e sembra avere secondi fini. Non condivide le preoccupazioni ambientali di Caterina e sembra più interessata all'immagine dell'azienda che alla sostanza delle sue politiche.
+
+\textbf{Caratteristiche Principali}:
+\begin{itemize}
+    \item Autoritaria e manipolatrice.
+    \item Prioritizza l'immagine aziendale rispetto alla sostenibilità reale.
+    \item Misteriosa e potenzialmente antagonista.
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Professor Shor}]
+\begin{multicols}{2}
+\textbf{Occupazione}: Professore universitario di crittografia.
+
+\textbf{Età}: Circa 50 anni.
+
+\textbf{Descrizione}: Il professor Shor è un accademico severo ma giusto. Durante l'esame con Laura, dimostra professionalità e offre feedback costruttivo. Rappresenta una figura autorevole nel campo della crittografia.
+
+\textbf{Caratteristiche Principali}:
+\begin{itemize}
+    \item Esigente ma equo.
+    \item Esperto in crittografia.
+    \item Incoraggia gli studenti a dare il meglio.
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Rocky}]
+\begin{multicols}{2}
+\textbf{Occupazione}: Cane domestico di Laura.
+
+\textbf{Età}: 3 anni.
+
+\textbf{Descrizione}: Rocky è il fedele cane di Laura. Energico e affettuoso, rappresenta un elemento di gioia e spensieratezza nella vita di Laura. Ama giocare e fare passeggiate.
+
+\textbf{Caratteristiche Principali}:
+\begin{itemize}
+    \item Energico e giocoso.
+    \item Legato profondamente a Laura.
+    \item Porta leggerezza nelle scene quotidiane.
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=\textbf{Ising}]
+\begin{multicols}{2}
+\textbf{Occupazione}: Tecnico nel magazzino Amazon.
+
+\textbf{Età}: Circa 30 anni.
+
+\textbf{Descrizione}: Ising è un tecnico che lavora nelle aree riservate del magazzino Amazon. Incontra Laura quando lei, per caso, si avvicina a una zona ad accesso limitato. Appare professionale e mantiene un certo mistero intorno alle operazioni speciali del magazzino.
+
+\textbf{Caratteristiche Principali}:
+\begin{itemize}
+    \item Professionale e riservato.
+    \item Lavora in settori speciali e segreti.
+    \item Potenziale fonte di informazioni su trame nascoste.
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+
