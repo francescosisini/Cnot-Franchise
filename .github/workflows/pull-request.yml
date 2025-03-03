@@ -1,0 +1,23 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-temporary-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Check for temporary files
+        run: |
+          if git ls-files '*~' | grep -q '~'; then
+            echo "Temporary files detected:"
+            git ls-files '*~'
+            exit 1
+          else
+            echo "No temporary files found."
+          fi
