@@ -41,10 +41,7 @@ jobs:
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
+          root_file: "manuscript/latex/main.tex"
           latexmk_use_lualatex: false
-          cached_install: true
-
-      - name: Compile LaTeX document
-        run: |
-          cd manuscript/latex
-          latexmk -pdf main.tex
+          compiler: latexmk
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
