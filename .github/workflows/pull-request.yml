@@ -31,3 +31,20 @@ jobs:
           else
             echo "No temporary files found."
           fi
+
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Set up LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          latexmk_use_lualatex: false
+          cached_install: true
+
+      - name: Compile LaTeX document
+        run: |
+          cd manuscript/latex
+          latexmk -pdf main.tex
