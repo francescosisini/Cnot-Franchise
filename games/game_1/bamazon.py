@@ -1,0 +1,156 @@
+import pygame
+import sys
+import random
+import math
+
+# Costanti del gioco
+WIDTH, HEIGHT = 800, 600
+TILE_SIZE = 40
+ROWS, COLS = HEIGHT // TILE_SIZE, WIDTH // TILE_SIZE
+FPS = 30
+ENEMY_MOVE_DELAY = 10  # Ritardo nel movimento dei magazzinieri
+MOBILE_WALL_CHANCE = 0.2  # Probabilità che un magazziniere sposti un muro
+
+# Colori
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+BLUE = (0, 0, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+
+# Inizializzazione di pygame
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Bamazon Maze – Fuga dal labirinto del colosso digitale")
+clock = pygame.time.Clock()
+
+# Generazione del labirinto con percorsi multipli e percorso garantito
+def generate_maze():
+    maze = [[1 for _ in range(COLS)] for _ in range(ROWS)]
+    
+    def carve_path(x, y):
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        random.shuffle(directions)
+        
+        for dx, dy in directions:
+            nx, ny = x + dx * 2, y + dy * 2
+            if 0 <= nx < ROWS and 0 <= ny < COLS and maze[nx][ny] == 1:
+                maze[x + dx][y + dy] = 0
+                maze[nx][ny] = 0
+                carve_path(nx, ny)
+    
+    maze[0][0] = 0
+    carve_path(0, 0)
+    maze[ROWS-1][COLS-1] = 0
+    
+    # Aggiunta di percorsi aggiuntivi
+    for _ in range(ROWS * COLS // 6):  # Percentuale di strade extra
+        rx, ry = random.randint(1, ROWS-2), random.randint(1, COLS-2)
+        maze[rx][ry] = 0
+    
+    return maze
+
+maze = generate_maze()
+
+# Giocatore
+player_pos = [0, 0]
+interacted_with_enemy = False
+
+# Nemici (magazzinieri)
+num_enemies = 3
+enemies = []
+while len(enemies) < num_enemies:
+    ex, ey = random.randint(0, ROWS-1), random.randint(0, COLS-1)
+    if maze[ex][ey] == 0 and [ex, ey] != [0, 0]:
+        enemies.append([ex, ey])
+
+enemy_move_counter = 0
+
+# Movimento del giocatore
+def move_player(dx, dy):
+    global interacted_with_enemy
+    new_x = player_pos[0] + dx
+    new_y = player_pos[1] + dy
+    if 0 <= new_x < ROWS and 0 <= new_y < COLS and maze[new_x][new_y] == 0:
+        player_pos[0] = new_x
+        player_pos[1] = new_y
+    
+    # Controllo interazione con magazzinieri
+    for enemy in enemies:
+        if player_pos == enemy:
+            interacted_with_enemy = True
+            print("Hai ottenuto informazioni dal magazziniere!")
+
+# Movimento dei nemici
+def move_enemies():
+    global enemy_move_counter
+    enemy_move_counter += 1
+    if enemy_move_counter % ENEMY_MOVE_DELAY == 0:  # Rallenta il movimento
+        for enemy in enemies:
+            directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+            random.shuffle(directions)
+            for dx, dy in directions:
+                new_x, new_y = enemy[0] + dx, enemy[1] + dy
+                if 0 <= new_x < ROWS and 0 <= new_y < COLS and maze[new_x][new_y] == 0:
+                    enemy[0] = new_x
+                    enemy[1] = new_y
+                    
+                    # Possibilità di spostare un muro
+                    if random.random() < MOBILE_WALL_CHANCE:
+                        move_wall()
+                    break
+
+# Funzione per spostare un muro nel labirinto
+def move_wall():
+    wall_positions = [(r, c) for r in range(ROWS) for c in range(COLS) if maze[r][c] == 1]
+    empty_positions = [(r, c) for r in range(ROWS) for c in range(COLS) if maze[r][c] == 0]
+    if wall_positions and empty_positions:
+        old_wall = random.choice(wall_positions)
+        new_wall = random.choice(empty_positions)
+        maze[old_wall[0]][old_wall[1]] = 0
+        maze[new_wall[0]][new_wall[1]] = 1
+
+# Loop principale
+game_over = False
+while not game_over:
+    screen.fill(WHITE)
+    
+    # Eventi
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_w:
+                move_player(-1, 0)
+            elif event.key == pygame.K_s:
+                move_player(1, 0)
+            elif event.key == pygame.K_a:
+                move_player(0, -1)
+            elif event.key == pygame.K_d:
+                move_player(0, 1)
+    
+    move_enemies()
+    
+    # Disegna il labirinto
+    for row in range(ROWS):
+        for col in range(COLS):
+            color = WHITE if maze[row][col] == 0 else BLACK
+            pygame.draw.rect(screen, color, (col * TILE_SIZE, row * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+    
+    # Disegna il giocatore
+    pygame.draw.rect(screen, BLUE, (player_pos[1] * TILE_SIZE, player_pos[0] * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+    
+    # Disegna i nemici
+    for enemy in enemies:
+        pygame.draw.rect(screen, RED, (enemy[1] * TILE_SIZE, enemy[0] * TILE_SIZE, TILE_SIZE, TILE_SIZE))
+    
+    # Controllo vittoria
+    if interacted_with_enemy:
+        print("Hai vinto! Hai ottenuto le informazioni necessarie!")
+        game_over = True
+    
+    pygame.display.flip()
+    clock.tick(FPS)
+
+pygame.quit()
