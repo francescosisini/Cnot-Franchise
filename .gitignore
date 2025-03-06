@@ -20,3 +20,10 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Latex temp files
+manuscript/**/*.aux
+manuscript/**/*.log
+manuscript/**/*.toc
+manuscript/**/*.out
+manuscript/**/*.fls
+manuscript/**/*.fdb_latexmk

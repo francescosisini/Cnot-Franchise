@@ -33,7 +33,8 @@ jobs:
           fi
 
   build-pdf:
-    runs-on: ubuntu-latest
+    container:
+      image: blang/latex:ctanfull
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -45,3 +46,14 @@ jobs:
           latexmk_use_lualatex: false
           compiler: latexmk
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Rename PDF
+        run: |
+          mv manuscript/latex/main.pdf manuscript/latex/Cnot.pdf
+        
+      - name: Upload PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: compiled-pdf
+          path: |
+            manuscript/latex/*.pdf
