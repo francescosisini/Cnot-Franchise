@@ -66,7 +66,7 @@ jobs:
           mv manuscript/latex/main-book.pdf manuscript/latex/Cnot_Fascicolato.pdf
         
       - name: Upload PDF
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: compiled-pdf
           path: |
