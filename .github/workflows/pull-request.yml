@@ -45,20 +45,19 @@ jobs:
           DEBIAN_FRONTEND=noninteractive sudo apt-get install --reinstall -y tzdata
 
       - name: First build LaTeX
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: "manuscript/latex/main.tex"
-          latexmk_use_lualatex: false
-          compiler: latexmk
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+        run: |
+          cd manuscript/latex/
+          latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
 
       - name: Second build LaTeX for table of contents
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: "manuscript/latex/main.tex"
-          latexmk_use_lualatex: false
-          compiler: latexmk
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+        run: |
+          cd manuscript/latex/
+          latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
+
+      - name: Create book version
+        run: |
+          cd manuscript/latex/
+          pdfbook2 main.pdf
 
       - name: Rename PDF
         run: |
