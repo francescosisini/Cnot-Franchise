@@ -27,3 +27,4 @@ manuscript/**/*.toc
 manuscript/**/*.out
 manuscript/**/*.fls
 manuscript/**/*.fdb_latexmk
+manuscript/**/*.pdf

@@ -34,22 +34,39 @@ jobs:
 
   build-pdf:
     runs-on: ubuntu-latest
-    container:
-      image: blang/latex:ctanfull
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
 
-      - name: Compile LaTeX document
-        run: latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
-        working-directory: manuscript/latex
+      - name: Install Italian language package
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils
+          DEBIAN_FRONTEND=noninteractive sudo apt-get install --reinstall -y tzdata
+
+      - name: First build LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "manuscript/latex/main.tex"
+          latexmk_use_lualatex: false
+          compiler: latexmk
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Second build LaTeX for table of contents
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "manuscript/latex/main.tex"
+          latexmk_use_lualatex: false
+          compiler: latexmk
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
 
       - name: Rename PDF
         run: |
           mv manuscript/latex/main.pdf manuscript/latex/Cnot.pdf
+          mv manuscript/latex/main-book.pdf manuscript/latex/Cnot_Fascicolato.pdf
         
       - name: Upload PDF
-        uses: actions/download-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: compiled-pdf
           path: |
