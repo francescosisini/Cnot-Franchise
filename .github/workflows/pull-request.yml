@@ -40,13 +40,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
 
-      - name: Set up LaTeX
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: "manuscript/latex/main.tex"
-          latexmk_use_lualatex: false
-          compiler: latexmk
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Compile LaTeX document
+        run: latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
+        working-directory: manuscript/latex
 
       - name: Rename PDF
         run: |
