@@ -41,7 +41,7 @@ jobs:
       - name: Install Italian language package
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils
+          sudo apt-get install -y latexmk texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils
           DEBIAN_FRONTEND=noninteractive sudo apt-get install --reinstall -y tzdata
 
       - name: First build LaTeX
