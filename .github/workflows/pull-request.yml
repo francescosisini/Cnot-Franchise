@@ -33,6 +33,7 @@ jobs:
           fi
 
   build-pdf:
+    runs-on: ubuntu-latest
     container:
       image: blang/latex:ctanfull
     steps:
