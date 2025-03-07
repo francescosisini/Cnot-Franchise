@@ -4,6 +4,11 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: write
+  packages: write
+  actions: write
+
 jobs:
   build-book:
     runs-on: ubuntu-latest
