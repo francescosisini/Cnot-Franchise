@@ -43,32 +43,10 @@ jobs:
           mv main.pdf Cnot.pdf
           mv main-book.pdf Cnot_Fascicolato.pdf
 
-      - name: Upload release asset: Cnot.pdf
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Release
+        uses: softprops/action-gh-release@v2
         with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: manuscript/latex/Cnot.pdf
-          asset_name: Cnot.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload release asset: Cnot_Fascicolato.pdf
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: manuscript/latex/Cnot_Fascicolato.pdf
-          asset_name: Cnot_Fascicolato.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload release asset: Cnot.epub
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: manuscript/latex/Cnot.epub
-          asset_name: Cnot.epub
-          asset_content_type: application/epub+zip
+          files: |
+            manuscript/latex/Cnot.pdf
+            manuscript/latex/Cnot_Fascicolato.pdf
+            manuscript/latex/Cnot.epub
