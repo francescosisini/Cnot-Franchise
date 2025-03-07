@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y latexmk texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils
+          sudo apt-get install -y latexmk texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils pandoc
           DEBIAN_FRONTEND=noninteractive sudo apt-get install --reinstall -y tzdata
 
       - name: First build LaTeX
@@ -31,6 +31,11 @@ jobs:
         run: |
           cd manuscript/latex
           pdfbook2 main.pdf
+
+      - name: Create book version
+        run: |
+          cd manuscript/latex
+          pandoc --lua-filter=fixmath.lua --katex main.tex -o Cnot.epub
 
       - name: Rename PDFs
         run: |
@@ -57,3 +62,13 @@ jobs:
           asset_path: manuscript/latex/Cnot_Fascicolato.pdf
           asset_name: Cnot_Fascicolato.pdf
           asset_content_type: application/pdf
+
+      - name: Upload release asset: Cnot.epub
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: manuscript/latex/Cnot.epub
+          asset_name: Cnot.epub
+          asset_content_type: application/epub+zip

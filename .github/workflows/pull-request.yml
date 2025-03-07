@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y latexmk texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils
+          sudo apt-get install -y latexmk texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils pandoc
           DEBIAN_FRONTEND=noninteractive sudo apt-get install --reinstall -y tzdata
 
       - name: First build LaTeX
@@ -59,6 +59,11 @@ jobs:
           cd manuscript/latex
           pdfbook2 main.pdf
 
+      - name: Create book version
+        run: |
+          cd manuscript/latex
+          pandoc --lua-filter=fixmath.lua --katex main.tex -o Cnot.epub
+
       - name: Rename PDFs
         run: |
           cd manuscript/latex
@@ -71,3 +76,4 @@ jobs:
           name: compiled-pdf
           path: |
             manuscript/latex/*.pdf
+            manuscript/latex/*.epub

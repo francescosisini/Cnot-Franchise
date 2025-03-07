@@ -28,4 +28,7 @@ manuscript/**/*.out
 manuscript/**/*.fls
 manuscript/**/*.fdb_latexmk
 manuscript/**/*.pdf
+manuscript/**/*.epub
+manuscript/**/*.epubls
+# Ignore backup files
 **/*~
