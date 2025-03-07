@@ -1,0 +1,52 @@
+name: Release PDF Build
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-book:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-lang-italian texlive-latex-extra texlive-fonts-extra texlive-extra-utils pandoc
+          DEBIAN_FRONTEND=noninteractive sudo apt-get install --reinstall -y tzdata
+
+      - name: First build LaTeX
+        run: |
+          cd manuscript/latex
+          latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
+
+      - name: Second build LaTeX for table of contents
+        run: |
+          cd manuscript/latex
+          latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
+
+      - name: Create book version
+        run: |
+          cd manuscript/latex
+          pdfbook2 main.pdf
+
+      - name: Create epub version
+        run: |
+          cd manuscript/latex
+          pandoc --lua-filter=fixmath.lua --katex main.tex -o Cnot.epub
+
+      - name: Rename PDFs
+        run: |
+          cd manuscript/latex
+          mv main.pdf Cnot.pdf
+          mv main-book.pdf Cnot_Fascicolato.pdf
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            manuscript/latex/Cnot.pdf
+            manuscript/latex/Cnot_Fascicolato.pdf
+            manuscript/latex/Cnot.epub
