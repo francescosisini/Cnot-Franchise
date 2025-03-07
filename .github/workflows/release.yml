@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  build-pdf:
+  build-book:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -32,7 +32,7 @@ jobs:
           cd manuscript/latex
           pdfbook2 main.pdf
 
-      - name: Create book version
+      - name: Create epub version
         run: |
           cd manuscript/latex
           pandoc --lua-filter=fixmath.lua --katex main.tex -o Cnot.epub

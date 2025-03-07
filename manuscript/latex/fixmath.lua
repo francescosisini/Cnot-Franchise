@@ -8,7 +8,7 @@ function Math(el)
   end)
   s, n2 = s:gsub("\\not\\equiv", "\\neq")
   if changed or n2 > 0 then
-    return pandoc.Math(el.t, s)
+    return pandoc.Math(el.mathtype or "InlineMath", s)
   else
     return el
   end
@@ -53,3 +53,11 @@ function RawInline(el)
     return el
   end
 end
+
+return {
+  {
+      Math = Math,
+      RawBlock = RawBlock,
+      RawInline = RawInline
+  }
+}
