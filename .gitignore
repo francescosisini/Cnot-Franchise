@@ -32,3 +32,4 @@ manuscript/**/*.epub
 manuscript/**/*.epubls
 # Ignore backup files
 **/*~
+**/*.pyc
