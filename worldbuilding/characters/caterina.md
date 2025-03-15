@@ -88,4 +88,3 @@
 
 - **⚠️ Prudenza**: Alta  
   Riflette molto prima di agire, a volte fino a paralizzarsi nelle decisioni.
-
