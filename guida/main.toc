@@ -1,0 +1,24 @@
+\contentsline {chapter}{\numberline {1}Introduzione a *Cnot*}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Cos'è *Cnot*?}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Come leggere questo libro}{7}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Concetti chiave}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}La computazione quantistica}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Entanglement: quando due particelle si parlano}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Il ruolo dell'informazione}{9}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Guida ai capitoli di *Cnot*}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Capitolo 1: Il labirinto digitale}{11}{section.3.1}%
+\contentsline {chapter}{\numberline {4}I Fondamenti di Informatica e Calcolo Quantistico}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Gli Algoritmi}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Il Calcolo Modulare e la Fattorizzazione}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Il Calcolo Quantistico e l'Algoritmo di Shor}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Differenze tra Calcolo Classico e Quantistico}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Vecchie Tecnologie e Nuovi Concetti}{15}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Capitolo 2: L'inganno quantistico}{15}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Capitolo 3: La prigione del supervisore}{15}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Capitolo 4: L'interrogatorio quantistico}{15}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Capitolo 5: La trappola per ioni}{15}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Capitolo 6: Il drone ribelle}{15}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Capitolo 7: Il salto di Hadamard}{15}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Capitolo 8: L'entanglement in azione}{15}{section.4.12}%
+\contentsline {section}{\numberline {4.13}Capitolo 9: La sfida RSA}{15}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Capitolo 10: Il ritorno quantistico}{15}{section.4.14}%
