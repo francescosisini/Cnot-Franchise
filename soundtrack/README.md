@@ -8,7 +8,7 @@ Con il progredire della narrazione, le tonalità diventano più strutturate e in
 Abbiamo realizzato una copertina esclusiva per l'audiocassetta della soundtrack di **Cnot**, un omaggio tangibile a un'epoca in cui il suono aveva un peso e una presenza fisica, in contrasto con la società odierna dominata dallo streaming. Questa copertina, ispirata all'estetica futuristica di *TRON*, fonde elementi digitali e neon con tocchi d'arte contemporanea, evocando un'atmosfera post cyberpunk che riflette il nostro progetto.
 
 In un mondo in cui la musica viene consumata prevalentemente attraverso piattaforme digitali e lo streaming, l'audiocassetta rappresenta un ritorno alla materialità del suono. Essa non è solo un formato, ma un simbolo di autenticità e di connessione emotiva: il gesto di inserire la cassetta, l'attesa per l'inizio del playback, la percezione del suono che esce da un dispositivo vintage, tutto ciò contribuisce a un'esperienza sensoriale unica e irripetibile. La nostra copertina, quindi, non è soltanto un supporto visivo, ma un vero e proprio manifesto culturale che celebra il valore della fisicità e del rituale, contrapponendosi alla fuggevolezza della musica in streaming e ricordandoci che, a volte, il formato analogico possiede una magia che il digitale non riesce a replicare.
-![Copertina Audiocassetta Soundtrack di Cnot](copertina_musicassetta.png)
+![Copertina Audiocassetta Soundtrack di Cnot](./copertina_musicassetta.png)
 
 
 ### Libertà di Contribuire e Creare
