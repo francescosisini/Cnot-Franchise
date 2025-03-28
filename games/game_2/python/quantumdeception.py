@@ -591,13 +591,25 @@ def show_intro():
     prompt_rect = prompt_text.get_rect(center=(WIDTH//2, HEIGHT//2+150))
     screen.blit(prompt_text, prompt_rect)
     pygame.display.flip()
+
     waiting = True
     while waiting:
         for event in pygame.event.get():
-            if event.type==pygame.QUIT:
+            if event.type == pygame.QUIT:
                 pygame.quit(); sys.exit()
-            if event.type==pygame.KEYDOWN:
+            elif event.type == pygame.KEYDOWN:
                 waiting = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                waiting = False
+            elif event.type == pygame.FINGERDOWN:
+                waiting = False
+
+        pygame.display.flip()
+        clock.tick(FPS)
+
+    
+
+                        
 
 def show_explanation():
     exp_font = pygame.font.SysFont(None, 48)
@@ -629,6 +641,8 @@ def show_explanation():
             if event.type==pygame.QUIT:
                 pygame.quit(); sys.exit()
             if event.type==pygame.KEYDOWN:
+                waiting = False
+            if event.type == pygame.MOUSEBUTTONDOWN:  # Aggiungi questo controllo
                 waiting = False
 
 # Schermate introduttive
@@ -699,38 +713,70 @@ def draw_dialogue_window(surface, current_node):
             surface.blit(cat_line, (panel_x + 40, y_offset))
             y_offset += small_font.get_linesize() + 10
 
+
+# Pulsanti touch (fissi a destra dello schermo)
+button_size = 60
+button_padding = 10
+button_start_x = WIDTH - button_size - 30
+button_start_y = 150
+touch_buttons = []
+for i in range(5):
+    rect = pygame.Rect(button_start_x, button_start_y + i*(button_size + button_padding), button_size, button_size)
+    touch_buttons.append((rect, i))
+
 # Loop principale del gioco
 while True:
     dt = clock.tick(FPS) / 1000.0
     blink_factor = 0.75 + 0.25 * math.sin(pygame.time.get_ticks()*0.005)
-    
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit(); sys.exit()
+
         if not game_over:
             if event.type == pygame.KEYDOWN:
-                if event.key in arrow_mapping:
-                    index = arrow_mapping[event.key]
-                    if len(current_node.neighbors) > index:
-                        next_node = current_node.neighbors[index]
-                        if next_node == oculus_node:
-                            update_profile_fsm_neutral("X")
+                index = arrow_mapping.get(event.key, None)
+                if index is not None and len(current_node.neighbors) > index:
+                    next_node = current_node.neighbors[index]
+                    if next_node == oculus_node:
+                        update_profile_fsm_neutral("X")
+                    else:
+                        update_profile_fsm(next_node.neuron_type)
+                    current_node = next_node
+                    if node_sound is not None:
+                        node_sound.play()
+                    if current_node == oculus_node:
+                        if check_profile():
+                            game_over = True
+                            victory = True
                         else:
-                            update_profile_fsm(next_node.neuron_type)
-                        current_node = next_node
-                        if node_sound is not None:
-                            node_sound.play()
-                        if current_node == oculus_node:
-                            if check_profile():
-                                game_over = True
-                                victory = True
+                            game_over = True
+                            victory = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                mx, my = pygame.mouse.get_pos()
+                for rect, idx in touch_buttons:
+                    if rect.collidepoint(mx, my):
+                        if len(current_node.neighbors) > idx:
+                            next_node = current_node.neighbors[idx]
+                            if next_node == oculus_node:
+                                update_profile_fsm_neutral("X")
                             else:
-                                game_over = True
-                                victory = False
+                                update_profile_fsm(next_node.neuron_type)
+                            current_node = next_node
+                            if node_sound is not None:
+                                node_sound.play()
+                            if current_node == oculus_node:
+                                if check_profile():
+                                    game_over = True
+                                    victory = True
+                                else:
+                                    game_over = True
+                                    victory = False
+
         elif game_over:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_r:
                 reset_game()
-    
+
     seconds_elapsed = (pygame.time.get_ticks()-start_ticks)/1000
     time_remaining = game_duration - seconds_elapsed
     if time_remaining <= 0 and not game_over:
@@ -739,38 +785,40 @@ while True:
 
     screen.fill(BLACK)
     draw_edges(screen, blink_factor)
-    
+
     for key, idx in arrow_mapping.items():
         if idx < len(current_node.neighbors):
             neighbor = current_node.neighbors[idx]
             draw_curved_edge(screen, (current_node.x, current_node.y), (neighbor.x, neighbor.y),
                              blink_factor, color_override=arrow_colors[key])
-    
+
     for node in all_nodes:
         is_current = (node == current_node)
         is_goal = (node == oculus_node)
         node.draw(screen, is_current, is_goal)
-    
+
     draw_profile(screen)
-    
+
     timer_text = pygame.font.SysFont(None, 28).render(f"Tempo: {int(time_remaining)} s", True, WHITE)
     screen.blit(timer_text, (20, 20))
-    
-    # Disegna la finestra di dialogo (con il rettangolo di sfondo commentato come nel tuo codice)
+
     draw_dialogue_window(screen, current_node)
 
-    if game_over:
-       msg = "VITTORIA!" if victory else "GAME OVER: Profilo errato! Premi R per riprovare"
-       text = pygame.font.SysFont(None, 48).render(msg, True, (255, 0, 0))
-       text_rect = text.get_rect(center=(WIDTH//2, 50))
-       screen.blit(text, text_rect)
-       pygame.display.flip()
-       # Attesa di 3 secondi
-       pygame.time.wait(3000)
-       # Mostra la sequenza di immagini "outro"
-       show_intro_images(mode="outro")
-       # Ricomincia il gioco: resetta le variabili e riparte il loop principale
-       reset_game()
+    for i, (rect, idx) in enumerate(touch_buttons):
+        color = list(arrow_colors.values())[idx]
+        pygame.draw.rect(screen, color, rect)
+        label = pygame.font.SysFont(None, 36).render(str(idx+1), True, BLACK)
+        label_rect = label.get_rect(center=rect.center)
+        screen.blit(label, label_rect)
 
-    
+    if game_over:
+        msg = "VITTORIA!" if victory else "GAME OVER: Profilo errato! Premi R per riprovare"
+        text = pygame.font.SysFont(None, 48).render(msg, True, (255, 0, 0))
+        text_rect = text.get_rect(center=(WIDTH//2, 50))
+        screen.blit(text, text_rect)
+        pygame.display.flip()
+        pygame.time.wait(3000)
+        show_intro_images(mode="outro")
+        reset_game()
+
     pygame.display.flip()
