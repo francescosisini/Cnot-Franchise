@@ -1,6 +1,6 @@
 # 🌟 NEO PI R – Esplora Te Stesso e le Tue Decisioni 🌟
 
-a storia di Cnot come sai non è completamente inventata, nel senso che sebbene la situazione iniziale sia frutto di fantasia, in particolare ispirata al film TRON, le scelte dei personaggi hanno seguito un algoritmo che utilizza i loro profili di personalità
+La storia di Cnot come sai non è completamente inventata, nel senso che sebbene la situazione iniziale sia frutto di fantasia, in particolare ispirata al film TRON, le scelte dei personaggi hanno seguito un algoritmo che utilizza i loro profili di personalità
 
 
 In questi progetto implementiamo un algoritmo decisionale quasi uguale a quello usato per Cnot e che utilizza un albero di decisioni basato sul tuo profilo NEO-PI-R, misurato su cinque dimensioni fondamentali:
@@ -23,7 +23,7 @@ Abbiamo pensato che sarbbe stato interessante condividere una versiona dell'algo
 
 ## 🚀 Cosa trovi in questo progetto?
 
-- **Test NEO PI R interattivo** (`test_neo.py`): rispondi a 30 domande semplici per generare il tuo profilo personalizzato.
+- **Test NEO PI R interattivo** (`test_NEOPIR.py`): rispondi a 30 domande semplici per generare il tuo profilo personalizzato.
 - **5 Situazioni intriganti** (`situazione_1.json` fino a `situazione_5.json`): scenari realistici per vedere come reagiresti in base al tuo profilo.
 - **Simulatore decisionale** (`simulatore_situazioni.py`): uno script coinvolgente che utilizza il tuo profilo per mostrarti automaticamente la scelta migliore in ogni situazione.
 
