@@ -1,78 +1,97 @@
-🌟 Conosci Te Stesso: Decisioni guidate dalla Personalità 🌟
+# 🌟 NEO PI R – Esplora Te Stesso e le Tue Decisioni 🌟
 
-Ti sei mai chiesto come mai alcune persone amino la folla, mentre altre preferiscono la tranquillità di una serata in casa con un buon libro? Perché certe situazioni che ti sembrano invitanti per i tuoi amici ti mettono invece ansia o disagio?
+a storia di Cnot come sai non è completamente inventata, nel senso che sebbene la situazione iniziale sia frutto di fantasia, in particolare ispirata al film TRON, le scelte dei personaggi hanno seguito un algoritmo che utilizza i loro profili di personalità
 
-La risposta è nella nostra personalità, e più precisamente nel nostro profilo psicologico. Questo progetto ti permetterà di esplorare come la tua personalità influenza le tue scelte e decisioni sociali attraverso l'utilizzo del modello NEO-PI-R, uno dei più affidabili strumenti psicometrici disponibili.
-
-🚀 Come funziona?
-
-La storia di Cnot come sai non è completamente inventata, nel senso che sebbene la situazione iniziale sia frutto di fantasia, in particolare ispirata al film TRON, le scelte dei 
-personaggi hanno seguito un algoritmo che utilizza i loro profili di personalità
 
 In questi progetto implementiamo un algoritmo decisionale quasi uguale a quello usato per Cnot e che utilizza un albero di decisioni basato sul tuo profilo NEO-PI-R, misurato su cinque dimensioni fondamentali:
 
-Nevroticismo (come gestisci ansia e stress)
+- Nevroticismo (come gestisci ansia e stress)
 
-Estroversione (il tuo modo di relazionarti agli altri)
+- Estroversione (il tuo modo di relazionarti agli altri)
 
-Apertura all'esperienza (il tuo interesse per il nuovo e l'ignoto)
+- Apertura all'esperienza (il tuo interesse per il nuovo e l'ignoto)
 
-Amicalità (la tua capacità di collaborare e fidarti)
+- Amicalità (la tua capacità di collaborare e fidarti)
 
-Coscienziosità (il tuo livello di organizzazione e autodisciplina)
+- Coscienziosità (il tuo livello di organizzazione e autodisciplina)
 
 Ognuna di queste dimensioni è divisa in 6 sfaccettature precise (facets), per un totale di 30 aspetti dettagliati che definiscono chi sei davvero.
 
-🌳 Scenario di esempio: "Invito alla Festa"
+---
 
-Abbiamo costruito un albero decisionale intrigante che simula una situazione sociale comune:
+Abbiamo pensato che sarbbe stato interessante condividere una versiona dell'algoritmo analoga a quella che abbiamo usato e... eccoci qui!
 
-Ricevi un invito ad una festa. Cosa decidi di fare?
+## 🚀 Cosa trovi in questo progetto?
 
-Le tue possibili scelte:
+- **Test NEO PI R interattivo** (`test_neo.py`): rispondi a 30 domande semplici per generare il tuo profilo personalizzato.
+- **5 Situazioni intriganti** (`situazione_1.json` fino a `situazione_5.json`): scenari realistici per vedere come reagiresti in base al tuo profilo.
+- **Simulatore decisionale** (`simulatore_situazioni.py`): uno script coinvolgente che utilizza il tuo profilo per mostrarti automaticamente la scelta migliore in ogni situazione.
 
-🥳 Accettare l'invito: immergerti nella socialità.
+---
 
-Incontrare nuovi gruppi o restare vicino agli amici fidati?
+## 📌 Come utilizzare questo progetto (istruzioni dettagliate):
 
-📖 Declinare gentilmente: dedicare tempo a te stesso.
+### 1️⃣ Clona il repository
 
-Serata di lettura o dedicarti a un hobby?
+```bash
+git clone https://github.com/francescosisini/Cnot-Franchise/tree/main/NEO_PI_R
+cd NEO_PI_R
+```
 
-🍽️ Proporre un'alternativa: equilibrio tra socialità e tranquillità.
+### 2️⃣ Installa le librerie necessarie
 
-Cena con pochi amici o film rilassante in compagnia?
+```bash
+pip install reportlab matplotlib
+```
 
-🎭 Scopri come persone diverse fanno scelte diverse:
+### 3️⃣ Genera il tuo profilo psicologico
 
-Abbiamo preparato due profili dettagliati:
+```bash
+python test_NEOPIR.py
+```
+- Rispondi alle domande sulla scala da 1 a 5.
+- Il tuo profilo verrà salvato automaticamente in un file `.json`.
 
-🔥 Persona estroversa: amante dell'adrenalina sociale e dell'interazione.
+### 4️⃣ Esplora le tue decisioni con il simulatore
 
-🍃 Persona introversa: riflessiva, tranquilla e orientata all'intimità.
+```bash
+python simulatore_situazioni.py
+```
+- Inserisci il nome del file `.json` generato al passo precedente.
+- Guarda come il simulatore analizza le situazioni e ti suggerisce la scelta migliore in base al tuo profilo.
 
-Utilizzando questo algoritmo, potrai osservare chiaramente come ciascun profilo conduce automaticamente verso scelte differenti nello stesso scenario!
+### 5️⃣ Situazioni incluse
 
-💡 Perché usarlo?
+- 🥳 **L'INVITO INATTESO**
+- 🎯 **IL PROGETTO DI GRUPPO**
+- 🎒 **IL VIAGGIO IMPROVVISO**
+- 🛡️ **IL CONFLITTO TRA AMICI**
+- 🎤 **LA SFIDA PUBBLICA**
 
-Autoconoscenza: Capire meglio te stesso e ciò che davvero desideri.
+Puoi modificare questi scenari o aggiungerne di nuovi editando i file JSON nella cartella del progetto.
 
-Empatia: Comprendere come gli altri possono percepire situazioni diverse.
+---
 
-Decisioni consapevoli: Prendere scelte più autentiche, allineate alla tua vera personalità.
+## 💡 Perché usare questo progetto?
 
-🛠️ Come iniziare
+- **Autoconsapevolezza**: Comprendi meglio chi sei e cosa davvero desideri.
+- **Decisioni consapevoli**: Scopri quali scelte sono più coerenti con la tua vera personalità.
+- **Empatia e Relazioni**: Comprendi meglio anche le decisioni e comportamenti degli altri.
 
-Clona questo repository.
+---
 
-Scegli o crea un profilo NEO-PI-R in formato JSON.
+## 🛠️ Personalizzazioni avanzate
 
-Usa l'albero decisionale fornito (albero_decisionale_evento_sociale.json).
+- **Generazione Report PDF**: il sistema può generare automaticamente report in PDF del tuo profilo (opzionale, richiede libreria `reportlab`).
+- **Grafici**: Puoi creare grafici radar o a barre del tuo profilo utilizzando `matplotlib` (opzionale).
 
-Esegui lo script:
+---
 
-python script.py profilo_persona.json albero_decisionale_evento_sociale.json
+## 🎨 Personalizza e contribuisci!
 
-Scopri subito quale sarebbe la decisione ideale per te o per qualcun altro!
+Sentiti libero di espandere il progetto con nuovi scenari, migliorare le grafiche testuali, o aggiungere altre funzionalità interessanti. Pull request sono benvenute!
 
-"La vita è fatta di decisioni. Conoscere se stessi è il primo passo per viverla al meglio." 🌟
+---
+
+**✨ "Conoscere se stessi è il primo passo per vivere davvero" ✨**
+
