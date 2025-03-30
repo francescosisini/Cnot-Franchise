@@ -1,0 +1,87 @@
+{
+  "nome": "Invito alla festa",
+  "figli": [
+    {
+      "nome": "Accettare l'invito",
+      "potenziale": {
+        "Nevroticismo_Ansieta": 70,
+        "Estroversione_Gregarieta": 80,
+        "Estroversione_RicercaEccitazione": 85,
+        "Apertura_Azioni": 70,
+        "Amicalita_Collaborazione": 75
+      },
+      "figli": [
+        {
+          "nome": "Socializzare con un nuovo gruppo",
+          "potenziale": {
+            "Estroversione_Gregarieta": 85,
+            "Nevroticismo_Ansieta": 80,
+            "Apertura_Azioni": 75
+          }
+        },
+        {
+          "nome": "Restare vicino agli amici stretti",
+          "potenziale": {
+            "Estroversione_Cordialita": 70,
+            "Amicalita_Fiducia": 80,
+            "Nevroticismo_Ansieta": 50
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Declinare gentilmente",
+      "potenziale": {
+        "Nevroticismo_Ansieta": 30,
+        "Estroversione_Gregarieta": 40,
+        "Coscienziosita_Prudenza": 70,
+        "Amicalita_Sensibilita": 60
+      },
+      "figli": [
+        {
+          "nome": "Trascorrere la serata leggendo a casa",
+          "potenziale": {
+            "Apertura_Idee": 70,
+            "Nevroticismo_Ansieta": 20,
+            "Coscienziosita_Ordine": 80
+          }
+        },
+        {
+          "nome": "Dedicarsi a un hobby personale",
+          "potenziale": {
+            "Apertura_Estetica": 75,
+            "Estroversione_Attivita": 60,
+            "Nevroticismo_Ansieta": 25
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Proporre alternativa tranquilla",
+      "potenziale": {
+        "Nevroticismo_Ansieta": 50,
+        "Estroversione_Cordialita": 65,
+        "Amicalita_Altruismo": 75,
+        "Coscienziosita_Ordine": 60
+      },
+      "figli": [
+        {
+          "nome": "Cena con pochi amici intimi",
+          "potenziale": {
+            "Amicalita_Collaborazione": 75,
+            "Estroversione_Cordialita": 65,
+            "Nevroticismo_Ansieta": 40
+          }
+        },
+        {
+          "nome": "Film con amici a casa",
+          "potenziale": {
+            "Apertura_Fantasia": 70,
+            "Estroversione_Gregarieta": 60,
+            "Nevroticismo_Ansieta": 35
+          }
+        }
+      ]
+    }
+  ]
+}

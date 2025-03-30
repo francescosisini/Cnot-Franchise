@@ -1,0 +1,59 @@
+{
+    "nome": "Decisione iniziale",
+    "figli": [
+        {
+            "nome": "Rimani nascosto",
+            "potenziale": {
+                "Nevroticismo": 70,
+                "Estroversione": 40,
+                "Coscienziosita_Prudenza": 80,
+                "Amicalita_Fiducia": 60
+            },
+            "figli": [
+                {
+                    "nome": "Attendere aiuto",
+                    "potenziale": {
+                        "Nevroticismo_Ansieta": 75,
+                        "Estroversione_Cordialita": 45,
+                        "Coscienziosita_SensoDelDovere": 70
+                    }
+                },
+                {
+                    "nome": "Scappare da solo",
+                    "potenziale": {
+                        "Nevroticismo_Impulsivita": 85,
+                        "Estroversione_Assertivita": 60,
+                        "Coscienziosita_Autodisciplina": 65
+                    }
+                }
+            ]
+        },
+        {
+            "nome": "Affrontare la situazione apertamente",
+            "potenziale": {
+                "Nevroticismo": 60,
+                "Estroversione": 65,
+                "Coscienziosita_Competenza": 75,
+                "Amicalita_Collaborazione": 70
+            },
+            "figli": [
+                {
+                    "nome": "Negoziare",
+                    "potenziale": {
+                        "Nevroticismo_Rabbia": 55,
+                        "Amicalita_Altruismo": 65,
+                        "Estroversione_Assertivita": 70
+                    }
+                },
+                {
+                    "nome": "Combattere",
+                    "potenziale": {
+                        "Nevroticismo_Rabbia": 80,
+                        "Coscienziosita_RicercaSuccesso": 75,
+                        "Estroversione_Attivita": 75
+                    }
+                }
+            ]
+        }
+    ]
+}
