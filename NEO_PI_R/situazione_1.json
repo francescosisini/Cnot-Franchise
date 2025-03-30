@@ -1,0 +1,29 @@
+{
+    "nome": "L'INVITO INATTESO",
+    "figli": [
+        {
+            "nome": "Partecipare con entusiasmo",
+            "potenziale": {
+                "Estroversione_Gregarieta": 80,
+                "Apertura_Azioni": 70,
+                "Nevroticismo_Ansieta": 60
+            }
+        },
+        {
+            "nome": "Declinare gentilmente",
+            "potenziale": {
+                "Nevroticismo_Ansieta": 30,
+                "Coscienziosita_Prudenza": 70,
+                "Amicalita_Sensibilita": 60
+            }
+        },
+        {
+            "nome": "Proporre alternativa tranquilla",
+            "potenziale": {
+                "Amicalita_Altruismo": 70,
+                "Estroversione_Cordialita": 60,
+                "Nevroticismo_Ansieta": 40
+            }
+        }
+    ]
+}
