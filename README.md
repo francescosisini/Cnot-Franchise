@@ -21,6 +21,23 @@ Il documento originale è rilasciato sotto licenza **CC BY-ND 4.0**.
 
 ---
 
+## Cnot Official GPT
+
+Per approfondire la storia, i personaggi e le tematiche di *Cnot*, è disponibile una GPT dedicata, progettata per guidare l’utente nella conoscenza dell’universo narrativo e per facilitare l’utilizzo dei materiali presenti nel repository.
+
+La GPT può essere utilizzata per:
+
+- Conoscere meglio la trama e l'ambientazione del romanzo
+- Approfondire il profilo dei personaggi e le dinamiche del mondo di *Cnot*
+- Orientarsi tra le risorse e le sezioni del progetto su GitHub
+- Chiarire dubbi legati ai contenuti del franchise
+
+Puoi accedere direttamente alla chat ufficiale dal seguente link:
+
+👉 [Cnot Official GPT](https://chatgpt.com/g/g-67e97b62207881918c616766d9ff1061-cnot-official)
+
+---
+
 ## 🎵 **Soundtrack**
 Esplora l'universo sonoro di CNOT con una colonna sonora originale che accompagna i momenti chiave della storia. Ogni traccia riflette un tema specifico e le emozioni che lo accompagnano:
 - **Quantum Pulse**: La tensione e l'urgenza.
