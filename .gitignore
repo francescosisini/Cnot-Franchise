@@ -33,3 +33,5 @@ manuscript/**/*.epubls
 # Ignore backup files
 **/*~
 **/*.pyc
+
+maps/goxel/goxel-0.15.1.AppImage
