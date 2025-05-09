@@ -68,30 +68,29 @@ def generate_wall(start, direction, length, height, color):
 
 # Esempio: generazione pattern con muro verticale
 voxels = []
-# Due porte
-voxels += generate_line((23, 1, 1), (0, 1, 0), 13, "ff0000")
-voxels += generate_line((23, 17, 1), (0, 1, 0), 31, "ff0000")
+#Bagno Femmine
+voxels += generate_line((57, 32, 1), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 2), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 3), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 4), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 5), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 6), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 7), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 8), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 9), (1, 0, 0), 22, "ffffaa")
+voxels += generate_line((57, 32, 10), (1, 0, 0), 22, "ffffaa")
 
-voxels += generate_line((23, 1, 2), (0, 1, 0), 13, "ff0000")
-voxels += generate_line((23, 17, 2), (0, 1, 0), 31, "ff0000")
 
-voxels += generate_line((23, 1, 3), (0, 1, 0), 13, "ff0000")
-voxels += generate_line((23, 17, 3), (0, 1, 0), 31, "ff0000")
-
-voxels += generate_line((23, 1, 4), (0, 1, 0), 13, "ff0000")
-voxels += generate_line((23, 17, 4), (0, 1, 0), 31, "ff0000")
-
-voxels += generate_line((23, 1, 5), (0, 1, 0), 13, "ff0000")
-voxels += generate_line((23, 17, 5), (0, 1, 0), 31, "ff0000")
-
-voxels += generate_line((23, 1, 6), (0, 1, 0), 13, "ff0000")
-voxels += generate_line((23, 17, 6), (0, 1, 0), 31, "ff0000")
-
-voxels += generate_line((23, 1, 7), (0, 1, 0), 47, "ff0000")
-voxels += generate_line((23, 1, 8), (0, 1, 0), 47, "ff0000")
-voxels += generate_line((23, 1, 9), (0, 1, 0), 47, "ff0000")
-voxels += generate_line((23, 1, 10), (0, 1, 0), 47, "ff0000")
-
+voxels += generate_line((64, 33, 1), (0, 1, 0), 12, "ffffaa")
+voxels += generate_line((64, 33, 2), (0, 1, 0), 12, "ffffaa")
+voxels += generate_line((64, 33, 3), (0, 1, 0), 12, "ffffaa")
+voxels += generate_line((64, 33, 4), (0, 1, 0), 12, "ffffaa")
+voxels += generate_line((64, 33, 5), (0, 1, 0), 12, "ffffaa")
+voxels += generate_line((64, 33, 6), (0, 1, 0), 12, "ffffaa")
+voxels += generate_line((64, 33, 7), (0, 1, 0), 15, "ffffaa")
+voxels += generate_line((64, 33, 8), (0, 1, 0), 15, "ffffaa")
+voxels += generate_line((64, 33, 9), (0, 1, 0), 15, "ffffaa")
+voxels += generate_line((64, 33, 10), (0, 1, 0), 15, "ffffaa")
 
 
 
@@ -102,6 +101,6 @@ voxels += generate_line((23, 1, 10), (0, 1, 0), 47, "ff0000")
 #voxels += generate_wall(start=(0, 0, 0), direction=(1, 0, 0), length=100, height=20, color="888888")
 
 # salva il file
-output_file = "piano1_tramezza_9.txt"
+output_file = "piano1_magazzino.txt"
 write_goxel_voxel_file(output_file, voxels)
 print(f"Generati {len(voxels)} voxel (incluso muro) in '{output_file}'")
