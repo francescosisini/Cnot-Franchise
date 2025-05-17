@@ -114,11 +114,14 @@ voxels += generate_rectangle((7,6,3), (1,0,0), (0,-1,0), 3, 2, "202020")
 #power
 voxels += generate_rectangle((2,0,1), (1,0,0), (0,1,0), 3, 1, "000000")
 
+#cartuccia
+voxels += generate_parallelepipede((5,11,3), 7,2,3, "fb8c00")
+
 
 # muro lungo X di lunghezza 100 e altezza 20
 #voxels += generate_wall(start=(0, 0, 0), direction=(1, 0, 0), length=100, height=20, color="888888")
 
 # salva il file
-output_file = "console.txt"
+output_file = "console_cartuccia.txt"
 write_goxel_voxel_file(output_file, voxels)
 print(f"Generati {len(voxels)} voxel (incluso muro) in '{output_file}'")

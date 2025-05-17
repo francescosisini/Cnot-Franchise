@@ -82,25 +82,50 @@ def generate_wall(start, direction, length, height, color):
 # Esempio: generazione pattern con muro verticale
 voxels = []
 
-#piano del tavolo
-voxels += generate_rectangle((0,0,0), (1,0,0), (0,1,0), 300, 90, "00bbff")
+#console
+voxels += generate_parallelepipede((1,1,0), 7,7,1, "c0c0c0")
+voxels += generate_parallelepipede((11,1,0), 7,7,1, "c0c0c0")
+voxels += generate_parallelepipede((8,2,0), 3,6,1, "c0c0c0")
 
+#cornice grigia
+voxels += generate_rectangle((1,1,1), (1,0,0), (0,1,0), 7, 1, "c0c0c0")
+voxels += generate_rectangle((1,1,1), (1,0,0), (0,1,0), 1, 7, "c0c0c0")
+voxels += generate_rectangle((7,1,1), (1,0,0), (0,1,0), 1, 7, "c0c0c0")
+voxels += generate_rectangle((1,7,1), (1,0,0), (0,1,0), 17, 1, "c0c0c0")
 
-#cornice
-voxels += generate_rectangle((2,2,5), (1,0,0), (0,0,1), 296, 10, "00bbff")
-voxels += generate_rectangle((2,87,5), (1,0,0), (0,0,1), 296, 10, "00bbff")
-voxels += generate_rectangle((2,2,5), (0,1,0), (0,0,1), 86, 10, "00bbff")
-voxels += generate_rectangle((297,1,5), (0,1,0), (0,0,1), 86, 10, "00bbff")
+voxels += generate_rectangle((11,1,1), (1,0,0), (0,1,0), 7, 1, "c0c0c0")
+voxels += generate_rectangle((11,1,1), (1,0,0), (0,1,0), 1, 7, "c0c0c0")
+voxels += generate_rectangle((17,1,1), (1,0,0), (0,1,0), 1, 7, "c0c0c0")
+voxels += generate_rectangle((11,7,1), (1,0,0), (0,1,0), 7, 1, "c0c0c0")
 
-#gamb2
-voxels += generate_parallelepipede((3,3,5), 8,8,78, "bb0110")
-voxels += generate_parallelepipede((3,79,5), 8,8,78, "bb0110")
-voxels += generate_parallelepipede((288,3,5), 8,8,78, "bb0110")
-voxels += generate_parallelepipede((288,79,5), 8,8,78, "bb0110")
+voxels += generate_rectangle((7,2,1), (1,0,0), (0,1,0), 5, 2, "c0c0c0")
+voxels += generate_rectangle((7,6,1), (1,0,0), (0,1,0), 5, 2, "c0c0c0")
+
+#interno
+voxels += generate_rectangle((2,2,1), (1,0,0), (0,1,0), 5, 5, "606060")
+voxels += generate_rectangle((12,2,1), (1,0,0), (0,1,0), 5, 5, "606060")
+
+#pad-direzionale (D pad)
+voxels += generate_rectangle((3,4,2), (1,0,0), (0,1,0), 3, 1, "000000")
+voxels += generate_rectangle((4,3,2), (1,0,0), (0,1,0), 1, 3, "000000")
+
+#Start-Select
+voxels += generate_rectangle((8,5,1), (1,0,0), (0,0,1), 1, 2, "000000")
+voxels += generate_rectangle((10,5,1), (1,0,0), (0,0,1), 1, 2, "000000")
+
+#tasti azione
+voxels += generate_rectangle((14,5,2), (1,0,0), (0,0,1), 1, 1, "0000ff")
+voxels += generate_rectangle((13,4,2), (1,0,0), (0,0,1), 1, 1, "ffff00")
+voxels += generate_rectangle((15,4,2), (1,0,0), (0,0,1), 1, 1, "ff0000")
+voxels += generate_rectangle((14,3,2), (1,0,0), (0,0,1), 1, 1, "00ff00")
+
+#porta
+voxels += generate_rectangle((3,8,1), (1,0,0), (0,0,1), 3, 1, "000000")
+
 # muro lungo X di lunghezza 100 e altezza 20
 #voxels += generate_wall(start=(0, 0, 0), direction=(1, 0, 0), length=100, height=20, color="888888")
 
 # salva il file
-output_file = "tavolo.txt"
+output_file = "controlller.txt"
 write_goxel_voxel_file(output_file, voxels)
 print(f"Generati {len(voxels)} voxel (incluso muro) in '{output_file}'")

@@ -82,43 +82,14 @@ def generate_wall(start, direction, length, height, color):
 # Esempio: generazione pattern con muro verticale
 voxels = []
 
-#piano del tavolo
-voxels += generate_parallelepipede((1,1,0), 15,15,3, "c0c0c0")
-
-
-#cornice grigia
-voxels += generate_rectangle((1,1,3), (1,0,0), (0,1,0), 15, 3, "c0c0c0")
-voxels += generate_rectangle((1,1,3), (1,0,0), (0,1,0), 2, 15, "c0c0c0")
-voxels += generate_rectangle((14,1,3), (1,0,0), (0,1,0), 2, 15, "c0c0c0")
-voxels += generate_rectangle((1,15,3), (1,0,0), (0,1,0), 15, 1, "c0c0c0")
-
-#interno
-voxels += generate_rectangle((3,13,3), (1,0,0), (0,1,0), 11, 2, "606060")
-voxels += generate_rectangle((3,11,3), (1,0,0), (0,1,0), 2, 2, "606060")
-voxels += generate_rectangle((12,11,3), (1,0,0), (0,1,0), 2, 2, "606060")
-voxels += generate_rectangle((3,7,3), (1,0,0), (0,1,0), 11, 4, "606060")
-voxels += generate_rectangle((3,5,3), (1,0,0), (0,1,0), 1, 2, "606060")
-voxels += generate_rectangle((6,5,3), (1,0,0), (0,1,0), 1, 2, "606060")
-voxels += generate_rectangle((10,5,3), (1,0,0), (0,1,0), 1, 2, "606060")
-voxels += generate_rectangle((13,5,3), (1,0,0), (0,1,0), 1, 2, "606060")
-voxels += generate_rectangle((3,4,3), (1,0,0), (0,1,0), 11, 1, "606060")
-
-#power
-voxels += generate_rectangle((4,6,3), (1,0,0), (0,0,1), 2, 2, "ff0000")
-#reset
-voxels += generate_rectangle((11,6,3), (1,0,0), (0,0,1), 2, 2, "00bb00")
-#griglia ventilazione
-voxels += generate_rectangle((7,6,3), (1,0,0), (0,-1,0), 3, 2, "202020")
-
-#porta controller
-#power
-voxels += generate_rectangle((2,0,1), (1,0,0), (0,1,0), 3, 1, "000000")
+#cartuccia
+voxels += generate_parallelepipede((5,11,3), 7,2,3, "fb8c00")
 
 
 # muro lungo X di lunghezza 100 e altezza 20
 #voxels += generate_wall(start=(0, 0, 0), direction=(1, 0, 0), length=100, height=20, color="888888")
 
 # salva il file
-output_file = "console.txt"
+output_file = "cartuccia.txt"
 write_goxel_voxel_file(output_file, voxels)
 print(f"Generati {len(voxels)} voxel (incluso muro) in '{output_file}'")
