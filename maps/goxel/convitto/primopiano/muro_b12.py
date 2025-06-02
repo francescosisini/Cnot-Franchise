@@ -70,7 +70,7 @@ def generate_wall(start, direction, length, height, color):
 voxels = []
 #Muro 1
 ##base
-voxels += generate_rectangle((40, 37, 0), (0, 1, 0), (0, 0, 1), 10,10 , "0077aa")
+voxels += generate_rectangle((40, 37, 0), (0, 1, 0), (0, 0, 1), 7,10 , "0077aa")
 
 
 # salva il file
