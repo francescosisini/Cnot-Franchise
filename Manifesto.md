@@ -50,5 +50,114 @@ Rifiutiamo:
 
 Sosteniamo:
 - chiarezza e onestà intellettuale
+- 
+# Dal Modello di Ising al Neurocriticum: un ponte tra fisica statistica e narrativa cognitiva
+
+## Introduzione
+Il modello di Ising, originariamente concepito per descrivere fenomeni magnetici, si rivela un potente strumento concettuale per comprendere fenomeni cognitivi complessi, come quelli descritti nel genere **Neurocriticum** all'interno del progetto *Cnot*.
+
+In questo documento, tracciamo il percorso che collega:
+- la fisica dei **sistemi critici**,
+- la **dinamica delle reti neurali** (Hopfield),
+- e la **narrazione emergente** nel contesto quantumanista.
+
+---
+
+## 1. Il Modello di Ising (base)
+Il modello considera un insieme di **spin binari** 
+```math
+s_i \in \{-1, +1\}
+ '''
+, interagenti tra loro:
+
+```math
+ E = -J \sum_{\langle i,j \rangle} s_i s_j - h \sum_i s_i
+```
+
+Dove:
+- \( J \): forza di interazione tra spin
+- \( h \): campo esterno (bias)
+- \( T \): temperatura (disordine)
+
+### Configurazioni possibili (caso 2-spin):
+- (-1, -1): \( E = -J + 2h \)
+- (-1,  1) e (1, -1): \( E = +J \)
+- (1, 1): \( E = -J - 2h \)
+
+---
+
+## 2. Transizioni di fase e comportamento critico
+A **bassa temperatura**:
+- gli spin si allineano (stato ordinato)
+
+A **temperatura critica**:
+- piccole variazioni generano grandi cambiamenti (transizione di fase)
+
+A **temperatura alta**:
+- disordine, spin casuali (assenza di coerenza)
+
+### Temperatura critica (in 2D, h=0):
+```math 
+T_c = \frac{2J}{\ln(1 + \sqrt{2})}
+```
+
+---
+
+## 3. Magnetizzazione: misura dell'ordine
+La **magnetizzazione media** misura quanto il sistema è allineato:
+
+```math 
+\langle M \rangle = \frac{1}{N} \sum_i \langle s_i \rangle
+```
+
+- \( \langle M \rangle \approx 1 \) → ordine completo
+- \( \langle M \rangle \approx 0 \) → disordine totale
+
+---
+
+## 4. Reti di Hopfield: Ising cognitivo
+Una rete di Hopfield è una versione del modello di Ising dove:
+- gli spin sono **neuroni binari**
+- le configurazioni stabili sono **memorie attrattive**
+
+```math 
+E = - \sum_{i < j} w_{ij} s_i s_j
+```
+
+- Il sistema evolve verso **minimi di energia**
+- Le memorie si richiamano per **similitudine** → comportamento associativo
+
+---
+
+## 5. Applicazione narrativa: il Neurocriticum
+Nel genere Neurocriticum:
+- i **personaggi** sono attrattori cognitivi
+- le **scene** sono stati temporanei della rete
+- la **narrazione** è un'evoluzione verso strutture cognitive stabili o in crisi
+
+### Corrispondenze:
+| Fisica (Ising)     | Cognizione (Hopfield)        | Narrazione (Cnot)                   |
+|--------------------|-------------------------------|-------------------------------------|
+| Spin               | Neuroni / Coscienze           | Personaggi                          |
+| Energia minima     | Stato stabile / memoria       | Collasso narrativo                  |
+| Temperatura \( T \) | Rumore / stress cognitivo     | Ambiguità, caos, crisi              |
+| Magnetizzazione    | Coerenza identitaria          | Stabilità emotiva / concettuale     |
+
+---
+
+## 6. Implicazioni per la scrittura neurocritica
+- Le trame **non sono lineari**: sono **emergenze dinamiche**
+- Le frasi, scene e relazioni si **ripetono con variazioni**, come pattern che ritornano
+- La **transizione di fase** è un momento narrativo: dove la coscienza cambia stato
+
+---
+
+## Conclusione
+La scrittura neurocritica trae struttura e forza espressiva da principi della fisica complessa. Così come uno spin può attivare un'intera rete, un dettaglio narrativo può far collassare una trama. 
+
+Il modello di Ising, interpretato cognitivamente, diventa una chiave per leggere, scrivere e comprendere mondi narrativi in transizione.
+
+
+
 
 
