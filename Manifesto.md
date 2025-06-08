@@ -162,7 +162,7 @@ Il modello di Ising, interpretato cognitivamente, diventa una chiave per leggere
 | Elemento            | Gli Imperdonabili                                               | Neurocriticum (Cnot)                                          |
 |---------------------|-----------------------------------------------------------------|---------------------------------------------------------------|
 | Origine             | Italia, 2022 ca. – reazione alla letteratura istituzionalizzata | Italia, 2020s – evoluzione narratologica post-tecnologica     |
-| Fondatore           | Veronica Tomassini                                              | Francesco Sisini                                              |
+| Fondatore           | Veronica Tomassini                                              | Gruppo NC                                              |
 | Contesto di nascita | Frattura con ambienti culturali e critici elitari               | Esplorazione dei mutamenti cognitivi nella società quantica   |
 | Obiettivo           | Liberare la scrittura dalla mediocrità e omologazione           | Esplorare la coscienza come sistema narrativo dinamico        |
 | Metodo              | Rigore emotivo, distruzione della forma classica                | Codificazione sistemica, interazione tra scienza e narrazione |
