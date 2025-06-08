@@ -157,7 +157,21 @@ La scrittura neurocritica trae struttura e forza espressiva da principi della fi
 
 Il modello di Ising, interpretato cognitivamente, diventa una chiave per leggere, scrivere e comprendere mondi narrativi in transizione.
 
+## Confronto Imperdonabii/Neurocriticum
 
-
+| Elemento            | Gli Imperdonabili                                               | Neurocriticum (Cnot)                                          |
+|---------------------|-----------------------------------------------------------------|---------------------------------------------------------------|
+| Origine             | Italia, 2022 ca. – reazione alla letteratura istituzionalizzata | Italia, 2020s – evoluzione narratologica post-tecnologica     |
+| Fondatore           | Veronica Tomassini                                              | Francesco Sisini                                              |
+| Contesto di nascita | Frattura con ambienti culturali e critici elitari               | Esplorazione dei mutamenti cognitivi nella società quantica   |
+| Obiettivo           | Liberare la scrittura dalla mediocrità e omologazione           | Esplorare la coscienza come sistema narrativo dinamico        |
+| Metodo              | Rigore emotivo, distruzione della forma classica                | Codificazione sistemica, interazione tra scienza e narrazione |
+| Estetica            | Cruda, antiretorica, verista                                    | Complessa, poetico-algoritmica, stratificata                  |
+| Ruolo dell'autore   | L’autore è irriducibile, solitario, libero                      | L’autore è osservatore/perturbatore di un sistema cognitivo   |
+| Ruolo del lettore   | Lettore critico, non complice                                   | Lettore come co-osservatore: collassa il significato          |
+| Tecnologia          | Rifiutata, se impoverisce il linguaggio                         | Centrata: è struttura stessa del racconto                     |
+| Narrativa           | Lineare, radicale, autobiografica o iperrealista                | Emergente, reticolare, sovrapposta e quantizzata              |
+| Punto di forza      | Etica della scrittura                                           | Epistemologia della coscienza                                 |
+| Patto               | “Non ti educherò, ma ti metterò a nudo”                         | “Ti farò osservare come la realtà si scrive da sola”          |
 
 
