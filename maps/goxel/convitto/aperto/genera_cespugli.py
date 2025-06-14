@@ -2,13 +2,13 @@ import random
 import math
 
 # Parametri di configurazione
-SIZE = 50              # Dimensione del cubo (50x50x50)
-MAX_VOXELS = 1000      # Numero massimo di voxel da generare (esclusi tronco e rami)
+SIZE = 30              # Dimensione del cubo (50x50x50)
+MAX_VOXELS = 500     # Numero massimo di voxel da generare (esclusi tronco e rami)
 RADIUS_FACTOR = 0.45   # Fattore per il raggio della sfera (0 < f <= 0.5)
-NUM_BRANCHES = 5       # Numero di rami da generare
+NUM_BRANCHES = 7       # Numero di rami da generare
 BRANCH_LENGTH = 10     # Lunghezza massima dei rami
 
-OUTPUT_FILE = 'bush_voxels.vox'
+OUTPUT_FILE = 'cespugli.txt'
 
 # Colori in esadecimale
 def green_color():
