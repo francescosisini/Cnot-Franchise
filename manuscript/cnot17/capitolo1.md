@@ -11,9 +11,13 @@ Così, tranquilla, con il suo PC in mano, a gambe incrociate sul letto, mostra u
 > «Scusami, sai!»
 
 Poi incolla il testo nella sezione *Lyrics* di Suno.
-
-> «E dopo qua segui il testo che ce lo metto io. E poi inserisci il prompt con l’istruzione. E di nuovo qua dopo c’è un’istruzione che le inserisco io.»
-
+```
+(Chorus)
+She leaves and I stay
+like a folder left open
+half full, half erased
+I blink, and she's already gone
+```
 > «Lascia da perdere, è arrabbiata con me.»
 
 > «Non sono arrabbiata, solo che voglio finire una cosa.»
