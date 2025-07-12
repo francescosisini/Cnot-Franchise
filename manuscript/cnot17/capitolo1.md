@@ -10,14 +10,21 @@ Così, tranquilla, con il suo PC in mano, a gambe incrociate sul letto, mostra u
 
 > «Scusami, sai!»
 
-Poi incolla il testo nella sezione *Lyrics* di Suno.
+Poi incolla il testo nella sezione *Lyrics* di Suno:
 ```
+🎤 Lyrics:...
 (Chorus)
 She leaves and I stay
 like a folder left open
 half full, half erased
 I blink, and she's already gone
 ```
+e aggiunge il prompt di esecuzione:
+
+🎛 Style Description (max 200 characters):
+Bilingual emotional synth-pop with ambient textures, cinematic flow, and AI female vocals. Slow build. Glitchy, dreamlike, bittersweet. Like diary pages sung in code.
+
+
 > «Lascia da perdere, è arrabbiata con me.»
 
 > «Non sono arrabbiata, solo che voglio finire una cosa.»
@@ -30,13 +37,27 @@ Alice preme *Create* e la sua canzone viene generata.
 
 > «Ora la scarico, colleghiamo le casse e voilà!»
 
-Le note di pianoforte sintetico arpeggiano velocemente una nenia in *suono maggiore*. Poi, con un respiro sussurrato, inizia il primo verso.
+Le note di pianoforte sintetico arpeggiano velocemente una nenia in Sol maggiore. Poi, con un respiro sussurrato, inizia il primo verso.
 
-> *[Segue il verso – da inserire]*
+```
+*(Verse)*  
+She leaves and I stay  
+like a folder left open  
+half full, half erased  
+I blink, and she's already gone  
+
+*(Verse)*  
+She goes to New York  
+I stay with a lamp shaped like a heart  
+plastic love, three settings  
+warm, cold, ambient—mine is blinking  
+```
 
 Al ritornello:
 
-> **I'm not angry, I'm just here**
+```
+**I'm not angry, I'm just here**
+```
 
 una lacrima solca il viso di Caterina, che a stento simula tranquillità continuando ad ordinare le cose da mettere in valigia.
 
