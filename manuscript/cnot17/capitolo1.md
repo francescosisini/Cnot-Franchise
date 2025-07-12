@@ -13,7 +13,6 @@ Così, tranquilla, con il suo PC in mano, a gambe incrociate sul letto, mostra u
 Poi incolla il testo nella sezione *Lyrics* di Suno:
 ```
 🎤 Lyrics:...
-(Chorus)
 She leaves and I stay
 like a folder left open
 half full, half erased
@@ -81,7 +80,7 @@ Caterina si asciuga gli occhi.
 
 > «Ciao Kate. Ciao Alice.»
 
-Prima di chiudere la porta, Laura ha un attimo di esitazione. C’era ancora una cosa, anzi, **il motivo principale** per cui aveva raggiunto Caterina.
+Prima di chiudere la porta, Laura ha un attimo di esitazione. C’era ancora una cosa, anzi, il motivo principale per cui aveva raggiunto Caterina.
 
 > «Ma non sai ancora nulla del visto!»
 
