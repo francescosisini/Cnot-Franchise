@@ -22,7 +22,7 @@ Laura riprende, ma il 70% di ciò che legge le sfugge,
 perché la sua attenzione è catturata dai movimenti mimetici di Alice,  
 seduta sul letto di fronte a lei.
 
-![Piantina camera di Caterina](img/camera_cate_1.jpg)
+![Piantina camera di Caterina](camera_cate_1.jpg)
 
 
  Un viaggio difficile da organizzare tra bilglietti introvabili, alberghi al completo,  impegni precedenti e consegne da rispettare sul lavoro. Mancano 36 ore al volo che la condurrà negli US ed  è quasi tutto a posto ma Caterina non  sa che sua sorella le sta cucinando  una bella vendetta da gustare calda anzichè fredda. 
