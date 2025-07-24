@@ -1,5 +1,27 @@
 # Capitolo 1 
 
+> "Cara Caterina,  
+> ti scrivo con le mani sporche di terra e il cuore in fiamme.  
+> Ogni giorno mi sveglio con l'ansia che il cielo sia un po' più basso,  
+> che il vento porti con sé un alto grido soffocato di una specie che non c'è più.  
+> Eppure continuo a lottare, perché se ci sei tu,  
+> tu che hai il coraggio che io non ho,  
+> tu che hai il coraggio che io non ho... "
+
+> «Vuoi che continui, Cate? Non mi sembra giunga nulla di nuovo alla discussione...»
+
+Laura, seduta sulla poltroncina degli ospiti, sta aiutando l'amica a sbrigare un po' della corrispondenza,  
+visto che lei è impegnata in faccende che la coinvolgono molto di più.
+
+> «Ma sì dai, mi sembra così angosciata, poverina...»
+
+Caterina è a pochi decimetri da Laura, davanti all'armadio.  
+Vediamo la situazione: 
+
+Laura riprende, ma il 70% di ciò che legge le sfugge,  
+perché la sua attenzione è catturata dai movimenti mimetici di Alice,  
+seduta sul letto di fronte a lei.
+
 Caterina non lo sa, ma sua sorella sta cucinando per lei una bella vendetta.
 
 Lei se ne va a New York e la lascia a casa con suo padre e sua madre, proprio ora che potrebbero passare una settimana insieme. Certo, Alice comprende che il lavoro è importante. Infatti, se fosse solo per quello, non le brucerebbe così tanto.
