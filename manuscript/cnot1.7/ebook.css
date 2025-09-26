@@ -1,0 +1,181 @@
+/* =========
+   eBook CSS
+   ========= */
+
+
+@font-face{
+  font-family: "Literata";
+  src: url("fonts/Literata/static/Literata-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal;
+}
+@font-face{
+  font-family: "Literata";
+  src: url("fonts/Literata/static/Literata-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal;
+}
+@font-face{
+  font-family: "Literata";
+  src: url("fonts/Literata/static/Literata-Italic.ttf") format("truetype");
+  font-weight: 400; font-style: italic;
+}
+
+
+
+/* Tweak rapidi */
+:root{
+  --text-size: 1.05rem;
+  --line-height: 1.5;
+  --page-h-margin: 7%;
+  --heading-color: #6b7280;   /* grigio elegante */
+  --text-color: #000000;
+  --accent-color: #9ca3af;    /* grigio chiaro per dettagli */
+  --caption-size: 0.9rem;
+}
+
+/* Font stack:
+   - “Literata” o “Merriweather” se incorporati
+   - altrimenti Palatino/Georgia come fallback eleganti */
+html, body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Literata", "Merriweather", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-size: var(--text-size);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  -webkit-hyphens: auto; hyphens: auto;
+  widows: 2; orphans: 2;
+  margin: 0 var(--page-h-margin);
+}
+
+/* Paragrafi */
+p{
+  margin: 0 0 0.9em 0;
+  text-indent: 0;
+}
+p + p{
+  text-indent: 1.25em;       /* rientro dal 2° paragrafo in poi */
+}
+
+/* Titoli capitolo */
+h1{
+  break-before: page;         /* standard */
+  page-break-before: always;  /* fallback */
+  text-align: center;
+  color: var(--heading-color);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin: 2.2em 0 0.6em 0;
+}
+
+/* Sottotitoli/sezioni */
+h2{
+  text-align: center;
+  color: var(--heading-color);
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+  margin: 1.8em 0 0.5em 0;
+}
+h3{
+  color: var(--heading-color);
+  font-weight: 600;
+  margin: 1.4em 0 0.4em 0;
+}
+
+/* Un piccolo tocco decorativo sotto H1 (compatibile e discreto) */
+h1::after{
+  content: "—";
+  display: block;
+  text-align: center;
+  color: var(--accent-color);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin-top: 0.35em;
+}
+
+/* Immagini e figure */
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.6em auto;
+}
+figure{
+  margin: 1em 0;
+  text-align: center;
+}
+figcaption{
+  font-size: var(--caption-size);
+  color: var(--accent-color);
+  margin-top: 0.4em;
+}
+
+/* Citazioni */
+blockquote{
+  margin: 1em 1.2em;
+  padding-left: 0.9em;
+  border-left: 3px solid var(--accent-color);
+  color: #333;
+}
+
+/* Elementi inline utili */
+em{ font-style: italic; }
+strong{ font-weight: 700; }
+code, pre{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95em;
+}
+
+/* Note/footnotes di base (se presenti) */
+.footnotes, .endnotes{
+  border-top: 1px solid var(--accent-color);
+  margin-top: 2em;
+  padding-top: 0.6em;
+}
+.footnotes ol, .endnotes ol{
+  padding-left: 1.2em;
+}
+
+/* Modalità scura (alcuni lettori la ignorano, ma non nuoce) */
+/*
+@media (prefers-color-scheme: dark){
+  body{ color: #eaeaea; }
+  blockquote{ color: #d0d0d0; border-left-color: #6b7280; }
+  figcaption{ color: #b7b7b7; }
+}
+*/
+/* Evita che le immagini rompano l’heading in cima pagina */
+h1 + figure, h1 + img{
+  break-inside: avoid;
+}
+
+/* Interruzioni manuali, se vuoi forzarle su altri elementi */
+.pagebreak{
+  break-before: page; page-break-before: always;
+}
+
+blockquote.lyrics{
+  font-style: italic;
+  margin: 1em 1.2em;
+  text-align: left;   /* o center, se ti piace */
+  opacity: .95;
+}
+
+blockquote.lyrics-code{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95em;
+  line-height: 1.45;
+  white-space: pre-wrap;   /* preserva gli a capo nei reader reflow */
+  margin: 1em 1.2em;
+  padding: .8em 1em;
+  border: 1px solid var(--accent-color);
+  border-radius: .25em;
+}
+
+/* se vuoi centrare il blocco:
+blockquote.lyrics-code{ text-align: center; } */
+
+
