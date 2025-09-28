@@ -179,3 +179,20 @@ blockquote.lyrics-code{
 blockquote.lyrics-code{ text-align: center; } */
 
 
+/* Stile base per blocchi di codice */
+pre.code {
+  margin: 1rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--code-bg);
+  color: var(--code-fg);
+  border: 1px solid var(--code-border);
+  border-radius: 8px;
+  overflow: auto;
+  line-height: 1.5;
+  tab-size: 2;
+}
+pre.code code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: .95rem;
+  white-space: pre;
+}
