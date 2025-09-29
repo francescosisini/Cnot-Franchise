@@ -1,0 +1,15 @@
+abella di analisi
+Parola	Lemma	Declin./coniug.	Caso / tempo	Genere / pers.	Funzione sintattica / complemento
+Epistula	epistula	I decl.	Nom. sing.	femm.	Soggetto (“la lettera”)
+est	esse	verbo irreg.	Pres. indic. 3ª pers. sing.	—	Copula (“è”)
+nuntius	nuntius	II decl.	Nom. sing.	masc.	Nome del predicato (“messaggio”)
+manu	manus	V decl.	Abl. sing.	femm.	Compl. di mezzo (“di pugno”)
+scriptus	scribere	3ª coniug.	Part. perf. pass. Nom. sing.	masc.	Attributo di nuntius (“scritto”)
+atque	atque	—	—	—	Congiunzione coordinante (“e”)
+in	in (+ acc.)	prep.	—	—	Introduce compl. di moto a luogo
+foraminem	foramen	III decl.	Acc. sing.	neutro	Compl. di moto a luogo (“nella buchetta”)
+domūs	domus	IV decl.	Gen. sing.	femm.	Compl. di specificazione (“della casa”)
+per	per (+ acc.)	prep.	—	—	Introduce compl. di mezzo (“per mezzo di”)
+cursum	cursus	IV decl.	Acc. sing.	masc.	Oggetto della prep. per (“cursus” = servizio)
+publicum	publicus	agg. II decl.	Acc. sing.	masc.	Attributo di cursum (“pubblico”)
+datus	dare	I coniug.	Part. perf. pass. Nom. sing.	masc.	Attributo di nuntius (“dato, consegnato”)

@@ -30,6 +30,12 @@
   --text-color: #000000;
   --accent-color: #9ca3af;    /* grigio chiaro per dettagli */
   --caption-size: 0.9rem;
+
+   /* NUOVE per tema seppia */
+  --bg-color: #f4ecd8;       /* seppia chiaro */
+  --code-bg: #efe6d2;        /* fondo blocchi codice */
+  --code-fg: #3b2f2f;        /* testo codice */
+  --code-border: #d8c9a7;    /* bordo codice */
 }
 
 /* Font stack:
@@ -47,6 +53,8 @@ body{
   -webkit-hyphens: auto; hyphens: auto;
   widows: 2; orphans: 2;
   margin: 0 var(--page-h-margin);
+
+  background: var(--bg-color);
 }
 
 /* Paragrafi */
