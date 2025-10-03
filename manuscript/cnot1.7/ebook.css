@@ -204,3 +204,31 @@ pre.code code {
   font-size: .95rem;
   white-space: pre;
 }
+
+.song-chords pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  white-space: pre;
+  line-height: 1.45;
+  font-size: 0.75rem;
+  background: #0a0a0a0a;
+  border: 1px solid #00000010;
+  border-radius: 6px;
+  padding: .9rem 1rem;
+  overflow: auto;
+}
+.song-note { font-style: italic; opacity: .85; margin-top: .25rem; }
+
+.songtable {
+  width: 100%; border-collapse: collapse; table-layout: fixed;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  margin: .8rem 0; border: 1px solid #00000018; border-radius: 8px; overflow: hidden;
+}
+.songtable caption { text-align: left; font-weight: 600; padding: .4rem .5rem; opacity: .85; }
+.songtable th, .songtable td { border: 1px solid #00000010; padding: .2rem .25rem; }
+.songtable thead th { background: #00000008; font-size: .85rem; text-align: center; }
+.songtable .row-label { width: 64px; background: #00000005; font-weight: 600; text-align: right; padding-right: .35rem; }
+.songtable .chord { text-align: center; font-weight: 700; }
+.songtable .lyr  { font-weight: 500; }
+.songtable .bar-split td { background: #00000005; }
+.songtable .msep { border-left: 2px solid #00000026; } /* separatore visivo metà battuta (dopo "2 &") */
+.small { font-size: .82rem; opacity: .8; }
