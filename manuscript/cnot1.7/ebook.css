@@ -232,3 +232,43 @@ pre.code code {
 .songtable .bar-split td { background: #00000005; }
 .songtable .msep { border-left: 2px solid #00000026; } /* separatore visivo metà battuta (dopo "2 &") */
 .small { font-size: .82rem; opacity: .8; }
+
+@media print {
+  /* 1) Disattiva layout che frammenta */
+  .flex, .grid, [style*="display:flex"], [style*="display:grid"] {
+    display: block !important;
+  }
+
+  /* 2) Rendi le figure atomiche */
+  figure {
+    break-inside: avoid;
+    page-break-inside: avoid;              /* fallback vecchio */
+    -webkit-column-break-inside: avoid;    /* vecchi WebKit */
+    -webkit-region-break-inside: avoid;
+    display: table;                        /* hack: più rispettato in print */
+    width: 100%;
+    overflow: hidden;                      /* evita spezzature strane */
+    margin: 0 0 1em 0;                     /* margini semplici (niente collasso) */
+  }
+  figure img, figure figcaption {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 3) Se anche piccole vengono spezzate, forza il fitting verticale */
+  figure img.fit-page {
+    max-height: 95vh;       /* scala l’immagine per farla stare in una pagina */
+    object-fit: contain;
+  }
+
+  /* (opzionale) evita lo “spezzarsi prima” delle figure */
+  .avoid-break-before {
+    break-before: avoid-page;
+    page-break-before: auto;
+  }
+
+  @page { margin: 18mm; }   /* margini pagina coerenti */
+}
