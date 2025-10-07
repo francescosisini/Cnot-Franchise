@@ -1,6 +1,6 @@
 # 📜 **CNOT Manuscript**
 
-Benvenuti nella sezione dedicata al manoscritto di **CNOT**, il romanzo che esplora mondi quantistici, legami invisibili e avventure straordinarie! Qui troverete due versioni del manoscritto, pronte per soddisfare le vostre esigenze di lettura o di stampa artigianale.
+Benvenuti nella sezione dedicata al manoscritto di **CNOT**, l'universo narrativo che esplora mondi quantistici, legami invisibili e avventure straordinarie! Qui troverete due versioni del manoscritto, pronte per soddisfare le vostre esigenze di lettura o di stampa artigianale.
 
 ---
 
