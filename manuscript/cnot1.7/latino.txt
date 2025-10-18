@@ -1,4 +1,4 @@
-abella di analisi
+tabella di analisi
 Parola	Lemma	Declin./coniug.	Caso / tempo	Genere / pers.	Funzione sintattica / complemento
 Epistula	epistula	I decl.	Nom. sing.	femm.	Soggetto (“la lettera”)
 est	esse	verbo irreg.	Pres. indic. 3ª pers. sing.	—	Copula (“è”)
