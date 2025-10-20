@@ -1,10 +1,184 @@
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="ebook.css">
 </head>
 
-<h1 id="prologo.-Lacrime in cameretta">Prologo. Lacrime in cameretta</h1>
+<title>Cnot 1.7 — Copertina</title>
+<style>
+  :root{
+    --fg:#0b0b0b; --bg:#faf9f7; --accent:#111; 
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background: var(--bg); color: var(--fg);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  .page{
+    width: 100vw; height: 100vh;
+    display:grid; place-items:center; padding:4vw;
+  }
+  .cover{
+    position:relative; width:100%; height:100%; border:1px solid #0002; overflow:hidden;
+    background: #000;
+  }
+  .cover__art{
+    position:absolute; inset:0; background:#fff center/cover no-repeat;
+    /* Sostituisci con la tua immagine di copertina */
+    background-image:url("media/convitto.png");
+    filter:contrast(1.05) saturate(1.02) brightness(0.85);
+  }
+  .cover__overlay{
+    position:absolute; inset:0;
+    background: radial-gradient(120% 120% at 80% 20%, #0000 0%, #0006 52%, #000a 100%);
+    mix-blend-mode: multiply;
+  }
+  .cover__grid{
+    position:relative; z-index:2; height:100%; width:100%; display:grid;
+    grid-template-rows: 1fr auto auto 1fr; gap:1rem; color:#fff;
+    padding: clamp(24px, 6vw, 64px);
+  }
+  .imprint{
+    font-size:clamp(12px, 1.6vw, 16px); letter-spacing:.06em; opacity:.85;
+  }
+  .title{
+    font-weight:800; line-height:1;
+    font-size:clamp(42px, 10vw, 96px);
+    letter-spacing:-.02em;
+  }
+  .subtitle{
+    font-size:clamp(16px, 2.2vw, 24px); opacity:.9; margin-top:.35em;
+  }
+  .author{
+    font-weight:600; font-size:clamp(16px, 2.2vw, 22px); margin-top:.5em;
+  }
+  .footer{
+    display:flex; justify-content:space-between; align-items:end;
+    font-size:clamp(12px, 1.6vw, 16px); opacity:.9;
+  }
+  .logo{
+    display:inline-flex; gap:.5rem; align-items:center;
+  }
+  .logo img{height:1.5em; width:auto; filter:invert(1)}
+  /* Facile da stampare in PDF */
+  @media print{
+    .page{page-break-after:always}
+  }
+</style>
+</head>
+<body>
+  <section class="page">
+    <div class="cover">
+      <div class="cover__art" aria-hidden="true"></div>
+      <div class="cover__overlay" aria-hidden="true"></div>
+      <div class="cover__grid">
+        <div class="imprint">EDIZIONI TRADIZIONALI</div>
+        <div>
+          <h1 class="title">Cnot&nbsp;1.7</h1>
+          
+          <div class="author">di Eiren&nbsp;Lysias</div>
+        </div>
+        <div class="footer">
+          <span>Edizione 2025</span>
+          <span class="logo">
+            <!-- Sostituisci con il tuo logo -->
+            <img src="media/logo-edizioni-tradizionali.svg" alt="Edizioni Tradizionali">
+            <span>Edizioni Tradizionali</span>
+          </span>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="page frontespizio">
+  <style>
+    .frontespizio{
+      display:grid; place-items:center; padding:8vh 8vw; background:#fff; color:#111;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    .front-card{max-width:720px; width:100%; text-align:center}
+    .front-title{
+      font-weight:800; line-height:1.1; letter-spacing:-.01em;
+      font-size:clamp(36px, 6vw, 72px); margin:0 0 .25em;
+    }
+    .front-subtitle{font-size:clamp(16px, 2.2vw, 22px); opacity:.85; margin:.2em 0 1.4em}
+    .front-author{font-size:clamp(16px, 2.2vw, 20px); font-weight:600; margin-bottom:2.5em}
+    .front-imprint{margin-top:3em; opacity:.9}
+    .front-logo{height:28px; vertical-align:middle; margin-right:.5rem}
+    .small{font-size:0.95rem; opacity:.85}
+    @media print{ .page{page-break-after:always} }
+  </style>
+
+  <div class="front-card">
+    <h1 class="front-title">Cnot&nbsp;1.7</h1>
+    
+    <div class="front-author">Eiren Lysias</div>
+
+    <div class="front-imprint small">
+      <img class="front-logo" src="media/logo-edizioni-tradizionali.svg" alt="Edizioni Tradizionali" />
+      <span>Edizioni Tradizionali — Ferrara, 2025</span>
+    </div>
+
+    <div class="small" style="margin-top:1rem">
+      Prima edizione: ottobre 2025 • ISBN: <em>da assegnare</em>
+    </div>
+  </div>
+</section>
+
+  <section class="page colophon">
+  <style>
+    .colophon{
+      background:#fafafa; color:#1a1a1a; padding:10vh 10vw;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    .colophon h2{font-size:1.4rem; margin:0 0 .75rem; letter-spacing:.02em}
+    .colophon p{margin:.35rem 0; line-height:1.6}
+    .grid{display:grid; gap:1.25rem; grid-template-columns: 1fr; max-width:900px}
+    @media (min-width:840px){ .grid{grid-template-columns: 1fr 1fr} }
+    .muted{opacity:.8}
+    .legal{font-size:.95rem; margin-top:1.25rem; opacity:.85}
+    @media print{ .page{page-break-after:always} }
+  </style>
+
+  <div class="grid">
+    <div>
+      <h2>Crediti</h2>
+      <p><strong>Autore</strong>: di Eiren Lysias</p>
+      
+      <p><strong>Disegni a matita:</strong> Francesco Sisini</p>
+      <p><strong>Editing digitale dei disegni, rifiniture e ombreggiature:</strong> Annalisa Pazzi</p>
+      <p><strong>Copertina:</strong> Annalisa Pazzi</p>
+      <p><strong>Consulenza informatica:</strong> Valentina Sisini</p>
+      <p><strong>Impaginazione e design:</strong> Edizioni Tradizionali</p>
+
+      <p><strong>Impianto editoriale</strong>: Edizioni Tradizionali</p>
+      <p class="muted">Impaginazione HTML/CSS ottimizzata per ebook e stampa</p>
+    </div>
+    <div>
+      <h2>Edizione</h2>
+      <p><strong>Edizioni Tradizionali</strong> — Ferrara</p>
+      <p><strong>Prima edizione</strong>: ottobre 2025</p>
+      <p><strong>ISBN</strong>: <em>da assegnare</em></p>
+      <p><strong>Contatti</strong>: <em>francescomichelesisini@gmail.com</em></p>
+      <p><strong>QR</strong>: <img alt="QR codice" src="media/.png" style="height:1.2em; vertical-align:middle"> (scarica/landing)</p>
+    </div>
+  </div>
+
+  <div class="legal">
+    © 2025 Francesco Sisini. Tutti i diritti riservati.  
+    È vietata la riproduzione anche parziale con qualsiasi mezzo, salvo diversa licenza indicata dall’editore.  
+    Eventuali marchi citati appartengono ai rispettivi proprietari.
+  </div>
+</section>
+
+<!--<div class="blank-print" aria-hidden="true"></div>-->
+
+  
+<h1 class="recto" id="prologo.-Lacrime in cameretta">Prologo. Lacrime in cameretta</h1>
 <p>
   Alice è arrabbiata, risentita, offesa, triste e amareggiata, per questo le lacrime le stanno rigando gli occhi.<br/>
   Soffre, ma non darà a sua madre la soddisfazione di vederla così. Resta chiusa in camera, al riparo senza che nessuno possa vederla, minimizzare, giudicare.<br/>
@@ -17,7 +191,7 @@
   Già, proprio come ha fatto caterina con lei. Questa qua sotto è alice, quasi grande ma ancora adolescente, a vederela  nel suo vestitino skater non sembra capace di parole così taglienti.
 <figure><img alt="Alice piange mentre suona la sua canzone." src="media/alice senza sfondo.png" style="width:3.30969in" /></figure>  
   </p>
-<h1 id="capitolo-1.-vendetta-in-sol-maggiore">Capitolo 1. Vendetta in SOL maggiore</h1>
+<h1 class="recto" id="capitolo-1.-vendetta-in-sol-maggiore">Capitolo 1. Vendetta in SOL maggiore</h1>
 <p>
   Una lettera è un messaggio scritto di pugno e consegnato nella buchetta di casa per mezzo di un servizio postale. Oggi lo si usa poco ma per molte persone ha un significato simbolico, indica l'appartenenza al gruppo di chi non ha dimenticato l'origine terrestre degli esseri umani. Inizialmente c'era un po' di diffidenza da parte dei più integralisti, ma poi la percezione che la natura è una e ogni albero vive anche nel complesso dell'intera foresta ha spostato le sensibilità verso una posizione più sostenibile, così in molti si sono convinti che la carta non è il male del mondo ed  esprimono con le parole il loro dolore per il pianeta che soffre scrivendole con la matita, sulla carta. Una matita fatta di legno sulla carta di cellulosa. Parole che sanno di albero che vengono spedite a destinatari incaricati di caricarsi il peso dell'angoscia.</p><br/>
 <P>
@@ -103,7 +277,7 @@ warm, cold, ambient—mine is blinking
 <p>«Non preoccuparti, Laura. Vedrai che non ci saranno problemi. In ogni caso, se ci fossero difficoltà ti chiamo.»</p>
 <p>Saluta l’amica con un bacio e corre a prendere Vale.<br />
 Per fortuna manca ancora qualche anno alla sua adolescenza.</p>
-<h1 id="capitolo-2.-si-sta-facendo-sera">Capitolo 2. Si sta facendo sera</h1>
+<h1 class="recto" id="capitolo-2.-si-sta-facendo-sera">Capitolo 2. Si sta facendo sera</h1>
 <p>Caterina è impegnata nei preparativi per il suo volo transoceanico, con cui spargerà dieci quintali di CO₂ nell'atmosfera. Giovanni, ignaro di tanta minaccia per la biosfera, attende con Ipparchia in prossimità del supermercato. La sua impronta di carbonio è bassa per necessità, non per scelta. Vive nell'ex convitto, senza i comfort di un'abitazione urbanizzata, e produrre più CO₂ di quella che espira è quasi impossibile.</p>
 <p>Ipparchia è seduta sotto una quercia vicino all’uscita sul retro, la <em>dumpster zone</em>. Da un momento all’altro i commessi usciranno per le pulizie: quello sarà il segnale. Giovanni avanzerà con calma, pronto a contrattare qualche prodotto in scadenza per sé e per Ipparchia. Il turnover del personale è serrato ma per fortuna tra loro si passano parola, e quando qualcuno lascia il posto, il suo rimpiazzo conosce già Giovanni e Ipparchia.</p>
 <figure><img alt="Pianta zona supermercato." src="media/dumper_zone.png" style="width:6.5in" /></figure>
@@ -123,7 +297,7 @@ Per fortuna manca ancora qualche anno alla sua adolescenza.</p>
 <p>La mappa va aggiornata di continuo: dove la memoria vacilla, ci sono il fiuto e gli occhi di Ipparchia, che – anche se in parte daltonici – qualcosa vedono.</p>
 <p>Ipparchia è al suo fianco da quando Giovanni è diventato un senza fissa dimora. Anche lei vagava sola e il loro incontro sarebbe stato degno di una nota nei rotocalchi se qualche giornalista lo avesse testimoniato. Ma questa è la vita di strada, capita di tutto, ma nessuno se ne cura. Ipparchia non lo tradirebbe mai, i suoi sentimenti sono a senso unico. Un fagiano gli taglia la strada. Giovanni sente solo un fruscio veloce dell’erba e in un attimo è solo. Adesso deve ritrovarla e non sa se la mappa che ha sarà sufficiente.</p>
 <p>Il silenzio si stende, pesante, tra le erbacce. Giovanni ascolta il suo stesso respiro, poi si rimette in cammino.</p>
-<h1 id="capitolo-3.-il-ricorso">Capitolo 3. Il ricorso</h1>
+<h1 class="recto" id="capitolo-3.-il-ricorso">Capitolo 3. Il ricorso</h1>
 <p>«Cosa prepari per cena?»<br />
 «Tu cosa avresti voglia di mangiare?»</p>
 <figure><img alt="Vista dall'altro tiny house di Laura e Valentina" src="media/soggiorno tiny.png" style="width:3.73958in" />
@@ -182,7 +356,7 @@ Per fortuna manca ancora qualche anno alla sua adolescenza.</p>
 <p>«E Mark… ti ha detto tutto del suo lavoro?»</p>
 <p>«Credo… di sì… perché?»</p>
 <p>Laura inspira piano. «Perché forse qualcuno non ti vuole lì.»</p>
-<h1 id="capitolo-4.-il-ritorno-di-ipparchia">Capitolo 4. Il ritorno di Ipparchia</h1>
+<h1 class="recto" id="capitolo-4.-il-ritorno-di-ipparchia">Capitolo 4. Il ritorno di Ipparchia</h1>
 <p>«Ippa! Ippa! Ipparchia!»<br />
 La sta chiamando forte, ma ancora non torna. Giovanni si siede sul muretto.</p>
 <!--<p><img src="media/image20.jpg" style="width:6.5in" /></p>-->
@@ -231,7 +405,7 @@ Lentamente, posa il pacco sul primo pianerottolo e impercettibilmente lascia sco
 <p>Poi la voce, ferma e bassa:</p>
 <p>«… un uomo morto.»</p>
 <p>Un colpo secco, come di legno che batte sul metallo, rompe il silenzio.</p>
-<h1 id="capitolo-5.-che-lavoro-fa-mark">Capitolo 5. Che lavoro fa Mark?</h1>
+<h1 class="recto" id="capitolo-5.-che-lavoro-fa-mark">Capitolo 5. Che lavoro fa Mark?</h1>
 La domanda l'ha spiazzata e l'ipotesi di Laura ancora di più. Rimane attonita a guardare l'amica.
 <p>«Vale vai a lavarti le mani, è pronto»</p>
 <p>«Deve venire anche Caterina però!»</p>
@@ -286,7 +460,7 @@ Lascia la porta della loro stanza socchiusa. Prende la caraffa di tè freddo dal
 Ce la possiamo fare, Rocky.»</p>
 <p>Allunga la mano, d’istinto, verso la cuccia.</p>
 <p>«Rocky? Dove sei Rocky?»</p>
-<h1 id="capitolo-6.-le-regole-del-convitto">Capitolo 6. Le regole del convitto</h1>
+<h1 class="recto" id="capitolo-6.-le-regole-del-convitto">Capitolo 6. Le regole del convitto</h1>
 <p>Luca è a pochi metri da Giovanni e ha un vantaggio evidente: infatti, ci vede.</p>
 <p>Ipparchia non ha dato segni di nervosismo, ma il secondo cane mostra di essere pronto a reagire ad un'aggressione.</p>
 <p>«Allora ferma questo colpo!» grida, e si lancia verso Giovanni brandendo un bastone sopra la testa.</p>
@@ -324,7 +498,7 @@ Ce la possiamo fare, Rocky.»</p>
 «Hai ragione.»</p>
 <p>Giovanni rallenta il passo per assicurarsi del terreno sotto i piedi, perché non conosce bene la seconda rampa delle scale. Entrare al primo piano è molto più semplice, ma adesso le casalinghe stanno facendo le pulizie, e a memoria di convitto nessuno ha mai calpestato dove le casalinghe stanno pulendo.</p>
 <p>Sarebbe un errore irreparabile, perché significativo di ignoranza delle regole elementari di appartenenza a una comunità rispettabile. Basta riconoscere alcuni segnali elementari per non creare situazioni problematiche, e uno di questi è la presenza del carrello dei prodotti: un segnale universale di pulizia in corso. Impensabile spostarlo per passare. Essere civili si riconosce da queste attenzioni.</p>
-<h1 id="capitolo-7.-missione-per-rocky">Capitolo 7. Missione per Rocky</h1>
+<h1 class="recto" id="capitolo-7.-missione-per-rocky">Capitolo 7. Missione per Rocky</h1>
 <p>Ha lasciato Valentina in casa da sola per cercare Rocky.<br />
 Ma nei pressi di casa non lo trova.</p>
 <p>Adesso si trova di fronte a un dilemma: proseguire la sua intrusione etica ed aiutare l’amica nel poco tempo rimasto, o cercare il suo cucciolo prima che si ritrovi in qualche guaio?</p>
@@ -388,7 +562,7 @@ Ma nei pressi di casa non lo trova.</p>
 «Ora lo scopriamo.»</p>
 <p>Laura e Caterina superano il confine tra il presente e questo mondo che appartiene a un passato dimenticato.</p>
 <p>Riusciranno a uscire indenni anche questa volta?</p>
-<h1 id="capitolo-8.-il-tranello-della-mensa">Capitolo 8. Il tranello della mensa </h1>
+<h1 class="recto" id="capitolo-8.-il-tranello-della-mensa">Capitolo 8. Il tranello della mensa </h1>
 <p>«Piano Luca, non sono pratico di questo piano, scusami.»</p>
 <p>La scena è da manuale di arte drammatica: Luca procede al buio del secondo piano del convitto del Cardinal Mora, reggendo il pacco con la spesa. Giovanni lo segue a ruota, seguito a sua volta da Ipparchia che seguita da Rocky.</p>
 <p>Il trenino poli specie vuole raggiungere la cucina al piano terra senza dare nell’occhio, perché le casalinghe non gradirebbero sicuramente un secondo cane. Giovanni non ha mai subito le loro punizioni: è grande, e rispettando sa farsi rispettare, ma Luca, con i suoi problemi di iperattivismo, è finito diverse volte in gattabuia e preferisce non finirci ancora.</p>
@@ -438,7 +612,7 @@ Solleva la barra e si fa giusto lo spazio per passare.</p>
 <p>«Ehi amico, che passa?»</p>
 <p>Una voce lo coglie appena si fa fuori.<br />
 «Ho bisogno. Uno dei ragazzini è finito nel pozzo.»</p>
-<h1 id="capitolo-9.-intrappolate">Capitolo 9. Intrappolate</h1>
+<h1 class="recto" id="capitolo-9.-intrappolate">Capitolo 9. Intrappolate</h1>
 <p>«Ai, mi sono graffiata.»<br />
 «Di qua, Cate, c’è un passaggio.»<br />
 «Ah, ma perché ho sempre la gonna?»<br />
@@ -487,7 +661,7 @@ E nessuna luce, tranne i LED RX del ricevitore di Laura.</p>
 <p>Si avvicinano, si abbassano insieme, ma in un attimo… <em>sbam!</em> La porta si chiude e scatta una serratura.</p>
 <p>Caterina grida. Qualcuno le ha chiuse dentro.</p>
  
-<h1 id="capitolo-10.-la-via-nascosta">Capitolo 10. La via nascosta</h1>
+<h1 class="recto" id="capitolo-10.-la-via-nascosta">Capitolo 10. La via nascosta</h1>
 <p>«Riesci a vederlo?»<br />
 «No, non vedo nulla. Comunque ci serve una corda.»<br />
 «Dobbiamo chiamare aiuto. È troppo pericoloso per Luca stare lì.»<br />
@@ -545,7 +719,7 @@ I dati sono stati trasmessi sul server a casa sua.</p>
 Il tubo si lascia scivolare fino a terra, dove l’acqua deve raggiungere quasi l’inguine.</p>
 <p>«Cavolo, è tutto allagato qui sotto.»<br />
 «Laura aiuto! Qualcuno sta cercando di entrare!»</p>
-<h1 id="capitolo-11.-incontri-nel-buio">Capitolo 11. Incontri nel buio</h1>
+<h1 class="recto" id="capitolo-11.-incontri-nel-buio">Capitolo 11. Incontri nel buio</h1>
 <p>«Qualcosa si sta avvicinando.»</p>
 <p>«Stai calmo, non è niente...»</p>
 <p>«Forse un pesce.»</p>
@@ -591,7 +765,7 @@ Il tubo si lascia scivolare fino a terra, dove l’acqua deve raggiungere quasi 
 <p>«Ti ho chiesto solo se sei pronto.»</p>
 <p>«Io sono nato pronto.»</p>
 <p>Laura comincia a tirare.</p>
-<h1 id="capitolo-12.-la-torta-di-mezzanotte">Capitolo 12. La torta di mezzanotte</h1>
+<h1 class="recto" id="capitolo-12.-la-torta-di-mezzanotte">Capitolo 12. La torta di mezzanotte</h1>
 <p>Con un colpo secco e forza ben calibrata, ne sbatte uno contro lo spigolo del tavolo. Lo guarda colare dalla frattura.<br />
 Nella mano sinistra regge un pacchetto di farina, che aggiunge al burro e all’uovo.</p>
 <p>«Ora mescoliamo per bene.»</p>
@@ -631,7 +805,7 @@ Sono ormai le 23. Alle 24 sarà troppo tardi per la revisione del visto, ma di q
 Le sue parole hanno cristallizzato il suo dolore, ma il profumo della crostata la riporta alla vita che non si cristallizza, ad una serata che potrebbe finire con un dolce da mangiare insieme. Anche insieme a sua sorella.
 
 </p>
-<h1 id="capitolo-13.-pane-e-giustizia">Capitolo 13. Pane e giustizia</h1>
+<h1 class="recto" id="capitolo-13.-pane-e-giustizia">Capitolo 13. Pane e giustizia</h1>
 <p>«Finalmente…»</p>
 <p>C’è una candela sul tavolo e alla sua luce Luca, Giovanni e il vagabondo stanno per condividere il cibo del pacco sulla mensa rischiarata dalla sua luce.<br />
 Nella sala ora ci sono solo loro quattro, tre più Ippa. Chi stava cenando quando Luca è caduto nel pozzo ha preferito mantenersi alla larga.</p>
@@ -656,7 +830,7 @@ Nella sala ora ci sono solo loro quattro, tre più Ippa. Chi stava cenando quand
 <figure><img alt="Nintendo Box." src="media/nintendo box.png" style="width:5.27006in" /></figure>
 <p>Comunque non ho visto luce eccetto in casa, se non qualche candela. È un ecosistema a parte. A quanto pare Caterina aveva ragione, anche se ha avuto qualche difficoltà nel passare dalla teoria alla pratica.</p>
 <p>Comunque, ovunque siate, se un carrello della spesa vi sbarra la strada, aspettate a spingerlo via. Potrebbe non essere la scelta migliore.</p>
-<h1 id="capitolo-14.-guerra-di-rete">Capitolo 14. Guerra di rete</h1>
+<h1 class="recto" id="capitolo-14.-guerra-di-rete">Capitolo 14. Guerra di rete</h1>
 <p>«Che schifo Vale! Non mi leccare le orecchie.»</p>
 <p>Laura e Caterina guardano divertite Rocky, che si è già dimenticato di essere stato la causa involontaria delle disavventure delle ultime ore, e saluta Valentina e Alice, sorpreso di trovarle a dormire in soggiorno.</p>
 <p>«Non era mai successo che si allontanasse da solo. Evidentemente deve aver subito il fascino della piccola vagabonda.»</p>
@@ -701,7 +875,7 @@ Nella sala ora ci sono solo loro quattro, tre più Ippa. Chi stava cenando quand
 <figure><img alt="Laura, Caterina, Valentina e Alice sedute sul tappeto." src="media/piantina casa laura senza sfondo.png" style="width:4.375in" /></figure>
 <p>«Attacco BruteForce sul server 35.228...»</p>
 <p>«Identificate l'IP e geotracciatelo. Vediamo se un pesce cade nella rete.»</p>
-<h1 id="capitolo-15.-leterno-mutamento">Capitolo 15. L’eterno mutamento</h1>
+<h1 class="recto" id="capitolo-15.-leterno-mutamento">Capitolo 15. L’eterno mutamento</h1>
 <p>«A cosa stai pensando?»<br />
 «Niente. Guardavo le stelle.»<br />
 «Che costellazione vedi, Giovanni?»<br />
@@ -724,7 +898,7 @@ Nella sala ora ci sono solo loro quattro, tre più Ippa. Chi stava cenando quand
 <p>Giovanni ascolta l’amico e si gira verso di lui. Questa piega della conversazione deve averlo incuriosito.</p>
 <p>«Il tempo?»</p>
 <h1 id="section"></h1>
-<h1 id="capitolo-16.-nel-mirino-della-polizia">Capitolo 16. Nel mirino della Polizia</h1>
+<h1 class="recto" id="capitolo-16.-nel-mirino-della-polizia">Capitolo 16. Nel mirino della Polizia</h1>
 <p>Alice stringe la mano di Caterina. Chissà se tra sé sta ancora canticchiando i versi <em>straccia vesti</em> che le ha scritto solo sette ore fa.<br />
 Valentina non riesce a stare ferma e saltella sul cuscino con un'emozione esplosiva reattiva ai comandi parabellici impartiti dalla sorella al D.P.L.</p>
 <p>«Bene, cambiamo arma ora.»</p>
@@ -789,7 +963,7 @@ Ovviamente non si tratta di una directory pubblica, non sono così ingenui. Un c
 <p>«Ce l’hai fatta?»</p>
 <p>Cate abbraccia l’amica. Alice apre le braccia, poi anche Valentina. Ora sono tutte abbracciate. Chissà se si ricordano della torta.</p>
 <h1 id="section-1"></h1>
-<h1 id="capitolo-17.-ombre-sulla-vittoria">Capitolo 17. Ombre sulla vittoria</h1>
+<h1 class="recto" id="capitolo-17.-ombre-sulla-vittoria">Capitolo 17. Ombre sulla vittoria</h1>
 <p>Sono le sette del mattino, il sole è già sorto e le casalinghe hanno iniziato le prime pulizie. Sono arrivate delle artiste e nei paraggi stanno preparando gli intonaci per le loro <em>street art</em>. Giovanni ha dormito fuori insieme al vagabondo. Ippa è sotto la rete, ma esce e punta i rovi di cinta. Le orecchie sono tese. Qualcuno sta penetrando nel convitto.</p>
 <p>«Saranno le artiste che cercano un posto esotico per le loro creazioni. Da Ippa abbaia, così scappano e non vengono a romperci l’anima.»</p>
 <p>I latrati di Ippa non vanno a vuoto e sono risposti da un altro latrato. Giovanni lo ha già riconosciuto. Dal tunnel vegetale escono Laura, Valentina, Alice che ha Rocky al guinzaglio e Caterina che porta una torta.</p>
@@ -809,21 +983,8 @@ Ovviamente non si tratta di una directory pubblica, non sono così ingenui. Un c
 <p>Giovanni ascolta Caterina che continua a parlare. Parla tanto. Rocky e Ippa si rincorrono nei pochi metri quadri di erba senza penetrare tra i cespugli. Le casalinghe osservano il gruppo dalla finestra del secondo piano.</p>
 <p>Fin qui, tutto bene.</p>
 <figure><img alt="Tutto il gruppo mangia la crostata su un telo da picnic." src="media/picnic senza sfondo.png" style="width:6.5in" /></figure>
-<h1 id="epilogo">Epilogo</h1>
+<h1 class="recto" id="epilogo">Epilogo</h1>
 <p>Caterina lo sa: niente resta mai davvero fermo. Anche la quiete del mattino, anche la luce sulle foglie. Non sapeva che il mondo soffrisse anche vicino a lei e forse la sua risposta al grido di aiuto della Terra potrebbe essere già attesa da qualcuno. Ma adesso è una mattina fresca e piacevole, mangiamo la crostata e aspettiamo che il tempo porti il futuro.</p>
-
-<h2>Crediti</h2>
-
-<p><strong>Titolo:</strong> Cnot 1.7</p>
-<p><strong>Storia:</strong> Francesco Sisini</p>
-<p><strong>Disegni a matita (bozze):</strong> Francesco Sisini</p>
-<p><strong>Editing digitale dei disegni, rifiniture e ombreggiature:</strong> Annalisa Pazzi</p>
-<p><strong>Copertina:</strong> Annalisa Pazzi</p>
-<p><strong>Consulenza informatica:</strong> Valentina Sisini</p>
-<p><strong>Impaginazione e design:</strong> Edizioni Tradizionali</p>
-<p><strong>Edizione:</strong> (sarà pubblicato da) Edizioni Tradizionali</p>
-<p><strong>Anno di pubblicazione:</strong> 2025</p>
-<p><strong>ISBN:</strong> da definire</p>
 
 <h3>Nota sull'universo narrativo</h3>
 <p><em>Cnot 1.7</em> fa parte dell’universo narrativo <strong>Cnot</strong>, ideato e sviluppato da Francesco Sisini.  
@@ -845,3 +1006,6 @@ Impaginato in HTML e PDF con strumenti open-source.<br/>
 </p>
 
 <figure><img alt="Logo Edizioni Tradizionali." src="media/edizioni tradizionali.png" style="width:6.5in" /></figure>
+
+</body>
+</html>

@@ -272,3 +272,45 @@ pre.code code {
 
   @page { margin: 18mm; }   /* margini pagina coerenti */
 }
+
+@media print{
+  .recto{
+    /* prova prima queste proprietà moderne */
+    break-before: right;
+    /* fallback per vecchi motori */
+    page-break-before: right;
+  }
+}
+
+/* Schermo: non far vedere nulla */
+.blank-print{ display:none; }
+
+/* Stampa: genera una pagina vuota completa */
+@media print{
+  .blank-print{
+    display:block;
+    page-break-before: always;   /* forza il salto prima */
+    page-break-after:  always;   /* e dopo (pagina intera vuota) */
+    break-before: page;
+    break-after:  page;
+    height: 0;                   /* niente contenuto visibile */
+    background: #fff;            /* resta bianca */
+  }
+}
+
+@media print{
+  /* margini pagina */
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+
+  /* numerazione */
+  body{ counter-reset: page; }           /* Chrome/Edge/Firefox incrementano da soli per ogni pagina */
+  .print-footer{
+    position: fixed;                     /* ripetuto su tutte le pagine */
+    left: 0; right: 0; bottom: 10mm;
+    text-align: center;
+    font-size: 10pt; color: #555;
+  }
+  .print-footer::after{
+    content: "Pagina " counter(page);    /* "X di Y" vedi nota sotto */
+  }
+}
