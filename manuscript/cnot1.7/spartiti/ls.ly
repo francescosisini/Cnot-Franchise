@@ -32,6 +32,28 @@ global = { \key g \major \time 4/4 }
 
 % --- SEZIONI ---
 
+testo = \lyricmode {
+  she leaves and I stay
+  like a fol -- der left op -- en
+  half full hal -- f eased I blinck and she's al rea -- dy gone
+  She goes to NewYork
+  stay with a lamp
+  shape like a he -- art
+  plastic lo -- ve
+  
+  three set -- ting warm
+  cold am -- bi -- ent
+  mine is blinking
+  
+}
+
+% Accordi: una misura ciascuno (allineati alle 8 misure dell'arpeggio)
+accordi = \chordmode {
+  g1 g1 d1/a d1 e:m9 1 e1:m9  c1:9  g1 g d d e:m9 e:m9 c:9 g:maj7
+  g/b g d d c:maj7-9 c:maj7-9 c:maj7-9 c:maj7-9 c:maj7-9 c:maj7-9
+   g d b:m7
+}
+
 arpeggioChitarra = \relative g' {
   \global
   % 8 misure (G, G, D/A, D, Em9, Em9, C9, G) – arpeggio a ottavi
@@ -42,10 +64,27 @@ arpeggioChitarra = \relative g' {
   g8 d' g, d' g, d' g, b | % Em9
   g8 d' g, d' g, d' g, c | % Em9 (var)
   <c, e b' d>2  r4 r4 | % C9
-  r1 | % G
-  \tuplet 3/2 {d'4 g, d} \tuplet 3/2 {d'4 g, d} | %G
-  \tuplet 3/2 {d'4 a, d} \tuplet 3/2 {d'4 a, d} | %D 
-  \tuplet 3/2 {d'4 a, d} \tuplet 3/2 {d'4 a, d} | %D 
+  r2  <d g  d'>2 | % G
+  \tuplet 3/2 {d'4 g, d} \tuplet 3/2 {d'4 g, d} | % G
+  \tuplet 3/2 {d'4 a d,} \tuplet 3/2 {d'4 a d,} | % D 
+  \tuplet 3/2 {d'4 a d,} \tuplet 3/2 {d'4 a d,} | % D 
+  \tuplet 3/2 {d'4 g, e} \tuplet 3/2 {d'4 g, e} | % em79
+  \tuplet 3/2 {d'4 g, e} \tuplet 3/2 {d'4 g, e} | % em79
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {b'4 g d} \tuplet 3/2 {b'4 g d}   | % G
+  \tuplet 3/2 {<b b'>4 g' d } \tuplet 3/2 {b'4 g d}   | % G/b
+  \tuplet 3/2 {<b b'>4 g' d } \tuplet 3/2 {b'4 g d}   | % G/b
+  \tuplet 3/2 {d'4 a d,} \tuplet 3/2 {d'4 a d,} | %D 
+  \tuplet 3/2 {d'4 a d,} \tuplet 3/2 {d'4 a d,} | %D
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {c'4 g e} \tuplet 3/2 {c'4 g e}   | % C9
+  \tuplet 3/2 {b'4 g d} \tuplet 3/2 {b'4 g d}   | % G
+  \tuplet 3/2 {d'4 a d,} \tuplet 3/2 {d'4 a d,} | % D
+  \tuplet 3/2 {d'4 a fis} \tuplet 3/2 {d'4 a fis} | % D
 }
 
 melodiaVoce = \relative c'' {
@@ -55,17 +94,24 @@ melodiaVoce = \relative c'' {
   g'4 b,8 b4 b4. |
   r1|r8 d8 d8 g8 g4 d4|
   a4 a4 r2|
+  r4 r8 d4 d4 d8|
+  c8 b4. r4 r8 g
+  g4 r8 g8 g4 r8 g8|
+  r4 c8 c8 b4 r4 | %ready gone
+  r8 d4. g4 b,8 b8(| % she goes to New york
+  b4) r4 r2|
+  r8 g'4  a8 fis8 d4.|
+   c4 c4 b8 b8 a4|
+   r4 d4 c8 b r4|
+  r4 r4 d4 d8 c8|
+  b4 r4 r4 r8 c8( |
+  c8) c4 c8 c4   b4( |
+  c8) b4 a8 g4 r4|
 }
 
-testo = \lyricmode {
-  she leaves and I stay
-  like a folder left open
-}
 
-% Accordi: una misura ciascuno (allineati alle 8 misure dell'arpeggio)
-accordi = \chordmode {
-  g1 g1 d1/a d1 e:m9 1 e1:m9  c1:9  g1 g d
-}
+
+
 
 
 
