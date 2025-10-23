@@ -59,32 +59,16 @@ testo = \lyricmode {
 }
 
 
-
-
-
-
-
-
-
-accordiRefrain  = \chordmode { g4 | g4 | }   % 2 misure
+accordi  = \chordmode { g4 | g4 | d/a4 | d4 | e:m94| e:m94 |c:94 |g4 }   % 2 misure
 
 
 \score {
-  <<
-     
+  << 
     % --- ACCORDI (timeline identica allo Staff) ---
     \new ChordNames {
    
     \set chordChanges = ##f
-      \repeat volta 2 \accordiRefrain 
-      \accordiVersoA                       
-      \repeat volta 2 \accordiRefrain 
-      \accordiRitornello
-      \accordiRefrain 
-      \accordiVersoB                       
-      \repeat volta 2 \accordiRefrain
-      \accordiRitornello
-      \repeat volta 2 \accordiRefrain
+      accordi
     }
 
     % --- (facoltativo) diagrammi chitarra allineati ---
@@ -95,27 +79,8 @@ accordiRefrain  = \chordmode { g4 | g4 | }   % 2 misure
     % --- STAFF: una sola Voice che contiene tutto in sequenza ---
     \new Staff <<
       \new Voice = "voce" {
-        \mark \markup \box "Refrain ×2 (2ª volta senza testo)"
-	\repeat volta 2 \melRefrainStart
-        
-	\bar "|"
-        \melVersoA
-	\repeat volta 2 \melRefrain
-		
-	%\bar "|."
-
-	\melRitornello
-
-	%\repeat volta 1
-	\melRefrain
-	
-	\melVersoB
-
-	\repeat volta 2 \melRefrain
-
-	\melRitornello
-
-	\repeat volta 2 \melRefrain
+        \mark \markup \box "Sospirata"
+	melodiaVoce
       }
     >>
 
@@ -124,25 +89,8 @@ accordiRefrain  = \chordmode { g4 | g4 | }   % 2 misure
     \new Lyrics \lyricsto "voce"
     { 
       \global
-      \testoRefrain
-      
-      \testoVersoA
 
-      \testoRefrain
-       
-      
-      \testoRitornello
-      
-
-      \pausaRefrain
-      %\testoRefrain
-      \testoVersoB
-
-      \testoRefrain
-
-      \testoRitornello
-
-      \testoRefrain 
+      \testo
     } 
   >>
   \layout{}
