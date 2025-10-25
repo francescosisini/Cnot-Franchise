@@ -8,8 +8,8 @@
 
 **Edizioni Tradizionali** è un laboratorio editoriale indipendente dove la scrittura, la musica e l’illustrazione dialogano con l’intelligenza artificiale senza mai rinunciare all’origine umana delle idee.
 
-Tutto nasce da **un e-book scritto da un autore umano**, ambientato in un universo narrativo in cui  
-i **personaggi sono analizzati con modelli psicologici reali** (profilo NEO PI-R)  
+Gli autori e le idee sono umane ma:
+i **personaggi sono analizzati da AI con modelli psicologici reali** (profilo NEO PI-R)  
 e reagiscono in modo coerente alle proprie dimensioni di personalità.
 
 ---
@@ -62,9 +62,9 @@ puoi aprire una _pull request_ o taggare il progetto sui social con gli hashtag
 
 ## 🌐 Collegamenti
 
-- [E-book su GitHub →](ebook/)
-- [Disegni originali →](disegni/)
-- [Spartiti e file LilyPond →](spartiti/)
+- [E-book su GitHub →](../manuscript/cnot1.7/Cnot1.7 - Eiren Lysias.epub)
+- [Disegni originali →](../manuscript/cnot1.7/media)
+- [Spartiti e file LilyPond →](../manuscript/cnot1.7/spartiti)
 - [Licenza CC BY 4.0 →](https://creativecommons.org/licenses/by/4.0/)
 
 ---
