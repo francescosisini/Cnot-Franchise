@@ -17,7 +17,7 @@ e reagiscono in modo coerente alle proprie dimensioni di personalità.
 ## 🎨 Disegni
 
 Ogni immagine è **ideata e tracciata a mano**, poi **rifinita in digitale**.  
-Il tratto rimane umano, ma la post-produzione sfrutta strumenti di intelligenza artificiale per valorizzare la composizione e la luce.  
+Il tratto rimane umano, ma la post-produzione sfrutta strumenti digitali come Clip Studio Paint per valorizzare la composizione e la luce.  
 L’obiettivo non è imitare la realtà, ma **far emergere la sensibilità dietro la tecnologia**.
 
 ---
