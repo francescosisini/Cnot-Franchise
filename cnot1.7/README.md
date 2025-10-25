@@ -30,7 +30,7 @@ per invitare chi suona o canta a realizzare la **propria versione**.
 
 > _Una musica senza versione ufficiale è una musica ancora viva._
 
-[Scarica gli spartiti disponibili →](spartiti/)
+[Scarica gli spartiti disponibili →]([spartiti/](https://github.com/francescosisini/Cnot-Franchise/tree/main/manuscript/cnot1.7/spartiti))
 
 ---
 
