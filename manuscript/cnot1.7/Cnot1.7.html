@@ -3,9 +3,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="ebook.css">
+  <meta name="title" content="Cnot 1.7">
+  <meta name="author" content="Eiren Lysias">
+  <meta name="publisher" content="Edizioni Tradizionali">
+  <meta name="date" content="2025-10">
+  <meta name="identifier" content="ISBN:da-assegnare">
+  <meta name="license" content="CC BY-SA 4.0">
+
 </head>
 
-<title>Cnot 1.7 — Copertina</title>
+<title>Cnot 1.7</title>
 <style>
   :root{
     --fg:#0b0b0b; --bg:#faf9f7; --accent:#111; 
@@ -84,7 +91,7 @@
           <span>Edizione 2025</span>
           <span class="logo">
             <!-- Sostituisci con il tuo logo -->
-            <img src="media/logo-edizioni-tradizionali.svg" alt="Edizioni Tradizionali">
+            <img src="media/edizioni tradizionali.png" alt="Edizioni Tradizionali">
             <span>Edizioni Tradizionali</span>
           </span>
         </div>
@@ -93,7 +100,113 @@
     </div>
   </section>
 
+  <section class="page frontespizio">
+  <style>
+    .frontespizio{
+      display:grid; place-items:center; padding:8vh 8vw; background:#fff; color:#111;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    .front-card{max-width:720px; width:100%; text-align:center}
+    .front-title{
+      font-weight:800; line-height:1.1; letter-spacing:-.01em;
+      font-size:clamp(36px, 6vw, 72px); margin:0 0 .25em;
+    }
+    .front-subtitle{font-size:clamp(16px, 2.2vw, 22px); opacity:.85; margin:.2em 0 1.4em}
+    .front-author{font-size:clamp(16px, 2.2vw, 20px); font-weight:600; margin-bottom:2.5em}
+    .front-imprint{margin-top:3em; opacity:.9}
+    .front-logo{height:28px; vertical-align:middle; margin-right:.5rem;horizontal-align:middle;}
+    .small{font-size:0.95rem; opacity:.85}
+    .note{font-size:.9rem; opacity:.8; margin-top:.5rem}
+    @media print{ .page{page-break-after:always} }
+  </style>
 
+  <div class="front-card">
+    <h1 class="front-title">Cnot&nbsp;1.7</h1>
+    <div class="front-author">Eiren Lysias</div>
+
+    <div class="front-imprint small">
+      <img width="20%" src="media/edizioni tradizionali.png" alt="Edizioni Tradizionali" />
+      <span>Edizioni Tradizionali — Ferrara, 2025</span>
+      <div class="note">
+        <em>“Edizioni Tradizionali” è un <strong>marchio in fase di registrazione</strong>.<br>
+        Non è (ancora) una casa editrice; questa è un’<strong>opera pubblica</strong>.</em>
+      </div>
+    </div>
+    <div class="front-links">
+      <img class="gh-mark" width="10%" src="media/github-mark.png" alt="GitHub">
+      Progetto e sorgenti su GitHub:
+      <a href="https://github.com/francescosisini/Cnot-Franchise" target="_blank" rel="noopener">
+        https://github.com/francescosisini/Cnot-Franchise
+      </a>
+    </div>
+    <div class="small" style="margin-top:1rem">
+      Prima edizione: ottobre 2025 • ISBN: <em>da assegnare</em>
+    </div>
+  </div>
+</section>
+<section class="page colophon">
+  <style>
+    .colophon{
+      background:#fafafa; color:#1a1a1a; padding:10vh 10vw;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    .colophon h2{font-size:1.4rem; margin:0 0 .75rem; letter-spacing:.02em}
+    .colophon p{margin:.35rem 0; line-height:1.6}
+    .grid{display:grid; gap:1.25rem; grid-template-columns: 1fr; max-width:900px}
+    @media (min-width:840px){ .grid{grid-template-columns: 1fr 1fr} }
+    .muted{opacity:.8}
+    .legal{font-size:.95rem; margin-top:1.25rem; opacity:.9}
+    .cc-line{display:flex; align-items:center; gap:.5rem; flex-wrap:wrap}
+    .cc-badge{height:1.1em; vertical-align:text-bottom}
+    @media print{ .page{page-break-after:always} }
+  </style>
+
+  <div class="grid">
+    <div>
+      <h2>Crediti</h2>
+      <p><strong>Autore</strong>: Eiren Lysias</p>
+      <p><strong>Disegni a matita</strong>: Francesco Sisini</p>
+      <p><strong>Editing digitale, rifiniture, ombreggiature</strong>: Annalisa Pazzi</p>
+      <p><strong>Copertina</strong>: Annalisa Pazzi</p>
+      <p><strong>Consulenza informatica</strong>: Valentina Sisini</p>
+      <p><strong>Impaginazione e design</strong>: team “Edizioni Tradizionali” <span class="muted">(marchio in fase di registrazione; non è una casa editrice)</span></p>
+      <p><strong>Impianto editoriale</strong>: progetto pubblico a cura di “Edizioni Tradizionali”</p>
+      <p class="muted">Impaginazione HTML/CSS ottimizzata per ebook e stampa</p>
+    </div>
+
+    <div>
+      <h2>Edizione</h2>
+      <p><strong>Edizioni Tradizionali</strong> — Ferrara <span class="muted">(marchio in registrazione)</span></p>
+      <p><strong>Prima edizione</strong>: ottobre 2025</p>
+      <p><strong>ISBN</strong>: <em>da assegnare</em></p>
+      <p><strong>Contatti</strong>: <em>francescomichelesisini@gmail.com</em></p>
+     <!-- <p><strong>QR</strong>: <img alt="QR codice" src="media/.png" style="height:1.2em; vertical-align:middle"> (scarica/landing)</p>-->
+    </div>
+  </div>
+
+  <div class="legal">
+    <div class="cc-line">
+      <img class="cc-badge" src="media/by-sa.png" alt="Creative Commons">
+      <span>
+        Quest’opera è rilasciata con licenza
+        <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.it">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.
+      </span>
+    </div>
+    <p class="muted">
+      © 2025 Francesco Sisini — <em>Alcuni diritti riservati</em> (CC BY-SA 4.0).
+      Sei libero di condividere e adattare quest’opera per qualsiasi scopo, anche commerciale, a condizione di
+      attribuire in modo appropriato e rilasciare le opere derivate con la stessa licenza.
+    </p>
+    <p class="muted">
+      “Edizioni Tradizionali” è un marchio in fase di registrazione; non costituisce, allo stato attuale, una casa editrice.
+      Eventuali marchi citati appartengono ai rispettivi proprietari.
+    </p>
+  </div>
+</section>
+
+<!--
+
+  
   <section class="page frontespizio">
   <style>
     .frontespizio{
@@ -174,7 +287,7 @@
     Eventuali marchi citati appartengono ai rispettivi proprietari.
   </div>
 </section>
-
+-->
 <!--<div class="blank-print" aria-hidden="true"></div>-->
 
   
@@ -1002,10 +1115,10 @@ E a chi riconosce, nei fili della tecnologia, un’estensione della vita stessa.
 
 <p style="font-size:smaller; text-align:center; margin-top:40px;">
 Impaginato in HTML e PDF con strumenti open-source.<br/>
-© Francesco Sisini, 2025 — Tutti i diritti riservati.
+© Francesco Sisini, 2025 — Alcuni diritti sono riservati CC BY SA.
 </p>
 
-<figure><img alt="Logo Edizioni Tradizionali." src="media/edizioni tradizionali.png" style="width:6.5in" /></figure>
+<figure><img width="30%" alt="Logo Edizioni Tradizionali." src="media/edizioni tradizionali.png" /></figure>
 
 </body>
 </html>
