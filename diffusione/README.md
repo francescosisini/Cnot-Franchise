@@ -6,9 +6,9 @@ Per comprendere e prevedere la diffusione di *CNOT* come prodotto culturale (let
 
 L’equazione differenziale è:
 
-\[
-\frac{dF}{dt} = (p + qF)(1 - F) - rF
-\]
+
+$` \frac{dF}{dt} = (p + qF)(1 - F) - rF `$
+
 
 dove:
 
