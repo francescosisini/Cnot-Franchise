@@ -45,3 +45,8 @@ mentre l’aggiornamento continuo dei parametri ci consente di **leggere la real
 dove creatività, comunicazione e memoria culturale si intrecciano.
 
 ---
+## 📊 Modello di diffusione – Foglio dati
+I dati aggiornati sul modello di Bass e i parametri (p, q, r) sono consultabili qui:
+
+👉 [Apri il foglio Google in sola lettura](https://docs.google.com/spreadsheets/d/e/2PACX-1vSb263VkVLpwCxKZCCqkhs4iZllrijYAL-b5b1Nr-ge5ipMU52mvr4IHKuOeCZwgS6N0d1SRjyf7Xup/pubhtml)
+
