@@ -1,0 +1,86 @@
+{
+  "Scala": {
+    "Descrizione": "I punteggi sono espressi su una scala da 1 a 12, dove 1–4 indica un livello basso della caratteristica, 5–8 un livello medio, e 9–12 un livello alto."
+  },
+  "Alice": {
+    "Neuroticism": {
+      "Anxiety": 8,
+      "Anger": 5,
+      "Depression": 6,
+      "Self-Consciousness": 6,
+      "Immoderation": 7,
+      "Vulnerability": 6
+    },
+    "Extraversion": {
+      "Friendliness": 6,
+      "Gregariousness": 7,
+      "Assertiveness": 6,
+      "Activity Level": 7,
+      "Excitement-Seeking": 6,
+      "Cheerfulness": 6
+    },
+    "Openness": {
+      "Imagination": 11,
+      "Artistic Interests": 10,
+      "Emotionality": 9,
+      "Adventurousness": 7,
+      "Intellect": 8,
+      "Liberalism": 7
+    },
+    "Agreeableness": {
+      "Trust": 6,
+      "Morality": 6,
+      "Altruism": 7,
+      "Cooperation": 5,
+      "Modesty": 5,
+      "Sympathy": 8
+    },
+    "Conscientiousness": {
+      "Self-Efficacy": 6,
+      "Orderliness": 4,
+      "Dutifulness": 5,
+      "Achievement-Striving": 6,
+      "Self-Discipline": 5,
+      "Cautiousness": 5
+    },
+    "NarrativeCommentary": {
+      "Riassunto": "Alice è una mente molto aperta e creativa, emotivamente intensa e motivata, ma con organizzazione e disciplina altalenanti. Questo la porta a iniziative artistiche forti (scrittura, musica), slanci empatici verso la sorella e incursioni esplorative (urbex/ricerca), con momenti di ansia che accelerano decisioni impulsive ma autentiche.",
+      "AzioniChiave": [
+        {
+          "azione": "Compone la canzone per la sorella ('Don't Forget the Little Sister') e la porta nel progetto.",
+          "spiegazione": "Openness alta (Imagination 11, Artistic Interests 10, Emotionality 9) canalizza l’intensità emotiva in espressione creativa; Sympathy 8 orienta il gesto verso la relazione."
+        },
+        {
+          "azione": "Insiste per esplorare/ricostruire gli spazi del convitto e portarli nella storia.",
+          "spiegazione": "Adventurousness 7 ed Excitement-Seeking 6 sostengono la spinta esplorativa; Intellect 8 suggerisce curiosità strutturata. Cautiousness 5 mantiene il rischio sotto controllo ma non lo elimina."
+        },
+        {
+          "azione": "Alterna fasi di grande produttività a momenti disordinati e caotici (appunti sparsi, workflow non lineare).",
+          "spiegazione": "Activity Level 7 e Achievement-Striving 6 danno slancio; Orderliness 4 e Self-Discipline 5 spiegano l’assetto operativo irregolare."
+        },
+        {
+          "azione": "Nei conflitti creativi collabora ma difende la propria visione.",
+          "spiegazione": "Cooperation 5 e Assertiveness 6 generano una collaborazione assertiva: dialoga (Friendliness 6) ma non rinuncia facilmente a soluzioni estetiche care a lei."
+        },
+        {
+          "azione": "Nei momenti di pressione emotiva accelera decisioni e sperimentazioni.",
+          "spiegazione": "Anxiety 8 e Immoderation 7 aumentano urgenza e intensità; Self-Efficacy 6 evita il blocco e favorisce il passaggio all’azione (bozze, demo, mockup)."
+        },
+        {
+          "azione": "Mantiene un tono umano e non autocelebrativo nella comunicazione pubblica del progetto.",
+          "spiegazione": "Modesty 5 (medio) con Sympathy 8 indirizzano l’attenzione al valore relazionale e comunitario più che all’ego creativo."
+        },
+        {
+          "azione": "Integra riferimenti culturali e tecnici senza didascalismi.",
+          "spiegazione": "Intellect 8 e Liberalism 7 sostengono apertura concettuale e curiosità; Morality 6 favorisce chiarezza e onestà nel racconto."
+        }
+      ],
+      "ImplicazioniOperative": [
+        "Fornirle spazi di lavoro visivi (moodboard, bacheche) per compensare Orderliness 4.",
+        "Timeboxing breve e versioning frequente per domare l’ansia e l’immoderazione.",
+        "Canalizzare la forte Imagination in deliverable iterativi (demo musicali, scene 3D a step).",
+        "Affiancare un partner più organizzato nei momenti di chiusura progetto (editing, checklist)."
+      ]
+    }
+  }
+}
