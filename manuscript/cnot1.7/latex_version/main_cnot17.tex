@@ -1,13 +1,16 @@
 %========================================
 % Cnot 1.7 — main.tex
 %========================================
-\documentclass[12pt,oneside,a4paper]{book}
+%\documentclass[14pt,oneside,a4paper]{book}
+\documentclass[14pt,a4paper]{extbook} % oppure 17pt, 20pt
 
 % ---------- Encoding & lingua ----------
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc} % con XeLaTeX/LuaLaTeX non serve
 \usepackage[italian]{babel}
 \usepackage{microtype}
+\usepackage{libertinus}
+
 
 % ---------- Impaginazione ----------
 \usepackage[a4paper,margin=2.5cm]{geometry}
@@ -49,12 +52,29 @@
 
 % ---------- Titoli ----------
 \usepackage{titlesec}
+\usepackage{xcolor}
+% Capitolo compatto e più piccolo
+
+% Colore sobrio e “editoriale” (modificalo a gusto)
+\definecolor{ChapterColor}{HTML}{2A3F5F} % blu ardesia
+%\definecolor{ChapterColor}{HTML}{3A4A3F} % verde-grigio alternativo
+%\definecolor{ChapterColor}{HTML}{5A4B41} % seppia caldo
+
+% Stile capitolo numerato
 \titleformat{\chapter}[display]
-  {\bfseries\Huge}
-  {\filright\Large\MakeUppercase{\chaptername}\ \thechapter}
-  {1ex}
-  {\titlerule\vspace{1ex}\filright}
-\titlespacing*{\chapter}{0pt}{-2pt}{2.0em}
+  {\filcenter\bfseries\Large\color{ChapterColor}} % centro + peso + size + colore
+  {\textsc{\MakeUppercase{Capitolo} \thechapter}} % riga sopra: “Capitolo N” in small caps
+  {0.5ex}                                         % spazio tra label e titolo
+  {\filcenter}                                     % il titolo vero e proprio, centrato
+  [\vspace{0.75ex}\color{ChapterColor}\rule{2.5cm}{0.6pt}] % filetto finale discreto
+
+%\titleformat{\chapter}[display]
+ % {\bfseries\Large}        % <- dimensione titolo (cambia \Large in \large o \normalsize)
+ % {\filright\small\MakeUppercase{\chaptername}\ \thechapter} % riga “Capitolo N”
+ % {1ex}                    % spazio tra numero e titolo
+ % {\filright}              % allineamento del titolo
+%\titlespacing*{\chapter}{0pt}{2ex}{2ex}  % margini/spacing: sinistra, prima, dopo
+
 
 % ---------- Comandi utili ----------
 \newcommand{\CCBYSA}{\includegraphics[height=1.2em]{cc-by-sa.png}} % opzionale
@@ -85,14 +105,13 @@
 % Premessa (non numerata ma in front matter)
 \include{chapters/premessa}
 
-% Prologo (puoi decidere se tenerlo in frontmatter o passare a mainmatter prima)
-\include{chapters/prologo}
 
 %========================================
 % Corpo del libro
 %========================================
 \mainmatter
-
+% --- prologo ---
+\include{chapters/prologo}
 % --- 17 capitoli ---
 \include{chapters/chapter01}
 \include{chapters/chapter02}
@@ -100,18 +119,19 @@
 \include{chapters/chapter04}
 \include{chapters/chapter05}
 \include{chapters/chapter06}
-\include{chapters/capitolo07}
-\include{chapters/capitolo08}
-\include{chapters/capitolo09}
-\include{chapters/capitolo10}
-\include{chapters/capitolo11}
-\include{chapters/capitolo12}
-\include{chapters/capitolo13}
-\include{chapters/capitolo14}
-\include{chapters/capitolo15}
-\include{chapters/capitolo16}
-\include{chapters/capitolo17}
-
+\include{chapters/chapter07}
+\include{chapters/chapter08}
+\include{chapters/chapter09}
+\include{chapters/chapter10}
+\include{chapters/chapter11}
+\include{chapters/chapter12}
+\include{chapters/chapter13}
+\include{chapters/chapter14}
+\include{chapters/chapter15}
+\include{chapters/chapter16}
+\include{chapters/chapter17}
+% --- epilogo ---
+\include{chapters/epilogo}
 %========================================
 % Back matter
 %========================================
