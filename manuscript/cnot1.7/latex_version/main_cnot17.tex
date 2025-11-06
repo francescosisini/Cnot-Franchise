@@ -1,0 +1,122 @@
+%========================================
+% Cnot 1.7 — main.tex
+%========================================
+\documentclass[12pt,oneside,a4paper]{book}
+
+% ---------- Encoding & lingua ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % con XeLaTeX/LuaLaTeX non serve
+\usepackage[italian]{babel}
+\usepackage{microtype}
+
+% ---------- Impaginazione ----------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---------- Grafica & colori ----------
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{float}
+\graphicspath{{media/}{figures/}{images/}}
+
+% ---------- Tipografia ----------
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{array}
+
+% ---------- Riferimenti & PDF ----------
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Cnot 1.7},
+  pdfauthor={Edizioni Tradizionali},
+  pdfsubject={Romanzo / Progetto Cnot 1.7},
+  pdfkeywords={Cnot 1.7, narrativa, Edizioni Tradizionali},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+\usepackage{bookmark} % segnalibri robusti
+
+% ---------- Intestazioni/Piè di pagina ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+
+% ---------- Titoli ----------
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\bfseries\Huge}
+  {\filright\Large\MakeUppercase{\chaptername}\ \thechapter}
+  {1ex}
+  {\titlerule\vspace{1ex}\filright}
+\titlespacing*{\chapter}{0pt}{-2pt}{2.0em}
+
+% ---------- Comandi utili ----------
+\newcommand{\CCBYSA}{\includegraphics[height=1.2em]{cc-by-sa.png}} % opzionale
+
+% ---------- Dati del libro ----------
+\title{\textbf{Cnot 1.7}}
+\author{Edizioni Tradizionali}
+\date{\today}
+
+% ---------- (Opzionale) includeonly per compilazioni rapide ----------
+% \includeonly{chapters/frontespizio,chapters/premessa,chapters/prologo,chapters/capitolo01}
+
+\begin{document}
+
+%========================================
+% Front matter
+%========================================
+\frontmatter
+\maketitle % Se preferisci un frontespizio personalizzato, commenta questa riga e usa chapters/frontespizio.tex
+
+% Frontespizio personalizzato (opzionale, sostituisce \maketitle)
+\include{chapters/frontespizio}
+
+% Indice (se lo vuoi all’inizio)
+\tableofcontents
+\cleardoublepage
+
+% Premessa (non numerata ma in front matter)
+\include{chapters/premessa}
+
+% Prologo (puoi decidere se tenerlo in frontmatter o passare a mainmatter prima)
+\include{chapters/prologo}
+
+%========================================
+% Corpo del libro
+%========================================
+\mainmatter
+
+% --- 17 capitoli ---
+\include{chapters/chapter01}
+\include{chapters/chapter02}
+\include{chapters/chapter03}
+\include{chapters/chapter04}
+\include{chapters/chapter05}
+\include{chapters/chapter06}
+\include{chapters/capitolo07}
+\include{chapters/capitolo08}
+\include{chapters/capitolo09}
+\include{chapters/capitolo10}
+\include{chapters/capitolo11}
+\include{chapters/capitolo12}
+\include{chapters/capitolo13}
+\include{chapters/capitolo14}
+\include{chapters/capitolo15}
+\include{chapters/capitolo16}
+\include{chapters/capitolo17}
+
+%========================================
+% Back matter
+%========================================
+\backmatter
+% Colophon (tradizionalmente in coda)
+\include{chapters/colophon}
+
+\end{document}
