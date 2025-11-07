@@ -55,7 +55,6 @@ PLAY-IT-FIRST-CNOT/
 ├── scores/ # sheet music and lyrics
 ├── events/ # local event descriptions and photos
 ├── media/ # official photos, videos, and recordings
-├── submissions/ # public contributions
 └── graphics/ # posters, QR, visual identity
 ```
 
