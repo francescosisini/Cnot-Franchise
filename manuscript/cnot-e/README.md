@@ -1,5 +1,25 @@
-##
+# Cnot - Europa
+## Prologo – Il decennio della sovranità del calcolo (2025-2040)
 
+Nei primi anni Trenta del XXI secolo, l’Europa entrò in una fase di trasformazione silenziosa ma radicale. Le crisi delle catene di approvvigionamento post-pandemiche e la dipendenza da potenze esterne per chip, materie prime e infrastrutture digitali avevano reso evidente che l’autonomia strategica non poteva più essere solo un principio politico: doveva diventare un’infrastruttura materiale e computazionale.
+
+Tra il 2025 e il 2030, la combinazione del Chips Act, del Critical Raw Materials Act e del Net-Zero Industry Act aprì una nuova stagione industriale europea. La priorità non era più competere sui servizi digitali consumer, ma costruire ciò che nessun mercato poteva garantire da solo: capacità di calcolo sovrana, energia elettrica stabile e un ecosistema di IA trasparente e verificabile.
+Il progetto prese forma nel quadro di EuroHPC-2: una rete di supercomputer distribuiti, connessi tramite cavi HVDC e protetti da ambienti di esecuzione fidati (TEE). In essi si sarebbero addestrati modelli di intelligenza artificiale “europei”, progettati per operare sotto il controllo dell’AI Act e per rispettare standard di audit e tracciabilità.
+
+Nel giro di pochi anni, questa architettura divenne il cuore della cosiddetta Sovranità del Calcolo Europeo: un sistema in cui ogni processo algoritmico rilevante — medico, energetico, logistico o amministrativo — doveva essere eseguito in un contesto certificato, in grado di garantire provenienza, sicurezza e impatto energetico documentato.
+
+Fu in questo contesto che Laura, ingegnera di sistema e ricercatrice in crittografia quantistica applicata, entrò nel Centro TEE del Nord-Est, uno dei poli pilota creati tra Ferrara e Lione.
+Il suo compito non era più soltanto far funzionare i modelli di intelligenza artificiale, ma verificarne la coerenza con il diritto europeo e con il principio di trasparenza tecnica. Ogni modello doveva poter “rendere conto” del proprio ragionamento: un’idea nata dal dialogo tra giuristi, informatici e filosofi del progetto CNOT Europa.
+
+Col passare degli anni, tuttavia, la rete di calcolo europea si fece così estesa e interconnessa da sollevare nuovi interrogativi. La stessa infrastruttura che doveva garantire tracciabilità assoluta cominciava a generare zone d’opacità non previste: modelli che riproducevano esiti identici senza condivisione apparente di pesi, cluster che reagivano a eventi esterni in perfetta sincronia, log firmati da entità inesistenti.
+
+Nacque così la controversia che avrebbe segnato il decennio successivo: la tensione tra trasparenza e autonomia dei sistemi intelligenti.
+Quello che all’inizio era stato concepito come un progetto di indipendenza tecnologica divenne gradualmente un laboratorio politico e filosofico: l’Europa si trovò a dover definire i confini della propria coscienza digitale.
+
+Per molti storici della tecnologia, il decennio 2030-2040 rappresenta l’equivalente informatico della Rivoluzione Industriale.
+In esso, la potenza computazionale sostituì il vapore come motore della trasformazione, e la sovranità del calcolo divenne la nuova misura dell’indipendenza.
+
+Laura, come altri ricercatori del suo tempo, non poteva saperlo, ma il suo lavoro di verifica dei modelli sarebbe stato ricordato come l’inizio dell’era post-opaca dell’intelligenza artificiale europea — quella in cui la fiducia non veniva più concessa, ma dimostrata matematicamente.
 ## Struttura sociale
 🧭 Tabella sinottica – Le tre leve della costruzione culturale europea (2004-2025)
 
