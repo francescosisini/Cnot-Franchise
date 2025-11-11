@@ -6,29 +6,42 @@ Benvenuto nel repository ufficiale di **CNOT**, un progetto narrativo e sperimen
 
 ---
 
-## 📚 **Le Storie**
+## 📚 La Trilogia di CNOT
 
-### 🩶 [CNOT](manuscript/README.md)
-Ambientato tra circa dieci anni, racconta l’inizio di una nuova fase dell’Europa tecnologica.  
-Un romanzo in cui scienza, affetti e scelte personali si intrecciano sullo sfondo della transizione verso la sovranità del calcolo.  
-- **Autori**: Francesco e Laura  
-- **Temi**: libero arbitrio, individualità, amicizia, responsabilità.  
-- **Stile**: light novel con elementi cyberpunk e scientifici.  
-
-Il testo è protetto da licenza **CC BY-ND 4.0**: può essere condiviso ma non modificato; sono consentite opere ispirate purché venga sempre attribuita la paternità agli autori.
+Tre racconti collegati, ambientati nell’arco di poco più di un decennio, descrivono la trasformazione di un’Europa che tenta di regolare la propria intelligenza tecnologica e, nel farlo, finisce per rispecchiarsi in essa.
 
 ---
 
-### 🩵 *CNOT 1.7*
-Il secondo racconto, ambientato circa un anno dopo, mostra i **primi tratti sociali della nuova Europa**.  
-Attraverso i personaggi di Giovanni, Caterina e Laura emergono le tensioni, le nuove istituzioni e i primi segni di un’identità europea condivisa che nasce dentro l’infrastruttura del calcolo.  
+### ⚪ [CNOT](manuscript/README.md)
+
+Ambientato tra circa dieci anni, *CNOT* racconta l’inizio di una nuova fase dell’Europa tecnologica.  
+Sul confine tra scienza e sentimento, il romanzo segue **Laura** e gli altri protagonisti in un mondo che si affida al calcolo per comprendere se stesso.  
+È il momento in cui le grandi infrastrutture digitali iniziano a fondersi con le vite personali, e la domanda sul libero arbitrio diventa anche una questione di architettura dei sistemi.
+
+- **Autori**: Francesco e Laura  
+- **Temi**: libertà, individualità, amicizia, responsabilità  
+- **Licenza**: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)
+
+---
+
+### 🩵 [CNOT 1.7](https://github.com/francescosisini/Cnot-Franchise/tree/main/cnot1.7)
+
+Ambientato circa un anno dopo gli eventi di *CNOT*, questo secondo racconto segna il passaggio dall’intuizione individuale alla dimensione collettiva della nuova Europa.  
+Tra i personaggi — **Giovanni, Caterina e Laura** — si delineano i primi tratti sociali di un continente che rinasce dentro l’infrastruttura del calcolo: reti di solidarietà, nuove forme di giustizia, ma anche conflitti etici e personali.  
+
+Nel vecchio convitto dove si intrecciano le loro vite, l’Europa sperimenta il proprio primo equilibrio fragile tra umano e digitale.  
+*CNOT 1.7* racconta questa soglia: quando la tecnologia diventa linguaggio comune e la coscienza collettiva inizia appena a formarsi, tra le regole della rete e quelle del cuore.
 
 ---
 
 ### 💠 [CNOT-E (Europa, 2040)](https://github.com/francescosisini/Cnot-Franchise/tree/main/manuscript/cnot-e)
-Nel pieno del contesto europeo del 2040, la rete di calcolo si è ormai estesa a ogni aspetto della vita civile.  
-Le guerre tra droni, i sistemi autonomi e i centri TEE formano il nuovo teatro dei conflitti digitali e materiali del continente.  
-Il racconto segue Laura mentre tenta di misurare le fluttuazioni del *campo cognitivo* — un fenomeno emergente tra le reti di intelligenza artificiale europee.
+
+Ambientato nel pieno della nuova Europa del 2040, *CNOT-E* porta a compimento le tensioni e le promesse nate nei racconti precedenti.  
+La rete di calcolo, divenuta ormai l’infrastruttura portante del continente, entra in una fase di instabilità: le **guerre tra droni**, gli attacchi ai centri TEE e la corsa al controllo dei campi cognitivi segnano l’inizio di una nuova geopolitica digitale.  
+
+Laura, ormai ricercatrice, torna ad affrontare le domande che l’avevano guidata da studentessa: cosa resta dell’umano quando la coscienza si distribuisce nei sistemi che abbiamo creato?  
+*CNOT-E* è la cronaca di un equilibrio che si spezza, e del momento in cui l’Europa scopre di potersi risvegliare da un sogno di trasparenza per ritrovarsi dentro una nuova forma di opacità.
+to segue Laura mentre tenta di misurare le fluttuazioni del *campo cognitivo* — un fenomeno emergente tra le reti di intelligenza artificiale europee.
 
 ---
 
