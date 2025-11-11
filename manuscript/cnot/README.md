@@ -44,7 +44,7 @@ Esplora l'universo sonoro di CNOT con una colonna sonora originale che accompagn
 - **Circuit Dreams**: L'introspezione nei mondi digitali.
 - **Last Exit: Quantum Channel**: La malinconia di un finale incerto.
 
-Le tracce sono disponibili nella cartella [soundtrack](soundtrack/README.md) e sono distribuite con licenza **GNU GPL v3.0**. Puoi contribuire ad ampliarle o remixarle!
+Le tracce sono disponibili nella cartella [soundtrack](../../soundtrack/README.md) e sono distribuite con licenza **GNU GPL v3.0**. Puoi contribuire ad ampliarle o remixarle!
 
 ---
 
@@ -53,7 +53,7 @@ Immergiti ancora di più nell'universo di CNOT con i giochi ispirati alla storia
 
 - **CH4 Drone Chase**: Pilota il drone CH4 di Laura attraverso un labirinto quantistico, evita i qubit, sconfiggi i droni nemici e salva Caterina dalla trappola ionica. Raggiungi il tuo obiettivo e diventa il protagonista della tua avventura!
 
-Trova i dettagli su come installare e giocare nella cartella dedicata: [Games](games/README.md).
+Trova i dettagli su come installare e giocare nella cartella dedicata: [Games](../../games/README.md).
 
 Contribuisci anche tu con nuove idee o miglioramenti ai giochi esistenti!
 
@@ -65,7 +65,7 @@ Immergiti nell'estetica visiva di CNOT con una serie di animazioni ispirate alla
 - **Griglia dinamica**: Una rete colorata in continua evoluzione.
 - **Messaggi significativi**: Testi animati che accompagnano l'esperienza visiva.
 
-Le animazioni sono disponibili nella cartella [digital_realms](digital_realms) e includono istruzioni per l'esecuzione. Contribuisci aggiungendo nuove idee o miglioramenti per arricchire l'universo visivo di CNOT!
+Le animazioni sono disponibili nella cartella [digital_realms](../../digital_realms) e includono istruzioni per l'esecuzione. Contribuisci aggiungendo nuove idee o miglioramenti per arricchire l'universo visivo di CNOT!
 
 ---
 
@@ -75,7 +75,7 @@ Stiamo costruendo una mappa interattiva dei luoghi descritti nel romanzo:
 - **Classical Control Unit (CCU)**: Il centro decisionale del sistema.
 - **Faulty Qubit Space**: Il rifugio per qubit imperfetti.
 
-Contribuisci alla mappa nella cartella [map](map).
+Contribuisci alla mappa nella cartella [map](../../map).
 
 ---
 
@@ -87,7 +87,7 @@ Gli spazi virtuali di **CNOT** su [Spatial.io](https://www.spatial.io/s/Cnot-Pre
 
 L'editing degli spazi è abilitato per favorire la collaborazione creativa. Segnala i tuoi contributi o suggerimenti nella sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
 
-➡️ Per dettagli tecnici sul progetto Spatial.io, consulta [spatialproject.md](spatialproject.md).
+➡️ Per dettagli tecnici sul progetto Spatial.io, consulta [spatialproject.md](../../spatialproject.md).
 
 ---
 
