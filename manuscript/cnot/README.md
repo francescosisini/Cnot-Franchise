@@ -13,7 +13,7 @@ CNOT è una light novel che intreccia temi come il libero arbitrio, l'individual
 - **Extra**: Include schizzi a matita e approfondimenti tecnici per immergersi completamente nel mondo di CNOT.
 
 ### 📝 Leggi il Manoscritto
-Puoi leggere il manoscritto nella cartella [manuscript](../../manuscript/README.md).
+Puoi leggere il manoscritto nella cartella [manuscript](.).
 Questo documento è protetto da una licenza **CC BY-ND 4.0**: è libero di essere condiviso, ma non può essere modificato o pubblicato da altri,  è invece consentita la creazione di opere derivate (spin-off, racconti, ecc.) che si ispirino ai personaggi o ad altri elementi dell’opera originale, a condizione che il testo originale rimanga inalterato e che venga sempre attribuita la paternità all’autore.
 
 Il documento originale è rilasciato sotto licenza **CC BY-ND 4.0**.
