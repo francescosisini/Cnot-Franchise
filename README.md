@@ -100,7 +100,7 @@ Consulta la cartella [map](map).
 
 ## 🌐 **Spazi Virtuali su Spatial.io**
 
-Gli spazi virtuali su [Spatial.io](https://www.spatial.io/s/Cnot-Presentazione-6777f2362fa1edbc86c3b351?share=254166736093461738) permettono di esplorare luoghi del racconto come ambienti tridimensionali.  
+Gli spazi virtuali su [Spatial.io](https://www.spatial.io/s/Cnot-17-684c12f2f734432bbfb0b0ab?share=2691301946283165767) permettono di esplorare luoghi del racconto come ambienti tridimensionali.  
 - Ogni spazio corrisponde a un ambiente narrativo (la stanza di Laura, il laboratorio, la trappola ionica).  
 - È possibile caricare immagini, video o modelli 3D.  
 - Chi usa Unity3D può contribuire con versioni più dettagliate.
