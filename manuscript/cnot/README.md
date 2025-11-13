@@ -2,7 +2,7 @@
 
 Benvenuto nel repository ufficiale di **CNOT**, un progetto che va oltre le pagine di un romanzo per esplorare un universo narrativo ricco di avventura, emozioni e tecnologie futuristiche.
 
-![CNOT Banner](artwork/banner_image.png)
+![CNOT Banner](../artwork/banner_image.png)
 
 ---
 
