@@ -62,7 +62,7 @@ puoi aprire una _pull request_ o taggare il progetto sui social con gli hashtag
 
 ## 🌐 Collegamenti
 
-- [E-book su GitHub →](../manuscript/cnot1.7/Cnot1.7 - Eiren Lysias.epub)
+- [E-book su GitHub →](../manuscript/cnot1.7/)
 - [Disegni originali →](../manuscript/cnot1.7/media)
 - [Spartiti e file LilyPond →](../manuscript/cnot1.7/spartiti)
 - [Licenza CC BY 4.0 →](https://creativecommons.org/licenses/by/4.0/)
