@@ -1,4 +1,4 @@
-# CNOT
+# CNOT - Franchise
 
 Benvenuto nel repository ufficiale di **CNOT**, un progetto narrativo e sperimentale che segue l’evoluzione dell’Europa tecnologica attraverso tre momenti chiave, separati da pochi anni ma uniti da un filo comune: il rapporto tra coscienza, tecnologia e libertà.
 
