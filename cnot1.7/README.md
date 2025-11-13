@@ -1,74 +1,84 @@
-# Edizioni Tradizionali · Cnot Universe
+# **CNOT 1.7 — Perdita, sistemi complessi e nuovi equilibri europei**  
+### *Un racconto del CNOT Franchise*
 
-> _Un progetto a cavallo tra due ere: l’immaginazione umana e la creatività algoritmica._
-
----
-
-## 🌱 Cos’è questo progetto
-
-**Edizioni Tradizionali** è un laboratorio editoriale indipendente dove la scrittura, la musica e l’illustrazione dialogano con l’intelligenza artificiale senza mai rinunciare all’origine umana delle idee.
-
-Gli autori e le idee sono umane ma:
-i **personaggi sono analizzati da AI con modelli psicologici reali** (profilo NEO PI-R)  
-e reagiscono in modo coerente alle proprie dimensioni di personalità.
+**CNOT 1.7** è il secondo racconto dell’universo narrativo **CNOT**, ambientato circa un anno dopo gli eventi del primo libro.  
+In questa nuova storia, l’Europa ha oltrepassato un punto di non ritorno: le istituzioni si sono trasformate in un’infrastruttura cognitiva, una rete che guida le decisioni tanto quanto è guidata dai cittadini.  
+È una società che cambia forma rapidamente, ma in cui le persone restano — inevitabilmente — persone.
 
 ---
 
-## 🎨 Disegni
+## 🌍 Tema centrale: l’evoluzione sociale dell’Europa
 
-Ogni immagine è **ideata e tracciata a mano**, poi **rifinita in digitale**.  
-Il tratto rimane umano, ma la post-produzione sfrutta strumenti digitali come Clip Studio Paint per valorizzare la composizione e la luce.  
-L’obiettivo non è imitare la realtà, ma **far emergere la sensibilità dietro la tecnologia**.
+Il racconto indaga una domanda chiave:  
+**che cosa resta dell’identità umana quando un intero continente si ristruttura attorno a nuovi paradigmi tecnologici, ambientali e politici?**
 
----
+L’Europa descritta in *CNOT 1.7* è:
 
-## 🎵 Musiche
+- una **società ad alta automazione**, governata da sistemi predittivi e data trust;  
+- una **cittadinanza mobile**, fatta di comunità temporanee, tiny houses, spazi di convivenza fluidi;  
+- un **ecosistema normativo in continua espansione**, che tenta di integrare sicurezza, mobilità, ambiente ed energia come un’unica trama.
 
-Le **canzoni dei personaggi** – come _Don’t Forget the Little Sister_ di Alice – **non sono pubblicate in streaming**.  
-Esistono solo come **spartiti**, distribuiti con **licenza Creative Commons Attribution 4.0 (CC BY 4.0)**,  
-per invitare chi suona o canta a realizzare la **propria versione**.
-
-> _Una musica senza versione ufficiale è una musica ancora viva._
-
-[Scarica gli spartiti disponibili →](../manuscript/cnot1.7/spartiti)
+In questo contesto accelerato, i legami affettivi rimangono l’unica bussola affidabile per orientarsi.
 
 ---
 
-## 📚 Il concept
+## 🧭 Gli assi strategici dell’Europa nel racconto
 
-La linea che separa il creatore dallo strumento non è più netta.  
-Un testo può nascere da un autore e crescere attraverso un modello linguistico;  
-una melodia può essere composta da un personaggio e completata da chi ascolta.
+### **1. Mobilità e identità**  
+Visti, verifiche incrociate, profili predittivi, valutazioni di “coerenza” dei movimenti.  
+La vicenda di Caterina mostra quanto la libertà individuale sia intrecciata ai sistemi istituzionali che sorvegliano, filtrano e interpretano le vite delle persone.
 
-**La creatività a cavallo tra due ere** non è un compromesso,  
-ma una nuova forma di artigianato culturale:  
-fatto di codice e carta, algoritmi e matite, spartiti e voci.
+### **2. Sicurezza energetica e ambientale**  
+Il clima e l’energia non sono sfondo: sono variabili politiche e personali.  
+Ogni scelta, anche la più privata, ha conseguenze che ricadono sui sistemi di governance energetica.
 
----
-
-## ⚙️ Licenza e partecipazione
-
-Tutti i materiali testuali, visivi e musicali sono rilasciati sotto **licenza Creative Commons Attribution 4.0 International (CC BY 4.0)**.  
-Puoi riprodurli, remixarli, interpretarli o condividerli,  
-citando la fonte:
-
-> “© Edizioni Tradizionali — Cnot Universe (CC BY 4.0)”
-
-Per proporre la tua **versione musicale** o **reinterpretazione grafica**,  
-puoi aprire una _pull request_ o taggare il progetto sui social con gli hashtag  
-**#Cnot17** e **#LittleSisterCover**.
+### **3. Sicurezza informatica e controllo dei dati**  
+Tra firewall, VPN, exploit etici e directory nascoste, il libro presenta un’Europa blindata e allo stesso tempo fragile.  
+Il racconto non glorifica l’hacking: lo mostra come unica via di riparazione quando i sistemi sbagliano e le procedure non bastano più.
 
 ---
 
-## 🌐 Collegamenti
+## 🔐 Il nodo narrativo: la guerra silenziosa dei dati
 
-- [E-book su GitHub →](../manuscript/cnot1.7/)
-- [Disegni originali →](../manuscript/cnot1.7/media)
-- [Spartiti e file LilyPond →](../manuscript/cnot1.7/spartiti)
-- [Licenza CC BY 4.0 →](https://creativecommons.org/licenses/by/4.0/)
+Laura tenta di correggere un’informazione errata che rischia di bloccare il viaggio di Caterina.  
+Per farlo, attraversa:
+
+- porte 21/22/80,  
+- fingerprint sospetti,  
+- log istituzionali,  
+- correlazioni tra database europei e statunitensi,  
+- intrusioni controllate e reversibili.
+
+Una battaglia tutta “sotto traccia”, dove il vero nemico non è il male ma l’inerzia delle infrastrutture.
 
 ---
 
-> _“Non esiste una versione ufficiale della canzone.  
->  Esistono solo le persone che scelgono di farla esistere.”_
+## ✨ Il cuore del libro: la forza umana davanti al cambiamento
+
+Il punto più importante non è la tecnologia.  
+Sono le persone.
+
+- Caterina, sospesa tra una scelta che sembra giusta e una che sembra inevitabile.  
+- Laura, che si mette in gioco pur sapendo che la linea tra lecito e vietato è sottilissima.  
+- Giovanni, che ricostruisce una vita in un micro-ecosistema ai margini.  
+- Alice e Valentina, che trasformano ogni crisi in un momento di fiducia e alleanza.
+
+Il libro racconta la capacità di riorganizzarsi mentre tutto intorno accelera.  
+La capacità di riconoscersi, di proteggersi, di non farsi schiacciare da un mondo che cambia più in fretta degli affetti.
+
+---
+
+## 📚 Posizionamento nel CNOT Franchise
+
+*CNOT 1.7* è un ponte narrativo:
+
+- tra il primo libro (*CNOT*) — più concentrato sulle architetture logiche,  
+- e i racconti successivi — dove l’infrastruttura europea diventerà sempre più pervasiva e centrale.
+
+
+
+---
+
+
+
 
