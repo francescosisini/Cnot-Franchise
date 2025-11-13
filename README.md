@@ -12,7 +12,7 @@ Tre racconti collegati, ambientati nell’arco di poco più di un decennio, desc
 
 ---
 
-### ⚪ [CNOT](manuscript/README.md)
+### ⚪ [CNOT](manuscript/cnot/README.md)
 
 Ambientato tra circa dieci anni, *CNOT* racconta l’inizio di una nuova fase dell’Europa tecnologica.  
 Sul confine tra scienza e sentimento, il romanzo segue **Laura** e gli altri protagonisti in un mondo che si affida al calcolo per comprendere se stesso.  
