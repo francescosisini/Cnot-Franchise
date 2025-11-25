@@ -1,0 +1,215 @@
+/* 1. Reset leggero */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* 2. Corpo del testo: leggibile, centrato, niente righe lunghissime */
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Noto Sans", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f7f7;
+}
+
+main {
+  max-width: 42rem; /* ~80 caratteri per riga */
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* 3. Titoli e struttura */
+
+h1, h2, h3, h4 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 600;
+  margin: 1.8rem 0 0.8rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* 4. Paragrafi */
+
+p {
+  margin: 0 0 1rem;
+  text-align: justify;
+}
+
+/* 5. Link */
+
+a {
+  color: #0044aa;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* 6. Intestazione capitolo, breadcrumb, ecc. */
+
+header.site-header {
+  max-width: 42rem;
+  margin: 0 auto 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+header.chapter-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+header.chapter-header h1 {
+  margin-bottom: 0.3rem;
+}
+
+header.chapter-header .chapter-subtitle {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* 7. Navigazione tra capitoli */
+
+nav.chapter-nav {
+  margin: 2rem 0 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+nav.chapter-nav a {
+  margin: 0 0.5rem;
+}
+
+/* 8. Indice (TOC) */
+
+.toc {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+}
+
+.toc h2 {
+  margin-top: 0;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.2rem 0;
+}
+
+/* 9. Elementi narrativi speciali */
+
+.epigraph {
+  font-style: italic;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid #ddd;
+}
+
+.scene-break {
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: 0.3em;
+  color: #999;
+}
+
+/* esempio uso: <p class="scene-break">***</p> */
+
+/* 10. Citazioni, dialoghi, codici */
+
+blockquote {
+  margin: 1.5rem 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #ccc;
+  font-style: italic;
+}
+
+code {
+  font-family: "Fira Code", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+/* 11. Immagini */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* 12. Note */
+
+.footnotes {
+  font-size: 0.85rem;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+/* 13. Aiutino per EPUB: suggerimento di "page break" */
+
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* 14. (Opzionale) micro-dark-mode per web, ignorata dalla maggior parte degli ereader */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+  main {
+    background: #181818;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  }
+  a {
+    color: #66aaff;
+  }
+  .toc {
+    background: #1f1f1f;
+    border-left-color: #444;
+  }
+}
