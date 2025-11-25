@@ -2,7 +2,7 @@
 
 Questa cartella raccoglie i pieghevoli di **CNOT Highlight**: brevi “news” che raccontano cosa sta succedendo dentro e intorno al **CNOT Franchise**.
 
-Non sono pensati come newsletter promozionali, ma come piccoli resoconti: quello che vediamo, studiamo, sperimentiamo e raccontiamo tra narrativa, tecnologia e spazi reali.
+Sono piccoli resoconti: quello che vediamo, studiamo, sperimentiamo e raccontiamo tra narrativa, tecnologia e spazi reali.
 
 ---
 
@@ -10,7 +10,7 @@ Non sono pensati come newsletter promozionali, ma come piccoli resoconti: quello
 
 Ogni pieghevole è:
 
-- un **mini-reportage** dal mondo di CNOT (il convitto, la città, i personaggi, le loro scelte);
+- un **mini-reportage** dal mondo di CNOT;
 - un **aggiornamento di ricerca/indagine** sui temi tecnologici e sociali che attraversano il progetto;
 - una **traccia di lavoro**: idee, mappe, regole, esperimenti che vogliamo restino visibili nel tempo.
 
@@ -38,7 +38,7 @@ La diffusione è ibrida: fisica + digitale.
 
 **Versione cartacea**
 
-- stampiamo i pieghevoli su A4 da piegare;
+- stampiamo i pieghevoli su A3 da piegare;
 - li lasciamo in giro in:
   - box di book-exchange,
   - scuole, biblioteche, spazi associativi,
@@ -54,19 +54,6 @@ L’idea è che i pieghevoli circolino come piccoli oggetti fisici, ma abbiano s
 
 ---
 
-## Struttura della cartella
-
-Ogni sottocartella di `news/` corrisponde in genere a un numero:
-
-- una cartella per ogni uscita (es. `2025-11-highlight-01`);
-- dentro trovi:
-  - il PDF pronto da stampare,
-  - eventuali sorgenti (Markdown, LaTeX, immagini, ecc.),
-  - una breve nota sul contenuto, se serve.
-
-Se la struttura dovesse cambiare, cercheremo comunque di mantenere leggibile la cronologia dei numeri.
-
----
 
 ## Come riusare il materiale
 
