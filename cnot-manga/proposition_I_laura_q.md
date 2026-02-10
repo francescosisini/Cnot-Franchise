@@ -99,9 +99,8 @@ Con procedimento analogo si individuino i punti **ι** e **κ** sulla gamba sini
 
 Si individuino infine i punti **λ** e **μ**, simmetrici e speculari rispettivamente di **Ζ** ed **Ε**.
 
-Si traccino i segmenti **ηλ** e **ζλ** sulla gamba destra, e i segmenti **ιλ** e **κμ** sulla gamba sinistra.
+Si traccino i segmenti **ηλ** e **θλ** sulla gamba destra, e i segmenti **ιλ** e **κμ** sulla gamba sinistra.
 
----
 
 ## Seno
 
@@ -117,7 +116,7 @@ Per costruzione si tracci la retta **ΑΗ**.
 
 Con centro in **Α** e apertura **ΑΖ** si intercetti la retta **ΑΗ** nei punti **ο** e **π**, appartenenti rispettivamente al braccio destro e al braccio sinistro.
 
-Si traccino quindi i segmenti **Αο** e **Απ**.
+Si traccino quindi i segmenti **Αο** e **Πο**.
 
 ---
 
