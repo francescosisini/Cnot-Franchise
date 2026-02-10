@@ -1,5 +1,25 @@
 # Costruzione della figura frontale di Laura-Q
 
+# Convenzioni generali di costruzione
+
+## Convenzione di orientamento
+
+- La retta **ΑΒ** rappresenta la linea delle spalle.
+- Il **corpo** della figura si sviluppa **al di sotto** della retta **ΑΒ**.
+- La **testa** della figura si sviluppa **al di sopra** della retta **ΑΒ**.
+
+## Convenzione sulle intersezioni
+
+- Quando una costruzione produce **due punti di intersezione**, si intende scelto:
+  - il punto **coerente con l’orientamento della figura** (testa sopra, corpo sotto), oppure
+  - il punto **interno** alla figura o al poligono già costruito, se esiste.
+
+## Convenzione sulla simmetria
+
+- Ogni riferimento a punti *simmetrici* o *speculari* è da intendersi **rispetto alla mediana della figura**, salvo diversa indicazione.
+
+---
+
 ## Tronco
 
 Siano dati due punti **Α** e **Β**.  
