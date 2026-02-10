@@ -46,7 +46,7 @@ La retta **ΑΒ** sia divisa in tre parti uguali; sia **Ι** il punto di divisio
 Con centro in **Δ** e apertura **ΔΙ** si descriva una circonferenza.  
 Sia **Κ** il punto di intersezione tra tale circonferenza e la mediana della retta **ΑΒ**.
 
-Con centro in **Κ** e con la medesima apertura **ΔΙ** si intercetti nuovamente la mediana della retta **ΑΒ**; sia **Λ** il punto così individuato.
+Con centro in **Κ** e con la medesima apertura **ΔΙ** si intercetti nuovamente la mediana della retta **ΑΒ**; sia **Λ** il punto così individuato posto al di sopra della retta **ΑΒ**.
 
 Con centro in **Λ** e con la stessa apertura **ΔΙ** si descriva una nuova circonferenza.  
 Con centro in **Κ** e con la medesima apertura **ΔΙ** si individuino i punti **Μ** e **Ν**, intersezioni con la circonferenza di centro **Λ**.
