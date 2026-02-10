@@ -37,8 +37,9 @@ Con centro in **Κ** e con la medesima apertura **ΔΙ** si individuino i punti 
 
 Con centro in **Λ** e apertura **ΒΙ** si individuino sulla mediana i punti **Ξ** e **Ο**.
 
-Con centro in **Α** e apertura **ΑΙ** si intercetti la retta **ΑΓ** nel punto **Ρ**;  
-analogamente, con centro in **Β** e con la medesima apertura si intercetti la retta **ΒΓ** nel punto **Ϙ**.
+Con centro in **Α** e apertura **ΑΙ** si intercetti la retta **ΑΓ** nel punto **Π**;  
+analogamente, con centro in **Β** e con la medesima apertura si intercetti la retta **ΒΓ** nel punto **Ρ**.
+
 
 Si congiungano i punti **ΡΛ** e **ϘΛ**.
 
