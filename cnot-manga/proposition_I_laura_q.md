@@ -41,7 +41,7 @@ Con centro in **Α** e apertura **ΑΙ** si intercetti la retta **ΑΓ** nel pun
 analogamente, con centro in **Β** e con la medesima apertura si intercetti la retta **ΒΓ** nel punto **Ρ**.
 
 
-Si congiungano i punti **ΡΛ** e **ϘΛ**.
+Si congiungano i punti **ΠΛ** e **PΛ**.
 
 Dal punto **Ο** si prolunghi una retta passante per **Μ** fino a incontrare la circonferenza di centro **Λ** e raggio **ΛΟ** nel punto **Σ**;  
 con procedimento analogo, dal punto **Ο** si prolunghi una retta passante per **Ν** fino a incontrare la medesima circonferenza nel punto **Τ**.
