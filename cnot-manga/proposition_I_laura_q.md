@@ -7,7 +7,7 @@ Si congiungano **Α** e **Β** mediante una retta.
 La retta **ΑΒ** sia divisa in due parti uguali e il punto di divisione si chiami **Δ**.
 
 Dal punto **Δ** si conduca una retta perpendicolare alla retta **ΑΒ**.  
-Su tale retta, a partire da **Δ**, si applichi un segmento uguale alla retta **ΑΒ**; sia **Γ** il punto in cui tale applicazione termina.
+Su tale retta, a partire da **Δ**, si applichi un segmento uguale alla somma della retta **ΑΒ** e **AΔ**; sia **Γ** il punto in cui tale applicazione termina.
 
 Si congiungano quindi i punti **Α**, **Β** e **Γ**, ottenendo il triangolo **ΑΒΓ**.
 
