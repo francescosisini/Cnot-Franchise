@@ -132,9 +132,9 @@ Si congiungano i punti **νΟ** e **ξΟ**.
 
 ## Braccia
 
-Per costruzione si tracci la retta **ΑΗ**.
+Per costruzione si tracci la retta **ΑΗ** e la retta **B&Theta;**
 
-Con centro in **Α** e apertura **ΑΖ** si intercetti la retta **ΑΗ** nei punti **ο** e **π**, appartenenti rispettivamente al braccio destro e al braccio sinistro.
+Con centro in **Α** e apertura **ΑΖ** si intercetti la retta **ΑΗ** nei punti **ο** e la retta **B&Theta;** nel punto **π**, appartenenti rispettivamente al braccio destro e al braccio sinistro.
 
 Si traccino quindi i segmenti **Αο** e **Πο**.
 
