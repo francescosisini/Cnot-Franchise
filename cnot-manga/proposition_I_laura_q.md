@@ -149,3 +149,26 @@ Con centro in **ο** e apertura **ολ** si intercetti il segmento **Ηε** nel 
 Si tracci quindi il segmento **ορ**.
 
 Con centro in **ο** e apertura **οα** si tracci un arco compreso tra i segmenti **ολ** e **ορ**.
+
+---
+
+## Finiture finali
+
+Si traccino i segmenti &omicron;&Pi; e &pi;&Rho;,  
+che chiudono rispettivamente il braccio destro e il braccio sinistro,  
+determinando la continuità tra braccio e avambraccio.
+
+Si traccino inoltre i segmenti &eta;&lambda; e &theta;&lambda; per la gamba destra,  
+e i segmenti &iota;&mu; e &kappa;&mu; per la gamba sinistra;  
+tali segmenti completano la definizione strutturale delle gambe,  
+connettendo le cosce ai punti terminali inferiori.
+
+Con centro in &sigma; e apertura &sigma;&alpha; si tracci un arco che definisce il polso destro,  
+determinando il raccordo tra avambraccio e mano.
+
+Analogamente, con centro in &pi; e con la medesima apertura si tracci un arco che definisce il polso sinistro,  
+completando la simmetria delle estremità superiori.
+
+Le presenti operazioni non introducono nuovi elementi strutturali,  
+ma perfezionano la figura, rendendola chiusa e formalmente compiuta.
+
