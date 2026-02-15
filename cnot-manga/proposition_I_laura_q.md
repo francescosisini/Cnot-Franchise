@@ -114,7 +114,7 @@ Con centro in **Γ** e apertura **ΔΓ** si punti prima in **Ζ** e poi in **Ε*
 
 Si traccino quindi le cosce come i triangoli **ΗΓε** e **ΓΘζ**.
 
-Dal punto **Η** si conduca una retta di costruzione parallela alla retta **αε** fino a intercettare l’arco **εζ** nel punto **η**.  
+Dal punto **Η** si conduca una retta di costruzione parallela alla retta **αε** fino a intercettare l’arco **&gamma;δ** nel punto **η**.  
 Con procedimento analogo si individuino i punti **ι** e **κ** sulla gamba sinistra.
 
 Si individuino infine i punti **λ** e **μ**, simmetrici e speculari rispettivamente di **Ζ** ed **Ε**.
