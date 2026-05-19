@@ -10,11 +10,37 @@ parser = argparse.ArgumentParser(description="Aggiunge overlay HUD a un'immagine
 parser.add_argument("input_image", help="Percorso dell'immagine di input")
 parser.add_argument("target_x", type=int, help="Coordinata X del mirino")
 parser.add_argument("target_y", type=int, help="Coordinata Y del mirino")
+parser.add_argument(
+    "--target-scale",
+    type=float,
+    default=100.0,
+    help="Scala percentuale di mirino e callout: 1-100. 100 mantiene la dimensione attuale."
+)
+parser.add_argument("--legend", action="store_true")
+parser.add_argument("--legend-cx", type=int, default=None)
+parser.add_argument("--legend-cy", type=int, default=None)
+parser.add_argument("--legend-title", default="Legenda")
+parser.add_argument(
+    "--legend-item",
+    action="append",
+    default=[],
+    help='Voce legenda nel formato "#ff0033:Target"'
+)
 args = parser.parse_args()
+
 
 INPUT_IMAGE = args.input_image
 TARGET_X = args.target_x
 TARGET_Y = args.target_y
+
+target_scale = max(1.0, min(args.target_scale, 100.0)) / 100.0
+
+
+legend_items = []
+
+for item in args.legend_item:
+    color, label = item.split(":", 1)
+    legend_items.append((color.strip(), label.strip()))
 
 input_path = Path(INPUT_IMAGE)
 OUTPUT_IMAGE = input_path.with_name(
@@ -27,25 +53,46 @@ OUTPUT_IMAGE = input_path.with_name(
 
 COLOR_RED = (255, 40, 35, 180)
 COLOR_BLUE = (50, 150, 255, 180)
+COLOR_WHITE = (255, 255, 255, 255)
 
 GRID_STEP = 120
 GRID_OPACITY = 70
 
+
+BASE_TEXTS = [
+    {"text": "SUBJECT MATCH", "pos": (520, 420), "size": 34, "color": COLOR_WHITE},
+    {"text": "ENTITY: ALICE", "pos": (520, 465), "size": 28, "color": COLOR_WHITE},
+    {"text": "SIGNAL 86%", "pos": (60, 930), "size": 22, "color": COLOR_WHITE},
+]
+
+def scale_point_around_center(pos, center, scale):
+    x, y = pos
+    cx, cy = center
+    return (
+        int(cx + (x - cx) * scale),
+        int(cy + (y - cy) * scale)
+    )
+
 TEXTS = [
-    {"text": "SUBJECT MATCH", "pos": (520, 420), "size": 34, "color": COLOR_RED},
-    {"text": "ENTITY: ALICE", "pos": (520, 465), "size": 28, "color": COLOR_RED},
-    {"text": "SIGNAL 86%", "pos": (60, 930), "size": 22, "color": COLOR_RED},
+    {
+        "text": t["text"],
+        "pos": scale_point_around_center(t["pos"], (TARGET_X, TARGET_Y), target_scale),
+        "size": max(1, int(t["size"] * target_scale)),
+        "color": t["color"]
+    }
+    for t in BASE_TEXTS
 ]
 
 TARGETS = [
     {
         "center": (TARGET_X, TARGET_Y),
-        "radius": 110,
+        "radius": int(110 * target_scale),
         "color": COLOR_RED
     }
 ]
 
-LINES = [
+
+BASE_LINES = [
     {
         "points": [
             (TARGET_X, TARGET_Y),
@@ -57,6 +104,19 @@ LINES = [
     }
 ]
 
+LINES = [
+    {
+        "points": [
+            scale_point_around_center(p, (TARGET_X, TARGET_Y), target_scale)
+            for p in line["points"]
+        ],
+        "color": line["color"],
+        "width": max(1, int(line["width"] * target_scale))
+    }
+    for line in BASE_LINES
+]
+
+
 
 
 BOXES = [
@@ -67,6 +127,40 @@ BOXES = [
 # =========================
 # FUNZIONI
 # =========================
+
+def draw_legend(draw, items, title, cx=None, cy=None):
+    box_w = 420
+    row_h = 34
+    pad = 18
+    title_h = 38
+    box_h = pad * 2 + title_h + row_h * len(items)
+
+    if cx is None:
+        cx = 40 + box_w // 2
+    if cy is None:
+        cy = 40 + box_h // 2
+
+    x = int(cx - box_w / 2)
+    y = int(cy - box_h / 2)
+
+    draw.rectangle(
+        [x, y, x + box_w, y + box_h],
+        fill=(0, 0, 0, 180),
+        outline=(255, 0, 51, 220),
+        width=2
+    )
+
+    draw.text((x + pad, y + pad), title, fill=(255, 0, 51))
+
+    yy = y + pad + title_h
+    for color, label in items:
+        draw.rectangle(
+            [x + pad, yy + 6, x + pad + 22, yy + 28],
+            fill=color,
+            outline=(255, 255, 255)
+        )
+        draw.text((x + pad + 36, yy + 6), label, fill=(230, 230, 230))
+        yy += row_h
 
 def load_font(size):
     try:
@@ -173,6 +267,17 @@ for box in BOXES:
     )
 
 draw_texts(draw, TEXTS)
+
+
+if args.legend:
+    draw_legend(
+    draw,
+    legend_items,
+    args.legend_title,
+    cx=args.legend_cx,
+    cy=args.legend_cy
+)
+
 
 final = Image.alpha_composite(img, overlay)
 final.save(OUTPUT_IMAGE)
