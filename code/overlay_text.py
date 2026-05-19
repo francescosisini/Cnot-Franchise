@@ -21,7 +21,7 @@ parser.add_argument("--signal-y", type=int, default=930)
 parser.add_argument("--legend", action="store_true")
 parser.add_argument("--legend-cx", type=int, default=None)
 parser.add_argument("--legend-cy", type=int, default=None)
-parser.add_argument("--legend-title", default="Legenda")
+parser.add_argument("--legend-title", default="ENTITÀ DEL SISTEMA")
 parser.add_argument("--legend-item", action="append", default=[])
 
 args = parser.parse_args()
