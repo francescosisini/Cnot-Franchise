@@ -1,0 +1,395 @@
+.
+├── artwork
+│   ├── banner_image.png
+│   ├── cnotworlds.png
+│   ├── originali
+│   │   ├── cnot_100.jpeg
+│   │   ├── cnot_10.jpeg
+│   │   ├── cnot_11.jpeg
+│   │   ├── cnot_12.jpeg
+│   │   ├── cnot_13.jpeg
+│   │   ├── cnot_14.jpeg
+│   │   ├── cnot_15.jpeg
+│   │   ├── cnot_16.jpeg
+│   │   ├── cnot_17.jpeg
+│   │   ├── cnot_18.jpeg
+│   │   ├── cnot_19.jpeg
+│   │   ├── cnot_1.jpeg
+│   │   ├── cnot_20.jpeg
+│   │   ├── cnot_21.jpeg
+│   │   ├── cnot_22.jpeg
+│   │   ├── cnot_23.jpeg
+│   │   ├── cnot_24.jpeg
+│   │   ├── cnot_25.jpeg
+│   │   ├── cnot_26.jpeg
+│   │   ├── cnot_27_bis.jpeg
+│   │   ├── cnot_27.jpeg
+│   │   ├── cnot_28.jpeg
+│   │   ├── cnot_29.jpeg
+│   │   ├── cnot_2.jpeg
+│   │   ├── cnot_30.jpeg
+│   │   ├── cnot_31.jpeg
+│   │   ├── cnot_32.jpeg
+│   │   ├── cnot_33.jpeg
+│   │   ├── cnot_34.jpeg
+│   │   ├── cnot_35.jpeg
+│   │   ├── cnot_36.jpeg
+│   │   ├── cnot_37.jpeg
+│   │   ├── cnot_38.jpeg
+│   │   ├── cnot_39.jpeg
+│   │   ├── cnot_3.jpeg
+│   │   ├── cnot_40.jpeg
+│   │   ├── cnot_41.jpeg
+│   │   ├── cnot_42.jpeg
+│   │   ├── cnot_43.jpeg
+│   │   ├── cnot_44.jpeg
+│   │   ├── cnot_45.jpeg
+│   │   ├── cnot_46.jpeg
+│   │   ├── cnot_47.jpeg
+│   │   ├── cnot_48.jpeg
+│   │   ├── cnot_49.jpeg
+│   │   ├── cnot_4.jpeg
+│   │   ├── cnot_50.jpeg
+│   │   ├── cnot_51.jpeg
+│   │   ├── cnot_52.jpeg
+│   │   ├── cnot_53.jpeg
+│   │   ├── cnot_54.jpeg
+│   │   ├── cnot_55.jpeg
+│   │   ├── cnot_56.jpeg
+│   │   ├── cnot_57.jpeg
+│   │   ├── cnot_58.jpeg
+│   │   ├── cnot_59.jpeg
+│   │   ├── cnot_5.jpeg
+│   │   ├── cnot_60.jpeg
+│   │   ├── cnot_6.jpeg
+│   │   ├── cnot_7.jpeg
+│   │   ├── cnot_8.jpeg
+│   │   ├── cnot_9.jpeg
+│   │   ├── cnot_pubblicità_2.jpeg
+│   │   ├── cnot_pubblicità.jpeg
+│   │   ├── Eva_Cate.png
+│   │   ├── Laura_Cate.jpeg
+│   │   └── remove_spaces.sh
+│   ├── proposte copertine
+│   │   └── Lauraecate.jpeg
+│   └── WhatsApp Image 2025-03-04 at 12.04.36.jpeg
+├── cnot1.7
+│   ├── Brochure_LittleSister.pdf
+│   ├── cnot1.7-book.pdf
+│   ├── convitto.png
+│   ├── dont.txt
+│   ├── ebook.css
+│   ├── latino.txt
+│   ├── media
+│   │   ├── Alice.png
+│   │   ├── alice senza sfondo.png
+│   │   ├── Alice_w.png
+│   │   ├── by-sa.png
+│   │   ├── camera caterina senza sfondo.png
+│   │   ├── camera caterina senza sfondo skater.png
+│   │   ├── Cnot1.7ReleaseQRcode.png
+│   │   ├── convitto.png
+│   │   ├── convitto senza sfondo.png
+│   │   ├── crostata senza sfondo.png
+│   │   ├── diario alice senza sfondo.png
+│   │   ├── Diario.png
+│   │   ├── dumper_zone.png
+│   │   ├── edizioni tradizionali.png
+│   │   ├── equipaggiamento laura senza sfondo.png
+│   │   ├── fondazioni.png
+│   │   ├── github-mark.png
+│   │   ├── image10.jpg
+│   │   ├── image11.jpg
+│   │   ├── image12.jpg
+│   │   ├── image13.jpg
+│   │   ├── image14.jpg
+│   │   ├── image15.jpg
+│   │   ├── image16.png
+│   │   ├── image17.jpg
+│   │   ├── image18.png
+│   │   ├── image19.png
+│   │   ├── image1.gif
+│   │   ├── image20.jpg
+│   │   ├── image21.jpg
+│   │   ├── image22.jpg
+│   │   ├── image23.jpg
+│   │   ├── image24.jpg
+│   │   ├── image25.jpg
+│   │   ├── image2.gif
+│   │   ├── image3.gif
+│   │   ├── image4.jpg
+│   │   ├── image5.jpg
+│   │   ├── image6.jpg
+│   │   ├── image7.png
+│   │   ├── image8.jpg
+│   │   ├── image9.jpg
+│   │   ├── laura pc senza sfondo.png
+│   │   ├── little_sister_sheet1.png
+│   │   ├── little_sister_sheet2.png
+│   │   ├── ma ai senza sfondo.png
+│   │   ├── mappa con casa laura.png
+│   │   ├── mappa di odori.png
+│   │   ├── nintendo box.png
+│   │   ├── paranco senza sfondo.png
+│   │   ├── piano 1.png
+│   │   ├── piano 2.png
+│   │   ├── piano terra.png
+│   │   ├── piantina casa laura senza sfondo.png
+│   │   ├── piantina rocky senza sfondo.png
+│   │   ├── picnic senza sfondo.png
+│   │   ├── planisfero senza sfondo.png
+│   │   ├── rete senza sfondo.png
+│   │   ├── soggiorno prospettiva.png
+│   │   └── soggiorno tiny.png
+│   ├── README.md
+│   └── spartiti
+│       ├── little_sister.ly
+│       ├── little_sister_lyrics.md
+│       ├── little_sister.midi
+│       └── little_sister.pdf
+├── cnot-e
+├── cnot-manga
+│   ├── notes
+│   ├── proposition_I_laura_q.md
+│   ├── proposizione_1_Laura_Q.jpeg
+│   ├── README.md
+│   ├── sketches
+│   └── storyboard
+│       ├── capitolo1.md
+│       ├── CNOT — Digest Capitolo 10.md
+│       ├── CNOT — Digest Capitolo 11.md
+│       ├── CNOT — Digest Capitolo 1.md
+│       ├── CNOT — Digest Capitolo 2.md
+│       ├── CNOT — Digest Capitolo 3.md
+│       ├── CNOT — Digest Capitolo 4.md
+│       ├── CNOT — Digest Capitolo 5.md
+│       ├── CNOT — Digest Capitolo 6.md
+│       ├── CNOT — Digest Capitolo 7.md
+│       ├── CNOT — Digest Capitolo 8.md
+│       └── CNOT — Digest Capitolo 9.md
+├── code
+│   ├── chamata.txt
+│   ├── europa.qgz
+│   ├── europe.json
+│   ├── europe_vector_map.py
+│   ├── europe_vector_map.py~
+│   ├── europe_vector_oscilloscope.png
+│   ├── ferrara_overlay.png
+│   ├── ferrara.png
+│   ├── gis
+│   │   ├── cnot.gpkg
+│   │   ├── cnot.gpkg-shm
+│   │   ├── cnot.gpkg-wal
+│   │   ├── datacenters.geojson
+│   │   └── global_power_plant_database.csv
+│   ├── legend_card.py
+│   ├── legend_card.py~
+│   ├── m1_overlay.png
+│   ├── m1.pgw
+│   ├── m1.png
+│   ├── map
+│   │   ├── qgis2web_2026_05_16-14_49_04_828051
+│   │   └── qgis2web.css
+│   ├── mappa.jpg
+│   ├── mappa_overlay.png
+│   ├── mappa.png
+│   ├── overlay.py
+│   ├── overlay.py~
+│   ├── overlay_text.py
+│   ├── overlay_text.py~
+│   ├── power_europe_legend.png
+│   └── power_europe.png
+├── diffusione
+│   └── README.md
+├── digital_realms
+│   ├── background_music.mp3
+│   ├── CH4 instructions.mp3
+│   ├── duellodeimoti
+│   │   ├── bin.wav
+│   │   ├── bounce.wav
+│   │   ├── duello_dei_moti.py
+│   │   ├── README.md
+│   │   └── rotola.wav
+│   └── README.md
+├── games
+│   ├── background_music.mp3
+│   ├── bamazonlabyrinth.py
+│   ├── caterinamind.py
+│   ├── code.aux
+│   ├── code-book.pdf
+│   ├── code.log
+│   ├── code.pdf
+│   ├── code.tex
+│   ├── dialoghi.py
+│   ├── game_1
+│   │   ├── bamazon.py
+│   │   ├── bamazon.py.V1
+│   │   └── venv
+│   ├── game_2
+│   │   ├── docs
+│   │   └── python
+│   ├── game_6
+│   │   ├── docs
+│   │   └── python
+│   ├── installazione_gioco.md
+│   └── README.md
+├── guida
+│   ├── main.aux
+│   ├── main.log
+│   ├── main.out
+│   ├── main.pdf
+│   ├── main.tex
+│   ├── main.tex~
+│   └── main.toc
+├── issues
+├── LICENSE
+├── Manifesto.md
+├── manuscript
+│   ├── cnot
+│   │   ├── Cnot_Fascicolato.pdf
+│   │   ├── Cnot.pdf
+│   │   ├── html
+│   │   ├── latex
+│   │   └── README.md
+│   ├── cnot1.7
+│   │   ├── Cnot1.7 - Eiren Lysias.epub
+│   │   ├── Cnot1.7.html
+│   │   ├── cnot1.7.pdf
+│   │   ├── CONTRIBUTING.md
+│   │   ├── fonts
+│   │   ├── latex_version
+│   │   ├── media
+│   │   ├── q.log
+│   │   └── README.md
+│   ├── cnot-e
+│   │   └── README.md
+│   └── NCR
+│       └── n17
+├── maps
+│   ├── goxel
+│   │   ├── bamazon
+│   │   ├── convitto
+│   │   ├── goxel-0.15.1.AppImage
+│   │   ├── smart_gltf_utf.py
+│   │   └── smart_uvs.py
+│   ├── murales
+│   │   ├── concat_short_side.py
+│   │   ├── concat_short_side.py~
+│   │   ├── murales
+│   │   ├── muraleslungo2.jpg
+│   │   ├── muraleslungo3.jpg
+│   │   ├── muraleslungo4.jpg
+│   │   ├── muraleslungo5.jpg
+│   │   ├── muraleslungo6.jpg
+│   │   ├── muraleslungo8.jpg
+│   │   ├── muraleslungo.jpg
+│   │   ├── output.jpg
+│   │   ├── risultato.jpg
+│   │   └── temp.jpg
+│   ├── README.md
+│   └── textures
+│       ├── legno.jpeg
+│       ├── marmo.jpg
+│       ├── MURO.jpg
+│       ├── pavimentobagno.png
+│       ├── pavimento beige.png
+│       ├── pavimento bianconerogiallo.png
+│       ├── pavimento convitto.png
+│       ├── pavimento marronegiallo.png
+│       ├── pavimento rosso.png
+│       ├── piastrelle cucina.png
+│       └── piastrelle.png
+├── NEO_PI_R
+│   ├── albero_decisionale_evento_sociale.json
+│   ├── albero.json
+│   ├── annalisa_pazzi.json
+│   ├── characters_design
+│   │   └── Laura
+│   ├── Laura_Caterina_Bio.json
+│   ├── Laura_Caterina_NEO_PI_R.csv
+│   ├── Laura_Caterina_NEO-PI-R.json
+│   ├── Laura_Sisini
+│   ├── NEO_PI_R.py
+│   ├── NEO_PI_R.py~
+│   ├── personaggio_estroverso.json
+│   ├── personaggio_introverso.json
+│   ├── personaggio.json
+│   ├── personaggio.json~
+│   ├── __pycache__
+│   │   └── NEO_PI_R.cpython-310.pyc
+│   ├── README.md
+│   ├── simulatore.py
+│   ├── simulatore.py~
+│   ├── situazione_1.json
+│   ├── situazione_2.json
+│   ├── situazione_3.json
+│   ├── situazione_4.json
+│   ├── situazione_5.json
+│   └── test_NEOPIR.py
+├── neurocriticum
+│   ├── Ginzburg–Landau.py
+│   └── Ginzburg–Landau.py~
+├── news
+│   ├── news_novembre2025.pdf
+│   └── README.md
+├── papers
+│   ├── Adversarial testing of global neuronal workspace and integrated information theories of consciousness.pdf
+│   ├── Neutronics Analysis for MSR Cell with Different Fuel Salt Channel Geometry.pdf
+│   └── The Quantum Measurement Problem: A Review of Recent Trends.pdf
+├── PlayItFirst
+│   ├── calendar.md
+│   ├── privacy.md
+│   └── README.md
+├── README.md
+├── soundtrack
+│   ├── Bell State Blues.aup
+│   ├── Bell State Blues_data
+│   │   └── eff
+│   ├── Bell State Blues.mp3
+│   ├── CH4 Takeover.mp3
+│   ├── circuit_dreams.mid
+│   ├── Circuit Dreams.mp3
+│   ├── circuit_dreams.wav
+│   ├── Cnot main theme.mp3
+│   ├── cnot_soundtrack.mp3
+│   ├── Collapse of the Commissary.mp3
+│   ├── community_expansions
+│   │   ├── caterina_e_laura.md
+│   │   ├── intrecci_invisibili.md
+│   │   └── README.md
+│   ├── copertina_musicassetta.jpg
+│   ├── copertina_musicassetta.pdf
+│   ├── copertina_musicassetta.png
+│   ├── Encrypted Shadows.mp3
+│   ├── Ion Trap Waltz.mp3
+│   ├── Last Exit_ Quantum Channel.mp3
+│   ├── Laura’s Reckoning.mp3
+│   ├── Neon Labyrinth.mp3
+│   ├── quantum_pulse.mid
+│   ├── Quantum Pulse.mp3
+│   ├── quantum_pulse.wav
+│   └── README.md
+├── spatialproject.md
+├── timeline
+├── tree.txt
+├── video
+│   ├── Cnot1.0
+│   │   ├── scenes
+│   │   └── TRON
+│   ├── cnot1.7
+│   │   └── scenes
+│   └── cnot-e
+│       ├── Gaia_2.mp4
+│       ├── openart-video_GAIA.mp4
+│       ├── openart-video_Terra.mp4
+│       └── openart-video_treni_X.mp4
+├── virtual_space
+└── worldbuilding
+    ├── characters
+    │   ├── caterina.md
+    │   ├── eva.md
+    │   └── laura.md
+    ├── maps.svg
+    └── README.md
+
+70 directories, 322 files
