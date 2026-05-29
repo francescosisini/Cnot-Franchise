@@ -87,14 +87,28 @@ Le animazioni si trovano in [digital_realms](digital_realms).
 
 ---
 
-## 🗺️ **Mappa e Luoghi**
+## 🗺️ **Atlante interattivo e luoghi narrativi**
 
-Stiamo realizzando una mappa interattiva dei luoghi chiave:
-- **Quantum Channel** – punto di fuga e confine tra i mondi.  
-- **Classical Control Unit (CCU)** – centro decisionale della rete.  
-- **Faulty Qubit Space** – rifugio dei qubit imperfetti.  
+Il progetto include un atlante interattivo dei luoghi e delle infrastrutture del mondo di **CNOT**.  
+La mappa collega livelli geografici reali, dati sistemici e ambienti narrativi: dall’Europa tecnologica e alimentare fino ai luoghi specifici attraversati dai personaggi.
 
-Consulta la cartella [map](map).
+Tra i layer in sviluppo:
+
+- **Europa sistemica** – produzione alimentare, popolazione, energia, trasporti e infrastrutture digitali.
+- **Zone dimenticate** – luoghi residuali, strutture dismesse e spazi marginali della nuova Europa.
+- **Convitto Cardinal Mora** – edificio narrativo esplorabile come mappa vettoriale e collegato allo spazio virtuale su Spatial.io.
+- **Quantum Channel** – punto di fuga e confine tra i mondi.
+- **Classical Control Unit (CCU)** – centro decisionale della rete.
+- **Faulty Qubit Space** – rifugio dei qubit imperfetti.
+
+La mappa web esportata si trova in:
+
+[Interactive Map](/maps/maps/qgis2web_2026_05_28-18_20_33_860080/index.html)
+
+I dati GIS e i sorgenti cartografici si trovano in:
+[GIS](/world/gis)
+
+[maps](maps)
 
 ---
 
