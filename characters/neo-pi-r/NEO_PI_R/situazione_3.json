@@ -1,0 +1,29 @@
+{
+    "nome": "IL VIAGGIO IMPROVVISO",
+    "figli": [
+        {
+            "nome": "Partire all'avventura",
+            "potenziale": {
+                "Apertura_Azioni": 85,
+                "Estroversione_RicercaEccitazione": 80,
+                "Nevroticismo_Ansieta": 30
+            }
+        },
+        {
+            "nome": "Rifiutare per mancanza di pianificazione",
+            "potenziale": {
+                "Coscienziosita_Ordine": 80,
+                "Nevroticismo_Vulnerabilita": 70,
+                "Amicalita_Sensibilita": 60
+            }
+        },
+        {
+            "nome": "Proporre un viaggio organizzato",
+            "potenziale": {
+                "Coscienziosita_SensoDelDovere": 70,
+                "Apertura_Idee": 65,
+                "Amicalita_Collaborazione": 60
+            }
+        }
+    ]
+}

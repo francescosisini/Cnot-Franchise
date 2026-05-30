@@ -1,0 +1,99 @@
+\documentclass[a4paper,9pt]{book}
+\usepackage[papersize={5.5in,8.5in}, margin=0.75in]{geometry}
+% Pacchetti utili
+\usepackage[utf8]{inputenc}   % Codifica del testo
+\usepackage[T1]{fontenc}      % Font encoding
+\usepackage[italian]{babel}   % Lingua italiana
+\usepackage{graphicx}         % Per includere immagini
+\usepackage{hyperref}         % Link e riferimenti ipertestuali
+\usepackage{amsmath, amssymb} % Simboli matematici
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{braket} % For \ket{}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+\usepackage{csquotes} % Per la gestione delle virgolette
+\usepackage{setspace} % Per controllare l'interlinea
+\usepackage{lipsum} % Solo per testo segnaposto
+\usepackage[expansion=false]{microtype} % Per migliorare la tipografia
+\usepackage{dialogue} % Pacchetto per l'ambiente di dialogo
+\let\checkmark\relax
+\usepackage{dingbat} % Fornisce vari simboli
+
+% Personalizzazione capitoli
+\usepackage{titlesec}
+\definecolor{chaptercolor}{HTML}{AAAAAA} % Colore personalizzato per i capitoli
+\definecolor{sectioncolor}{HTML}{BBBBBB} % Colore personalizzato per i capitoli
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\Huge\color{chaptercolor}}
+  {C. \thechapter}{20pt}{\LARGE}
+  [\vspace{2pt}\titlerule]
+
+\titleformat{\section}
+  {\normalfont\bfseries\Large\color{sectioncolor}}
+  {}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\bfseries\large\color{sectioncolor}}
+  {}{1em}{}
+
+  \lstset{
+    language=Python,                    % Imposta il linguaggio
+    basicstyle=\ttfamily\small,         % Font di base
+    keywordstyle=\color{blue},          % Colore delle parole chiave
+    commentstyle=\color{green!50!black},% Colore dei commenti
+    stringstyle=\color{red},            % Colore delle stringhe
+    numbers=left,                       % Numerazione delle righe a sinistra
+    numberstyle=\tiny\color{gray},      % Stile dei numeri di riga
+    stepnumber=1,                       % Incremento dei numeri di riga
+    numbersep=5pt,                      % Distanza tra numeri e codice
+    showspaces=false,                   % Non mostrare spazi
+    showstringspaces=false,             % Non mostrare spazi nelle stringhe
+    frame=single,                       % Bordo attorno al codice
+    tabsize=4,                          % Dimensione dei tab
+    breaklines=true,                    % A capo automatico delle righe
+    breakatwhitespace=true,             % A capo alle spaziature
+    captionpos=b                        % Posizione della didascalia in basso
+}
+
+
+% Impostazioni del documento
+\title{Rapporto non Classificato \#17: Protocollo Caterina}
+\author{Team SisiniPazzi}
+\date{\today}
+
+\begin{document}
+
+% Frontespizio
+%\maketitle
+
+\include{chapters/front_matter}
+
+% Indice
+\tableofcontents
+\newpage
+
+
+
+% Capitoli
+\chapter{Prepariamo la valigia!}
+\input{chapters/capitolo1}
+
+
+%Schede
+\chapter*{Personaggi}
+\input{chapters/schede}
+\chapter*{Profili NEO PI-R}
+\input{chapters/neopir}
+
+%\chapter*{Tecnologia}
+%\input{chapters/componenti}
+
+
+
+\end{document}

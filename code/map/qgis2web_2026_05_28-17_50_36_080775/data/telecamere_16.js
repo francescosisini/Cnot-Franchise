@@ -1,1 +1,0 @@
-var json_telecamere_16 = {"type":"FeatureCollection","name":"telecamere_16","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","id":1.0,"nome":"cam_scuola_bombonati","tipo":"urbana","note":"rotatoria principale"},"geometry":{"type":"Point","coordinates":[11.628657841356469,44.821020291516106]}}]}

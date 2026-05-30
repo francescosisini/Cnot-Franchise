@@ -1,0 +1,41 @@
+{
+  "Nevroticismo": 70,
+  "Nevroticismo_Ansieta": 75,
+  "Nevroticismo_Rabbia": 60,
+  "Nevroticismo_Depressione": 65,
+  "Nevroticismo_Imbarazzo": 70,
+  "Nevroticismo_Impulsivita": 55,
+  "Nevroticismo_Vulnerabilita": 70,
+
+  "Estroversione": 35,
+  "Estroversione_Cordialita": 40,
+  "Estroversione_Gregarieta": 30,
+  "Estroversione_Assertivita": 35,
+  "Estroversione_Attivita": 40,
+  "Estroversione_RicercaEccitazione": 30,
+  "Estroversione_EmozioniPositive": 35,
+
+  "Apertura": 60,
+  "Apertura_Fantasia": 70,
+  "Apertura_Estetica": 65,
+  "Apertura_Sentimenti": 60,
+  "Apertura_Azioni": 55,
+  "Apertura_Idee": 75,
+  "Apertura_Valori": 60,
+
+  "Amicalita": 70,
+  "Amicalita_Fiducia": 65,
+  "Amicalita_Moralita": 75,
+  "Amicalita_Altruismo": 70,
+  "Amicalita_Collaborazione": 65,
+  "Amicalita_Modestia": 75,
+  "Amicalita_Sensibilita": 80,
+
+  "Coscienziosita": 75,
+  "Coscienziosita_Competenza": 75,
+  "Coscienziosita_Ordine": 80,
+  "Coscienziosita_SensoDelDovere": 75,
+  "Coscienziosita_RicercaSuccesso": 70,
+  "Coscienziosita_Autodisciplina": 75,
+  "Coscienziosita_Prudenza": 80
+}

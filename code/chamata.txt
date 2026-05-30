@@ -1,2 +1,0 @@
-python3 overlay_text.py ferrara.png 460 360   --target-scale 75   --label-x 130   --label-y 50   --label-size 22   --label "SOGGETTO LOCALIZZATO: ALICE"   --legend   --legend-cx 510   --legend-cy 750   --legend-title "ENTITÀ DEL SISTEMA"   --legend-item "#ff0033:Sorveglianza"   --legend-item "#ff9900:Nodo istituzionale"
-Salvata immagine: ferrara_overlay.png

@@ -1,0 +1,29 @@
+{
+    "nome": "LA SFIDA PUBBLICA",
+    "figli": [
+        {
+            "nome": "Accettare la sfida e parlare",
+            "potenziale": {
+                "Estroversione_Assertivita": 85,
+                "Nevroticismo_Ansieta": 30,
+                "Coscienziosita_Competenza": 75
+            }
+        },
+        {
+            "nome": "Rifiutare gentilmente",
+            "potenziale": {
+                "Nevroticismo_Ansieta": 70,
+                "Coscienziosita_Prudenza": 80,
+                "Amicalita_Modestia": 65
+            }
+        },
+        {
+            "nome": "Chiedere un contesto pi\u00f9 intimo",
+            "potenziale": {
+                "Amicalita_Sensibilita": 75,
+                "Estroversione_Cordialita": 60,
+                "Nevroticismo_Ansieta": 50
+            }
+        }
+    ]
+}

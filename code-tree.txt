@@ -1,0 +1,16 @@
+[4.0K]  code
+├── [4.0K]  convitto_base_example
+│   └── [3.6K]  convitto_base_local.geojson
+├── [4.0K]  gis
+│   ├── [5.9M]  cnot.gpkg
+│   └── [ 11M]  global_power_plant_database.csv
+└── [4.0K]  qgis
+    ├── [4.0K]  cache
+    ├── [4.0K]  exports
+    ├── [4.0K]  layouts
+    ├── [4.0K]  projects
+    │   ├── [124K]  europa_backup_before_repath.qgz
+    │   └── [124K]  europa.qgz
+    └── [4.0K]  styles
+
+8 directories, 5 files

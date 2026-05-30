@@ -1,0 +1,256 @@
+{
+  "type": "FeatureCollection",
+  "name": "Convitto Cardinal Mora - esempio base",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Perimetro rettangolare",
+        "tipo": "perimetro",
+        "piano": 1,
+        "funzione": "edificio",
+        "note": "Rettangolo esterno 40 m x 24 m."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.6316151,
+              44.8200753
+            ],
+            [
+              11.63212167325805,
+              44.8200753
+            ],
+            [
+              11.63212167325805,
+              44.819859705318
+            ],
+            [
+              11.6316151,
+              44.819859705318
+            ],
+            [
+              11.6316151,
+              44.8200753
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Muro divisorio verticale",
+        "tipo": "muro",
+        "piano": 1,
+        "funzione": "divisorio",
+        "note": "Divide il blocco sinistro dal blocco centrale/destra."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.63181772930322,
+            44.8200753
+          ],
+          [
+            11.63181772930322,
+            44.819859705318
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Muro divisorio orizzontale",
+        "tipo": "muro",
+        "piano": 1,
+        "funzione": "divisorio",
+        "note": "Divide il blocco destro in due ambienti."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.63181772930322,
+            44.819967502659
+          ],
+          [
+            11.63212167325805,
+            44.819967502659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Porta principale",
+        "tipo": "porta",
+        "piano": 1,
+        "funzione": "accesso esterno",
+        "note": "Porta larga 4 m sul lato sud."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.631843057966123,
+            44.819859705318
+          ],
+          [
+            11.631893715291927,
+            44.819859705318
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Porta divisorio verticale",
+        "tipo": "porta",
+        "piano": 1,
+        "funzione": "passaggio interno",
+        "note": "Apertura nel muro verticale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.63181772930322,
+            44.81999445199425
+          ],
+          [
+            11.63181772930322,
+            44.819967502659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Porta divisorio orizzontale",
+        "tipo": "porta",
+        "piano": 1,
+        "funzione": "passaggio interno",
+        "note": "Apertura nel muro orizzontale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.631957036949183,
+            44.819967502659
+          ],
+          [
+            11.63200769427499,
+            44.819967502659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Finestra nord 1",
+        "tipo": "finestra",
+        "piano": 1,
+        "funzione": "apertura esterna",
+        "note": "Finestra sul lato nord."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.631665757325804,
+            44.8200753
+          ],
+          [
+            11.63172907898306,
+            44.8200753
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Finestra nord 2",
+        "tipo": "finestra",
+        "piano": 1,
+        "funzione": "apertura esterna",
+        "note": "Finestra sul lato nord."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.631944372617733,
+            44.8200753
+          ],
+          [
+            11.63200769427499,
+            44.8200753
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Finestra ovest",
+        "tipo": "finestra",
+        "piano": 1,
+        "funzione": "apertura esterna",
+        "note": "Finestra sul lato ovest."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.6316151,
+            44.82001241821775
+          ],
+          [
+            11.6316151,
+            44.819967502659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Finestra est",
+        "tipo": "finestra",
+        "piano": 1,
+        "funzione": "apertura esterna",
+        "note": "Finestra sul lato est."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.63212167325805,
+            44.819940553323754
+          ],
+          [
+            11.63212167325805,
+            44.819895637765
+          ]
+        ]
+      }
+    }
+  ]
+}

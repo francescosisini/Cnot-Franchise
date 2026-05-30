@@ -1,0 +1,29 @@
+{
+    "nome": "IL CONFLITTO TRA AMICI",
+    "figli": [
+        {
+            "nome": "Riconciliare attivamente",
+            "potenziale": {
+                "Amicalita_Collaborazione": 80,
+                "Estroversione_Assertivita": 70,
+                "Nevroticismo_Rabbia": 40
+            }
+        },
+        {
+            "nome": "Restare neutrale",
+            "potenziale": {
+                "Coscienziosita_Prudenza": 75,
+                "Amicalita_Sensibilita": 70,
+                "Nevroticismo_Ansieta": 50
+            }
+        },
+        {
+            "nome": "Schierarsi con uno dei due",
+            "potenziale": {
+                "Amicalita_Altruismo": 70,
+                "Estroversione_Attivita": 65,
+                "Nevroticismo_Rabbia": 60
+            }
+        }
+    ]
+}

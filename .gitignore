@@ -33,3 +33,28 @@ manuscript/**/*.fdb_latexmk
 **/*.pyc
 
 maps/goxel/goxel-0.15.1.AppImage
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Backup/editor files
+*~
+.#*
+.DS_Store
+
+# LaTeX build files
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+
+# QGIS temporary files
+*.gpkg-shm
+*.gpkg-wal
+
+# Generated tree files
+directory_tree.txt
+tree.txt

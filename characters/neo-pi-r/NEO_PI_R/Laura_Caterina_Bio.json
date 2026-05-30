@@ -1,0 +1,112 @@
+{
+  "Laura": {
+    "nome": "Laura",
+    "età": 21,
+    "occupazione": "studentessa universitaria in fisica quantistica, lavora part-time nel magazzino Bamazon",
+    "personalità": [
+      "curiosa",
+      "intelligente",
+      "introspettiva",
+      "empatica",
+      "idealista"
+    ],
+    "istruzione": "Frequenta un corso avanzato di fisica quantistica. Ha studiato da autodidatta informatica e programmazione fin da bambina, usando dispositivi vintage come ZX Spectrum e Commodore 64.",
+    "abilità": [
+      "programmazione di base (Python)",
+      "elettronica analogica",
+      "riparazione e ricondizionamento di tecnologie vintage",
+      "crittografia quantistica",
+      "pensiero critico"
+    ],
+    "esperienze_significative": [
+      "Ha affrontato un esame impegnativo con il professor Shor, distinguendosi per intuizione ma mostrando anche insicurezza",
+      "Ha aiutato l'amica Caterina a ricostruire un algoritmo di ricerca",
+      "Ha esplorato accidentalmente una sezione riservata del magazzino Bamazon"
+    ],
+    "relazioni_familiari": {
+      "Valentina": "sorellina minore di cui si prende cura",
+      "genitori": "assenti da tempo, motivo non specificato"
+    },
+    "relazioni_chiave": {
+      "Caterina": "amica stretta e punto di confronto intellettuale ed emotivo",
+      "Shor": "professore stimato, punto di riferimento e sfida accademica",
+      "Rocky": "cane di casa, simbolo di conforto emotivo"
+    },
+    "idee_e_convinzioni": [
+      "La tecnologia dovrebbe essere comprensibile e sostenibile",
+      "Critica l’innovazione fine a sé stessa e l’obsolescenza programmata",
+      "Crede nell’etica della scienza e della comunicazione tecnica"
+    ],
+    "paure_o_debolezze": [
+      "Consapevolezza dei propri limiti di tempo e volontà nel dedicarsi a fondo a problemi complessi",
+      "Timore profondo di non essere compresa o presa sul serio per via della sua età e dei metodi poco convenzionali"
+    ],
+    "obiettivi_futuri": [
+      "Completare gli studi in fisica quantistica",
+      "Contribuire a un cambiamento etico nell’uso delle IA",
+      "Offrire un futuro stabile alla sorellina Valentina"
+    ],
+    "valori": [
+      "autenticità",
+      "giustizia",
+      "sostenibilità",
+      "empatia"
+    ]
+  },
+  "Caterina": {
+    "nome": "Caterina",
+    "età": 26,
+    "occupazione": "ex impiegata temporanea a Bamazon, in cerca di un ruolo stabile nel marketing con focus sulla sostenibilità",
+    "personalità": [
+      "ambiziosa",
+      "razionale",
+      "sensibile",
+      "coscienziosa",
+      "insoddisfatta"
+    ],
+    "istruzione": "Laureata in marketing e comunicazione, con particolare attenzione alla responsabilità sociale d’impresa e alla sostenibilità ambientale.",
+    "abilità": [
+      "comunicazione efficace",
+      "gestione campagne marketing",
+      "valutazione etica di brand e prodotti",
+      "analisi SWOT",
+      "competenze base di programmazione (in fase di apprendimento)"
+    ],
+    "esperienze_significative": [
+      "Ha sostenuto un colloquio molto stressante presso Pet µRobot con valutazione AI e un test tecnico inaspettato",
+      "Ha ricevuto un rifiuto professionale ambiguo che ha scatenato dubbi sul sistema di selezione automatizzato",
+      "Ha condiviso momenti di confronto profondo con Laura, sia tecnici che esistenziali"
+    ],
+    "relazioni_familiari": {
+      "Mark": "fidanzato, con cui ha una relazione instabile e carica di insicurezze",
+      "sorella_minore": "Alice, adolescente spesso ospite a casa di Caterina per sfuggire ai conflitti familiari. Il loro è un rapporto complice e affettuoso, vissuto con naturalezza e senza drammi.",
+      "famiglia": "genitori presenti ma distanti; non ci sono rotture profonde, solo incomprensioni"
+    },
+    "relazioni_chiave": {
+      "Laura": "confidente e sostegno tecnico ed emotivo",
+      "Eva": "responsabile HR percepita come figura ostile o manipolativa",
+      "Mark": "relazione problematica che riflette dubbi sulla propria identità e felicità"
+    },
+    "idee_e_convinzioni": [
+      "Crede nel merito e nella trasparenza nei processi lavorativi",
+      "Critica il greenwashing e il marketing disonesto",
+      "Desidera un ruolo in cui l’etica non sia separata dall’efficacia"
+    ],
+    "paure_o_debolezze": [
+      "Dubbi sulla propria capacità di emergere in un sistema professionale ostile",
+      "Conflitto tra il bisogno di sicurezza e l’inquietudine interiore",
+      "Insicurezze legate all’identità di genere e al confronto con le aspettative maschili"
+    ],
+    "obiettivi_futuri": [
+      "Ottenere un lavoro stabile e significativo nel marketing sostenibile",
+      "Riacquistare fiducia in sé stessa come professionista e come donna",
+      "Coltivare relazioni autentiche e supportare iniziative di trasparenza aziendale"
+    ],
+    "valori": [
+      "trasparenza",
+      "competenza",
+      "meritocrazia",
+      "etica"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "nome": "IL PROGETTO DI GRUPPO",
+    "figli": [
+        {
+            "nome": "Prendere l'iniziativa",
+            "potenziale": {
+                "Estroversione_Assertivita": 80,
+                "Coscienziosita_Competenza": 70,
+                "Nevroticismo_Ansieta": 50
+            }
+        },
+        {
+            "nome": "Ritirarsi in disparte",
+            "potenziale": {
+                "Nevroticismo_Ansieta": 70,
+                "Coscienziosita_Prudenza": 65,
+                "Amicalita_Modestia": 60
+            }
+        },
+        {
+            "nome": "Mediare per armonizzare",
+            "potenziale": {
+                "Amicalita_Collaborazione": 80,
+                "Estroversione_Cordialita": 65,
+                "Coscienziosita_SensoDelDovere": 70
+            }
+        }
+    ]
+}

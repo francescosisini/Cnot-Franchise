@@ -1,0 +1,469 @@
+.
+(0tqq (Barchive
+(0x   tqq (Bdrafts
+(0x   tqq (Bold_code
+(0x   mqq (Bold_exports
+(0tqq (Bbooks
+(0x   mqq (Bmanuscript
+(0x       tqq (Bcnot
+(0x       x   tqq (BCnot_Fascicolato.pdf
+(0x       x   tqq (BCnot.pdf
+(0x       x   tqq (Bhtml
+(0x       x   tqq (Blatex
+(0x       x   mqq (BREADME.md
+(0x       tqq (Bcnot1.7
+(0x       x   tqq (BCnot1.7 - Eiren Lysias.epub
+(0x       x   tqq (BCnot1.7.html
+(0x       x   tqq (Bcnot1.7.pdf
+(0x       x   tqq (BCONTRIBUTING.md
+(0x       x   tqq (Bfonts
+(0x       x   tqq (Blatex_version
+(0x       x   tqq (Bmedia
+(0x       x   tqq (Bq.log
+(0x       x   mqq (BREADME.md
+(0x       tqq (Bcnot-e
+(0x       x   mqq (BREADME.md
+(0x       mqq (BNCR
+(0x           mqq (Bn17
+(0tqq (Bcharacters
+(0x   tqq (Bneo-pi-r
+(0x   x   mqq (BNEO_PI_R
+(0x   x       tqq (Balbero_decisionale_evento_sociale.json
+(0x   x       tqq (Balbero.json
+(0x   x       tqq (Bannalisa_pazzi.json
+(0x   x       tqq (Bcharacters_design
+(0x   x       tqq (BLaura_Caterina_Bio.json
+(0x   x       tqq (BLaura_Caterina_NEO_PI_R.csv
+(0x   x       tqq (BLaura_Caterina_NEO-PI-R.json
+(0x   x       tqq (BLaura_Sisini
+(0x   x       tqq (BNEO_PI_R.py
+(0x   x       tqq (Bpersonaggio_estroverso.json
+(0x   x       tqq (Bpersonaggio_introverso.json
+(0x   x       tqq (Bpersonaggio.json
+(0x   x       tqq (BREADME.md
+(0x   x       tqq (Bsimulatore.py
+(0x   x       tqq (Bsituazione_1.json
+(0x   x       tqq (Bsituazione_2.json
+(0x   x       tqq (Bsituazione_3.json
+(0x   x       tqq (Bsituazione_4.json
+(0x   x       tqq (Bsituazione_5.json
+(0x   x       mqq (Btest_NEOPIR.py
+(0x   mqq (Bprofiles
+(0tqq (Bcnot1.7
+(0x   tqq (BBrochure_LittleSister.pdf
+(0x   tqq (Bcnot1.7-book.pdf
+(0x   tqq (Bconvitto.png
+(0x   tqq (Bdont.txt
+(0x   tqq (Bebook.css
+(0x   tqq (Blatino.txt
+(0x   tqq (Bmedia
+(0x   x   tqq (BAlice.png
+(0x   x   tqq (Balice senza sfondo.png
+(0x   x   tqq (BAlice_w.png
+(0x   x   tqq (Bby-sa.png
+(0x   x   tqq (Bcamera caterina senza sfondo.png
+(0x   x   tqq (Bcamera caterina senza sfondo skater.png
+(0x   x   tqq (BCnot1.7ReleaseQRcode.png
+(0x   x   tqq (Bconvitto.png
+(0x   x   tqq (Bconvitto senza sfondo.png
+(0x   x   tqq (Bcrostata senza sfondo.png
+(0x   x   tqq (Bdiario alice senza sfondo.png
+(0x   x   tqq (BDiario.png
+(0x   x   tqq (Bdumper_zone.png
+(0x   x   tqq (Bedizioni tradizionali.png
+(0x   x   tqq (Bequipaggiamento laura senza sfondo.png
+(0x   x   tqq (Bfondazioni.png
+(0x   x   tqq (Bgithub-mark.png
+(0x   x   tqq (Bimage10.jpg
+(0x   x   tqq (Bimage11.jpg
+(0x   x   tqq (Bimage12.jpg
+(0x   x   tqq (Bimage13.jpg
+(0x   x   tqq (Bimage14.jpg
+(0x   x   tqq (Bimage15.jpg
+(0x   x   tqq (Bimage16.png
+(0x   x   tqq (Bimage17.jpg
+(0x   x   tqq (Bimage18.png
+(0x   x   tqq (Bimage19.png
+(0x   x   tqq (Bimage1.gif
+(0x   x   tqq (Bimage20.jpg
+(0x   x   tqq (Bimage21.jpg
+(0x   x   tqq (Bimage22.jpg
+(0x   x   tqq (Bimage23.jpg
+(0x   x   tqq (Bimage24.jpg
+(0x   x   tqq (Bimage25.jpg
+(0x   x   tqq (Bimage2.gif
+(0x   x   tqq (Bimage3.gif
+(0x   x   tqq (Bimage4.jpg
+(0x   x   tqq (Bimage5.jpg
+(0x   x   tqq (Bimage6.jpg
+(0x   x   tqq (Bimage7.png
+(0x   x   tqq (Bimage8.jpg
+(0x   x   tqq (Bimage9.jpg
+(0x   x   tqq (Blaura pc senza sfondo.png
+(0x   x   tqq (Blittle_sister_sheet1.png
+(0x   x   tqq (Blittle_sister_sheet2.png
+(0x   x   tqq (Bma ai senza sfondo.png
+(0x   x   tqq (Bmappa con casa laura.png
+(0x   x   tqq (Bmappa di odori.png
+(0x   x   tqq (Bnintendo box.png
+(0x   x   tqq (Bparanco senza sfondo.png
+(0x   x   tqq (Bpiano 1.png
+(0x   x   tqq (Bpiano 2.png
+(0x   x   tqq (Bpiano terra.png
+(0x   x   tqq (Bpiantina casa laura senza sfondo.png
+(0x   x   tqq (Bpiantina rocky senza sfondo.png
+(0x   x   tqq (Bpicnic senza sfondo.png
+(0x   x   tqq (Bplanisfero senza sfondo.png
+(0x   x   tqq (Brete senza sfondo.png
+(0x   x   tqq (Bsoggiorno prospettiva.png
+(0x   x   mqq (Bsoggiorno tiny.png
+(0x   tqq (BREADME.md
+(0x   mqq (Bspartiti
+(0x       tqq (Blittle_sister.ly
+(0x       tqq (Blittle_sister_lyrics.md
+(0x       tqq (Blittle_sister.midi
+(0x       mqq (Blittle_sister.pdf
+(0tqq (Bcnot-e
+(0tqq (Bcode
+(0x   tqq (Bchamata.txt
+(0x   tqq (Bconvitto_base_example
+(0x   x   tqq (Bconvitto_base.geojson
+(0x   x   tqq (Bconvitto_base_local.geojson
+(0x   x   tqq (Bconvitto_base_local.json
+(0x   x   mqq (Blocal_to_geojson.py
+(0x   tqq (Bdemo_r_d2jan_page_linear.csv
+(0x   tqq (Beurope.json
+(0x   tqq (Beurope_vector_map.py
+(0x   tqq (Beurope_vector_oscilloscope.png
+(0x   tqq (Bferrara_overlay.png
+(0x   tqq (Bferrara.png
+(0x   tqq (Bfix_geo_population.py
+(0x   tqq (Bgis
+(0x   x   tqq (Bcnot.gpkg
+(0x   x   tqq (Bcnot.gpkg-shm
+(0x   x   tqq (Bcnot.gpkg-wal
+(0x   x   mqq (Bglobal_power_plant_database.csv
+(0x   tqq (Blegend_card.py
+(0x   tqq (Bm1_overlay.png
+(0x   tqq (Bm1.pgw
+(0x   tqq (Bm1.png
+(0x   tqq (Bmap
+(0x   x   tqq (Bqgis2web_2026_05_16-14_49_04_828051
+(0x   x   x   tqq (Bcss
+(0x   x   x   tqq (Bdata
+(0x   x   x   tqq (Bimages
+(0x   x   x   tqq (Bindex.html
+(0x   x   x   tqq (Bjs
+(0x   x   x   tqq (Blegend
+(0x   x   x   tqq (Bmarkers
+(0x   x   x   mqq (Bwebfonts
+(0x   x   tqq (Bqgis2web_2026_05_28-17_46_42_451379
+(0x   x   x   tqq (Bcss
+(0x   x   x   tqq (Bdata
+(0x   x   x   tqq (Bimages
+(0x   x   x   tqq (Bjs
+(0x   x   x   tqq (Blegend
+(0x   x   x   tqq (Bmarkers
+(0x   x   x   mqq (Bwebfonts
+(0x   x   tqq (Bqgis2web_2026_05_28-17_50_36_080775
+(0x   x   x   tqq (Bcss
+(0x   x   x   tqq (Bdata
+(0x   x   x   tqq (Bimages
+(0x   x   x   tqq (Bjs
+(0x   x   x   tqq (Blegend
+(0x   x   x   tqq (Bmarkers
+(0x   x   x   mqq (Bwebfonts
+(0x   x   tqq (Bqgis2web_2026_05_28-17_53_23_230546
+(0x   x   x   tqq (Bimages
+(0x   x   x   tqq (Bindex.html
+(0x   x   x   tqq (Blayers
+(0x   x   x   tqq (Bresources
+(0x   x   x   tqq (Bstyles
+(0x   x   x   mqq (Bwebfonts
+(0x   x   tqq (Bqgis2web_2026_05_28-17_56_04_883120
+(0x   x   x   tqq (Bimages
+(0x   x   x   tqq (Bindex.html
+(0x   x   x   tqq (Blayers
+(0x   x   x   tqq (Bresources
+(0x   x   x   tqq (Bstyles
+(0x   x   x   mqq (Bwebfonts
+(0x   x   mqq (Bqgis2web.css
+(0x   tqq (Bmappa.jpg
+(0x   tqq (Bmappa_overlay.png
+(0x   tqq (Bmappa.png
+(0x   tqq (Boverlay.py
+(0x   tqq (Boverlay_text.py
+(0x   tqq (Bpower_europe_legend.png
+(0x   tqq (Bpower_europe.png
+(0x   mqq (Bqgis
+(0x       tqq (Bcache
+(0x       tqq (Bexports
+(0x       tqq (Blayouts
+(0x       tqq (Bprojects
+(0x       x   mqq (Beuropa.qgz
+(0x       mqq (Bstyles
+(0tqq (Bdiffusione
+(0x   mqq (BREADME.md
+(0tqq (Bdigital_realms
+(0x   tqq (Bbackground_music.mp3
+(0x   tqq (BCH4 instructions.mp3
+(0x   tqq (Bduellodeimoti
+(0x   x   tqq (Bbin.wav
+(0x   x   tqq (Bbounce.wav
+(0x   x   tqq (Bduello_dei_moti.py
+(0x   x   tqq (BREADME.md
+(0x   x   mqq (Brotola.wav
+(0x   mqq (BREADME.md
+(0tqq (Bdirectory_tree.txt
+(0tqq (Bdocs
+(0tqq (Bgames
+(0x   tqq (Bbackground_music.mp3
+(0x   tqq (Bbamazonlabyrinth.py
+(0x   tqq (Bcaterinamind.py
+(0x   tqq (Bcode.aux
+(0x   tqq (Bcode-book.pdf
+(0x   tqq (Bcode.log
+(0x   tqq (Bcode.pdf
+(0x   tqq (Bcode.tex
+(0x   tqq (Bdialoghi.py
+(0x   tqq (Bgame_1
+(0x   x   tqq (Bbamazon.py
+(0x   x   mqq (Bbamazon.py.V1
+(0x   tqq (Bgame_2
+(0x   x   tqq (Bdocs
+(0x   x   x   mqq (Bintro_illustration.md
+(0x   x   mqq (Bpython
+(0x   x       tqq (Bassets
+(0x   x       tqq (Bbackground_music.mp3
+(0x   x       mqq (Bquantumdeception.py
+(0x   tqq (Bgame_6
+(0x   x   tqq (Bdocs
+(0x   x   x   mqq (Bch4dronechase.md
+(0x   x   mqq (Bpython
+(0x   x       tqq (Bactors
+(0x   x       tqq (Bbackground_music.mp3
+(0x   x       mqq (Bdronech4takeover.py
+(0x   tqq (Binstallazione_gioco.md
+(0x   mqq (BREADME.md
+(0tqq (Bguida
+(0x   tqq (Bmain.aux
+(0x   tqq (Bmain.log
+(0x   tqq (Bmain.out
+(0x   tqq (Bmain.pdf
+(0x   tqq (Bmain.tex
+(0x   mqq (Bmain.toc
+(0tqq (Bissues
+(0tqq (BLICENSE
+(0tqq (Bmanga
+(0x   tqq (Bnotes
+(0x   tqq (Bproposition_I_laura_q.md
+(0x   tqq (Bproposizione_1_Laura_Q.jpeg
+(0x   tqq (BREADME.md
+(0x   tqq (Bsketches
+(0x   mqq (Bstoryboard
+(0x       tqq (Bcapitolo1.md
+(0x       tqq (BCNOT — Digest Capitolo 10.md
+(0x       tqq (BCNOT — Digest Capitolo 11.md
+(0x       tqq (BCNOT — Digest Capitolo 1.md
+(0x       tqq (BCNOT — Digest Capitolo 2.md
+(0x       tqq (BCNOT — Digest Capitolo 3.md
+(0x       tqq (BCNOT — Digest Capitolo 4.md
+(0x       tqq (BCNOT — Digest Capitolo 5.md
+(0x       tqq (BCNOT — Digest Capitolo 6.md
+(0x       tqq (BCNOT — Digest Capitolo 7.md
+(0x       tqq (BCNOT — Digest Capitolo 8.md
+(0x       mqq (BCNOT — Digest Capitolo 9.md
+(0tqq (BManifesto.md
+(0tqq (Bmaps
+(0x   tqq (Bdata
+(0x   x   mqq (Bnarrative
+(0x   x       mqq (Bconvitto
+(0x   tqq (Bmaps
+(0x   x   mqq (Bqgis2web_2026_05_28-18_20_33_860080
+(0x   x       tqq (Bimages
+(0x   x       tqq (Bindex.html
+(0x   x       tqq (Blayers
+(0x   x       tqq (Bresources
+(0x   x       tqq (Bstyles
+(0x   x       mqq (Bwebfonts
+(0x   tqq (Bqgis
+(0x   tqq (BREADME.md
+(0x   mqq (Bweb
+(0tqq (Bmedia
+(0x   tqq (Bartwork
+(0x   x   mqq (Bartwork
+(0x   x       tqq (Bbanner_image.png
+(0x   x       tqq (Bcnotworlds.png
+(0x   x       tqq (Boriginali
+(0x   x       tqq (Bproposte copertine
+(0x   x       mqq (BWhatsApp Image 2025-03-04 at 12.04.36.jpeg
+(0x   tqq (Bbanners
+(0x   tqq (Bsoundtrack
+(0x   x   mqq (Bsoundtrack
+(0x   x       tqq (BBell State Blues.aup
+(0x   x       tqq (BBell State Blues_data
+(0x   x       tqq (BBell State Blues.mp3
+(0x   x       tqq (BCH4 Takeover.mp3
+(0x   x       tqq (Bcircuit_dreams.mid
+(0x   x       tqq (BCircuit Dreams.mp3
+(0x   x       tqq (Bcircuit_dreams.wav
+(0x   x       tqq (BCnot main theme.mp3
+(0x   x       tqq (Bcnot_soundtrack.mp3
+(0x   x       tqq (BCollapse of the Commissary.mp3
+(0x   x       tqq (Bcommunity_expansions
+(0x   x       tqq (Bcopertina_musicassetta.jpg
+(0x   x       tqq (Bcopertina_musicassetta.pdf
+(0x   x       tqq (Bcopertina_musicassetta.png
+(0x   x       tqq (BEncrypted Shadows.mp3
+(0x   x       tqq (BIon Trap Waltz.mp3
+(0x   x       tqq (BLast Exit_ Quantum Channel.mp3
+(0x   x       tqq (BLaura’s Reckoning.mp3
+(0x   x       tqq (BNeon Labyrinth.mp3
+(0x   x       tqq (Bquantum_pulse.mid
+(0x   x       tqq (BQuantum Pulse.mp3
+(0x   x       tqq (Bquantum_pulse.wav
+(0x   x       mqq (BREADME.md
+(0x   mqq (Bvideo
+(0x       mqq (Bvideo
+(0x           tqq (BCnot1.0
+(0x           tqq (Bcnot1.7
+(0x           mqq (Bcnot-e
+(0tqq (Bneurocriticum
+(0x   mqq (BGinzburg–Landau.py
+(0tqq (Bnews
+(0x   tqq (Bnews_novembre2025.pdf
+(0x   mqq (BREADME.md
+(0tqq (Bpapers
+(0x   tqq (BAdversarial testing of global neuronal workspace and integrated information theories of consciousness.pdf
+(0x   tqq (BNeutronics Analysis for MSR Cell with Different Fuel Salt Channel Geometry.pdf
+(0x   mqq (BThe Quantum Measurement Problem: A Review of Recent Trends.pdf
+(0tqq (BPlayItFirst
+(0x   tqq (Bcalendar.md
+(0x   tqq (Bprivacy.md
+(0x   mqq (BREADME.md
+(0tqq (BREADME.md
+(0tqq (Btimeline
+(0tqq (Btools
+(0x   tqq (Bgis
+(0x   tqq (Bimage
+(0x   mqq (Butilities
+(0tqq (Btree.txt
+(0tqq (Btress.txt
+(0tqq (Bvirtual_space
+(0x   mqq (Bmurales
+(0x       tqq (Bconcat_short_side.py
+(0x       tqq (Bmurales
+(0x       x   tqq (Bab.jpg
+(0x       x   tqq (Ba.jpg
+(0x       x   tqq (Bb.jpg
+(0x       x   tqq (Bcfprimo.jpg
+(0x       x   tqq (Bc.jpg
+(0x       x   tqq (Bcprimofsecondo.jpg
+(0x       x   tqq (Bcprimo.jpg
+(0x       x   tqq (Bd.jpg
+(0x       x   tqq (Bdprimo.jpg
+(0x       x   tqq (Bdsecondo.jpg
+(0x       x   tqq (Be.jpg
+(0x       x   tqq (Bf.jpg
+(0x       x   tqq (Bfprimo.jpg
+(0x       x   tqq (Bfsecondo.jpg
+(0x       x   tqq (Bghprimo.jpg
+(0x       x   tqq (Bg.jpg
+(0x       x   tqq (Bh.jpg
+(0x       x   tqq (Bhprimo.jpg
+(0x       x   tqq (Blh.jpg
+(0x       x   tqq (Bl.jpg
+(0x       x   tqq (Bm.jpg
+(0x       x   tqq (Bmprimo.jpg
+(0x       x   tqq (Bmquarto.jpg
+(0x       x   tqq (Bmsecondo.jpg
+(0x       x   tqq (Bmterzo.jpg
+(0x       x   tqq (Bmterzomquarto.jpg
+(0x       x   tqq (Bmurales1.png
+(0x       x   tqq (BMURO.jpg
+(0x       x   tqq (Bn.jpg
+(0x       x   tqq (Bnm.jpg
+(0x       x   tqq (Bnprimo.jpg
+(0x       x   tqq (Bnprimomprimo.jpg
+(0x       x   tqq (Bo.jpg
+(0x       x   tqq (Boprimo.jpg
+(0x       x   tqq (Bpavimento convitto.png
+(0x       x   tqq (Bp.jpg
+(0x       x   tqq (Bpprimo.jpg
+(0x       x   tqq (Bpsecondo.jpg
+(0x       x   tqq (Bsenzasfondo.png
+(0x       x   tqq (Bv.jpg
+(0x       x   tqq (Bvprimo.jpg
+(0x       x   tqq (Bvterzo.jpg
+(0x       x   tqq (Bzsecondo (1).jpg
+(0x       x   mqq (Bzterzo.jpg
+(0x       tqq (Bmuraleslungo2.jpg
+(0x       tqq (Bmuraleslungo3.jpg
+(0x       tqq (Bmuraleslungo4.jpg
+(0x       tqq (Bmuraleslungo5.jpg
+(0x       tqq (Bmuraleslungo6.jpg
+(0x       tqq (Bmuraleslungo8.jpg
+(0x       tqq (Bmuraleslungo.jpg
+(0x       tqq (Boutput.jpg
+(0x       tqq (Brisultato.jpg
+(0x       mqq (Btemp.jpg
+(0tqq (Bwebxr.md
+(0tqq (Bworldbuilding
+(0x   tqq (Bcharacters
+(0x   x   tqq (Bcaterina.md
+(0x   x   tqq (Beva.md
+(0x   x   mqq (Blaura.md
+(0x   tqq (Bmaps.svg
+(0x   mqq (BREADME.md
+(0tqq (Bworlds
+(0x   mqq (Bcnot
+(0x       mqq (Bworld
+(0x           tqq (Bdatasets
+(0x           tqq (Bdocs
+(0x           tqq (Bentities
+(0x           tqq (Bfactions
+(0x           tqq (Bgis
+(0x           tqq (Binfrastructure
+(0x           tqq (Boverlays
+(0x           tqq (BREADME.md
+(0x           tqq (Brenders
+(0x           tqq (Bschema
+(0x           tqq (Bsystems
+(0x           mqq (Btimelines
+(0mqq (Bxr
+(0    tqq (Bscripts
+(0    x   mqq (Bgoxel_vox_to_glb_pipeline
+(0    x       tqq (Bconvitto_2.glb
+(0    x       tqq (Bconvitto_multylayers.obj
+(0    x       tqq (Bexample_convitto.glb
+(0    x       tqq (Bexample_goxel.vox
+(0    x       tqq (Bgoxel_vox_to_glb.py
+(0    x       mqq (BREADME.md
+(0    tqq (Btextures
+(0    x   mqq (Btextures
+(0    x       tqq (Blegno.jpeg
+(0    x       tqq (Bmarmo.jpg
+(0    x       tqq (BMURO.jpg
+(0    x       tqq (Bpavimentobagno.png
+(0    x       tqq (Bpavimento beige.png
+(0    x       tqq (Bpavimento bianconerogiallo.png
+(0    x       tqq (Bpavimento convitto.png
+(0    x       tqq (Bpavimento marronegiallo.png
+(0    x       tqq (Bpavimento rosso.png
+(0    x       tqq (Bpiastrelle cucina.png
+(0    x       mqq (Bpiastrelle.png
+(0    tqq (Bviewers
+(0    x   mqq (Bconvitto
+(0    x       tqq (Bassets
+(0    x       tqq (Bindex.html
+(0    x       tqq (Bmodels
+(0    x       mqq (BREADME.md
+(0    mqq (Bvoxel
+(0        mqq (Bgoxel
+(0            tqq (Bbamazon
+(0            tqq (Bconvitto
+(0            tqq (Bgoxel-0.15.1.AppImage
+(0            tqq (Bsmart_gltf_utf.py
+(0            mqq (Bsmart_uvs.py
+
+160 directories, 306 files
