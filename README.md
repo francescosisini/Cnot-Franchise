@@ -96,7 +96,7 @@ Tra i layer in sviluppo:
 
 - **Europa sistemica** – produzione alimentare, popolazione, energia, trasporti e infrastrutture digitali.
 - **Zone dimenticate** – luoghi residuali, strutture dismesse e spazi marginali della nuova Europa.
-- **Convitto Cardinal Mora** – edificio narrativo esplorabile come mappa vettoriale e collegato allo spazio virtuale su Spatial.io.
+- **Convitto Cardinal Mora** – edificio narrativo esplorabile come mappa vettoriale e collegato allo spazio virtuale.
 - **Quantum Channel** – punto di fuga e confine tra i mondi.
 - **Classical Control Unit (CCU)** – centro decisionale della rete.
 - **Faulty Qubit Space** – rifugio dei qubit imperfetti.
@@ -112,14 +112,14 @@ I dati GIS e i sorgenti cartografici si trovano in:
 
 ---
 
-## 🌐 **Spazi Virtuali su Spatial.io**
+## 🌐 **Spazi Virtuali con webxr**
 
-Gli spazi virtuali su [Spatial.io](https://www.spatial.io/s/Cnot-17-684c12f2f734432bbfb0b0ab?share=2691301946283165767) permettono di esplorare luoghi del racconto come ambienti tridimensionali.  
+I motori **webxr** permettono di esplorare luoghi del racconto come ambienti tridimensionali.  
 - Ogni spazio corrisponde a un ambiente narrativo (la stanza di Laura, il laboratorio, la trappola ionica).  
 - È possibile caricare immagini, video o modelli 3D.  
 - Chi usa Unity3D può contribuire con versioni più dettagliate.
 
-Per dettagli tecnici consulta [spatialproject.md](spatialproject.md).  
+Per dettagli tecnici consulta [webxr.md](webxr.md).  
 Suggerimenti e contributi vanno segnalati nella sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
 
 ---
@@ -141,7 +141,7 @@ Trova gli issue aperti o proponi i tuoi nella sezione [Issues](https://github.co
 Il progetto utilizza:
 - **Python / Arduino** – per simulazioni e prototipi.  
 - **LaTeX** – per la stesura dei manoscritti e dei documenti.  
-- **Spatial.io / Unity** – per ambienti virtuali e installazioni visive.
+- **webxr / Unity** – per ambienti virtuali e installazioni visive.
 
 ---
 
