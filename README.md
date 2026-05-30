@@ -1,160 +1,491 @@
-# CNOT - Franchise
+# Cnot Franchise
 
-Benvenuto nel repository ufficiale di **CNOT**, un progetto narrativo e sperimentale che segue l’evoluzione dell’Europa tecnologica attraverso tre momenti chiave, separati da pochi anni ma uniti da un filo comune: il rapporto tra coscienza, tecnologia e libertà.
+**Cnot è un GIS narrativo del futuro:** una mappa di luoghi, infrastrutture, personaggi ed eventi da cui nascono storie, romanzi, ambienti esplorabili e documenti di mondo.
 
-![CNOT Banner](artwork/banner_image.png)
+Il progetto non parte soltanto dalla trama, ma dalla costruzione di un territorio possibile. Ogni luogo può contenere dati, memorie, conflitti, traiettorie, documenti, personaggi collegati e accessi immersivi.
 
----
+I libri raccontano alcuni percorsi dentro questa mappa.
+Il GIS conserva e organizza il mondo.
+Il WebXR permette di visitarne alcuni spazi.
 
-## 📚 La Trilogia di CNOT
-
-Tre racconti collegati, ambientati nell’arco di poco più di un decennio, descrivono la trasformazione di un’Europa che tenta di regolare la propria intelligenza tecnologica e, nel farlo, finisce per rispecchiarsi in essa.
-
----
-
-### ⚪ [CNOT](manuscript/cnot/README.md)
-
-Ambientato tra circa dieci anni, *CNOT* racconta l’inizio di una nuova fase dell’Europa tecnologica.  
-Sul confine tra scienza e sentimento, il romanzo segue **Laura** e gli altri protagonisti in un mondo che si affida al calcolo per comprendere se stesso.  
-È il momento in cui le grandi infrastrutture digitali iniziano a fondersi con le vite personali, e la domanda sul libero arbitrio diventa anche una questione di architettura dei sistemi.
-
-- **Autori**: Francesco e Laura  
-- **Temi**: libertà, individualità, amicizia, responsabilità  
-- **Licenza**: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)
+> Non costruiamo una mappa per illustrare una storia.
+> Costruiamo una mappa perché le storie possano accadere.
 
 ---
 
-### 🩵 [CNOT 1.7](https://github.com/francescosisini/Cnot-Franchise/tree/main/cnot1.7)
+## Idea generale
 
-Ambientato circa un anno dopo gli eventi di *CNOT*, questo secondo racconto segna il passaggio dall’intuizione individuale alla dimensione collettiva della nuova Europa.  
-Tra i personaggi — **Giovanni, Caterina e Laura** — si delineano i primi tratti sociali di un continente che rinasce dentro l’infrastruttura del calcolo: reti di solidarietà, nuove forme di giustizia, ma anche conflitti etici e personali.  
+Cnot è pensato come un franchise narrativo e tecnico insieme.
 
-Nel vecchio convitto dove si intrecciano le loro vite, l’Europa sperimenta il proprio primo equilibrio fragile tra umano e digitale.  
-*CNOT 1.7* racconta questa soglia: quando la tecnologia diventa linguaggio comune e la coscienza collettiva inizia appena a formarsi, tra le regole della rete e quelle del cuore.
+Il cuore del progetto è un atlante del futuro: un sistema di luoghi reali, immaginari o ibridi, organizzati come elementi di una grande mappa narrativa.
 
----
+Dentro questa mappa possono essere collocati:
 
-### 💠 [CNOT-E (Europa, 2040)](https://github.com/francescosisini/Cnot-Franchise/tree/main/manuscript/cnot-e)
+* luoghi;
+* edifici;
+* città;
+* infrastrutture;
+* datacenter;
+* centrali energetiche;
+* scuole;
+* convitti;
+* case;
+* zone abbandonate;
+* eventi;
+* crisi;
+* personaggi;
+* organizzazioni;
+* documenti;
+* linee temporali;
+* ambienti esplorabili.
 
-Ambientato nel pieno della nuova Europa del 2040, *CNOT-E* porta a compimento le tensioni e le promesse nate nei racconti precedenti.  
-La rete di calcolo, divenuta ormai l’infrastruttura portante del continente, entra in una fase di instabilità: le **guerre tra droni**, gli attacchi ai centri TEE e la corsa al controllo dei campi cognitivi segnano l’inizio di una nuova geopolitica digitale.  
+La storia nasce dall’incrocio di questi livelli.
 
-Laura, ormai ricercatrice, torna ad affrontare le domande che l’avevano guidata da studentessa: cosa resta dell’umano quando la coscienza si distribuisce nei sistemi che abbiamo creato?  
-*CNOT-E* è la cronaca di un equilibrio che si spezza, e del momento in cui l’Europa scopre di potersi risvegliare da un sogno di trasparenza per ritrovarsi dentro una nuova forma di opacità.
-to segue Laura mentre tenta di misurare le fluttuazioni del *campo cognitivo* — un fenomeno emergente tra le reti di intelligenza artificiale europee.
-
----
-
-## 🤖 **CNOT Official GPT**
-
-Per esplorare meglio la storia, i personaggi e i materiali del progetto è disponibile una GPT dedicata.  
-Può aiutare a orientarsi nel repository, approfondire i temi scientifici e scoprire le connessioni tra le tre opere.
-
-👉 [Cnot Official GPT](https://chatgpt.com/g/g-67e97b62207881918c616766d9ff1061-cnot-official)
-
----
-
-## 🎵 **Soundtrack**
-
-Ogni racconto è accompagnato da una colonna sonora originale.  
-Le tracce sono ascoltabili nella cartella [soundtrack](soundtrack/README.md) e distribuite con licenza **GNU GPL v3.0**.
-
-- **Quantum Pulse** — la tensione della scoperta.  
-- **Circuit Dreams** — introspezione e memoria digitale.  
-- **Last Exit: Quantum Channel** — il limite tra umano e artificiale.
-
-Puoi contribuire con remix o nuove composizioni.
-
----
-
-## 🎮 **Games**
-
-Prototipi e mini-giochi ispirati al mondo di *CNOT*:
-- **CH₄ Drone Chase** — pilota il drone CH₄ di Laura attraverso un labirinto quantistico per salvare Caterina.
-
-Trovi dettagli e istruzioni nella sezione [Games](games/README.md).
+```text
+luoghi
+  ↓
+infrastrutture
+  ↓
+personaggi
+  ↓
+eventi
+  ↓
+conflitti
+  ↓
+storie
+```
 
 ---
 
-## 🎞️ **Animazioni**
+## Struttura del repository
 
-Visualizzazioni e piccole animazioni che rappresentano i concetti scientifici e simbolici del mondo di *CNOT*:  
-- **Rotazione CH₄** — la molecola che diventa simbolo di equilibrio e legame.  
-- **Griglia dinamica** — la rete informazionale che pulsa.  
-- **Messaggi animati** — parole e dati in movimento.
-
-Le animazioni si trovano in [digital_realms](digital_realms).
-
----
-
-## 🗺️ **Atlante interattivo e luoghi narrativi**
-
-Il progetto include un atlante interattivo dei luoghi e delle infrastrutture del mondo di **CNOT**.  
-La mappa collega livelli geografici reali, dati sistemici e ambienti narrativi: dall’Europa tecnologica e alimentare fino ai luoghi specifici attraversati dai personaggi.
-
-Tra i layer in sviluppo:
-
-- **Europa sistemica** – produzione alimentare, popolazione, energia, trasporti e infrastrutture digitali.
-- **Zone dimenticate** – luoghi residuali, strutture dismesse e spazi marginali della nuova Europa.
-- **Convitto Cardinal Mora** – edificio narrativo esplorabile come mappa vettoriale e collegato allo spazio virtuale.
-- **Quantum Channel** – punto di fuga e confine tra i mondi.
-- **Classical Control Unit (CCU)** – centro decisionale della rete.
-- **Faulty Qubit Space** – rifugio dei qubit imperfetti.
-
-La mappa web esportata si trova in:
-
-[Interactive Map](/maps/maps/qgis2web_2026_05_28-18_20_33_860080/index.html)
-
-I dati GIS e i sorgenti cartografici si trovano in:
-[GIS](/world/gis)
-
-[maps](maps)
+```text
+Cnot-Franchise/
+├── books/
+├── characters/
+├── docs/
+├── maps/
+├── media/
+├── research/
+├── tools/
+├── worlds/
+├── xr/
+└── archive/
+```
 
 ---
 
-## 🌐 **Spazi Virtuali con webxr**
+## Sezioni principali
 
-I motori **webxr** permettono di esplorare luoghi del racconto come ambienti tridimensionali.  
-- Ogni spazio corrisponde a un ambiente narrativo (la stanza di Laura, il laboratorio, la trappola ionica).  
-- È possibile caricare immagini, video o modelli 3D.  
-- Chi usa Unity3D può contribuire con versioni più dettagliate.
+### [books/](books/)
 
-Per dettagli tecnici consulta [webxr.md](webxr.md).  
-Suggerimenti e contributi vanno segnalati nella sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
+La cartella `books/` contiene le opere narrative del progetto.
 
----
+```text
+books/
+├── cnot/
+├── cnot1.7/
+├── cnot-e/
+└── NCR/
+```
 
-## 🎨 **Come Partecipare**
+Qui si trovano i testi, le versioni LaTeX, HTML, PDF, EPUB, immagini e materiali editoriali legati ai libri.
 
-Puoi contribuire con:
-- **Illustrazioni e schizzi**,  
-- **Testi o racconti brevi ispirati a CNOT**,  
-- **Esperimenti tecnici o simulazioni**,  
-- **Idee per ambienti o giochi**.
-
-Trova gli issue aperti o proponi i tuoi nella sezione [Issues](https://github.com/francescosisini/Cnot-Franchise/issues).
+I libri non sono considerati oggetti isolati: sono percorsi narrativi dentro il mondo mappato di Cnot.
 
 ---
 
-## 🔧 **Tecnologie**
+### [worlds/](worlds/)
 
-Il progetto utilizza:
-- **Python / Arduino** – per simulazioni e prototipi.  
-- **LaTeX** – per la stesura dei manoscritti e dei documenti.  
-- **webxr / Unity** – per ambienti virtuali e installazioni visive.
+La cartella `worlds/` contiene il database narrativo del mondo.
+
+```text
+worlds/
+└── cnot/
+    ├── datasets/
+    ├── docs/
+    ├── entities/
+    ├── factions/
+    ├── gis/
+    ├── infrastructure/
+    ├── overlays/
+    ├── renders/
+    ├── schema/
+    ├── systems/
+    └── timelines/
+```
+
+Questa sezione raccoglie la struttura profonda del franchise:
+
+* entità;
+* luoghi;
+* organizzazioni;
+* infrastrutture;
+* sistemi;
+* dataset;
+* timeline;
+* eventi;
+* overlay narrativi;
+* materiali cartografici.
+
+È il livello in cui il mondo viene documentato come se fosse un ambiente reale.
 
 ---
 
-## 📜 **Licenze**
+### [maps/](maps/)
 
-- **Manoscritti e testi**: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)  
-- **Soundtrack, artwork e codice**: [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+La cartella `maps/` contiene il livello GIS e cartografico.
+
+```text
+maps/
+├── data/
+├── qgis/
+└── web/
+```
+
+Questa sezione contiene:
+
+* progetti QGIS;
+* dati GeoPackage;
+* dati GeoJSON;
+* esportazioni qgis2web;
+* mappe web;
+* dati geografici narrativi.
+
+Il GIS serve a collocare luoghi ed eventi nello spazio.
+
+La logica è:
+
+```text
+luogo sulla mappa
+  ↓
+scheda informativa
+  ↓
+evento narrativo
+  ↓
+personaggi collegati
+  ↓
+eventuale ambiente WebXR
+```
 
 ---
 
-## ✳️ **In Sintesi**
+### [xr/](xr/)
 
-> *CNOT* racconta l’avvicinarsi di un momento in cui l’Europa tecnologica, nel tentativo di regolarsi e conoscersi, comincia a riflettersi su se stessa.  
-> Tre racconti, tre epoche ravvicinate — dall’intuizione al sistema, dal legame umano al calcolo condiviso — tracciano l’evoluzione di una coscienza europea che si costruisce attraverso i suoi algoritmi.
+La cartella `xr/` contiene gli ambienti WebXR e i modelli 3D esplorabili nel browser.
+
+```text
+xr/
+├── viewers/
+├── voxel/
+├── scripts/
+└── textures/
+```
+
+Il caso principale è il convitto virtuale:
+
+```text
+xr/viewers/convitto/
+```
+
+Il viewer carica il modello:
+
+```text
+xr/viewers/convitto/models/convitto.glb
+```
+
+Sono presenti anche varianti del modello, tra cui:
+
+```text
+convitto.glb          modello principale con texture
+convitto_simple.glb   modello semplificato senza texture
+```
+
+Il WebXR permette di trasformare alcuni luoghi del GIS in spazi visitabili.
 
 ---
+
+### [characters/](characters/)
+
+La cartella `characters/` contiene personaggi, profili, dati comportamentali e materiali di character design.
+
+```text
+characters/
+├── neo-pi-r/
+└── profiles/
+```
+
+I personaggi non sono trattati soltanto come figure narrative, ma anche come layer del GIS.
+
+Ogni personaggio può essere collegato a:
+
+* luoghi;
+* traiettorie;
+* eventi;
+* relazioni;
+* profili psicologici;
+* decisioni;
+* punti di crisi;
+* documenti;
+* archi narrativi.
+
+La sezione `neo-pi-r/` raccoglie esperimenti e dati legati alla modellazione dei personaggi tramite profili di personalità.
+
+---
+
+### [research/](research/)
+
+La cartella `research/` contiene materiali di studio e riferimento.
+
+```text
+research/
+├── papers/
+├── news/
+└── neurocriticum/
+```
+
+Questa sezione sostiene lo sfondo culturale, scientifico e filosofico del franchise.
+
+Può includere materiali su:
+
+* intelligenza artificiale;
+* coscienza;
+* sistemi complessi;
+* infrastrutture;
+* energia;
+* clima;
+* neuroscienze;
+* quantistica;
+* tecnologie critiche;
+* crisi sociali e politiche.
+
+La ricerca non è separata dalla narrativa: fornisce materia concettuale per costruire il mondo e generare eventi.
+
+---
+
+### [media/](media/)
+
+La cartella `media/` contiene materiali visivi, audio e promozionali.
+
+```text
+media/
+├── artwork/
+├── soundtrack/
+├── video/
+└── banners/
+```
+
+Qui possono essere raccolti:
+
+* immagini;
+* illustrazioni;
+* copertine;
+* video;
+* colonne sonore;
+* materiali social;
+* banner;
+* visual di supporto.
+
+Questa sezione alimenta la dimensione visiva e comunicativa del franchise.
+
+---
+
+### [tools/](tools/)
+
+La cartella `tools/` contiene script e strumenti riutilizzabili.
+
+```text
+tools/
+├── gis/
+├── image/
+└── utilities/
+```
+
+Gli strumenti servono a costruire, convertire, generare o preparare materiali del progetto.
+
+Esempi:
+
+* script GIS;
+* script per immagini;
+* generatori di legende;
+* convertitori;
+* utility di produzione;
+* strumenti per pipeline editoriali o XR.
+
+Gli script dovrebbero essere il più possibile generici e riutilizzabili.
+
+---
+
+### [docs/](docs/)
+
+La cartella `docs/` contiene documentazione generale del progetto.
+
+Può ospitare:
+
+* descrizione dell’architettura del franchise;
+* note sul funzionamento GIS + WebXR;
+* istruzioni di pubblicazione;
+* guide operative;
+* documentazione per collaboratori;
+* manifesto del progetto.
+
+---
+
+### [archive/](archive/)
+
+La cartella `archive/` contiene materiale non più attivo, legacy o sperimentale.
+
+```text
+archive/
+├── drafts/
+├── old_code/
+├── old_exports/
+└── old_games/
+```
+
+Qui finiscono:
+
+* vecchi export;
+* prototipi abbandonati;
+* giochi non più attivi;
+* codice legacy;
+* bozze superate;
+* materiali conservati per memoria o recupero futuro.
+
+L’archivio non rappresenta la superficie attiva del franchise, ma conserva tracce utili della sua evoluzione.
+
+---
+
+## GIS + narrazione
+
+Il GIS non è un’aggiunta decorativa.
+
+È uno degli strumenti centrali con cui il mondo viene pensato.
+
+Ogni elemento della mappa può diventare un nodo narrativo:
+
+```text
+coordinate
+  ↓
+luogo
+  ↓
+funzione
+  ↓
+evento
+  ↓
+personaggi
+  ↓
+documenti
+  ↓
+storia
+```
+
+Un luogo può essere reale, immaginario o ibrido.
+
+Un evento può essere pubblico, segreto, documentato, distorto o ancora da scoprire.
+
+Una storia può nascere dal rapporto fra un luogo, un’infrastruttura, una crisi e un personaggio.
+
+---
+
+## GIS + WebXR
+
+Il progetto usa il GIS come mappa generale e il WebXR come ingresso immersivo in luoghi specifici.
+
+```text
+GIS feature
+  ↓
+popup / metadata
+  ↓
+xr_url
+  ↓
+WebXR viewer
+  ↓
+GLB model
+```
+
+In questo modo un punto della mappa può aprire uno spazio esplorabile.
+
+Il GIS organizza il mondo.
+Il WebXR permette di entrarci.
+
+---
+
+## Metodo narrativo
+
+Il metodo di costruzione del franchise può essere riassunto così:
+
+```text
+1. mappare luoghi e infrastrutture
+2. definire personaggi e traiettorie
+3. collocare eventi nello spazio e nel tempo
+4. collegare documenti, dati e immagini
+5. far emergere conflitti e anomalie
+6. scrivere storie a partire dalla mappa
+7. trasformare alcuni luoghi in ambienti visitabili
+```
+
+La narrazione nasce dall’intersezione dei layer.
+
+```text
+layer geografico
++ layer infrastrutturale
++ layer tecnologico
++ layer politico
++ layer climatico
++ layer psicologico
++ layer degli eventi
+= possibilità narrativa
+```
+
+---
+
+## Pubblicazione
+
+Le parti pubblicabili del progetto possono essere ospitate come pagine statiche.
+
+In particolare:
+
+```text
+maps/web/
+xr/viewers/
+docs/
+```
+
+possono diventare la base di un atlante pubblico del franchise.
+
+Una possibile porta d’ingresso è:
+
+```text
+Cnot Virtual Atlas
+  ↓
+mappa interattiva
+  ↓
+luoghi ed eventi
+  ↓
+ambienti WebXR
+  ↓
+libri e materiali di ricerca
+```
+
+---
+
+## Filosofia del repository
+
+Questo repository non è solo un contenitore tecnico.
+
+È parte integrante del progetto.
+
+Cnot tratta un mondo narrativo come qualcosa che può essere:
+
+* scritto;
+* mappato;
+* modellato;
+* versionato;
+* documentato;
+* attraversato;
+* esplorato;
+* esteso.
+
+Il repository è quindi un archivio vivo: conserva il mondo, ne mostra la costruzione e permette di generare nuove storie a partire dalla sua geografia.
+
