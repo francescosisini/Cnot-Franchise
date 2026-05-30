@@ -2,7 +2,7 @@
 
 **Cnot è un GIS narrativo del futuro:** una mappa di luoghi, infrastrutture, personaggi ed eventi da cui nascono storie, romanzi, ambienti esplorabili e documenti di mondo.
 
-Il progetto non parte soltanto dalla trama, ma dalla costruzione di un territorio possibile. Ogni luogo può contenere dati, memorie, conflitti, traiettorie, documenti, personaggi collegati e accessi immersivi.
+Il progetto  parte dalla costruzione di un territorio possibile. Ogni luogo può contenere dati, memorie, conflitti, traiettorie, documenti, personaggi collegati e accessi immersivi.
 
 I libri raccontano alcuni percorsi dentro questa mappa.
 Il GIS conserva e organizza il mondo.
@@ -11,6 +11,36 @@ Il WebXR permette di visitarne alcuni spazi.
 > Non costruiamo una mappa per illustrare una storia.
 > Costruiamo una mappa perché le storie possano accadere.
 
+---
+## Le opere principali
+
+Il franchise nasce da tre nuclei narrativi: **Cnot**, **Cnot 1.7** e **Cnot-e**.
+
+### [Cnot](books/cnot/)
+
+**Cnot** è il nucleo originario del progetto: una fuga dentro e fuori da un computer quantistico. Introduce i personaggi principali e i temi fondanti del franchise: codice, intelligenza artificiale, quantistica, amicizia, decriptazione e attraversamento di ambienti tecnologici.
+
+```text
+Cnot = fuga dal computer quantistico
+```
+
+### [Cnot 1.7](books/cnot1.7/)
+
+**Cnot 1.7** sposta il baricentro verso l’esplorazione dei luoghi. È un’esperienza narrativa di tipo **urbex**: il mondo viene attraversato come una serie di spazi abbandonati, marginali o semi-nascosti, dove tracce materiali, mappe, stanze, oggetti e architetture diventano indizi narrativi.
+
+```text
+Cnot 1.7 = esplorazione urbex del mondo e dei suoi luoghi
+```
+
+### [Cnot-e](books/cnot-e/)
+
+**Cnot-e** è un’avventura irrisolvibile nella complicata Europa del 2050: un mondo di infrastrutture fragili, crisi politiche, sistemi digitali, confini mobili, dipendenze energetiche e tensioni difficili da decifrare. Qui il franchise assume pienamente la forma di un GIS narrativo del futuro.
+
+```text
+Cnot-e = avventura irrisolvibile nell’Europa del 2050
+```
+
+Insieme, queste opere costruiscono il passaggio dal libro al mondo: dalla fuga, all’esplorazione, fino alla mappa complessa degli eventi futuri.
 ---
 
 ## Idea generale
