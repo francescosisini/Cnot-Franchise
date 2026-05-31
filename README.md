@@ -1,5 +1,7 @@
 # Cnot Franchise
 
+![Cnot - Looking into the future](media/banners/looking.png)
+
 **Cnot è un GIS narrativo del futuro:** una mappa di luoghi, infrastrutture, personaggi ed eventi da cui nascono storie, romanzi, ambienti esplorabili e documenti di mondo.
 
 Il progetto  parte dalla costruzione di un territorio possibile. Ogni luogo può contenere dati, memorie, conflitti, traiettorie, documenti, personaggi collegati e accessi immersivi.
