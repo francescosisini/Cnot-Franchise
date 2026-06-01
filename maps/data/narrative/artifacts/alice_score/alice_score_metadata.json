@@ -1,0 +1,79 @@
+{
+  "artifact_id": "ART_001",
+  "slug": "little_sister",
+  "title": "Little Sister",
+  "working_title": "Versi stracciavesti",
+  "type": "musical_score",
+  "artifact_family": "narrative_music",
+
+  "author_in_story": "Alice",
+  "dedicated_to": "Caterina",
+  "related_characters": [
+    "Alice",
+    "Caterina",
+    "Laura",
+    "Valentina"
+  ],
+
+  "story_context": {
+    "work": "CNOT 1.7",
+    "chapter": 14,
+    "scene": "Scena del visto di Caterina",
+    "location": "Casa di Laura / soggiorno",
+    "story_time": "sette ore prima della scena del visto",
+    "mentioned_in_text": "Alice stringe la mano di Caterina. Chissà se tra sé sta ancora canticchiando i versi stracciavesti che le ha scritto solo sette ore fa."
+  },
+
+  "narrative_function": "Oggetto emotivo che collega la tensione informatica della scena alla relazione tra Alice e Caterina. Lo spartito agisce come traccia affettiva privata dentro una scena dominata da infrastrutture, dati e procedure di controllo.",
+
+  "files": {
+    "lilypond_source": "little_sister.ly",
+    "lyrics_markdown": "little_sister_lyrics.md",
+    "midi": "little_sister.midi",
+    "pdf_score": "little_sister.pdf"
+  },
+
+  "formats": {
+    "source": "LilyPond",
+    "lyrics": "Markdown",
+    "audio_preview": "MIDI",
+    "score_preview": "PDF"
+  },
+
+  "gis": {
+    "gis_layer": "cnot17_events",
+    "related_event_id": "EVT_ALICE_SCORE_001",
+    "suggested_geometry": "Point",
+    "suggested_location": "Casa di Laura / soggiorno",
+    "popup_title": "Little Sister — spartito di Alice",
+    "popup_description": "Spartito scritto da Alice per Caterina poche ore prima della scena del visto.",
+    "popup_files": [
+      {
+        "label": "Apri spartito PDF",
+        "file": "little_sister.pdf"
+      },
+      {
+        "label": "Leggi testo",
+        "file": "little_sister_lyrics.md"
+      },
+      {
+        "label": "Sorgente LilyPond",
+        "file": "little_sister.ly"
+      },
+      {
+        "label": "Ascolta MIDI",
+        "file": "little_sister.midi"
+      }
+    ]
+  },
+
+  "repository_path": "maps/data/narrative/artifacts/alice_score/",
+
+  "status": {
+    "version": "0.1",
+    "state": "draft",
+    "last_update": ""
+  },
+
+  "notes": "Il titolo narrativo 'Versi stracciavesti' deriva dal riferimento testuale. Il titolo operativo dei file è 'little_sister'."
+}

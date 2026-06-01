@@ -1,0 +1,95 @@
+{
+  "name": "Convitto Cardinal Mora - esempio base",
+  "units": "meters",
+  "coordinate_system": {
+    "description": "Coordinate locali in metri. Origine nell'angolo nord-ovest del perimetro. x cresce verso est/destra, y cresce verso sud/basso.",
+    "origin": {
+      "name": "angolo_nord_ovest",
+      "lon": 11.6316151,
+      "lat": 44.8200753
+    },
+    "rotation_deg": 0
+  },
+  "features": [
+    {
+      "nome": "Perimetro rettangolare",
+      "tipo": "perimetro",
+      "piano": 1,
+      "funzione": "edificio",
+      "rect": {"x": 0, "y": 0, "w": 40, "h": 24},
+      "note": "Rettangolo esterno 40 m x 24 m."
+    },
+    {
+      "nome": "Muro divisorio verticale",
+      "tipo": "muro",
+      "piano": 1,
+      "funzione": "divisorio",
+      "line": [[16, 0], [16, 24]],
+      "note": "Divide il blocco sinistro dal blocco centrale/destra."
+    },
+    {
+      "nome": "Muro divisorio orizzontale",
+      "tipo": "muro",
+      "piano": 1,
+      "funzione": "divisorio",
+      "line": [[16, 12], [40, 12]],
+      "note": "Divide il blocco destro in due ambienti."
+    },
+    {
+      "nome": "Porta principale",
+      "tipo": "porta",
+      "piano": 1,
+      "funzione": "accesso esterno",
+      "line": [[18, 24], [22, 24]],
+      "note": "Porta larga 4 m sul lato sud."
+    },
+    {
+      "nome": "Porta divisorio verticale",
+      "tipo": "porta",
+      "piano": 1,
+      "funzione": "passaggio interno",
+      "line": [[16, 9], [16, 12]],
+      "note": "Apertura nel muro verticale."
+    },
+    {
+      "nome": "Porta divisorio orizzontale",
+      "tipo": "porta",
+      "piano": 1,
+      "funzione": "passaggio interno",
+      "line": [[27, 12], [31, 12]],
+      "note": "Apertura nel muro orizzontale."
+    },
+    {
+      "nome": "Finestra nord 1",
+      "tipo": "finestra",
+      "piano": 1,
+      "funzione": "apertura esterna",
+      "line": [[4, 0], [9, 0]],
+      "note": "Finestra sul lato nord."
+    },
+    {
+      "nome": "Finestra nord 2",
+      "tipo": "finestra",
+      "piano": 1,
+      "funzione": "apertura esterna",
+      "line": [[26, 0], [31, 0]],
+      "note": "Finestra sul lato nord."
+    },
+    {
+      "nome": "Finestra ovest",
+      "tipo": "finestra",
+      "piano": 1,
+      "funzione": "apertura esterna",
+      "line": [[0, 7], [0, 12]],
+      "note": "Finestra sul lato ovest."
+    },
+    {
+      "nome": "Finestra est",
+      "tipo": "finestra",
+      "piano": 1,
+      "funzione": "apertura esterna",
+      "line": [[40, 15], [40, 20]],
+      "note": "Finestra sul lato est."
+    }
+  ]
+}
