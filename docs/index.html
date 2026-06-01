@@ -17,5 +17,294 @@
 </body>
 </html>
 -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Cnot-Franchise</title>
+
+  <style>
+    :root {
+      --bg: #050608;
+      --red: #ff3b1f;
+      --orange: #ff8a1f;
+      --green: #39ff88;
+      --cyan: #38d9ff;
+      --text: #f2f2f2;
+      --muted: #9ca3af;
+      --panel: rgba(10, 14, 18, 0.86);
+      --border: rgba(255, 80, 30, 0.55);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(5, 6, 8, 0.82), rgba(5, 6, 8, 0.95)),
+        radial-gradient(circle at 50% 20%, rgba(255, 70, 20, 0.22), transparent 32%),
+        radial-gradient(circle at 20% 80%, rgba(40, 220, 255, 0.10), transparent 30%),
+        #050608;
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.035) 0px,
+          rgba(255, 255, 255, 0.035) 1px,
+          transparent 1px,
+          transparent 4px
+        );
+      mix-blend-mode: overlay;
+      opacity: 0.35;
+      z-index: 10;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle, transparent 45%, rgba(0, 0, 0, 0.75) 100%);
+      z-index: 9;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+
+    .frame {
+      width: min(980px, 100%);
+      border: 1px solid var(--border);
+      background: var(--panel);
+      box-shadow:
+        0 0 28px rgba(255, 59, 31, 0.22),
+        inset 0 0 40px rgba(255, 59, 31, 0.05);
+      padding: 42px;
+      position: relative;
+    }
+
+    .frame::before,
+    .frame::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background: var(--red);
+      box-shadow: 0 0 12px var(--red);
+    }
+
+    .frame::before {
+      top: -1px;
+      left: 28px;
+    }
+
+    .frame::after {
+      bottom: -1px;
+      right: 28px;
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--green);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--red);
+      font-size: clamp(3rem, 9vw, 7.4rem);
+      line-height: 0.88;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 12px rgba(255, 59, 31, 0.9),
+        0 0 35px rgba(255, 59, 31, 0.45);
+    }
+
+    .subtitle {
+      margin-top: 22px;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      line-height: 1.6;
+    }
+
+    .subtitle strong {
+      color: var(--orange);
+      font-weight: normal;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .card {
+      display: block;
+      min-height: 170px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      background:
+        linear-gradient(135deg, rgba(255, 59, 31, 0.10), transparent),
+        rgba(255, 255, 255, 0.035);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--red);
+      box-shadow: 0 0 22px rgba(255, 59, 31, 0.28);
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      bottom: -40px;
+      width: 120px;
+      height: 120px;
+      border: 1px solid rgba(255, 59, 31, 0.35);
+      transform: rotate(45deg);
+    }
+
+    .card small {
+      color: var(--green);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .card h2 {
+      margin: 18px 0 10px;
+      color: var(--orange);
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 44px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .blink {
+      animation: blink 1.4s infinite;
+    }
+
+    @keyframes blink {
+      0%, 45% { opacity: 1; }
+      46%, 100% { opacity: 0.25; }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 18px;
+        place-items: start;
+      }
+
+      .frame {
+        padding: 26px;
+      }
+
+      .status {
+        flex-direction: column;
+        margin-bottom: 36px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="frame">
+      <div class="status">
+        <span>CN-OT ARCHIVE // EUROPE 2050</span>
+        <span class="blink">SIGNAL ONLINE</span>
+      </div>
+
+      <h1>Cnot<br>Franchise</h1>
+
+      <p class="subtitle">
+        Un <strong>GIS narrativo</strong> per costruire luoghi del futuro, eventi spazio-temporali
+        e ambienti immersivi. La mappa genera il mondo. Il mondo diventa esplorabile.
+      </p>
+
+      <div class="grid">
+        <a class="card" href="gis/">
+          <small>Layer 01</small>
+          <h2>GIS narrativo</h2>
+          <p>
+            Apri la mappa del franchise: luoghi, infrastrutture, eventi e connessioni
+            del mondo narrativo.
+          </p>
+        </a>
+
+        <a class="card" href="xr/convitto/">
+          <small>Layer 02</small>
+          <h2>Convitto XR</h2>
+          <p>
+            Entra nel convitto in WebXR: uno spazio 3D collegato agli eventi e ai tag
+            del GIS.
+          </p>
+        </a>
+      </div>
+
+      <div class="footer">
+        <span>Flat files // GIS // WebXR // GLB</span>
+        <span>Cnot-Franchise GitHub Pages</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
 
