@@ -1,0 +1,136 @@
+{
+  "name": "casa_caterina",
+  "metadata": {
+    "label": "Casa di Caterina",
+    "tipo": "abitazione",
+    "universo": "Cnot 1.7",
+    "descrizione": "Planimetria locale della casa di Caterina",
+    "show_label": true
+  },
+
+  "coordinate_system": {
+    "origin": {
+      "lon": 11.611283,
+      "lat": 44.858873
+    },
+    "rotation_deg": 0
+  },
+
+  "features": [
+
+    {
+      "segmento": 1,
+      "tipo": "muro",
+      "line": [[0,0], [8,0]]
+    },
+
+    {
+      "segmento": 2,
+      "tipo": "muro",
+      "line": [[8,0], [12,0]]
+    },
+
+    {
+      "segmento": 3,
+      "tipo": "muro",
+      "line": [[0,0], [0,2.5]]
+    },
+
+    {
+      "segmento": 4,
+      "tipo": "muro",
+      "line": [[8,0], [8,8]]
+    },
+
+    {
+      "segmento": 5,
+      "tipo": "muro",
+      "line": [[12,0], [12,8]]
+    },
+
+    {
+      "segmento": 6,
+      "tipo": "porta",
+      "line": [[0,2.5], [-0.5,3.9]]
+    },
+
+    {
+      "segmento": 7,
+      "tipo": "porta",
+      "line": [[-0.5,4.3], [0,5]]
+    },
+
+    {
+      "segmento": 8,
+      "tipo": "muro",
+      "line": [[0,5], [0,8]]
+    },
+
+    {
+      "segmento": 9,
+      "tipo": "muro",
+      "line": [[0,8], [5.4,8]]
+    },
+
+    {
+      "segmento": 10,
+      "tipo": "porta",
+      "line": [[5.7,9], [7.5,8]]
+    },
+
+    {
+      "segmento": 11,
+      "tipo": "muro",
+      "line": [[8.5,8], [10.3,9]]
+    },
+
+    {
+      "segmento": 12,
+      "tipo": "porta",
+      "line": [[10.5,8], [12,8]]
+    },
+
+    {
+      "segmento": 13,
+      "tipo": "muro",
+      "line": [[0,8], [0,10.5]]
+    },
+
+    {
+      "segmento": 14,
+      "tipo": "muro",
+      "line": [[12,8], [12,16]]
+    },
+
+    {
+      "segmento": 15,
+      "tipo": "porta",
+      "line": [[0,10.5], [-0.5,11.9]]
+    },
+
+    {
+      "segmento": 16,
+      "tipo": "porta",
+      "line": [[-0.5,12.2], [0,13.5]]
+    },
+
+    {
+      "segmento": 17,
+      "tipo": "muro",
+      "line": [[0,13.5], [0,16]]
+    },
+
+    {
+      "segmento": 18,
+      "tipo": "muro",
+      "line": [[0,16], [9.5,16]]
+    },
+
+    {
+      "segmento": 19,
+      "tipo": "porta",
+      "line": [ [9.7,17], [11.5,16]]
+    }
+
+  ]
+}

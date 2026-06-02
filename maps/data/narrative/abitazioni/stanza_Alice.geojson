@@ -1,0 +1,171 @@
+{
+  "type": "FeatureCollection",
+  "name": "tiny_laura",
+  "metadata": {
+    "label": "Stanza di Alice",
+    "tipo": "Stanza da letto",
+    "descrizione": "Camera da letto di Alice",
+    "universo": "Cnot 1.7",
+    "categoria": "abitazione",
+    "owner": "Alice",
+    "show_label": true
+  },
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_sinistra",
+        "tipo": "muro",
+        "style": "dashed"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.6106391,
+            44.8274645
+          ],
+          [
+            11.610680601371087,
+            44.827443889995095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_bassa",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.610680601371087,
+            44.827443889995095
+          ],
+          [
+            11.610704212274053,
+            44.82746780523175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_alta",
+        "tipo": "muro",
+        "style": "dashed"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.61070649398815,
+            44.82746228556739
+          ],
+          [
+            11.610707844720663,
+            44.82747148449893
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_destra",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.610707844720663,
+            44.82747148449893
+          ],
+          [
+            11.610709660943968,
+            44.82747332413251
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "divisione_centrale",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.610709660943968,
+            44.82747332413251
+          ],
+          [
+            11.610668159572882,
+            44.827493934137415
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "divisione_centrale",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.610668159572882,
+            44.827493934137415
+          ],
+          [
+            11.6106391,
+            44.8274645
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Stanza di Alice",
+        "tipo": "Stanza da letto",
+        "descrizione": "Camera da letto di Alice",
+        "universo": "Cnot 1.7",
+        "categoria": "abitazione",
+        "owner": "Alice",
+        "show_label": true,
+        "nome": "Stanza di Alice",
+        "feature_role": "metadata_label",
+        "source": "global_metadata",
+        "center_x": 4.0,
+        "center_y": 4.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.610676974307678,
+          44.82746762394095
+        ]
+      }
+    }
+  ]
+}

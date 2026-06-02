@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "name": "casa_caterina",
+  "metadata": {
+    "label": "Casa di Caterina",
+    "tipo": "abitazione",
+    "universo": "Cnot 1.7",
+    "descrizione": "Planimetria locale della casa di Caterina",
+    "show_label": true
+  },
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 1,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858873
+          ],
+          [
+            11.61148576579243,
+            44.858873
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 2,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.61148576579243,
+            44.858873
+          ],
+          [
+            11.611587148688644,
+            44.858873
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 3,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858873
+          ],
+          [
+            11.611283,
+            44.85882808444126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 4,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.61148576579243,
+            44.858873
+          ],
+          [
+            11.61148576579243,
+            44.858729270212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 5,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611587148688644,
+            44.858873
+          ],
+          [
+            11.611587148688644,
+            44.858729270212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 6,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.85882808444126
+          ],
+          [
+            11.611270327137973,
+            44.858802931728356
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 7,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611270327137973,
+            44.85879574523895
+          ],
+          [
+            11.611283,
+            44.8587831688825
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 8,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.8587831688825
+          ],
+          [
+            11.611283,
+            44.858729270212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 9,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858729270212
+          ],
+          [
+            11.61141986690989,
+            44.858729270212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 10,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611427470627106,
+            44.85871130398851
+          ],
+          [
+            11.611473092930403,
+            44.858729270212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 11,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611498438654456,
+            44.858729270212
+          ],
+          [
+            11.611544060957753,
+            44.85871130398851
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 12,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611549130102564,
+            44.858729270212
+          ],
+          [
+            11.611587148688644,
+            44.858729270212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 13,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858729270212
+          ],
+          [
+            11.611283,
+            44.858684354653256
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 14,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611587148688644,
+            44.858729270212
+          ],
+          [
+            11.611587148688644,
+            44.858585540424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 15,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858684354653256
+          ],
+          [
+            11.611270327137973,
+            44.858659201940355
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 16,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611270327137973,
+            44.85865381207331
+          ],
+          [
+            11.611283,
+            44.858630455982755
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 17,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858630455982755
+          ],
+          [
+            11.611283,
+            44.858585540424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 18,
+        "tipo": "muro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611283,
+            44.858585540424
+          ],
+          [
+            11.61152378437851,
+            44.858585540424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "segmento": 19,
+        "tipo": "porta"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.611528853523321,
+            44.85856757420051
+          ],
+          [
+            11.611574475826618,
+            44.858585540424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Casa di Caterina",
+        "tipo": "abitazione",
+        "universo": "Cnot 1.7",
+        "descrizione": "Planimetria locale della casa di Caterina",
+        "show_label": true,
+        "nome": "Casa di Caterina",
+        "feature_role": "metadata_label",
+        "source": "global_metadata",
+        "center_x": 5.75,
+        "center_y": 8.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.61142873791331,
+          44.858720287100255
+        ]
+      }
+    }
+  ]
+}

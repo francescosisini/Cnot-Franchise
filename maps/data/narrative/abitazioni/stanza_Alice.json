@@ -1,0 +1,62 @@
+{
+    "name": "tiny_laura",
+
+    
+
+  "metadata": {
+    "label": "Stanza di Alice",
+    "tipo": "Stanza da letto",
+    "descrizione": "Camera da letto di Alice",
+    "universo": "Cnot 1.7",
+    "categoria": "abitazione",
+    "owner": "Alice",
+    "show_label": true
+  },
+   
+  "coordinate_system": {
+    "origin": {
+      "lon": 11.6106391,
+      "lat": 44.8274645
+    },
+    "rotation_deg": 55
+  },
+  "features": [
+    {
+      "nome": "parete_sinistra",
+      "tipo": "muro",
+      "style": "dashed",
+      "line": [[0, 0], [0, 8]]
+    },
+    {
+      "nome": "parete_bassa",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[0, 8], [6.5, 8]]
+    },
+    
+    {
+      "nome": "parete_alta",
+      "tipo": "muro",
+      "style": "dashed",
+      "line": [[5.7, 9], [7.5, 8]]
+    },
+    {
+      "nome": "parete_destra",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[7.5, 8], [8, 8]]
+    },
+    {
+      "nome": "divisione_centrale",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[8, 8], [8, 0]]
+    },
+    {
+      "nome": "divisione_centrale",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[8, 0], [0, 0]]
+    }
+  ]
+}

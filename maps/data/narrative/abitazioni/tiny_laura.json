@@ -1,5 +1,18 @@
 {
-  "name": "tiny_laura",
+    "name": "tiny_laura",
+
+    
+
+  "metadata": {
+    "label": "Casa di Laura",
+    "tipo": "tiny_house",
+    "descrizione": "Abitazione di Laura e Valentina",
+    "universo": "Cnot 1.7",
+    "categoria": "abitazione",
+    "owner": "Laura",
+    "show_label": true
+  },
+    
   "coordinate_system": {
     "origin": {
       "lon": 11.627505,

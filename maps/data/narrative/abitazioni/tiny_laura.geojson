@@ -1,6 +1,15 @@
 {
   "type": "FeatureCollection",
   "name": "tiny_laura",
+  "metadata": {
+    "label": "Casa di Laura",
+    "tipo": "tiny_house",
+    "descrizione": "Abitazione di Laura e Valentina",
+    "universo": "Cnot 1.7",
+    "categoria": "abitazione",
+    "owner": "Laura",
+    "show_label": true
+  },
   "crs": {
     "type": "name",
     "properties": {
@@ -160,6 +169,30 @@
             11.627567533825266,
             44.81997270962989
           ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Casa di Laura",
+        "tipo": "tiny_house",
+        "descrizione": "Abitazione di Laura e Valentina",
+        "universo": "Cnot 1.7",
+        "categoria": "abitazione",
+        "owner": "Laura",
+        "show_label": true,
+        "nome": "Casa di Laura",
+        "feature_role": "metadata_label",
+        "source": "global_metadata",
+        "center_x": 6.25,
+        "center_y": 4.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.627539708563596,
+          44.81996846568556
         ]
       }
     }
