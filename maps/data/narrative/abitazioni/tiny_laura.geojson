@@ -1,0 +1,167 @@
+{
+  "type": "FeatureCollection",
+  "name": "tiny_laura",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_sinistra",
+        "tipo": "muro",
+        "style": "dashed"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627505,
+            44.819946
+          ],
+          [
+            11.627553931109553,
+            44.81993669999838
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_bassa",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627553931109553,
+            44.81993669999838
+          ],
+          [
+            11.627564583838726,
+            44.81996490031221
+          ],
+          [
+            11.627574417127194,
+            44.81999093137113
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_centrale",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627515652729173,
+            44.81997420031383
+          ],
+          [
+            11.627564583838726,
+            44.81996490031221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_alta",
+        "tipo": "muro",
+        "style": "dashed"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627505,
+            44.819946
+          ],
+          [
+            11.627515652729173,
+            44.81997420031383
+          ],
+          [
+            11.627525486017639,
+            44.82000023137275
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "parete_destra",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627525486017639,
+            44.82000023137275
+          ],
+          [
+            11.627574417127194,
+            44.81999093137113
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "divisione_centrale",
+        "tipo": "muro",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627546234672643,
+            44.81996838781282
+          ],
+          [
+            11.627551970757583,
+            44.81998357259719
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "porta",
+        "tipo": "porta",
+        "style": "solid"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.627564583838726,
+            44.81996490031221
+          ],
+          [
+            11.627567533825266,
+            44.81997270962989
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "tiny_laura",
+  "coordinate_system": {
+    "origin": {
+      "lon": 11.627505,
+      "lat": 44.819946
+    },
+    "rotation_deg": 75
+  },
+  "features": [
+    {
+      "nome": "parete_sinistra",
+      "tipo": "muro",
+      "style": "dashed",
+      "line": [[0, 0], [0, 8]]
+    },
+    {
+      "nome": "parete_bassa",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[0, 8], [6.5, 8], [12.5, 8]]
+    },
+    {
+      "nome": "parete_centrale",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[6.5, 0], [6.5, 8]]
+    },
+    {
+      "nome": "parete_alta",
+      "tipo": "muro",
+      "style": "dashed",
+      "line": [[0, 0], [6.5, 0], [12.5, 0]]
+    },
+    {
+      "nome": "parete_destra",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[12.5, 0], [12.5, 8]]
+    },
+    {
+      "nome": "divisione_centrale",
+      "tipo": "muro",
+      "style": "solid",
+      "line": [[6.5, 5], [10, 5]]
+    },
+    {
+      "nome": "porta",
+      "tipo": "porta",
+      "style": "solid",
+      "line": [[6.5, 8], [8.3, 8]]
+    }
+  ]
+}

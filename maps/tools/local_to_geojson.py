@@ -16,10 +16,11 @@ def rotate_xy(x, y, angle_deg):
     return x * math.cos(a) - y * math.sin(a), x * math.sin(a) + y * math.cos(a)
 
 
-def local_to_geo(x, y, lon0, lat0, rotation_deg):
+def local_to_geo(x, y, lon0, lat0, rotation_deg, unit_scale):
     # Coordinate locali: x verso destra/est, y verso il basso/sud.
-    east = x
-    north = -y
+    # unit_scale = metri per unità locale.
+    east = x * unit_scale
+    north = -y * unit_scale
     east_r, north_r = rotate_xy(east, north, rotation_deg)
     return meters_to_lonlat(lon0, lat0, east_r, north_r)
 
@@ -29,22 +30,22 @@ def rect_to_polygon(rect):
     return [[x, y], [x + w, y], [x + w, y + h], [x, y + h], [x, y]]
 
 
-def feature_to_geojson(feat, lon0, lat0, rotation_deg):
+def feature_to_geojson(feat, lon0, lat0, rotation_deg, unit_scale):
     props = {k: v for k, v in feat.items() if k not in ("rect", "line", "point", "polygon")}
 
     if "rect" in feat:
         coords_local = rect_to_polygon(feat["rect"])
-        coords_geo = [local_to_geo(x, y, lon0, lat0, rotation_deg) for x, y in coords_local]
+        coords_geo = [local_to_geo(x, y, lon0, lat0, rotation_deg, unit_scale) for x, y in coords_local]
         geometry = {"type": "Polygon", "coordinates": [coords_geo]}
     elif "polygon" in feat:
-        coords_geo = [local_to_geo(x, y, lon0, lat0, rotation_deg) for x, y in feat["polygon"]]
+        coords_geo = [local_to_geo(x, y, lon0, lat0, rotation_deg, unit_scale) for x, y in feat["polygon"]]
         geometry = {"type": "Polygon", "coordinates": [coords_geo]}
     elif "line" in feat:
-        coords_geo = [local_to_geo(x, y, lon0, lat0, rotation_deg) for x, y in feat["line"]]
+        coords_geo = [local_to_geo(x, y, lon0, lat0, rotation_deg, unit_scale) for x, y in feat["line"]]
         geometry = {"type": "LineString", "coordinates": coords_geo}
     elif "point" in feat:
         x, y = feat["point"]
-        geometry = {"type": "Point", "coordinates": local_to_geo(x, y, lon0, lat0, rotation_deg)}
+        geometry = {"type": "Point", "coordinates": local_to_geo(x, y, lon0, lat0, rotation_deg, unit_scale)}
     else:
         raise ValueError(f"Feature senza geometria riconosciuta: {feat.get('nome', '<senza nome>')}")
 
@@ -52,9 +53,15 @@ def feature_to_geojson(feat, lon0, lat0, rotation_deg):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Converte una pianta locale in metri in GeoJSON EPSG:4326.")
-    parser.add_argument("input_json", help="File JSON con coordinate locali in metri.")
+    parser = argparse.ArgumentParser(description="Converte una pianta locale in GeoJSON EPSG:4326.")
+    parser.add_argument("input_json", help="File JSON con coordinate locali.")
     parser.add_argument("-o", "--output", help="GeoJSON di output.")
+    parser.add_argument(
+        "-s", "--unit-scale",
+        type=float,
+        default=1.0,
+        help="Metri per unità locale. Esempi: 1=metri, 0.5=mezzo metro, 0.01=centimetri."
+    )
     args = parser.parse_args()
 
     input_path = Path(args.input_json)
@@ -65,7 +72,10 @@ def main():
     lat0 = origin["lat"]
     rotation_deg = data["coordinate_system"].get("rotation_deg", 0)
 
-    features = [feature_to_geojson(feat, lon0, lat0, rotation_deg) for feat in data["features"]]
+    features = [
+        feature_to_geojson(feat, lon0, lat0, rotation_deg, args.unit_scale)
+        for feat in data["features"]
+    ]
 
     geojson = {
         "type": "FeatureCollection",
