@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "tiny_laura",
+  "name": "room_Alice",
   "metadata": {
     "label": "Stanza di Alice",
     "tipo": "Stanza da letto",
@@ -8,6 +8,8 @@
     "universo": "Cnot 1.7",
     "categoria": "abitazione",
     "owner": "Alice",
+    "spatial_url": "https://francescosisini.github.io/Cnot-Franchise/artifacts/little_sister.pdf",
+    "url_label": "Apri lo spartito di Alice",
     "show_label": true
   },
   "crs": {
@@ -152,6 +154,8 @@
         "universo": "Cnot 1.7",
         "categoria": "abitazione",
         "owner": "Alice",
+        "spatial_url": "https://francescosisini.github.io/Cnot-Franchise/artifacts/little_sister.pdf",
+        "url_label": "Apri lo spartito di Alice",
         "show_label": true,
         "nome": "Stanza di Alice",
         "feature_role": "metadata_label",

@@ -1,5 +1,5 @@
 {
-    "name": "tiny_laura",
+    "name": "room_Alice",
 
     
 
@@ -10,9 +10,11 @@
     "universo": "Cnot 1.7",
     "categoria": "abitazione",
     "owner": "Alice",
+    "spatial_url": "https://francescosisini.github.io/Cnot-Franchise/artifacts/little_sister.pdf",
+    "url_label": "Apri lo spartito di Alice",
     "show_label": true
   },
-   
+    
   "coordinate_system": {
     "origin": {
       "lon": 11.6106391,

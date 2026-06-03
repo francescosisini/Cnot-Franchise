@@ -1,0 +1,143 @@
+.
+├── artifacts
+│   └── little_sister.pdf
+├── docs.txt
+├── gis
+│   ├── images
+│   ├── index.html
+│   ├── layers
+│   │   ├── building_2.js
+│   │   ├── building_3.js
+│   │   ├── cnot17_events_1.js
+│   │   ├── cnotbuilding_7.js
+│   │   ├── cnotbuilding_8.js
+│   │   ├── cnotEdifici_10.js
+│   │   ├── cnotEdifici_9.js
+│   │   ├── cnoteurope_15.js
+│   │   ├── cnoteurope_16.js
+│   │   ├── cnotparcheggiodroni_13.js
+│   │   ├── cnotparcheggiodroni_14.js
+│   │   ├── cnotscuole_3.js
+│   │   ├── cnotscuole_4.js
+│   │   ├── cnotstrade_1_6.js
+│   │   ├── cnotstrade_1_7.js
+│   │   ├── cnotstrade_2_8.js
+│   │   ├── cnotstrade_2_9.js
+│   │   ├── cnotTinyhouses_12.js
+│   │   ├── cnotTinyhouses_13.js
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_4.js
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_5.js
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_6.js
+│   │   ├── datacenter_14.js
+│   │   ├── datacenter_15.js
+│   │   ├── layers.js
+│   │   ├── legacy_infrastructure_2050_0.js
+│   │   ├── Semafori_11.js
+│   │   ├── Semafori_12.js
+│   │   ├── Telecamere_10.js
+│   │   ├── Telecamere_11.js
+│   │   └── visa_data_flows_2.js
+│   ├── resources
+│   │   ├── Autolinker.min.js
+│   │   ├── Autolinker.min.js.map
+│   │   ├── fontawesome-all.min.css
+│   │   ├── functions.js
+│   │   ├── horsey.min.css
+│   │   ├── horsey.min.js
+│   │   ├── ic_location_on_128_28437.png
+│   │   ├── lds-roller.gif
+│   │   ├── marker.png
+│   │   ├── measure-control.png
+│   │   ├── ol.css
+│   │   ├── ol.js
+│   │   ├── ol-layerswitcher.css
+│   │   ├── ol-layerswitcher.js
+│   │   ├── olms.js
+│   │   ├── ol-search-layer.css
+│   │   ├── ol-search-layer.js
+│   │   ├── ol-search-layer.min.css
+│   │   ├── photon-geocoder-autocomplete.min.css
+│   │   ├── photon-geocoder-autocomplete.min.js
+│   │   ├── proj4.js
+│   │   ├── qgis2web.css
+│   │   ├── qgis2web_expressions.js
+│   │   └── qgis2web.js
+│   ├── styles
+│   │   ├── building_2_style.js
+│   │   ├── building_3_style.js
+│   │   ├── cnot17_events_1_style.js
+│   │   ├── cnotbuilding_7_style.js
+│   │   ├── cnotbuilding_8_style.js
+│   │   ├── cnotEdifici_10_style.js
+│   │   ├── cnotEdifici_9_style.js
+│   │   ├── cnoteurope_15_style.js
+│   │   ├── cnoteurope_16_style.js
+│   │   ├── cnotparcheggiodroni_13_style.js
+│   │   ├── cnotparcheggiodroni_14_style.js
+│   │   ├── cnotscuole_3_style.js
+│   │   ├── cnotscuole_4_style.js
+│   │   ├── cnotstrade_1_6_style.js
+│   │   ├── cnotstrade_1_7_style.js
+│   │   ├── cnotstrade_2_8_style.js
+│   │   ├── cnotstrade_2_9_style.js
+│   │   ├── cnotTinyhouses_12_style.js
+│   │   ├── cnotTinyhouses_13_style.js
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_4_style.js
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_5_style.js
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_6_style.js
+│   │   ├── datacenter_14_style.js
+│   │   ├── datacenter_15_style.js
+│   │   ├── legacy_infrastructure_2050_0_style.js
+│   │   ├── legend
+│   │   │   ├── building_2.png
+│   │   │   ├── building_3.png
+│   │   │   ├── cnot17_events_1.png
+│   │   │   ├── cnotbuilding_7.png
+│   │   │   ├── cnotbuilding_8.png
+│   │   │   ├── cnotEdifici_10.png
+│   │   │   ├── cnotEdifici_9.png
+│   │   │   ├── cnoteurope_15.png
+│   │   │   ├── cnoteurope_16.png
+│   │   │   ├── cnotparcheggiodroni_13.png
+│   │   │   ├── cnotparcheggiodroni_14.png
+│   │   │   ├── cnotscuole_3.png
+│   │   │   ├── cnotscuole_4.png
+│   │   │   ├── cnotstrade_1_6.png
+│   │   │   ├── cnotstrade_1_7.png
+│   │   │   ├── cnotstrade_2_8.png
+│   │   │   ├── cnotstrade_2_9.png
+│   │   │   ├── cnotTinyhouses_12.png
+│   │   │   ├── cnotTinyhouses_13.png
+│   │   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_4.png
+│   │   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_5.png
+│   │   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_6.png
+│   │   │   ├── datacenter_14.png
+│   │   │   ├── datacenter_15.png
+│   │   │   ├── legacy_infrastructure_2050_0.png
+│   │   │   ├── Semafori_11.png
+│   │   │   ├── Semafori_12.png
+│   │   │   ├── Telecamere_10.png
+│   │   │   ├── Telecamere_11.png
+│   │   │   └── visa_data_flows_2.png
+│   │   ├── Semafori_11_style.js
+│   │   ├── Semafori_12_style.js
+│   │   ├── Telecamere_10_style.js
+│   │   ├── Telecamere_11_style.js
+│   │   └── visa_data_flows_2_style.js
+│   └── webfonts
+│       ├── fa-solid-900.ttf
+│       └── fa-solid-900.woff2
+├── index.html
+├── .nojekyll
+└── xr
+    └── convitto
+        ├── assets
+        ├── .gitignore
+        ├── index.html
+        ├── models
+        │   ├── convitto.glb
+        │   ├── convitto_simple.glb
+        │   └── README_MODELS.txt
+        └── README.md
+
+12 directories, 128 files
