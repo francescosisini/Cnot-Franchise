@@ -36,6 +36,7 @@ OUTPUT_IMAGE = input_path.with_name(f"{input_path.stem}_overlay{input_path.suffi
 
 COLOR_RED = (255, 40, 35, 180)
 COLOR_WHITE = (255, 255, 255, 255)
+COLOR_GREEN = (0, 255, 0, 255)
 
 GRID_STEP = 120
 GRID_OPACITY = 70
@@ -269,7 +270,7 @@ draw_grid(draw, w, h, step=GRID_STEP, color=(255, 40, 35, GRID_OPACITY))
 target_center = (TARGET_X, TARGET_Y)
 target_radius = int(110 * target_scale)
 
-draw_target(draw, target_center, target_radius, COLOR_RED)
+draw_target(draw, target_center, target_radius, COLOR_WHITE)
 
 draw_callout_to_label(
     draw,
