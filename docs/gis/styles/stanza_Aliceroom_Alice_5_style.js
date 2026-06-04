@@ -9,16 +9,16 @@ var style_stanza_Aliceroom_Alice_5 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "10px, sans-serif";
-    var labelFill = "#000000";
+    var labelFont = "13.0px \'Open Sans\', sans-serif";
+    var labelFill = "#a6cee3";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if ("" !== null) {
-        labelText = String("");
+    if (feature.get("descrizione") !== null) {
+        labelText = String(feature.get("descrizione"));
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
