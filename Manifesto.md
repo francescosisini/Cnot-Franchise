@@ -1,13 +1,12 @@
 # Narrative GIS
 
-Repo per una community che costruisce un mondo narrativo **GIS-first**.
+ Un mondo narrativo **GIS-first**.
 
-Qui il GIS non è “ambientazione”: è **struttura**, **canon**, **source of truth**.  
-Tutto il resto (storie, musica, disegni, AI art, XR) è:
-- derivato dalla mappa, oppure
-- usato per far crescere la mappa.
+Il GIS   è **struttura**, **canon**, **source of truth**.  Storie, musica, disegni, AI art, XR sono:
+- derivate dalla mappa, oppure
+- usate per far crescere la mappa.
 
-Niente fronzoli: loop operativo.
+
 
 ---
 
