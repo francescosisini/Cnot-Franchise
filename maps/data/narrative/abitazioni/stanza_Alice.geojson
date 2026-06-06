@@ -10,6 +10,8 @@
     "owner": "Alice",
     "spatial_url": "https://francescosisini.github.io/Cnot-Franchise/artifacts/little_sister.pdf",
     "url_label": "Apri lo spartito di Alice",
+    "story_url": "stories/convitto.html",
+    "story_title": "Le regole del convitto",
     "show_label": true
   },
   "crs": {
@@ -156,6 +158,8 @@
         "owner": "Alice",
         "spatial_url": "https://francescosisini.github.io/Cnot-Franchise/artifacts/little_sister.pdf",
         "url_label": "Apri lo spartito di Alice",
+        "story_url": "stories/convitto.html",
+        "story_title": "Le regole del convitto",
         "show_label": true,
         "nome": "Stanza di Alice",
         "feature_role": "metadata_label",

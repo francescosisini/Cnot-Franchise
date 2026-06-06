@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "name": "story_points",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.61067217,44.82747829]
+      },
+      "properties": {
+        "id": "story:alice-room:vendetta-sol-maggiore",
+        "reader_type": "reader:story",
+        "kind": "story",
+        "story_title": "Vendetta in Sol maggiore",
+        "story_url": "stories/vendetta_in_sol_maggiore.html",
+        "target": "cnot17:alice:room:001"
+      }
+    }
+  ]
+}
