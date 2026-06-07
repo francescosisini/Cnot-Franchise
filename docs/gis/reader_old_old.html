@@ -24,11 +24,6 @@
 #storyLaunchButton.visible {
   display: block;
 }
-
-#storyLaunchButton,
-#storyLaunchButton.visible {
-  display: none !important;
-}
   
     html, body {
       margin: 0;
@@ -804,7 +799,6 @@
             <div class="archive-meta-line">GPS: ${escapeHtml(getArchiveCoordinates(item))}</div>
             <div class="archive-meta-actions">
               <button class="archive-action-button" type="button" data-action="goto" data-archive-index="${archiveIndex}" ${hasCoordinates ? "" : "disabled"}>Vai al nodo</button>
-              <button class="archive-action-button" type="button" data-action="read" data-archive-index="${archiveIndex}" ${storyUrl ? "" : "disabled"}>Leggi</button>
             </div>
           </div>
         `;
@@ -902,14 +896,6 @@
 
       if (button.dataset.action === "goto") {
         focusMapOnArchiveItem(item);
-        return;
-      }
-
-      if (button.dataset.action === "read") {
-        const url = getArchiveStoryUrl(item);
-        if (url) {
-          openReader(url, getArchiveTitle(item));
-        }
         return;
       }
 
