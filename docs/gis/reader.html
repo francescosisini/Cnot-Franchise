@@ -50,7 +50,7 @@
       top: 0;
       right: -44vw;
       width: 44vw;
-      height: 100vh;
+      height: 100dvh;
       background: #080808;
       border-left: 1px solid #39ff14;
       box-shadow: -10px 0 35px rgba(0,0,0,.8);
@@ -93,7 +93,7 @@
 
     #storyFrame {
       width: 100%;
-      height: calc(100vh - 54px);
+      height: calc(100dvh - 54px);
       border: 0;
       background: #fff;
     }
@@ -422,22 +422,31 @@
       text-transform: uppercase;
     }
 
-    @media (max-width: 900px) {
+   @media (max-width: 900px) {
 
-  #cnotOverlay {
-    width: calc(100vw - 20px);
-    max-height: 80vh;
+  #readerPanel {
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100dvh;
+    z-index: 999999;
   }
 
-  .cnot-overlay-body {
-    max-height: 65vh;
-    overflow-y: auto;
+  #readerPanel.open {
+    right: 0;
   }
 
-  #archiveMetaBox {
-    max-height: none;
-    overflow: visible;
+  #readerHeader {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #080808;
   }
+
+  #storyFrame {
+    height: calc(100dvh - 54px);
+  }
+
 }
   </style>
 </head>
@@ -451,7 +460,7 @@
       <div class="cnot-overlay-head">
         <div class="cnot-overlay-main-title">
           <div class="cnot-overlay-kicker">Archivio geonarrativo</div>
-          <div class="cnot-overlay-title">JSON Archive Reader</div>
+          <div class="cnot-overlay-title">Archive Reader</div>
           <div class="cnot-overlay-subtitle">Query: stories/*.json</div>
         </div>
         <button id="cnotOverlayToggle" type="button" aria-label="Collassa pannello Progetto CNOT" aria-expanded="true">−</button>
