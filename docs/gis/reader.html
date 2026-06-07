@@ -317,11 +317,10 @@
       display: none;
     }
 
-
-    #archiveMetaBox {
-      max-height: 190px;
-      overflow: auto;
-    }
+	#archiveMetaBox {
+  	max-height: 35vh;
+  	overflow-y: auto;
+	}
 
     .archive-meta-entry {
       border-top: 1px solid rgba(57, 255, 20, 0.28);
@@ -424,36 +423,22 @@
     }
 
     @media (max-width: 900px) {
-      #readerPanel {
-        right: -100vw;
-        width: 100vw;
-      }
 
-      #cnotOverlay {
-        top: 10px;
-        left: 10px;
-        width: calc(100vw - 20px);
-      }
+  #cnotOverlay {
+    width: calc(100vw - 20px);
+    max-height: 80vh;
+  }
 
-      .cnot-overlay-inner {
-        padding: 14px 16px;
-      }
+  .cnot-overlay-body {
+    max-height: 65vh;
+    overflow-y: auto;
+  }
 
-      .cnot-overlay-title {
-        font-size: 21px;
-      }
-
-      .cnot-overlay-subtitle {
-        font-size: 13px;
-        margin-bottom: 10px;
-      }
-
-      .cnot-overlay-box,
-      .cnot-overlay-muted,
-      #cnotStatusOverlay {
-        display: none;
-      }
-    }
+  #archiveMetaBox {
+    max-height: none;
+    overflow: visible;
+  }
+}
   </style>
 </head>
 
