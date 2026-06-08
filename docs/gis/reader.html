@@ -7,6 +7,20 @@
 
   <style>
   
+  
+  #readerMinimize {
+  background: transparent;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  font-size: 20px;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  margin-right: 6px;
+}
+
+/* Regole minimizzazione spostate più sotto con selettore open.minimized */
+  
   #storyLaunchButton {
   position: fixed;
   left: 16px;
@@ -62,6 +76,32 @@
       right: 0;
     }
 
+    #readerPanel.open.minimized {
+      top: 10px;
+      right: 10px;
+      width: 118px;
+      height: 44px;
+      overflow: hidden;
+      border: 1px solid rgba(57, 255, 20, 0.8);
+      box-shadow: 0 0 18px rgba(57, 255, 20, 0.18);
+    }
+
+    #readerPanel.open.minimized #storyFrame {
+      display: none;
+    }
+
+    #readerPanel.open.minimized #readerHeader {
+      height: 44px;
+      padding: 0 8px;
+      border-bottom: 0;
+      justify-content: space-between;
+      background: #080808;
+    }
+
+    #readerPanel.open.minimized #readerClose {
+      display: none;
+    }
+
     #readerHeader {
       height: 54px;
       display: flex;
@@ -79,6 +119,20 @@
       overflow: hidden;
       text-overflow: ellipsis;
       padding-right: 12px;
+    }
+
+    #readerPanel.open.minimized #readerTitle {
+      max-width: 64px;
+      font-size: 11px;
+      padding-right: 4px;
+    }
+
+    #readerPanel.open.minimized #readerTitle::after {
+      content: "";
+    }
+
+    #readerPanel.open.minimized #readerMinimize {
+      margin-right: 0;
     }
 
     #readerClose {
@@ -436,6 +490,32 @@
     right: 0;
   }
 
+  #readerPanel.open.minimized {
+    top: 10px;
+    right: 10px;
+    width: 118px;
+    height: 44px;
+    overflow: hidden;
+    border: 1px solid rgba(57, 255, 20, 0.8);
+    box-shadow: 0 0 18px rgba(57, 255, 20, 0.18);
+  }
+
+  #readerPanel.open.minimized #storyFrame {
+    display: none;
+  }
+
+  #readerPanel.open.minimized #readerHeader {
+    height: 44px;
+    padding: 0 8px;
+    border-bottom: 0;
+    justify-content: space-between;
+    background: #080808;
+  }
+
+  #readerPanel.open.minimized #readerClose {
+    display: none;
+  }
+
   #readerHeader {
     position: sticky;
     top: 0;
@@ -449,6 +529,7 @@
 
 }
   </style>
+  
 </head>
 
 <body>
@@ -510,7 +591,11 @@
   <aside id="readerPanel">
     <div id="readerHeader">
       <div id="readerTitle">Reader</div>
-      <button id="readerClose">×</button>
+      
+      <div>
+ 	 <button id="readerMinimize" type="button">−</button>
+  	<button id="readerClose">×</button>
+	</div>
     </div>
     <iframe id="storyFrame"></iframe>
   </aside>
@@ -521,6 +606,7 @@
     const storyFrame = document.getElementById("storyFrame");
     const readerTitle = document.getElementById("readerTitle");
     const readerClose = document.getElementById("readerClose");
+    const readerMinimize = document.getElementById("readerMinimize");
     const readerError = document.getElementById("readerError");
     const storyLaunchButton = document.getElementById("storyLaunchButton");
     const cnotOverlayToggle = document.getElementById("cnotOverlayToggle");
@@ -533,6 +619,12 @@
     let popupObserver = null;
     let currentStoryUrl = null;
     let currentStoryTitle = null;
+    
+    
+    readerMinimize.addEventListener("click", () => {
+  	readerPanel.classList.toggle("minimized");
+  	readerMinimize.textContent = readerPanel.classList.contains("minimized") ? "+" : "−";
+	});
 
     cnotOverlayToggle.addEventListener("click", event => {
       event.preventDefault();
@@ -991,10 +1083,14 @@
       readerTitle.textContent = title || "Racconto";
       storyFrame.src = finalUrl;
       readerPanel.classList.add("open");
+      readerPanel.classList.remove("minimized");
+      readerMinimize.textContent = "−";
     }
 
     readerClose.addEventListener("click", () => {
       readerPanel.classList.remove("open");
+      readerPanel.classList.remove("minimized");
+      readerMinimize.textContent = "−";
       storyFrame.src = "";
       hideStoryButton();
     });
