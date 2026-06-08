@@ -790,12 +790,26 @@
       return null;
     }
 
-    window.gotoGIS = function(lat, lon) {
+   window.gotoGIS = function(lat, lon) {
+  focusMapOnArchiveItem({
+    latitude: lat,
+    longitude: lon
+  });
+
+  readerPanel.classList.add("minimized");
+  readerMinimize.textContent = "+";
+
+  document.body.classList.add("cnot-overlay-collapsed");
+  cnotOverlayToggle.textContent = "+";
+  cnotOverlayToggle.setAttribute("aria-expanded", "false");
+};
+
+    /*window.gotoGIS = function(lat, lon) {
   	focusMapOnArchiveItem({
   	  latitude: lat,
    	 longitude: lon
   	});
-	};
+	};*/
 
     function focusMapOnArchiveItem(item) {
       const coords = getArchiveLatLon(item);
