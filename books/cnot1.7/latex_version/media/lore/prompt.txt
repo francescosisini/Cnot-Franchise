@@ -1,0 +1,17 @@
+
+## GDPR
+~/Cnot-Franchise/books/cnot1.7/media/lore$ python3 ../../../../tools/image/legend_card.py GDPR3.png --title "GDPR" --subtitle "Il dato diventa un problema europeo" --report-id "E-17-A" --date "25.05.2018" --agency "CENTRO ANALISI EUROPA" --item "#ff0033|Origine|Sequenza evolutiva verso la Rete Europea dei Flussi" --y 50 --width 275
+
+##Ramnsonware
+~/Cnot-Franchise/books/cnot1.7/media/lore$ python3 ../../../../tools/image/overlay_text.py 2021Ramnsonware.png 470 480 --target-scale 85 --label "INCIDENT MATCH|ENTITY: HSE IRELAND" --label-x 100 --label-y 110 --label-size 32 --signal "DOSSIER E-17-B | 14.05.2021" --signal-x 60 --signal-y 930
+
+## UKRAIN
+~/Cnot-Franchise/books/cnot1.7/media/lore$ python3 ../../../../tools/image/legend_card.py Ukraina.png --title "GUERRA IN UCRAINA" --subtitle "L'infrastruttura diventa un problema europeo" --report-id "E-17-C" --date "24.02.2022" --agency "CENTRO ANALISI EUROPA" --item "#ff8c00|Svolta|Reti energetiche, logistiche e digitali entrano nel dominio strategico europeo" --y 50 --width 400
+
+## NIS2
+~/Cnot-Franchise/books/cnot1.7/media/lore$ python3 ../../../../tools/image/legend_card.py NIS2Blue.png --title "NIS2" --subtitle "La protezione diventa un problema europeo" --report-id "E-17-D" --date "17.01.2023" --agency "CENTRO ANALISI EUROPA" --item "#00aaff|Protezione|Le infrastrutture critiche vengono trattate come un sistema continentale" --y 50 --width 400
+
+## Sottobosco
+~/Cnot-Franchise/books/cnot1.7/media/lore$ python3 ../../../../tools/image/legend_card.py DIGITALUNDERGROWTH.png --title "DIGITAL UNDERGROWTH" --subtitle "La complessità diventa un problema europeo" --report-id "E-17-E" --date "14.04.2025" --agency "CENTRO ANALISI EUROPA" --item "#ff00ff|Sottobosco|Sistemi, agenzie e archivi continuano a interagire anche dopo essere stati formalmente superati" --y 450 --width 600
+Salvata immagine: DIGITALUNDERGROWTH_legend.png
+
