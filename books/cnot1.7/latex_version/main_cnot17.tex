@@ -19,6 +19,8 @@
 \onehalfspacing
 
 % ---------- Grafica & colori ----------
+\usepackage{fancyvrb}
+\usepackage[most]{tcolorbox}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{float}
@@ -79,6 +81,24 @@
 
 % ---------- Comandi utili ----------
 \newcommand{\CCBYSA}{\includegraphics[height=1.2em]{cc-by-sa.png}} % opzionale
+
+\newtcblisting{terminalbox}{
+  listing only,
+  colback=black,
+  colframe=black,
+  arc=2mm,
+  boxrule=0pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  listing options={
+    basicstyle=\ttfamily\small\color{green!70!white},
+    breaklines=true,
+    columns=fullflexible
+  }
+}
+
 
 % ---------- Dati del libro ----------
 \title{\textbf{Cnot 1.7}}

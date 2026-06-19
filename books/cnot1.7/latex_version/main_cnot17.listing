@@ -1,0 +1,7 @@
+kali@dpl:~$ dig +short polizialocale.U121.it
+203.0.113.42
+203.0.113.57
+203.0.113.81
+203.0.113.96
+
+kali@dpl:~$
