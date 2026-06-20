@@ -1,7 +1,6 @@
-kali@dpl:~$ dig +short polizialocale.U121.it
-203.0.113.42
-203.0.113.57
-203.0.113.81
-203.0.113.96
-
-kali@dpl:~$
+laura@gates-legacy:~$ CHIP=1889
+laura@gates-legacy:~$ grep "$CHIP" dog-registry.log | tail -n 5
+laura@gates-legacy:~$ tail -F dog-registry.log | grep --line-buffered "$CHIP"
+laura@gates-legacy:~$ grep "1889" dog-registry.log | tail
+2041-10-03T22:41:18Z reader=rfid-a03 chip=1889 rssi=-67 direction=OUT
+2041-10-03T22:46:02Z reader=rfid-b01 chip=1889 rssi=-72 direction=OUT

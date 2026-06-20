@@ -1,20 +1,44 @@
 \chapter{Missione per Rocky}
 
-Ha lasciato Valentina in casa da sola per cercare Rocky.\\
-Ma nei pressi di casa non lo trova.
+%Ha lasciato Valentina in casa da sola per cercare Rocky.\\
+%Ma nei pressi di casa non lo trova.
+%Adesso si trova di fronte a un dilemma: proseguire la sua intrusione etica ed aiutare l’amica nel poco tempo rimasto, o cercare il suo cucciolo prima che si ritrovi in qualche guaio?
+«Rocky! Rocky!» il richiamo di Laura si perde nel silenzio, assorbito dalla boscaglia. Si allontana qualche metro, Valentina dorme, la zona è tranquilla, ma ha solo otto anni, pochi per restare in casa da sola. Torna in casa, il dog-contoller è lì, appeso alla parete ormai da mesi, non è al collo dove dovrebbe essere: «Non sono stata brava.»\\
+Torna dentro, riempie la ciotola con un po' di croccantini: «Vediamo così.» Percorre il perimetro della casa agitando la ciotola e chiamandolo. Niente. «Dove è andato?» Un barlume: «Il chip del canile. Potrebbe aver lasciato delle tracce.»
 
-\par\medskip
-Adesso si trova di fronte a un dilemma: proseguire la sua intrusione etica ed aiutare l’amica nel poco tempo rimasto, o cercare il suo cucciolo prima che si ritrovi in qualche guaio?
 
 \par\medskip
 «Cate, ho bisogno di un favore. Rocky è scappato.»\\
 «Oddio, quando?»\\
-«Non lo so. Forse quando sono entrata per prenderti la giacca. Comunque devo andare a cercarlo. Però ho bisogno per Vale.»\\
-«Certo. Dammi dieci minuti.»
+«Non lo so. Forse quando sono entrata per prenderti la giacca. Comunque devo andare a cercarlo. Però ho bisogno per Vale, non posso lasciarla da sola in casa.»\\
+«Certo. Dammi dieci minuti che arrivo.»
 
 \par\medskip
-Dopo tredici minuti Caterina e Alice atterrano nel giardino di Laura. Quando sente il rumore lei esce sulla pedana, già pronta per la sua \emph{rescue action}. Non ha lasciato nulla al caso.
+«Dove ho messo il codice...» Laura cerca il documento di Rocky, dal codice identificativo potrà verificare se qualche scanner urbano ha rilevato il suo chip e provare a ricostruire la posizione.\\
+«Eccolo! Vediamo se c'è anche un indirizzo...»
+\begin{terminalbox}
+kali@dpl:~$ telnet gates.ith56.it 2323
+Trying 203.0.113.57...
+Connected to gates.ith56.it.
+Escape character is '^]'.
 
+ITH56 urban-gates legacy console
+login: laura
+Password:
+
+laura@gates-legacy:~$ CHIP=1889
+laura@gates-legacy:~$ grep "$CHIP" dog-registry.log | tail -n 5
+laura@gates-legacy:~$ tail -F dog-registry.log | grep --line-buffered "$CHIP"
+laura@gates-legacy:~$ grep "1889" dog-registry.log | tail
+ gate=ITH56-T3-017 reader=rfid-a03 chip=1889 rssi=-67 direction=OUT
+ gate=ITH56-T3-019 reader=rfid-b01 chip=1889 rssi=-72 direction=OUT
+$
+\end{terminalbox}
+
+I dispositivi RF-id lasciano tracce digitali, quelle degli animanli sono liberamente accessibili. In passato diverse applicazioni utente usavano questi dati, ora la gente preferisce i collari di controllo. Laura ha trovato il file con i dati, e lì le tracce di Rocky. Il computer però è scomodo, non può usarlo in azione. Rocky si sta muovendo, lo vede dall'aggiornamento dei dati, per ritrovarlo dovrà agire, incrociare i dati del registro con la posizione GPS dei varchi urbani.
+
+
+Sono passati tredici minuti, Caterina e Alice atterrano. Laura sente il rumore, va loro incontro: «La porta è aperta,
 \par\medskip
 Un cane in un territorio misto può perdersi ovunque: da una linea abbandonata della metro a un centro di assistenza per l’intelligenza artificiale. Comunque, a quanto risulta, dal suo segnalatore non è andato troppo lontano. Sembra essere in un boschetto a poche centinaia di metri.
 
