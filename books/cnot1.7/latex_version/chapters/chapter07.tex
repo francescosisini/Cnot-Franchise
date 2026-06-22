@@ -3,7 +3,7 @@
 %Ha lasciato Valentina in casa da sola per cercare Rocky.\\
 %Ma nei pressi di casa non lo trova.
 %Adesso si trova di fronte a un dilemma: proseguire la sua intrusione etica ed aiutare l’amica nel poco tempo rimasto, o cercare il suo cucciolo prima che si ritrovi in qualche guaio?
-«Rocky! Rocky!» il richiamo di Laura si perde nel silenzio, assorbito dalla boscaglia. Si allontana qualche metro, Valentina dorme, la zona è tranquilla, ma ha solo otto anni, pochi per restare in casa da sola. Torna in casa, il dog-contoller è lì, appeso alla parete ormai da mesi, non è al collo dove dovrebbe essere: «Non sono stata brava.»\\
+«Rocky! Rocky!» il richiamo di Laura si perde nel silenzio, assorbito dalla boscaglia. Si allontana qualche metro, Valentina dorme, la zona è tranquilla, ma ha solo otto anni, pochi per restare in casa da sola. Torna in casa, il collare-GPS è lì, appeso alla parete ormai da mesi, non è al collo dove dovrebbe essere: «Non sono stata brava.»\\
 Torna dentro, riempie la ciotola con un po' di croccantini: «Vediamo così.» Percorre il perimetro della casa agitando la ciotola e chiamandolo. Niente. «Dove è andato?» Un barlume: «Il chip del canile. Potrebbe aver lasciato delle tracce.»
 
 
@@ -15,7 +15,7 @@ Torna dentro, riempie la ciotola con un po' di croccantini: «Vediamo così.» P
 
 \par\medskip
 «Dove ho messo il codice...» Laura cerca il documento di Rocky, dal codice identificativo potrà verificare se qualche scanner urbano ha rilevato il suo chip e provare a ricostruire la posizione.\\
-«Eccolo! Vediamo se c'è anche un indirizzo...»
+«Eccolo:1889. Adesso proviamo ad accedere al registro... »
 \begin{terminalbox}
 kali@dpl:~$ telnet gates.ith56.it 2323
 Trying 203.0.113.57...
@@ -28,62 +28,51 @@ Password:
 
 laura@gates-legacy:~$ CHIP=1889
 laura@gates-legacy:~$ grep "$CHIP" dog-registry.log | tail -n 5
+18Z gate=ITH56-T3-017 reader=rfid-a03 chip=1889 rssi=-67 direction=OUT
+02Z gate=ITH56-T3-019 reader=rfid-b01 chip=1889 rssi=-72 direction=OUT
 laura@gates-legacy:~$ tail -F dog-registry.log | grep --line-buffered "$CHIP"
-laura@gates-legacy:~$ grep "1889" dog-registry.log | tail
- gate=ITH56-T3-017 reader=rfid-a03 chip=1889 rssi=-67 direction=OUT
- gate=ITH56-T3-019 reader=rfid-b01 chip=1889 rssi=-72 direction=OUT
-$
 \end{terminalbox}
-
-I dispositivi RF-id lasciano tracce digitali, quelle degli animanli sono liberamente accessibili. In passato diverse applicazioni utente usavano questi dati, ora la gente preferisce i collari di controllo. Laura ha trovato il file con i dati, e lì le tracce di Rocky. Il computer però è scomodo, non può usarlo in azione. Rocky si sta muovendo, lo vede dall'aggiornamento dei dati, per ritrovarlo dovrà agire, incrociare i dati del registro con la posizione GPS dei varchi urbani.
-
-
-Sono passati tredici minuti, Caterina e Alice atterrano. Laura sente il rumore, va loro incontro: «La porta è aperta,
-\par\medskip
-Un cane in un territorio misto può perdersi ovunque: da una linea abbandonata della metro a un centro di assistenza per l’intelligenza artificiale. Comunque, a quanto risulta, dal suo segnalatore non è andato troppo lontano. Sembra essere in un boschetto a poche centinaia di metri.
-
-\par\medskip
-I problemi si risolvono creando ordine: Laura sistema il suo zaino tattico perché il suo contenuto determinerà il successo della missione. Come a scuola: infilare nello zaino il quaderno sbagliato potrebbe compromettere la giornata!\\
-– una corda in microfibra nano tessuta,\\
-– una carrucola smart a riduzione di carico,\\
-– guanti grip GECO,\\
-– un micro drone da zaino con telecomando e telecamera termica,\\
-– un visore Augmented Reality multifunzionale,\\
-– sfere da esplorazione,\\
-– spray a schiuma rapida,\\
-– una batteria al grafene ultracompatta,\\
-– una radio Mesh Network autonoma e un beacon personale,\\
-– infine un esoscheletro pieghevole e una barella smart ultracompatta.
+«Bene, il chip è ancora visibile» si alza e va a prendere un dispositivo palmare, lo connette al computer «integriamo le coordinate dei varchi al GPS...» un rumore, Caterina e Alice stanno atterrando. Entrano: «Laura mi dispiace tanto.»\\
+«Ma cosa dici, tu non c'entri, dovevo stare più attenta.»\\
+«Quando sei rientrata c'era un cane, ma non era Rocky, sono sicura.»\\
+«Un cane libero o con un padrone?»\\
+«Era solo, però non so, non ho visto nessuno.»\\
+Alice vede un icona pulsare sul palmare di Laura: «Lo stai tracciando? Ha il GPS?» le chiede amabilmente. Caterina vorrebbe farle notare che non è mai così gentile con lei, ma non è il momento.\\
+«Non proprio Alice, però posso vedere la sua posizione quando passa vicino ai varchi urbani. Hanno un lettore RFID e i dati sugli animali domestici sono accessibili in anonimo.» Alice
+annuisce, Caterina la guarda: «Tu hai capito?»\\
+«Ho capito che qui vede la posizione del cane, giusto? Non fare la maestrina Cate.» \\
+«Ma \'e qui vicino Laura?»\\
+«Direi di sì, ma non lo vedo mentre si muove» prende il dispositivo e indica le bandierine verdi sulla mappa della città,  «Questi sono i varchi, io vedo solo se e quando li raggiunge, putroppo in questa zona orma ne rimangono pochi di attivi.» Rende il palmare ad Alice, «Datemi un minuto, mi metto una tuta, potebbe esserci da graffiarsi nei cespugli.»\\
+In punta dei piedi entra in camera mentre Valentina dorme.  Fruga nel suo armadio, prima prende la tuta, richiude, apre uno sportello più in alto, sceglie alcuni strumenti, e un cinturone.
 
 \par\medskip
-Alice la osserva ammirata: Laura nella sua tuta nera.
+%I problemi si risolvono creando ordine: Laura sistema il suo zaino tattico perché il suo contenuto determinerà il successo della missione. Come a scuola: infilare nello zaino il %quaderno sbagliato potrebbe compromettere la giornata!\\
+%– una corda in microfibra nano tessuta,\\
+%– una carrucola smart a riduzione di carico,\\
+%– guanti grip GECO,\\
+%– un micro drone da zaino con telecomando e telecamera termica,\\
+%– un visore Augmented Reality multifunzionale,\\
+%– sfere da esplorazione,\\
+%– spray a schiuma rapida,\\
+%– una batteria al grafene ultracompatta,\\
+%– una radio Mesh Network autonoma e un beacon personale,\\
+%– infine un esoscheletro pieghevole e una barella smart ultracompatta.
+
 \par\medskip
-«Sembri Tomb Rider! Ma cosa c’è nello zaino?»\\
-«Niente, amore, ho preso i suoi croccantini per chiamare Rocky.»
-\par\medskip
-Non mente, ci sono anche i croccantini.
-\par\medskip
-«Dovrebbe essere qui vicino. Farò presto.»\\
+«Wow! Ma...» si lascia sfuggire Alice «Sembri Tomb Raider!»\\
+Laura sorride: «Rocky dovrebbe essere qui vicino. Spero di fare presto.»\\
 «Laura, posso venire con te? Può restare Alice con Vale?»\\
-«In effetti…»\\
+«In effetti...» Laura sospira «mi farebbe piacere.» Guarda Alice:
 «Sì, ci penso io.»
 \par\medskip
 Caterina indossa una minigonna, una camicetta e un paio di scarpette con un po’ di tacco.  
-Ha un abbigliamento perfetto per quello che le attende.
 \par\medskip
-«Ok, mi raccomando, Alice.»
+«Ok, mi raccomando, Alice.» Si assicura Caterina, ma
+la sorella non risponde. Accenna un sorroso, entra in casa e le guarda dalla vetrata.
 \par\medskip
-Alice non risponde. Sorride, entra in casa e le guarda dalla vetrata.
 
-\par\medskip
-Prenderanno il drone? No, sembra si avviino a piedi lungo la capezzagna.  
-Qui ci sono già passate insieme, quella sera, prima della loro avventura nel computer quantistico.  
-Sì, quella è stata davvero una bella sfida: la posta in gioco era alta, la libertà di essere decoerenti.  
-Ma ora la questione è altrettanto seria.
-
-\par\medskip
-La strada termina in un incrocio a T.  
-Il sensore indica che Rocky si trova davanti a loro a circa ottanta metri, non a destra e non a sinistra.
+«Andiamo Cate, attraversiamo la strada.» Da lì si avviano a piedi lungo la capezzagna e   raggiungono  l'incrocio a T.
+«L'ultima registrazione dà Rocky  davanti a noi,  circa ad ottanta metri, però è strano:» Laura osserva il palmare, «Deve aver passato un varco, ma nella mia mappa non risultano edifici li.»
 
 \par\medskip
 \begin{center}
@@ -91,41 +80,34 @@ Il sensore indica che Rocky si trova davanti a loro a circa ottanta metri, non a
 \end{center}
 
 \par\medskip
-«Dovremo entrare nel campo?»\\
-«Se procediamo e prendiamo qui a sinistra, seguendo la strada, ci possiamo avvicinare un po’.  
+«Dobbiamo passare per il campo?»\\
+«...Si, però se  prendiamo qui a sinistra, seguendo la strada, ci possiamo avvicinare un po’.
 Ma alla fine credo che dovremmo comunque entrare. Rocky mi sembra in mezzo al campo.»
 
 \par\medskip
 «Di quanto la allunghiamo?»\\
 «Circa seicento metri, direi. Solo cinque minuti. Cosa ne dici?»\\
-«Forse era meglio venire con il drone?»\\
-«Rocky ha paura dei droni, Cate, sarebbe stato peggio.»\\
-«Dai, decidi tu allora, Laura.»\\
-«Beh, allora avviciniamoci seguendo la strada, poi valutiamo.»\\
-«Cosa dice la posizione?»\\
-«Sembra fermo, speriamo stia bene, non rilevo i parametri biometrici.»\\
-«Cosa significa, Laura?»\\
-«Ma niente, mi sa che semplicemente non ho rinnovato l’abbonamento.»\\
+«Decidi tu , Laura.»\\
+Guarda le scarpe dell'amica: «Avviciniamoci seguendo la strada, poi valutiamo.»\\
+Dopo alcuni metri Laura si ferma di nuovo:
 «Qui svoltiamo a destra.»\\
 «Ehi! È messa male questa strada.»\\
 «Tutta l’area ormai è un po’ andata.»\\
+Proseguono:
 «Ecco, di nuovo a destra e tra un centinaio di metri dovremmo esserci.»\\
 «Non siamo mai venute qui insieme, vero?»\\
 «No, ci siamo fermate alla panchina. Comunque anch’io erano anni che non facevo questa strada.  
 Forse l’ultima volta sono venuta con mio padre, poco prima che nascesse Valentina.»\\
 «A proposito, chissà come se la cavano quelle due.»\\
-«Dietro il cespuglio c’è un cancello, ma non mi risulta nella mappa.»\\
-«Comunque Rocky dovrebbe essere qui a trenta metri, solo che non vedo come entrare.»\\
-«Vediamo se c’è un varco. Qui, Laura.»\\
-«Grazie, Cate, sono contenta che tu sia venuta con me.»\\
+
+Laura non risponde alla domanda, ha visto qualcosa che ha attirato la sua attenzione:
+«Dietro il cespuglio c’è un cancello, ma non mi risulta nella mappa. Comunque Rocky dovrebbe essere qui a trenta metri, cerchiamo un punto per entrare.» Le ragazze si addentrano tra i rovi e seguono la recinzioni: «Qui, Laura»  chiama Caterina eccitata. Laura la raggiunge, c'è un cancello metallico semi aperto con una catena appesa.
+«Bene, sono contenta che tu sia venuta con me.»\\
 «Dai, proviamo a entrare.»\\
-«Aspetta, ma c’è una scritta: Convitto Cardinal Mora.  
-Lavori di ricostruzione. Ma la data è del 1970! Ecco perché non è più nella mappa.»\\
+«Aspetta, vedi, c’è una scritta: Convitto San Giorgio.
+Lavori di ricostruzione. Ma la data è del 2022! Ecco perché non è più nella mappa.»\\
 «Quindi Rocky sarà qui dentro.»\\
 «Ora lo scopriamo.»
 
 \par\medskip
-Laura e Caterina superano il confine tra il presente e questo mondo che appartiene a un passato dimenticato.
-
-\par\medskip
-Riusciranno a uscire indenni anche questa volta?
+Laura e Caterina superano il cancello, lasciandosi alle spalle la sicurezza e la legalità
