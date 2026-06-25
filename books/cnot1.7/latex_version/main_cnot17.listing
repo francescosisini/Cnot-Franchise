@@ -1,14 +1,25 @@
-kali@dpl:~$ telnet gates.ith56.it 2323
-Trying 203.0.113.57...
-Connected to gates.ith56.it.
-Escape character is '^]'.
+ftp> less ftpuser/readme.txt
 
-ITH56 urban-gates legacy console
-login: laura
-Password:
+LEGACY DATA INDEX
+Last update: 2041-09-28
+Maintainer: local-admin
 
-laura@gates-legacy:~$ CHIP=1889
-laura@gates-legacy:~$ grep "$CHIP" dog-registry.log | tail -n 5
-18Z gate=ITH56-T3-017 reader=rfid-a03 chip=1889 rssi=-67 direction=OUT
-02Z gate=ITH56-T3-019 reader=rfid-b01 chip=1889 rssi=-72 direction=OUT
-laura@gates-legacy:~$ tail -F dog-registry.log | grep --line-buffered "$CHIP"
+The following paths are still used by legacy services.
+Do not rename or move files without updating the corresponding jobs.
+
+Main files:
+
+  /data/in/cassa.csv              foreign accounts import
+  /data/war/bann.txt              banned subjects list
+  /etc/conf/mys.txt               local security configuration
+  /var/lib/mysql-files/flag.txt   registered organizations export
+  /data/cnt/crb.csv               contact records backup
+
+Notes:
+- Files under /data/in/ are read by the nightly import task.
+- Files under /data/war/ are checked before access validation.
+- /etc/conf/mys.txt is required by the old MySQL connector.
+- /var/lib/mysql-files/ is exposed only to the database service.
+- /data/cnt/ contains temporary contact exports.
+
+ftp>
