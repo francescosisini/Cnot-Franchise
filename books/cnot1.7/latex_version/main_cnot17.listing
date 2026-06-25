@@ -1,25 +1,11 @@
-ftp> less ftpuser/readme.txt
-
-LEGACY DATA INDEX
-Last update: 2041-09-28
-Maintainer: local-admin
-
-The following paths are still used by legacy services.
-Do not rename or move files without updating the corresponding jobs.
-
-Main files:
-
-  /data/in/cassa.csv              foreign accounts import
-  /data/war/bann.txt              banned subjects list
-  /etc/conf/mys.txt               local security configuration
-  /var/lib/mysql-files/flag.txt   registered organizations export
-  /data/cnt/crb.csv               contact records backup
-
-Notes:
-- Files under /data/in/ are read by the nightly import task.
-- Files under /data/war/ are checked before access validation.
-- /etc/conf/mys.txt is required by the old MySQL connector.
-- /var/lib/mysql-files/ is exposed only to the database service.
-- /data/cnt/ contains temporary contact exports.
-
-ftp>
+1. Clara Whitmore | Green Force | Surveillance: Yes
+2. Thomas Hale | NO Artificial Intelligence | Surveillance: No
+3. Eleanor Price | No Vax Enthusiasts | Surveillance: Yes
+4. Margaret Collins | Animal Rights Advocates | Surveillance: No
+5. Daniel Mercer | Digital Freedom Fighters | Surveillance: Yes
+6. Rebecca Stone | Climate Action Now | Surveillance: No
+7. Hannah Reed | Anti-Surveillance League | Surveillance: Yes
+8. Arthur Bennett | Renewable Future Coalition | Surveillance: No
+9. Julia Hart | Cyber Privacy Watch | Surveillance: Yes
+10. Samuel Grant | Human Rights Front | Surveillance: No
+11. Caterina xxx | Green Force | Surveillance: Yes
