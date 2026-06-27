@@ -15,3 +15,49 @@
 ~/Cnot-Franchise/books/cnot1.7/media/lore$ python3 ../../../../tools/image/legend_card.py DIGITALUNDERGROWTH.png --title "DIGITAL UNDERGROWTH" --subtitle "La complessità diventa un problema europeo" --report-id "E-17-E" --date "14.04.2025" --agency "CENTRO ANALISI EUROPA" --item "#ff00ff|Sottobosco|Sistemi, agenzie e archivi continuano a interagire anche dopo essere stati formalmente superati" --y 450 --width 600
 Salvata immagine: DIGITALUNDERGROWTH_legend.png
 
+## mensa
+python3 ../../../../../tools/image/legend_card_humanitarian_overlay.py mensa.png \
+  --output mensa_overlay.png \
+  --x 48 \
+  --y 48 \
+  --width 640 \
+  --title "EX MENSA" \
+  --subtitle "Area di convivenza fragile: distribuzione pasti, socialità informale e rischio strutturale non segnalato." \
+  --status "Accesso solo con accompagnamento" \
+  --agency "Missione Umanitaria UE" \
+  --report-id "EU-HUM/MORA-M03" \
+  --date "17.04.2040" \
+  --accent "#6ec6ff" \
+  --footer "Safety assessment" \
+  --background-alpha 0 \
+  --header-alpha 0 \
+  --outline-alpha 0 \
+  --backplate-alpha 35 \
+  --item "#3aa76d|Presenza stimata|Spazio comune utilizzato per pasti, riparo temporaneo e incontro tra residenti." \
+  --item "#d99b2b|Rischio principale|Pozzo o cavedio non protetto, scarsa illuminazione e percorsi interni irregolari." \
+  --item "#1f6fb2|Servizi|Energia intermittente, luce a candela, connettività assente o non affidabile." \
+  --item "#8a6bb8|Risorsa comunitaria|Tavolo condiviso, regole interne e mutuo aiuto tra abitanti."
+  
+## interno
+python3 ../../../tools/image/legend_card_humanitarian_overlay.py media/convitto/interno.png \
+  --output media/convitto/interno_overlay.png \
+  --x 52 \
+  --y 56 \
+  --width 500 \
+  --title "INTERNO EX MENSA" \
+  --subtitle "Ambiente comune in uso intermittente: riparo, deposito, consumo pasti e transito non sicuro." \
+  --status "Percorso interno non verificato" \
+  --agency "Missione Umanitaria UE" \
+  --report-id "EU-HUM/MORA-M03B" \
+  --date "17.04.2041" \
+  --accent "#6ec6ff" \
+  --footer "Interior safety note" \
+  --background-alpha 0 \
+  --header-alpha 0 \
+  --outline-alpha 0 \
+  --backplate-alpha 25 \
+  --item "#3aa76d|Uso dello spazio|Tavoli, cassette e arredi mobili indicano presenza recente e organizzazione informale." \
+  --item "#d99b2b|Criticità|Illuminazione discontinua, ostacoli bassi, varchi laterali e pavimento non ispezionato." \
+  --item "#1f6fb2|Accesso|Entrata possibile ma non controllata; evitare movimenti rapidi o separazione del gruppo." \
+  --item "#8a6bb8|Indicatore sociale|Graffiti, oggetti recuperati e punti luce suggeriscono appropriazione comunitaria dello spazio."
+
