@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "name": "EUROPOL_sites",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europol Headquarters",
+        "agency": "EUROPOL",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "EUROPOL",
+        "city": "The Hague",
+        "country": "Netherlands",
+        "address": "Eisenhowerlaan 73, 2517 KK/KC The Hague",
+        "role": "Headquarters / operational site",
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2815,
+          52.0928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europol Liaison Bureau Brussels",
+        "agency": "EUROPOL",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "EUROPOL",
+        "city": "Brussels",
+        "country": "Belgium",
+        "address": "Rue Montoyer 30, B-1000 Brussels",
+        "role": "Liaison / data protection contact address",
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3684,
+          50.8383
+        ]
+      }
+    }
+  ]
+}

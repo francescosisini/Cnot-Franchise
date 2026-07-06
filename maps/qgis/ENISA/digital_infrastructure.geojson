@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "name": "ENISA_digital_infrastructure",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EU cybersecurity coordination / certification systems (logical node)",
+        "agency": "ENISA",
+        "layer": "digital_infrastructure",
+        "source_status": "public / approximate coordinates",
+        "group": "ENISA",
+        "city": "Athens / Chalandri",
+        "country": "Greece",
+        "role": "Logical cybersecurity coordination/certification functions; exact hosting location not public",
+        "confidence": "logical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8015,
+          38.0236
+        ]
+      }
+    }
+  ]
+}

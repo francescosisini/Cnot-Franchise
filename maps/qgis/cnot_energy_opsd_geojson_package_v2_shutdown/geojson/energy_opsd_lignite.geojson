@@ -1,0 +1,2972 @@
+{
+  "type": "FeatureCollection",
+  "name": "energy_opsd_lignite",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.54381,
+          46.05811
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01230",
+        "name": "Ljubljana 1",
+        "country": "SI",
+        "capacity_mw": 42.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1966,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1966-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ENERGETIKA LJUBLJANA",
+        "city": "Ljubljana",
+        "state": "",
+        "eic_code": "28W-G-000000082I",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "https://www.energetika-lj.si/sites/www.jhl.si/files/dokumenti/energetika-id-brosura-ang-web.pdf",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.54381,
+          46.05811
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01231",
+        "name": "Ljubljana 2",
+        "country": "SI",
+        "capacity_mw": 42.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1967,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1967-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ENERGETIKA LJUBLJANA",
+        "city": "Ljubljana",
+        "state": "",
+        "eic_code": "28W-G-000000082I",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "https://www.energetika-lj.si/sites/www.jhl.si/files/dokumenti/energetika-id-brosura-ang-web.pdf",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.54381,
+          46.05811
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01232",
+        "name": "Ljubljana 3",
+        "country": "SI",
+        "capacity_mw": 50.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1985,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1985-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ENERGETIKA LJUBLJANA",
+        "city": "Ljubljana",
+        "state": "",
+        "eic_code": "28W-G-000000082I",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "https://www.energetika-lj.si/sites/www.jhl.si/files/dokumenti/energetika-id-brosura-ang-web.pdf",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.05384,
+          46.37305
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01252",
+        "name": "Šoštanj 6",
+        "country": "SI",
+        "capacity_mw": 600.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2015,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2015-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Termoelektrarna Šoštanj (TEŠ )",
+        "city": "Šoštanj",
+        "state": "",
+        "eic_code": "28W-G-000000080M",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "https://www.icis.com/explore/resources/news/2015/02/17/9861364/giant-unit-will-lower-slovenia-electricity-prices-from-mid-april-traders/",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.373287,
+          51.182122
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01631",
+        "name": "BNA0115",
+        "country": "DE",
+        "capacity_mw": 875.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2000,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2000-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Böhlen",
+        "state": "",
+        "eic_code": "11WD8LIPD1L----P",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.373287,
+          51.182122
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01632",
+        "name": "BNA0116",
+        "country": "DE",
+        "capacity_mw": 875.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1999,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1999-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnBW Energie Baden-Württemberg AG",
+        "city": "Böhlen",
+        "state": "",
+        "eic_code": "11WD8LIPD1L----P",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.56194878,
+          51.41626317
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01633",
+        "name": "BNA0122",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1979,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1979-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Boxberg",
+        "state": "",
+        "eic_code": "11WD8BOXB1L----J",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.56194878,
+          51.41626317
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01634",
+        "name": "BNA0123",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1980,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1980-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Boxberg",
+        "state": "",
+        "eic_code": "11WD8BOXB1L----J",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.56194878,
+          51.41626317
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01635",
+        "name": "BNA0124",
+        "country": "DE",
+        "capacity_mw": 857.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2000,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2000-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Boxberg",
+        "state": "",
+        "eic_code": "11WD8BOXB1L----J",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.923096,
+          50.856981
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01636",
+        "name": "BNA0177",
+        "country": "DE",
+        "capacity_mw": 56.8,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1988,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1988-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "eins - energie in sachsen GmbH & Co. KG",
+        "city": "Chemnitz",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.923096,
+          50.856981
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01637",
+        "name": "BNA0179",
+        "country": "DE",
+        "capacity_mw": 90.8,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1990,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1990-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "eins - energie in sachsen GmbH & Co. KG",
+        "city": "Chemnitz",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.37004,
+          51.76017
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01638",
+        "name": "BNA0183",
+        "country": "DE",
+        "capacity_mw": 74.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1999,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1999-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Stadtwerke Cottbus mbH",
+        "city": "Cottbus",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.07617,
+          51.11187
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01639",
+        "name": "BNA0196",
+        "country": "DE",
+        "capacity_mw": 67.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1936,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1936-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Mitteldeutsche Braunkohlengesellschaft mbH",
+        "city": "Teuchern",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7930990000000016,
+          50.8976
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01640",
+        "name": "BNA0292",
+        "country": "DE",
+        "capacity_mw": 176.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1959,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1959-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Frechen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01641",
+        "name": "BNA0302",
+        "country": "DE",
+        "capacity_mw": 129.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1957,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1957-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01642",
+        "name": "BNA0303",
+        "country": "DE",
+        "capacity_mw": 130.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1957,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1957-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01643",
+        "name": "BNA0304",
+        "country": "DE",
+        "capacity_mw": 124.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1960,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1960-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01644",
+        "name": "BNA0305",
+        "country": "DE",
+        "capacity_mw": 130.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1959,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1959-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01645",
+        "name": "BNA0306",
+        "country": "DE",
+        "capacity_mw": 132.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1960,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1960-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01646",
+        "name": "BNA0307",
+        "country": "DE",
+        "capacity_mw": 128.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1960,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1960-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01647",
+        "name": "BNA0308",
+        "country": "DE",
+        "capacity_mw": 136.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1962,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1962-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01648",
+        "name": "BNA0309",
+        "country": "DE",
+        "capacity_mw": 135.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1964,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1964-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01649",
+        "name": "BNA0310",
+        "country": "DE",
+        "capacity_mw": 138.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1962,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1962-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01650",
+        "name": "BNA0311",
+        "country": "DE",
+        "capacity_mw": 131.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1962,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1962-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01651",
+        "name": "BNA0312",
+        "country": "DE",
+        "capacity_mw": 133.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1964,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1964-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01652",
+        "name": "BNA0313",
+        "country": "DE",
+        "capacity_mw": 284.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1966,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1966-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "11WD7FRIM2B-KW-M",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.577080395,
+          51.05744518
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01653",
+        "name": "BNA0314",
+        "country": "DE",
+        "capacity_mw": 278.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1970,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1970-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Frimmersdorf",
+        "state": "",
+        "eic_code": "11WD7FRIM2B-KW-M",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.97682873,
+          52.17237156
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01654",
+        "name": "BNA0439",
+        "country": "DE",
+        "capacity_mw": 352.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1985,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1985-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Helmstedter Revier GmbH",
+        "city": "Helmstedt",
+        "state": "",
+        "eic_code": "11WD2BUSC0002637",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8402,
+          50.8608
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01655",
+        "name": "BNA0489",
+        "country": "DE",
+        "capacity_mw": 40.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1992,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1992-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Hürth",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8402,
+          50.8608
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01656",
+        "name": "BNA0490a",
+        "country": "DE",
+        "capacity_mw": 0.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1993,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1993-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Hürth",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8402,
+          50.8608
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01657",
+        "name": "BNA0490b",
+        "country": "DE",
+        "capacity_mw": 45.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1993,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1993-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Hürth",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8406600000000015,
+          50.86138
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01658",
+        "name": "BNA0491",
+        "country": "DE",
+        "capacity_mw": 98.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1917,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1917-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Hürth",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.484012,
+          51.279099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01659",
+        "name": "BNA0523",
+        "country": "DE",
+        "capacity_mw": 33.5,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1989,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1989-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Städtische Werke Energie + Wärme GmbH",
+        "city": "Kassel",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.96435,
+          51.01781
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01660",
+        "name": "BNA0543",
+        "country": "DE",
+        "capacity_mw": 75.3,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RheinEnergie AG",
+        "city": "Köln",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.26081401,
+          51.07114395
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01661",
+        "name": "BNA0680",
+        "country": "DE",
+        "capacity_mw": 60.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1968,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1968-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Mitteldeutsche Braunkohlengesellschaft mbH",
+        "city": "Mumsdorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6150410000000015,
+          51.039475
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01662",
+        "name": "BNA0696",
+        "country": "DE",
+        "capacity_mw": 294.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Neurath",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6150410000000015,
+          51.039475
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01663",
+        "name": "BNA0697",
+        "country": "DE",
+        "capacity_mw": 294.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Neurath",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6150410000000015,
+          51.039475
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01664",
+        "name": "BNA0698",
+        "country": "DE",
+        "capacity_mw": 292.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1973,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1973-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Neurath",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6150410000000015,
+          51.039475
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01665",
+        "name": "BNA0699",
+        "country": "DE",
+        "capacity_mw": 607.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Neurath",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6150410000000015,
+          51.039475
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01666",
+        "name": "BNA0700",
+        "country": "DE",
+        "capacity_mw": 604.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1976,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1976-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich-Neurath",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01667",
+        "name": "BNA0705",
+        "country": "DE",
+        "capacity_mw": 297.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1968,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1968-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01668",
+        "name": "BNA0706",
+        "country": "DE",
+        "capacity_mw": 299.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1971,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1971-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01669",
+        "name": "BNA0707",
+        "country": "DE",
+        "capacity_mw": 648.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01670",
+        "name": "BNA0708",
+        "country": "DE",
+        "capacity_mw": 628.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01671",
+        "name": "BNA0709",
+        "country": "DE",
+        "capacity_mw": 944.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2002,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2002-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01672",
+        "name": "BNA0710",
+        "country": "DE",
+        "capacity_mw": 125.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1963,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1963-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01673",
+        "name": "BNA0711",
+        "country": "DE",
+        "capacity_mw": 125.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1963,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1963-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01674",
+        "name": "BNA0712",
+        "country": "DE",
+        "capacity_mw": 295.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1965,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1965-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.669039,
+          50.995692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01675",
+        "name": "BNA0713",
+        "country": "DE",
+        "capacity_mw": 295.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1970,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1970-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "11WD7NIED-B-KW-5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.663575999999999,
+          50.945598
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01676",
+        "name": "BNA0714",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1939,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1939-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.45903778,
+          51.83444099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01677",
+        "name": "BNA0785",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1981,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1981-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Peitz",
+        "state": "",
+        "eic_code": "11WD8JAEN1L----Z",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.45903778,
+          51.83444099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01678",
+        "name": "BNA0786",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1982,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1982-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Peitz",
+        "state": "",
+        "eic_code": "11WD8JAEN1L----Z",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.45903778,
+          51.83444099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01679",
+        "name": "BNA0787",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1984,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1984-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Peitz",
+        "state": "",
+        "eic_code": "11WD8JAEN1L----Z",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.45903778,
+          51.83444099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01680",
+        "name": "BNA0788",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1985,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1985-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Peitz",
+        "state": "",
+        "eic_code": "11WD8JAEN1L----Z",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.45903778,
+          51.83444099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01681",
+        "name": "BNA0789",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1987,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1987-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Peitz",
+        "state": "",
+        "eic_code": "11WD8JAEN1L----Z",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.45903778,
+          51.83444099
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01682",
+        "name": "BNA0790",
+        "country": "DE",
+        "capacity_mw": 465.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1989,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1989-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Peitz",
+        "state": "",
+        "eic_code": "11WD8JAEN1L----Z",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9504201,
+          51.39845463
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01683",
+        "name": "BNA0878",
+        "country": "DE",
+        "capacity_mw": 450.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1996,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1996-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Schkopau",
+        "state": "",
+        "eic_code": "11WD8SCHK1L----O",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9504201,
+          51.39845463
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01684",
+        "name": "BNA0879",
+        "country": "DE",
+        "capacity_mw": 450.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1996,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1996-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Schkopau",
+        "state": "",
+        "eic_code": "11WD8SCHK1L----O",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.35312271,
+          51.53482028
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01685",
+        "name": "BNA0914",
+        "country": "DE",
+        "capacity_mw": 750.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1997,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1997-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Spremberg",
+        "state": "",
+        "eic_code": "11WD8SWPU1L----5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.35312271,
+          51.53482028
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01686",
+        "name": "BNA0915",
+        "country": "DE",
+        "capacity_mw": 750.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1998,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1998-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Spremberg",
+        "state": "",
+        "eic_code": "11WD8SWPU1L----5",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.07622,
+          51.16664
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01687",
+        "name": "BNA1002",
+        "country": "DE",
+        "capacity_mw": 31.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Mitteldeutsche Braunkohlengesellschaft mbH",
+        "city": "Wählitz",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.321111,
+          50.839167
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01688",
+        "name": "BNA1021",
+        "country": "DE",
+        "capacity_mw": 123.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1955,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1955-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Eschweiler-Weisweiler",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.321111,
+          50.839167
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01689",
+        "name": "BNA1022",
+        "country": "DE",
+        "capacity_mw": 135.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1959,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1959-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Eschweiler-Weisweiler",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.321111,
+          50.839167
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01690",
+        "name": "BNA1025",
+        "country": "DE",
+        "capacity_mw": 321.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1965,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1965-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Eschweiler-Weisweiler",
+        "state": "",
+        "eic_code": "11WD7WEIS-B-KW-C",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.321111,
+          50.839167
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01691",
+        "name": "BNA1026",
+        "country": "DE",
+        "capacity_mw": 321.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1967,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1967-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Eschweiler-Weisweiler",
+        "state": "",
+        "eic_code": "11WD7WEIS-B-KW-C",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.321111,
+          50.839167
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01692",
+        "name": "BNA1027",
+        "country": "DE",
+        "capacity_mw": 663.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Eschweiler-Weisweiler",
+        "state": "",
+        "eic_code": "11WD7WEIS-B-KW-C",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.321111,
+          50.839167
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01693",
+        "name": "BNA1028",
+        "country": "DE",
+        "capacity_mw": 656.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Eschweiler-Weisweiler",
+        "state": "",
+        "eic_code": "11WD7WEIS-B-KW-C",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.65362,
+          50.7055
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01694",
+        "name": "BNA1097",
+        "country": "DE",
+        "capacity_mw": 19.5,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Smurfit Kappa Zülpich Papier GmbH",
+        "city": "Zülpich",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.81012,
+          50.65803
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01695",
+        "name": "BNA1141",
+        "country": "DE",
+        "capacity_mw": 14.5,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1979,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1979-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Pfeifer & Langen GmbH & Co. KG",
+        "city": "Euskirchen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.36935,
+          50.91517
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01696",
+        "name": "BNA1164",
+        "country": "DE",
+        "capacity_mw": 23.22,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2004,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2004-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Pfeifer & Langen GmbH & Co. KG",
+        "city": "Jülich",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7581,
+          51.69784
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01697",
+        "name": "BNA1185",
+        "country": "DE",
+        "capacity_mw": 20.3,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2014,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2014-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Pfeifer & Langen GmbH & Co. KG",
+        "city": "Könnern",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.665030000000002,
+          50.94564
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01698",
+        "name": "BNA1293a",
+        "country": "DE",
+        "capacity_mw": 10.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Martinswerk GmbH",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.665030000000002,
+          50.94564
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01699",
+        "name": "BNA1293b",
+        "country": "DE",
+        "capacity_mw": 10.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Martinswerk GmbH",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.11038,
+          51.04885
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01700",
+        "name": "BNA1400a",
+        "country": "DE",
+        "capacity_mw": 23.3,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1993,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1993-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Südzucker AG, Werk Zeitz",
+        "city": "Zeitz",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.61332,
+          51.0365
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01701",
+        "name": "BNA1401a",
+        "country": "DE",
+        "capacity_mw": 1060.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2012,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2012-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.61332,
+          51.0365
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01702",
+        "name": "BNA1401b",
+        "country": "DE",
+        "capacity_mw": 1060.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2012,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2012-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Power AG",
+        "city": "Grevenbroich",
+        "state": "",
+        "eic_code": "11WD7NEUR-B-KW-B",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5698,
+          51.41918
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01703",
+        "name": "BNA1404",
+        "country": "DE",
+        "capacity_mw": 640.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2012,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2012-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Lausitz Energie Kraftwerke AG",
+        "city": "Boxberg",
+        "state": "",
+        "eic_code": "11WD8BOXB1L----J",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7054300000000016,
+          51.44089
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01704",
+        "name": "BNA1451",
+        "country": "DE",
+        "capacity_mw": 27.5,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1964,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1964-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Venator Germany GmbH",
+        "city": "Duisburg",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.714028,
+          51.462749
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01705",
+        "name": "BNA1486",
+        "country": "DE",
+        "capacity_mw": 45.0,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1979,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1979-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ROMONTA GmbH",
+        "city": "Seegebiet Mansfelder Land",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.48605,
+          50.77701
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01706",
+        "name": "BNA1511a",
+        "country": "DE",
+        "capacity_mw": 9.3,
+        "energy_source": "Lignite",
+        "energy_group": "Lignite",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1983,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1983-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Papierfabrik Schoellershammer H. A. Schoeller Söhne GmbH & Co KG",
+        "city": "Düren",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Lignite",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    }
+  ]
+}

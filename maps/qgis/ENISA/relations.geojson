@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "name": "ENISA_relations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ENISA Athens Office / Headquarters — ENISA Heraklion Office",
+        "agency": "ENISA",
+        "layer": "relations",
+        "group": "ENISA",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            23.8015,
+            38.0236
+          ],
+          [
+            25.1,
+            35.305
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ENISA Athens Office / Headquarters — ENISA Brussels Office",
+        "agency": "ENISA",
+        "layer": "relations",
+        "group": "ENISA",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            23.8015,
+            38.0236
+          ],
+          [
+            4.3517,
+            50.8503
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ENISA Athens Office / Headquarters — EU cybersecurity coordination / certification systems (logical node)",
+        "agency": "ENISA",
+        "layer": "relations",
+        "group": "ENISA",
+        "source_status": "conceptual relation",
+        "relation_type": "logical/operational link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            23.8015,
+            38.0236
+          ],
+          [
+            23.8015,
+            38.0236
+          ]
+        ]
+      }
+    }
+  ]
+}

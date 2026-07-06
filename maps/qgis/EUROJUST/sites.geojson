@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "name": "EUROJUST_sites",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eurojust Headquarters",
+        "agency": "EUROJUST",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "EUROJUST",
+        "city": "The Hague",
+        "country": "Netherlands",
+        "address": "Johan de Wittlaan 9, 2517 JR The Hague",
+        "role": "Headquarters",
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2909,
+          52.0918
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "name": "FRONTEX_digital_infrastructure",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frontex risk-analysis and border information systems (logical node)",
+        "agency": "FRONTEX",
+        "layer": "digital_infrastructure",
+        "source_status": "public / approximate coordinates",
+        "group": "FRONTEX",
+        "city": "Warsaw",
+        "country": "Poland",
+        "role": "Logical operational data systems; exact hosting location not public",
+        "geometry_note": "anchored to HQ",
+        "confidence": "logical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9848,
+          52.2319
+        ]
+      }
+    }
+  ]
+}

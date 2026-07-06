@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "name": "nuclear_reactors_italy_all",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.872,
+          45.072
+        ]
+      },
+      "properties": {
+        "id": 112,
+        "name": "Caorso",
+        "country": "Italy",
+        "country_code": "IT",
+        "status": "Shutdown",
+        "status_class": "shutdown_or_decommissioned",
+        "reactor_type": "BWR",
+        "reactor_model": "BWR-4 (Mark 2)",
+        "construction_start_at": "1970-01-01",
+        "operational_from": "1981-12-01",
+        "operational_to": "1990-07-01",
+        "temporal_start": "1981-12-01",
+        "temporal_end": "1990-07-01",
+        "capacity_mwe": 840.0,
+        "last_updated_at": "2015-05-24T04:51:26+03:00",
+        "source": "WNA/IAEA",
+        "iaea_id": 327.0,
+        "dataset_region": "Europe_bbox_lon_-25_45_lat_34_72",
+        "geometry_note": "Approximate point coordinates from GeoNuclearData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.283333,
+          45.183333
+        ]
+      },
+      "properties": {
+        "id": 206,
+        "name": "Enrico Fermi",
+        "country": "Italy",
+        "country_code": "IT",
+        "status": "Shutdown",
+        "status_class": "shutdown_or_decommissioned",
+        "reactor_type": "PWR",
+        "reactor_model": "WH 4LP",
+        "construction_start_at": "1961-07-01",
+        "operational_from": "1965-01-01",
+        "operational_to": "1990-07-01",
+        "temporal_start": "1965-01-01",
+        "temporal_end": "1990-07-01",
+        "capacity_mwe": 247.0,
+        "last_updated_at": "2017-02-10T23:56:19+02:00",
+        "source": "IAEA",
+        "iaea_id": 326.0,
+        "dataset_region": "Europe_bbox_lon_-25_45_lat_34_72",
+        "geometry_note": "Approximate point coordinates from GeoNuclearData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.835,
+          41.258
+        ]
+      },
+      "properties": {
+        "id": 245,
+        "name": "Garigliano",
+        "country": "Italy",
+        "country_code": "IT",
+        "status": "Shutdown",
+        "status_class": "shutdown_or_decommissioned",
+        "reactor_type": "BWR",
+        "reactor_model": "BWR-1",
+        "construction_start_at": "1959-11-01",
+        "operational_from": "1964-06-01",
+        "operational_to": "1982-03-01",
+        "temporal_start": "1964-06-01",
+        "temporal_end": "1982-03-01",
+        "capacity_mwe": 150.0,
+        "last_updated_at": "2015-05-24T04:51:26+03:00",
+        "source": "WNA/IAEA",
+        "iaea_id": 325.0,
+        "dataset_region": "Europe_bbox_lon_-25_45_lat_34_72",
+        "geometry_note": "Approximate point coordinates from GeoNuclearData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.808,
+          41.427
+        ]
+      },
+      "properties": {
+        "id": 423,
+        "name": "Latina",
+        "country": "Italy",
+        "country_code": "IT",
+        "status": "Shutdown",
+        "status_class": "shutdown_or_decommissioned",
+        "reactor_type": "GCR",
+        "reactor_model": "MAGNOX",
+        "construction_start_at": "1958-11-01",
+        "operational_from": "1964-01-01",
+        "operational_to": "1987-12-01",
+        "temporal_start": "1964-01-01",
+        "temporal_end": "1987-12-01",
+        "capacity_mwe": 200.0,
+        "last_updated_at": "2015-05-24T04:51:26+03:00",
+        "source": "WNA/IAEA",
+        "iaea_id": 318.0,
+        "dataset_region": "Europe_bbox_lon_-25_45_lat_34_72",
+        "geometry_note": "Approximate point coordinates from GeoNuclearData"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "name": "EUROPOL - sedi e uffici",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "europol_hq_the_hague",
+        "group": "EUROPOL",
+        "layer": "sedi_uffici",
+        "name": "Europol HQ - The Hague",
+        "official_name": "European Union Agency for Law Enforcement Cooperation",
+        "type": "headquarters",
+        "status": "real_public",
+        "city": "The Hague",
+        "country": "Netherlands",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague",
+        "function": "Quartier generale e centro di coordinamento istituzionale",
+        "source_note": "Sede pubblica Europol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.2850, 52.0930]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "europol_oac_the_hague",
+        "group": "EUROPOL",
+        "layer": "sedi_uffici",
+        "name": "Operational and Analysis Centre - OAC",
+        "type": "operations_centre",
+        "status": "real_function_approx_location",
+        "city": "The Hague",
+        "country": "Netherlands",
+        "function": "Nodo operativo/analitico associato al quartier generale",
+        "source_note": "Funzione reale Europol; coordinate approssimate presso HQ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.2860, 52.0935]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "europol_innovation_lab_the_hague",
+        "group": "EUROPOL",
+        "layer": "sedi_uffici",
+        "name": "Europol Innovation Lab / EU Innovation Hub",
+        "type": "innovation_lab",
+        "status": "real_function_approx_location",
+        "city": "The Hague",
+        "country": "Netherlands",
+        "function": "Sperimentazione, ricerca, coordinamento su tecnologie per sicurezza interna",
+        "source_note": "Funzione reale ospitata da Europol; coordinate approssimate presso HQ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.2842, 52.0925]
+      }
+    }
+  ]
+}

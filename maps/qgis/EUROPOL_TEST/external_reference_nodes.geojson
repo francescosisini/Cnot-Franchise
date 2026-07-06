@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "eurojust_hq",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2829,
+          52.092
+        ]
+      },
+      "properties": {
+        "id": "eurojust_hq",
+        "name": "Eurojust HQ",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "external_reference_nodes",
+        "agency": "Eurojust",
+        "kind": "judicial_cooperation",
+        "status": "external_reference",
+        "confidence": "approximate city-level coordinate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "frontex_hq",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0122,
+          52.2297
+        ]
+      },
+      "properties": {
+        "id": "frontex_hq",
+        "name": "Frontex HQ",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "external_reference_nodes",
+        "agency": "Frontex",
+        "kind": "border_coast_guard",
+        "status": "external_reference",
+        "confidence": "approximate city-level coordinate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eu_lisa_hq",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7536,
+          59.437
+        ]
+      },
+      "properties": {
+        "id": "eu_lisa_hq",
+        "name": "eu-LISA HQ",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "external_reference_nodes",
+        "agency": "eu-LISA",
+        "kind": "large_scale_it_systems",
+        "status": "external_reference",
+        "confidence": "approximate city-level coordinate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "enisa_hq",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "id": "enisa_hq",
+        "name": "ENISA HQ Athens",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "external_reference_nodes",
+        "agency": "ENISA",
+        "kind": "cybersecurity",
+        "status": "external_reference",
+        "confidence": "approximate city-level coordinate"
+      }
+    }
+  ]
+}

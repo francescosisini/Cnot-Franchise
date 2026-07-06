@@ -1,0 +1,43 @@
+{
+  "group_id": "EUROPOL",
+  "group_name": "EUROPOL - realistic public test group",
+  "description": "Test GIS package for Europol using publicly documented headquarters and organisational functions. Physical data-centre locations are not asserted because they are not publicly documented in reliable sources.",
+  "qgis_group_hint": "EUROPOL",
+  "layers": [
+    {
+      "id": "europol_sites_and_units",
+      "file": "europol_sites_and_units.geojson",
+      "geometry": "Point",
+      "meaning": "physical HQ plus public functional units represented near HQ"
+    },
+    {
+      "id": "europol_digital_infrastructure",
+      "file": "europol_digital_infrastructure.geojson",
+      "geometry": "Point",
+      "meaning": "logical services/placeholders, not claimed physical data-centre coordinates"
+    },
+    {
+      "id": "external_reference_nodes",
+      "file": "external_reference_nodes.geojson",
+      "geometry": "Point",
+      "meaning": "selected EU security/information ecosystem nodes for relations"
+    },
+    {
+      "id": "europol_relations",
+      "file": "europol_relations.geojson",
+      "geometry": "LineString",
+      "meaning": "conceptual organisational and cooperation links"
+    }
+  ],
+  "recommended_qgis_use": "Load all GeoJSONs, group them under EUROPOL, style points by kind/status and relations by relation_type.",
+  "data_quality_note": "Coordinates for HQ are from public geolocation; functional nodes are intentionally offset from HQ for readability. Do not interpret offsets as exact offices or server rooms.",
+  "sources": [
+    "Europol contact page: Eisenhowerlaan 73, The Hague",
+    "Europol Operational and Analysis Centre page",
+    "Europol EC3 page",
+    "Europol ECTC page",
+    "Europol EFECC page",
+    "Europol Innovation Lab page",
+    "Europol operational information services / EIS page"
+  ]
+}

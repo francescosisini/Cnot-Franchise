@@ -1,0 +1,28 @@
+{
+  "group": "BCE",
+  "display_name": "BCE",
+  "description": "Realistic public/OSINT-oriented GIS test group. Physical points use public addresses or city-level public locations. Digital infrastructure is represented as logical nodes when exact locations are not public.",
+  "layers": [
+    {
+      "id": "sites",
+      "file": "sites.geojson",
+      "feature_count": 4
+    },
+    {
+      "id": "digital_infrastructure",
+      "file": "digital_infrastructure.geojson",
+      "feature_count": 1
+    },
+    {
+      "id": "relations",
+      "file": "relations.geojson",
+      "feature_count": 4
+    }
+  ],
+  "modeling_rules": [
+    "Do not use 0,0 placeholders.",
+    "Use real HQ/office coordinates when public.",
+    "Use logical nodes anchored to public offices when physical data-center locations are not public.",
+    "Mark confidence and geometry_note in attributes."
+  ]
+}

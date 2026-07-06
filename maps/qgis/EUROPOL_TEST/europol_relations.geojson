@@ -1,0 +1,383 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_operational_centre",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.2850209999999995,
+            52.093846
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_operational_centre",
+        "name": "Europol HQ -> Europol Operational and Analysis Centre",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "contains_functional_unit",
+        "from_id": "europol_hq",
+        "to_id": "europol_operational_centre",
+        "confidence": "high for organisational relation; cartographic offset used"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_ec3",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.278521,
+            52.094346
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_ec3",
+        "name": "Europol HQ -> European Cybercrime Centre (EC3)",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "contains_functional_unit",
+        "from_id": "europol_hq",
+        "to_id": "europol_ec3",
+        "confidence": "high for organisational relation; cartographic offset used"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_ectc",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.284021,
+            52.091346
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_ectc",
+        "name": "Europol HQ -> European Counter Terrorism Centre (ECTC)",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "contains_functional_unit",
+        "from_id": "europol_hq",
+        "to_id": "europol_ectc",
+        "confidence": "high for organisational relation; cartographic offset used"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_efecc",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.278721,
+            52.091646000000004
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_efecc",
+        "name": "Europol HQ -> European Financial and Economic Crime Centre (EFECC)",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "contains_functional_unit",
+        "from_id": "europol_hq",
+        "to_id": "europol_efecc",
+        "confidence": "high for organisational relation; cartographic offset used"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_innovation_lab",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.281521,
+            52.095846
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_innovation_lab",
+        "name": "Europol HQ -> Europol Innovation Lab",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "contains_functional_unit",
+        "from_id": "europol_hq",
+        "to_id": "europol_innovation_lab",
+        "confidence": "high for organisational relation; cartographic offset used"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_eu_iru",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.286021,
+            52.092646
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_eu_iru",
+        "name": "Europol HQ -> EU Internet Referral Unit (EU IRU)",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "contains_functional_unit",
+        "from_id": "europol_hq",
+        "to_id": "europol_eu_iru",
+        "confidence": "high for organisational relation; cartographic offset used"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_eis_logical",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.288520999999999,
+            52.095346
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_eis_logical",
+        "name": "Europol HQ -> Europol Information System (EIS) - logical service node",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "uses_or_operates_logical_service",
+        "from_id": "europol_hq",
+        "to_id": "europol_eis_logical",
+        "confidence": "logical representation; not physical routing"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_siena_logical",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.288520999999999,
+            52.090346000000004
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_siena_logical",
+        "name": "Europol HQ -> SIENA secure information exchange - logical service node",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "uses_or_operates_logical_service",
+        "from_id": "europol_hq",
+        "to_id": "europol_siena_logical",
+        "confidence": "logical representation; not physical routing"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_data_processing_logical",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.2755209999999995,
+            52.095346
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_data_processing_logical",
+        "name": "Europol HQ -> Europol data processing environment - logical node",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "uses_or_operates_logical_service",
+        "from_id": "europol_hq",
+        "to_id": "europol_data_processing_logical",
+        "confidence": "logical representation; not physical routing"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_hq_europol_backup_unknown",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.2755209999999995,
+            52.090346000000004
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_hq_europol_backup_unknown",
+        "name": "Europol HQ -> Europol backup/continuity infrastructure - location undisclosed",
+        "group": "EUROPOL",
+        "layer": "europol_relations",
+        "relation_type": "uses_or_operates_logical_service",
+        "from_id": "europol_hq",
+        "to_id": "europol_backup_unknown",
+        "confidence": "logical representation; not physical routing"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_europol_eurojust_hq",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            4.2829,
+            52.092
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_europol_eurojust_hq",
+        "name": "Europol cooperation link -> Eurojust HQ",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "europol_relations",
+        "relation_type": "institutional_cooperation_or_data_exchange_context",
+        "from_id": "europol_hq",
+        "to_id": "eurojust_hq",
+        "confidence": "conceptual/institutional, not a claimed live data route"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_europol_frontex_hq",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            21.0122,
+            52.2297
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_europol_frontex_hq",
+        "name": "Europol cooperation link -> Frontex HQ",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "europol_relations",
+        "relation_type": "institutional_cooperation_or_data_exchange_context",
+        "from_id": "europol_hq",
+        "to_id": "frontex_hq",
+        "confidence": "conceptual/institutional, not a claimed live data route"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_europol_eu_lisa_hq",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            24.7536,
+            59.437
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_europol_eu_lisa_hq",
+        "name": "Europol cooperation link -> eu-LISA HQ",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "europol_relations",
+        "relation_type": "institutional_cooperation_or_data_exchange_context",
+        "from_id": "europol_hq",
+        "to_id": "eu_lisa_hq",
+        "confidence": "conceptual/institutional, not a claimed live data route"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel_europol_enisa_hq",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.281521,
+            52.092846
+          ],
+          [
+            23.7275,
+            37.9838
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rel_europol_enisa_hq",
+        "name": "Europol cooperation link -> ENISA HQ Athens",
+        "group": "EU_SECURITY_ECOSYSTEM",
+        "layer": "europol_relations",
+        "relation_type": "institutional_cooperation_or_data_exchange_context",
+        "from_id": "europol_hq",
+        "to_id": "enisa_hq",
+        "confidence": "conceptual/institutional, not a claimed live data route"
+      }
+    }
+  ]
+}

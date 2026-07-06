@@ -1,0 +1,94 @@
+{
+  "type": "FeatureCollection",
+  "name": "eu-LISA_sites",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "eu-LISA Headquarters",
+        "agency": "eu-LISA",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "eu-LISA",
+        "city": "Tallinn",
+        "country": "Estonia",
+        "address": "Vesilennuki 5, 10415 Tallinn",
+        "role": "Headquarters",
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7454,
+          59.4515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "eu-LISA Operations Site",
+        "agency": "eu-LISA",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "eu-LISA",
+        "city": "Strasbourg",
+        "country": "France",
+        "address": "Strasbourg, France",
+        "role": "Operations site",
+        "confidence": "city-level"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7521,
+          48.5734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "eu-LISA Back-up Site",
+        "agency": "eu-LISA",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "eu-LISA",
+        "city": "Sankt Johann im Pongau",
+        "country": "Austria",
+        "address": "Sankt Johann im Pongau, Austria",
+        "role": "Technical back-up site",
+        "confidence": "city-level"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2,
+          47.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "eu-LISA Liaison Office",
+        "agency": "eu-LISA",
+        "layer": "sites",
+        "source_status": "public / approximate coordinates",
+        "group": "eu-LISA",
+        "city": "Brussels",
+        "country": "Belgium",
+        "address": "Brussels, Belgium",
+        "role": "Liaison office",
+        "confidence": "city-level"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3517,
+          50.8503
+        ]
+      }
+    }
+  ]
+}

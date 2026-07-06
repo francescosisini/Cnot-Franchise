@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "name": "EUROPOL_relations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europol Headquarters — Europol Liaison Bureau Brussels",
+        "agency": "EUROPOL",
+        "layer": "relations",
+        "group": "EUROPOL",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.2815,
+            52.0928
+          ],
+          [
+            4.3684,
+            50.8383
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europol Headquarters — Europol Information System (logical node)",
+        "agency": "EUROPOL",
+        "layer": "relations",
+        "group": "EUROPOL",
+        "source_status": "conceptual relation",
+        "relation_type": "logical/operational link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.2815,
+            52.0928
+          ],
+          [
+            4.2815,
+            52.0928
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europol Headquarters — Secure Information Exchange Network Application - SIENA (logical node)",
+        "agency": "EUROPOL",
+        "layer": "relations",
+        "group": "EUROPOL",
+        "source_status": "conceptual relation",
+        "relation_type": "logical/operational link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.2815,
+            52.0928
+          ],
+          [
+            4.2815,
+            52.0928
+          ]
+        ]
+      }
+    }
+  ]
+}

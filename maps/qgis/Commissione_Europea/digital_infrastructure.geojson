@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "name": "Commissione_Europea_digital_infrastructure",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Commission digital services / corporate IT (logical node)",
+        "agency": "Commissione Europea",
+        "layer": "digital_infrastructure",
+        "source_status": "public / approximate coordinates",
+        "group": "Commissione Europea",
+        "city": "Brussels",
+        "country": "Belgium",
+        "role": "Logical corporate/digital services; exact hosting location not public",
+        "geometry_note": "anchored to Berlaymont",
+        "confidence": "logical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.382,
+          50.8439
+        ]
+      }
+    }
+  ]
+}

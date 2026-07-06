@@ -1,0 +1,1 @@
+Put the downloaded OPSD conventional_power_plants_EU.csv file in this input/ folder.

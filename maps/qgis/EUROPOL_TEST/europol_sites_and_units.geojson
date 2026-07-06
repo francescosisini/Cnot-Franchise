@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "europol_hq",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.281521,
+          52.092846
+        ]
+      },
+      "properties": {
+        "id": "europol_hq",
+        "name": "Europol Headquarters",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "headquarters",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Publicly documented physical headquarters; visitor address Eisenhowerlaan 73, The Hague.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_operational_centre",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2850209999999995,
+          52.093846
+        ]
+      },
+      "properties": {
+        "id": "europol_operational_centre",
+        "name": "Europol Operational and Analysis Centre",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "operational_centre",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Functional node: Europol states this is the gateway for information and intelligence channelled through Europol.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_ec3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.278521,
+          52.094346
+        ]
+      },
+      "properties": {
+        "id": "europol_ec3",
+        "name": "European Cybercrime Centre (EC3)",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "specialised_centre",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Functional node: cybercrime expertise and operational support; public location is Europol/The Hague, exact internal location not separately public.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_ectc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.284021,
+          52.091346
+        ]
+      },
+      "properties": {
+        "id": "europol_ectc",
+        "name": "European Counter Terrorism Centre (ECTC)",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "specialised_centre",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Functional node: counter-terrorism platform established after the 2015 attacks; public location is Europol/The Hague.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_efecc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.278721,
+          52.091646000000004
+        ]
+      },
+      "properties": {
+        "id": "europol_efecc",
+        "name": "European Financial and Economic Crime Centre (EFECC)",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "specialised_centre",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Functional node: financial/economic crime centre founded in 2020; public location is Europol/The Hague.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_innovation_lab",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.281521,
+          52.095846
+        ]
+      },
+      "properties": {
+        "id": "europol_innovation_lab",
+        "name": "Europol Innovation Lab",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "innovation_lab",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Functional node: supports innovation for the law enforcement community; public location is Europol/The Hague.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_eu_iru",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.286021,
+          52.092646
+        ]
+      },
+      "properties": {
+        "id": "europol_eu_iru",
+        "name": "EU Internet Referral Unit (EU IRU)",
+        "group": "EUROPOL",
+        "layer": "europol_sites_and_units",
+        "agency": "Europol",
+        "kind": "internet_referral_unit",
+        "status": "real_public_or_functional",
+        "confidence": "high for existence; exact coordinate is HQ or cartographic offset",
+        "source_note": "Functional node: based at Europol ECTC; detects, analyses and refers terrorist/extremist online content.",
+        "address": "Eisenhowerlaan 73, 2517 KK The Hague, Netherlands"
+      }
+    }
+  ]
+}

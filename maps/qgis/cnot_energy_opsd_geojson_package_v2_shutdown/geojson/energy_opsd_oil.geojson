@@ -1,0 +1,1344 @@
+{
+  "type": "FeatureCollection",
+  "name": "energy_opsd_oil",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87987,
+          55.810280000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01288",
+        "name": "Kyndby Power Station (Unit 21)",
+        "country": "DK",
+        "capacity_mw": 260.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Hornsherred",
+        "state": "",
+        "eic_code": "45V0000000000083",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "http://ipaper.ipapercms.dk/DONGENERGY/Internet/DK/ThermalPower/KYVbrochure2012DK/?page=12",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87987,
+          55.810280000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01289",
+        "name": "Kyndby Power Station (Unit 22)",
+        "country": "DK",
+        "capacity_mw": 260.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "",
+        "status": "",
+        "commissioned": 1976,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1976-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Hornsherred",
+        "state": "",
+        "eic_code": "45V0000000000083",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "http://ipaper.ipapercms.dk/DONGENERGY/Internet/DK/ThermalPower/KYVbrochure2012DK/?page=12",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87987,
+          55.810280000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01290",
+        "name": "Kyndby Power Station (Unit 41)",
+        "country": "DK",
+        "capacity_mw": 20.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Hornsherred",
+        "state": "",
+        "eic_code": "45V0000000000083",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "http://ipaper.ipapercms.dk/DONGENERGY/Internet/DK/ThermalPower/KYVbrochure2012DK/?page=12",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87987,
+          55.810280000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01291",
+        "name": "Kyndby Power Station (Unit 51+52)",
+        "country": "DK",
+        "capacity_mw": 125.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "",
+        "status": "",
+        "commissioned": 1973,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1973-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "",
+        "state": "",
+        "eic_code": "45V0000000000083",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "http://ipaper.ipapercms.dk/DONGENERGY/Internet/DK/ThermalPower/KYVbrochure2012DK/?page=12",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.82246,
+          51.98513
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02004",
+        "name": "BNA0012d",
+        "country": "DE",
+        "capacity_mw": 2.8,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Sappi Alfeld GmbH",
+        "city": "Alfeld",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.68614,
+          50.56636
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02011",
+        "name": "BNA0318",
+        "country": "DE",
+        "capacity_mw": 24.8,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2011,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2011-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RhönEnergie Fulda GmbH",
+        "city": "Fulda",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.781496,
+          51.161368
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02012",
+        "name": "BNA0369",
+        "country": "DE",
+        "capacity_mw": 17.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "envia THERM GmbH",
+        "city": "Großbothen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.503001,
+          48.761412
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02014",
+        "name": "BNA0378",
+        "country": "DE",
+        "capacity_mw": 386.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1973,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1973-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Großmehring",
+        "state": "",
+        "eic_code": "11WD2INGO0001783",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.503001,
+          48.761412
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02015",
+        "name": "BNA0379",
+        "country": "DE",
+        "capacity_mw": 386.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Großmehring",
+        "state": "",
+        "eic_code": "11WD2INGO0001783",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.32439,
+          49.06081
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02020",
+        "name": "BNA0516",
+        "country": "DE",
+        "capacity_mw": 45.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "MiRO Mineraloelraffinerie Oberrhein GmbH & Co. KG",
+        "city": "Karlsruhe",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.32439,
+          49.06081
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02021",
+        "name": "BNA0517",
+        "country": "DE",
+        "capacity_mw": 25.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "MiRO Mineraloelraffinerie Oberrhein GmbH & Co. KG",
+        "city": "Karlsruhe",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.98084,
+          50.85475
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02022",
+        "name": "BNA0547",
+        "country": "DE",
+        "capacity_mw": 97.1,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 2004,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2004-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Shell Deutschland Oil GmbH",
+        "city": "Köln",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0193,
+          51.29976
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02023",
+        "name": "BNA0596",
+        "country": "DE",
+        "capacity_mw": 92.5,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1997,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1997-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "TOTAL Raffinerie Mitteldeutschland GmbH",
+        "city": "Leuna",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.230005,
+          48.927497
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02025",
+        "name": "BNA0648",
+        "country": "DE",
+        "capacity_mw": 85.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnBW Energie Baden-Württemberg AG",
+        "city": "Marbach",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.230005,
+          48.927497
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02026",
+        "name": "BNA0649",
+        "country": "DE",
+        "capacity_mw": 263.5,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnBW Energie Baden-Württemberg AG",
+        "city": "Marbach",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.449486,
+          53.966422
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02027",
+        "name": "BNA0759",
+        "country": "DE",
+        "capacity_mw": 88.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Oldendorf",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.722775,
+          54.290672
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02028",
+        "name": "BNA0766",
+        "country": "DE",
+        "capacity_mw": 87.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1973,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1973-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Osterrönfeld",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.23454,
+          53.098180000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02029",
+        "name": "BNA0894a",
+        "country": "DE",
+        "capacity_mw": 28.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "PCK Raffinerie GmbH",
+        "city": "PCK Schwedt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.23454,
+          53.098180000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02030",
+        "name": "BNA0894b",
+        "country": "DE",
+        "capacity_mw": 34.5,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "PCK Raffinerie GmbH",
+        "city": "PCK Schwedt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.23454,
+          53.098180000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02031",
+        "name": "BNA0894c",
+        "country": "DE",
+        "capacity_mw": 106.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1998,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1998-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "PCK Raffinerie GmbH",
+        "city": "PCK Schwedt",
+        "state": "",
+        "eic_code": "11WD8SCHW5X----D",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.23454,
+          53.098180000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02032",
+        "name": "BNA0894d",
+        "country": "DE",
+        "capacity_mw": 106.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1998,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1998-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "PCK Raffinerie GmbH",
+        "city": "PCK Schwedt",
+        "state": "",
+        "eic_code": "11WD8SCHW5X----D",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.23454,
+          53.098180000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02033",
+        "name": "BNA0894e",
+        "country": "DE",
+        "capacity_mw": 59.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2011,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2011-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "PCK Raffinerie GmbH",
+        "city": "PCK Schwedt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.221111,
+          48.81583300000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02034",
+        "name": "BNA0937",
+        "country": "DE",
+        "capacity_mw": 23.3,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnBW Energie Baden-Württemberg AG",
+        "city": "Stuttgart",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.221111,
+          48.81583300000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02035",
+        "name": "BNA0938",
+        "country": "DE",
+        "capacity_mw": 23.3,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnBW Energie Baden-Württemberg AG",
+        "city": "Stuttgart",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.221111,
+          48.81583300000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02036",
+        "name": "BNA0939b",
+        "country": "DE",
+        "capacity_mw": 23.3,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnBW Energie Baden-Württemberg AG",
+        "city": "Stuttgart",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.580033,
+          48.76702
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02037",
+        "name": "BNA0993",
+        "country": "DE",
+        "capacity_mw": 415.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper Kraftwerke GmbH",
+        "city": "Vohburg",
+        "state": "",
+        "eic_code": "11WD2IRSC000179N",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.31911,
+          47.683464
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02040",
+        "name": "BNA1007b",
+        "country": "DE",
+        "capacity_mw": 10.5,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1978,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1978-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Allgäuer Überlandwerk GmbH",
+        "city": "Waltenhofen-Veits",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.70637,
+          51.27559
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02043",
+        "name": "BNA1036",
+        "country": "DE",
+        "capacity_mw": 206.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Mark-E AG",
+        "city": "Werdohl",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.200278,
+          51.268889
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02045",
+        "name": "BNA1083",
+        "country": "DE",
+        "capacity_mw": 60.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 2008,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2008-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "WSW Energie & Wasser AG",
+        "city": "Wuppertal",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5746699999999985,
+          51.52242
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02047",
+        "name": "BNA1166",
+        "country": "DE",
+        "capacity_mw": 4.8,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1997,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1997-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Kreis Weseler Abfallgesellschaft mbH & Co. KG (KWA)",
+        "city": "Kamp-Lintfort",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.486643,
+          48.062671
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02048",
+        "name": "BNA1212",
+        "country": "DE",
+        "capacity_mw": 11.4,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1988,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1988-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Vereinigte Wertach-Elektrizitätswerke GmbH",
+        "city": "Mindelheim",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.61174,
+          47.912537
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02049",
+        "name": "BNA1227",
+        "country": "DE",
+        "capacity_mw": 11.4,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1978,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1978-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Vereinigte Wertach-Elektrizitätswerke GmbH",
+        "city": "Pforzen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.95936,
+          50.83051
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02050",
+        "name": "BNA1280",
+        "country": "DE",
+        "capacity_mw": 90.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1962,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1962-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Basell Polyolefine GmbH",
+        "city": "Wesseling",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6649600000000015,
+          50.94563
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02051",
+        "name": "BNA1293d",
+        "country": "DE",
+        "capacity_mw": 0.8,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Martinswerk GmbH",
+        "city": "Bergheim",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.969562,
+          53.48520300000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02052",
+        "name": "BNA1294",
+        "country": "DE",
+        "capacity_mw": 38.0,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Nynas GmbH & Co KG",
+        "city": "Hamburg",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.155761,
+          49.988218
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02053",
+        "name": "BNA1337d",
+        "country": "DE",
+        "capacity_mw": 0.5,
+        "energy_source": "Oil",
+        "energy_group": "Oil",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1991,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1991-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "DS Smith Paper Deutschland GmbH",
+        "city": "Aschaffenburg",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Oil",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "name": "EUROJUST_relations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eurojust Headquarters — Eurojust Case Management / judicial cooperation systems (logical node)",
+        "agency": "EUROJUST",
+        "layer": "relations",
+        "group": "EUROJUST",
+        "source_status": "conceptual relation",
+        "relation_type": "logical/operational link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.2909,
+            52.0918
+          ],
+          [
+            4.2909,
+            52.0918
+          ]
+        ]
+      }
+    }
+  ]
+}

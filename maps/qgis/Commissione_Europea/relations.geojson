@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "name": "Commissione_Europea_relations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Commission Berlaymont — European Commission Charlemagne Visitors' Centre",
+        "agency": "Commissione_Europea",
+        "layer": "relations",
+        "group": "Commissione_Europea",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.382,
+            50.8439
+          ],
+          [
+            4.3829,
+            50.8447
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Commission Berlaymont — European Commission Luxembourg presence",
+        "agency": "Commissione_Europea",
+        "layer": "relations",
+        "group": "Commissione_Europea",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.382,
+            50.8439
+          ],
+          [
+            6.1319,
+            49.6116
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Commission Berlaymont — European Commission digital services / corporate IT (logical node)",
+        "agency": "Commissione_Europea",
+        "layer": "relations",
+        "group": "Commissione_Europea",
+        "source_status": "conceptual relation",
+        "relation_type": "logical/operational link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.382,
+            50.8439
+          ],
+          [
+            4.382,
+            50.8439
+          ]
+        ]
+      }
+    }
+  ]
+}

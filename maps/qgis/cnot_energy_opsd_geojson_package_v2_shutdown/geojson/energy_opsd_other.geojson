@@ -1,0 +1,2713 @@
+{
+  "type": "FeatureCollection",
+  "name": "energy_opsd_other",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.88652,
+          43.42801
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_00030",
+        "name": "CYCOFOS TV2",
+        "country": "FR",
+        "capacity_mw": 62.0,
+        "energy_source": "Other or unspecified energy sources",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 2009,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2009-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "",
+        "city": "",
+        "state": "",
+        "eic_code": "17W100P100P0352E",
+        "energy_source_level_1": "Other or unspecified energy sources",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "https://www.services-rte.com/en/view-data-published-by-rte/production-installed-capacity.html",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9964629999999999,
+          53.73648000000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_00955",
+        "name": "Drax GT",
+        "country": "UK",
+        "capacity_mw": 75.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1971,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1971-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Drax Power",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000DRAXXGK",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.810597,
+          53.361541
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_00974",
+        "name": "West Burton GT",
+        "country": "UK",
+        "capacity_mw": 40.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1967,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1967-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EDF Energy",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN0000WBUGT2",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.899173,
+          50.395019
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_00984",
+        "name": "Indian Queens",
+        "country": "UK",
+        "capacity_mw": 140.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1996,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1996-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Energy Capital Partners",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN00000INDQH",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.406652,
+          51.387471000000005
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01004",
+        "name": "Aberthaw GT",
+        "country": "UK",
+        "capacity_mw": 51.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1971,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1971-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Npower",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000ABTHGTK",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.286168,
+          50.746935
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01005",
+        "name": "Cowes",
+        "country": "UK",
+        "capacity_mw": 140.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1982,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1982-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Npower",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN00000COWEA",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.268305,
+          51.6248
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01006",
+        "name": "Didcot GT",
+        "country": "UK",
+        "capacity_mw": 100.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Npower",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000DIDCGTK",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.269038,
+          52.204863
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01007",
+        "name": "Little Barford GT",
+        "country": "UK",
+        "capacity_mw": 17.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 2006,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2006-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RWE Npower",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000LBAR-G1",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.780882,
+          57.733565000000006
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01035",
+        "name": "Barra",
+        "country": "UK",
+        "capacity_mw": 2.5,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1986,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1986-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.27336,
+          55.760587
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01036",
+        "name": "Bowmore",
+        "country": "UK",
+        "capacity_mw": 6.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1946,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1946-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.68695,
+          53.372319
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01037",
+        "name": "Fiddler’s Ferry GT",
+        "country": "UK",
+        "capacity_mw": 35.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1971,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1971-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000FIDL-GA",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.422073,
+          51.050115000000005
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01038",
+        "name": "Five Oaks",
+        "country": "UK",
+        "capacity_mw": 9.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1995,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1995-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.749312,
+          53.594692
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01039",
+        "name": "Keadby GT",
+        "country": "UK",
+        "capacity_mw": 25.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000KEADGT6",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.964408,
+          58.982347
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01040",
+        "name": "Kirkwall",
+        "country": "UK",
+        "capacity_mw": 16.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1952,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1952-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.164261,
+          60.167184
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01041",
+        "name": "Lerwick",
+        "country": "UK",
+        "capacity_mw": 67.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1953,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1953-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.27048,
+          57.364812
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01042",
+        "name": "Loch Carnan, South Uist",
+        "country": "UK",
+        "capacity_mw": 11.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3727529999999994,
+          58.203151
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01043",
+        "name": "Stornoway",
+        "country": "UK",
+        "capacity_mw": 23.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1952,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1952-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.242002,
+          51.394535
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01044",
+        "name": "Thatcham",
+        "country": "UK",
+        "capacity_mw": 9.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.882377,
+          56.497640000000004
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01045",
+        "name": "Tiree",
+        "country": "UK",
+        "capacity_mw": 2.5,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1953,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1953-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SSE",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.715005,
+          51.445227
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01114",
+        "name": "Grain GT",
+        "country": "UK",
+        "capacity_mw": 56.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1978,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1978-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper UK",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000GRAI-GD",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.254127,
+          52.865241000000005
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01115",
+        "name": "Ratcliffe GT",
+        "country": "UK",
+        "capacity_mw": 34.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1967,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1967-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper UK",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000RATSGTB",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.257309,
+          51.546085999999995
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01116",
+        "name": "Taylor's Lane GT",
+        "country": "UK",
+        "capacity_mw": 144.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1979,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1979-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Uniper UK",
+        "city": "",
+        "state": "",
+        "eic_code": "48WSTN000TAYL-G3",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gov.uk/government/statistics/electricity-chapter-5-digest-of-united-kingdom-energy-statistics-dukes#content",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.492161999999999,
+          46.908219
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01269",
+        "name": "Mellach Fernheizkraftwerk",
+        "country": "AT",
+        "capacity_mw": 246.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1986,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1986-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "VERBUND Thermal Power GmbH & Co KG",
+        "city": "Neudorf ob Wildon",
+        "state": "",
+        "eic_code": "14W-WML-KW-----0",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.verbund.com/de-de/ueber-verbund/kraftwerke/unsere-kraftwerke",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.62621,
+          55.68583
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01278",
+        "name": "Amager Power Station (Unit 3)",
+        "country": "DK",
+        "capacity_mw": 263.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1989,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1989-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "HOFOR",
+        "city": "Copenhagen",
+        "state": "",
+        "eic_code": "45V000000000012C",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gem.wiki/Amager_power_station",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.081560000000001,
+          55.662519999999994
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01279",
+        "name": "Asnæs Power Station (Unit 2)",
+        "country": "DK",
+        "capacity_mw": 147.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1961,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1961-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Kalundborg",
+        "state": "",
+        "eic_code": "45V000000000011E",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.nsenergybusiness.com/projects/asnaes-power",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48127,
+          55.60358000000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01280",
+        "name": "Avedøre Power Station (Unit 1)",
+        "country": "DK",
+        "capacity_mw": 254.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1990,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1990-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Avedøre",
+        "state": "",
+        "eic_code": "45V0000000000091",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://orsted.com/en/Media/Newsroom/News/2017/10/Denmarks-largest-power-station-replaces-coal-with-wood-pellets",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48127,
+          55.60358000000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01281",
+        "name": "Avedøre Power Station (Unit 2)",
+        "country": "DK",
+        "capacity_mw": 394.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 2002,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2002-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Avedøre",
+        "state": "",
+        "eic_code": "45V0000000000091",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://orsted.com/en/Media/Newsroom/News/2017/10/Denmarks-largest-power-station-replaces-coal-with-wood-pellets",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.45523,
+          55.45632
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01282",
+        "name": "Esbjerg Power Station (Unit 3)",
+        "country": "DK",
+        "capacity_mw": 407.0,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1992,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1992-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orsted",
+        "city": "Esbjerg",
+        "state": "",
+        "eic_code": "45V0000000000164",
+        "energy_source_level_1": "Fossil fuels",
+        "energy_source_level_2": "Mixed fossil fuels",
+        "energy_source_level_3": "",
+        "original_source": "https://www.gem.wiki/Esbjerg_power_station",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.88538,
+          54.99551999999999
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01292",
+        "name": "Masnedø Power Station (Unit 31)",
+        "country": "DK",
+        "capacity_mw": 70.0,
+        "energy_source": "Other or unspecified energy sources",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Vordingborg Forsyning",
+        "city": "Masnedø",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other or unspecified energy sources",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "https://www.bwsc.com/references/masnedoe-power-plant",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.69715,
+          55.093709999999994
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_01295",
+        "name": "Østkraft",
+        "country": "DK",
+        "capacity_mw": 90.0,
+        "energy_source": "Other or unspecified energy sources",
+        "energy_group": "Other",
+        "technology": "",
+        "status": "",
+        "commissioned": 2014,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2014-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "",
+        "city": "Bornholm",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other or unspecified energy sources",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "Energinet DK",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.68524,
+          53.12891
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02054",
+        "name": "BNA0142",
+        "country": "DE",
+        "capacity_mw": 160.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1975,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1975-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ArcelorMittal Bremen GmbH",
+        "city": "Bremen",
+        "state": "",
+        "eic_code": "11WD2BMIT0002731",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.730574000000002,
+          51.459673
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02055",
+        "name": "BNA0217",
+        "country": "DE",
+        "capacity_mw": 60.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1955,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1955-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ThyssenKrupp Steel Europe AG",
+        "city": "Duisburg - Ruhrort",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.730574000000002,
+          51.459673
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02056",
+        "name": "BNA0218",
+        "country": "DE",
+        "capacity_mw": 95.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1963,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1963-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ThyssenKrupp Steel Europe AG",
+        "city": "Duisburg - Ruhrort",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.730574000000002,
+          51.459673
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02057",
+        "name": "BNA0219",
+        "country": "DE",
+        "capacity_mw": 170.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1968,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1968-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ThyssenKrupp Steel Europe AG",
+        "city": "Duisburg - Ruhrort",
+        "state": "",
+        "eic_code": "11WD7BEEC5XRUKWN",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.64079,
+          52.16883
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02058",
+        "name": "BNA0237",
+        "country": "DE",
+        "capacity_mw": 23.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2011,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2011-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Progroup Power 1 GmbH",
+        "city": "Eisenhüttenstadt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.626970000000002,
+          52.1674
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02059",
+        "name": "BNA0238a",
+        "country": "DE",
+        "capacity_mw": 45.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1954,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1954-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ArcelorMittal Eisenhüttenstadt GmbH",
+        "city": "Eisenhüttenstadt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.626970000000002,
+          52.1674
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02060",
+        "name": "BNA0238b",
+        "country": "DE",
+        "capacity_mw": 56.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2013,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2013-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ArcelorMittal Eisenhüttenstadt GmbH",
+        "city": "Eisenhüttenstadt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.72749,
+          51.49100000000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02061",
+        "name": "BNA0395",
+        "country": "DE",
+        "capacity_mw": 59.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1958,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1958-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ThyssenKrupp Steel Europe AG",
+        "city": "Hamborn",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.72749,
+          51.49100000000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02062",
+        "name": "BNA0396",
+        "country": "DE",
+        "capacity_mw": 101.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1976,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1976-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ThyssenKrupp Steel Europe AG",
+        "city": "Hamborn",
+        "state": "",
+        "eic_code": "11WD7BEEC5XHAKW5",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7303190000000015,
+          51.50060300000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02063",
+        "name": "BNA0397",
+        "country": "DE",
+        "capacity_mw": 225.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2003,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2003-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "ThyssenKrupp Steel Europe AG",
+        "city": "Hamborn",
+        "state": "",
+        "eic_code": "11WD7BEEC5XHAKW5",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7167,
+          51.36787
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02064",
+        "name": "BNA0485",
+        "country": "DE",
+        "capacity_mw": 303.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1976,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1976-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Hüttenwerke Krupp Mannesmann GmbH",
+        "city": "Duisburg-Huckingen",
+        "state": "",
+        "eic_code": "11WD7HUCK2G--KWR",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7167,
+          51.36787
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02065",
+        "name": "BNA0486",
+        "country": "DE",
+        "capacity_mw": 303.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1977,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1977-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Hüttenwerke Krupp Mannesmann GmbH",
+        "city": "Duisburg-Huckingen",
+        "state": "",
+        "eic_code": "11WD7HUCK2G--KWR",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0193,
+          51.29976
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02066",
+        "name": "BNA0597",
+        "country": "DE",
+        "capacity_mw": 8.7,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1994,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1994-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "InfraLeuna GmbH",
+        "city": "Leuna",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7581,
+          51.79988
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02067",
+        "name": "BNA0598a",
+        "country": "DE",
+        "capacity_mw": 14.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2000,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2000-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "InfraLeuna GmbH",
+        "city": "Leuna",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0193,
+          51.29976
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02068",
+        "name": "BNA0598b",
+        "country": "DE",
+        "capacity_mw": 20.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "InfraLeuna GmbH",
+        "city": "Leuna",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.407401,
+          48.552941
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02069",
+        "name": "BNA0616b",
+        "country": "DE",
+        "capacity_mw": 87.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Combined cycle",
+        "status": "",
+        "commissioned": 1964,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1964-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "BASF SE",
+        "city": "Ludwigshafen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.15,
+          54.0821
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02070",
+        "name": "BNA0693",
+        "country": "DE",
+        "capacity_mw": 53.6,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1974,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1974-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "SWN Stadtwerke Neumünster GmbH",
+        "city": "Neumünster",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.39579,
+          52.1579
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02071",
+        "name": "BNA0863",
+        "country": "DE",
+        "capacity_mw": 94.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1939,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1939-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Salzgitter Flachstahl GmbH",
+        "city": "Salzgitter",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.39579,
+          52.1579
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02072",
+        "name": "BNA0864",
+        "country": "DE",
+        "capacity_mw": 97.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Salzgitter Flachstahl GmbH",
+        "city": "Salzgitter",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.39579,
+          52.1579
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02073",
+        "name": "BNA0865b",
+        "country": "DE",
+        "capacity_mw": 97.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Salzgitter Flachstahl GmbH",
+        "city": "Salzgitter",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.731489999999999,
+          49.35485
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02074",
+        "name": "BNA1115",
+        "country": "DE",
+        "capacity_mw": 85.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Aktien-Gesellschaft der Dillinger Hüttenwerke, ROGESA Roheisengesellschaft Saar mbH und Zentralkokerei Saar GmbH, als Bruchteilsgemeinschaft",
+        "city": "Dillingen/Saar",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.90251,
+          47.80811
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02075",
+        "name": "BNA1249",
+        "country": "DE",
+        "capacity_mw": 6.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1989,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1989-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "UPM GmbH",
+        "city": "Schongau",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8011,
+          51.52462
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02081",
+        "name": "BNA1399",
+        "country": "DE",
+        "capacity_mw": 38.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1929,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1929-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "OXEA Produktion GmbH & Co.KG",
+        "city": "Oberhausen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7385,
+          51.41906
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02082",
+        "name": "BNA1409",
+        "country": "DE",
+        "capacity_mw": 21.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2010,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2010-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "DK Recycling und Roheisen GmbH",
+        "city": "Duisburg",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.849008,
+          51.318082
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02083",
+        "name": "BNA1465a",
+        "country": "DE",
+        "capacity_mw": 28.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2009,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2009-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "B+T Energie GmbH",
+        "city": "Witzenhausen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.233907,
+          50.321134
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02084",
+        "name": "BNA1523c",
+        "country": "DE",
+        "capacity_mw": 10.3,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1992,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1992-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Moritz J. Weig GmbH & Co KG",
+        "city": "Mayen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.076647,
+          54.154861
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02085",
+        "name": "BNA1526",
+        "country": "DE",
+        "capacity_mw": 44.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1961,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1961-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Raffinerie Heide GmbH",
+        "city": "Hemminstedt",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.50983,
+          51.613159
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02086",
+        "name": "BNA1811",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2016,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2016-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG Battery System GmbH",
+        "city": "Lünen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.031355927999999,
+          49.33413028
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02087",
+        "name": "BNA1812",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2016,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2016-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG Battery System GmbH",
+        "city": "Quierschied",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.187481,
+          51.550753
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02088",
+        "name": "BNA1813",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2016,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2016-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG Battery System GmbH",
+        "city": "Herne",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.879244,
+          49.249018
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02089",
+        "name": "BNA1814",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2016,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2016-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG Battery System GmbH",
+        "city": "Völklingen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.71868,
+          51.52672000000001
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02090",
+        "name": "BNA1815",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2016,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2016-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG Battery System GmbH",
+        "city": "Duisburg-Walsum",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.237136,
+          49.363481
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02091",
+        "name": "BNA1816",
+        "country": "DE",
+        "capacity_mw": 15.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2016,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2016-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG Battery System GmbH",
+        "city": "Bexbach",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.403466,
+          53.637691
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02092",
+        "name": "BNA1827",
+        "country": "DE",
+        "capacity_mw": 12.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2014,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2014-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Batteriespeicher Schwerin GmbH & Co. KG",
+        "city": "Schwerin",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.918529651,
+          50.87357395
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02093",
+        "name": "BNA1870",
+        "country": "DE",
+        "capacity_mw": 26.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1967,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1967-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Orion Engineered Carbons GmbH",
+        "city": "Köln",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3747329,
+          51.3406321
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02094",
+        "name": "BNA1874",
+        "country": "DE",
+        "capacity_mw": 12.5,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2018,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2018-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "BMW AG",
+        "city": "Leipzig",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8071646,
+          53.0758196
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02095",
+        "name": "BNA1936",
+        "country": "DE",
+        "capacity_mw": 18.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2019,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2019-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "swb Erzeugung GmbH & Co. KG",
+        "city": "Bremen",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.323657,
+          47.691097
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02096",
+        "name": "BNA1939",
+        "country": "DE",
+        "capacity_mw": 16.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2018,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2018-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "Allgäuer Überlandwerk GmbH",
+        "city": "Sulzberg-Graben / AU 5",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.196134,
+          54.848958
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02097",
+        "name": "BNA1942",
+        "country": "DE",
+        "capacity_mw": 48.0,
+        "energy_source": "Other fuels",
+        "energy_group": "Other",
+        "technology": "Storage technologies",
+        "status": "",
+        "commissioned": 2018,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2018-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "EnspireME GmbH",
+        "city": "",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "Other",
+        "energy_source_level_2": "Other fuels",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74613,
+          52.28588
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02177",
+        "name": "BNA0492",
+        "country": "DE",
+        "capacity_mw": 33.4,
+        "energy_source": "Other fossil fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 2000,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2000-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "RAG Anthrazit Ibbenbüren GmbH",
+        "city": "Ibbenbüren",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.879244,
+          49.249018
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02178",
+        "name": "BNA0997",
+        "country": "DE",
+        "capacity_mw": 42.0,
+        "energy_source": "Other fossil fuels",
+        "energy_group": "Other",
+        "technology": "Combustion Engine",
+        "status": "",
+        "commissioned": 2003,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "2003-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "STEAG New Energies GmbH",
+        "city": "Völklingen-Fenne",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0229623,
+          52.2940363
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02179",
+        "name": "BNA1864",
+        "country": "DE",
+        "capacity_mw": 9.5,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1962,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1962-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "KÄMMERER Energie GmbH",
+        "city": "Osnabrück",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0229623,
+          52.2940363
+        ]
+      },
+      "properties": {
+        "plant_id": "OPSD_EU_02180",
+        "name": "BNA1865",
+        "country": "DE",
+        "capacity_mw": 9.8,
+        "energy_source": "Mixed fossil fuels",
+        "energy_group": "Other",
+        "technology": "Steam turbine",
+        "status": "",
+        "commissioned": 1972,
+        "shutdown": null,
+        "is_shutdown": false,
+        "temporal_start": "1972-01-01",
+        "temporal_end": "2100-01-01",
+        "temporal_end_source": "default open-ended value",
+        "temporal_basis": "temporal_start from OPSD commissioned year; temporal_end from OPSD shutdown year when present, approximated as YYYY-12-31; otherwise set to 2100-01-01",
+        "company": "KÄMMERER Energie GmbH",
+        "city": "Osnabrück",
+        "state": "",
+        "eic_code": "",
+        "energy_source_level_1": "",
+        "energy_source_level_2": "",
+        "energy_source_level_3": "",
+        "original_source": "BNetzA/UBA",
+        "source_dataset": "Open Power System Data - Conventional power plants - EU CSV - 2020-10-01",
+        "source_url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/conventional_power_plants_EU.csv"
+      }
+    }
+  ]
+}

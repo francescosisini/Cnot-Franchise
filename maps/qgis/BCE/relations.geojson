@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "name": "BCE_relations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Central Bank Main Building — ECB Gallileo",
+        "agency": "BCE",
+        "layer": "relations",
+        "group": "BCE",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            8.702,
+            50.109
+          ],
+          [
+            8.6724,
+            50.1095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Central Bank Main Building — ECB Taunustor",
+        "agency": "BCE",
+        "layer": "relations",
+        "group": "BCE",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            8.702,
+            50.109
+          ],
+          [
+            8.6731,
+            50.1132
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Central Bank Main Building — ECB Brussels Representative Office / House of the Euro",
+        "agency": "BCE",
+        "layer": "relations",
+        "group": "BCE",
+        "source_status": "conceptual relation",
+        "relation_type": "institutional link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            8.702,
+            50.109
+          ],
+          [
+            4.3676,
+            50.8388
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Central Bank Main Building — ECB financial data and supervision systems (logical node)",
+        "agency": "BCE",
+        "layer": "relations",
+        "group": "BCE",
+        "source_status": "conceptual relation",
+        "relation_type": "logical/operational link"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            8.702,
+            50.109
+          ],
+          [
+            8.702,
+            50.109
+          ]
+        ]
+      }
+    }
+  ]
+}

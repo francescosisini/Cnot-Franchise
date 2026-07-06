@@ -2,7 +2,7 @@
 % Cnot 1.7 — main.tex
 %========================================
 %\documentclass[14pt,oneside,a4paper]{book}
-\documentclass[17pt,a4paper]{extbook} % oppure 17pt, 20pt
+\documentclass[12pt,oneside]{extbook} % KDP 6x9: il formato pagina lo imposta geometry
 
 % ---------- Encoding & lingua ----------
 \usepackage[T1]{fontenc}
@@ -14,7 +14,19 @@
 
 
 % ---------- Impaginazione ----------
-\usepackage[a4paper,margin=2.5cm]{geometry}
+% KDP 6 x 9 in = 152.4 x 228.6 mm, SENZA bleed
+% Se in KDP hai selezionato 152.4 x 228.6 mm, il PDF interno deve avere esattamente questa pagina.
+\usepackage[
+  paperwidth=152.4mm,
+  paperheight=228.6mm,
+  inner=18mm,
+  outer=14mm,
+  top=15mm,
+  bottom=18mm,
+  headheight=22pt,
+  headsep=5mm,
+  includehead
+]{geometry}
 \usepackage{setspace}
 \onehalfspacing
 
@@ -128,35 +140,39 @@
 % Corpo del libro
 %========================================
 \mainmatter
+
+% Pagine prima del prologo senza numero stampato
 \pagenumbering{gobble}
 \include{chapters/proemio}
 % --- domanda ---
 \include{chapters/domanda}
-% --- prologo ---
-\include{chapters/prologo}
-% --- 17 capitoli ---
-\clearpage
+
+% Da qui parte la numerazione editoriale: Prologo = pagina 1
 \cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \pagestyle{plain}
+
+% --- prologo ---
+\include{chapters/prologo}
+
+% --- 17 capitoli ---
 \include{chapters/chapter01}
-\include{chapters/chapter02}
-%\include{chapters/chapter03}
-%\include{chapters/chapter04}
-%\include{chapters/chapter05}
-%\include{chapters/chapter06}
-%\include{chapters/chapter07}
-%\include{chapters/chapter08}
-%\include{chapters/chapter09}
-%\include{chapters/chapter10}
-%\include{chapters/chapter11}
-%\include{chapters/chapter12}
-%\include{chapters/chapter13}
-%\include{chapters/chapter14}
-%\include{chapters/chapter15}
-%\include{chapters/chapter16}
-%\include{chapters/chapter17}
+\include{chapters/chapter03}
+\include{chapters/chapter04}
+\include{chapters/chapter05}
+\include{chapters/chapter06}
+\include{chapters/chapter07}
+\include{chapters/chapter08}
+\include{chapters/chapter09}
+\include{chapters/chapter10}
+\include{chapters/chapter11}
+\include{chapters/chapter12}
+\include{chapters/chapter13}
+\include{chapters/chapter14}
+\include{chapters/chapter15}
+\include{chapters/chapter16}
+\include{chapters/chapter17}
 % --- epilogo ---
 \include{chapters/epilogo}
 %========================================

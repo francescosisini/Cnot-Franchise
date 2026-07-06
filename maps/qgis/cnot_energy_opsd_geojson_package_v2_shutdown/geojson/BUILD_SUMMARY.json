@@ -1,0 +1,19 @@
+{
+  "total_rows_with_geometry_and_year": 2180,
+  "all_except_nuclear": 2154,
+  "skipped_no_geometry": 3283,
+  "skipped_no_commissioned_year": 630,
+  "rows_with_shutdown_year": 0,
+  "rows_without_shutdown_year_open_ended_to_2100": 2180,
+  "counts_by_energy_group": {
+    "Natural gas": 437,
+    "Coal": 198,
+    "Hydro": 1249,
+    "Other": 73,
+    "Nuclear": 26,
+    "Waste": 81,
+    "Lignite": 80,
+    "Oil": 36
+  },
+  "temporal_note": "temporal_start from commissioned year; temporal_end from shutdown year when present; otherwise 2100-01-01."
+}

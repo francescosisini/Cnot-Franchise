@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "name": "EUROJUST_digital_infrastructure",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eurojust Case Management / judicial cooperation systems (logical node)",
+        "agency": "EUROJUST",
+        "layer": "digital_infrastructure",
+        "source_status": "public / approximate coordinates",
+        "group": "EUROJUST",
+        "city": "The Hague",
+        "country": "Netherlands",
+        "role": "Logical judicial cooperation systems; exact hosting location not public",
+        "geometry_note": "anchored to HQ",
+        "confidence": "logical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2909,
+          52.0918
+        ]
+      }
+    }
+  ]
+}

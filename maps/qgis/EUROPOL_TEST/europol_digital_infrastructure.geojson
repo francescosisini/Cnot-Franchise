@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "europol_eis_logical",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.288520999999999,
+          52.095346
+        ]
+      },
+      "properties": {
+        "id": "europol_eis_logical",
+        "name": "Europol Information System (EIS) - logical service node",
+        "group": "EUROPOL",
+        "layer": "europol_digital_infrastructure",
+        "agency": "Europol",
+        "kind": "database_service",
+        "status": "logical_or_undisclosed",
+        "confidence": "medium for service existence; low/no claim for physical coordinate",
+        "source_note": "Central criminal information and intelligence database; physical hosting location not public.",
+        "physical_location_public": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_siena_logical",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.288520999999999,
+          52.090346000000004
+        ]
+      },
+      "properties": {
+        "id": "europol_siena_logical",
+        "name": "SIENA secure information exchange - logical service node",
+        "group": "EUROPOL",
+        "layer": "europol_digital_infrastructure",
+        "agency": "Europol",
+        "kind": "secure_exchange_service",
+        "status": "logical_or_undisclosed",
+        "confidence": "medium for service existence; low/no claim for physical coordinate",
+        "source_note": "Secure information exchange channel used by Europol/member states; physical infrastructure location not public.",
+        "physical_location_public": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_data_processing_logical",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2755209999999995,
+          52.095346
+        ]
+      },
+      "properties": {
+        "id": "europol_data_processing_logical",
+        "name": "Europol data processing environment - logical node",
+        "group": "EUROPOL",
+        "layer": "europol_digital_infrastructure",
+        "agency": "Europol",
+        "kind": "data_processing_environment",
+        "status": "logical_or_undisclosed",
+        "confidence": "medium for service existence; low/no claim for physical coordinate",
+        "source_note": "Generic logical node for storage/processing; no public datacenter coordinate is asserted.",
+        "physical_location_public": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "europol_backup_unknown",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2755209999999995,
+          52.090346000000004
+        ]
+      },
+      "properties": {
+        "id": "europol_backup_unknown",
+        "name": "Europol backup/continuity infrastructure - location undisclosed",
+        "group": "EUROPOL",
+        "layer": "europol_digital_infrastructure",
+        "agency": "Europol",
+        "kind": "undisclosed_resilience_node",
+        "status": "logical_or_undisclosed",
+        "confidence": "medium for service existence; low/no claim for physical coordinate",
+        "source_note": "Placeholder for continuity/resilience infrastructure; fictional/cartographic placeholder, not a claimed real location.",
+        "physical_location_public": "no"
+      }
+    }
+  ]
+}
