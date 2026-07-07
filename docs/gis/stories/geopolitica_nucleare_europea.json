@@ -1,0 +1,94 @@
+{
+  "schema": "geopolitical_story.v1",
+  "id": "geopolitica_nucleare_europea",
+  "type": "geopolitical_analysis",
+  "title": "Centrali nucleari europee: il tempo come layer",
+  "status": "draft_seed",
+  "primary_question": "Che cosa diventa visibile quando le centrali nucleari europee vengono lette come infrastrutture temporali e non come semplici punti sulla mappa?",
+  "thesis": "Il nucleare, in un GIS temporale, rende leggibile la dimensione materiale delle decisioni energetiche europee: localizzazione, durata, spegnimento, assenze e concentrazioni.",
+  "geo_entry_point": {
+    "label": "Caorso / rete nucleare europea",
+    "latitude": 45.072,
+    "longitude": 9.872,
+    "reason": "Nodo italiano utile come ingresso narrativo: permette di passare dal caso nazionale alla rete europea."
+  },
+  "linked_layers": [
+    {
+      "id": "nuclear_power_plants",
+      "label": "Centrali nucleari",
+      "status": "expected_from_qgis_project",
+      "role": "layer principale della storia"
+    },
+    {
+      "id": "energy_conventional",
+      "label": "Centrali convenzionali",
+      "status": "optional",
+      "role": "layer di confronto"
+    },
+    {
+      "id": "temporal_slider",
+      "label": "Filtro temporale QGIS/qgis2web",
+      "status": "optional",
+      "role": "lettura per anno o periodo"
+    }
+  ],
+  "map_commands": [
+    {
+      "id": "go_caorso",
+      "label": "Vai al nodo Caorso",
+      "command": "gotoGIS",
+      "latitude": 45.072,
+      "longitude": 9.872
+    },
+    {
+      "id": "go_europe",
+      "label": "Guarda la rete europea",
+      "command": "gotoGIS",
+      "latitude": 50.0,
+      "longitude": 10.0
+    },
+    {
+      "id": "show_nuclear_layers",
+      "label": "Mostra layer nucleare",
+      "command": "atlasCommand",
+      "layers_on": [
+        "nuclear_power_plants",
+        "energy_nuclear",
+        "reactors"
+      ]
+    },
+    {
+      "id": "nuclear_year_1970",
+      "label": "Interroga il 1970",
+      "command": "atlasCommand",
+      "year": 1970
+    },
+    {
+      "id": "nuclear_year_1990",
+      "label": "Interroga il 1990",
+      "command": "atlasCommand",
+      "year": 1990
+    },
+    {
+      "id": "nuclear_year_2020",
+      "label": "Interroga il 2020",
+      "command": "atlasCommand",
+      "year": 2020
+    }
+  ],
+  "analysis_axes": [
+    "concentrazione geografica",
+    "evoluzione temporale",
+    "spegnimento e discontinuità",
+    "vuoti infrastrutturali",
+    "rapporto tra energia e sovranità tecnologica",
+    "differenza tra presenza fisica e scelta politica"
+  ],
+  "story_structure": [
+    "Il punto non è il punto",
+    "Accendere gli anni",
+    "Il vuoto come dato",
+    "Domande da portare al GIS"
+  ],
+  "notes": "I comandi showLayers/applyAtlasCommand/postMessage sono predisposti ma richiedono supporto lato Archive Reader/qgis2web per applicare davvero filtri e visibilità layer."
+}

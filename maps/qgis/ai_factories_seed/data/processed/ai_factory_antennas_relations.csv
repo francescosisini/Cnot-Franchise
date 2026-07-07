@@ -1,0 +1,17 @@
+factory_id,factory_short_name,factory_country,antenna_country,relationship,source
+AIF_LUMI,LUMI AIF,Finland,Iceland,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_LUMI,LUMI AIF,Finland,Latvia,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_LUMI,LUMI AIF,Finland,Switzerland,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_LUXEMBOURG,LAIF,Luxembourg,Ireland,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_IT4LIA,IT4LIA,Italy,Switzerland,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_IT4LIA,IT4LIA,Italy,Serbia,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_MIMER,Mimer,Sweden,Switzerland,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_HAMMERHAI,HammerHAI,Germany,United Kingdom,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_JAIF,JAIF,Germany,Belgium,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_JAIF,JAIF,Germany,Hungary,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_PHAROS,Pharos,Greece,Cyprus,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_PHAROS,Pharos,Greece,Malta,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_PHAROS,Pharos,Greece,North Macedonia,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_PHAROS,Pharos,Greece,Serbia,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_FRANCE,AIF France,France,Ireland,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en
+AIF_AI_AT,AI:AT,Austria,Slovakia,antenna_connected_to_factory,https://www.eurohpc-ju.europa.eu/ai-factories_en

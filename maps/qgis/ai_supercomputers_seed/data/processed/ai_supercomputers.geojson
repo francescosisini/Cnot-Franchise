@@ -1,0 +1,760 @@
+{
+  "type": "FeatureCollection",
+  "name": "ai_supercomputers",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7285,
+          64.2273
+        ]
+      },
+      "properties": {
+        "id": "AISYS_LUMI",
+        "name": "LUMI",
+        "short_name": "LUMI",
+        "country": "Finland",
+        "city": "Kajaani",
+        "host_entity": "CSC – IT Center for Science",
+        "linked_ai_factory_ids": "AIF_LUMI",
+        "linked_ai_factories": "LUMI AI Factory",
+        "system_role": "base_supercomputer",
+        "system_class": "pre_exascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "386.00",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AMD Instinct GPUs in LUMI-G",
+        "cpu": "AMD EPYC CPUs in LUMI-C",
+        "storage": "117 PB total; 2 TB/s max I/O",
+        "supplier": "HPE Cray EX",
+        "applications": "AI, deep learning, simulations, data analytics",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city_or_site_approx",
+        "notes": "LUMI AI Factory builds on the LUMI ecosystem."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3426,
+          44.4949
+        ]
+      },
+      "properties": {
+        "id": "AISYS_LEONARDO",
+        "name": "Leonardo",
+        "short_name": "Leonardo",
+        "country": "Italy",
+        "city": "Bologna",
+        "host_entity": "CINECA",
+        "linked_ai_factory_ids": "AIF_IT4LIA",
+        "linked_ai_factories": "IT4LIA",
+        "system_role": "base_supercomputer",
+        "system_class": "pre_exascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "249.04",
+        "peak_pf": "315.74",
+        "ai_peak_pf": "up to 10 EFLOPS FP16 AI",
+        "accelerator_or_gpu": "13,824 NVIDIA Ampere-based Da Vinci GPUs",
+        "cpu": "Intel Ice Lake; Intel Sapphire Rapids",
+        "storage": "100+ PB HDD plus 5 PB flash/NVMe",
+        "supplier": "ATOS / BullSequana XH2000",
+        "applications": "HPC, AI, data analysis, urgent/cloud computing",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city",
+        "notes": "Core Italian AI/HPC system at Bologna Tecnopolo."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3426,
+          44.4949
+        ]
+      },
+      "properties": {
+        "id": "AISYS_LISA",
+        "name": "LISA upgrade to Leonardo",
+        "short_name": "LISA",
+        "country": "Italy",
+        "city": "Bologna",
+        "host_entity": "CINECA",
+        "linked_ai_factory_ids": "AIF_IT4LIA",
+        "linked_ai_factories": "IT4LIA",
+        "system_role": "ai_optimised_upgrade",
+        "system_class": "ai_factory_upgrade",
+        "status": "inaugurated_or_deploying",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI-optimised partition inside Leonardo ecosystem",
+        "cpu": "",
+        "storage": "",
+        "supplier": "Eviden/EuroHPC contract",
+        "applications": "LLMs, multimodal generative AI",
+        "source": "https://www.eurohpc-ju.europa.eu/inauguration-sol-new-quantum-computer-together-lisa-upgrade-leonardo-supercomputer-2026-06-11_en",
+        "coordinate_precision": "city",
+        "notes": "LISA extends Leonardo AI capacity."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1686,
+          41.3874
+        ]
+      },
+      "properties": {
+        "id": "AISYS_MARENOSTRUM5",
+        "name": "MareNostrum 5",
+        "short_name": "MN5",
+        "country": "Spain",
+        "city": "Barcelona",
+        "host_entity": "Barcelona Supercomputing Center",
+        "linked_ai_factory_ids": "AIF_BSC",
+        "linked_ai_factories": "BSC AI Factory",
+        "system_role": "base_supercomputer_with_ai_upgrade",
+        "system_class": "pre_exascale_eurohpc",
+        "status": "operational_and_upgrading",
+        "sustained_pf": "215.40",
+        "peak_pf": "314",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "NVIDIA Hopper; NVIDIA GB200 in NGT ACC",
+        "cpu": "Intel Sapphire Rapids; NVIDIA Grace",
+        "storage": "248 PB net + 402 PB tape archive",
+        "supplier": "Bull SAS / Lenovo",
+        "applications": "HPC, AI, deep learning, medical apps, digital twins",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city",
+        "notes": "BSC AI Factory upgrades MareNostrum 5."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0662,
+          49.7878
+        ]
+      },
+      "properties": {
+        "id": "AISYS_MELUXINA",
+        "name": "MeluXina",
+        "short_name": "MeluXina",
+        "country": "Luxembourg",
+        "city": "Bissen",
+        "host_entity": "LuxProvide",
+        "linked_ai_factory_ids": "AIF_LUXEMBOURG",
+        "linked_ai_factories": "Luxembourg AI Factory",
+        "system_role": "base_supercomputer",
+        "system_class": "petascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "12.81",
+        "peak_pf": "18.29",
+        "ai_peak_pf": "500 AI PFLOPS accelerator partition",
+        "accelerator_or_gpu": "NVIDIA Ampere A100",
+        "cpu": "AMD EPYC",
+        "storage": "20 PB main storage; all-flash scratch tier",
+        "supplier": "Atos / BullSequana XH2000",
+        "applications": "AI, digital twins, quantum simulation",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city_or_site_approx",
+        "notes": "Existing Luxembourg EuroHPC system."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0662,
+          49.7878
+        ]
+      },
+      "properties": {
+        "id": "AISYS_MELUXINA_AI",
+        "name": "MeluXina-AI",
+        "short_name": "MeluXina-AI",
+        "country": "Luxembourg",
+        "city": "Bissen / Bettembourg",
+        "host_entity": "LuxProvide / Luxembourg AI Factory",
+        "linked_ai_factory_ids": "AIF_LUXEMBOURG",
+        "linked_ai_factories": "Luxembourg AI Factory",
+        "system_role": "ai_optimised_supercomputer",
+        "system_class": "ai_factory_system",
+        "status": "planned_or_deploying",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "multi-exaflop AI performance",
+        "accelerator_or_gpu": "2100+ GPU-AI accelerators",
+        "cpu": "",
+        "storage": "secure processing environments",
+        "supplier": "",
+        "applications": "AI training, fine-tuning, inference",
+        "source": "https://www.eurohpc-ju.europa.eu/ai-factories/luxembourg_en",
+        "coordinate_precision": "city_or_site_approx",
+        "notes": "Core AI system of Luxembourg AI Factory."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3625,
+          50.922
+        ]
+      },
+      "properties": {
+        "id": "AISYS_JUPITER",
+        "name": "JUPITER",
+        "short_name": "JUPITER",
+        "country": "Germany",
+        "city": "Jülich",
+        "host_entity": "Jülich Supercomputing Centre",
+        "linked_ai_factory_ids": "AIF_JAIF",
+        "linked_ai_factories": "JUPITER AI Factory",
+        "system_role": "base_supercomputer",
+        "system_class": "exascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "1000+",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "~24,000 NVIDIA GH200 Grace Hopper Superchips",
+        "cpu": "NVIDIA Grace Hopper architecture",
+        "storage": "",
+        "supplier": "Eviden / BullSequana XH3000",
+        "applications": "large simulations, advanced AI workloads",
+        "source": "https://www.eurohpc-ju.europa.eu/two-new-eurohpc-systems-join-top500-jupiter-remains-among-worlds-fastest-supercomputers-2026-06-23_en",
+        "coordinate_precision": "city",
+        "notes": "Europe's first exascale EuroHPC system."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1829,
+          48.7758
+        ]
+      },
+      "properties": {
+        "id": "AISYS_HAMMERHAI",
+        "name": "HammerHAI supercomputer",
+        "short_name": "HammerHAI system",
+        "country": "Germany",
+        "city": "Stuttgart",
+        "host_entity": "HLRS",
+        "linked_ai_factory_ids": "AIF_HAMMERHAI",
+        "linked_ai_factories": "HammerHAI",
+        "system_role": "ai_optimised_supercomputer",
+        "system_class": "ai_factory_system",
+        "status": "contract_signed_delivery_2026",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI-optimised architecture; details TBC",
+        "cpu": "",
+        "storage": "",
+        "supplier": "",
+        "applications": "AI, ML, engineering, manufacturing, automotive",
+        "source": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-ai-supercomputer-hammerhai-2026-03-16_en",
+        "coordinate_precision": "city",
+        "notes": "Standalone AI-optimised system under AI Factories initiative."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6214,
+          58.4108
+        ]
+      },
+      "properties": {
+        "id": "AISYS_ARRHENIUS",
+        "name": "Arrhenius",
+        "short_name": "Arrhenius",
+        "country": "Sweden",
+        "city": "Linköping",
+        "host_entity": "Linköping University / NAISS",
+        "linked_ai_factory_ids": "AIF_MIMER",
+        "linked_ai_factories": "Mimer AI Factory",
+        "system_role": "base_supercomputer",
+        "system_class": "eurohpc_system_ai_ready",
+        "status": "installing_or_deploying",
+        "sustained_pf": "60",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "1,528 NVIDIA Grace Hopper Superchips",
+        "cpu": "424 AMD Turin 128-core CPUs",
+        "storage": "29 PB parallel file system",
+        "supplier": "HPE Cray EX",
+        "applications": "AI training, medicine, materials, climate",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city_or_campus_approx",
+        "notes": "Associated here with Mimer AI Factory."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0563,
+          37.7145
+        ]
+      },
+      "properties": {
+        "id": "AISYS_DAEDALUS",
+        "name": "DAEDALUS",
+        "short_name": "DAEDALUS",
+        "country": "Greece",
+        "city": "Lavrio / Attica",
+        "host_entity": "GRNET",
+        "linked_ai_factory_ids": "AIF_PHAROS",
+        "linked_ai_factories": "Pharos AI Factory",
+        "system_role": "base_supercomputer",
+        "system_class": "mid_range_petascale_eurohpc",
+        "status": "deploying_or_planned",
+        "sustained_pf": "89",
+        "peak_pf": "115",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "NVIDIA H100 via GH200 superchips",
+        "cpu": "GH200 ARM cores",
+        "storage": "1 PB NVMe + 10 PB usable storage",
+        "supplier": "HPE NVIDIA GH200 architecture",
+        "applications": "HPC, AI, Big Data/HPDA",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city_or_region_approx",
+        "notes": "EuroHPC locates DAEDALUS in Attica/Lavrio."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3219,
+          42.6977
+        ]
+      },
+      "properties": {
+        "id": "AISYS_DISCOVERER",
+        "name": "Discoverer",
+        "short_name": "Discoverer",
+        "country": "Bulgaria",
+        "city": "Sofia",
+        "host_entity": "Sofia Tech Park",
+        "linked_ai_factory_ids": "AIF_BRAINPP",
+        "linked_ai_factories": "BRAIN++",
+        "system_role": "base_supercomputer_with_ai_resources",
+        "system_class": "petascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "4.52",
+        "peak_pf": "5.94",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "4 NVIDIA DGX H200 systems / 32 H200 GPUs",
+        "cpu": "AMD EPYC 7H12",
+        "storage": "2 PB + 5 PB Lustre + 442 TB Weka AI storage",
+        "supplier": "Atos / BullSequana XH2000",
+        "applications": "AI, SLM, ML, climate, materials, drug discovery",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city",
+        "notes": "Base Bulgarian AI/HPC infrastructure."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6459,
+          46.5547
+        ]
+      },
+      "properties": {
+        "id": "AISYS_VEGA",
+        "name": "Vega",
+        "short_name": "Vega",
+        "country": "Slovenia",
+        "city": "Maribor",
+        "host_entity": "IZUM",
+        "linked_ai_factory_ids": "AIF_SLAIF",
+        "linked_ai_factories": "SLAIF",
+        "system_role": "base_supercomputer_or_ecosystem",
+        "system_class": "petascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "6.92",
+        "peak_pf": "10.05",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "240 NVIDIA A100 GPUs",
+        "cpu": "AMD EPYC 7H12",
+        "storage": "1 PB NVMe Lustre + 23 PB Ceph",
+        "supplier": "Atos / BullSequana XH2000",
+        "applications": "HPC, AI, Big Data/HPDA",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city",
+        "notes": "Visible Slovenian EuroHPC base for AI Factory ecosystem."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2625,
+          49.8209
+        ]
+      },
+      "properties": {
+        "id": "AISYS_KAROLINA",
+        "name": "Karolina",
+        "short_name": "Karolina",
+        "country": "Czechia",
+        "city": "Ostrava",
+        "host_entity": "IT4Innovations",
+        "linked_ai_factory_ids": "AIF_CZAI",
+        "linked_ai_factories": "Czech AI Factory",
+        "system_role": "base_supercomputer",
+        "system_class": "petascale_eurohpc",
+        "status": "operational",
+        "sustained_pf": "9.59",
+        "peak_pf": "12.91",
+        "ai_peak_pf": "up to 150 PFLOPS AI computations",
+        "accelerator_or_gpu": "NVIDIA A100 Tensor Core GPUs",
+        "cpu": "100,000+ CPU cores",
+        "storage": "1+ PB user data; 1 TB/s high-speed storage",
+        "supplier": "HPE Apollo systems",
+        "applications": "HPC, AI, Big Data",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city",
+        "notes": "KarolAIna builds on Karolina."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2625,
+          49.8209
+        ]
+      },
+      "properties": {
+        "id": "AISYS_KAROLAINA",
+        "name": "KarolAIna",
+        "short_name": "KarolAIna",
+        "country": "Czechia",
+        "city": "Ostrava",
+        "host_entity": "IT4Innovations",
+        "linked_ai_factory_ids": "AIF_CZAI",
+        "linked_ai_factories": "Czech AI Factory",
+        "system_role": "ai_optimised_supercomputer",
+        "system_class": "ai_factory_system",
+        "status": "selected_or_planned",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "~850 PFLOPS AI operations",
+        "accelerator_or_gpu": "~340 AI chips",
+        "cpu": "",
+        "storage": "",
+        "supplier": "",
+        "applications": "AI workloads and adoption in Czechia",
+        "source": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-six-additional-ai-factories-expand-europes-ai-capabilities-2025-10-10_en",
+        "coordinate_precision": "city",
+        "notes": "New AI-optimised supercomputer linked to CZAI."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9252,
+          52.4064
+        ]
+      },
+      "properties": {
+        "id": "AISYS_PIAST_AI_PLATFORM",
+        "name": "PIAST-AI computing platform",
+        "short_name": "PIAST-AI sys",
+        "country": "Poland",
+        "city": "Poznań",
+        "host_entity": "PCSS",
+        "linked_ai_factory_ids": "AIF_PIAST_AI",
+        "linked_ai_factories": "PIAST-AI Factory",
+        "system_role": "ai_hpc_platform",
+        "system_class": "ai_factory_platform",
+        "status": "active_or_deploying",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "high-end GPUs and AI/HPC resources",
+        "cpu": "",
+        "storage": "",
+        "supplier": "",
+        "applications": "cybersecurity, quantum-enhanced AI, health, space, robotics",
+        "source": "https://www.eurohpc-ju.europa.eu/ai-factories/poland_en",
+        "coordinate_precision": "city",
+        "notes": "Hardware details to verify."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2797,
+          54.6872
+        ]
+      },
+      "properties": {
+        "id": "AISYS_LITAI_INFRA",
+        "name": "LitAI sovereign AI infrastructure",
+        "short_name": "LitAI infra",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "host_entity": "Vilnius University / LRTC VDC3",
+        "linked_ai_factory_ids": "AIF_LITAI",
+        "linked_ai_factories": "LitAI Factory",
+        "system_role": "ai_optimised_infrastructure",
+        "system_class": "ai_factory_system",
+        "status": "selected_or_planned",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI accelerators; details TBC",
+        "cpu": "",
+        "storage": "data storage and HPC for AI workloads",
+        "supplier": "",
+        "applications": "cybersecurity, green energy, smart industry, digital health",
+        "source": "https://www.eurohpc-ju.europa.eu/lithuania_en",
+        "coordinate_precision": "city",
+        "notes": "Hosted at LRTC VDC3 according to EuroHPC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9041,
+          52.3676
+        ]
+      },
+      "properties": {
+        "id": "AISYS_NLAIF_SUPERCOMPUTER",
+        "name": "Dutch AI-optimised supercomputer",
+        "short_name": "NLAIF system",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "host_entity": "AIFNL Foundation / SURF",
+        "linked_ai_factory_ids": "AIF_NLAIF",
+        "linked_ai_factories": "Dutch AI Factory",
+        "system_role": "ai_optimised_supercomputer",
+        "system_class": "ai_factory_system",
+        "status": "selected_or_planned",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI accelerators; details TBC",
+        "cpu": "",
+        "storage": "secure scalable infrastructure and storage",
+        "supplier": "",
+        "applications": "healthcare, mobility, finance, agriculture",
+        "source": "https://www.eurohpc-ju.europa.eu/netherlands_en",
+        "coordinate_precision": "country_anchor_city",
+        "notes": "Precise site to verify."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5448,
+          42.8782
+        ]
+      },
+      "properties": {
+        "id": "AISYS_1HEALTHAI_PLATFORM",
+        "name": "1HealthAI experimental platform",
+        "short_name": "1HealthAI sys",
+        "country": "Spain",
+        "city": "Santiago de Compostela",
+        "host_entity": "CESGA / CSIC",
+        "linked_ai_factory_ids": "AIF_1HEALTHAI",
+        "linked_ai_factories": "Spanish 1HealthAI Factory",
+        "system_role": "ai_experimental_platform",
+        "system_class": "ai_factory_platform",
+        "status": "selected_or_planned",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI compute platform; details TBC",
+        "cpu": "",
+        "storage": "",
+        "supplier": "",
+        "applications": "One Health, genomics, personalised medicine, agri-food",
+        "source": "https://www.eurohpc-ju.europa.eu/spain-1health-ai_en",
+        "coordinate_precision": "city_or_industrial_park_approx",
+        "notes": "Located in A Sionlla industrial park according to EuroHPC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945,
+          50.0647
+        ]
+      },
+      "properties": {
+        "id": "AISYS_GAIA",
+        "name": "Gaia AI computing platforms",
+        "short_name": "Gaia sys",
+        "country": "Poland",
+        "city": "Kraków",
+        "host_entity": "ACK Cyfronet AGH / PLGrid",
+        "linked_ai_factory_ids": "AIF_GAIA",
+        "linked_ai_factories": "Gaia AI Factory",
+        "system_role": "ai_computing_platform",
+        "system_class": "ai_factory_platform",
+        "status": "selected_or_planned",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "about 1,000 GPUs split into training and inference partitions",
+        "cpu": "",
+        "storage": "",
+        "supplier": "",
+        "applications": "large learning models, healthcare, space",
+        "source": "https://www.eurohpc-ju.europa.eu/poland-gaia-ai-factory_en",
+        "coordinate_precision": "city",
+        "notes": "EuroHPC reports about 1,000 GPUs."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1025,
+          44.4268
+        ]
+      },
+      "properties": {
+        "id": "AISYS_ROAI_SUPERCOMPUTER",
+        "name": "RO AI-optimised supercomputer",
+        "short_name": "RO AI sys",
+        "country": "Romania",
+        "city": "Bucharest",
+        "host_entity": "ICI Bucharest / UPB",
+        "linked_ai_factory_ids": "AIF_ROAI",
+        "linked_ai_factories": "RO AI Factory",
+        "system_role": "ai_optimised_supercomputer",
+        "system_class": "ai_factory_system",
+        "status": "selected_or_planned",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI accelerators; details TBC",
+        "cpu": "",
+        "storage": "data space hosting and AI model environment",
+        "supplier": "",
+        "applications": "SMEs, public sector, health, responsible AI",
+        "source": "https://www.eurohpc-ju.europa.eu/romania_en",
+        "coordinate_precision": "city",
+        "notes": "AI-optimised supercomputer to be acquired and deployed."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      },
+      "properties": {
+        "id": "AISYS_AI_AT_INFRA",
+        "name": "AI:AT AI-optimised infrastructure",
+        "short_name": "AI:AT infra",
+        "country": "Austria",
+        "city": "Vienna",
+        "host_entity": "Advanced Computing Austria / AIT-led consortium",
+        "linked_ai_factory_ids": "AIF_AI_AT",
+        "linked_ai_factories": "AI Factory Austria",
+        "system_role": "ai_optimised_infrastructure",
+        "system_class": "ai_factory_system",
+        "status": "active_or_deploying",
+        "sustained_pf": "",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "AI-optimised supercomputer infrastructure; details TBC",
+        "cpu": "",
+        "storage": "",
+        "supplier": "",
+        "applications": "biotech, manufacturing, public administration, health, fintech",
+        "source": "https://www.eurohpc-ju.europa.eu/ai-factories/austria_en",
+        "coordinate_precision": "city",
+        "notes": "Austrian AI Factory infrastructure."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1896,
+          48.5884
+        ]
+      },
+      "properties": {
+        "id": "AISYS_ALICE_RECOQUE",
+        "name": "Alice Recoque",
+        "short_name": "Alice Recoque",
+        "country": "France",
+        "city": "Bruyères-le-Châtel",
+        "host_entity": "CEA/TGCC / Jules Verne consortium",
+        "linked_ai_factory_ids": "AIF_FRANCE",
+        "linked_ai_factories": "AI Factory France",
+        "system_role": "future_exascale_ai_hpc_system",
+        "system_class": "exascale_eurohpc_planned",
+        "status": "planned",
+        "sustained_pf": "1000",
+        "peak_pf": "",
+        "ai_peak_pf": "",
+        "accelerator_or_gpu": "next-generation AMD MI430x GPUs",
+        "cpu": "AMD Venice; likely SiPEARL ARM scalar partition",
+        "storage": "",
+        "supplier": "Eviden Sequana XH3500",
+        "applications": "HPC/AI workloads, multi-tenant execution",
+        "source": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "coordinate_precision": "city_or_site_approx",
+        "notes": "Future French/European exascale AI-HPC anchor."
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+factory_id,factory_name,short_name,country,city,sector,source
+AIF_LUMI,LUMI AI Factory,LUMI AIF,Finland,Kajaani,Manufacturing industries,https://www.eurohpc-ju.europa.eu/ai-factories/finland_en
+AIF_LUMI,LUMI AI Factory,LUMI AIF,Finland,Kajaani,Health and life sciences,https://www.eurohpc-ju.europa.eu/ai-factories/finland_en
+AIF_LUMI,LUMI AI Factory,LUMI AIF,Finland,Kajaani,Communication technologies and networks,https://www.eurohpc-ju.europa.eu/ai-factories/finland_en
+AIF_LUMI,LUMI AI Factory,LUMI AIF,Finland,Kajaani,Climate and weather,https://www.eurohpc-ju.europa.eu/ai-factories/finland_en
+AIF_LUMI,LUMI AI Factory,LUMI AIF,Finland,Kajaani,Materials technology,https://www.eurohpc-ju.europa.eu/ai-factories/finland_en
+AIF_LUMI,LUMI AI Factory,LUMI AIF,Finland,Kajaani,Language,https://www.eurohpc-ju.europa.eu/ai-factories/finland_en
+AIF_LUXEMBOURG,Luxembourg AI Factory,LAIF,Luxembourg,Luxembourg,Finance,https://www.eurohpc-ju.europa.eu/ai-factories/luxembourg_en
+AIF_LUXEMBOURG,Luxembourg AI Factory,LAIF,Luxembourg,Luxembourg,Green Economy,https://www.eurohpc-ju.europa.eu/ai-factories/luxembourg_en
+AIF_LUXEMBOURG,Luxembourg AI Factory,LAIF,Luxembourg,Luxembourg,Space,https://www.eurohpc-ju.europa.eu/ai-factories/luxembourg_en
+AIF_LUXEMBOURG,Luxembourg AI Factory,LAIF,Luxembourg,Luxembourg,Cybersecurity,https://www.eurohpc-ju.europa.eu/ai-factories/luxembourg_en
+AIF_IT4LIA,Italian AI Factory,IT4LIA,Italy,Bologna,Agri-food,https://www.eurohpc-ju.europa.eu/ai-factories/italy_en
+AIF_IT4LIA,Italian AI Factory,IT4LIA,Italy,Bologna,Earth Sciences,https://www.eurohpc-ju.europa.eu/ai-factories/italy_en
+AIF_IT4LIA,Italian AI Factory,IT4LIA,Italy,Bologna,Cybersecurity,https://www.eurohpc-ju.europa.eu/ai-factories/italy_en
+AIF_IT4LIA,Italian AI Factory,IT4LIA,Italy,Bologna,Manufacturing,https://www.eurohpc-ju.europa.eu/ai-factories/italy_en
+AIF_MIMER,Mimer AI Factory,Mimer,Sweden,Stockholm,Life sciences,https://www.eurohpc-ju.europa.eu/ai-factories/sweden_en
+AIF_MIMER,Mimer AI Factory,Mimer,Sweden,Stockholm,Materials science,https://www.eurohpc-ju.europa.eu/ai-factories/sweden_en
+AIF_MIMER,Mimer AI Factory,Mimer,Sweden,Stockholm,Autonomous systems,https://www.eurohpc-ju.europa.eu/ai-factories/sweden_en
+AIF_MIMER,Mimer AI Factory,Mimer,Sweden,Stockholm,Gaming industry,https://www.eurohpc-ju.europa.eu/ai-factories/sweden_en
+AIF_HAMMERHAI,HammerHAI,HammerHAI,Germany,Stuttgart,Engineering,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_HAMMERHAI,HammerHAI,HammerHAI,Germany,Stuttgart,Manufacturing,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_HAMMERHAI,HammerHAI,HammerHAI,Germany,Stuttgart,Mobility,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_HAMMERHAI,HammerHAI,HammerHAI,Germany,Stuttgart,Automotive technologies,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_HAMMERHAI,HammerHAI,HammerHAI,Germany,Stuttgart,Academia,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_JAIF,JUPITER AI Factory,JAIF,Germany,Jülich,AI research,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_JAIF,JUPITER AI Factory,JAIF,Germany,Jülich,Science,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_JAIF,JUPITER AI Factory,JAIF,Germany,Jülich,Industry,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_JAIF,JUPITER AI Factory,JAIF,Germany,Jülich,Foundation model workflows,https://www.eurohpc-ju.europa.eu/ai-factories/germany_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Health,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Climate and Agriculture,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Finance,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Legal,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Energy,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Communications and Media,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_BSC,BSC AI Factory,BSC AIF,Spain,Barcelona,Public Sector,https://www.eurohpc-ju.europa.eu/ai-factories/spain_en
+AIF_PHAROS,Pharos AI Factory,Pharos,Greece,Athens,Health,https://www.eurohpc-ju.europa.eu/ai-factories/greece_en
+AIF_PHAROS,Pharos AI Factory,Pharos,Greece,Athens,Culture and Language,https://www.eurohpc-ju.europa.eu/ai-factories/greece_en
+AIF_PHAROS,Pharos AI Factory,Pharos,Greece,Athens,Sustainability,https://www.eurohpc-ju.europa.eu/ai-factories/greece_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Energy,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Aerospace,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Health,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Defense and security,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Earth Sciences,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Digital continuum,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Material Sciences,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Robotics,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Agriculture,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Finance and legal,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Education,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Mobility,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_FRANCE,AI Factory France,AIF France,France,Paris / Île-de-France,Humanities,https://www.eurohpc-ju.europa.eu/ai-factories/france_en
+AIF_SLAIF,Slovenian AI Factory,SLAIF,Slovenia,Maribor,Green Transition,https://www.eurohpc-ju.europa.eu/ai-factories/slovenia_en
+AIF_SLAIF,Slovenian AI Factory,SLAIF,Slovenia,Maribor,Health and Biotechnology,https://www.eurohpc-ju.europa.eu/ai-factories/slovenia_en
+AIF_SLAIF,Slovenian AI Factory,SLAIF,Slovenia,Maribor,Digital Society,https://www.eurohpc-ju.europa.eu/ai-factories/slovenia_en
+AIF_SLAIF,Slovenian AI Factory,SLAIF,Slovenia,Maribor,Science,https://www.eurohpc-ju.europa.eu/ai-factories/slovenia_en
+AIF_BRAINPP,Bulgarian Robotics & AI Nexus,BRAIN++,Bulgaria,Sofia,LLMs for Bulgarian Language,https://www.eurohpc-ju.europa.eu/ai-factories/bulgaria_en
+AIF_BRAINPP,Bulgarian Robotics & AI Nexus,BRAIN++,Bulgaria,Sofia,Space Observation,https://www.eurohpc-ju.europa.eu/ai-factories/bulgaria_en
+AIF_BRAINPP,Bulgarian Robotics & AI Nexus,BRAIN++,Bulgaria,Sofia,Robotics,https://www.eurohpc-ju.europa.eu/ai-factories/bulgaria_en
+AIF_BRAINPP,Bulgarian Robotics & AI Nexus,BRAIN++,Bulgaria,Sofia,Consumer Goods,https://www.eurohpc-ju.europa.eu/ai-factories/bulgaria_en
+AIF_BRAINPP,Bulgarian Robotics & AI Nexus,BRAIN++,Bulgaria,Sofia,Agriculture and Food Production,https://www.eurohpc-ju.europa.eu/ai-factories/bulgaria_en
+AIF_BRAINPP,Bulgarian Robotics & AI Nexus,BRAIN++,Bulgaria,Sofia,Healthcare,https://www.eurohpc-ju.europa.eu/ai-factories/bulgaria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Biotech,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Manufacturing,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Public Administration,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Physics,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Health,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Fintech,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Lawtech,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_AI_AT,AI Factory Austria,AI:AT,Austria,Vienna,Sustainability,https://www.eurohpc-ju.europa.eu/ai-factories/austria_en
+AIF_PIAST_AI,PIAST-AI Factory,PIAST-AI,Poland,Poznań,IT & Cybersecurity,https://www.eurohpc-ju.europa.eu/ai-factories/poland_en
+AIF_PIAST_AI,PIAST-AI Factory,PIAST-AI,Poland,Poznań,Quantum-enhanced AI,https://www.eurohpc-ju.europa.eu/ai-factories/poland_en
+AIF_PIAST_AI,PIAST-AI Factory,PIAST-AI,Poland,Poznań,Health & Life Sciences,https://www.eurohpc-ju.europa.eu/ai-factories/poland_en
+AIF_PIAST_AI,PIAST-AI Factory,PIAST-AI,Poland,Poznań,Public Sector,https://www.eurohpc-ju.europa.eu/ai-factories/poland_en
+AIF_PIAST_AI,PIAST-AI Factory,PIAST-AI,Poland,Poznań,Space & Robotics,https://www.eurohpc-ju.europa.eu/ai-factories/poland_en
+AIF_PIAST_AI,PIAST-AI Factory,PIAST-AI,Poland,Poznań,Sustainability,https://www.eurohpc-ju.europa.eu/ai-factories/poland_en
+AIF_CZAI,Czech AI Factory,CZAI,Czechia,Ostrava,AI adoption,https://www.eurohpc-ju.europa.eu/czechia_en
+AIF_CZAI,Czech AI Factory,CZAI,Czechia,Ostrava,Practical applications,https://www.eurohpc-ju.europa.eu/czechia_en
+AIF_CZAI,Czech AI Factory,CZAI,Czechia,Ostrava,Technological infrastructure,https://www.eurohpc-ju.europa.eu/czechia_en
+AIF_CZAI,Czech AI Factory,CZAI,Czechia,Ostrava,Skills development,https://www.eurohpc-ju.europa.eu/czechia_en
+AIF_LITAI,LitAI Factory,LitAI,Lithuania,Vilnius,Cybersecurity,https://www.eurohpc-ju.europa.eu/lithuania_en
+AIF_LITAI,LitAI Factory,LitAI,Lithuania,Vilnius,Green energy,https://www.eurohpc-ju.europa.eu/lithuania_en
+AIF_LITAI,LitAI Factory,LitAI,Lithuania,Vilnius,Smart industry,https://www.eurohpc-ju.europa.eu/lithuania_en
+AIF_LITAI,LitAI Factory,LitAI,Lithuania,Vilnius,Digital health,https://www.eurohpc-ju.europa.eu/lithuania_en
+AIF_NLAIF,Dutch AI Factory,NLAIF,Netherlands,Amsterdam,Healthcare,https://www.eurohpc-ju.europa.eu/netherlands_en
+AIF_NLAIF,Dutch AI Factory,NLAIF,Netherlands,Amsterdam,Mobility,https://www.eurohpc-ju.europa.eu/netherlands_en
+AIF_NLAIF,Dutch AI Factory,NLAIF,Netherlands,Amsterdam,Finance,https://www.eurohpc-ju.europa.eu/netherlands_en
+AIF_NLAIF,Dutch AI Factory,NLAIF,Netherlands,Amsterdam,Agriculture,https://www.eurohpc-ju.europa.eu/netherlands_en
+AIF_NLAIF,Dutch AI Factory,NLAIF,Netherlands,Amsterdam,Sensitive data AI,https://www.eurohpc-ju.europa.eu/netherlands_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,One Health,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Human health,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Animal health,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Environmental health,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Genomics,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Personalised medicine,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Agri-food,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Blue biotechnology,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_1HEALTHAI,Spanish 1HealthAI Factory,1HealthAI,Spain,Santiago de Compostela,Pharmaceutical innovation,https://www.eurohpc-ju.europa.eu/spain-1health-ai_en
+AIF_GAIA,Gaia AI Factory,Gaia,Poland,Kraków,Large Learning Models,https://www.eurohpc-ju.europa.eu/poland-gaia-ai-factory_en
+AIF_GAIA,Gaia AI Factory,Gaia,Poland,Kraków,Healthcare,https://www.eurohpc-ju.europa.eu/poland-gaia-ai-factory_en
+AIF_GAIA,Gaia AI Factory,Gaia,Poland,Kraków,Space,https://www.eurohpc-ju.europa.eu/poland-gaia-ai-factory_en
+AIF_ROAI,RO AI Factory,RO AI,Romania,Bucharest,SMEs,https://www.eurohpc-ju.europa.eu/romania_en
+AIF_ROAI,RO AI Factory,RO AI,Romania,Bucharest,Public sector,https://www.eurohpc-ju.europa.eu/romania_en
+AIF_ROAI,RO AI Factory,RO AI,Romania,Bucharest,Health,https://www.eurohpc-ju.europa.eu/romania_en
+AIF_ROAI,RO AI Factory,RO AI,Romania,Bucharest,Responsible AI,https://www.eurohpc-ju.europa.eu/romania_en
+AIF_ROAI,RO AI Factory,RO AI,Romania,Bucharest,AI model development,https://www.eurohpc-ju.europa.eu/romania_en
