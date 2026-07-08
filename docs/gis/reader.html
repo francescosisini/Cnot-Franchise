@@ -204,10 +204,6 @@
       backdrop-filter: blur(2px);
       pointer-events: none;
       box-sizing: border-box;
-      max-height: calc(100dvh - 44px);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
     }
 
     #cnotOverlay::before,
@@ -234,10 +230,6 @@
 
     .cnot-overlay-inner {
       padding: 22px 24px 20px;
-      display: flex;
-      flex-direction: column;
-      min-height: 0;
-      width: 100%;
     }
 
     .cnot-overlay-kicker {
@@ -344,12 +336,8 @@
     .cnot-overlay-body {
       overflow: hidden;
       transition: max-height .25s ease, opacity .2s ease, margin-top .2s ease;
-      max-height: none;
+      max-height: 320px;
       opacity: 1;
-      display: flex;
-      flex-direction: column;
-      min-height: 0;
-      flex: 1 1 auto;
     }
 
     body.cnot-overlay-collapsed #cnotOverlay {
@@ -384,10 +372,8 @@
     }
 
 	#archiveMetaBox {
-  	max-height: min(58vh, calc(100dvh - 300px));
+  	max-height: 35vh;
   	overflow-y: auto;
-  	overscroll-behavior: contain;
-  	scrollbar-color: rgba(57, 255, 20, 0.75) rgba(0, 0, 0, 0.35);
 	}
 
     .archive-meta-entry {
@@ -401,25 +387,6 @@
       padding-top: 0;
       margin-top: 0;
     }
-
-    .archive-meta-entry.clickable {
-      cursor: pointer;
-      border-left: 1px solid rgba(57, 255, 20, 0.25);
-      padding-left: 8px;
-      touch-action: manipulation;
-    }
-
-    .archive-meta-entry.clickable:hover {
-      background: rgba(57, 255, 20, 0.075);
-    }
-
-    .archive-meta-hint {
-      margin-top: 5px;
-      font-size: 10px;
-      opacity: 0.58;
-      text-transform: uppercase;
-    }
-
 
     .archive-meta-title {
       color: #b7ffae;
@@ -507,39 +474,6 @@
     .archive-meta-date {
       opacity: 0.7;
       text-transform: uppercase;
-    }
-
-
-    /* Fix definitivo: l'archivio deve scrollare dentro al pannello,
-       non essere tagliato dal bordo inferiore dell'overlay. */
-    #archiveMetaBox {
-      flex: 1 1 auto !important;
-      min-height: 170px;
-      max-height: none !important;
-      overflow-y: auto !important;
-      overscroll-behavior: contain;
-      padding-right: 6px;
-    }
-
-    #archiveMetaBox::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    #archiveMetaBox::-webkit-scrollbar-track {
-      background: rgba(0, 0, 0, 0.35);
-    }
-
-    #archiveMetaBox::-webkit-scrollbar-thumb {
-      background: rgba(57, 255, 20, 0.72);
-      border-radius: 999px;
-    }
-
-    .archive-controls {
-      flex: 0 0 auto;
-    }
-
-    .cnot-overlay-muted {
-      flex: 0 0 auto;
     }
 
    @media (max-width: 900px) {
@@ -961,26 +895,14 @@
       }
 
       archiveQueryStatus.textContent = "archivio sincronizzato";
-      archiveMetaBox.innerHTML = items.slice(0, 12).map(item => {
+      archiveMetaBox.innerHTML = items.slice(0, 8).map(item => {
         const archiveIndex = archiveItems.indexOf(item);
         const hasCoordinates = Boolean(getArchiveLatLon(item));
         const storyUrl = getArchiveStoryUrl(item);
 
-        const defaultAction = storyUrl ? "read" : (hasCoordinates ? "goto" : "");
-        const clickableClass = defaultAction ? " clickable" : "";
-        const hint = storyUrl
-          ? "Clicca la scheda per leggere"
-          : hasCoordinates
-            ? "Clicca la scheda per andare al nodo"
-            : "";
-
         return `
-          <div class="archive-meta-entry${clickableClass}" data-archive-entry-index="${archiveIndex}" data-default-action="${defaultAction}">
+          <div class="archive-meta-entry">
             <div class="archive-meta-title">${escapeHtml(getArchiveTitle(item))}</div>
-            <div class="archive-meta-actions archive-meta-actions-top">
-              <button class="archive-action-button" type="button" data-action="read" data-archive-index="${archiveIndex}" ${storyUrl ? "" : "disabled"}>Leggi</button>
-              <button class="archive-action-button" type="button" data-action="goto" data-archive-index="${archiveIndex}" ${hasCoordinates ? "" : "disabled"}>Vai al nodo</button>
-            </div>
             <div class="archive-meta-line">Autore: ${escapeHtml(getArchiveAuthor(item))}</div>
             <div class="archive-meta-line archive-meta-date">Data: ${escapeHtml(getArchiveDate(item) || "non indicata")}</div>
             <div class="archive-meta-line">Luogo: ${escapeHtml(getArchivePlace(item) || "non indicato")}</div>
@@ -989,11 +911,10 @@
               <button class="archive-action-button" type="button" data-action="goto" data-archive-index="${archiveIndex}" ${hasCoordinates ? "" : "disabled"}>Vai al nodo</button>
               <button class="archive-action-button" type="button" data-action="read" data-archive-index="${archiveIndex}" ${storyUrl ? "" : "disabled"}>Leggi</button>
             </div>
-            ${hint ? `<div class="archive-meta-hint">${escapeHtml(hint)}</div>` : ""}
           </div>
         `;
       }).join("") + `
-        <div class="archive-result-count">${items.length} / ${archiveItems.length} nodi · mostrati max 12</div>
+        <div class="archive-result-count">${items.length} / ${archiveItems.length} nodi · mostrati max 8</div>
       `;
     }
 
@@ -1097,34 +1018,6 @@
         return;
       }
 
-    });
-
-    archiveMetaBox.addEventListener("click", event => {
-      /*
-        UX: la scheda archivio intera diventa cliccabile.
-        Così non serve più riuscire a scorrere fino al bottone "Leggi".
-      */
-      if (event.target.closest("button[data-action][data-archive-index]")) return;
-
-      const entry = event.target.closest(".archive-meta-entry[data-archive-entry-index]");
-      if (!entry) return;
-
-      const item = archiveItems[Number(entry.dataset.archiveEntryIndex)];
-      if (!item) return;
-
-      const defaultAction = entry.dataset.defaultAction;
-
-      if (defaultAction === "read") {
-        const url = getArchiveStoryUrl(item);
-        if (url) {
-          openReader(url, getArchiveTitle(item));
-        }
-        return;
-      }
-
-      if (defaultAction === "goto") {
-        focusMapOnArchiveItem(item);
-      }
     });
 
 
@@ -1327,18 +1220,15 @@
 
 
     /* ------------------------------------------------------------------
-       INITIAL MAP VISIBILITY — SAFE STORY MODE
+       INITIAL MAP VISIBILITY
+       All'avvio del reader spegne tutti i layer qgis2web tranne:
+       - cnot--europe / cnoteurope
+       - ne_10m_admin_0country / ne_10m_admin_0_countries
 
-       All'avvio del reader spegne i layer operativi/tematici, ma lascia:
-       - contorni europei/mondiali
-       - layer che contengono racconti / punti narrativi
-
-       Motivo:
-       se spegniamo davvero tutto tranne i contorni, i racconti esistono
-       nel pannello archivio ma il loro punto non si vede più sulla mappa.
+       Così l'atlante parte pulito: solo contorni europei/mondiali.
     ------------------------------------------------------------------ */
 
-    const INITIAL_BASE_LAYER_PATTERNS = [
+    const INITIAL_VISIBLE_LAYER_PATTERNS = [
       "cnot--europe",
       "cnot_europe",
       "cnoteurope",
@@ -1348,29 +1238,6 @@
       "ne_10m_admin_0_country",
       "ne_10m_admin_0_countries",
       "lyr_ne_10m_admin_0_countries"
-    ];
-
-    const INITIAL_STORY_LAYER_PATTERNS = [
-      "story",
-      "stories",
-      "story_points",
-      "prologostory",
-      "reader_story",
-      "racconto",
-      "racconti",
-      "archive_points",
-      "archivio",
-      "narrative",
-      "events",
-      "cnot17_events",
-      "cnot_17_events",
-      "cnot17",
-      "alice_prologo",
-      "alice_prologostory_points",
-      "visa_data_flows",
-      "casa_caterina",
-      "tiny_laura",
-      "stanza_alice"
     ];
 
     function normalizeLayerKey(value) {
@@ -1384,11 +1251,11 @@
       return normalizeLayerKey(value).replaceAll("_", "");
     }
 
-    function matchesInitialPattern(name, patterns) {
+    function isInitialVisibleLayerName(name) {
       const n = normalizeLayerKey(name);
       const c = compactLayerKey(name);
 
-      return patterns.some(pattern => {
+      return INITIAL_VISIBLE_LAYER_PATTERNS.some(pattern => {
         const pn = normalizeLayerKey(pattern);
         const pc = compactLayerKey(pattern);
 
@@ -1404,14 +1271,6 @@
           c.includes(pc)
         );
       });
-    }
-
-    function isInitialBaseLayerName(name) {
-      return matchesInitialPattern(name, INITIAL_BASE_LAYER_PATTERNS);
-    }
-
-    function isInitialStoryLayerName(name) {
-      return matchesInitialPattern(name, INITIAL_STORY_LAYER_PATTERNS);
     }
 
     function getLayerDeclaredNamesForInitialVisibility(layer) {
@@ -1432,93 +1291,6 @@
       } catch (err) {}
 
       return names.filter(Boolean).map(String);
-    }
-
-    function getLayerFeaturesForInitialVisibility(layer) {
-      try {
-        const source = layer?.getSource?.();
-        if (!source) return [];
-
-        if (typeof source.getFeatures === "function") {
-          return source.getFeatures() || [];
-        }
-
-        if (typeof source.getSource === "function" && typeof source.getSource()?.getFeatures === "function") {
-          return source.getSource().getFeatures() || [];
-        }
-      } catch (err) {}
-
-      return [];
-    }
-
-    function featureLooksLikeStoryFeature(feature) {
-      try {
-        const props = typeof feature.getProperties === "function"
-          ? feature.getProperties()
-          : {};
-
-        const storyKeys = [
-          "story_file",
-          "story",
-          "url",
-          "html",
-          "content_url",
-          "artifact_url",
-          "reader_type",
-          "title",
-          "titolo"
-        ];
-
-        for (const key of storyKeys) {
-          const value = props[key];
-          if (value === undefined || value === null) continue;
-
-          const text = String(value).toLowerCase();
-          if (
-            key === "story_file" ||
-            key === "reader_type" ||
-            text.includes("reader:story") ||
-            (text.includes("stories/") && (text.includes(".html") || text.includes(".htm")))
-          ) {
-            return true;
-          }
-        }
-
-        // Fallback robusto: alcuni popup qgis2web impastano tutto in campi generici.
-        const allText = Object.entries(props)
-          .filter(([key]) => key !== "geometry")
-          .map(([key, value]) => `${key}:${value}`)
-          .join(" ")
-          .toLowerCase();
-
-        return (
-          allText.includes("reader:story") ||
-          (allText.includes("stories/") && (allText.includes(".html") || allText.includes(".htm")))
-        );
-      } catch (err) {
-        return false;
-      }
-    }
-
-    function layerLooksLikeStoryLayer(layer) {
-      const features = getLayerFeaturesForInitialVisibility(layer);
-      if (!features.length) return false;
-
-      return features.slice(0, 80).some(featureLooksLikeStoryFeature);
-    }
-
-    function shouldKeepLayerInitially(nameOrNames, layer, options = {}) {
-      const keepStoryLayers = options.keepStoryLayers !== false;
-      const names = Array.isArray(nameOrNames) ? nameOrNames : [nameOrNames];
-
-      if (names.some(isInitialBaseLayerName)) return true;
-
-      if (keepStoryLayers) {
-        if (names.some(isInitialStoryLayerName)) return true;
-        if (layerLooksLikeStoryLayer(layer)) return true;
-      }
-
-      return false;
     }
 
     function setLayerVisibleForInitialVisibility(layer, visible) {
@@ -1562,7 +1334,6 @@
     function applyInitialLayerVisibility(options = {}) {
       const retries = options.retries ?? 12;
       const silent = options.silent === true;
-      const keepStoryLayers = options.keepStoryLayers !== false;
 
       const doc = getMapDocument();
       const win = doc?.defaultView || gisFrame.contentWindow;
@@ -1570,7 +1341,7 @@
 
       if (!win || !map) {
         if (retries > 0) {
-          window.setTimeout(() => applyInitialLayerVisibility({ ...options, retries: retries - 1 }), 350);
+          window.setTimeout(() => applyInitialLayerVisibility({ retries: retries - 1, silent }), 350);
         } else if (!silent) {
           showReaderError(
             "Reader: non riesco a inizializzare la visibilità dei layer.",
@@ -1590,7 +1361,7 @@
       const globalLayerKeys = Object.keys(win).filter(key => key.startsWith("lyr_"));
 
       if (!globalLayerKeys.length && retries > 0) {
-        window.setTimeout(() => applyInitialLayerVisibility({ ...options, retries: retries - 1 }), 350);
+        window.setTimeout(() => applyInitialLayerVisibility({ retries: retries - 1, silent }), 350);
         return false;
       }
 
@@ -1600,8 +1371,7 @@
 
         seenLayers.add(layer);
 
-        const keep = shouldKeepLayerInitially(key, layer, { keepStoryLayers });
-
+        const keep = isInitialVisibleLayerName(key);
         if (setLayerVisibleForInitialVisibility(layer, keep)) {
           if (keep) {
             visibleCount++;
@@ -1624,7 +1394,7 @@
           const names = getLayerDeclaredNamesForInitialVisibility(layer);
           if (!names.length) continue;
 
-          const keep = shouldKeepLayerInitially(names, layer, { keepStoryLayers });
+          const keep = names.some(isInitialVisibleLayerName);
 
           if (setLayerVisibleForInitialVisibility(layer, keep)) {
             if (keep) {
@@ -1638,16 +1408,13 @@
         }
       }
 
-      archiveQueryStatus.textContent = keepStoryLayers
-        ? "mappa iniziale: contorni + racconti"
-        : "mappa iniziale: solo contorni";
-
+      archiveQueryStatus.textContent = "mappa iniziale: contorni";
       console.log("[InitialLayerVisibility] kept:", kept);
       console.log("[InitialLayerVisibility] hidden:", hidden);
 
       if (!silent) {
         console.log(
-          `[InitialLayerVisibility] visibili: ${visibleCount}, spenti: ${hiddenCount}, racconti: ${keepStoryLayers ? "ON" : "OFF"}`
+          `[InitialLayerVisibility] visibili: ${visibleCount}, spenti: ${hiddenCount}`
         );
       }
 
@@ -1655,8 +1422,7 @@
         visibleCount,
         hiddenCount,
         kept,
-        hidden,
-        keepStoryLayers
+        hidden
       };
     }
 
@@ -1704,9 +1470,9 @@
       updateStoryButtonFromPopup();
 
       // Stato iniziale dell'atlante:
-      // layer tematici spenti, ma contorni e racconti visibili.
+      // tutti i layer qgis2web spenti tranne contorni europei/mondiali.
       window.setTimeout(() => {
-        applyInitialLayerVisibility({ silent: true, retries: 12, keepStoryLayers: true });
+        applyInitialLayerVisibility({ silent: true, retries: 12 });
       }, 250);
 
       console.log("[Narrative GIS Reader] Reader attivo: osserva il popup senza modificarlo.");

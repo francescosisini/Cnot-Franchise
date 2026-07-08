@@ -422,26 +422,29 @@ function makeStyle(kind){
   if (!ol?.style?.Style) return undefined;
 
   if (kind === "hidden") {
-    return new ol.style.Style({});
+    return new ol.style.Style({ zIndex: -1 });
   }
 
   if (kind === "new") {
     return new ol.style.Style({
-      fill: new ol.style.Fill({ color: "rgba(242, 193, 78, 0.48)" }),
-      stroke: new ol.style.Stroke({ color: "rgba(242, 193, 78, 1)", width: 2.2 })
+      zIndex: 10003,
+      fill: new ol.style.Fill({ color: "rgba(242, 193, 78, 0.58)" }),
+      stroke: new ol.style.Stroke({ color: "rgba(242, 193, 78, 1)", width: 3 })
     });
   }
 
   if (kind === "former") {
     return new ol.style.Style({
-      fill: new ol.style.Fill({ color: "rgba(255, 92, 92, 0.35)" }),
-      stroke: new ol.style.Stroke({ color: "rgba(255, 92, 92, 1)", width: 2.4 })
+      zIndex: 10004,
+      fill: new ol.style.Fill({ color: "rgba(255, 92, 92, 0.45)" }),
+      stroke: new ol.style.Stroke({ color: "rgba(255, 92, 92, 1)", width: 3.2 })
     });
   }
 
   return new ol.style.Style({
-    fill: new ol.style.Fill({ color: "rgba(57, 255, 20, 0.20)" }),
-    stroke: new ol.style.Stroke({ color: "rgba(57, 255, 20, 0.75)", width: 1.1 })
+    zIndex: 10002,
+    fill: new ol.style.Fill({ color: "rgba(57, 255, 20, 0.30)" }),
+    stroke: new ol.style.Stroke({ color: "rgba(57, 255, 20, 0.95)", width: 1.6 })
   });
 }
 
@@ -512,6 +515,45 @@ function setNarrative(step){
   document.getElementById("narrativeBox").textContent = step.text;
 }
 
+
+function bringMembershipLayerToFront(layer){
+  if (!layer) return;
+
+  try {
+    if (typeof layer.setVisible === "function") layer.setVisible(true);
+    if (typeof layer.setOpacity === "function") layer.setOpacity(1);
+    if (typeof layer.setZIndex === "function") layer.setZIndex(10000);
+  } catch(e) {}
+
+  try {
+    const source = layer.getSource?.();
+    if (source && typeof source.changed === "function") source.changed();
+    if (typeof layer.changed === "function") layer.changed();
+
+    const win = getGISWindow();
+    const map = getMap(win);
+    if (map && typeof map.renderSync === "function") map.renderSync();
+    else if (map && typeof map.render === "function") map.render();
+  } catch(e) {}
+}
+
+function sampleMembershipFeatureProperties(layer){
+  const features = getFeatures(layer);
+  return features.slice(0, 3).map(feature => {
+    try {
+      const props = feature.getProperties();
+      const cleaned = {};
+      Object.keys(props).forEach(key => {
+        if (key !== "geometry") cleaned[key] = props[key];
+      });
+      return cleaned;
+    } catch(e) {
+      return {};
+    }
+  });
+}
+
+
 function applyMembershipState(activeIso, newIso=[], formerIso=[]){
   const match = findMembershipLayer();
 
@@ -521,7 +563,7 @@ function applyMembershipState(activeIso, newIso=[], formerIso=[]){
   }
 
   const layer = match.layer;
-  if (typeof layer.setVisible === "function") layer.setVisible(true);
+  bringMembershipLayerToFront(layer);
 
   const activeSet = new Set(activeIso);
   const newSet = new Set(newIso);
@@ -536,6 +578,7 @@ function applyMembershipState(activeIso, newIso=[], formerIso=[]){
 
   let shown = 0;
   let highlighted = 0;
+  let matchedIso = 0;
 
   for (const feature of features) {
     const iso = getFeatureIso3(feature);
@@ -544,20 +587,30 @@ function applyMembershipState(activeIso, newIso=[], formerIso=[]){
       feature.setStyle(style("former"));
       shown++;
       highlighted++;
+      matchedIso++;
     } else if (newSet.has(iso)) {
       feature.setStyle(style("new"));
       shown++;
       highlighted++;
+      matchedIso++;
     } else if (activeSet.has(iso)) {
       feature.setStyle(style("active"));
       shown++;
+      matchedIso++;
     } else {
       feature.setStyle(style("hidden"));
     }
   }
 
+  bringMembershipLayerToFront(layer);
   updateChips(activeIso, newIso, formerIso);
-  log("Layer: " + match.key + " · paesi visibili: " + shown + " · evidenziati: " + highlighted);
+
+  if (matchedIso === 0) {
+    log("ATTENZIONE: layer trovato, ma nessun paese corrisponde agli ISO richiesti.");
+    log("Campi sample feature: " + JSON.stringify(sampleMembershipFeatureProperties(layer)));
+  }
+
+  log("Layer: " + match.key + " · paesi visibili: " + shown + " · evidenziati: " + highlighted + " · match ISO: " + matchedIso);
   return true;
 }
 
@@ -605,7 +658,7 @@ function hideAllCountries(options = {}){
   }
 
   const layer = match.layer;
-  if (typeof layer.setVisible === "function") layer.setVisible(true);
+  bringMembershipLayerToFront(layer);
 
   const features = getFeatures(layer);
 
@@ -756,6 +809,7 @@ window.addEventListener("DOMContentLoaded", () => {
       <button class="primary" onclick="playCountries()">Play paese per paese</button>
       <button class="stop" onclick="stopPlay()">Stop</button>
       <button onclick="hideAllCountries()">Spegni tutto</button>
+      <button onclick="showStep(0)">Riaccendi 1958</button>
       <button onclick="resetMap()">Reset stile QGIS</button>
     </div>
   </div>

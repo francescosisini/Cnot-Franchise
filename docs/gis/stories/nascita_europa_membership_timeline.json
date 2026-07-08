@@ -21,7 +21,7 @@
   "notes": [
     "La storia accede direttamente al layer qgis2web dentro gisFrame e filtra le feature con feature.setStyle.",
     "Se il layer non viene trovato, esportare in qgis2web il layer GeoJSON eu_membership_timeline.",
-    "Versione aggiornata: all'apertura della storia tutte le feature del layer vengono nascoste, così la mappa parte da zero."
+    "Versione fix: il layer eu_membership_timeline viene portato sopra i layer base con setZIndex(10000) e gli stili feature hanno zIndex elevato."
   ],
-  "initial_state": "all_membership_features_hidden"
+  "fix": "zindex_membership_layer_and_feature_styles"
 }
