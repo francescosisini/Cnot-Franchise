@@ -57,25 +57,24 @@
       ]
     },
     {
-      "id": "prova_layer_strategici",
-      "type": "diagnostic_geopolitical_story",
-      "title": "Prova narrativa: layer strategici europei",
+      "id": "nascita_europa_membership_timeline",
+      "type": "geopolitical_story",
+      "title": "La nascita dell'Europa: una mappa che si accende",
       "author": "Francesco Sisini",
       "date": "2041-09-13",
       "latitude": 50.0,
       "longitude": 10.0,
-      "location_name": "Europa / infrastrutture strategiche",
+      "location_name": "Europa / allargamenti UE",
       "archive": "CNOT",
-      "story_file": "stories/prova_layer_strategici.html",
-      "metadata_file": "stories/prova_layer_strategici.json",
+      "story_file": "stories/nascita_europa_membership_timeline.html",
+      "metadata_file": "stories/nascita_europa_membership_timeline.json",
       "tags": [
-        "test",
+        "europa",
+        "ue",
+        "allargamento",
         "geopolitica",
-        "energia",
-        "nucleare",
-        "ai",
-        "quantum",
-        "supercomputer",
+        "storia",
+        "timeline",
         "gis"
       ]
     }

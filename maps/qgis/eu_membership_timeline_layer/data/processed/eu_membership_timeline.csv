@@ -1,0 +1,29 @@
+country_en,country_it,iso3,iso2,entry_date,exit_date,temporal_start,temporal_end,membership_status,is_current_member,founding_member,accession_wave,accession_label,members_after_accession_wave,joined_as
+Belgium,Belgio,BEL,BE,1958-01-01,,1958-01-01,2041-12-31,current_member,True,True,1,Fondatori / Trattati di Roma,6,EEC
+France,Francia,FRA,FR,1958-01-01,,1958-01-01,2041-12-31,current_member,True,True,1,Fondatori / Trattati di Roma,6,EEC
+Germany,Germania,DEU,DE,1958-01-01,,1958-01-01,2041-12-31,current_member,True,True,1,Fondatori / Trattati di Roma,6,EEC
+Italy,Italia,ITA,IT,1958-01-01,,1958-01-01,2041-12-31,current_member,True,True,1,Fondatori / Trattati di Roma,6,EEC
+Luxembourg,Lussemburgo,LUX,LU,1958-01-01,,1958-01-01,2041-12-31,current_member,True,True,1,Fondatori / Trattati di Roma,6,EEC
+Netherlands,Paesi Bassi,NLD,NL,1958-01-01,,1958-01-01,2041-12-31,current_member,True,True,1,Fondatori / Trattati di Roma,6,EEC
+Denmark,Danimarca,DNK,DK,1973-01-01,,1973-01-01,2041-12-31,current_member,True,False,2,Primo allargamento,9,EC
+Ireland,Irlanda,IRL,IE,1973-01-01,,1973-01-01,2041-12-31,current_member,True,False,2,Primo allargamento,9,EC
+United Kingdom,Regno Unito,GBR,GB,1973-01-01,2020-01-31,1973-01-01,2020-01-31,former_member,False,False,2,Primo allargamento / poi recesso,9,EC
+Greece,Grecia,GRC,GR,1981-01-01,,1981-01-01,2041-12-31,current_member,True,False,3,Allargamento mediterraneo I,10,EC
+Portugal,Portogallo,PRT,PT,1986-01-01,,1986-01-01,2041-12-31,current_member,True,False,4,Allargamento iberico,12,EC
+Spain,Spagna,ESP,ES,1986-01-01,,1986-01-01,2041-12-31,current_member,True,False,4,Allargamento iberico,12,EC
+Austria,Austria,AUT,AT,1995-01-01,,1995-01-01,2041-12-31,current_member,True,False,5,Allargamento EFTA / post Guerra fredda,15,EU
+Finland,Finlandia,FIN,FI,1995-01-01,,1995-01-01,2041-12-31,current_member,True,False,5,Allargamento EFTA / post Guerra fredda,15,EU
+Sweden,Svezia,SWE,SE,1995-01-01,,1995-01-01,2041-12-31,current_member,True,False,5,Allargamento EFTA / post Guerra fredda,15,EU
+Cyprus,Cipro,CYP,CY,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Czechia,Cechia,CZE,CZ,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Estonia,Estonia,EST,EE,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Hungary,Ungheria,HUN,HU,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Latvia,Lettonia,LVA,LV,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Lithuania,Lituania,LTU,LT,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Malta,Malta,MLT,MT,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Poland,Polonia,POL,PL,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Slovakia,Slovacchia,SVK,SK,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Slovenia,Slovenia,SVN,SI,2004-05-01,,2004-05-01,2041-12-31,current_member,True,False,6,Grande allargamento a est e Mediterraneo,25,EU
+Bulgaria,Bulgaria,BGR,BG,2007-01-01,,2007-01-01,2041-12-31,current_member,True,False,7,Allargamento balcanico I,27,EU
+Romania,Romania,ROU,RO,2007-01-01,,2007-01-01,2041-12-31,current_member,True,False,7,Allargamento balcanico I,27,EU
+Croatia,Croazia,HRV,HR,2013-07-01,,2013-07-01,2041-12-31,current_member,True,False,8,Allargamento balcanico II,28,EU

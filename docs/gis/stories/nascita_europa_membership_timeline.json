@@ -1,0 +1,27 @@
+{
+  "schema": "geopolitical_story.v1",
+  "id": "nascita_europa_membership_timeline",
+  "title": "La nascita dell'Europa: una mappa che si accende",
+  "purpose": "Geonarrazione temporale che accende i paesi europei uno alla volta secondo la data di ingresso nella Comunità/UE.",
+  "required_layer": "eu_membership_timeline",
+  "required_fields": [
+    "iso3",
+    "country_it",
+    "country_en",
+    "entry_date",
+    "exit_date",
+    "membership_status",
+    "accession_wave"
+  ],
+  "commands": [
+    "show wave",
+    "play country-by-country",
+    "highlight Brexit"
+  ],
+  "notes": [
+    "La storia accede direttamente al layer qgis2web dentro gisFrame e filtra le feature con feature.setStyle.",
+    "Se il layer non viene trovato, esportare in qgis2web il layer GeoJSON eu_membership_timeline.",
+    "Versione aggiornata: all'apertura della storia tutte le feature del layer vengono nascoste, così la mappa parte da zero."
+  ],
+  "initial_state": "all_membership_features_hidden"
+}
