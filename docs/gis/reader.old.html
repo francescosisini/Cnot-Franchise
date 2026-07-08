@@ -619,16 +619,6 @@
     let popupObserver = null;
     let currentStoryUrl = null;
     let currentStoryTitle = null;
-
-    /*
-      Stato iniziale mappa.
-      Importante: la pulizia iniziale dei layer non deve più partire
-      dopo che un racconto è già stato aperto, altrimenti può spegnere
-      il layer che il racconto sta cercando di accendere.
-    */
-    let initialLayerVisibilityTimer = null;
-    let initialLayerVisibilityDone = false;
-    let storyReaderHasOpened = false;
     
     
     readerMinimize.addEventListener("click", () => {
@@ -1109,11 +1099,6 @@
       }
 
       clearReaderError();
-
-      // Prima di caricare il racconto, stabilizziamo lo stato iniziale della mappa
-      // e impediamo che un timer del reader spenga layer usati dalla storia.
-      prepareMapBeforeOpeningStory();
-
       readerTitle.textContent = title || "Racconto";
       storyFrame.src = finalUrl;
       readerPanel.classList.add("open");
@@ -1349,25 +1334,6 @@
     function applyInitialLayerVisibility(options = {}) {
       const retries = options.retries ?? 12;
       const silent = options.silent === true;
-      const force = options.force === true;
-
-      /*
-        Guard principale:
-        se un racconto è già aperto, non applichiamo più la pulizia
-        iniziale dei layer. La storia deve avere il controllo della mappa.
-      */
-      const storyIsOpen = storyReaderHasOpened || (
-        readerPanel?.classList?.contains("open") &&
-        storyFrame?.getAttribute("src")
-      );
-
-      if (storyIsOpen && !force) {
-        console.log("[InitialLayerVisibility] saltata: un racconto è già aperto.");
-        return {
-          skipped: true,
-          reason: "story_open"
-        };
-      }
 
       const doc = getMapDocument();
       const win = doc?.defaultView || gisFrame.contentWindow;
@@ -1452,8 +1418,6 @@
         );
       }
 
-      initialLayerVisibilityDone = true;
-
       return {
         visibleCount,
         hiddenCount,
@@ -1463,51 +1427,6 @@
     }
 
     window.applyInitialLayerVisibility = applyInitialLayerVisibility;
-    window.forceInitialLayerVisibility = function() {
-      storyReaderHasOpened = false;
-      initialLayerVisibilityDone = false;
-      return applyInitialLayerVisibility({ silent: false, retries: 12, force: true });
-    };
-
-
-
-    function scheduleInitialLayerVisibility() {
-      if (initialLayerVisibilityDone || storyReaderHasOpened) return;
-
-      if (initialLayerVisibilityTimer) {
-        window.clearTimeout(initialLayerVisibilityTimer);
-      }
-
-      initialLayerVisibilityTimer = window.setTimeout(() => {
-        initialLayerVisibilityTimer = null;
-
-        if (storyReaderHasOpened) {
-          console.log("[InitialLayerVisibility] timer annullato: racconto già aperto.");
-          return;
-        }
-
-        applyInitialLayerVisibility({ silent: true, retries: 12 });
-      }, 250);
-    }
-
-    function prepareMapBeforeOpeningStory() {
-      /*
-        Se c'è ancora un timer pendente della pulizia iniziale, lo fermiamo.
-        Poi applichiamo la pulizia subito, una sola volta, prima di caricare
-        il racconto nell'iframe. Dopo questo punto il controllo passa alla storia.
-      */
-      if (initialLayerVisibilityTimer) {
-        window.clearTimeout(initialLayerVisibilityTimer);
-        initialLayerVisibilityTimer = null;
-      }
-
-      if (!initialLayerVisibilityDone) {
-        applyInitialLayerVisibility({ silent: true, retries: 0, force: true });
-        initialLayerVisibilityDone = true;
-      }
-
-      storyReaderHasOpened = true;
-    }
 
 
     function initReaderBridge() {
@@ -1552,8 +1471,9 @@
 
       // Stato iniziale dell'atlante:
       // tutti i layer qgis2web spenti tranne contorni europei/mondiali.
-      // Uso un timer annullabile, così non può spegnere layer dopo l'apertura di una storia.
-      scheduleInitialLayerVisibility();
+      window.setTimeout(() => {
+        applyInitialLayerVisibility({ silent: true, retries: 12 });
+      }, 250);
 
       console.log("[Narrative GIS Reader] Reader attivo: osserva il popup senza modificarlo.");
     }

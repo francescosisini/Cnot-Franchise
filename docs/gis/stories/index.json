@@ -21,45 +21,12 @@
         "visto"
       ]
     },
-    {
-      "id": "tecs_dhs_visa",
-      "title": "Richiesta visto TECS/DHS",
-      "author": "Francesco Sisini",
-      "date": "2041-09-03",
-      "latitude": 38.8951,
-      "longitude": -77.0364,
-      "location_name": "Washington D.C.",
-      "archive": "CNOT",
-      "story_file": "stories/tecs_dhs_visa.html",
-      "metadata_file": "stories/tecs_dhs_visa.json",
-      "tags": [
-        "diplomazia",
-        "usa",
-        "tecs",
-        "visto"
-      ]
-    },
-    {
-      "id": "convitto_access",
-      "title": "Accesso al Convitto",
-      "author": "Francesco Sisini",
-      "date": "2041-09-13",
-      "latitude": 44.8381,
-      "longitude": 11.6198,
-      "location_name": "Ferrara",
-      "archive": "CNOT",
-      "story_file": "stories/convitto_access.html",
-      "metadata_file": "stories/convitto_access.json",
-      "tags": [
-        "urbex",
-        "convitto",
-        "rocky"
-      ]
-    },
+
+
     {
       "id": "nascita_europa_membership_timeline",
       "type": "geopolitical_story",
-      "title": "La nascita dell'Europa: una mappa che si accende",
+      "title": "La nascita dell'Europa",
       "author": "Francesco Sisini",
       "date": "2041-09-13",
       "latitude": 50.0,
