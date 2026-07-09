@@ -13,7 +13,6 @@
       "location_name": "Ex Convitto Cardial Mora",
       "archive": "CNOT",
       "story_file": "stories/vendetta_in_sol_maggiore.html",
-      "metadata_file": "stories/tecs_dhs_visa.json",
       "tags": [
         "urbex",
         "usa",
@@ -21,29 +20,44 @@
         "visto"
       ]
     },
-
-
     {
-      "id": "nascita_europa_membership_timeline",
-      "type": "geopolitical_story",
-      "title": "La nascita dell'Europa",
-      "author": "Francesco Sisini",
-      "date": "2041-09-13",
-      "latitude": 50.0,
-      "longitude": 10.0,
-      "location_name": "Europa / allargamenti UE",
-      "archive": "CNOT",
-      "story_file": "stories/nascita_europa_membership_timeline.html",
-      "metadata_file": "stories/nascita_europa_membership_timeline.json",
+      "id": "europa-membership-timeline",
+      "title": "La costruzione dell’Europa",
+      "subtitle": "Timeline di adesione europea",
+      "file": "europa.html",
+      "path": "stories/europa.html",
+      "description": "Storia interattiva basata sul layer GIS eu_membership_timeline: mostra i paesi membri per ondate di adesione.",
       "tags": [
-        "europa",
-        "ue",
-        "allargamento",
-        "geopolitica",
-        "storia",
+        "Europa",
+        "Unione Europea",
         "timeline",
-        "gis"
-      ]
+        "GIS"
+      ],
+      "layer_refs": [
+        "eu_membership_timeline"
+      ],
+      "bridge": "CNOTAtlasBridge"
+    },
+    {
+      "id": "europa-membership-timeline-en",
+      "title": "The construction of Europe",
+      "subtitle": "European accession timeline",
+      "author": "Francesco Sisini",
+      "file": "europa_en.html",
+      "path": "stories/europa_en.html",
+      "story_file": "stories/europa_en.html",
+      "description": "Interactive story based on the eu_membership_timeline GIS layer: it shows EU member states by accession waves.",
+      "tags": [
+        "Europe",
+        "European Union",
+        "timeline",
+        "GIS",
+        "English"
+      ],
+      "layer_refs": [
+        "eu_membership_timeline"
+      ],
+      "bridge": "CNOTAtlasBridge"
     }
   ]
 }

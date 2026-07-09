@@ -192,7 +192,7 @@
       position: fixed;
       top: 22px;
       left: 22px;
-      width: min(420px, calc(100vw - 44px));
+      width: min(460px, calc(100vw - 44px));
       z-index: 90000;
       color: #39ff14;
       border: 1px solid rgba(57, 255, 20, 0.75);
@@ -336,7 +336,7 @@
     .cnot-overlay-body {
       overflow: hidden;
       transition: max-height .25s ease, opacity .2s ease, margin-top .2s ease;
-      max-height: 320px;
+      max-height: calc(100dvh - 90px);
       opacity: 1;
     }
 
@@ -372,8 +372,11 @@
     }
 
 	#archiveMetaBox {
-  	max-height: 35vh;
+  	max-height: min(58vh, calc(100dvh - 280px));
+  	min-height: 190px;
   	overflow-y: auto;
+  	padding-bottom: 18px;
+  	overscroll-behavior: contain;
 	}
 
     .archive-meta-entry {
@@ -386,6 +389,10 @@
       border-top: 0;
       padding-top: 0;
       margin-top: 0;
+    }
+
+    .archive-meta-entry:last-child {
+      padding-bottom: 12px;
     }
 
     .archive-meta-title {
@@ -477,6 +484,17 @@
     }
 
    @media (max-width: 900px) {
+
+  #cnotOverlay {
+    top: 12px;
+    left: 12px;
+    width: calc(100vw - 24px);
+  }
+
+  #archiveMetaBox {
+    max-height: min(62vh, calc(100dvh - 250px));
+    min-height: 220px;
+  }
 
   #readerPanel {
     top: 0;
@@ -621,15 +639,9 @@
     let currentStoryTitle = null;
 
     /*
-      Stato iniziale mappa.
-      Importante: la pulizia iniziale dei layer non deve più partire
-      dopo che un racconto è già stato aperto, altrimenti può spegnere
-      il layer che il racconto sta cercando di accendere.
+      Reader core: non applica più reset automatici di visibilità layer.
+      La visibilità cartografica è responsabilità del GIS e del bridge.
     */
-    let initialLayerVisibilityTimer = null;
-    let initialLayerVisibilityDone = false;
-    let storyReaderHasOpened = false;
-    
     
     readerMinimize.addEventListener("click", () => {
   	readerPanel.classList.toggle("minimized");
@@ -771,7 +783,22 @@
     }
 
     function getArchiveStoryUrl(item) {
-      return item.story_file || item.story || item.url || item.html || item.content_url || item.artifact_url || "";
+      const raw = item.story_file || item.story || item.url || item.html || item.content_url || item.artifact_url || item.path || item.file || "";
+      if (!raw) return "";
+
+      let url = String(raw).trim();
+
+      // Nel manifest stories/index.json vogliamo poter scrivere sia:
+      //   "path": "stories/europa.html"
+      // sia:
+      //   "file": "europa.html"
+      // senza far credere al reader che sia un JSON accessorio.
+      if (!url.toLowerCase().match(/\.(html|htm)$/)) return "";
+      if (!url.startsWith("stories/") && !url.startsWith("./stories/")) {
+        url = `stories/${url.replace(/^\.\//, "")}`;
+      }
+
+      return url.replace(/^\.\//, "");
     }
 
     function getMapObject(win) {
@@ -1110,9 +1137,7 @@
 
       clearReaderError();
 
-      // Prima di caricare il racconto, stabilizziamo lo stato iniziale della mappa
-      // e impediamo che un timer del reader spenga layer usati dalla storia.
-      prepareMapBeforeOpeningStory();
+      // Nessun reset automatico dei layer: il reader carica solo la storia.
 
       readerTitle.textContent = title || "Racconto";
       storyFrame.src = finalUrl;
@@ -1234,281 +1259,11 @@
     }
 
 
-    /* ------------------------------------------------------------------
-       INITIAL MAP VISIBILITY
-       All'avvio del reader spegne tutti i layer qgis2web tranne:
-       - cnot--europe / cnoteurope
-       - ne_10m_admin_0country / ne_10m_admin_0_countries
-
-       Così l'atlante parte pulito: solo contorni europei/mondiali.
-    ------------------------------------------------------------------ */
-
-    const INITIAL_VISIBLE_LAYER_PATTERNS = [
-      "cnot--europe",
-      "cnot_europe",
-      "cnoteurope",
-      "lyr_cnoteurope",
-
-      "ne_10m_admin_0country",
-      "ne_10m_admin_0_country",
-      "ne_10m_admin_0_countries",
-      "lyr_ne_10m_admin_0_countries"
-    ];
-
-    function normalizeLayerKey(value) {
-      return String(value || "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "_")
-        .replace(/^_+|_+$/g, "");
-    }
-
-    function compactLayerKey(value) {
-      return normalizeLayerKey(value).replaceAll("_", "");
-    }
-
-    function isInitialVisibleLayerName(name) {
-      const n = normalizeLayerKey(name);
-      const c = compactLayerKey(name);
-
-      return INITIAL_VISIBLE_LAYER_PATTERNS.some(pattern => {
-        const pn = normalizeLayerKey(pattern);
-        const pc = compactLayerKey(pattern);
-
-        if (!pn || !pc) return false;
-
-        return (
-          n === pn ||
-          n.startsWith(pn + "_") ||
-          n.startsWith("lyr_" + pn + "_") ||
-          n.includes(pn) ||
-          c === pc ||
-          c.startsWith("lyr" + pc) ||
-          c.includes(pc)
-        );
-      });
-    }
-
-    function getLayerDeclaredNamesForInitialVisibility(layer) {
-      const names = [];
-
-      try {
-        if (typeof layer.get === "function") {
-          names.push(layer.get("title"));
-          names.push(layer.get("name"));
-          names.push(layer.get("layerName"));
-          names.push(layer.get("id"));
-        }
-
-        if (typeof layer.getProperties === "function") {
-          const props = layer.getProperties();
-          names.push(props.title, props.name, props.layerName, props.id);
-        }
-      } catch (err) {}
-
-      return names.filter(Boolean).map(String);
-    }
-
-    function setLayerVisibleForInitialVisibility(layer, visible) {
-      if (!layer) return false;
-
-      if (typeof layer.setVisible === "function") {
-        layer.setVisible(Boolean(visible));
-        return true;
-      }
-
-      if ("visible" in layer) {
-        layer.visible = Boolean(visible);
-        return true;
-      }
-
-      return false;
-    }
-
-    function flattenLayerCollectionForInitialVisibility(collection, output = []) {
-      if (!collection) return output;
-
-      const layers = typeof collection.getArray === "function"
-        ? collection.getArray()
-        : Array.isArray(collection)
-          ? collection
-          : [];
-
-      for (const layer of layers) {
-        output.push(layer);
-
-        try {
-          if (layer && typeof layer.getLayers === "function") {
-            flattenLayerCollectionForInitialVisibility(layer.getLayers(), output);
-          }
-        } catch (err) {}
-      }
-
-      return output;
-    }
-
-    function applyInitialLayerVisibility(options = {}) {
-      const retries = options.retries ?? 12;
-      const silent = options.silent === true;
-      const force = options.force === true;
-
-      /*
-        Guard principale:
-        se un racconto è già aperto, non applichiamo più la pulizia
-        iniziale dei layer. La storia deve avere il controllo della mappa.
-      */
-      const storyIsOpen = storyReaderHasOpened || (
-        readerPanel?.classList?.contains("open") &&
-        storyFrame?.getAttribute("src")
-      );
-
-      if (storyIsOpen && !force) {
-        console.log("[InitialLayerVisibility] saltata: un racconto è già aperto.");
-        return {
-          skipped: true,
-          reason: "story_open"
-        };
-      }
-
-      const doc = getMapDocument();
-      const win = doc?.defaultView || gisFrame.contentWindow;
-      const map = getMapObject(win);
-
-      if (!win || !map) {
-        if (retries > 0) {
-          window.setTimeout(() => applyInitialLayerVisibility({ retries: retries - 1, silent }), 350);
-        } else if (!silent) {
-          showReaderError(
-            "Reader: non riesco a inizializzare la visibilità dei layer.",
-            "La mappa non è ancora accessibile oppure non espone un oggetto map."
-          );
-        }
-        return false;
-      }
-
-      const seenLayers = new Set();
-      let visibleCount = 0;
-      let hiddenCount = 0;
-      const kept = [];
-      const hidden = [];
-
-      // Caso qgis2web classico: layer globali window.lyr_...
-      const globalLayerKeys = Object.keys(win).filter(key => key.startsWith("lyr_"));
-
-      if (!globalLayerKeys.length && retries > 0) {
-        window.setTimeout(() => applyInitialLayerVisibility({ retries: retries - 1, silent }), 350);
-        return false;
-      }
-
-      for (const key of globalLayerKeys) {
-        const layer = win[key];
-        if (!layer || seenLayers.has(layer)) continue;
-
-        seenLayers.add(layer);
-
-        const keep = isInitialVisibleLayerName(key);
-        if (setLayerVisibleForInitialVisibility(layer, keep)) {
-          if (keep) {
-            visibleCount++;
-            kept.push(key);
-          } else {
-            hiddenCount++;
-            hidden.push(key);
-          }
-        }
-      }
-
-      // Fallback/integrazione OpenLayers: layer con title/name ma non globali.
-      if (map && typeof map.getLayers === "function") {
-        const allLayers = flattenLayerCollectionForInitialVisibility(map.getLayers(), []);
-
-        for (const layer of allLayers) {
-          if (!layer || seenLayers.has(layer)) continue;
-          seenLayers.add(layer);
-
-          const names = getLayerDeclaredNamesForInitialVisibility(layer);
-          if (!names.length) continue;
-
-          const keep = names.some(isInitialVisibleLayerName);
-
-          if (setLayerVisibleForInitialVisibility(layer, keep)) {
-            if (keep) {
-              visibleCount++;
-              kept.push(names.join(" / "));
-            } else {
-              hiddenCount++;
-              hidden.push(names.join(" / "));
-            }
-          }
-        }
-      }
-
-      archiveQueryStatus.textContent = "mappa iniziale: contorni";
-      console.log("[InitialLayerVisibility] kept:", kept);
-      console.log("[InitialLayerVisibility] hidden:", hidden);
-
-      if (!silent) {
-        console.log(
-          `[InitialLayerVisibility] visibili: ${visibleCount}, spenti: ${hiddenCount}`
-        );
-      }
-
-      initialLayerVisibilityDone = true;
-
-      return {
-        visibleCount,
-        hiddenCount,
-        kept,
-        hidden
-      };
-    }
-
-    window.applyInitialLayerVisibility = applyInitialLayerVisibility;
-    window.forceInitialLayerVisibility = function() {
-      storyReaderHasOpened = false;
-      initialLayerVisibilityDone = false;
-      return applyInitialLayerVisibility({ silent: false, retries: 12, force: true });
-    };
-
-
-
-    function scheduleInitialLayerVisibility() {
-      if (initialLayerVisibilityDone || storyReaderHasOpened) return;
-
-      if (initialLayerVisibilityTimer) {
-        window.clearTimeout(initialLayerVisibilityTimer);
-      }
-
-      initialLayerVisibilityTimer = window.setTimeout(() => {
-        initialLayerVisibilityTimer = null;
-
-        if (storyReaderHasOpened) {
-          console.log("[InitialLayerVisibility] timer annullato: racconto già aperto.");
-          return;
-        }
-
-        applyInitialLayerVisibility({ silent: true, retries: 12 });
-      }, 250);
-    }
-
-    function prepareMapBeforeOpeningStory() {
-      /*
-        Se c'è ancora un timer pendente della pulizia iniziale, lo fermiamo.
-        Poi applichiamo la pulizia subito, una sola volta, prima di caricare
-        il racconto nell'iframe. Dopo questo punto il controllo passa alla storia.
-      */
-      if (initialLayerVisibilityTimer) {
-        window.clearTimeout(initialLayerVisibilityTimer);
-        initialLayerVisibilityTimer = null;
-      }
-
-      if (!initialLayerVisibilityDone) {
-        applyInitialLayerVisibility({ silent: true, retries: 0, force: true });
-        initialLayerVisibilityDone = true;
-      }
-
-      storyReaderHasOpened = true;
-    }
-
+    /*
+      INITIAL MAP VISIBILITY rimosso.
+      Il reader non deve spegnere/accendere layer all'avvio né prima di aprire una storia.
+      I comandi cartografici passano solo dal bridge.
+    */
 
     function initReaderBridge() {
       const doc = getMapDocument();
@@ -1550,18 +1305,13 @@
 
       updateStoryButtonFromPopup();
 
-      // Stato iniziale dell'atlante:
-      // tutti i layer qgis2web spenti tranne contorni europei/mondiali.
-      // Uso un timer annullabile, così non può spegnere layer dopo l'apertura di una storia.
-      scheduleInitialLayerVisibility();
-
       console.log("[Narrative GIS Reader] Reader attivo: osserva il popup senza modificarlo.");
     }
 
 
     /*
       Atlas Bridge spostato in file esterno:
-      ./atlas_bridge.js
+      ./js/cnot-atlas-bridge.js
 
       Manteniamo qui solo il reader core.
     */
@@ -1586,7 +1336,7 @@
     }, 2500);
   </script>
 
-  <script src="atlas_bridge.js"></script>
+  <script src="js/cnot-atlas-bridge.js"></script>
 
 </body>
 </html>

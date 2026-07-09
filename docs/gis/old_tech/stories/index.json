@@ -1,0 +1,49 @@
+{
+  "archive_name": "CNOT",
+  "archive_title": "Europa Quantistica 2041",
+  "last_update": "2041-09-13",
+  "stories": [
+    {
+      "id": "cnot_17",
+      "title": "Cnot 1.7 dentro all' ex convitto",
+      "author": "Francesco Sisini",
+      "date": "2041-09-03",
+      "latitude": 44.82747829,
+      "longitude": 11.61067217,
+      "location_name": "Ex Convitto Cardial Mora",
+      "archive": "CNOT",
+      "story_file": "stories/vendetta_in_sol_maggiore.html",
+      "metadata_file": "stories/tecs_dhs_visa.json",
+      "tags": [
+        "urbex",
+        "usa",
+        "tecs",
+        "visto"
+      ]
+    },
+
+
+    {
+      "id": "nascita_europa_membership_timeline",
+      "type": "geopolitical_story",
+      "title": "La nascita dell'Europa",
+      "author": "Francesco Sisini",
+      "date": "2041-09-13",
+      "latitude": 50.0,
+      "longitude": 10.0,
+      "location_name": "Europa / allargamenti UE",
+      "archive": "CNOT",
+      "story_file": "stories/nascita_europa_membership_timeline.html",
+      "metadata_file": "stories/nascita_europa_membership_timeline.json",
+      "tags": [
+        "europa",
+        "ue",
+        "allargamento",
+        "geopolitica",
+        "storia",
+        "timeline",
+        "gis"
+      ]
+    }
+  ]
+}

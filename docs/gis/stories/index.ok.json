@@ -1,0 +1,42 @@
+{
+  "archive_name": "CNOT",
+  "archive_title": "Europa Quantistica 2041",
+  "last_update": "2041-09-13",
+  "stories": [
+    {
+      "id": "cnot_17",
+      "title": "Cnot 1.7 dentro all' ex convitto",
+      "author": "Francesco Sisini",
+      "date": "2041-09-03",
+      "latitude": 44.82747829,
+      "longitude": 11.61067217,
+      "location_name": "Ex Convitto Cardial Mora",
+      "archive": "CNOT",
+      "story_file": "stories/vendetta_in_sol_maggiore.html",
+      "tags": [
+        "urbex",
+        "usa",
+        "tecs",
+        "visto"
+      ]
+    },
+    {
+      "id": "europa-membership-timeline",
+      "title": "La costruzione dell’Europa",
+      "subtitle": "Timeline di adesione europea",
+      "file": "europa.html",
+      "path": "stories/europa.html",
+      "description": "Storia interattiva basata sul layer GIS eu_membership_timeline: mostra i paesi membri per ondate di adesione.",
+      "tags": [
+        "Europa",
+        "Unione Europea",
+        "timeline",
+        "GIS"
+      ],
+      "layer_refs": [
+        "eu_membership_timeline"
+      ],
+      "bridge": "CNOTAtlasBridge"
+    }
+  ]
+}

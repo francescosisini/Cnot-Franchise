@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storia dell’Europa · Timeline di adesione</title>
+  <style>
+    :root {
+      --eu-bg: #020402;
+      --eu-card: #071007;
+      --eu-card-2: #0b160b;
+      --eu-ink: #eaffea;
+      --eu-muted: #9fc79a;
+      --eu-line: rgba(57, 255, 20, 0.28);
+      --eu-line-strong: rgba(57, 255, 20, 0.62);
+      --eu-accent: #39ff14;
+      --eu-accent-soft: rgba(57, 255, 20, 0.10);
+      --eu-warn: #ffb84d;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      margin: 0;
+      color: var(--eu-ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
+        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
+        var(--eu-bg);
+      background-size: auto, 100% 4px, auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    code {
+      color: #baffad;
+      background: rgba(57, 255, 20, 0.08);
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 5px;
+      padding: 0 0.25em;
+    }
+
+    .eu-story {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .eu-kicker {
+      margin: 0 0 6px;
+      color: var(--eu-muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      line-height: 1.05;
+      letter-spacing: 0.015em;
+      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+    }
+
+    .eu-lead {
+      margin: 0 0 18px;
+      max-width: 70ch;
+      font-size: 1rem;
+      color: #dfffdc;
+    }
+
+    .eu-note {
+      border-left: 4px solid var(--eu-accent);
+      background: var(--eu-accent-soft);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 16px 0 20px;
+      color: #d7ffd2;
+      font-size: 0.94rem;
+    }
+
+    .eu-controls {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      margin: 0 -12px 18px;
+      background: rgba(2, 7, 2, 0.90);
+      border: 1px solid var(--eu-line);
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+    }
+
+    .eu-step-btn {
+      appearance: none;
+      border: 1px solid var(--eu-line);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: var(--eu-ink);
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.91rem;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, color 120ms ease;
+    }
+
+    .eu-step-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--eu-line-strong);
+      background: rgba(57, 255, 20, 0.10);
+    }
+
+    .eu-step-btn.is-active {
+      background: var(--eu-accent);
+      color: #041004;
+      border-color: var(--eu-accent);
+      font-weight: 750;
+      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+    }
+
+    .eu-current {
+      color: var(--eu-muted);
+      font-size: 0.9rem;
+      margin: -4px 0 16px;
+    }
+
+    .eu-current-command {
+      color: var(--eu-ink);
+      font-weight: 700;
+    }
+
+    .eu-section {
+      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      border: 1px solid var(--eu-line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 0 16px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(57, 255, 20, 0.03);
+    }
+
+    .eu-section h2 {
+      margin: 0 0 10px;
+      font-size: 1.28rem;
+      color: #f3fff1;
+    }
+
+    .eu-section p { margin: 0 0 10px; }
+
+    .eu-storybox {
+      border-color: var(--eu-line-strong);
+      background:
+        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+      background-size: 100% 4px, auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eu-storybox::before,
+    .eu-storybox::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-color: var(--eu-accent);
+      border-style: solid;
+      opacity: 0.9;
+    }
+
+    .eu-storybox::before {
+      top: -1px;
+      left: -1px;
+      border-width: 2px 0 0 2px;
+    }
+
+    .eu-storybox::after {
+      right: -1px;
+      bottom: -1px;
+      border-width: 0 2px 2px 0;
+    }
+
+    .eu-story-kicker {
+      margin: 0 0 6px;
+      color: var(--eu-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .eu-story-body {
+      color: #e6ffe3;
+      max-width: 74ch;
+    }
+
+    .eu-story-body p:last-child { margin-bottom: 0; }
+
+    .eu-factline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .eu-chip {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(57, 255, 20, 0.24);
+      background: rgba(57, 255, 20, 0.07);
+      border-radius: 999px;
+      padding: 5px 9px;
+      color: #dfffdc;
+      font-size: 0.82rem;
+    }
+
+    .eu-wave-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .eu-wave-card {
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 14px;
+      padding: 13px;
+      background: rgba(0, 0, 0, 0.24);
+    }
+
+    .eu-wave-card h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: #f0ffed;
+    }
+
+    .eu-wave-card p {
+      margin: 0 0 6px;
+      font-size: 0.92rem;
+    }
+
+    .eu-meta, .eu-foot {
+      color: var(--eu-muted);
+      font-size: 0.88rem;
+    }
+
+    .eu-foot { margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <main class="eu-story" data-story-id="europa-membership-timeline">
+    <p class="eu-kicker">Archivio narrativo · Europa 2041</p>
+    <h1>La costruzione dell’Europa</h1>
+
+    <p class="eu-lead">
+      Questa storia usa il layer GIS <code>eu_membership_timeline</code> e rende visibili,
+      una fase alla volta, i paesi già presenti nel progetto cartografico. La mappa resta la fonte
+      cartografica; questo pannello racconta il contesto storico della fase selezionata.
+    </p>
+
+    <div class="eu-note">
+      Ogni pulsante aggiorna il GIS e aggiorna anche il riquadro narrativo qui sotto.
+      La vista della mappa non viene ricentrata automaticamente.
+    </div>
+
+    <nav class="eu-controls" aria-label="Comandi GIS della storia">
+      <button type="button" class="eu-step-btn" data-cnot-action="hideAllMembership" data-cnot-args="{&quot;fit&quot;: false}" title="Nasconde solo le feature del layer eu_membership_timeline">Prepara la mappa</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 1, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1958 · Paesi fondatori</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 2, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1973 · Primo allargamento</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 3, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1981 · Grecia</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 4, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1986 · Spagna e Portogallo</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 5, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1995 · Nord e Alpi</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 6, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">2004 · Grande allargamento</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 7, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">2007 · Bulgaria e Romania</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 8, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">2013 · Croazia</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showCurrentMembership" data-cnot-args="{&quot;fit&quot;: false}">2020→2041 · UE a 27</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipIds" data-cnot-args="{&quot;ids&quot;: [&quot;eu_membership_gbr&quot;], &quot;fit&quot;: false}">Regno Unito 1973–2020</button>
+      <button type="button" class="eu-step-btn" data-cnot-action="clearMembership" data-cnot-args="{&quot;fit&quot;: false}">Ripristina layer</button>
+    </nav>
+
+    <p class="eu-current">Comando selezionato: <span class="eu-current-command">nessuno</span></p>
+
+    <section class="eu-section eu-storybox" id="euStoryPanel" aria-live="polite">
+      <p class="eu-story-kicker" id="euStoryKicker">Timeline europea</p>
+      <h2 id="euStoryTitle">Da sei paesi a una geografia politica</h2>
+      <div class="eu-story-body" id="euStoryBody">
+        <p>
+          L’integrazione europea non nasce come una mappa già completa. Nasce come una sequenza di decisioni:
+          prima carbone, acciaio e mercato comune; poi istituzioni più forti, cittadinanza europea,
+          moneta unica, allargamenti a est e infine una prima uscita, quella del Regno Unito.
+        </p>
+        <p>
+          Seleziona una fase: il GIS mostrerà i paesi corrispondenti e questo riquadro racconterà
+          il passaggio storico collegato.
+        </p>
+      </div>
+      <div class="eu-factline" id="euStoryFacts">
+        <span class="eu-chip">Layer: eu_membership_timeline</span>
+        <span class="eu-chip">Modalità: cumulativa</span>
+      </div>
+    </section>
+
+    <section class="eu-section">
+      <h2>Sintesi delle ondate</h2>
+      <p>
+        Questo riepilogo resta fisso; il racconto principale, invece, cambia in base al pulsante selezionato.
+      </p>
+      <div class="eu-wave-grid">
+        <section class="eu-wave-card"><h3>1958</h3><p>Belgio, Francia, Germania, Italia, Lussemburgo, Paesi Bassi.</p><p class="eu-meta">6 membri.</p></section>
+        <section class="eu-wave-card"><h3>1973</h3><p>Danimarca, Irlanda, Regno Unito.</p><p class="eu-meta">9 membri.</p></section>
+        <section class="eu-wave-card"><h3>1981</h3><p>Grecia.</p><p class="eu-meta">10 membri.</p></section>
+        <section class="eu-wave-card"><h3>1986</h3><p>Portogallo, Spagna.</p><p class="eu-meta">12 membri.</p></section>
+        <section class="eu-wave-card"><h3>1995</h3><p>Austria, Finlandia, Svezia.</p><p class="eu-meta">15 membri.</p></section>
+        <section class="eu-wave-card"><h3>2004</h3><p>Cechia, Cipro, Estonia, Lettonia, Lituania, Malta, Polonia, Slovacchia, Slovenia, Ungheria.</p><p class="eu-meta">25 membri.</p></section>
+        <section class="eu-wave-card"><h3>2007</h3><p>Bulgaria, Romania.</p><p class="eu-meta">27 membri.</p></section>
+        <section class="eu-wave-card"><h3>2013</h3><p>Croazia.</p><p class="eu-meta">28 membri storici.</p></section>
+      </div>
+    </section>
+
+    <p class="eu-foot">
+      Chiavi usate dal bridge: <code>id</code>, <code>iso3</code>, <code>accession_wave</code>,
+      <code>is_current_member</code>, <code>membership_status</code>.
+    </p>
+  </main>
+
+<script>
+(function () {
+  "use strict";
+
+  var STORY_CONTENT = {
+    prepare: {
+      kicker: "Preparazione GIS",
+      title: "La mappa è pronta per la timeline",
+      body: "<p>Questo comando non racconta ancora una fase storica: prepara il layer dell’adesione europea nascondendo le feature della timeline. Serve a partire da una mappa pulita, senza cambiare gli altri layer del GIS.</p><p>Da qui puoi selezionare una data: ogni passaggio mostrerà i paesi entrati fino a quella fase.</p>",
+      facts: ["Azione: hideAllMembership", "Vista: non ricentrata"]
+    },
+    wave_1: {
+      kicker: "1958 · CEE",
+      title: "I sei paesi fondatori e i Trattati di Roma",
+      body: "<p>Nel 1958 entrano in vigore i Trattati di Roma. Belgio, Francia, Germania Ovest, Italia, Lussemburgo e Paesi Bassi costruiscono la Comunità Economica Europea e l’Euratom.</p><p>La scelta non è astratta: dopo la CECA del 1951, l’integrazione europea procede attraverso settori concreti, commercio, industria, energia e mercato. La geografia iniziale è piccola, occidentale, ma politicamente densissima.</p>",
+      facts: ["Paesi: 6", "Belgio · Francia · Germania · Italia · Lussemburgo · Paesi Bassi"]
+    },
+    wave_2: {
+      kicker: "1973 · Primo allargamento",
+      title: "L’Europa si apre al Nord e all’Atlantico",
+      body: "<p>Nel 1973 entrano Danimarca, Irlanda e Regno Unito. È il primo vero cambio di scala della Comunità: il progetto non resta più limitato al nucleo originario dei Sei.</p><p>Il Regno Unito arriva dopo un percorso complesso e dopo i veti francesi degli anni Sessanta. La Norvegia, invece, pur negoziando l’ingresso, resta fuori dopo referendum. La mappa europea mostra già una cosa importante: integrazione e consenso nazionale non coincidono sempre.</p>",
+      facts: ["Paesi dopo la fase: 9", "Nuovi ingressi: Danimarca · Irlanda · Regno Unito"]
+    },
+    wave_3: {
+      kicker: "1981 · Grecia",
+      title: "La Grecia e l’ancoraggio democratico",
+      body: "<p>Nel 1981 entra la Grecia. L’adesione segue la fine della dittatura dei colonnelli e ha un significato che va oltre l’economia: collegare una giovane democrazia al sistema politico europeo occidentale.</p><p>Da questo momento l’allargamento mediterraneo diventa anche uno strumento di stabilizzazione democratica. La Comunità non è solo mercato: diventa una cornice politica.</p>",
+      facts: ["Paesi dopo la fase: 10", "Nuovo ingresso: Grecia"]
+    },
+    wave_4: {
+      kicker: "1986 · Penisola iberica",
+      title: "Spagna e Portogallo dopo le dittature",
+      body: "<p>Nel 1986 entrano Spagna e Portogallo, entrambi usciti da regimi autoritari negli anni Settanta. L’allargamento iberico completa una fase mediterranea dell’integrazione.</p><p>Nello stesso periodo l’Atto Unico Europeo prepara il mercato unico. La Comunità passa da cooperazione economica a infrastruttura politica sempre più articolata: confini, regole, standard e mobilità cominciano a sovrapporsi.</p>",
+      facts: ["Paesi dopo la fase: 12", "Nuovi ingressi: Spagna · Portogallo"]
+    },
+    wave_5: {
+      kicker: "1995 · Dopo Maastricht",
+      title: "Austria, Finlandia e Svezia nell’Unione europea",
+      body: "<p>Nel 1995 entrano Austria, Finlandia e Svezia. Non si parla più soltanto di Comunità Economica Europea: dal 1993, con Maastricht, il progetto ha assunto il nome di Unione europea.</p><p>La fine della Guerra fredda rende possibile l’ingresso di paesi neutrali o tradizionalmente esterni ai blocchi. La mappa si estende verso Nord e verso l’area alpina, mentre l’Unione prepara la moneta unica.</p>",
+      facts: ["Paesi dopo la fase: 15", "Nuovi ingressi: Austria · Finlandia · Svezia"]
+    },
+    wave_6: {
+      kicker: "2004 · Grande allargamento",
+      title: "L’Europa si sposta verso est",
+      body: "<p>Nel 2004 avviene il più grande allargamento della storia dell’Unione: entrano Cechia, Cipro, Estonia, Lettonia, Lituania, Malta, Polonia, Slovacchia, Slovenia e Ungheria.</p><p>Molti di questi paesi provengono dall’Europa centro-orientale uscita dall’orbita sovietica. La mappa cambia struttura: l’Unione non è più solo Europa occidentale con estensioni mediterranee e nordiche, ma diventa un progetto continentale.</p>",
+      facts: ["Paesi dopo la fase: 25", "Nuovi ingressi: 10"]
+    },
+    wave_7: {
+      kicker: "2007 · Sud-est europeo",
+      title: "Bulgaria e Romania",
+      body: "<p>Nel 2007 entrano Bulgaria e Romania. L’allargamento continua verso il sud-est europeo e porta l’Unione a 27 membri.</p><p>Questa fase rende evidente che l’integrazione non è solo adesione formale: richiede riforme amministrative, giudiziarie, economiche e politiche. La mappa si aggiorna, ma dietro ogni confine c’è un processo istituzionale lungo.</p>",
+      facts: ["Paesi dopo la fase: 27", "Nuovi ingressi: Bulgaria · Romania"]
+    },
+    wave_8: {
+      kicker: "2013 · Croazia",
+      title: "La Croazia e il dopo Jugoslavia",
+      body: "<p>Nel 2013 entra la Croazia, primo paese dell’ex Jugoslavia a diventare membro dell’Unione europea. È un passaggio simbolico perché collega l’allargamento al tema della ricomposizione politica dopo le guerre jugoslave.</p><p>Con la Croazia l’Unione raggiunge 28 membri. La timeline storica tocca il suo massimo numerico prima della Brexit.</p>",
+      facts: ["Paesi dopo la fase: 28", "Nuovo ingresso: Croazia"]
+    },
+    current: {
+      kicker: "2020 → 2041 · Stato corrente",
+      title: "L’Unione europea a 27 membri",
+      body: "<p>Dopo l’uscita del Regno Unito, l’Unione europea resta a 27 membri. La mappa corrente non cancella la storia precedente: distingue semplicemente tra appartenenza attuale e appartenenza storica.</p><p>Per il racconto GIS questa distinzione è fondamentale: il Regno Unito non va eliminato dal dato, ma letto come feature con una data di ingresso e una data di uscita.</p>",
+      facts: ["Stato corrente: 27 membri", "Regno Unito: ex membro"]
+    },
+    uk: {
+      kicker: "1973–2020 · Caso storico",
+      title: "Il Regno Unito: ingresso, permanenza, uscita",
+      body: "<p>Il Regno Unito entra nel 1973 insieme a Danimarca e Irlanda. Per quasi cinquant’anni fa parte della costruzione europea, ma con una posizione spesso peculiare: mercato, sovranità, moneta e rapporto con le istituzioni restano temi ricorrenti.</p><p>Con la Brexit diventa il primo Stato membro a lasciare l’Unione. Nel layer GIS questo caso non è un’anomalia da cancellare: è proprio il motivo per cui servono campi come <code>entry_date</code>, <code>exit_date</code> e <code>membership_status</code>.</p>",
+      facts: ["Ingresso: 1973", "Uscita: 2020"]
+    },
+    clear: {
+      kicker: "Ripristino layer",
+      title: "La timeline torna allo stato completo del layer",
+      body: "<p>Il comando di ripristino restituisce il layer alla sua visualizzazione ordinaria. Non aggiunge una nuova fase storica: chiude la sequenza narrativa e lascia di nuovo visibile il dato GIS secondo lo stile di base.</p><p>La storia rimane separata dal GIS: il testo guida la lettura, il layer conserva la struttura cartografica.</p>",
+      facts: ["Azione: clearMembership", "Layer: ripristinato"]
+    }
+  };
+
+  function parseArgs(button) {
+    try { return JSON.parse(button.getAttribute("data-cnot-args") || "{}"); }
+    catch (_) { return {}; }
+  }
+
+  function escapeText(value) {
+    return String(value == null ? "" : value);
+  }
+
+  function storyKeyFrom(action, args) {
+    if (action === "hideAllMembership") return "prepare";
+    if (action === "clearMembership") return "clear";
+    if (action === "showCurrentMembership") return "current";
+    if (action === "showMembershipIds") return "uk";
+    if (action === "showMembershipUpToWave") return "wave_" + Number(args && args.wave);
+    return "intro";
+  }
+
+  function updateStoryPanel(key) {
+    var item = STORY_CONTENT[key];
+    if (!item) return;
+
+    var kicker = document.getElementById("euStoryKicker");
+    var title = document.getElementById("euStoryTitle");
+    var body = document.getElementById("euStoryBody");
+    var facts = document.getElementById("euStoryFacts");
+
+    if (kicker) kicker.textContent = item.kicker || "Timeline europea";
+    if (title) title.textContent = item.title || "Storia dell’Europa";
+    if (body) body.innerHTML = item.body || "";
+    if (facts) {
+      facts.innerHTML = (item.facts || []).map(function (fact) {
+        return '<span class="eu-chip">' + escapeText(fact) + '</span>';
+      }).join("");
+    }
+  }
+
+  function sendToBridge(action, args) {
+    var msg = { type: "CNOT_GIS_COMMAND", action: action, args: args || {} };
+
+    try {
+      if (window.parent && window.parent !== window && window.parent.CNOTAtlasBridge) {
+        return window.parent.CNOTAtlasBridge.execute(action, args || {});
+      }
+    } catch (_) {}
+
+    try {
+      if (window.CNOTAtlasBridge) {
+        return window.CNOTAtlasBridge.execute(action, args || {});
+      }
+    } catch (_) {}
+
+    try {
+      if (window.parent && window.parent !== window) window.parent.postMessage(msg, "*");
+    } catch (_) {}
+
+    try {
+      if (window.top && window.top !== window && window.top !== window.parent) window.top.postMessage(msg, "*");
+    } catch (_) {}
+  }
+
+  setTimeout(function () {
+    sendToBridge("refresh", { fit: false });
+  }, 250);
+
+  function activate(button, action, args) {
+    document.querySelectorAll(".eu-step-btn.is-active").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+    button.classList.add("is-active");
+
+    var label = document.querySelector(".eu-current-command");
+    if (label) label.textContent = button.textContent.trim();
+
+    updateStoryPanel(storyKeyFrom(action, args));
+  }
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest ? event.target.closest("[data-cnot-action]") : null;
+    if (!button) return;
+    var action = button.getAttribute("data-cnot-action");
+    var args = parseArgs(button);
+    activate(button, action, args);
+    sendToBridge(action, args);
+  }, false);
+})();
+</script>
+
+</body>
+</html>
