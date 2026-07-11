@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>La nascita dell'Europa: una mappa che si accende</title>
+<style>
+:root{
+  --bg:#101217;
+  --panel:#171c24;
+  --text:#f4f6fb;
+  --muted:#aab4c3;
+  --accent:#f2c14e;
+  --green:#39ff14;
+  --red:#ff5c5c;
+  --line:#303849;
+  --soft:rgba(255,255,255,.055);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.58;
+}
+main{
+  max-width:920px;
+  margin:0 auto;
+  padding:36px 22px 80px;
+}
+.kicker{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:12px;
+  font-weight:800;
+  margin-bottom:10px;
+}
+h1{
+  margin:0 0 12px;
+  font-size:clamp(31px,5vw,54px);
+  line-height:1.03;
+  letter-spacing:-.045em;
+}
+h2{
+  margin:28px 0 10px;
+  font-size:24px;
+  letter-spacing:-.02em;
+}
+p{
+  color:var(--muted);
+  font-size:17px;
+}
+strong{color:var(--text)}
+.panel{
+  border:1px solid var(--line);
+  background:var(--panel);
+  border-radius:18px;
+  padding:18px;
+  margin:22px 0;
+}
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:14px 0 8px;
+}
+button{
+  background:var(--soft);
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:10px 14px;
+  font-weight:760;
+  cursor:pointer;
+}
+button:hover{border-color:var(--accent)}
+button.primary{
+  border-color:var(--accent);
+  background:rgba(242,193,78,.12);
+}
+button.stop{
+  border-color:rgba(255,92,92,.65);
+  background:rgba(255,92,92,.10);
+}
+.timeline{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+  margin-top:14px;
+}
+.card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.035);
+  border-radius:14px;
+  padding:13px;
+}
+.card .date{
+  color:var(--accent);
+  font-weight:850;
+  font-size:13px;
+  text-transform:uppercase;
+}
+.card .title{
+  font-weight:850;
+  margin:4px 0;
+}
+.card .small{
+  color:var(--muted);
+  font-size:13px;
+}
+#narrativeBox{
+  font-size:18px;
+  color:#dfe7f5;
+}
+#countryBox{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:12px;
+}
+.chip{
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  padding:4px 8px;
+  color:#d9e3f5;
+  font-size:12px;
+  background:rgba(255,255,255,.04);
+}
+.chip.new{
+  border-color:rgba(242,193,78,.85);
+  background:rgba(242,193,78,.15);
+  color:#fff6d8;
+}
+.chip.former{
+  border-color:rgba(255,92,92,.85);
+  background:rgba(255,92,92,.13);
+  color:#ffd8d8;
+}
+#log{
+  white-space:pre-wrap;
+  background:#090c10;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  min-height:120px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:12px;
+  color:#dce3ef;
+}
+.note{
+  border-left:3px solid var(--accent);
+  padding-left:14px;
+  color:var(--muted);
+}
+.legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:10px;
+  color:var(--muted);
+  font-size:13px;
+}
+.dot{
+  display:inline-block;
+  width:11px;
+  height:11px;
+  border-radius:2px;
+  margin-right:5px;
+  vertical-align:-1px;
+}
+.dot.active{background:rgba(57,255,20,.75)}
+.dot.new{background:rgba(242,193,78,.9)}
+.dot.former{background:rgba(255,92,92,.85)}
+code{background:rgba(255,255,255,.08);padding:2px 5px;border-radius:5px}
+</style>
+<script>
+const COUNTRIES = [
+  {iso3:"BEL", name:"Belgio", entry:"1958-01-01", wave:1},
+  {iso3:"FRA", name:"Francia", entry:"1958-01-01", wave:1},
+  {iso3:"DEU", name:"Germania", entry:"1958-01-01", wave:1},
+  {iso3:"ITA", name:"Italia", entry:"1958-01-01", wave:1},
+  {iso3:"LUX", name:"Lussemburgo", entry:"1958-01-01", wave:1},
+  {iso3:"NLD", name:"Paesi Bassi", entry:"1958-01-01", wave:1},
+
+  {iso3:"DNK", name:"Danimarca", entry:"1973-01-01", wave:2},
+  {iso3:"IRL", name:"Irlanda", entry:"1973-01-01", wave:2},
+  {iso3:"GBR", name:"Regno Unito", entry:"1973-01-01", exit:"2020-01-31", wave:2},
+
+  {iso3:"GRC", name:"Grecia", entry:"1981-01-01", wave:3},
+
+  {iso3:"PRT", name:"Portogallo", entry:"1986-01-01", wave:4},
+  {iso3:"ESP", name:"Spagna", entry:"1986-01-01", wave:4},
+
+  {iso3:"AUT", name:"Austria", entry:"1995-01-01", wave:5},
+  {iso3:"FIN", name:"Finlandia", entry:"1995-01-01", wave:5},
+  {iso3:"SWE", name:"Svezia", entry:"1995-01-01", wave:5},
+
+  {iso3:"CYP", name:"Cipro", entry:"2004-05-01", wave:6},
+  {iso3:"CZE", name:"Cechia", entry:"2004-05-01", wave:6},
+  {iso3:"EST", name:"Estonia", entry:"2004-05-01", wave:6},
+  {iso3:"HUN", name:"Ungheria", entry:"2004-05-01", wave:6},
+  {iso3:"LVA", name:"Lettonia", entry:"2004-05-01", wave:6},
+  {iso3:"LTU", name:"Lituania", entry:"2004-05-01", wave:6},
+  {iso3:"MLT", name:"Malta", entry:"2004-05-01", wave:6},
+  {iso3:"POL", name:"Polonia", entry:"2004-05-01", wave:6},
+  {iso3:"SVK", name:"Slovacchia", entry:"2004-05-01", wave:6},
+  {iso3:"SVN", name:"Slovenia", entry:"2004-05-01", wave:6},
+
+  {iso3:"BGR", name:"Bulgaria", entry:"2007-01-01", wave:7},
+  {iso3:"ROU", name:"Romania", entry:"2007-01-01", wave:7},
+
+  {iso3:"HRV", name:"Croazia", entry:"2013-07-01", wave:8}
+];
+
+const STEPS = [
+  {
+    id:"founders",
+    date:"1958-01-01",
+    title:"1958 · I sei fondatori",
+    newIso:["BEL","FRA","DEU","ITA","LUX","NLD"],
+    text:"Qui non c’è ancora un allargamento: c’è la fondazione. Belgio, Francia, Germania occidentale, Italia, Lussemburgo e Paesi Bassi mettono in funzione la Comunità Economica Europea. La mappa nasce piccola, occidentale, industriale: carbone, acciaio, mercato comune, memoria della guerra."
+  },
+  {
+    id:"first_enlargement",
+    date:"1973-01-01",
+    title:"1973 · Primo allargamento",
+    newIso:["DNK","IRL","GBR"],
+    text:"Danimarca, Irlanda e Regno Unito entrano nella Comunità. La Comunità si sposta verso nord-ovest e comincia a diventare un progetto continentale, non solo franco-tedesco e mediterraneo. Il Regno Unito entra qui: più avanti sarà il primo paese a uscire."
+  },
+  {
+    id:"greece",
+    date:"1981-01-01",
+    title:"1981 · La Grecia",
+    newIso:["GRC"],
+    text:"La Grecia entra dopo la transizione democratica successiva alla dittatura dei colonnelli. L’ingresso non è solo economico: è anche una scelta di stabilizzazione politica nel Mediterraneo orientale."
+  },
+  {
+    id:"iberia",
+    date:"1986-01-01",
+    title:"1986 · Spagna e Portogallo",
+    newIso:["ESP","PRT"],
+    text:"Spagna e Portogallo entrano dopo la fine delle dittature iberiche. La Comunità diventa anche una macchina di consolidamento democratico: non un semplice mercato, ma un modo per riportare la periferia autoritaria dentro l’Europa istituzionale."
+  },
+  {
+    id:"efta",
+    date:"1995-01-01",
+    title:"1995 · Austria, Finlandia, Svezia",
+    newIso:["AUT","FIN","SWE"],
+    text:"Con Austria, Finlandia e Svezia entrano paesi ricchi, amministrativamente forti, storicamente legati all’area EFTA e alla neutralità. Dopo la Guerra fredda, la neutralità non impedisce più l’ingresso: la mappa si allunga verso il Nord."
+  },
+  {
+    id:"big_bang",
+    date:"2004-05-01",
+    title:"2004 · Il grande allargamento",
+    newIso:["CYP","CZE","EST","HUN","LVA","LTU","MLT","POL","SVK","SVN"],
+    text:"Dieci paesi entrano nello stesso giorno. È il grande allargamento a est e nel Mediterraneo: Baltico, Europa centrale, ex spazio socialista, Cipro e Malta. Qui l’Unione europea diventa davvero post-Guerra fredda."
+  },
+  {
+    id:"balkans_1",
+    date:"2007-01-01",
+    title:"2007 · Bulgaria e Romania",
+    newIso:["BGR","ROU"],
+    text:"Bulgaria e Romania portano l’Unione più dentro l’Europa sud-orientale. L’allargamento continua, ma con un’attenzione crescente a riforme, istituzioni, giustizia, confini esterni."
+  },
+  {
+    id:"croatia",
+    date:"2013-07-01",
+    title:"2013 · Croazia",
+    newIso:["HRV"],
+    text:"La Croazia entra nel 2013. È il segnale che l’allargamento nei Balcani occidentali resta possibile, ma molto più lento e selettivo. La mappa cresce ancora, ma non con la velocità del 2004."
+  },
+  {
+    id:"brexit",
+    date:"2020-01-31",
+    title:"2020 · Brexit",
+    newIso:["GBR"],
+    brexit:true,
+    text:"Il Regno Unito esce dall’Unione europea. La mappa non è più soltanto una storia di accensioni progressive: conosce anche lo spegnimento. L’Unione resta a 27 membri e la frontiera politica torna visibile dove sembrava assorbita."
+  }
+];
+
+let playTimer = null;
+let currentCountryIndex = -1;
+
+function log(msg){
+  const box = document.getElementById("log");
+  if (!box) return;
+  box.textContent += "[" + new Date().toLocaleTimeString() + "] " + msg + "\n";
+  box.scrollTop = box.scrollHeight;
+}
+
+function getGISWindow(){
+  try {
+    return window.parent.document.getElementById("gisFrame")?.contentWindow || null;
+  } catch(e) {
+    log("Non riesco ad accedere a parent.gisFrame: " + e.message);
+    return null;
+  }
+}
+
+function getMap(win){
+  if (!win) return null;
+  if (win.map) return win.map;
+
+  for (const key of Object.keys(win)) {
+    try {
+      const v = win[key];
+      if (v && (typeof v.getView === "function" || typeof v.setView === "function")) return v;
+    } catch(e) {}
+  }
+  return null;
+}
+
+function normalize(value){
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+}
+
+function scoreName(actual, wanted){
+  const a = normalize(actual);
+  const w = normalize(wanted);
+  if (!a || !w) return 0;
+  if (a === w) return 100;
+  if (a.startsWith("lyr_" + w + "_")) return 95;
+  if (a.includes(w)) return 80;
+  return 0;
+}
+
+function flattenLayers(collection, output=[]){
+  if (!collection) return output;
+  const arr = typeof collection.getArray === "function" ? collection.getArray() : Array.isArray(collection) ? collection : [];
+  for (const layer of arr) {
+    output.push(layer);
+    try {
+      if (layer && typeof layer.getLayers === "function") flattenLayers(layer.getLayers(), output);
+    } catch(e) {}
+  }
+  return output;
+}
+
+function declaredLayerNames(layer){
+  const names = [];
+  try {
+    if (typeof layer.get === "function") {
+      names.push(layer.get("title"), layer.get("name"), layer.get("layerName"));
+    }
+    if (typeof layer.getProperties === "function") {
+      const p = layer.getProperties();
+      names.push(p.title, p.name, p.layerName);
+    }
+  } catch(e) {}
+  return names.filter(Boolean);
+}
+
+function findMembershipLayer(){
+  const win = getGISWindow();
+  if (!win) return null;
+
+  const wanted = [
+    "eu_membership_timeline",
+    "membership_timeline",
+    "eu_membership",
+    "nascita_europa",
+    "allargamento_europa",
+    "allargamenti_ue"
+  ];
+
+  const keys = Object.keys(win).filter(k => k.startsWith("lyr_"));
+  let best = {layer:null, key:null, score:0};
+
+  for (const key of keys) {
+    for (const w of wanted) {
+      const score = scoreName(key, w);
+      if (score > best.score) best = {layer:win[key], key, score};
+    }
+  }
+
+  if (best.layer && best.score >= 78) return best;
+
+  const map = getMap(win);
+  if (map && typeof map.getLayers === "function") {
+    for (const layer of flattenLayers(map.getLayers())) {
+      for (const name of declaredLayerNames(layer)) {
+        for (const w of wanted) {
+          const score = scoreName(name, w);
+          if (score > best.score) best = {layer, key:name, score};
+        }
+      }
+    }
+  }
+
+  return best.layer && best.score >= 78 ? best : null;
+}
+
+function getFeatureIso3(feature){
+  return (
+    feature.get("iso3") ||
+    feature.get("ISO3") ||
+    feature.get("iso_a3") ||
+    feature.get("ISO_A3") ||
+    feature.get("adm0_a3") ||
+    ""
+  );
+}
+
+function getFeatureName(feature){
+  return (
+    feature.get("country_it") ||
+    feature.get("country_en") ||
+    feature.get("name") ||
+    getFeatureIso3(feature)
+  );
+}
+
+function makeStyle(kind){
+  const win = getGISWindow();
+  const ol = win?.ol;
+  if (!ol?.style?.Style) return undefined;
+
+  if (kind === "hidden") {
+    return new ol.style.Style({ zIndex: -1 });
+  }
+
+  if (kind === "new") {
+    return new ol.style.Style({
+      zIndex: 10003,
+      fill: new ol.style.Fill({ color: "rgba(242, 193, 78, 0.58)" }),
+      stroke: new ol.style.Stroke({ color: "rgba(242, 193, 78, 1)", width: 3 })
+    });
+  }
+
+  if (kind === "former") {
+    return new ol.style.Style({
+      zIndex: 10004,
+      fill: new ol.style.Fill({ color: "rgba(255, 92, 92, 0.45)" }),
+      stroke: new ol.style.Stroke({ color: "rgba(255, 92, 92, 1)", width: 3.2 })
+    });
+  }
+
+  return new ol.style.Style({
+    zIndex: 10002,
+    fill: new ol.style.Fill({ color: "rgba(57, 255, 20, 0.30)" }),
+    stroke: new ol.style.Stroke({ color: "rgba(57, 255, 20, 0.95)", width: 1.6 })
+  });
+}
+
+const STYLE_CACHE = {};
+function style(kind){
+  if (!STYLE_CACHE[kind]) STYLE_CACHE[kind] = makeStyle(kind);
+  return STYLE_CACHE[kind];
+}
+
+function centerEurope(){
+  const win = getGISWindow();
+  const map = getMap(win);
+  if (!map) return;
+
+  if (typeof map.getView === "function") {
+    const view = map.getView();
+    let center = [10, 50];
+
+    if (win?.ol?.proj?.fromLonLat) {
+      center = win.ol.proj.fromLonLat(center);
+    }
+
+    if (typeof view.animate === "function") {
+      view.animate({center, zoom:4, duration:600});
+    } else {
+      view.setCenter(center);
+      if (view.setZoom) view.setZoom(4);
+    }
+  } else if (typeof map.setView === "function") {
+    map.setView([50,10], 4);
+  }
+}
+
+function getFeatures(layer){
+  const source = layer?.getSource?.();
+  if (!source) return [];
+  if (typeof source.getFeatures === "function") return source.getFeatures();
+
+  // caso raro: source cluster
+  if (typeof source.getSource === "function" && typeof source.getSource().getFeatures === "function") {
+    return source.getSource().getFeatures();
+  }
+
+  return [];
+}
+
+function updateChips(activeIso, newIso=[], formerIso=[]){
+  const box = document.getElementById("countryBox");
+  if (!box) return;
+
+  const activeSet = new Set(activeIso);
+  const newSet = new Set(newIso);
+  const formerSet = new Set(formerIso);
+
+  const html = COUNTRIES
+    .filter(c => activeSet.has(c.iso3) || newSet.has(c.iso3) || formerSet.has(c.iso3))
+    .map(c => {
+      const cls = formerSet.has(c.iso3) ? "former" : newSet.has(c.iso3) ? "new" : "";
+      return `<span class="chip ${cls}">${c.name}</span>`;
+    })
+    .join("");
+
+  box.innerHTML = html || "<span class='chip'>Nessuno stato acceso</span>";
+}
+
+function setNarrative(step){
+  document.getElementById("stepTitle").textContent = step.title;
+  document.getElementById("narrativeBox").textContent = step.text;
+}
+
+
+function bringMembershipLayerToFront(layer){
+  if (!layer) return;
+
+  try {
+    if (typeof layer.setVisible === "function") layer.setVisible(true);
+    if (typeof layer.setOpacity === "function") layer.setOpacity(1);
+    if (typeof layer.setZIndex === "function") layer.setZIndex(10000);
+  } catch(e) {}
+
+  try {
+    const source = layer.getSource?.();
+    if (source && typeof source.changed === "function") source.changed();
+    if (typeof layer.changed === "function") layer.changed();
+
+    const win = getGISWindow();
+    const map = getMap(win);
+    if (map && typeof map.renderSync === "function") map.renderSync();
+    else if (map && typeof map.render === "function") map.render();
+  } catch(e) {}
+}
+
+function sampleMembershipFeatureProperties(layer){
+  const features = getFeatures(layer);
+  return features.slice(0, 3).map(feature => {
+    try {
+      const props = feature.getProperties();
+      const cleaned = {};
+      Object.keys(props).forEach(key => {
+        if (key !== "geometry") cleaned[key] = props[key];
+      });
+      return cleaned;
+    } catch(e) {
+      return {};
+    }
+  });
+}
+
+
+function applyMembershipState(activeIso, newIso=[], formerIso=[]){
+  const match = findMembershipLayer();
+
+  if (!match?.layer) {
+    log("Layer eu_membership_timeline non trovato. Esporta il GeoJSON in qgis2web con nome layer eu_membership_timeline.");
+    return false;
+  }
+
+  const layer = match.layer;
+  bringMembershipLayerToFront(layer);
+
+  const activeSet = new Set(activeIso);
+  const newSet = new Set(newIso);
+  const formerSet = new Set(formerIso);
+
+  const features = getFeatures(layer);
+
+  if (!features.length) {
+    log("Layer trovato (" + match.key + "), ma non riesco a leggere le feature.");
+    return false;
+  }
+
+  let shown = 0;
+  let highlighted = 0;
+  let matchedIso = 0;
+
+  for (const feature of features) {
+    const iso = getFeatureIso3(feature);
+
+    if (formerSet.has(iso)) {
+      feature.setStyle(style("former"));
+      shown++;
+      highlighted++;
+      matchedIso++;
+    } else if (newSet.has(iso)) {
+      feature.setStyle(style("new"));
+      shown++;
+      highlighted++;
+      matchedIso++;
+    } else if (activeSet.has(iso)) {
+      feature.setStyle(style("active"));
+      shown++;
+      matchedIso++;
+    } else {
+      feature.setStyle(style("hidden"));
+    }
+  }
+
+  bringMembershipLayerToFront(layer);
+  updateChips(activeIso, newIso, formerIso);
+
+  if (matchedIso === 0) {
+    log("ATTENZIONE: layer trovato, ma nessun paese corrisponde agli ISO richiesti.");
+    log("Campi sample feature: " + JSON.stringify(sampleMembershipFeatureProperties(layer)));
+  }
+
+  log("Layer: " + match.key + " · paesi visibili: " + shown + " · evidenziati: " + highlighted + " · match ISO: " + matchedIso);
+  return true;
+}
+
+function countriesUpTo(date){
+  return COUNTRIES
+    .filter(c => c.entry <= date && (!c.exit || c.exit > date))
+    .map(c => c.iso3);
+}
+
+function showStep(index){
+  stopPlay();
+
+  const step = STEPS[index];
+  if (!step) return;
+
+  setNarrative(step);
+  centerEurope();
+
+  if (step.brexit) {
+    const active = countriesUpTo("2021-01-01");
+    applyMembershipState(active, [], ["GBR"]);
+    return;
+  }
+
+  const active = countriesUpTo(step.date);
+  applyMembershipState(active, step.newIso, []);
+}
+
+
+function hideAllCountries(options = {}){
+  stopPlay();
+
+  const retries = options.retries ?? 8;
+  const silent = options.silent === true;
+  const match = findMembershipLayer();
+
+  if (!match?.layer) {
+    if (retries > 0) {
+      if (!silent) log("Layer eu_membership_timeline non ancora pronto. Riprovo...");
+      setTimeout(() => hideAllCountries({retries: retries - 1, silent}), 350);
+    } else if (!silent) {
+      log("Layer eu_membership_timeline non trovato. Esporta il GeoJSON in qgis2web con nome layer eu_membership_timeline.");
+    }
+    return false;
+  }
+
+  const layer = match.layer;
+  bringMembershipLayerToFront(layer);
+
+  const features = getFeatures(layer);
+
+  if (!features.length) {
+    if (retries > 0) {
+      if (!silent) log("Layer trovato (" + match.key + "), ma le feature non sono ancora pronte. Riprovo...");
+      setTimeout(() => hideAllCountries({retries: retries - 1, silent}), 350);
+    } else if (!silent) {
+      log("Layer trovato (" + match.key + "), ma non riesco a leggere le feature.");
+    }
+    return false;
+  }
+
+  for (const feature of features) {
+    feature.setStyle(style("hidden"));
+  }
+
+  updateChips([], [], []);
+  centerEurope();
+
+  if (!silent) {
+    document.getElementById("stepTitle").textContent = "Europa spenta";
+    document.getElementById("narrativeBox").textContent = "La mappa parte da zero: nessuno stato è ancora acceso. Ora possiamo far nascere l’Europa, un ingresso alla volta.";
+    log("Tutti gli stati del layer membership sono stati spenti. Layer: " + match.key + " · feature: " + features.length);
+  }
+
+  return true;
+}
+
+
+function resetMap(){
+  stopPlay();
+  const match = findMembershipLayer();
+  if (!match?.layer) {
+    log("Layer eu_membership_timeline non trovato.");
+    return;
+  }
+
+  for (const feature of getFeatures(match.layer)) {
+    feature.setStyle(undefined);
+  }
+
+  document.getElementById("stepTitle").textContent = "Mappa ripristinata";
+  document.getElementById("narrativeBox").textContent = "Tutte le feature del layer tornano allo stile originale di QGIS/qgis2web.";
+  document.getElementById("countryBox").innerHTML = "";
+  log("Stili feature ripristinati.");
+}
+
+function playCountries(){
+  stopPlay();
+  centerEurope();
+
+  let visible = [];
+  currentCountryIndex = -1;
+
+  document.getElementById("stepTitle").textContent = "Play · gli stati si accendono uno a uno";
+  document.getElementById("narrativeBox").textContent = "La mappa mostra la crescita progressiva dell’Europa comunitaria: ogni paese si accende quando entra nel progetto.";
+
+  const ordered = [...COUNTRIES].sort((a,b) => {
+    const d = a.entry.localeCompare(b.entry);
+    if (d !== 0) return d;
+    return a.name.localeCompare(b.name, "it");
+  });
+
+  playTimer = setInterval(() => {
+    currentCountryIndex++;
+
+    if (currentCountryIndex >= ordered.length) {
+      clearInterval(playTimer);
+      playTimer = null;
+
+      setTimeout(() => {
+        const active = countriesUpTo("2021-01-01");
+        document.getElementById("stepTitle").textContent = "2020 · Brexit";
+        document.getElementById("narrativeBox").textContent = "Dopo la lunga sequenza delle accessioni, arriva il caso inverso: il Regno Unito, entrato nel 1973, esce dall’Unione europea il 31 gennaio 2020.";
+        applyMembershipState(active, [], ["GBR"]);
+      }, 900);
+
+      return;
+    }
+
+    const c = ordered[currentCountryIndex];
+    if (!visible.includes(c.iso3)) visible.push(c.iso3);
+
+    const step = STEPS.find(s => s.newIso.includes(c.iso3));
+    document.getElementById("stepTitle").textContent = c.entry + " · " + c.name;
+    document.getElementById("narrativeBox").textContent = step ? step.text : "Nuovo stato membro.";
+
+    applyMembershipState(visible, [c.iso3], []);
+  }, 850);
+}
+
+function stopPlay(){
+  if (playTimer) {
+    clearInterval(playTimer);
+    playTimer = null;
+    log("Play interrotto.");
+  }
+}
+
+function probe(){
+  const win = getGISWindow();
+  const keys = win ? Object.keys(win).filter(k => k.startsWith("lyr_")).sort() : [];
+  const match = findMembershipLayer();
+
+  log("parent.applyAtlasCommand = " + typeof window.parent.applyAtlasCommand);
+  log("Layer qgis2web disponibili: " + JSON.stringify(keys));
+  log("Layer membership risolto: " + (match ? match.key + " (score " + match.score + ")" : "NON TROVATO"));
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  log("Storia caricata. Cerco il layer eu_membership_timeline.");
+  probe();
+
+  // Partenza narrativa: il layer resta acceso, ma tutte le feature vengono nascoste.
+  // Così l'Europa nasce davanti al lettore, invece di comparire già completa.
+  hideAllCountries({silent: true, retries: 10});
+
+  document.getElementById("stepTitle").textContent = "Europa spenta";
+  document.getElementById("narrativeBox").textContent = "La mappa parte da zero: nessuno stato è ancora acceso. Ora possiamo far nascere l’Europa, un ingresso alla volta.";
+});
+</script>
+</head>
+<body>
+<main>
+  <div class="kicker">Geonarrazione · allargamenti europei</div>
+  <h1>La nascita dell’Europa: una mappa che si accende</h1>
+
+  <p>
+    Questa storia usa il layer <code>eu_membership_timeline</code> per accendere gli stati
+    uno alla volta, secondo la loro data di ingresso nella Comunità europea / Unione europea.
+  </p>
+
+  <div class="panel">
+    <div class="note">
+      Funziona se hai esportato in qgis2web il layer GeoJSON della membership UE con i campi
+      <code>iso3</code>, <code>entry_date</code>, <code>exit_date</code>.
+    </div>
+
+    <div class="legend">
+      <span><span class="dot active"></span>membro già entrato</span>
+      <span><span class="dot new"></span>nuovo ingresso</span>
+      <span><span class="dot former"></span>uscita / ex membro</span>
+    </div>
+
+    <div class="buttons">
+      <button onclick="probe()">Diagnostica layer</button>
+      <button class="primary" onclick="playCountries()">Play paese per paese</button>
+      <button class="stop" onclick="stopPlay()">Stop</button>
+      <button onclick="hideAllCountries()">Spegni tutto</button>
+      <button onclick="showStep(0)">Riaccendi 1958</button>
+      <button onclick="resetMap()">Reset stile QGIS</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 id="stepTitle">Pronto</h2>
+    <div id="narrativeBox">
+      La mappa parte con tutti gli stati spenti. Premi “Play paese per paese”, oppure scegli una fase storica.
+    </div>
+    <div id="countryBox"></div>
+  </div>
+
+  <div class="timeline">
+    <div class="card">
+      <div class="date">1958</div>
+      <div class="title">I sei fondatori</div>
+      <div class="small">Belgio, Francia, Germania, Italia, Lussemburgo, Paesi Bassi</div>
+      <div class="buttons"><button onclick="showStep(0)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">1973</div>
+      <div class="title">Primo allargamento</div>
+      <div class="small">Danimarca, Irlanda, Regno Unito</div>
+      <div class="buttons"><button onclick="showStep(1)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">1981</div>
+      <div class="title">La Grecia</div>
+      <div class="small">Ingresso mediterraneo e stabilizzazione democratica</div>
+      <div class="buttons"><button onclick="showStep(2)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">1986</div>
+      <div class="title">Spagna e Portogallo</div>
+      <div class="small">L’allargamento iberico dopo le dittature</div>
+      <div class="buttons"><button onclick="showStep(3)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">1995</div>
+      <div class="title">Austria, Finlandia, Svezia</div>
+      <div class="small">Paesi EFTA, nordici e post-Guerra fredda</div>
+      <div class="buttons"><button onclick="showStep(4)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">2004</div>
+      <div class="title">Il grande allargamento</div>
+      <div class="small">Dieci nuovi membri, centro-est Europa e Mediterraneo</div>
+      <div class="buttons"><button onclick="showStep(5)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">2007</div>
+      <div class="title">Bulgaria e Romania</div>
+      <div class="small">L’Unione entra più a fondo nel sud-est europeo</div>
+      <div class="buttons"><button onclick="showStep(6)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">2013</div>
+      <div class="title">Croazia</div>
+      <div class="small">Il percorso balcanico diventa più lento e selettivo</div>
+      <div class="buttons"><button onclick="showStep(7)">Accendi</button></div>
+    </div>
+
+    <div class="card">
+      <div class="date">2020</div>
+      <div class="title">Brexit</div>
+      <div class="small">Il Regno Unito esce: la mappa non cresce soltanto</div>
+      <div class="buttons"><button onclick="showStep(8)">Mostra</button></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <strong>Log tecnico</strong>
+    <div id="log"></div>
+  </div>
+</main>
+</body>
+</html>

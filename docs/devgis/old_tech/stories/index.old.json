@@ -1,0 +1,74 @@
+{
+  "archive_name": "CNOT",
+  "archive_title": "Europa Quantistica 2041",
+  "last_update": "2041-09-13",
+
+  "stories": [
+  {
+      "id": "cnot_17",
+      "title": "Cnot 1.7 dentro all' ex convitto",
+      "author": "Francesco Sisini",
+      "date": "2041-09-03",
+
+      "latitude": 44.82747829,
+      "longitude": 11.61067217,
+
+      "location_name": "Ex Convitto Cardial Mora",
+      "archive": "CNOT",
+
+      "story_file": "stories/vendetta_in_sol_maggiore.html",
+      "metadata_file": "stories/tecs_dhs_visa.json",
+
+      "tags": [
+        "urbex",
+        "usa",
+        "tecs",
+        "visto"
+      ]
+    },
+    {
+      "id": "tecs_dhs_visa",
+      "title": "Richiesta visto TECS/DHS",
+      "author": "Francesco Sisini",
+      "date": "2041-09-03",
+
+      "latitude": 38.8951,
+      "longitude": -77.0364,
+
+      "location_name": "Washington D.C.",
+      "archive": "CNOT",
+
+      "story_file": "stories/tecs_dhs_visa.html",
+      "metadata_file": "stories/tecs_dhs_visa.json",
+
+      "tags": [
+        "diplomazia",
+        "usa",
+        "tecs",
+        "visto"
+      ]
+    },
+
+    {
+      "id": "convitto_access",
+      "title": "Accesso al Convitto",
+      "author": "Francesco Sisini",
+      "date": "2041-09-13",
+
+      "latitude": 44.8381,
+      "longitude": 11.6198,
+
+      "location_name": "Ferrara",
+      "archive": "CNOT",
+
+      "story_file": "stories/convitto_access.html",
+      "metadata_file": "stories/convitto_access.json",
+
+      "tags": [
+        "urbex",
+        "convitto",
+        "rocky"
+      ]
+    }
+  ]
+}

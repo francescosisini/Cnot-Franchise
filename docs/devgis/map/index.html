@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #000000;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/ne_10m_admin_0_countries_0.js"></script><script src="layers/eu_membership_timeline_1.js"></script><script src="layers/digital_infrastructureFRONTEX_digital_infrastructure_2.js"></script><script src="layers/relationsFRONTEX_relations_3.js"></script><script src="layers/sitesFRONTEX_sites_4.js"></script><script src="layers/digital_infrastructureEUROJUST_digital_infrastructure_5.js"></script><script src="layers/relationsEUROJUST_relations_6.js"></script><script src="layers/sitesEUROJUST_sites_7.js"></script><script src="layers/digital_infrastructureeuLISA_digital_infrastructure_8.js"></script><script src="layers/relationseuLISA_relations_9.js"></script><script src="layers/siteseuLISA_sites_10.js"></script><script src="layers/digital_infrastructureENISA_digital_infrastructure_11.js"></script><script src="layers/relationsENISA_relations_12.js"></script><script src="layers/sitesENISA_sites_13.js"></script><script src="layers/digital_infrastructureCommissione_Europea_digital_infrastructure_14.js"></script><script src="layers/relationsCommissione_Europea_relations_15.js"></script><script src="layers/sitesCommissione_Europea_sites_16.js"></script><script src="layers/digital_infrastructureBCE_digital_infrastructure_17.js"></script><script src="layers/relationsBCE_relations_18.js"></script><script src="layers/sitesBCE_sites_19.js"></script><script src="layers/digital_infrastructureEUROPOL_digital_infrastructure_20.js"></script><script src="layers/relationsEUROPOL_relations_21.js"></script><script src="layers/sitesEUROPOL_sites_22.js"></script><script src="layers/FilieraAlimentarepuntodidistribuzione_23.js"></script><script src="layers/alice_prologostory_points_24.js"></script><script src="layers/casa_caterina_25.js"></script><script src="layers/casa_caterina_26.js"></script><script src="layers/tiny_laura_27.js"></script><script src="layers/tiny_laura_28.js"></script><script src="layers/stanza_Aliceroom_Alice_29.js"></script><script src="layers/stanza_Aliceroom_Alice_30.js"></script><script src="layers/legacy_infrastructure_2050_31.js"></script><script src="layers/cnot17_events_32.js"></script><script src="layers/visa_data_flows_33.js"></script><script src="layers/convitto_base_localConvittoCardinalMoraesempiobase_34.js"></script><script src="layers/convitto_base_localConvittoCardinalMoraesempiobase_35.js"></script><script src="layers/cnotstrade_1_36.js"></script><script src="layers/cnotbuilding_37.js"></script><script src="layers/cnotstrade_2_38.js"></script><script src="layers/highway_39.js"></script><script src="layers/highway_40.js"></script><script src="layers/highway_41.js"></script><script src="layers/building_42.js"></script><script src="layers/building_43.js"></script><script src="layers/cnotEdifici_44.js"></script><script src="layers/Telecamere_45.js"></script><script src="layers/Semafori_46.js"></script><script src="layers/cnotTinyhouses_47.js"></script><script src="layers/cnotparcheggiodroni_48.js"></script><script src="layers/nuclear_reactors_europe_all_49.js"></script><script src="layers/energy_opsd_all_except_nuclear_50.js"></script><script src="layers/ai_compute_relations_51.js"></script><script src="layers/ai_supercomputers_52.js"></script><script src="layers/ai_relations_53.js"></script><script src="layers/ai_factories_54.js"></script><script src="layers/ai_actors_55.js"></script><script src="layers/qt_relations_56.js"></script><script src="layers/qt_infrastructures_57.js"></script><script src="layers/qt_actors_58.js"></script><script src="layers/cnoteurope_59.js"></script>
+        <script src="styles/ne_10m_admin_0_countries_0_style.js"></script><script src="styles/eu_membership_timeline_1_style.js"></script><script src="styles/digital_infrastructureFRONTEX_digital_infrastructure_2_style.js"></script><script src="styles/relationsFRONTEX_relations_3_style.js"></script><script src="styles/sitesFRONTEX_sites_4_style.js"></script><script src="styles/digital_infrastructureEUROJUST_digital_infrastructure_5_style.js"></script><script src="styles/relationsEUROJUST_relations_6_style.js"></script><script src="styles/sitesEUROJUST_sites_7_style.js"></script><script src="styles/digital_infrastructureeuLISA_digital_infrastructure_8_style.js"></script><script src="styles/relationseuLISA_relations_9_style.js"></script><script src="styles/siteseuLISA_sites_10_style.js"></script><script src="styles/digital_infrastructureENISA_digital_infrastructure_11_style.js"></script><script src="styles/relationsENISA_relations_12_style.js"></script><script src="styles/sitesENISA_sites_13_style.js"></script><script src="styles/digital_infrastructureCommissione_Europea_digital_infrastructure_14_style.js"></script><script src="styles/relationsCommissione_Europea_relations_15_style.js"></script><script src="styles/sitesCommissione_Europea_sites_16_style.js"></script><script src="styles/digital_infrastructureBCE_digital_infrastructure_17_style.js"></script><script src="styles/relationsBCE_relations_18_style.js"></script><script src="styles/sitesBCE_sites_19_style.js"></script><script src="styles/digital_infrastructureEUROPOL_digital_infrastructure_20_style.js"></script><script src="styles/relationsEUROPOL_relations_21_style.js"></script><script src="styles/sitesEUROPOL_sites_22_style.js"></script><script src="styles/FilieraAlimentarepuntodidistribuzione_23_style.js"></script><script src="styles/alice_prologostory_points_24_style.js"></script><script src="styles/casa_caterina_25_style.js"></script><script src="styles/casa_caterina_26_style.js"></script><script src="styles/tiny_laura_27_style.js"></script><script src="styles/tiny_laura_28_style.js"></script><script src="styles/stanza_Aliceroom_Alice_29_style.js"></script><script src="styles/stanza_Aliceroom_Alice_30_style.js"></script><script src="styles/legacy_infrastructure_2050_31_style.js"></script><script src="styles/cnot17_events_32_style.js"></script><script src="styles/visa_data_flows_33_style.js"></script><script src="styles/convitto_base_localConvittoCardinalMoraesempiobase_34_style.js"></script><script src="styles/convitto_base_localConvittoCardinalMoraesempiobase_35_style.js"></script><script src="styles/cnotstrade_1_36_style.js"></script><script src="styles/cnotbuilding_37_style.js"></script><script src="styles/cnotstrade_2_38_style.js"></script><script src="styles/highway_39_style.js"></script><script src="styles/highway_40_style.js"></script><script src="styles/highway_41_style.js"></script><script src="styles/building_42_style.js"></script><script src="styles/building_43_style.js"></script><script src="styles/cnotEdifici_44_style.js"></script><script src="styles/Telecamere_45_style.js"></script><script src="styles/Semafori_46_style.js"></script><script src="styles/cnotTinyhouses_47_style.js"></script><script src="styles/cnotparcheggiodroni_48_style.js"></script><script src="styles/nuclear_reactors_europe_all_49_style.js"></script><script src="styles/energy_opsd_all_except_nuclear_50_style.js"></script><script src="styles/ai_compute_relations_51_style.js"></script><script src="styles/ai_supercomputers_52_style.js"></script><script src="styles/ai_relations_53_style.js"></script><script src="styles/ai_factories_54_style.js"></script><script src="styles/ai_actors_55_style.js"></script><script src="styles/qt_relations_56_style.js"></script><script src="styles/qt_infrastructures_57_style.js"></script><script src="styles/qt_actors_58_style.js"></script><script src="styles/cnoteurope_59_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
