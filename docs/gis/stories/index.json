@@ -21,6 +21,24 @@
       ]
     },
     {
+    "id": "fpga_infrastructures_europe_it",
+    "title": "Dalla FPGA al data center",
+    "file": "fpga_infrastructures_europe_it.html",
+    "language": "it",
+    "category": "Tecnologie",
+    "description": "Una storia cartografica che collega il benchmark medico su Alveo U55C alle infrastrutture FPGA europee documentate."
+    },
+    {
+    "id": "europe-in-six-places",
+    "title": "Europe in Six Places",
+    "subtitle": "A small GIS story about European integration through symbolic places.",
+    "author": "Francesco Sisini",
+    "language": "en",
+    "file": "europe_in_six_places.html",
+    "layer": "european_integration_places",
+    "tags": ["europe", "integration", "treaties", "institutions", "demo"]
+    },
+    {
       "id": "europa-membership-timeline",
       "title": "La costruzione dell’Europa",
       "subtitle": "Timeline di adesione europea",

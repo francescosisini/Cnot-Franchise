@@ -1,0 +1,453 @@
+{
+  "type": "FeatureCollection",
+  "name": "europe_fpga_infrastructures_pilot",
+  "properties": {
+    "schema_version": "0.2",
+    "generated_on": "2026-07-12",
+    "coordinate_reference_system": "WGS84 / EPSG:4326, longitude-latitude order",
+    "scope": "Publicly documented European physical FPGA installations and cloud regions exposing FPGA services.",
+    "feature_count": 7,
+    "evidence_levels": {
+      "A": "Official operator, provider, institutional or public-infrastructure documentation.",
+      "B": "Primary peer-reviewed or equivalent research publication describing the platform."
+    },
+    "important_limitations": [
+      "Presence of FPGA hardware does not demonstrate deployment of medical AI.",
+      "Cloud-region coordinates are cartographic label points, not physical data-centre locations.",
+      "Counts are reported only when explicitly documented; null means unknown, not zero.",
+      "The dataset is a curated pilot and is not an exhaustive census of European FPGA infrastructure.",
+      "Availability and lifecycle fields require periodic re-verification."
+    ],
+    "story_layer_name": "europe_fpga_infrastructures_pilot",
+    "story_fields": {
+      "story_order": "Cumulative order used by the narrative HTML.",
+      "story_phase": "Normalized narrative phase.",
+      "medical_ai_status": "Separates the documented medical benchmark from infrastructures without public evidence of production medical-AI deployment.",
+      "map_entity_type": "Distinguishes physical sites from cloud-region label points."
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "IT-UNIFE-U55C-BENCHMARK",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.622355,
+          44.828315
+        ]
+      },
+      "properties": {
+        "name": "University of Ferrara – Medical AI FPGA benchmark",
+        "operator": "University of Ferrara / INFN Ferrara",
+        "facility": "Department of Physics and Earth Sciences, Via Saragat 1",
+        "country": "Italy",
+        "country_code": "IT",
+        "city_or_region": "Ferrara",
+        "infrastructure_type": "research_benchmark_site",
+        "deployment_layer": "physical_hardware",
+        "deployment_status": "documented_research_benchmark",
+        "access_model": "Research infrastructure",
+        "fpga_vendor": "AMD/Xilinx",
+        "fpga_models": [
+          "Alveo U55C"
+        ],
+        "fpga_count": 1,
+        "fpga_count_note": "The medical-image inference benchmark was conducted on an AMD Alveo U55C data-center acceleration card.",
+        "accelerators_per_instance_or_node": 1,
+        "host_nodes": 1,
+        "memory_note": "The U55C used in the benchmark includes 16 GB HBM2.",
+        "software_stack": [
+          "Vitis AI",
+          "VART",
+          "C++ host application"
+        ],
+        "documented_workloads": [
+          "Medical AI inference",
+          "Aortic valve calcium lesion segmentation",
+          "DNN benchmarking"
+        ],
+        "medical_ai_evidence": "Documented research benchmark of a medical-image segmentation workload; this is not presented as a certified production clinical service.",
+        "medical_ai_relevance": "Origin of the thesis case study and technical reference point for the narrative.",
+        "supports_custom_fpga_designs": "DPU-based deployment examined in the thesis",
+        "evidence_level": "B",
+        "evidence_definition": "Peer-reviewed primary publication and doctoral research documentation.",
+        "geometry_precision": "published_institution_address_marker",
+        "coordinate_note": "Marker derived from the published University of Ferrara address/map reference; it does not identify a specific server room.",
+        "source_title": "Benchmarking a DNN for aortic valve calcium lesions segmentation on FPGA-based DPU using the Vitis AI toolchain",
+        "source_url": "https://doi.org/10.1016/j.future.2025.108115",
+        "secondary_source_url": "https://fst.unife.it/en/about-us/sedi-e-strutture",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "The benchmark demonstrates execution and measurement of a medical DNN inference workload on an FPGA-based DPU.",
+        "story_order": 1,
+        "story_phase": "benchmark_origin",
+        "story_phase_label": "Origine del benchmark",
+        "story_short_title": "Ferrara · Il benchmark",
+        "medical_ai_status": "research_benchmark",
+        "map_entity_type": "physical_site"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ES-BSC-MAKINOTE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1167,
+          41.3897
+        ]
+      },
+      "properties": {
+        "name": "Makinote FPGA Cluster",
+        "operator": "Barcelona Supercomputing Center (BSC-CNS)",
+        "facility": "BSC campus",
+        "country": "Spain",
+        "country_code": "ES",
+        "city_or_region": "Barcelona",
+        "infrastructure_type": "physical_research_cluster",
+        "deployment_layer": "physical_hardware",
+        "deployment_status": "documented_research_platform",
+        "access_model": "Research platform; access conditions not inferred from the publication",
+        "fpga_vendor": "AMD/Xilinx",
+        "fpga_models": [
+          "Alveo U55C"
+        ],
+        "fpga_count": 96,
+        "fpga_count_note": "12 nodes across two racks, with 8 Alveo U55C cards per node.",
+        "accelerators_per_instance_or_node": 8,
+        "host_nodes": 12,
+        "memory_note": "Alveo U55C cards include HBM; exact configuration should be checked against the platform paper.",
+        "software_stack": [
+          "Custom FPGA shell",
+          "RTL-oriented research toolchain"
+        ],
+        "documented_workloads": [
+          "Pre-silicon emulation",
+          "RISC-V research",
+          "HPC experiments"
+        ],
+        "medical_ai_evidence": "No public evidence identified here of medical-AI deployment.",
+        "medical_ai_relevance": "Uses the same Alveo U55C accelerator family examined in the thesis, but for a different research workload.",
+        "supports_custom_fpga_designs": "yes",
+        "evidence_level": "B",
+        "evidence_definition": "Peer-reviewed or primary research publication describing the installed platform.",
+        "geometry_precision": "institution_address_marker",
+        "coordinate_note": "Marker placed at the published BSC institutional address, not necessarily at the exact rack room.",
+        "source_title": "Makinote: An FPGA-Based HW/SW Platform for Pre-Silicon Emulation of RISC-V Designs",
+        "source_url": "https://dl.acm.org/doi/10.1145/3642921.3642928",
+        "secondary_source_url": "https://arxiv.org/abs/2401.17984",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "Demonstrates a large European installation of Alveo U55C cards and provides a geographically concrete comparator for the thesis platform.",
+        "story_order": 2,
+        "story_phase": "research_cluster",
+        "story_phase_label": "Dalla scheda al cluster",
+        "story_short_title": "Barcellona · Cluster U55C",
+        "medical_ai_status": "no_public_production_evidence",
+        "map_entity_type": "physical_site"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DE-PC2-NOCTUA2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7719,
+          51.7087
+        ]
+      },
+      "properties": {
+        "name": "Noctua 2 FPGA Partition",
+        "operator": "Paderborn Center for Parallel Computing (PC²), Paderborn University",
+        "facility": "HPC Datacenter, Building X",
+        "country": "Germany",
+        "country_code": "DE",
+        "city_or_region": "Paderborn",
+        "infrastructure_type": "physical_hpc_installation",
+        "deployment_layer": "physical_hardware",
+        "deployment_status": "operational",
+        "access_model": "Research access, including national NHR programmes and external research proposals",
+        "fpga_vendor": "Mixed AMD/Xilinx and Intel",
+        "fpga_models": [
+          "Alveo U280",
+          "Stratix 10 GX 2800 / BittWare 520N"
+        ],
+        "fpga_count": 80,
+        "fpga_count_note": "48 Alveo U280 cards and 32 Intel Stratix 10 GX 2800 cards across 36 FPGA nodes.",
+        "accelerators_per_instance_or_node": null,
+        "host_nodes": 36,
+        "memory_note": "U280 cards include HBM2 and DDR; BittWare cards include DDR, according to PC² system documentation.",
+        "software_stack": [
+          "AMD Vitis",
+          "Intel oneAPI",
+          "Intel OpenCL"
+        ],
+        "documented_workloads": [
+          "HPC",
+          "FPGA acceleration research",
+          "Machine learning research"
+        ],
+        "medical_ai_evidence": "No public evidence identified here of a production medical-AI service.",
+        "medical_ai_relevance": "A mature, accessible FPGA-rich HPC environment suitable for heterogeneous-computing experiments.",
+        "supports_custom_fpga_designs": "yes",
+        "evidence_level": "A",
+        "evidence_definition": "Official system and access documentation from the operating centre.",
+        "geometry_precision": "published_building_address_marker",
+        "coordinate_note": "Approximate marker for PC² Building X at Mersinweg 5.",
+        "source_title": "Noctua 2 system description",
+        "source_url": "https://pc2.uni-paderborn.de/systems-and-services/noctua-2",
+        "secondary_source_url": "https://pc2.uni-paderborn.de/system-access/call-for-proposals",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "Shows that European national HPC services can expose sizeable FPGA partitions through structured access programmes.",
+        "story_order": 3,
+        "story_phase": "public_hpc",
+        "story_phase_label": "HPC pubblico",
+        "story_short_title": "Paderborn · Noctua 2",
+        "medical_ai_status": "no_public_production_evidence",
+        "map_entity_type": "physical_site"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-MELUXINA-FPGA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065,
+          49.7876
+        ]
+      },
+      "properties": {
+        "name": "MeluXina – FPGA Accelerator Module",
+        "operator": "LuxProvide",
+        "facility": "LuxConnect DC2",
+        "country": "Luxembourg",
+        "country_code": "LU",
+        "city_or_region": "Bissen",
+        "infrastructure_type": "physical_hpc_installation",
+        "deployment_layer": "physical_hardware",
+        "deployment_status": "operational",
+        "access_model": "EuroHPC research and industrial access programmes",
+        "fpga_vendor": "Intel",
+        "fpga_models": [
+          "Stratix 10 MX",
+          "BittWare 520N-MX"
+        ],
+        "fpga_count": 40,
+        "fpga_count_note": "20 CPU–FPGA hybrid nodes, each with 2 BittWare 520N-MX cards.",
+        "accelerators_per_instance_or_node": 2,
+        "host_nodes": 20,
+        "memory_note": "Each FPGA card is documented with 16 GB HBM.",
+        "software_stack": [
+          "Intel FPGA toolchain"
+        ],
+        "documented_workloads": [
+          "HPC",
+          "HPDA",
+          "AI"
+        ],
+        "medical_ai_evidence": "No public evidence identified here of a production medical-AI service on this FPGA partition.",
+        "medical_ai_relevance": "Directly relevant as an operational European HPC infrastructure with a documented FPGA partition for AI workloads.",
+        "supports_custom_fpga_designs": "yes_or_access_policy_dependent",
+        "evidence_level": "A",
+        "evidence_definition": "Official operator or public-infrastructure documentation.",
+        "geometry_precision": "approximate_facility_location_from_published_address",
+        "coordinate_note": "Approximate marker for the published Bissen DC2 address; not a surveyed rack coordinate.",
+        "source_title": "EuroHPC Technical Guidelines and LuxProvide/LuxConnect facility documentation",
+        "source_url": "https://www.eurohpc-ju.europa.eu/document/download/7ac29264-106d-497c-9683-42aec21bf10f_en?filename=Technical_Guidelines-all+calls-26.05.2025.pdf",
+        "secondary_source_url": "https://www.luxprovide.lu/contact/",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "Example of a controlled European HPC environment in which FPGA-accelerated AI inference could be deployed and benchmarked.",
+        "story_order": 4,
+        "story_phase": "public_hpc",
+        "story_phase_label": "HPC europeo",
+        "story_short_title": "Bissen · MeluXina",
+        "medical_ai_status": "no_public_production_evidence",
+        "map_entity_type": "physical_site"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AWS-EU-CENTRAL-1-F2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6821,
+          50.1109
+        ]
+      },
+      "properties": {
+        "name": "AWS Europe (Frankfurt) – EC2 F2",
+        "operator": "Amazon Web Services",
+        "facility": "AWS Region eu-central-1",
+        "country": "Germany",
+        "country_code": "DE",
+        "city_or_region": "Frankfurt region",
+        "infrastructure_type": "cloud_fpga_service_region",
+        "deployment_layer": "cloud_service",
+        "deployment_status": "generally_available",
+        "availability_start": "2025-11-12",
+        "access_model": "Commercial cloud service",
+        "fpga_vendor": "AMD",
+        "fpga_models": [
+          "Virtex UltraScale+ HBM VU47P"
+        ],
+        "fpga_count": null,
+        "fpga_count_note": "Physical fleet size is not publicly stated; an F2 instance can expose up to 8 FPGAs.",
+        "accelerators_per_instance_or_node": "1_to_8_by_instance_size",
+        "host_nodes": null,
+        "memory_note": "16 GB HBM per FPGA is documented by AWS.",
+        "software_stack": [
+          "AWS FPGA Developer AMI",
+          "AWS FPGA development workflow"
+        ],
+        "documented_workloads": [
+          "Custom hardware acceleration",
+          "Data analytics",
+          "Networking",
+          "Machine learning"
+        ],
+        "medical_ai_evidence": "No claim is made that medical-AI workloads are currently deployed in this region.",
+        "medical_ai_relevance": "Commercially accessible European FPGA capacity that could support controlled inference experiments subject to governance and certification requirements.",
+        "supports_custom_fpga_designs": "yes_subject_to_AWS_flow",
+        "evidence_level": "A",
+        "evidence_definition": "Official cloud-provider availability and product documentation.",
+        "geometry_precision": "cloud_region_label_point",
+        "coordinate_note": "Frankfurt city centroid used only as a cartographic label for the AWS region; it is not a data-centre coordinate.",
+        "source_title": "Amazon EC2 F2 regional availability and product page",
+        "source_url": "https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-ec2-f2-instances-four-additional-aws-regions/",
+        "secondary_source_url": "https://aws.amazon.com/ec2/instance-types/f2/",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "Represents FPGA as an on-demand service rather than a locally owned accelerator.",
+        "story_order": 5,
+        "story_phase": "cloud_service",
+        "story_phase_label": "FPGA come servizio",
+        "story_short_title": "Francoforte · AWS F2",
+        "medical_ai_status": "no_public_production_evidence",
+        "map_entity_type": "cloud_region"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AWS-EU-WEST-2-F2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1278,
+          51.5074
+        ]
+      },
+      "properties": {
+        "name": "AWS Europe (London) – EC2 F2",
+        "operator": "Amazon Web Services",
+        "facility": "AWS Region eu-west-2",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "city_or_region": "London region",
+        "infrastructure_type": "cloud_fpga_service_region",
+        "deployment_layer": "cloud_service",
+        "deployment_status": "generally_available",
+        "availability_start": "2025-11-12",
+        "access_model": "Commercial cloud service",
+        "fpga_vendor": "AMD",
+        "fpga_models": [
+          "Virtex UltraScale+ HBM VU47P"
+        ],
+        "fpga_count": null,
+        "fpga_count_note": "Physical fleet size is not publicly stated; an F2 instance can expose up to 8 FPGAs.",
+        "accelerators_per_instance_or_node": "1_to_8_by_instance_size",
+        "host_nodes": null,
+        "memory_note": "16 GB HBM per FPGA is documented by AWS.",
+        "software_stack": [
+          "AWS FPGA Developer AMI",
+          "AWS FPGA development workflow"
+        ],
+        "documented_workloads": [
+          "Custom hardware acceleration",
+          "Data analytics",
+          "Networking",
+          "Machine learning"
+        ],
+        "medical_ai_evidence": "No claim is made that medical-AI workloads are currently deployed in this region.",
+        "medical_ai_relevance": "Commercially accessible FPGA capacity in a European cloud region.",
+        "supports_custom_fpga_designs": "yes_subject_to_AWS_flow",
+        "evidence_level": "A",
+        "evidence_definition": "Official cloud-provider availability and product documentation.",
+        "geometry_precision": "cloud_region_label_point",
+        "coordinate_note": "London city centroid used only as a cartographic label for the AWS region; it is not a data-centre coordinate.",
+        "source_title": "Amazon EC2 F2 regional availability and product page",
+        "source_url": "https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-ec2-f2-instances-four-additional-aws-regions/",
+        "secondary_source_url": "https://aws.amazon.com/ec2/instance-types/f2/",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "Represents FPGA as an on-demand service rather than a locally owned accelerator.",
+        "story_order": 6,
+        "story_phase": "cloud_service",
+        "story_phase_label": "FPGA come servizio",
+        "story_short_title": "Londra · AWS F2",
+        "medical_ai_status": "no_public_production_evidence",
+        "map_entity_type": "cloud_region"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "AZURE-WEST-EUROPE-NP",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2913,
+          52.1326
+        ]
+      },
+      "properties": {
+        "name": "Microsoft Azure West Europe – NP-series",
+        "operator": "Microsoft Azure",
+        "facility": "Azure region: West Europe",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "city_or_region": "West Europe region",
+        "infrastructure_type": "cloud_fpga_service_region",
+        "deployment_layer": "cloud_service",
+        "deployment_status": "operational_but_retiring",
+        "availability_end": "2027-05-31",
+        "access_model": "Commercial cloud service; new reserved purchases ended on 2026-04-02",
+        "fpga_vendor": "AMD/Xilinx",
+        "fpga_models": [
+          "Alveo U250"
+        ],
+        "fpga_count": null,
+        "fpga_count_note": "Physical fleet size is not publicly stated; NP VM sizes expose 1 to 4 FPGAs.",
+        "accelerators_per_instance_or_node": "1_to_4_by_VM_size",
+        "host_nodes": null,
+        "memory_note": "Microsoft documentation describes the NP family as U250-based FPGA-accelerated VMs.",
+        "software_stack": [
+          "Azure FPGA shell",
+          "Vitis 2022.1-oriented development flow",
+          "Azure FPGA attestation"
+        ],
+        "documented_workloads": [
+          "Machine-learning inference",
+          "Video transcoding",
+          "Database search and analytics"
+        ],
+        "medical_ai_evidence": "No claim is made that medical-AI workloads are currently deployed in this region.",
+        "medical_ai_relevance": "A documented European cloud FPGA service whose planned retirement illustrates the need for temporal fields in the GIS.",
+        "supports_custom_fpga_designs": "yes_subject_to_Azure_attestation",
+        "evidence_level": "A",
+        "evidence_definition": "Official cloud-provider product, availability and retirement documentation.",
+        "geometry_precision": "country_centroid_for_cloud_region",
+        "coordinate_note": "Netherlands centroid used because Microsoft publishes the region location, not individual data-centre coordinates.",
+        "source_title": "Azure NP-series virtual machines",
+        "source_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/np-series",
+        "secondary_source_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/np-series-retirement",
+        "verified_on": "2026-07-12",
+        "thesis_relevance": "Shows both the availability and lifecycle risk of cloud-hosted FPGA acceleration.",
+        "story_order": 7,
+        "story_phase": "service_lifecycle",
+        "story_phase_label": "Ciclo di vita del servizio",
+        "story_short_title": "West Europe · Azure NP",
+        "medical_ai_status": "no_public_production_evidence",
+        "map_entity_type": "cloud_region"
+      }
+    }
+  ]
+}

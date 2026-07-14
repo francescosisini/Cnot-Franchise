@@ -21,7 +21,8 @@
     mapType: null,
     entries: [],
     refreshedAt: 0,
-    lastDiagnostics: null
+    lastDiagnostics: null,
+    savedStates: {}
   };
 
   function safe(fn, fallback) {
@@ -674,6 +675,463 @@
     return { ok: true, count: list.length, mapType: state.mapType };
   }
 
+
+  // ---------------------------------------------------------------------------
+  // Public GIS API (generic layer/feature commands)
+  // ---------------------------------------------------------------------------
+
+  function simpleLayerName(value) {
+    let s = normalizeString(value);
+    s = s.replace(/^lyr_/, "").replace(/^json_/, "");
+    s = s.replace(/_\d+$/, "");
+    s = s.replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+    return s;
+  }
+
+  function layerCandidateNames(record) {
+    const names = [];
+    if (!record) return names;
+    names.push(record.key, record.title, record.name, record.id, record.label);
+    safe(function () {
+      const layer = record.layer;
+      if (layer && typeof layer.get === "function") {
+        names.push(layer.get("title"), layer.get("name"), layer.get("layerName"), layer.get("id"));
+      }
+    });
+    safe(function () {
+      const layer = record.layer;
+      if (layer && typeof layer.getProperties === "function") {
+        const p = layer.getProperties();
+        names.push(p.title, p.name, p.layerName, p.id);
+      }
+    });
+    return names.filter(Boolean).map(String);
+  }
+
+  function layerMatchesName(record, requestedName) {
+    const wanted = simpleLayerName(requestedName);
+    if (!wanted) return false;
+    return layerCandidateNames(record).some(function (candidate) {
+      const c = simpleLayerName(candidate);
+      return c === wanted || c.indexOf(wanted) >= 0 || wanted.indexOf(c) >= 0;
+    });
+  }
+
+  function layerVisible(record) {
+    if (!record || !state.map) return false;
+    if (record.type === "openlayers") {
+      return safe(function () {
+        return record.layer && typeof record.layer.getVisible === "function" ? record.layer.getVisible() : true;
+      }, true);
+    }
+    if (record.type === "leaflet") {
+      return safe(function () { return state.map.hasLayer(record.layer); }, false);
+    }
+    return false;
+  }
+
+  function setLayerVisible(record, visible) {
+    if (!record || !state.map) return;
+    if (record.type === "openlayers") {
+      safe(function () {
+        if (record.layer && typeof record.layer.setVisible === "function") record.layer.setVisible(!!visible);
+      });
+      safe(function () {
+        if (record.layer && typeof record.layer.changed === "function") record.layer.changed();
+      });
+      return;
+    }
+    if (record.type === "leaflet") {
+      safe(function () {
+        if (visible) {
+          if (record.layer && typeof record.layer.addTo === "function" && !state.map.hasLayer(record.layer)) record.layer.addTo(state.map);
+        } else if (record.layer && state.map.hasLayer(record.layer)) {
+          state.map.removeLayer(record.layer);
+        }
+      });
+    }
+  }
+
+  function listLayerContainers() {
+    if (!state.map) refresh();
+    const out = [];
+    const seen = new Set();
+
+    if (state.mapType === "openlayers") {
+      flattenOlLayers(state.map && state.map.getLayers && state.map.getLayers(), []).forEach(function (layer) {
+        if (!layer || seen.has(layer)) return;
+        seen.add(layer);
+        const key = getOlLayerName(layer, "");
+        out.push({ type: "openlayers", key: key, title: key, layer: layer, visible: layerVisible({ type: "openlayers", layer: layer }) });
+      });
+
+      safe(function () {
+        Object.keys(state.mapWindow || window).forEach(function (key) {
+          if (!/^lyr_/i.test(key)) return;
+          const layer = state.mapWindow[key];
+          if (!layer || seen.has(layer)) return;
+          seen.add(layer);
+          out.push({ type: "openlayers", key: key, title: getOlLayerName(layer, key), layer: layer, visible: layerVisible({ type: "openlayers", layer: layer }) });
+        });
+      });
+    }
+
+    if (state.mapType === "leaflet") {
+      safe(function () {
+        Object.keys(state.mapWindow || window).forEach(function (key) {
+          if (!/^lyr_/i.test(key)) return;
+          const layer = state.mapWindow[key];
+          if (!layer || seen.has(layer)) return;
+          if (!(layer._layers || typeof layer.addTo === "function")) return;
+          seen.add(layer);
+          out.push({ type: "leaflet", key: key, title: key, layer: layer, visible: layerVisible({ type: "leaflet", layer: layer }) });
+        });
+      });
+    }
+
+    return out;
+  }
+
+  function findLayerRecords(layerName) {
+    if (!state.map) refresh();
+    const matches = listLayerContainers().filter(function (record) {
+      return layerMatchesName(record, layerName);
+    });
+    return matches;
+  }
+
+  function firstLayerRecord(layerName) {
+    const records = findLayerRecords(layerName);
+    return records[0] || null;
+  }
+
+  function genericPropsFromFeature(feature) {
+    if (!feature) return {};
+    if (typeof feature.getProperties === "function") return featurePropsFromOlFeature(feature) || {};
+    if (feature.feature && feature.feature.properties) return feature.feature.properties || {};
+    if (feature.properties) return feature.properties || {};
+    return {};
+  }
+
+
+  function findRawGeojsonForLayer(layerName, record, expectedFeatureCount) {
+    const candidates = [];
+    safe(function () {
+      Object.keys(state.mapWindow || window).forEach(function (key) {
+        if (!/^json_/i.test(key)) return;
+        const obj = state.mapWindow[key];
+        const features = obj && Array.isArray(obj.features) ? obj.features : [];
+        if (!features.length) return;
+        const fakeRecord = { key: key, title: key, name: key, layer: null };
+        const matchesRequested = layerMatchesName(fakeRecord, layerName);
+        const matchesRecord = layerCandidateNames(record).some(function (candidate) {
+          return simpleLayerName(key).indexOf(simpleLayerName(candidate)) >= 0 || simpleLayerName(candidate).indexOf(simpleLayerName(key)) >= 0;
+        });
+        if (!matchesRequested && !matchesRecord) return;
+        candidates.push({ key: key, json: obj, features: features });
+      });
+    });
+    if (!candidates.length) return null;
+    return candidates.find(function (candidate) { return candidate.features.length === expectedFeatureCount; }) || candidates[0];
+  }
+
+  function collectGenericLayerEntries(layerName) {
+    if (!state.map) refresh();
+    const records = findLayerRecords(layerName);
+    const out = [];
+
+    records.forEach(function (record) {
+      const layer = record.layer;
+      if (!layer) return;
+
+      if (record.type === "openlayers") {
+        const source = safe(function () { return layer.getSource && layer.getSource(); }, null);
+        const features = safe(function () {
+          return source && typeof source.getFeatures === "function" ? source.getFeatures() : [];
+        }, []);
+        const raw = findRawGeojsonForLayer(layerName, record, features.length);
+        features.forEach(function (feature, index) {
+          const directProps = genericPropsFromFeature(feature);
+          const rawProps = raw && raw.features[index] && raw.features[index].properties ? raw.features[index].properties : {};
+          const props = Object.assign({}, rawProps, directProps);
+          delete props.geometry;
+          const entry = {
+            type: "openlayers",
+            target: feature,
+            feature: feature,
+            layer: layer,
+            parent: layer,
+            props: props,
+            key: String(index),
+            win: state.mapWindow,
+            layerKey: record.key
+          };
+          rememberOriginalStyle(entry);
+          out.push(entry);
+        });
+        return;
+      }
+
+      if (record.type === "leaflet") {
+        walkLeafletLayerTree(layer, null, function (leafletLayer, parent) {
+          const props = genericPropsFromFeature(leafletLayer);
+          const entry = {
+            type: "leaflet",
+            target: leafletLayer,
+            layer: leafletLayer,
+            parent: parent || layer,
+            props: props,
+            key: String(out.length),
+            win: state.mapWindow,
+            layerKey: record.key
+          };
+          rememberOriginalStyle(entry);
+          out.push(entry);
+        }, new Set());
+      }
+    });
+
+    return out;
+  }
+
+  function getFieldValue(props, field) {
+    if (!props || !field) return undefined;
+    if (Object.prototype.hasOwnProperty.call(props, field)) return props[field];
+    const wanted = normalizeString(field);
+    const key = Object.keys(props).find(function (k) { return normalizeString(k) === wanted; });
+    return key ? props[key] : undefined;
+  }
+
+  function parseSqlLiteral(raw) {
+    let s = String(raw == null ? "" : raw).trim();
+    if ((s[0] === "'" && s[s.length - 1] === "'") || (s[0] === '"' && s[s.length - 1] === '"')) {
+      s = s.slice(1, -1).replace(/\\'/g, "'").replace(/\\"/g, '"');
+    }
+    if (/^(true|false)$/i.test(s)) return /^true$/i.test(s);
+    if (/^null$/i.test(s)) return null;
+    if (/^-?\d+(\.\d+)?$/.test(s)) return Number(s);
+    return s;
+  }
+
+  function compareValues(left, op, right) {
+    const ln = Number(left);
+    const rn = Number(right);
+    const numeric = left !== "" && left != null && right !== "" && right != null && !Number.isNaN(ln) && !Number.isNaN(rn);
+    const a = numeric ? ln : normalizeString(left);
+    const b = numeric ? rn : normalizeString(right);
+
+    switch (op) {
+      case "=": case "==": return a === b;
+      case "!=": case "<>": return a !== b;
+      case "<": return a < b;
+      case "<=": return a <= b;
+      case ">": return a > b;
+      case ">=": return a >= b;
+      default: return false;
+    }
+  }
+
+  function splitSqlAnd(filter) {
+    return String(filter || "")
+      .split(/\s+AND\s+/i)
+      .map(function (part) { return part.trim(); })
+      .filter(Boolean);
+  }
+
+  function conditionPredicate(condition) {
+    let m;
+
+    m = condition.match(/^([A-Za-z_][A-Za-z0-9_]*)\s+IS\s+(TRUE|FALSE)$/i);
+    if (m) {
+      return function (props) {
+        const v = getFieldValue(props, m[1]);
+        const bool = v === true || String(v).toLowerCase() === "true" || Number(v) === 1;
+        return bool === (/^true$/i.test(m[2]));
+      };
+    }
+
+    m = condition.match(/^([A-Za-z_][A-Za-z0-9_]*)\s+CONTAINS\s+(.+)$/i);
+    if (m) {
+      const needle = normalizeString(parseSqlLiteral(m[2]));
+      return function (props) { return normalizeString(getFieldValue(props, m[1])).indexOf(needle) >= 0; };
+    }
+
+    m = condition.match(/^([A-Za-z_][A-Za-z0-9_]*)\s+IN\s*\((.+)\)$/i);
+    if (m) {
+      const values = m[2].split(",").map(parseSqlLiteral).map(normalizeString);
+      return function (props) { return values.indexOf(normalizeString(getFieldValue(props, m[1]))) >= 0; };
+    }
+
+    m = condition.match(/^([A-Za-z_][A-Za-z0-9_]*)\s*(=|==|!=|<>|<=|>=|<|>)\s*(.+)$/i);
+    if (m) {
+      const field = m[1];
+      const op = m[2];
+      const expected = parseSqlLiteral(m[3]);
+      return function (props) { return compareValues(getFieldValue(props, field), op, expected); };
+    }
+
+    return function () {
+      console.warn("[GIS] Unsupported filter condition:", condition);
+      return false;
+    };
+  }
+
+  function sqlPredicate(filter) {
+    if (!filter || !String(filter).trim()) return function () { return true; };
+    const predicates = splitSqlAnd(filter).map(conditionPredicate);
+    return function (props) {
+      return predicates.every(function (predicate) { return predicate(props || {}); });
+    };
+  }
+
+  function normalizeOptions(value) {
+    return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+  }
+
+  function showLayerPublic(layerName, filter, options) {
+    if (filter && typeof filter === "object" && !Array.isArray(filter)) {
+      options = filter;
+      filter = options.filter || options.where || "";
+    }
+    options = Object.assign({ fit: false }, normalizeOptions(options));
+
+    refresh();
+    const records = findLayerRecords(layerName);
+    records.forEach(function (record) { setLayerVisible(record, true); });
+
+    const layerEntries = collectGenericLayerEntries(layerName);
+    const predicate = sqlPredicate(filter || "");
+    const matches = [];
+
+    if (layerEntries.length) {
+      layerEntries.forEach(function (entry) {
+        const ok = safe(function () { return predicate(entry.props || {}); }, false);
+        if (ok) {
+          restoreStyle(entry);
+          matches.push(entry);
+        } else {
+          hideStyle(entry);
+        }
+      });
+    }
+
+    if (options.fit && matches.length) fitEntries(matches);
+    forceMapRedraw("GIS.showLayer");
+
+    return {
+      ok: records.length > 0,
+      layer: layerName,
+      filter: filter || "",
+      layers: records.length,
+      matched: filter ? matches.length : layerEntries.length,
+      total: layerEntries.length,
+      mapType: state.mapType
+    };
+  }
+
+  function hideLayerPublic(layerName) {
+    refresh();
+    const records = findLayerRecords(layerName);
+    records.forEach(function (record) { setLayerVisible(record, false); });
+    forceMapRedraw("GIS.hideLayer");
+    return { ok: records.length > 0, layer: layerName, layers: records.length };
+  }
+
+  function hideFeaturesPublic(layerName) {
+    refresh();
+    const records = findLayerRecords(layerName);
+    records.forEach(function (record) { setLayerVisible(record, true); });
+    const layerEntries = collectGenericLayerEntries(layerName);
+    layerEntries.forEach(hideStyle);
+    forceMapRedraw("GIS.hideFeatures");
+    return { ok: records.length > 0, layer: layerName, count: layerEntries.length };
+  }
+
+  function restoreLayerPublic(layerName) {
+    refresh();
+    const records = findLayerRecords(layerName);
+    records.forEach(function (record) { setLayerVisible(record, true); });
+    const layerEntries = collectGenericLayerEntries(layerName);
+    layerEntries.forEach(restoreStyle);
+    forceMapRedraw("GIS.restoreLayer");
+    return { ok: records.length > 0, layer: layerName, count: layerEntries.length };
+  }
+
+  function hideAllLayersPublic() {
+    refresh();
+    const records = listLayerContainers();
+    records.forEach(function (record) { setLayerVisible(record, false); });
+    forceMapRedraw("GIS.hideAllLayers");
+    return { ok: true, layers: records.length };
+  }
+
+  function showOnlyLayerPublic(layerName, options) {
+    options = Object.assign({ keep: [], filter: "", fit: false }, normalizeOptions(options));
+    refresh();
+    const records = listLayerContainers();
+    const keep = (options.keep || options.mantieni || []).map(simpleLayerName);
+    records.forEach(function (record) {
+      const isTarget = layerMatchesName(record, layerName);
+      const isKept = layerCandidateNames(record).some(function (candidate) {
+        return keep.indexOf(simpleLayerName(candidate)) >= 0;
+      });
+      setLayerVisible(record, isTarget || isKept);
+    });
+    const result = showLayerPublic(layerName, options.filter || options.where || "", { fit: options.fit });
+    result.mode = "showOnlyLayer";
+    return result;
+  }
+
+  function saveStatePublic(name) {
+    refresh();
+    const key = String(name || "default");
+    state.savedStates[key] = listLayerContainers().map(function (record) {
+      return { type: record.type, layer: record.layer, visible: layerVisible(record), key: record.key, title: record.title };
+    });
+    return { ok: true, name: key, layers: state.savedStates[key].length };
+  }
+
+  function restoreStatePublic(name) {
+    refresh();
+    const key = String(name || "default");
+    const saved = state.savedStates[key] || [];
+    saved.forEach(function (item) { setLayerVisible(item, item.visible); });
+    forceMapRedraw("GIS.restoreState");
+    return { ok: saved.length > 0, name: key, layers: saved.length };
+  }
+
+  function listLayersPublic() {
+    refresh();
+    return listLayerContainers().map(function (record) {
+      return {
+        key: record.key,
+        title: record.title,
+        visible: layerVisible(record),
+        type: record.type,
+        names: layerCandidateNames(record)
+      };
+    });
+  }
+
+  function describeLayerPublic(layerName) {
+    refresh();
+    const records = findLayerRecords(layerName);
+    const layerEntries = collectGenericLayerEntries(layerName);
+    const fields = {};
+    layerEntries.slice(0, 50).forEach(function (entry) {
+      Object.keys(entry.props || {}).forEach(function (key) { fields[key] = true; });
+    });
+    return {
+      ok: records.length > 0,
+      layer: layerName,
+      layers: records.map(function (record) { return { key: record.key, title: record.title, visible: layerVisible(record) }; }),
+      featureCount: layerEntries.length,
+      fields: Object.keys(fields).sort(),
+      sample: layerEntries.slice(0, 5).map(function (entry) { return entry.props; })
+    };
+  }
+
+
   let pendingRetryTimer = null;
   let pendingRetrySerial = 0;
 
@@ -727,6 +1185,28 @@
         return showFormerMembers(args);
       case "showAllMembership":
         return showAllMembership(args);
+      case "showLayer":
+        return showLayerPublic(args.layer || args.name, args.filter || args.where || "", args);
+      case "hideLayer":
+        return hideLayerPublic(args.layer || args.name);
+      case "hideFeatures":
+      case "hideLayerFeatures":
+        return hideFeaturesPublic(args.layer || args.name);
+      case "restoreLayer":
+      case "restoreFeatures":
+        return restoreLayerPublic(args.layer || args.name);
+      case "hideAllLayers":
+        return hideAllLayersPublic();
+      case "showOnlyLayer":
+        return showOnlyLayerPublic(args.layer || args.name, args);
+      case "saveState":
+        return saveStatePublic(args.name || args.scope);
+      case "restoreState":
+        return restoreStatePublic(args.name || args.scope);
+      case "listLayers":
+        return { ok: true, layers: listLayersPublic() };
+      case "describeLayer":
+        return describeLayerPublic(args.layer || args.name);
       default:
         console.warn("[" + NS + "] Unknown action:", action, args);
         return { ok: false, error: "Unknown action: " + action };
@@ -757,13 +1237,73 @@
 
   function handleMessage(event) {
     const msg = event.data;
-    if (!msg || msg.type !== "CNOT_GIS_COMMAND") return;
+    if (!msg) return;
+
+    if (msg.type === "CNOT_GIS_API") {
+      const method = msg.method;
+      const callArgs = Array.isArray(msg.args) ? msg.args : [];
+      const result = GIS && typeof GIS[method] === "function"
+        ? GIS[method].apply(GIS, callArgs)
+        : { ok: false, error: "Unknown GIS method: " + method };
+      log("GIS message", method, callArgs, result);
+      return;
+    }
+
+    if (msg.type !== "CNOT_GIS_COMMAND") return;
     const result = execute(msg.action, msg.args || {});
     log("Message command", msg.action, msg.args, result);
   }
 
+
+  const GIS = {
+    version: "0.2.0",
+
+    showLayer: function (layerName, sqlFilter, options) {
+      return showLayerPublic(layerName, sqlFilter, options);
+    },
+    hideLayer: function (layerName) {
+      return hideLayerPublic(layerName);
+    },
+    hideFeatures: function (layerName) {
+      return hideFeaturesPublic(layerName);
+    },
+    restoreLayer: function (layerName) {
+      return restoreLayerPublic(layerName);
+    },
+    hideAllLayers: function () {
+      return hideAllLayersPublic();
+    },
+    showOnlyLayer: function (layerName, options) {
+      return showOnlyLayerPublic(layerName, options || {});
+    },
+    saveState: function (name) {
+      return saveStatePublic(name);
+    },
+    restoreState: function (name) {
+      return restoreStatePublic(name);
+    },
+    listLayers: function () {
+      return listLayersPublic();
+    },
+    describeLayer: function (layerName) {
+      return describeLayerPublic(layerName);
+    },
+
+    // Alias italiani, utili per autori non tecnici ma senza duplicare il motore.
+    mostraLayer: function (layerName, sqlFilter, options) { return showLayerPublic(layerName, sqlFilter, options); },
+    nascondiLayer: function (layerName) { return hideLayerPublic(layerName); },
+    nascondiFeature: function (layerName) { return hideFeaturesPublic(layerName); },
+    ripristinaLayer: function (layerName) { return restoreLayerPublic(layerName); },
+    nascondiTuttiLayer: function () { return hideAllLayersPublic(); },
+    mostraSoloLayer: function (layerName, options) { return showOnlyLayerPublic(layerName, options || {}); },
+    salvaStato: function (name) { return saveStatePublic(name); },
+    ripristinaStato: function (name) { return restoreStatePublic(name); },
+    listaLayer: function () { return listLayersPublic(); },
+    descriviLayer: function (layerName) { return describeLayerPublic(layerName); }
+  };
+
   const api = {
-    version: "1.2.2",
+    version: "1.2.4-gis-generic-api",
     refresh: refresh,
     execute: execute,
     hideAllMembership: hideAllMembership,
@@ -774,12 +1314,26 @@
     showMembershipUpToWave: function (wave, opts) { return showMembershipUpToWave(Object.assign({}, opts || {}, { wave: wave })); },
     showCurrentMembership: function (opts) { return showCurrentMembership(opts || {}); },
     showAllMembership: function (opts) { return showAllMembership(opts || {}); },
+
+    showLayer: function (layerName, sqlFilter, opts) { return showLayerPublic(layerName, sqlFilter, opts); },
+    hideLayer: function (layerName) { return hideLayerPublic(layerName); },
+    hideFeatures: function (layerName) { return hideFeaturesPublic(layerName); },
+    restoreLayer: function (layerName) { return restoreLayerPublic(layerName); },
+    hideAllLayers: function () { return hideAllLayersPublic(); },
+    showOnlyLayer: function (layerName, opts) { return showOnlyLayerPublic(layerName, opts || {}); },
+    saveState: function (name) { return saveStatePublic(name); },
+    restoreState: function (name) { return restoreStatePublic(name); },
+    listLayers: function () { return listLayersPublic(); },
+    describeLayer: function (layerName) { return describeLayerPublic(layerName); },
+    GIS: GIS,
+
     debug: function (value) { state.debug = value !== false; return state.debug; },
     diagnostics: function () { refresh(); return state.lastDiagnostics; },
     state: state
   };
 
   window[NS] = api;
+  window.GIS = GIS;
 
   if (document && document.addEventListener) document.addEventListener("click", handleDomCommand, true);
   if (window && window.addEventListener) window.addEventListener("message", handleMessage, false);

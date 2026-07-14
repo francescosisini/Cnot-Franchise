@@ -445,6 +445,29 @@
       pointer-events: auto;
     }
 
+    .map-layer-controls {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      pointer-events: auto;
+    }
+
+    .map-layer-button {
+      flex: 1 1 0;
+      background: rgba(0, 0, 0, 0.72);
+      color: #39ff14;
+      border: 1px solid rgba(57, 255, 20, 0.6);
+      font-family: monospace;
+      font-size: 11px;
+      padding: 6px 7px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .map-layer-button:hover {
+      background: rgba(57, 255, 20, 0.14);
+    }
+
     #archiveSearchInput,
     #archiveSortSelect {
       min-width: 0;
@@ -586,6 +609,11 @@
           </select>
         </div>
 
+        <div class="map-layer-controls" aria-label="Controlli visibilità layer">
+          <button id="mapLayersOff" class="map-layer-button" type="button">Spegni tutto</button>
+          <button id="mapLayersOn" class="map-layer-button" type="button">Accendi tutto</button>
+        </div>
+
         <div class="cnot-overlay-box" id="archiveMetaBox">
           Nessun JSON caricato.
         </div>
@@ -633,6 +661,8 @@
     const archiveNodeCount = document.getElementById("archiveNodeCount");
     const archiveSearchInput = document.getElementById("archiveSearchInput");
     const archiveSortSelect = document.getElementById("archiveSortSelect");
+    const mapLayersOff = document.getElementById("mapLayersOff");
+    const mapLayersOn = document.getElementById("mapLayersOn");
 
     let popupObserver = null;
     let currentStoryUrl = null;
@@ -826,6 +856,121 @@
 
       return null;
     }
+
+    function getLayerChildren(layerOrMap) {
+      const collection = layerOrMap?.getLayers?.();
+      if (!collection) return [];
+      if (typeof collection.getArray === "function") return collection.getArray();
+      return Array.isArray(collection) ? collection : [];
+    }
+
+    function isCnotEuropeLayer(layer, win) {
+      const values = [
+        layer?.get?.("name"),
+        layer?.get?.("title"),
+        layer?.get?.("id"),
+        layer?.get?.("layerName")
+      ];
+
+      if (values.some(value => String(value || "").toLowerCase().replace(/[^a-z0-9]/g, "").includes("cnoteurope"))) {
+        return true;
+      }
+
+      for (const key of Object.keys(win || {})) {
+        if (!key.toLowerCase().replace(/[^a-z0-9]/g, "").includes("cnoteurope")) continue;
+        try {
+          if (win[key] === layer) return true;
+        } catch (err) {
+          // Proprietà non accessibili: ignorate.
+        }
+      }
+
+      return false;
+    }
+
+    function setOnlyCnotEuropeVisible(layer, win) {
+      const children = getLayerChildren(layer);
+
+      if (children.length) {
+        const groupIsCnotEurope = isCnotEuropeLayer(layer, win);
+
+        if (groupIsCnotEurope) {
+          children.forEach(setAllLayersVisible);
+          if (typeof layer?.setVisible === "function") layer.setVisible(true);
+          return true;
+        }
+
+        const containsCnotEurope = children
+          .map(child => setOnlyCnotEuropeVisible(child, win))
+          .some(Boolean);
+
+        // Non spegniamo i gruppi che non contengono CNOTEUROPE:
+        // così il bridge/API può riaccendere in seguito un singolo layer figlio.
+        if (containsCnotEurope && typeof layer?.setVisible === "function") {
+          layer.setVisible(true);
+        }
+
+        return containsCnotEurope;
+      }
+
+      const keepVisible = isCnotEuropeLayer(layer, win);
+      if (typeof layer?.setVisible === "function") {
+        layer.setVisible(keepVisible);
+      }
+      return keepVisible;
+    }
+
+    function setAllLayersVisible(layer) {
+      const children = getLayerChildren(layer);
+      children.forEach(setAllLayersVisible);
+
+      if (typeof layer?.setVisible === "function") {
+        layer.setVisible(true);
+      }
+    }
+
+    function withMapLayers(callback) {
+      const doc = getMapDocument();
+      const win = doc?.defaultView || gisFrame.contentWindow;
+      const map = getMapObject(win);
+
+      if (!map) {
+        showReaderError(
+          "Controllo layer: mappa non disponibile.",
+          "La mappa deve essere caricata nello stesso iframe ed esporre l'oggetto OpenLayers/Leaflet."
+        );
+        return;
+      }
+
+      clearReaderError();
+      callback(map, win);
+    }
+
+    window.cnotReaderLayers = {
+      hideAllExceptCnotEurope() {
+        withMapLayers((map, win) => {
+          getLayerChildren(map).forEach(layer => setOnlyCnotEuropeVisible(layer, win));
+        });
+      },
+
+      showAll() {
+        withMapLayers(map => {
+          getLayerChildren(map).forEach(setAllLayersVisible);
+        });
+      }
+    };
+
+    mapLayersOff.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.cnotReaderLayers.hideAllExceptCnotEurope();
+    });
+
+    mapLayersOn.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.cnotReaderLayers.showAll();
+    });
 
    window.gotoGIS = function(lat, lon, zoom) {
   focusMapOnArchiveItem({

@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dalla FPGA al data center · Infrastrutture europee</title>
+  <style>
+    :root {
+      --eu-bg: #020402;
+      --eu-card: #071007;
+      --eu-card-2: #0b160b;
+      --eu-ink: #eaffea;
+      --eu-muted: #9fc79a;
+      --eu-line: rgba(57, 255, 20, 0.28);
+      --eu-line-strong: rgba(57, 255, 20, 0.62);
+      --eu-accent: #39ff14;
+      --eu-accent-soft: rgba(57, 255, 20, 0.10);
+      --eu-warn: #ffb84d;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      margin: 0;
+      color: var(--eu-ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
+        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
+        var(--eu-bg);
+      background-size: auto, 100% 4px, auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    code {
+      color: #baffad;
+      background: rgba(57, 255, 20, 0.08);
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 5px;
+      padding: 0 0.25em;
+      overflow-wrap: anywhere;
+    }
+
+    .eu-story {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .eu-kicker {
+      margin: 0 0 6px;
+      color: var(--eu-muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      line-height: 1.05;
+      letter-spacing: 0.015em;
+      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+    }
+
+    .eu-lead {
+      margin: 0 0 18px;
+      max-width: 70ch;
+      font-size: 1rem;
+      color: #dfffdc;
+    }
+
+    .eu-note {
+      border-left: 4px solid var(--eu-accent);
+      background: var(--eu-accent-soft);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 16px 0 20px;
+      color: #d7ffd2;
+      font-size: 0.94rem;
+    }
+
+    .eu-controls {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      margin: 0 -12px 18px;
+      background: rgba(2, 7, 2, 0.90);
+      border: 1px solid var(--eu-line);
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+    }
+
+    .eu-step-btn {
+      appearance: none;
+      border: 1px solid var(--eu-line);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: var(--eu-ink);
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.91rem;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease,
+                  border-color 120ms ease, color 120ms ease;
+    }
+
+    .eu-step-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--eu-line-strong);
+      background: rgba(57, 255, 20, 0.10);
+    }
+
+    .eu-step-btn.is-active {
+      background: var(--eu-accent);
+      color: #041004;
+      border-color: var(--eu-accent);
+      font-weight: 750;
+      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+    }
+
+    .eu-current {
+      color: var(--eu-muted);
+      font-size: 0.9rem;
+      margin: -4px 0 16px;
+    }
+
+    .eu-current-command {
+      color: var(--eu-ink);
+      font-weight: 700;
+    }
+
+    .eu-section {
+      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      border: 1px solid var(--eu-line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 0 16px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45),
+                  inset 0 0 24px rgba(57, 255, 20, 0.03);
+    }
+
+    .eu-section h2 {
+      margin: 0 0 10px;
+      font-size: 1.28rem;
+      color: #f3fff1;
+    }
+
+    .eu-section p { margin: 0 0 10px; }
+
+    .eu-storybox {
+      border-color: var(--eu-line-strong);
+      background:
+        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+      background-size: 100% 4px, auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eu-storybox::before,
+    .eu-storybox::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-color: var(--eu-accent);
+      border-style: solid;
+      opacity: 0.9;
+    }
+
+    .eu-storybox::before {
+      top: -1px;
+      left: -1px;
+      border-width: 2px 0 0 2px;
+    }
+
+    .eu-storybox::after {
+      right: -1px;
+      bottom: -1px;
+      border-width: 0 2px 2px 0;
+    }
+
+    .eu-story-kicker {
+      margin: 0 0 6px;
+      color: var(--eu-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .eu-story-body {
+      color: #e6ffe3;
+      max-width: 74ch;
+    }
+
+    .eu-story-body p:last-child { margin-bottom: 0; }
+
+    .eu-factline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .eu-chip {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(57, 255, 20, 0.24);
+      background: rgba(57, 255, 20, 0.07);
+      border-radius: 999px;
+      padding: 5px 9px;
+      color: #dfffdc;
+      font-size: 0.82rem;
+    }
+
+    .eu-wave-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .eu-wave-card {
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 14px;
+      padding: 13px;
+      background: rgba(0, 0, 0, 0.24);
+    }
+
+    .eu-wave-card h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: #f0ffed;
+    }
+
+    .eu-wave-card p {
+      margin: 0 0 6px;
+      font-size: 0.92rem;
+    }
+
+    .eu-meta, .eu-foot {
+      color: var(--eu-muted);
+      font-size: 0.88rem;
+    }
+
+    .eu-foot { margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <main class="eu-story" data-story-id="fpga-infrastructures-europe-it">
+    <p class="eu-kicker">Archivio narrativo · Europa 2041</p>
+    <h1>Dalla FPGA al data center</h1>
+
+    <p class="eu-lead">
+      Il benchmark sviluppato a Ferrara mostra che una rete neurale per la
+      segmentazione medica può essere adattata ed eseguita su una FPGA-based DPU.
+      Questa storia cambia scala e segue la presenza documentata di FPGA in
+      cluster di ricerca, infrastrutture HPC e regioni cloud europee.
+    </p>
+
+    <div class="eu-note">
+      Ogni pulsante aggiorna il GIS e il pannello narrativo sottostante.
+      La visualizzazione è cumulativa e la mappa non viene ricentrata automaticamente.
+      I punti cloud rappresentano regioni di servizio, non singoli edifici.
+    </div>
+
+    <nav class="eu-controls" aria-label="Comandi GIS della storia">
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'prepare'); GIS.hideFeatures(fpgaLayer());"
+        title="Nasconde soltanto le feature del layer FPGA">
+        Prepara la mappa
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'ferrara'); GIS.showLayer(fpgaLayer(), 'story_order <= 1');">
+        Ferrara · Benchmark
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'barcelona'); GIS.showLayer(fpgaLayer(), 'story_order <= 2');">
+        Barcellona · U55C
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'paderborn'); GIS.showLayer(fpgaLayer(), 'story_order <= 3');">
+        Paderborn · Noctua 2
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'bissen'); GIS.showLayer(fpgaLayer(), 'story_order <= 4');">
+        Bissen · MeluXina
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'frankfurt'); GIS.showLayer(fpgaLayer(), 'story_order <= 5');">
+        Francoforte · AWS F2
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'london'); GIS.showLayer(fpgaLayer(), 'story_order <= 6');">
+        Londra · AWS F2
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'azure'); GIS.showLayer(fpgaLayer(), 'story_order <= 7');">
+        West Europe · Azure NP
+      </button>
+
+      <button type="button" class="eu-step-btn"
+        onclick="storyStep(this, 'complete'); GIS.restoreLayer(fpgaLayer());">
+        Geografia completa
+      </button>
+    </nav>
+
+    <p class="eu-current">
+      Comando selezionato:
+      <span class="eu-current-command">nessuno</span>
+    </p>
+
+    <section class="eu-section eu-storybox" id="euStoryPanel" aria-live="polite">
+      <p class="eu-story-kicker" id="euStoryKicker">Infrastrutture FPGA</p>
+      <h2 id="euStoryTitle">Dal dispositivo a una geografia del calcolo</h2>
+      <div class="eu-story-body" id="euStoryBody">
+        <p>
+          La tesi misura una singola configurazione hardware: una AMD Alveo U55C
+          con DPU, utilizzata per l’inferenza di una rete neurale medica.
+          La mappa osserva il passaggio successivo: l’inserimento delle FPGA
+          dentro infrastrutture più grandi.
+        </p>
+        <p>
+          Seleziona una fase. I punti compariranno progressivamente e il pannello
+          spiegherà quale modello infrastrutturale rappresentano.
+        </p>
+      </div>
+      <div class="eu-factline" id="euStoryFacts">
+        <span class="eu-chip">Layer: infrastrutture FPGA europee</span>
+        <span class="eu-chip">Modalità: cumulativa</span>
+      </div>
+    </section>
+
+    <section class="eu-section">
+      <h2>Tipologie di infrastruttura</h2>
+      <p>
+        Questa sintesi rimane fissa. La narrazione principale cambia con il
+        pulsante selezionato.
+      </p>
+
+      <div class="eu-wave-grid">
+        <section class="eu-wave-card">
+          <h3>Ferrara</h3>
+          <p>Benchmark medico su AMD Alveo U55C con DPU e Vitis AI.</p>
+          <p class="eu-meta">1 FPGA documentata.</p>
+        </section>
+
+        <section class="eu-wave-card">
+          <h3>Barcellona</h3>
+          <p>Makinote: cluster di ricerca basato su AMD Alveo U55C.</p>
+          <p class="eu-meta">96 FPGA documentate.</p>
+        </section>
+
+        <section class="eu-wave-card">
+          <h3>Paderborn</h3>
+          <p>Noctua 2: partizione HPC con FPGA AMD e Intel.</p>
+          <p class="eu-meta">80 FPGA documentate.</p>
+        </section>
+
+        <section class="eu-wave-card">
+          <h3>Bissen</h3>
+          <p>MeluXina: modulo FPGA inserito nell’infrastruttura EuroHPC.</p>
+          <p class="eu-meta">40 FPGA documentate.</p>
+        </section>
+
+        <section class="eu-wave-card">
+          <h3>Francoforte</h3>
+          <p>AWS EC2 F2: capacità FPGA fornita come servizio cloud regionale.</p>
+          <p class="eu-meta">Flotta fisica non pubblicata.</p>
+        </section>
+
+        <section class="eu-wave-card">
+          <h3>Londra</h3>
+          <p>AWS EC2 F2: seconda regione europea presente nel dataset.</p>
+          <p class="eu-meta">Regione cloud, non sede puntuale.</p>
+        </section>
+
+        <section class="eu-wave-card">
+          <h3>West Europe</h3>
+          <p>Azure NP: VM FPGA basate su Alveo U250.</p>
+          <p class="eu-meta">Servizio con ritiro programmato.</p>
+        </section>
+      </div>
+    </section>
+
+    <p class="eu-foot">
+      Campi utilizzati dal bridge:
+      <code>story_order</code>,
+      <code>city</code>,
+      <code>infra_type</code>,
+      <code>status</code>,
+      <code>fpga_model</code>.
+    </p>
+  </main>
+
+<script>
+(function () {
+  "use strict";
+
+  function callParentGIS(method, args) {
+    args = Array.prototype.slice.call(args || []);
+
+    try {
+      if (
+        window.parent &&
+        window.parent !== window &&
+        window.parent.GIS &&
+        typeof window.parent.GIS[method] === "function"
+      ) {
+        return window.parent.GIS[method].apply(window.parent.GIS, args);
+      }
+    } catch (_) {}
+
+    try {
+      if (
+        window.GIS &&
+        window.GIS !== GIS &&
+        typeof window.GIS[method] === "function"
+      ) {
+        return window.GIS[method].apply(window.GIS, args);
+      }
+    } catch (_) {}
+
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage(
+          { type: "CNOT_GIS_API", method: method, args: args },
+          "*"
+        );
+      }
+    } catch (_) {}
+  }
+
+  window.GIS = window.GIS || {
+    showLayer: function () { return callParentGIS("showLayer", arguments); },
+    hideLayer: function () { return callParentGIS("hideLayer", arguments); },
+    hideFeatures: function () { return callParentGIS("hideFeatures", arguments); },
+    restoreLayer: function () { return callParentGIS("restoreLayer", arguments); },
+    hideAllLayers: function () { return callParentGIS("hideAllLayers", arguments); },
+    showOnlyLayer: function () { return callParentGIS("showOnlyLayer", arguments); },
+    saveState: function () { return callParentGIS("saveState", arguments); },
+    restoreState: function () { return callParentGIS("restoreState", arguments); },
+    listLayers: function () { return callParentGIS("listLayers", arguments); },
+    describeLayer: function () { return callParentGIS("describeLayer", arguments); }
+  };
+
+  function resolveFpgaLayer() {
+    var candidates = [];
+
+    try {
+      candidates = window.GIS.listLayers() || [];
+    } catch (_) {}
+
+    var match = candidates.find(function (item) {
+      var text = JSON.stringify(item || {}).toLowerCase();
+      return text.indexOf("fpga_infrastructures_europe") !== -1;
+    });
+
+    if (match) {
+      return match.key || match.title || "fpga_infrastructures_europe";
+    }
+
+    return "fpga_infrastructures_europe";
+  }
+
+  window.fpgaLayer = resolveFpgaLayer;
+
+  var STORY_CONTENT = {
+    prepare: {
+      kicker: "Preparazione GIS",
+      title: "Il layer è pronto per la narrazione",
+      body:
+        "<p>Questo comando nasconde soltanto le feature del layer FPGA. " +
+        "Gli altri layer della mappa rimangono invariati.</p>" +
+        "<p>Da qui i punti vengono mostrati progressivamente, seguendo " +
+        "il passaggio dalla scheda di ricerca all’infrastruttura condivisa.</p>",
+      facts: [
+        "Azione: hideFeatures",
+        "Mappa: non ricentrata"
+      ]
+    },
+
+    ferrara: {
+      kicker: "Ferrara · Benchmark medico",
+      title: "Il punto di partenza è una singola Alveo U55C",
+      body:
+        "<p>A Ferrara una rete neurale per la segmentazione delle calcificazioni " +
+        "della valvola aortica viene quantizzata, compilata ed eseguita su una " +
+        "DPU implementata su AMD Alveo U55C.</p>" +
+        "<p>Il punto rappresenta un benchmark di ricerca. Fornisce il riferimento " +
+        "tecnico dal quale la storia passa alla scala dei cluster, dei centri HPC " +
+        "e dei servizi cloud.</p>",
+      facts: [
+        "FPGA: 1 Alveo U55C",
+        "Workload: inferenza medica",
+        "Stato: benchmark di ricerca"
+      ]
+    },
+
+    barcelona: {
+      kicker: "Barcellona · Cluster di ricerca",
+      title: "La U55C passa dalla singola scheda al cluster",
+      body:
+        "<p>Makinote è descritto come un cluster con 96 AMD Alveo U55C. " +
+        "La famiglia di acceleratori è la stessa utilizzata nel benchmark " +
+        "medico della tesi, mentre il carico di lavoro è differente.</p>" +
+        "<p>Il punto mostra il primo salto di scala: l’FPGA non è più una " +
+        "scheda isolata, ma una risorsa aggregata all’interno di una " +
+        "piattaforma di ricerca.</p>",
+      facts: [
+        "FPGA documentate: 96",
+        "Modello: Alveo U55C",
+        "Tipo: cluster di ricerca"
+      ]
+    },
+
+    paderborn: {
+      kicker: "Paderborn · HPC nazionale",
+      title: "Noctua 2 e l’accesso strutturato alle FPGA",
+      body:
+        "<p>Noctua 2 dispone di una partizione FPGA composta da acceleratori " +
+        "AMD e Intel. L’hardware è inserito in un centro HPC dotato di strumenti, " +
+        "supporto tecnico e procedure di accesso per la ricerca.</p>" +
+        "<p>La domanda cambia: non riguarda più soltanto l’acquisto della " +
+        "scheda, ma le condizioni con cui un workload può essere compilato, " +
+        "eseguito e misurato su un’infrastruttura condivisa.</p>",
+      facts: [
+        "FPGA documentate: 80",
+        "Vendor: AMD + Intel",
+        "Tipo: infrastruttura HPC"
+      ]
+    },
+
+    bissen: {
+      kicker: "Bissen · EuroHPC",
+      title: "MeluXina inserisce le FPGA nell’infrastruttura europea",
+      body:
+        "<p>MeluXina include un modulo formato da nodi ibridi CPU–FPGA. " +
+        "La risorsa viene collocata dentro il sistema EuroHPC e diventa " +
+        "accessibile attraverso programmi di ricerca e accesso industriale.</p>" +
+        "<p>La geografia comincia così a riflettere anche la governance: " +
+        "chi gestisce il centro, chi può accedere e attraverso quali procedure.</p>",
+      facts: [
+        "FPGA documentate: 40",
+        "20 nodi CPU–FPGA",
+        "Tipo: EuroHPC"
+      ]
+    },
+
+    frankfurt: {
+      kicker: "Francoforte · Cloud FPGA",
+      title: "L’acceleratore diventa un servizio",
+      body:
+        "<p>Nella regione AWS di Francoforte la capacità FPGA può essere " +
+        "richiesta attraverso istanze EC2 F2. L’utilizzatore non deve " +
+        "possedere fisicamente la scheda né installarla in un proprio server.</p>" +
+        "<p>Il punto sulla mappa rappresenta una regione di servizio. " +
+        "La posizione precisa dei singoli data center non è pubblicata nel dataset.</p>",
+      facts: [
+        "Servizio: AWS EC2 F2",
+        "Entità: regione cloud",
+        "Flotta totale: non pubblicata"
+      ]
+    },
+
+    london: {
+      kicker: "Londra · Espansione del servizio",
+      title: "La stessa capacità viene replicata in più regioni",
+      body:
+        "<p>La regione AWS di Londra mostra che la disponibilità FPGA " +
+        "può essere distribuita geograficamente come parte di un’offerta cloud.</p>" +
+        "<p>Per un futuro servizio medico, la scelta della regione coinvolgerebbe " +
+        "residenza dei dati, continuità operativa, latenza di rete e condizioni " +
+        "contrattuali del provider.</p>",
+      facts: [
+        "Servizio: AWS EC2 F2",
+        "Seconda regione europea",
+        "Modello: cloud commerciale"
+      ]
+    },
+
+    azure: {
+      kicker: "West Europe · Ciclo di vita",
+      title: "Anche una piattaforma disponibile può avere una scadenza",
+      body:
+        "<p>Azure West Europe rende documentabile un altro modello cloud: " +
+        "VM della serie NP basate su Alveo U250.</p>" +
+        "<p>Il servizio ha però un ritiro programmato. La mappa introduce " +
+        "quindi il tempo: la progettazione di un’applicazione regolata deve " +
+        "considerare migrazione, supporto e continuità della piattaforma.</p>",
+      facts: [
+        "Servizio: Azure NP",
+        "Modello: Alveo U250",
+        "Stato: ritiro programmato"
+      ]
+    },
+
+    complete: {
+      kicker: "Geografia completa",
+      title: "Una mappa delle possibilità infrastrutturali",
+      body:
+        "<p>Il layer completo mostra tre forme principali di presenza " +
+        "dell’FPGA: cluster di ricerca, infrastrutture HPC condivise e " +
+        "servizi cloud regionali.</p>" +
+        "<p>La mappa non dimostra che questi centri eseguano già servizi " +
+        "medici certificati. Mostra che il benchmark della tesi può essere " +
+        "collocato dentro una geografia reale di infrastrutture eterogenee.</p>",
+      facts: [
+        "Casi pilota: 7",
+        "Sedi fisiche + regioni cloud",
+        "Uso clinico: non presunto"
+      ]
+    }
+  };
+
+  function escapeText(value) {
+    return String(value == null ? "" : value);
+  }
+
+  function updateStoryPanel(key) {
+    var item = STORY_CONTENT[key];
+    if (!item) return;
+
+    var kicker = document.getElementById("euStoryKicker");
+    var title = document.getElementById("euStoryTitle");
+    var body = document.getElementById("euStoryBody");
+    var facts = document.getElementById("euStoryFacts");
+
+    if (kicker) kicker.textContent = item.kicker || "Infrastrutture FPGA";
+    if (title) title.textContent = item.title || "Dalla FPGA al data center";
+    if (body) body.innerHTML = item.body || "";
+
+    if (facts) {
+      facts.innerHTML = (item.facts || []).map(function (fact) {
+        return '<span class="eu-chip">' + escapeText(fact) + '</span>';
+      }).join("");
+    }
+  }
+
+  window.storyStep = function (button, key) {
+    document.querySelectorAll(".eu-step-btn.is-active").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+
+    if (button && button.classList) {
+      button.classList.add("is-active");
+    }
+
+    var label = document.querySelector(".eu-current-command");
+    if (label && button) {
+      label.textContent = button.textContent.trim();
+    }
+
+    updateStoryPanel(key);
+  };
+
+  setTimeout(function () {
+    try {
+      window.GIS.restoreLayer(fpgaLayer());
+    } catch (_) {}
+  }, 250);
+})();
+</script>
+
+</body>
+</html>

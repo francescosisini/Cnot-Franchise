@@ -268,19 +268,19 @@
       The map view is not re-centered automatically.
     </div>
 
-    <nav class="eu-controls" aria-label="Story GIS commands">
-      <button type="button" class="eu-step-btn" data-cnot-action="hideAllMembership" data-cnot-args="{&quot;fit&quot;: false}" title="Hides only the features of the eu_membership_timeline layer">Prepare map</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 1, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1958 · Founding members</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 2, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1973 · First enlargement</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 3, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1981 · Greece</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 4, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1986 · Spain and Portugal</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 5, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">1995 · North and Alps</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 6, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">2004 · Great enlargement</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 7, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">2007 · Bulgaria and Romania</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipUpToWave" data-cnot-args="{&quot;wave&quot;: 8, &quot;includeFormer&quot;: true, &quot;fit&quot;: false}">2013 · Croatia</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showCurrentMembership" data-cnot-args="{&quot;fit&quot;: false}">2020→2041 · EU at 27</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="showMembershipIds" data-cnot-args="{&quot;ids&quot;: [&quot;eu_membership_gbr&quot;], &quot;fit&quot;: false}">United Kingdom 1973–2020</button>
-      <button type="button" class="eu-step-btn" data-cnot-action="clearMembership" data-cnot-args="{&quot;fit&quot;: false}">Restore layer</button>
+<nav class="eu-controls" aria-label="Story GIS commands">
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'prepare'); GIS.hideFeatures('eu_membership_timeline');" title="Hides only the features of the eu_membership_timeline layer">Prepare map</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_1'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 1');">1958 · Founding members</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_2'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 2');">1973 · First enlargement</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_3'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 3');">1981 · Greece</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_4'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 4');">1986 · Spain and Portugal</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_5'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 5');">1995 · North and Alps</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_6'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 6');">2004 · Great enlargement</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_7'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 7');">2007 · Bulgaria and Romania</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'wave_8'); GIS.showLayer('eu_membership_timeline', 'accession_wave <= 8');">2013 · Croatia</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'current'); GIS.showLayer('eu_membership_timeline', 'is_current_member = true');">2020→2041 · EU at 27</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'uk'); GIS.showLayer('eu_membership_timeline', `id = 'eu_membership_gbr'`);">United Kingdom 1973–2020</button>
+      <button type="button" class="eu-step-btn" onclick="storyStep(this, 'clear'); GIS.restoreLayer('eu_membership_timeline');">Restore layer</button>
     </nav>
 
     <p class="eu-current">Selected command: <span class="eu-current-command">none</span></p>
@@ -331,6 +331,41 @@
 <script>
 (function () {
   "use strict";
+
+  function callParentGIS(method, args) {
+    args = Array.prototype.slice.call(args || []);
+
+    try {
+      if (window.parent && window.parent !== window && window.parent.GIS && typeof window.parent.GIS[method] === "function") {
+        return window.parent.GIS[method].apply(window.parent.GIS, args);
+      }
+    } catch (_) {}
+
+    try {
+      if (window.GIS && window.GIS !== GIS && typeof window.GIS[method] === "function") {
+        return window.GIS[method].apply(window.GIS, args);
+      }
+    } catch (_) {}
+
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ type: "CNOT_GIS_API", method: method, args: args }, "*");
+      }
+    } catch (_) {}
+  }
+
+  window.GIS = window.GIS || {
+    showLayer: function () { return callParentGIS("showLayer", arguments); },
+    hideLayer: function () { return callParentGIS("hideLayer", arguments); },
+    hideFeatures: function () { return callParentGIS("hideFeatures", arguments); },
+    restoreLayer: function () { return callParentGIS("restoreLayer", arguments); },
+    hideAllLayers: function () { return callParentGIS("hideAllLayers", arguments); },
+    showOnlyLayer: function () { return callParentGIS("showOnlyLayer", arguments); },
+    saveState: function () { return callParentGIS("saveState", arguments); },
+    restoreState: function () { return callParentGIS("restoreState", arguments); },
+    listLayers: function () { return callParentGIS("listLayers", arguments); },
+    describeLayer: function () { return callParentGIS("describeLayer", arguments); }
+  };
 
   var STORY_CONTENT = {
     prepare: {
@@ -407,22 +442,8 @@
     }
   };
 
-  function parseArgs(button) {
-    try { return JSON.parse(button.getAttribute("data-cnot-args") || "{}"); }
-    catch (_) { return {}; }
-  }
-
   function escapeText(value) {
     return String(value == null ? "" : value);
-  }
-
-  function storyKeyFrom(action, args) {
-    if (action === "hideAllMembership") return "prepare";
-    if (action === "clearMembership") return "clear";
-    if (action === "showCurrentMembership") return "current";
-    if (action === "showMembershipIds") return "uk";
-    if (action === "showMembershipUpToWave") return "wave_" + Number(args && args.wave);
-    return "intro";
   }
 
   function updateStoryPanel(key) {
@@ -444,54 +465,21 @@
     }
   }
 
-  function sendToBridge(action, args) {
-    var msg = { type: "CNOT_GIS_COMMAND", action: action, args: args || {} };
-
-    try {
-      if (window.parent && window.parent !== window && window.parent.CNOTAtlasBridge) {
-        return window.parent.CNOTAtlasBridge.execute(action, args || {});
-      }
-    } catch (_) {}
-
-    try {
-      if (window.CNOTAtlasBridge) {
-        return window.CNOTAtlasBridge.execute(action, args || {});
-      }
-    } catch (_) {}
-
-    try {
-      if (window.parent && window.parent !== window) window.parent.postMessage(msg, "*");
-    } catch (_) {}
-
-    try {
-      if (window.top && window.top !== window && window.top !== window.parent) window.top.postMessage(msg, "*");
-    } catch (_) {}
-  }
-
-  setTimeout(function () {
-    sendToBridge("refresh", { fit: false });
-  }, 250);
-
-  function activate(button, action, args) {
+  window.storyStep = function (button, key) {
     document.querySelectorAll(".eu-step-btn.is-active").forEach(function (el) {
       el.classList.remove("is-active");
     });
-    button.classList.add("is-active");
+    if (button && button.classList) button.classList.add("is-active");
 
     var label = document.querySelector(".eu-current-command");
-    if (label) label.textContent = button.textContent.trim();
+    if (label && button) label.textContent = button.textContent.trim();
 
-    updateStoryPanel(storyKeyFrom(action, args));
-  }
+    updateStoryPanel(key);
+  };
 
-  document.addEventListener("click", function (event) {
-    var button = event.target.closest ? event.target.closest("[data-cnot-action]") : null;
-    if (!button) return;
-    var action = button.getAttribute("data-cnot-action");
-    var args = parseArgs(button);
-    activate(button, action, args);
-    sendToBridge(action, args);
-  }, false);
+  setTimeout(function () {
+    try { window.GIS.restoreLayer("eu_membership_timeline"); } catch (_) {}
+  }, 250);
 })();
 </script>
 

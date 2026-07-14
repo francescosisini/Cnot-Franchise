@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Europe in Six Places</title>
+  <style>
+    :root {
+      --bg: #020402;
+      --card: #071007;
+      --ink: #eaffea;
+      --muted: #9fc79a;
+      --line: rgba(57, 255, 20, 0.28);
+      --line-strong: rgba(57, 255, 20, 0.62);
+      --accent: #39ff14;
+      --accent-soft: rgba(57, 255, 20, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
+        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
+        var(--bg);
+      background-size: auto, 100% 4px, auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    code {
+      color: #baffad;
+      background: rgba(57, 255, 20, 0.08);
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 5px;
+      padding: 0 0.25em;
+    }
+
+    .story {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .kicker {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      line-height: 1.05;
+      letter-spacing: 0.015em;
+      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+    }
+
+    .lead {
+      margin: 0 0 18px;
+      max-width: 72ch;
+      color: #dfffdc;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 16px 0 20px;
+      color: #d7ffd2;
+      font-size: 0.94rem;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      margin: 0 -12px 18px;
+      background: rgba(2, 7, 2, 0.90);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+    }
+
+    .step-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: var(--ink);
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.91rem;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, color 120ms ease;
+    }
+
+    .step-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--line-strong);
+      background: rgba(57, 255, 20, 0.10);
+    }
+
+    .step-btn.is-active {
+      background: var(--accent);
+      color: #041004;
+      border-color: var(--accent);
+      font-weight: 750;
+      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+    }
+
+    .current {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: -4px 0 16px;
+    }
+
+    .current-command {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .section {
+      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 0 16px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(57, 255, 20, 0.03);
+    }
+
+    .storybox {
+      border-color: var(--line-strong);
+      background:
+        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+      background-size: 100% 4px, auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-kicker {
+      margin: 0 0 6px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .story-body {
+      color: #e6ffe3;
+      max-width: 74ch;
+    }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(57, 255, 20, 0.24);
+      background: rgba(57, 255, 20, 0.07);
+      border-radius: 999px;
+      padding: 5px 9px;
+      color: #dfffdc;
+      font-size: 0.82rem;
+    }
+
+    .foot {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+  <main class="story" data-story-id="europe-in-six-places">
+    <p class="kicker">Narrative archive · Europe 2041</p>
+    <h1>Europe in Six Places</h1>
+
+    <p class="lead">
+      A small GIS story about European integration through six symbolic places. The story uses one point layer:
+      <code>european_integration_places</code>.
+    </p>
+
+    <div class="note">
+      This page is intentionally simple: each button calls the public GIS API directly.
+    </div>
+
+    <nav class="controls" aria-label="Story GIS commands">
+      <button type="button" class="step-btn" onclick="prepareMap(this)">Prepare map</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'rome'); GIS.showLayer('european_integration_places', `id = 'rome_treaties'`)">Rome · 1957</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'schengen'); GIS.showLayer('european_integration_places', `id = 'schengen_agreement'`)">Schengen · 1985</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'maastricht'); GIS.showLayer('european_integration_places', `id = 'maastricht_treaty'`)">Maastricht · 1992</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'treaties'); GIS.showLayer('european_integration_places', `type = 'treaty'`)">Treaties</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'institutions'); GIS.showLayer('european_integration_places', `type = 'institution'`)">Institutions</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'all'); GIS.showLayer('european_integration_places')">All places</button>
+      <button type="button" class="step-btn" onclick="restoreMap(this)">Restore map</button>
+    </nav>
+
+    <p class="current">Selected command: <span class="current-command">none</span></p>
+
+    <section class="section storybox" aria-live="polite">
+      <p class="story-kicker" id="storyKicker">Europe as geography</p>
+      <h2 id="storyTitle">A project made of places</h2>
+      <div class="story-body" id="storyBody">
+        <p>
+          European integration is often told through treaties, institutions and dates. This story reads it as a map:
+          Rome, Schengen, Maastricht, Brussels, Strasbourg and Luxembourg.
+        </p>
+        <p>
+          Select a button to show the corresponding point or group of points on the GIS map.
+        </p>
+      </div>
+      <div class="facts" id="storyFacts">
+        <span class="chip">Layer: european_integration_places</span>
+        <span class="chip">Geometry: points</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Layer fields</h2>
+      <p>
+        The GeoJSON layer contains these fields: <code>id</code>, <code>name</code>, <code>country</code>,
+        <code>year</code>, <code>phase</code>, <code>type</code>, <code>short_label</code>,
+        <code>title</code>, <code>description</code>.
+      </p>
+    </section>
+
+    <p class="foot">
+      API used by this story: <code>GIS.showLayer(layerName, filter)</code>,
+      <code>GIS.showOnlyLayer(layerName, options)</code>, <code>GIS.saveState(name)</code>,
+      <code>GIS.restoreState(name)</code>.
+    </p>
+  </main>
+
+<script>
+(function () {
+  "use strict";
+
+  // Expose the parent GIS API inside the story iframe.
+  if (!window.GIS && window.parent && window.parent.GIS) {
+    window.GIS = window.parent.GIS;
+  }
+
+  var CONTENT = {
+    prepare: {
+      kicker: "GIS preparation",
+      title: "The map is ready for the story",
+      body: "<p>The story keeps the base European map visible and focuses the GIS on the layer <code>european_integration_places</code>.</p><p>No feature is selected yet: the next buttons reveal the places one step at a time.</p>",
+      facts: ["Action: GIS.showOnlyLayer", "Focus layer: european_integration_places"]
+    },
+    rome: {
+      kicker: "Rome · 1957",
+      title: "The Treaties of Rome",
+      body: "<p>Rome is the starting point of this small map. The Treaties of Rome created the European Economic Community and Euratom.</p><p>European integration becomes a territorial and institutional project: not only cooperation, but shared rules, markets and long-term structures.</p>",
+      facts: ["Filter: id = 'rome_treaties'", "Type: treaty"]
+    },
+    schengen: {
+      kicker: "Schengen · 1985",
+      title: "Borders change function",
+      body: "<p>Schengen is a small place with a very large symbolic meaning. The agreement did not erase borders, but changed how borders worked in everyday European space.</p>",
+      facts: ["Filter: id = 'schengen_agreement'", "Type: agreement"]
+    },
+    maastricht: {
+      kicker: "Maastricht · 1992",
+      title: "The European Union takes shape",
+      body: "<p>Maastricht marks a change of political scale: the European Union, citizenship, monetary union and a more complex institutional architecture.</p>",
+      facts: ["Filter: id = 'maastricht_treaty'", "Type: treaty"]
+    },
+    treaties: {
+      kicker: "Treaties",
+      title: "Treaty places",
+      body: "<p>Rome and Maastricht show two different moments: the foundation of the common market and the later transformation into the European Union.</p>",
+      facts: ["Filter: type = 'treaty'", "Places: Rome · Maastricht"]
+    },
+    institutions: {
+      kicker: "Institutions",
+      title: "The institutional triangle",
+      body: "<p>Brussels, Strasbourg and Luxembourg show that European integration is not only a sequence of treaties. It is also a distributed institutional geography.</p>",
+      facts: ["Filter: type = 'institution'", "Places: Brussels · Strasbourg · Luxembourg"]
+    },
+    all: {
+      kicker: "All places",
+      title: "Six points, one political geography",
+      body: "<p>The complete layer shows a very small but readable network of places: treaties, borders and institutions.</p><p>This is not the whole history of Europe. It is a minimal working example for GIS-driven storytelling.</p>",
+      facts: ["Layer: european_integration_places", "Features: 6"]
+    },
+    restore: {
+      kicker: "Restore",
+      title: "The map returns to its previous state",
+      body: "<p>The saved GIS layer visibility is restored. The story can be closed without leaving the atlas in a modified state.</p>",
+      facts: ["Action: GIS.restoreState", "Scope: europe_six_places"]
+    }
+  };
+
+  function setActive(button) {
+    document.querySelectorAll(".step-btn.is-active").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+    if (button) button.classList.add("is-active");
+
+    var label = document.querySelector(".current-command");
+    if (label && button) label.textContent = button.textContent.trim();
+  }
+
+  function updatePanel(key) {
+    var item = CONTENT[key];
+    if (!item) return;
+
+    document.getElementById("storyKicker").textContent = item.kicker;
+    document.getElementById("storyTitle").textContent = item.title;
+    document.getElementById("storyBody").innerHTML = item.body;
+    document.getElementById("storyFacts").innerHTML = item.facts.map(function (fact) {
+      return '<span class="chip">' + String(fact) + '</span>';
+    }).join("");
+  }
+
+  window.showStep = function (button, key) {
+    setActive(button);
+    updatePanel(key);
+  };
+
+  window.prepareMap = function (button) {
+    setActive(button);
+    updatePanel("prepare");
+
+    GIS.saveState("europe_six_places");
+    GIS.showOnlyLayer("european_integration_places", {
+      keep: ["ne_10m_admin_0_countries", "cnoteurope"]
+    });
+  };
+
+  window.restoreMap = function (button) {
+    setActive(button);
+    updatePanel("restore");
+    GIS.restoreState("europe_six_places");
+  };
+})();
+</script>
+</body>
+</html>

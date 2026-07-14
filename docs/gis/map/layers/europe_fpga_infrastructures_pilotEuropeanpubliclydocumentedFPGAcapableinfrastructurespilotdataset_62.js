@@ -1,0 +1,1 @@
+var json_europe_fpga_infrastructures_pilotEuropeanpubliclydocumentedFPGAcapableinfrastructurespilotdataset_62 = {"type":"FeatureCollection","name":"europe_fpga_infrastructures_pilotEuropeanpubliclydocumentedFPGAcapableinfrastructurespilotdataset_62","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[]}
