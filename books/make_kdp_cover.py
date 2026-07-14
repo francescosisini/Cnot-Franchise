@@ -495,11 +495,11 @@ def build_parser():
     p.add_argument("--title", default="CNOT 1.7")
     p.add_argument("--subtitle", default="")
     p.add_argument("--author", default="Francesco Sisini")
-    p.add_argument("--publisher", default="Casa editrice Le Tradizionali")
+    p.add_argument("--publisher", default="Edizioni Tradizionali")
     p.add_argument("--spine-text", default="")
     p.add_argument(
         "--back-text",
-        default="Bozza copertina\\nper controllo dimensioni"
+        default="Per molti,\\n le fasce ripariali\\n sono l'ultimo rifugio"
     )
 
     # Output
