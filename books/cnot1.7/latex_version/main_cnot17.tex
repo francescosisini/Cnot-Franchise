@@ -2,7 +2,7 @@
 % Cnot 1.7 — main.tex
 %========================================
 %\documentclass[14pt,oneside,a4paper]{book}
-\documentclass[12pt,oneside]{extbook} % KDP 6x9: il formato pagina lo imposta geometry
+\documentclass[10pt,oneside]{extbook} % KDP 6x9: il formato pagina lo imposta geometry
 
 % ---------- Encoding & lingua ----------
 \usepackage[T1]{fontenc}
@@ -94,6 +94,14 @@
 % ---------- Comandi utili ----------
 \newcommand{\CCBYSA}{\includegraphics[height=1.2em]{cc-by-sa.png}} % opzionale
 
+\newcommand{\separatore}{%
+  \par
+  \begin{center}
+    {\Large $\sim\!\!\sim\!\!\sim\ \ast\ \sim\!\!\sim\!\!\sim$}
+  \end{center}
+  \par
+}
+
 \newtcblisting{terminalbox}{
   listing only,
   colback=black,
@@ -115,7 +123,7 @@
 % ---------- Dati del libro ----------
 \title{\textbf{Cnot 1.7}}
 \author{Edizioni Tradizionali}
-\date{\today}
+%\date{\today}
 
 % ---------- (Opzionale) includeonly per compilazioni rapide ----------
 % \includeonly{chapters/frontespizio,chapters/premessa,chapters/prologo,chapters/capitolo01}
@@ -129,7 +137,7 @@
 \maketitle % Se preferisci un frontespizio personalizzato, commenta questa riga e usa chapters/frontespizio.tex
 
 % Frontespizio personalizzato (opzionale, sostituisce \maketitle)
-\include{chapters/frontespizio}
+\include{chapters/frontespizio_revisionato}
 
 % Indice (se lo vuoi all’inizio)
 \tableofcontents
@@ -180,11 +188,9 @@
 % Back matter
 %========================================
 \backmatter
-% Colophon (tradizionalmente in coda)
-\include{chapters/dichiarazione_ai_act}
 % Premessa (non numerata ma in front matter)
 %\include{chapters/premessa}
 
-\include{chapters/colophon}
+\include{chapters/colophon_revisionato}
 
 \end{document}

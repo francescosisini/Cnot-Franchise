@@ -90,10 +90,13 @@ Valentina torna in bagno e dopo pochi secondi è a rapporto:
   \includegraphics[width=0.55\linewidth]{laura pc senza sfondo.png}
 \end{center}
 
+\separatore
+
 \par\medskip
 «Capo, la combinazione di fingerprint corrisponde con un agente ostile che risulta già profilato. Il server da cui sta uscendo è già compromesso. Se mi dai pochi minuti, forse lo vedremo in diretta dalla sua webcam.»\\
 La polizia "ha fatto i compiti" o forse Laura ha fatto il passo più lungo della gamba.
 
+\separatore
 \par\medskip
 «Tento l'accesso, silenzio assoluto:»
 
@@ -136,25 +139,38 @@ laura@dpl:~$
 
 «Cos'hai trovato Laura?»\\
 «Il tuo nome.»\\
-«Ma dice \textbf{sorveglianza: sì}! Cosa significa?»\\
-«Esattamente non lo sappiamo, ma questo file probabilmente raggiungerà il DHS tra meno di cinque minuti. Se mi autorizzi, io cambierei quel \textbf{sì} in un \textbf{no}.»\\
+«Ma dice \texttt{sorveglianza: sì}! Cosa significa?»\\
+«Esattamente non lo sappiamo, ma questo file probabilmente raggiungerà il DHS tra meno di cinque minuti. Se mi autorizzi, io cambierei quel \texttt{sì} in un \texttt{no}.»\\
 «Il DHS? Cosa sarebbe, Laura?»\\
 «Cate, il DHS è il Dipartimento per la Sicurezza Interna degli Stati Uniti. Raccolgono tutti i dati possibili, anche le tracce disperse dai vecchi sistemi locali, come quello che ti deve aver segnalato dopo il vostro... arresto?» A Laura scappa una risatina. «Probabilmente nessuno ce l’ha con te, ma questa informazione esiste e alla SAGA-M potrebbe non piacere. Dobbiamo correggerla prima di mezzanotte, se vogliamo dare una chance al tuo visto.»\\
 «Ho capito... va bene, spero tu non ti metta nei guai per me.»\\
-Prima che Laura possa continuare, un led si accende sulla cornice del monitor, di fianco all’apertura ottica della telecamera.
+\separatore
+\par\medskip
+«Ho trovato la webcam. Il flusso è accessibile.»\\
+«E la spia?»\\
+«Firmware, passa dallo stesso controller. Posso escluderla prima di avviare il video.»\\
+«Fallo. Vediamo cosa c’è dall’altra parte.»\\
+
+\separatore
+\begin{terminalbox}
+ systemd[1]: Started Network Manager Dispatcher Service.
+ NetworkManager[742]: connectivity state changed: FULL
+ sshd[2184]: session opened for user service
+ cam-bridge[2191]: device /dev/video2 requested
+ cam-bridge[2191]: video stream initialized
+  webcam-trap[2196]: LED_OFF requested - camera decoy triggered
+\end{terminalbox}
+Una riga del registro attira l'attenzione di Laura.
 Si fa seria per un attimo, ma non dice nulla. Apre un secondo terminale e verifica i dispositivi connessi.
 Un sorriso, un comando. Invio.
+\separatore
 
-\par\medskip
-«Ho agganciato l’IP. Accedo alla webcam.»\\
-«Attenzione a non attivare le spie.»\\
-«Con chi credi di parlare, capo?»\\
-«Dai, coraggio, siamo vicini!»\\
 Sul monitor della polizia si compone lentamente una figura, byte dopo byte.\\
 «Ci siamo! Sembrano più di una persona!»\\
 L’immagine mostra due sagome, forse due hacker mascherati. Sembrano indossare vestiti degli stessi colori. La definizione non è ancora buona, ma ogni pochi secondi emergono nuovi dettagli. I due hanno camicie uguali, quasi divise.\\
 «Sono due... sembrano agenti, ma...» L’agente si blocca. «Accidenti. Addio premio di produzione. Io chiudo, capo.»\
 
+\separatore
 \par\medskip
 «Bene, e ora il colpo finale. Mettiamo via le armi da fuoco e passiamo all’arma bianca.»
 

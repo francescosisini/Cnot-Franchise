@@ -1,11 +1,6 @@
-1. Clara Whitmore | Green Force | Surveillance: Yes
-2. Thomas Hale | NO Artificial Intelligence | Surveillance: No
-3. Eleanor Price | No Vax Enthusiasts | Surveillance: Yes
-4. Margaret Collins | Animal Rights Advocates | Surveillance: No
-5. Daniel Mercer | Digital Freedom Fighters | Surveillance: Yes
-6. Rebecca Stone | Climate Action Now | Surveillance: No
-7. Hannah Reed | Anti-Surveillance League | Surveillance: Yes
-8. Arthur Bennett | Renewable Future Coalition | Surveillance: No
-9. Julia Hart | Cyber Privacy Watch | Surveillance: Yes
-10. Samuel Grant | Human Rights Front | Surveillance: No
-11. Caterina xxx | Green Force | Surveillance: Yes
+ systemd[1]: Started Network Manager Dispatcher Service.
+ NetworkManager[742]: connectivity state changed: FULL
+ sshd[2184]: session opened for user service
+ cam-bridge[2191]: device /dev/video2 requested
+ cam-bridge[2191]: video stream initialized
+  webcam-trap[2196]: LED_OFF requested - camera decoy triggered
