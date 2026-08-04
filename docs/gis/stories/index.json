@@ -76,6 +76,37 @@
         "eu_membership_timeline"
       ],
       "bridge": "CNOTAtlasBridge"
+    },
+    {
+      "id": "nuclear-fuel-cycle",
+      "title": "The Nuclear Fuel Cycle",
+      "subtitle": "From uranium extraction to geological disposal",
+      "author": "Francesco Sisini",
+      "language": "en",
+      "file": "nuclear_fuel_cycle.html",
+      "path": "stories/nuclear_fuel_cycle.html",
+      "story_file": "stories/nuclear_fuel_cycle.html",
+      "description": "A cumulative GIS story showing nuclear energy as a geographically distributed fuel cycle: extraction, conversion, enrichment, fuel fabrication, reactor use, reprocessing, storage, research and geological disposal.",
+      "tags": [
+        "nuclear",
+        "fuel cycle",
+        "uranium",
+        "energy",
+        "GIS",
+        "Europe"
+      ],
+      "layer_refs": [
+        "uranium_extraction",
+        "uranium_conversion",
+        "uranium_enrichment",
+        "fuel_fabrication",
+        "nuclear_power_switzerland",
+        "reprocessing_recycling",
+        "interim_storage",
+        "nuclear_research",
+        "geological_repositories"
+      ],
+      "bridge": "GIS"
     }
   ]
 }

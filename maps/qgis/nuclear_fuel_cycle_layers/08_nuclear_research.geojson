@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "research_psi",
+      "properties": {
+        "id": "research_psi",
+        "name": "Paul Scherrer Institute – nuclear research facilities",
+        "country": "Switzerland",
+        "category": "nuclear_research",
+        "subtype": "neutron_sources_hot_lab_nuclear_materials",
+        "status": "operational",
+        "operator": "Paul Scherrer Institute",
+        "function": "Ricerca su neutroni, materiali nucleari irradiati, sicurezza e tecnologie nucleari.",
+        "description": "Il PSI ospita SINQ, laboratori per materiali nucleari e un Hot Laboratory capace di analizzare combustibile e materiali altamente radioattivi.",
+        "source_label": "Paul Scherrer Institute",
+        "source_url": "https://www.psi.ch/en/cnm",
+        "coordinate_precision": "site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.22327,
+          47.53916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "research_crocus",
+      "properties": {
+        "id": "research_crocus",
+        "name": "CROCUS reactor – EPFL Lausanne",
+        "country": "Switzerland",
+        "category": "nuclear_research",
+        "subtype": "zero_power_teaching_reactor",
+        "status": "operational",
+        "operator": "EPFL Laboratory for Reactor Physics and Systems Behaviour",
+        "function": "Reattore sperimentale e didattico a bassissima potenza per fisica dei reattori.",
+        "description": "CROCUS è un reattore ad acqua leggera limitato a 100 W, usato per insegnamento e ricerca e non per produzione elettrica.",
+        "source_label": "EPFL CROCUS",
+        "source_url": "https://www.epfl.ch/labs/lrs/facilities/crocus-reactor/",
+        "coordinate_precision": "site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.57036,
+          46.52124
+        ]
+      }
+    }
+  ]
+}

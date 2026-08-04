@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "fuel_lingen",
+      "properties": {
+        "id": "fuel_lingen",
+        "name": "ANF / Framatome Lingen",
+        "country": "Germany",
+        "category": "fuel_fabrication",
+        "subtype": "fuel_assemblies",
+        "status": "operational",
+        "operator": "Advanced Nuclear Fuels / Framatome",
+        "function": "Fabbricazione di elementi e assemblaggi di combustibile nucleare.",
+        "description": "Qui il materiale uranifero già arricchito viene trasformato fisicamente in combustibile utilizzabile nei reattori.",
+        "source_label": "Framatome / facility location records",
+        "source_url": "https://www.framatome.com/",
+        "coordinate_precision": "site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3311,
+          52.4807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fuel_romans",
+      "properties": {
+        "id": "fuel_romans",
+        "name": "Framatome Romans-sur-Isère",
+        "country": "France",
+        "category": "fuel_fabrication",
+        "subtype": "power_and_research_reactor_fuel",
+        "status": "operational",
+        "operator": "Framatome",
+        "function": "Produzione di combustibile per centrali nucleari e reattori di ricerca.",
+        "description": "Polo di fabbricazione in cui materiali a base di uranio vengono trasformati in elementi e assemblaggi destinati al nocciolo.",
+        "source_label": "Framatome Romans official site/address",
+        "source_url": "https://www.framatome.com/en/implantations/romans/",
+        "coordinate_precision": "address_approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.051,
+          45.046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fuel_vasteras",
+      "properties": {
+        "id": "fuel_vasteras",
+        "name": "Westinghouse Västerås fuel factory",
+        "country": "Sweden",
+        "category": "fuel_fabrication",
+        "subtype": "BWR_PWR_VVER_fuel",
+        "status": "operational",
+        "operator": "Westinghouse Electric Sweden",
+        "function": "Fabbricazione di combustibile per reattori BWR, PWR e VVER.",
+        "description": "Il sito converte UF6 arricchito in UO2, produce pastiglie, barre e assemblaggi di combustibile.",
+        "source_label": "Westinghouse Sweden",
+        "source_url": "https://westinghousenuclear.com/sweden/produkter-tjaenster/braensleprodukter/",
+        "coordinate_precision": "city_approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.55,
+          59.61
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "reproc_lahague",
+      "properties": {
+        "id": "reproc_lahague",
+        "name": "Orano La Hague",
+        "country": "France",
+        "category": "reprocessing_recycling",
+        "subtype": "spent_fuel_reprocessing",
+        "status": "operational",
+        "operator": "Orano",
+        "function": "Trattamento del combustibile esaurito e separazione dei materiali riutilizzabili.",
+        "description": "Il combustibile usato viene tagliato e dissolto; uranio e plutonio recuperabili vengono separati dai prodotti di fissione, che sono vetrificati.",
+        "source_label": "Orano La Hague",
+        "source_url": "https://www.orano.group/en/nuclear-expertise/orano-s-sites-around-the-world/recycling-spent-fuel/la-hague",
+        "coordinate_precision": "site_complex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.879,
+          49.677
+        ]
+      }
+    }
+  ]
+}

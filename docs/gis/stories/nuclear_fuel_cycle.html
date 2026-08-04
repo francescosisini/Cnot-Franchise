@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Nuclear Fuel Cycle</title>
+  <style>
+    :root {
+      --bg: #020402;
+      --card: #071007;
+      --ink: #eaffea;
+      --muted: #9fc79a;
+      --line: rgba(57, 255, 20, 0.28);
+      --line-strong: rgba(57, 255, 20, 0.62);
+      --accent: #39ff14;
+      --accent-soft: rgba(57, 255, 20, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
+        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
+        var(--bg);
+      background-size: auto, 100% 4px, auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    code {
+      color: #baffad;
+      background: rgba(57, 255, 20, 0.08);
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 5px;
+      padding: 0 0.25em;
+    }
+
+    .story {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .kicker {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.05;
+      letter-spacing: 0.015em;
+      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+    }
+
+    h2 { margin-top: 0; }
+
+    .lead {
+      margin: 0 0 18px;
+      max-width: 76ch;
+      color: #dfffdc;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 16px 0 20px;
+      color: #d7ffd2;
+      font-size: 0.94rem;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      margin: 0 -12px 18px;
+      background: rgba(2, 7, 2, 0.90);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+    }
+
+    .step-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: var(--ink);
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.91rem;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, color 120ms ease;
+    }
+
+    .step-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--line-strong);
+      background: rgba(57, 255, 20, 0.10);
+    }
+
+    .step-btn.is-active {
+      background: var(--accent);
+      color: #041004;
+      border-color: var(--accent);
+      font-weight: 750;
+      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+    }
+
+    .current {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: -4px 0 16px;
+    }
+
+    .current-command {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .section {
+      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 0 16px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(57, 255, 20, 0.03);
+    }
+
+    .storybox {
+      border-color: var(--line-strong);
+      background:
+        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+      background-size: 100% 4px, auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-kicker {
+      margin: 0 0 6px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .story-body {
+      color: #e6ffe3;
+      max-width: 78ch;
+    }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(57, 255, 20, 0.24);
+      background: rgba(57, 255, 20, 0.07);
+      border-radius: 999px;
+      padding: 5px 9px;
+      color: #dfffdc;
+      font-size: 0.82rem;
+    }
+
+    .chain {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(0, 1fr));
+      gap: 6px;
+      margin: 14px 0 4px;
+    }
+
+    .chain div {
+      text-align: center;
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 9px;
+      padding: 8px 5px;
+      font-size: 0.72rem;
+      color: #d7ffd2;
+      background: rgba(57, 255, 20, 0.045);
+    }
+
+    .chain div::after {
+      content: "→";
+      float: right;
+      color: var(--muted);
+      margin-right: -9px;
+    }
+
+    .chain div:last-child::after { content: ""; }
+
+    .foot {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .chain {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .chain div::after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+  <main class="story" data-story-id="nuclear-fuel-cycle">
+    <p class="kicker">Narrative archive · Nuclear geography</p>
+    <h1>The Nuclear Fuel Cycle</h1>
+
+    <p class="lead">
+      A GIS story that follows nuclear fuel from uranium extraction to conversion,
+      enrichment, fabrication, reactor use, spent-fuel management and geological disposal.
+      Instead of treating a nuclear power plant as an isolated point, the map reveals the
+      wider industrial geography that makes nuclear energy possible. Each stage is shown separately,
+      so the role of mines, chemical plants, enrichment facilities, fuel factories, reactors,
+      storage centres and repositories can be read without visual overlap.
+    </p>
+
+    <div class="note">
+      Each step shows one functional layer at a time. The previously displayed nuclear layer is hidden before the next one appears, so the geography of each stage remains easy to read. Use the atlas controls in the side bar to prepare or restore the wider map whenever you want.
+      By the final step, the map shows the complete chain.
+    </div>
+
+    <div class="chain" aria-label="Nuclear fuel cycle">
+      <div>Extraction</div>
+      <div>Conversion</div>
+      <div>Enrichment</div>
+      <div>Fuel fabrication</div>
+      <div>Reactor use</div>
+      <div>Reprocessing</div>
+      <div>Interim storage</div>
+      <div>Research</div>
+      <div>Repository</div>
+    </div>
+
+    <nav class="controls" aria-label="Story GIS commands">
+      <button type="button" class="step-btn" onclick="showStep(this, 'extraction'); showSingle(0)">1 · Extraction</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'conversion'); showSingle(1)">2 · Conversion</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'enrichment'); showSingle(2)">3 · Enrichment</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'fabrication'); showSingle(3)">4 · Fuel fabrication</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'reactors'); showSingle(4)">5 · Reactor use</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'reprocessing'); showSingle(5)">6 · Reprocessing</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'storage'); showSingle(6)">7 · Interim storage</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'research'); showSingle(7)">8 · Research</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'repository'); showSingle(8)">9 · Geological disposal</button>
+      <button type="button" class="step-btn" onclick="showStep(this, 'all'); showAllNuclear()">All layers</button>
+    </nav>
+
+    <p class="current">Selected command: <span class="current-command">none</span></p>
+
+    <section class="section storybox" aria-live="polite">
+      <p class="story-kicker" id="storyKicker">The nuclear system as geography</p>
+      <h2 id="storyTitle">A reactor is only one node</h2>
+      <div class="story-body" id="storyBody">
+        <p>
+          Nuclear energy is often represented by the power station alone. In reality, a reactor
+          depends on a long chain of mines, chemical plants, enrichment facilities, fuel factories,
+          transport routes, storage centres, research laboratories and waste repositories.
+        </p>
+        <p>
+          Use the steps above to build that geography progressively on the map.
+        </p>
+      </div>
+      <div class="facts" id="storyFacts">
+        <span class="chip">Story mode: one layer at a time</span>
+        <span class="chip">Geometry: point layers</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Functional layers used by this story</h2>
+      <p>
+        <code>01_uranium_extraction</code>,
+        <code>02_uranium_conversion</code>,
+        <code>03_uranium_enrichment</code>,
+        <code>04_fuel_fabrication</code>,
+        <code>09_nuclear_power_switzerland</code>,
+        <code>05_reprocessing_recycling</code>,
+        <code>06_interim_storage</code>,
+        <code>08_nuclear_research</code>,
+        <code>07_geological_repositories</code>.
+      </p>
+      <p>
+        The GeoJSON files share the fields <code>id</code>, <code>name</code>,
+        <code>country</code>, <code>category</code>, <code>subtype</code>,
+        <code>status</code>, <code>operator</code>, <code>function</code>,
+        <code>description</code>, <code>source_label</code>,
+        <code>source_url</code> and <code>coordinate_precision</code>.
+      </p>
+    </section>
+
+    <p class="foot">
+      GIS API: <code>GIS.showLayer()</code>, <code>GIS.hideLayer()</code>,
+      <code>GIS.saveState()</code>, <code>GIS.restoreState()</code>,
+      <code>GIS.hideAllLayersExcept()</code>.
+    </p>
+  </main>
+
+<script>
+(function () {
+  "use strict";
+
+  if (!window.GIS && window.parent && window.parent.GIS) {
+    window.GIS = window.parent.GIS;
+  }
+
+  var BASE_LAYERS = [
+    "ne_10m_admin_0_countries",
+    "cnoteurope"
+  ];
+
+  /*
+   * IMPORTANT:
+   * These names assume that the imported QGIS layers use the logical
+   * names below. If QGIS has different logical names, change only this
+   * array; the rest of the story can remain unchanged.
+   */
+  var NUCLEAR_LAYERS = [
+    "01_uranium_extraction",
+    "02_uranium_conversion",
+    "03_uranium_enrichment",
+    "04_fuel_fabrication",
+    "09_nuclear_power_switzerland",
+    "05_reprocessing_recycling",
+    "06_interim_storage",
+    "08_nuclear_research",
+    "07_geological_repositories"
+  ];
+
+  var CONTENT = {
+    prepare: {
+      kicker: "GIS preparation",
+      title: "The map is ready for the nuclear story",
+      body: "<p>The previous atlas state is saved. All thematic nuclear layers start hidden, while the European base map remains visible.</p><p>The next steps add the fuel-cycle geography one layer at a time.</p>",
+      facts: ["Action: GIS.saveState", "Mode: cumulative"]
+    },
+    extraction: {
+      kicker: "Stage 1 · Extraction",
+      title: "The fuel cycle begins underground",
+      body: "<p>Before a reactor can produce heat, uranium must first be recovered from a geological deposit. The extraction layer shows mining sites where uranium-bearing material enters the industrial chain.</p><p>Modern uranium production can include in-situ recovery, where chemical solutions circulate through the ore body and bring dissolved uranium to the surface.</p><p>The location of the mine already shows that the nuclear fuel cycle is international: material can travel thousands of kilometres before it ever reaches a reactor.</p>",
+      facts: ["Layer: 01_uranium_extraction", "Physical role: primary uranium production"]
+    },
+    conversion: {
+      kicker: "Stage 2 · Conversion",
+      title: "From concentrate to uranium hexafluoride",
+      body: "<p>Mining does not produce reactor fuel. Uranium concentrates must first be purified and chemically converted. In the European chain shown here, Malvési represents conversion toward UF4 and Tricastin the subsequent production of UF6.</p><p>UF6 matters because it can be handled as a gas in centrifuge enrichment plants.</p><p>Conversion is therefore not a secondary detail, but the chemical bridge between mining and isotope separation.</p>",
+      facts: ["Layer: 02_uranium_conversion", "Key chemical form: UF6"]
+    },
+    enrichment: {
+      kicker: "Stage 3 · Enrichment",
+      title: "Changing the isotopic composition",
+      body: "<p>Natural uranium contains too little U-235 for most light-water power reactors. Centrifuge plants separate isotopes and increase the U-235 fraction in the product stream.</p><p>The map reveals that enrichment is a distinct industrial stage, geographically separated from both mining and fuel fabrication.</p><p>This stage concentrates a strategic industrial capability in a small number of highly specialised sites.</p>",
+      facts: ["Layer: 03_uranium_enrichment", "Technology: gas centrifuges"]
+    },
+    fabrication: {
+      kicker: "Stage 4 · Fuel fabrication",
+      title: "Uranium becomes a reactor component",
+      body: "<p>Enriched uranium is still not a fuel assembly. Fuel factories transform uranium compounds into ceramic fuel, pellets, rods and finally assemblies engineered for a specific reactor design.</p><p>This is where nuclear material becomes a manufactured component ready for the core.</p><p>Fuel geometry, cladding and assembly design are reactor-specific, linking nuclear material directly to reactor engineering.</p>",
+      facts: ["Layer: 04_fuel_fabrication", "Products: pellets · rods · assemblies"]
+    },
+    reactors: {
+      kicker: "Stage 5 · Reactor use",
+      title: "The reactor is the middle of the chain, not the beginning",
+      body: "<p>Only now does the fuel enter the reactor. Fission produces heat and electricity, while the isotopic and chemical composition of the fuel changes continuously under irradiation.</p><p>The Swiss power-reactor layer also distinguishes operating sites from a plant already in decommissioning.</p><p>After irradiation, the fuel leaves the reactor with a radically different isotopic inventory and becomes the input to the back end of the fuel cycle.</p>",
+      facts: ["Layer: 09_nuclear_power_switzerland", "Process: irradiation and fission"]
+    },
+    reprocessing: {
+      kicker: "Stage 6 · Reprocessing",
+      title: "Spent fuel can become an industrial feedstock again",
+      body: "<p>At La Hague, spent fuel can be treated chemically. Uranium and plutonium are separated from highly radioactive fission products, allowing selected materials to re-enter the fuel cycle.</p><p>This stage makes clear that 'spent' does not simply mean 'chemically useless'.</p><p>Reprocessing changes the boundary between resource and waste: some materials are recovered, while others enter dedicated waste-management streams.</p>",
+      facts: ["Layer: 05_reprocessing_recycling", "Example: La Hague"]
+    },
+    storage: {
+      kicker: "Stage 7 · Interim storage",
+      title: "Waste management is a chain of its own",
+      body: "<p>Spent fuel and radioactive waste require controlled storage before final disposal or further treatment. Switzerland is especially useful here because the map distinguishes central storage at ZWILAG from on-site storage at nuclear plants.</p><p>Interim storage is not the same thing as a geological repository.</p><p>Storage provides time for cooling, shielding and institutional control; it is an engineered waiting stage, not the final destination.</p>",
+      facts: ["Layer: 06_interim_storage", "Swiss examples: ZWILAG · Beznau · Gösgen"]
+    },
+    research: {
+      kicker: "Stage 8 · Research",
+      title: "Nuclear infrastructure is not only power generation",
+      body: "<p>Research facilities form another branch of nuclear geography. PSI hosts neutron facilities and laboratories for highly radioactive materials, while EPFL's CROCUS is a very-low-power teaching and experimental reactor.</p><p>These sites explain why a nuclear map must distinguish power plants, research reactors and laboratories.</p><p>Research sites also support safety analysis, materials testing, neutron science and the technical knowledge required across the entire nuclear system.</p>",
+      facts: ["Layer: 08_nuclear_research", "Swiss examples: PSI · CROCUS"]
+    },
+    repository: {
+      kicker: "Stage 9 · Geological disposal",
+      title: "The final stage moves underground again",
+      body: "<p>The end of the chain is not a surface warehouse. Geological repositories are designed to isolate long-lived radioactive material deep underground using engineered and geological barriers.</p><p>ONKALO, Forsmark and Switzerland's Nördlich Lägern project show three European approaches at different implementation stages.</p><p>The repository closes the map by returning the material underground, now inside a deliberately engineered system designed for isolation over very long timescales.</p>",
+      facts: ["Layer: 07_geological_repositories", "Function: long-term isolation"]
+    },
+    all: {
+      kicker: "Complete chain",
+      title: "One reactor, many places",
+      body: "<p>With all layers visible, nuclear power becomes a continental logistics and industrial system rather than a single dot on the map.</p><p>The geography spans extraction, chemistry, isotopic separation, manufacturing, electricity generation, research, recycling, storage and geological disposal.</p>",
+      facts: ["Layers: 9", "Reading: full fuel-cycle geography"]
+    },
+    restore: {
+      kicker: "Restore",
+      title: "The atlas returns to its previous state",
+      body: "<p>The visibility state saved before the story is restored, so the narrative can be closed without leaving the atlas altered.</p>",
+      facts: ["Action: GIS.restoreState", "Scope: nuclear_fuel_cycle_story"]
+    }
+  };
+
+  function setActive(button) {
+    document.querySelectorAll(".step-btn.is-active").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+    if (button) button.classList.add("is-active");
+
+    var label = document.querySelector(".current-command");
+    if (label && button) label.textContent = button.textContent.trim();
+  }
+
+  function updatePanel(key) {
+    var item = CONTENT[key];
+    if (!item) return;
+
+    document.getElementById("storyKicker").textContent = item.kicker;
+    document.getElementById("storyTitle").textContent = item.title;
+    document.getElementById("storyBody").innerHTML = item.body;
+    document.getElementById("storyFacts").innerHTML = item.facts.map(function (fact) {
+      return '<span class="chip">' + String(fact) + '</span>';
+    }).join("");
+  }
+
+  function hideNuclearLayers() {
+    NUCLEAR_LAYERS.forEach(function (layerName) {
+      GIS.hideLayer(layerName);
+    });
+  }
+
+  window.showStep = function (button, key) {
+    setActive(button);
+    updatePanel(key);
+  };
+
+
+
+  window.showSingle = function (index) {
+    hideNuclearLayers();
+    GIS.showLayer(NUCLEAR_LAYERS[index]);
+  };
+
+  window.showAllNuclear = function () {
+    hideNuclearLayers();
+
+    NUCLEAR_LAYERS.forEach(function (layerName) {
+      GIS.showLayer(layerName);
+    });
+  };
+
+})();
+</script>
+</body>
+</html>
