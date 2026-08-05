@@ -21,22 +21,28 @@
       ]
     },
     {
-    "id": "fpga_infrastructures_europe_it",
-    "title": "Dalla FPGA al data center",
-    "file": "fpga_infrastructures_europe_it.html",
-    "language": "it",
-    "category": "Tecnologie",
-    "description": "Una storia cartografica che collega il benchmark medico su Alveo U55C alle infrastrutture FPGA europee documentate."
+      "id": "fpga_infrastructures_europe_it",
+      "title": "Dalla FPGA al data center",
+      "file": "fpga_infrastructures_europe_it.html",
+      "language": "it",
+      "category": "Tecnologie",
+      "description": "Una storia cartografica che collega il benchmark medico su Alveo U55C alle infrastrutture FPGA europee documentate."
     },
     {
-    "id": "europe-in-six-places",
-    "title": "Europe in Six Places",
-    "subtitle": "A small GIS story about European integration through symbolic places.",
-    "author": "Francesco Sisini",
-    "language": "en",
-    "file": "europe_in_six_places.html",
-    "layer": "european_integration_places",
-    "tags": ["europe", "integration", "treaties", "institutions", "demo"]
+      "id": "europe-in-six-places",
+      "title": "Europe in Six Places",
+      "subtitle": "A small GIS story about European integration through symbolic places.",
+      "author": "Francesco Sisini",
+      "language": "en",
+      "file": "europe_in_six_places.html",
+      "layer": "european_integration_places",
+      "tags": [
+        "europe",
+        "integration",
+        "treaties",
+        "institutions",
+        "demo"
+      ]
     },
     {
       "id": "europa-membership-timeline",
@@ -105,6 +111,36 @@
         "interim_storage",
         "nuclear_research",
         "geological_repositories"
+      ],
+      "bridge": "GIS"
+    },
+    {
+      "id": "cnot-quantum-reactor",
+      "title": "C-Not Quantum Reactor",
+      "subtitle": "Un'indagine tra uranio, fissione quantistica e un paper impossibile",
+      "author": "Francesco Sisini",
+      "language": "it",
+      "file": "cnot_quantum_reactor/index.html",
+      "path": "stories/cnot_quantum_reactor/index.html",
+      "story_file": "stories/cnot_quantum_reactor/index.html",
+      "description": "Un funzionario Euratom segue le affiliazioni di un misterioso paper sulla fissione quantistica attraverso la filiera nucleare europea, fino al PSI e al CERN.",
+      "tags": [
+        "nuclear",
+        "quantum",
+        "uranium",
+        "Euratom",
+        "CERN",
+        "PSI",
+        "GIS",
+        "fiction"
+      ],
+      "layer_refs": [
+        "cnot_quantum_reactor_story_points",
+        "01_uranium_extraction",
+        "02_uranium_conversion",
+        "03_uranium_enrichment",
+        "04_fuel_fabrication",
+        "08_nuclear_research"
       ],
       "bridge": "GIS"
     }
