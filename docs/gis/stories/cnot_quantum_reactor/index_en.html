@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>C-Not Quantum Reactor</title>
+<style>
+:root {
+  --bg:#020402; --ink:#eaffea; --muted:#9fc79a;
+  --line:rgba(57,255,20,.28); --accent:#39ff14;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; color:var(--ink); background:
+  radial-gradient(circle at 20% 0%, rgba(57,255,20,.07), transparent 34%),
+  linear-gradient(rgba(57,255,20,.02) 50%, rgba(0,0,0,.02) 50%), var(--bg);
+  background-size:auto,100% 4px,auto;
+  font-family:Georgia,"Times New Roman",serif; line-height:1.72;
+}
+main { max-width:760px; margin:0 auto; padding:28px 24px 70px; }
+h1 {
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:clamp(2rem,5vw,3.25rem); line-height:1.05; margin:0 0 32px;
+  text-shadow:0 0 16px rgba(57,255,20,.16);
+}
+p { margin:0 0 1.05em; }
+em { color:#d6ffd1; }
+.scene-break {
+  text-align:center; color:var(--accent); font-size:1.5rem;
+  margin:2.3rem 0; opacity:.85;
+}
+.story-action { margin:.65rem 0 1.2rem; }
+.action-btn {
+  appearance:none; display:inline-block; border:1px solid var(--line);
+  border-radius:999px; background:rgba(0,0,0,.52); color:var(--ink);
+  padding:7px 11px; font:600 .82rem system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  text-decoration:none; cursor:pointer; letter-spacing:.015em;
+}
+.action-btn:hover, .action-btn.is-active {
+  border-color:var(--accent); background:rgba(57,255,20,.12); color:#fff;
+}
+.paper-btn { border-style:dashed; }
+.story-status {
+  position:sticky; bottom:10px; margin:28px auto 0; width:max-content; max-width:100%;
+  padding:6px 10px; border:1px solid var(--line); border-radius:999px;
+  background:rgba(2,7,2,.90); color:var(--muted);
+  font:11px/1.3 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  backdrop-filter:blur(8px); opacity:.92;
+}
+@media (max-width:600px) {
+  main { padding:22px 18px 60px; }
+}
+
+.translation-note {
+  margin:-12px 0 32px;
+  padding:12px 14px;
+  border-left:3px solid var(--accent);
+  background:rgba(57,255,20,.055);
+  color:var(--muted);
+  font:13px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.translation-note strong { color:var(--ink); }
+</style>
+</head>
+<body>
+<main data-story-id="cnot-quantum-reactor">
+<h1>C-Not Quantum Reactor</h1><div class="translation-note"><strong>Translation note.</strong> This story was originally written in Italian. This English version is an automatic translation. If you notice errors, awkward wording, or passages that could be improved, please report them to the author.</div>
+<p>“How long will you be away?”</p>
+<p>“Not long. A few days. A week at most.”</p>
+<p>She asks no more questions. She turns over in bed, her back to him.</p>
+<p>He brushes her back with the tip of his index finger. Slowly he traces her spine, following the undulating profile of the vertebrae. When his finger reaches the lumbar curve, she flinches and turns toward him.</p>
+<p>“You promised…” she reminds him. “No more radiation.”</p>
+<p>“I have my dosimeter with me. Don’t worry.”</p>
+<p>“You have responsibilities now. You’re not…”</p>
+<p>She stops before finishing the sentence.</p>
+<p>“I know. I won’t take any risk that isn’t necessary. Besides, the birthday is in ten days.”</p>
+<p>“You said a week at most. That leaves three days to spare.”</p>
+<p>Laura is asleep in the next room. She cannot hear her parents talking.</p>
+<p>Her birthday is coming soon—her sixth. She and her mother have already started preparing, so they will not find themselves two days before the party with everything still to do.</p>
+<p>The day before will be the high point, when they make the fresh-fruit cake together. A tradition already three years old. That is as far back as her memories go.</p>
+<p>Her father is always caught up in work and never takes part. So, if everything goes well and he returns on time, Laura will hardly notice this latest mission at all.</p>
+<div class="scene-break">❦</div>
+<p class="story-action">
+<button class="action-btn" onclick="showPlace('inkai', 45.4333, 67.4833, 7, this)" type="button">
+    ⌖ JV Inkai · Kazakhstan
+  </button>
+</p>
+<p>The CEO receives him personally. He asks him to take a seat. He bows.</p>
+<p>“Please.” He offers him a cigar.</p>
+<p>“Gladly.”</p>
+<p>Naturally, they are speaking English.</p>
+<p>“I have been informed…”</p>
+<p>He hesitates for a moment, then continues.</p>
+<p>“But please, tell me yourself what is troubling Euratom.”</p>
+<p>He smiles at him, then holds up the cigar he has just been given. The CEO takes it from his hands, cuts the cap with a guillotine cutter, and gives it back. He repeats the operation on his own. From the desk he takes a large crystal lighter, and they light their cigars together.</p>
+<p class="story-action">
+<a class="action-btn paper-btn" href="quantum_state_engineering_of_fission_pathways.pdf" rel="noopener" target="_blank">↗ Open the paper</a>
+</p>
+<p>“A rather innovative study on fission has been published.”</p>
+<p>The CEO nods. “I’ve been informed.”</p>
+<p>“One of the authors lists JV Inkai LLP as their affiliation.”</p>
+<p>“But no one by that name has ever worked here,” the CEO concludes. “Very strange. Have you read the paper?”</p>
+<p>“No. It was reviewed for me. The thing is, there are two tables in the appendix…”</p>
+<p>He stops and looks at him. The other man remains silent.</p>
+<p>“Two tables that should not be public.”</p>
+<p>“The data?”</p>
+<p>The data. Same protocol, same result.</p>
+<p>He lets him speak.</p>
+<p>“Those data can only have come from here.”</p>
+<p>The CEO does not move. He gives the slightest nod and draws deeply on his cigar.</p>
+<p>“We are at the Agency’s disposal. You may inspect anything you consider necessary. Tomorrow one of our vice presidents will accompany you for every check.”</p>
+<p>“I’ll need to inspect the facilities as well,” he concludes.</p>
+<div class="scene-break">❦</div>
+<p>The technician hands him the dosimeter.</p>
+<p>“Return it when you leave.”</p>
+<p>Those are the only words of explanation—already more than enough for a man from Kazakhstan.</p>
+<p>The inspection proceeds without incident. The discrepancy between the uranium extracted and the amount redistributed has an explanation. Everything is wrapped up that same day.</p>
+<p>In the early afternoon, at check-out, he returns the protective helmet, gloves, and suit. Finally, the dosimeter.</p>
+<p>The Serena Belgo checks the data on his personal record. The absorbed radiation dose is not significant, but his own dosimeter reports different values.</p>
+<p>He switches to the time analysis. The doses recorded during the inspection match. The excess dose was absorbed earlier. But when?</p>
+<p>He checks the graphs.</p>
+<p>There: sixty hours earlier. A spike in absorbed dose.</p>
+<p>He closes the computer and calls home.</p>
+<p>“Hi. How are you? Everything okay?”</p>
+<p>“No. Do exactly what I tell you. Take Laura, get in the shower, scrub yourselves with the brush. At least twenty minutes.”</p>
+<p>“What’s happening?”</p>
+<p>“Listen to me. I’m not sure, but I’m afraid there may have been contamination. Now listen carefully. After the shower, go out without getting dressed and head to the little house. There’s a Geiger counter in the cabinet. Check yourselves, then call me back.”</p>
+<p>He waits, sitting on the bed.</p>
+<p>Twenty minutes pass quickly.</p>
+<p>“Hello? Well?”</p>
+<p>“Nothing. Just background.”</p>
+<p>A tear escapes his eye against his will.</p>
+<p>“All right. Maybe it’s a false alarm. Stay there for now. We’ll keep monitoring things. But listen—I know you have preparations to make. But if there were…”</p>
+<p>“Yes, I understand. You’re right. But are you all right?”</p>
+<p>“Don’t worry. It shows a small overexposure, but it must have been an artifact. Do you still have to go back into the plant?”</p>
+<p>“No, I’m finished here. Tomorrow I’m going to Philippe Coste. The Philippe Coste facility, in Tricastin. The other researcher is listed as one of their affiliates. Anyway, better change the subject. Go to Laura now. I’ll call you tomorrow.”</p>
+<p>We will spare ourselves the goodbyes and endearments. Let us get to the point, because at Philippe Coste the mystery of the authors becomes more complicated instead of less.</p>
+<p>The name given in the paper belongs not to a researcher, but to the daughter of an engineer in the uranium-conversion area.</p>
+<p class="story-action">
+<button class="action-btn" onclick="showPlace('tricastin', 44.3357, 4.72249, 9, this)" type="button">
+    ⌖ Philippe Coste · Tricastin
+  </button>
+</p>
+<p>When he arrives at the site, they waste no time.</p>
+<p>“We’ve done our homework. We take things seriously here,” he says with a smile.</p>
+<p>“Your author is a namesake—the daughter of one of our engineers, but…”</p>
+<p>He pauses, smiling again, this time without showing his teeth.</p>
+<p>“She is only six years old.”</p>
+<p>He thinks of Laura. She is six too.</p>
+<p>He does not react or show surprise. He waits for the conversation to resume. It does, almost immediately.</p>
+<p>“I’m sorry you had to come all this way, but I assure you we discovered it by chance as well. I was informed this morning, two hours ago.”</p>
+<p>“A very strange coincidence indeed.”</p>
+<p>He pauses and smiles in return.</p>
+<p>“So tell me, what else can we do for you?”</p>
+<p>He rummages through his pockets, finds some chewing gum, and offers a piece. It is politely declined.</p>
+<p>“As far as I’m concerned, I’d be satisfied.”</p>
+<p>He unwraps the gum and puts it in his mouth.</p>
+<p>What a character. He might almost seem overbearing. But let us follow the conversation and avoid judgments.</p>
+<p>“But I can’t say the same for Euratom.”</p>
+<p>He places the gum wrapper on the desk.</p>
+<p>“The conversion technique,” he explains.</p>
+<p>He pauses again, picks up the wrapper, opens it, takes the gum from his mouth, and folds it into the paper.</p>
+<p>“As I was saying, it doesn’t match what was certified.”</p>
+<p>“I see. That’s why you requested clearance for the plant.”</p>
+<p>“Exactly. That’s another reason I’m here.”</p>
+<p>“Here we are, Doctor. This is the plant. This is the flame reactor. UF4 goes in and UF6 comes out. We have nothing else. Incoming and outgoing activity is sampled every thirty seconds. You may consult the data with no time restrictions. We have everything back to 2012.”</p>
+<p>They complete the inspection.</p>
+<p>There is no trace of the fluidized bed.</p>
+<p>If the cumulative activity data match the uranium received, Philippe Coste too will be a closed chapter.</p>
+<p>“How are you?”</p>
+<p>“Fine. Laura is thrilled—you know what she’s like.”</p>
+<p>“I’m glad. You’re the one making the sacrifice. Do you have everything you need?”</p>
+<p>“It’s easier than at home, don’t worry. And the season helps.”</p>
+<p>“And you, with the exposure? Did you try anything with the gum?”</p>
+<p>“Yes, everything normal. The dosimeter showed no overexposure, not even with the saliva test.”</p>
+<p>“So?”</p>
+<p>“I don’t know. Where are you tomorrow?”</p>
+<p>“URENCO.”</p>
+<p>“Do you have a direct flight?”</p>
+<p>“Yes. I should be in Almelo, in Overijssel, by eleven.”</p>
+<p class="story-action">
+<button class="action-btn" onclick="showPlace('almelo', 52.321, 6.7006, 10, this)" type="button">
+    ⌖ URENCO · Almelo
+  </button>
+</p>
+<p>At noon he is in the process manager’s office.</p>
+<p>At two he is touring the enrichment plant.</p>
+<p>“Nothing unusual. So there is no experimental enrichment line?”</p>
+<p>“No. These are the only enrichment lines we operate here.”</p>
+<p>“And I assume the isotope distribution is the one already certified, correct?”</p>
+<p>“It is a stochastic process, but yes, we guarantee the minimum percentage of uranium-235. We have no special provision for filtering the other isotopes.”</p>
+<p>He does not book a hotel.</p>
+<p>Only four days have passed. If he can reach Västerås before tomorrow, he might gain a day.</p>
+<p>He lands at ten in the evening and calls home.</p>
+<p>Laura is already in bed. They spent the evening playing with crane flies.</p>
+<p>She knows she should not touch them. Still, better than plutonium.</p>
+<p class="story-action">
+<button class="action-btn" onclick="showPlace('vasteras', 59.6503, 16.6237, 10, this)" type="button">
+    ⌖ Fuel fabrication · Västerås
+  </button>
+</p>
+<p>“Please, have a seat.”</p>
+<p>The plant director is also a professor of materials engineering, and he has met her before at a conference.</p>
+<p>“Luckily you arrived early, otherwise you wouldn’t have found me. I’ve been summoned urgently to Brussels.”</p>
+<p>“Good morning, Professor. You have already addressed many of the Agency’s points, but…”</p>
+<p>“Please, go ahead.”</p>
+<p>“The paper describes coherence measurements on the pellets in precise detail.”</p>
+<p>“We do not manufacture pellets using that technology. I don’t know how…”</p>
+<p>She stops.</p>
+<p>“Nor who could have described a procedure that does not yet exist.”</p>
+<p>“But could it?”</p>
+<p>He waits.</p>
+<p>“Could it exist, I mean?”</p>
+<p>The professor looks him straight in the eyes.</p>
+<p>“I don’t know. You should ask the reviewers. If they published this paper, there must be some rationale behind it. I’m not a quantum engineer.”</p>
+<p>He presses his lips together. He does not answer.</p>
+<p>“May I visit the plant?”</p>
+<p>“I’m afraid that won’t be possible, but I’ll arrange for you to speak with the engineers.”</p>
+<p>“What prevents it?”</p>
+<p>“Your personal dosimetry has exceeded the operational threshold for access to the plant.”</p>
+<p>He asks for no explanation. The director would not joke about something like that. No one would take an Euratom official lightly.</p>
+<p>The setback nevertheless has a positive outcome.</p>
+<p>None of the engineers is an author of the paper, but one of them has something to say.</p>
+<p>“I ran a few tests by modifying the sintering process.”</p>
+<p>He shows him his notes.</p>
+<p>“The paper seems to refer to my methods. But I haven’t published anything.”</p>
+<p>“Was your research authorized?”</p>
+<p>The question is pertinent, because radioactive material cannot be handled without authorization.</p>
+<p>“Not formally. It involved only a few reversible operations; we produced no waste.”</p>
+<p>“So the published results are real?”</p>
+<p>“We obtained essentially that result, yes.”</p>
+<p>“How are you?”</p>
+<p>“Fine. I miss you.”</p>
+<p>“I miss you both too.”</p>
+<p>“And me?”</p>
+<p>“Yes, you too.”</p>
+<p>“Are you finished?”</p>
+<p>“Almost.”</p>
+<p>“Villigen tomorrow, then?”</p>
+<p>“Then it’s done.”</p>
+<p>“Don’t you have to report to anyone?”</p>
+<p>“Yes, but I’ll get it done in the morning.”</p>
+<p>“Will you be back soon?”</p>
+<p>“Of course. Good night.”</p>
+<div class="scene-break">❦</div>
+<p class="story-action">
+<button class="action-btn" onclick="showPlace('psi', 47.53916, 8.22327, 11, this)" type="button">
+    ⌖ PSI · Villigen
+  </button>
+</p>
+<p>In Switzerland, things go differently.</p>
+<p>No one is waiting for him at PSI. No one seems concerned by his presence.</p>
+<p>Security checks his identity, gives him a visitor badge, and lets him in.</p>
+<p>But no one welcomes him. No one comes looking for him.</p>
+<p>The research committee panel lists more than ten names. The first is the chairman’s.</p>
+<p>His office is not far away, only two buildings over.</p>
+<p>He knocks on the door.</p>
+<p>The chairman is in his office and lets him in. They introduce themselves.</p>
+<p>“I didn’t make the arrangements personally; Euratom did. But I expected to be on some kind of warning list.”</p>
+<p>The chairman listens. He removes his glasses and quickly cleans them.</p>
+<p>“Of course, you’re right, but this catches me completely by surprise. You’re an Agency official, and you’re here because…?”</p>
+<p>“A paper has been published on a possible quantum technology for controlling uranium fission channels.”</p>
+<p>“I haven’t seen it yet. Who are the authors?”</p>
+<p>“It has been public for ten days, as a CERN technical note. But the authors don’t appear to correspond to real people.”</p>
+<p>“Very strange.”</p>
+<p>He pauses for a moment.</p>
+<p>“And how is PSI involved?”</p>
+<p>His phone rings.</p>
+<p>It is his wife.</p>
+<p>“I can’t find Laura.”</p>
+<p>We can rest easy.</p>
+<p>While she was in the garden playing with the dog, he wandered off after a pheasant.</p>
+<p>Laura called him and ran after him.</p>
+<p>After 1,500 metres, she found herself in front of an abandoned building.</p>
+<p>Ciccio stops and lies down on the ground, completely out of breath. Laura grabs him by the collar and they head home.</p>
+<p>“How long since you last saw her?”<br/>
+“About half an hour. I went inside to get some plates.”<br/>
+“You shouldn’t have gone inside. Okay, we’ll talk about that later. Stay calm. The surveillance drone is in the garage; I left it charged. Go there, please.”<br/>
+She crosses the garden and reaches the garage. “I’m here. There, I see it.”<br/>
+“Good. Turn it on.”<br/>
+“Done. There was an app to control it, right?”<br/>
+“Yes. Open it.”<br/>
+She does not answer immediately.<br/>
+“Have you opened it?”<br/>
+“Wait. I can’t find it…”<br/>
+“Alphabetical order. You’ll find it immediately.”<br/>
+“But it isn’t here. Maybe…”<br/>
+“Maybe what?”<br/>
+“I deleted some apps to make space.”<br/>
+“Okay, don’t panic. Open a browser and go to localhost. It’s on the local network.”<br/>
+“Localhost? Where? What do I have to… wait.” Her voice trembles. Then he hears only frantic running and Laura shouting: “Help, Dad, Mum is…”<br/>
+He hangs up. “I’m sorry. Emergency over.”</p>
+<p>“Don’t worry, I have two terrible grandchildren. More importantly, I’ve looked at the research. It would be a remarkable result. The cited papers come from very solid groups and I’m broadly familiar with them, but I had never heard of these possible applications.”</p>
+<p>The visit to PSI also ends without any new evidence.</p>
+<div class="scene-break">❦</div>
+<p>In a few days, Laura will turn ten.</p>
+<p>In the little team house, she is preparing invitation cards for her friends.</p>
+<p>Her father has been home for a day, in time to help her and her mother with the preparations.</p>
+<p>“How did it go?” he asked her when he arrived.</p>
+<p>“Good, Dad,” she replied. “And you?”</p>
+<p>“I passed!” It was a surprise she had been saving for his return.</p>
+<p>“So?” his wife asks, setting down the suitcase.</p>
+<p>“So, when Laura becomes an engineer, she’ll be able to say that if she hadn’t run away from home with Ciccio, we would never have had fifth-generation nuclear power plants.”</p>
+<p>Laura laughs, but by now she remembers little of what really happened four years earlier.</p>
+
+Four years earlier.<br/>
+<p>He was already in Switzerland. Within three hours he was at CERN, and they ran the test:</p>
+https://cds.cern.ch/record/125512
+<img src="images/paper.png"/>
+https://localhost:8080/record/125512
+<img src="images/404.png"/>
+He calls his office: “The article doesn’t exist. It is being generated by the routing software—or by whoever controls it.”
+
+
+<div class="story-status" id="storyStatus">GIS ready · select a place in the story</div>
+</main>
+<script>
+(function () {
+  "use strict";
+
+  var STORY_LAYER = "cnot_quantum_reactor_story_points";
+
+  function getGIS() {
+    if (window.GIS) return window.GIS;
+    if (window.parent && window.parent.GIS) return window.parent.GIS;
+    return null;
+  }
+
+  function setStatus(message) {
+    var el = document.getElementById("storyStatus");
+    if (el) el.textContent = message;
+  }
+
+  function setActive(button) {
+    document.querySelectorAll(".action-btn.is-active").forEach(function(el) {
+      el.classList.remove("is-active");
+    });
+    if (button) button.classList.add("is-active");
+  }
+
+  window.showPlace = function(id, lat, lon, zoom, button) {
+    var GIS = getGIS();
+    setActive(button);
+
+    if (!GIS) {
+      setStatus("GIS unavailable in the reader");
+      return;
+    }
+
+    // The six narrative places remain one reusable story layer.
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(STORY_LAYER);
+    } else if (typeof window.parent.showLayers === "function") {
+      window.parent.showLayers([STORY_LAYER]);
+    }
+
+    // Center the atlas on the place. This avoids changing reader.html
+    // and does not require feature-level filtering.
+    if (typeof GIS.goto === "function") {
+      GIS.goto(lat, lon, zoom);
+    } else if (typeof GIS.gotoGIS === "function") {
+      GIS.gotoGIS(lat, lon, zoom);
+    } else if (window.parent && typeof window.parent.gotoGIS === "function") {
+      window.parent.gotoGIS(lat, lon, zoom);
+    } else if (window.parent && typeof window.parent.applyAtlasCommand === "function") {
+      window.parent.applyAtlasCommand({
+        goto: { lat: lat, lon: lon, zoom: zoom },
+        layers_on: [STORY_LAYER]
+      });
+    }
+
+    setStatus("GIS · " + id);
+  };
+})();
+</script>
+</body>
+</html>

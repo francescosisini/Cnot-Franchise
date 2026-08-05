@@ -740,6 +740,13 @@
       return item.location_name || item.location || item.luogo || item.place || item.city || "";
     }
 
+    
+const LANGUAGE_LABELS={it:"Italian",en:"English",fr:"Français",de:"Deutsch",es:"Español"};
+const TYPE_LABELS={story:"Story",paper:"Paper",dataset:"Dataset",map:"Map",video:"Video",music:"Music",image:"Image",other:"Other"};
+function getArchiveLanguage(item){return LANGUAGE_LABELS[item.language]||item.language||"Unknown";}
+function getArchiveType(item){return TYPE_LABELS[item.type]||item.type||"Story";}
+
+
     function getArchiveTags(item) {
       if (Array.isArray(item.tags)) return item.tags.join(" ");
       return item.tags || item.tag || "";
@@ -752,6 +759,9 @@
         getArchiveDate(item),
         getArchivePlace(item),
         getArchiveTags(item),
+        getArchiveLanguage(item),
+        getArchiveType(item),
+        item.description || "",
         item.archive || "",
         item.id || ""
       ].join(" ").toLowerCase();
@@ -1085,8 +1095,9 @@
         return `
           <div class="archive-meta-entry">
             <div class="archive-meta-title">${escapeHtml(getArchiveTitle(item))}</div>
-            <div class="archive-meta-line">Autore: ${escapeHtml(getArchiveAuthor(item))}</div>
-            <div class="archive-meta-line archive-meta-date">Data: ${escapeHtml(getArchiveDate(item) || "non indicata")}</div>
+            <div class="archive-meta-line">${escapeHtml(getArchiveType(item))} · ${escapeHtml(getArchiveLanguage(item))}</div>
+            <div class="archive-meta-line">${escapeHtml(getArchiveAuthor(item))}</div>
+            <div class="archive-meta-line archive-meta-date">${escapeHtml(getArchiveDate(item) || "non indicata")}</div>
             <div class="archive-meta-line">Luogo: ${escapeHtml(getArchivePlace(item) || "non indicato")}</div>
             <div class="archive-meta-line">GPS: ${escapeHtml(getArchiveCoordinates(item))}</div>
             <div class="archive-meta-actions">

@@ -12,23 +12,21 @@
       "longitude": 11.61067217,
       "location_name": "Ex Convitto Cardial Mora",
       "archive": "CNOT",
+      "story_file": "stories/vendetta_in_sol_maggiore.html",
       "tags": [
         "urbex",
         "usa",
         "tecs",
         "visto"
-      ],
-      "type": "story",
-      "language": "it",
-      "file": "stories/vendetta_in_sol_maggiore.html"
+      ]
     },
     {
       "id": "fpga_infrastructures_europe_it",
       "title": "Dalla FPGA al data center",
-      "file": "stories/fpga_infrastructures_europe_it.html",
+      "file": "fpga_infrastructures_europe_it.html",
       "language": "it",
-      "description": "Una storia cartografica che collega il benchmark medico su Alveo U55C alle infrastrutture FPGA europee documentate.",
-      "type": "story"
+      "category": "Tecnologie",
+      "description": "Una storia cartografica che collega il benchmark medico su Alveo U55C alle infrastrutture FPGA europee documentate."
     },
     {
       "id": "europe-in-six-places",
@@ -36,7 +34,7 @@
       "subtitle": "A small GIS story about European integration through symbolic places.",
       "author": "Francesco Sisini",
       "language": "en",
-      "file": "stories/europe_in_six_places.html",
+      "file": "europe_in_six_places.html",
       "layer": "european_integration_places",
       "tags": [
         "europe",
@@ -44,14 +42,14 @@
         "treaties",
         "institutions",
         "demo"
-      ],
-      "type": "story"
+      ]
     },
     {
       "id": "europa-membership-timeline",
       "title": "La costruzione dell’Europa",
       "subtitle": "Timeline di adesione europea",
-      "file": "stories/europa.html",
+      "file": "europa.html",
+      "path": "stories/europa.html",
       "description": "Storia interattiva basata sul layer GIS eu_membership_timeline: mostra i paesi membri per ondate di adesione.",
       "tags": [
         "Europa",
@@ -62,16 +60,16 @@
       "layer_refs": [
         "eu_membership_timeline"
       ],
-      "bridge": "CNOTAtlasBridge",
-      "type": "story",
-      "language": "it"
+      "bridge": "CNOTAtlasBridge"
     },
     {
       "id": "europa-membership-timeline-en",
       "title": "The construction of Europe",
       "subtitle": "European accession timeline",
       "author": "Francesco Sisini",
-      "file": "stories/europa_en.html",
+      "file": "europa_en.html",
+      "path": "stories/europa_en.html",
+      "story_file": "stories/europa_en.html",
       "description": "Interactive story based on the eu_membership_timeline GIS layer: it shows EU member states by accession waves.",
       "tags": [
         "Europe",
@@ -83,9 +81,7 @@
       "layer_refs": [
         "eu_membership_timeline"
       ],
-      "bridge": "CNOTAtlasBridge",
-      "type": "story",
-      "language": "it"
+      "bridge": "CNOTAtlasBridge"
     },
     {
       "id": "nuclear-fuel-cycle",
@@ -93,7 +89,9 @@
       "subtitle": "From uranium extraction to geological disposal",
       "author": "Francesco Sisini",
       "language": "en",
-      "file": "stories/nuclear_fuel_cycle.html",
+      "file": "nuclear_fuel_cycle.html",
+      "path": "stories/nuclear_fuel_cycle.html",
+      "story_file": "stories/nuclear_fuel_cycle.html",
       "description": "A cumulative GIS story showing nuclear energy as a geographically distributed fuel cycle: extraction, conversion, enrichment, fuel fabrication, reactor use, reprocessing, storage, research and geological disposal.",
       "tags": [
         "nuclear",
@@ -114,8 +112,7 @@
         "nuclear_research",
         "geological_repositories"
       ],
-      "bridge": "GIS",
-      "type": "story"
+      "bridge": "GIS"
     },
     {
       "id": "cnot-quantum-reactor",
@@ -123,7 +120,9 @@
       "subtitle": "Un'indagine tra uranio, fissione quantistica e un paper impossibile",
       "author": "Francesco Sisini",
       "language": "it",
-      "file": "stories/cnot_quantum_reactor/index.html",
+      "file": "cnot_quantum_reactor/index.html",
+      "path": "stories/cnot_quantum_reactor/index.html",
+      "story_file": "stories/cnot_quantum_reactor/index.html",
       "description": "Un funzionario Euratom segue le affiliazioni di un misterioso paper sulla fissione quantistica attraverso la filiera nucleare europea, fino al PSI e al CERN.",
       "tags": [
         "nuclear",
@@ -143,40 +142,7 @@
         "04_fuel_fabrication",
         "08_nuclear_research"
       ],
-      "bridge": "GIS",
-      "type": "story"
-    },
-    {
-      "id": "cnot-quantum-reactor-en",
-      "title": "C-Not Quantum Reactor",
-      "subtitle": "An investigation through uranium, quantum fission and an impossible paper",
-      "author": "Francesco Sisini",
-      "language": "en",
-      "file": "stories/cnot_quantum_reactor/index_en.html",
-      "description": "An Euratom official follows the affiliations of a mysterious paper on quantum fission through the nuclear fuel cycle, all the way to PSI and CERN.",
-      "tags": [
-        "nuclear",
-        "quantum",
-        "uranium",
-        "Euratom",
-        "CERN",
-        "PSI",
-        "GIS",
-        "fiction",
-        "English"
-      ],
-      "layer_refs": [
-        "cnot_quantum_reactor_story_points",
-        "01_uranium_extraction",
-        "02_uranium_conversion",
-        "03_uranium_enrichment",
-        "04_fuel_fabrication",
-        "08_nuclear_research"
-      ],
-      "bridge": "GIS",
-      "type": "story"
+      "bridge": "GIS"
     }
-  ],
-  "schema_version": "2.0",
-  "default_language": "it"
+  ]
 }
