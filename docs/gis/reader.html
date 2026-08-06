@@ -1295,6 +1295,10 @@ function getArchiveType(item){return TYPE_LABELS[item.type]||item.type||"Story";
 
       // Nessun reset automatico dei layer: il reader carica solo la storia.
 
+      // Prima di aprire una storia, porta il GIS nello stesso stato
+      // ottenuto premendo manualmente "Spegni tutto".
+      window.cnotReaderLayers.hideAllExceptCnotEurope();
+
       readerTitle.textContent = title || "Racconto";
       storyFrame.src = finalUrl;
       readerPanel.classList.add("open");
