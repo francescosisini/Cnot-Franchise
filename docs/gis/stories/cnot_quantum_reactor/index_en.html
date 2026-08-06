@@ -48,6 +48,46 @@ em { color:#d6ffd1; }
   font:11px/1.3 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   backdrop-filter:blur(8px); opacity:.92;
 }
+
+.publisher-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin: 24px 0 32px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px dashed rgba(57, 255, 20, 0.35);
+}
+
+.publisher-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.publisher-text {
+  padding-left: 18px;
+  border-left: 1px solid rgba(57, 255, 20, 0.45);
+
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.45;
+
+  color: #d8e8d5;
+}
+
+.publisher-text span {
+  display: block;
+}
+
+.publisher-text strong {
+  display: block;
+  color: #39ff14;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+}
+
 @media (max-width:600px) {
   main { padding:22px 18px 60px; }
 }
@@ -65,7 +105,22 @@ em { color:#d6ffd1; }
 </head>
 <body>
 <main data-story-id="cnot-quantum-reactor">
-<h1>C-Not Quantum Reactor</h1><div class="translation-note"><strong>Translation note.</strong> This story was originally written in Italian. This English version is an automatic translation. If you notice errors, awkward wording, or passages that could be improved, please report them to the author.</div>
+<h1>C-Not Quantum Reactor</h1>
+<div class="publisher-brand">
+  <img
+    src="images/et.png"
+    alt="Edizioni Tradizionali"
+    class="publisher-logo"
+  >
+
+  <div class="publisher-text">
+    <span>Powered by</span>
+    <strong>Edizioni Tradizionali</strong>
+  </div>
+</div>
+
+
+<div class="translation-note"><strong>Translation note.</strong> This story was originally written in Italian. This English version is an automatic translation. If you notice errors, awkward wording, or passages that could be improved, please report them to the author.</div>
 <p>“How long will you be away?”</p>
 <p>“Not long. A few days. A week at most.”</p>
 <p>She asks no more questions. She turns over in bed, her back to him.</p>
