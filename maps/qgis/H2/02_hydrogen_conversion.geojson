@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "name": "02_hydrogen_conversion",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "02_hydrogen_conversion"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.03,
+          51.95
+        ]
+      },
+      "properties": {
+        "id": "NL_ROTTERDAM_AMMONIA_HUB",
+        "name": "Port of Rotterdam — Hydrogen/Ammonia Import & Conversion Hub",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "operator": "Port of Rotterdam ecosystem",
+        "functions": [
+          "hydrogen_conversion",
+          "ammonia_handling",
+          "hydrogen_import"
+        ],
+        "technology": "hydrogen carriers / ammonia",
+        "status": "operational_infrastructure_and_projects",
+        "story_function_it": "Nodo portuale per l'importazione di vettori dell'idrogeno e per la loro trasformazione e distribuzione.",
+        "layer": "02_hydrogen_conversion",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.31,
+          51.29
+        ]
+      },
+      "properties": {
+        "id": "BE_ANTWERP_H2_HUB",
+        "name": "Port of Antwerp-Bruges Hydrogen Hub",
+        "country": "Belgium",
+        "country_code": "BE",
+        "operator": "Port of Antwerp-Bruges ecosystem",
+        "functions": [
+          "hydrogen_conversion",
+          "hydrogen_import",
+          "ammonia_handling"
+        ],
+        "technology": "hydrogen carriers / ammonia",
+        "status": "operational_infrastructure_and_projects",
+        "story_function_it": "Polo industriale e portuale per vettori dell'idrogeno, ammoniaca e trasformazioni chimiche.",
+        "layer": "02_hydrogen_conversion",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+{
+  "type": "FeatureCollection",
+  "name": "hydrogen_cycle_master",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "structure": "Master collection of all narrative hydrogen-cycle features.",
+    "layers": [
+      "01_hydrogen_production",
+      "02_hydrogen_conversion",
+      "03_hydrogen_import",
+      "04_hydrogen_transport",
+      "05_hydrogen_storage",
+      "06_hydrogen_use",
+      "07_hydrogen_valleys"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.116,
+          38.687
+        ]
+      },
+      "properties": {
+        "id": "ES_PUERTOLLANO_IBERDROLA",
+        "name": "Puertollano Green Hydrogen Plant",
+        "country": "Spain",
+        "country_code": "ES",
+        "operator": "Iberdrola / Fertiberia",
+        "functions": [
+          "hydrogen_production",
+          "fertiliser_use"
+        ],
+        "technology": "PEM electrolysis",
+        "status": "operational",
+        "story_function_it": "Produzione di idrogeno rinnovabile tramite elettrolisi, destinato principalmente all'industria dei fertilizzanti.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.79,
+          50.82
+        ]
+      },
+      "properties": {
+        "id": "DE_RHEINLAND_REFHYNE",
+        "name": "REFHYNE — Energy and Chemicals Park Rheinland",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "Shell",
+        "functions": [
+          "hydrogen_production",
+          "refinery_use"
+        ],
+        "technology": "PEM electrolysis",
+        "status": "operational_and_expanding",
+        "story_function_it": "Produzione industriale di idrogeno mediante elettrolisi all'interno di un grande polo energetico e chimico.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.62,
+          59.12
+        ]
+      },
+      "properties": {
+        "id": "NO_HEROYA_YARA",
+        "name": "Yara Herøya Renewable Hydrogen Plant",
+        "country": "Norway",
+        "country_code": "NO",
+        "operator": "Yara",
+        "functions": [
+          "hydrogen_production",
+          "ammonia_production",
+          "fertiliser_use"
+        ],
+        "technology": "water electrolysis",
+        "status": "operational",
+        "story_function_it": "Produzione di idrogeno rinnovabile integrata nella produzione di ammoniaca e fertilizzanti.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.69,
+          65.83
+        ]
+      },
+      "properties": {
+        "id": "SE_BODEN_STEGRA",
+        "name": "Stegra Boden",
+        "country": "Sweden",
+        "country_code": "SE",
+        "operator": "Stegra",
+        "functions": [
+          "hydrogen_production",
+          "steel_use"
+        ],
+        "technology": "large-scale electrolysis",
+        "status": "under_development",
+        "story_function_it": "Grande produzione prevista di idrogeno verde integrata con la produzione di acciaio a basse emissioni.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.03,
+          51.95
+        ]
+      },
+      "properties": {
+        "id": "NL_ROTTERDAM_AMMONIA_HUB",
+        "name": "Port of Rotterdam — Hydrogen/Ammonia Import & Conversion Hub",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "operator": "Port of Rotterdam ecosystem",
+        "functions": [
+          "hydrogen_conversion",
+          "ammonia_handling",
+          "hydrogen_import"
+        ],
+        "technology": "hydrogen carriers / ammonia",
+        "status": "operational_infrastructure_and_projects",
+        "story_function_it": "Nodo portuale per l'importazione di vettori dell'idrogeno e per la loro trasformazione e distribuzione.",
+        "layer": "02_hydrogen_conversion",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.31,
+          51.29
+        ]
+      },
+      "properties": {
+        "id": "BE_ANTWERP_H2_HUB",
+        "name": "Port of Antwerp-Bruges Hydrogen Hub",
+        "country": "Belgium",
+        "country_code": "BE",
+        "operator": "Port of Antwerp-Bruges ecosystem",
+        "functions": [
+          "hydrogen_conversion",
+          "hydrogen_import",
+          "ammonia_handling"
+        ],
+        "technology": "hydrogen carriers / ammonia",
+        "status": "operational_infrastructure_and_projects",
+        "story_function_it": "Polo industriale e portuale per vettori dell'idrogeno, ammoniaca e trasformazioni chimiche.",
+        "layer": "02_hydrogen_conversion",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.14,
+          53.53
+        ]
+      },
+      "properties": {
+        "id": "DE_WILHELMSHAVEN_H2_IMPORT",
+        "name": "Wilhelmshaven Hydrogen Import Hub",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "multiple project developers",
+        "functions": [
+          "hydrogen_import",
+          "ammonia_import",
+          "energy_hub"
+        ],
+        "technology": "marine terminal / hydrogen carriers",
+        "status": "projects_and_existing_port",
+        "story_function_it": "Grande nodo del Mare del Nord destinato all'ingresso in Germania di idrogeno e derivati importati.",
+        "layer": "03_hydrogen_import",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.14,
+          53.9
+        ]
+      },
+      "properties": {
+        "id": "DE_BRUNSBUETTEL_H2_IMPORT",
+        "name": "Brunsbüttel Hydrogen Import Area",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "multiple project developers",
+        "functions": [
+          "hydrogen_import",
+          "ammonia_import"
+        ],
+        "technology": "marine terminal / hydrogen carriers",
+        "status": "projects_and_existing_port",
+        "story_function_it": "Area portuale strategica per l'importazione futura di idrogeno e vettori come l'ammoniaca.",
+        "layer": "03_hydrogen_import",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.45,
+          36.13
+        ]
+      },
+      "properties": {
+        "id": "ES_ALGECIRAS_H2_GATEWAY",
+        "name": "Port of Algeciras Hydrogen Gateway",
+        "country": "Spain",
+        "country_code": "ES",
+        "operator": "Port ecosystem",
+        "functions": [
+          "hydrogen_import",
+          "hydrogen_export",
+          "maritime_bunkering"
+        ],
+        "technology": "port hydrogen logistics",
+        "status": "developing",
+        "story_function_it": "Nodo mediterraneo e atlantico per scambi, logistica marittima e futuri flussi di idrogeno.",
+        "layer": "03_hydrogen_import",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.17,
+            41.39
+          ],
+          [
+            3.0,
+            42.3
+          ],
+          [
+            4.0,
+            42.8
+          ],
+          [
+            5.37,
+            43.3
+          ]
+        ]
+      },
+      "properties": {
+        "id": "H2MED_BARMAR",
+        "name": "H2med — BarMar",
+        "country": "Spain-France",
+        "country_code": "EU",
+        "operator": "Enagás / Teréga / GRTgaz and partners",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "offshore hydrogen pipeline",
+        "status": "planned",
+        "story_function_it": "Interconnessione marittima prevista tra Barcellona e Marsiglia, asse centrale del corridoio H2med.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -8.42,
+            41.16
+          ],
+          [
+            -7.0,
+            41.3
+          ],
+          [
+            -5.67,
+            41.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "H2MED_CELZA",
+        "name": "H2med — CelZa",
+        "country": "Portugal-Spain",
+        "country_code": "EU",
+        "operator": "REN / Enagás",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "hydrogen pipeline",
+        "status": "planned",
+        "story_function_it": "Interconnessione prevista tra Portogallo e Spagna per collegare la produzione iberica alla rete europea.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.49,
+            37.8
+          ],
+          [
+            12.5,
+            41.9
+          ],
+          [
+            11.3,
+            46.5
+          ],
+          [
+            12.3,
+            47.3
+          ],
+          [
+            11.58,
+            48.14
+          ]
+        ]
+      },
+      "properties": {
+        "id": "SOUTH2_CORRIDOR",
+        "name": "SoutH2 Corridor",
+        "country": "Italy-Austria-Germany",
+        "country_code": "EU",
+        "operator": "Snam / TAG / Gas Connect Austria / bayernets",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "repurposed and new hydrogen pipelines",
+        "status": "planned",
+        "story_function_it": "Corridoio previsto dal Mediterraneo italiano verso Austria e Germania, in larga parte basato su infrastrutture riconvertite.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.94,
+            60.17
+          ],
+          [
+            24.75,
+            59.44
+          ],
+          [
+            24.1,
+            56.95
+          ],
+          [
+            25.28,
+            54.69
+          ],
+          [
+            21.01,
+            52.23
+          ],
+          [
+            14.35,
+            51.84
+          ]
+        ]
+      },
+      "properties": {
+        "id": "NORDIC_BALTIC_H2_CORRIDOR",
+        "name": "Nordic-Baltic Hydrogen Corridor",
+        "country": "Finland-Estonia-Latvia-Lithuania-Poland-Germany",
+        "country_code": "EU",
+        "operator": "regional transmission system operators",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "hydrogen backbone",
+        "status": "planned",
+        "story_function_it": "Corridoio previsto per collegare produzione rinnovabile nordica e baltica con i mercati dell'Europa centrale.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.88,
+          53.1
+        ]
+      },
+      "properties": {
+        "id": "NL_ZUIDWENDING_HYSTOCK",
+        "name": "HyStock — Zuidwending",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "operator": "Gasunie / HyStock",
+        "functions": [
+          "hydrogen_storage"
+        ],
+        "technology": "salt cavern",
+        "status": "development_and_demonstration",
+        "story_function_it": "Stoccaggio sotterraneo dell'idrogeno in cavità saline per compensare produzione e domanda nel tempo.",
+        "layer": "05_hydrogen_storage",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.17,
+          46.34
+        ]
+      },
+      "properties": {
+        "id": "FR_ETREZ_HYPSTER",
+        "name": "HyPSTER — Etrez",
+        "country": "France",
+        "country_code": "FR",
+        "operator": "Storengy and project partners",
+        "functions": [
+          "hydrogen_storage",
+          "demonstration"
+        ],
+        "technology": "salt cavern",
+        "status": "demonstration",
+        "story_function_it": "Dimostrazione europea dello stoccaggio di idrogeno in cavità saline.",
+        "layer": "05_hydrogen_storage",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9,
+          53.47
+        ]
+      },
+      "properties": {
+        "id": "DE_ETZEL_H2CAST",
+        "name": "H2CAST Etzel",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "STORAG ETZEL and partners",
+        "functions": [
+          "hydrogen_storage",
+          "demonstration"
+        ],
+        "technology": "salt cavern",
+        "status": "development_and_testing",
+        "story_function_it": "Conversione e sperimentazione di cavità saline esistenti per lo stoccaggio su larga scala di idrogeno.",
+        "layer": "05_hydrogen_storage",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.33,
+          52.17
+        ]
+      },
+      "properties": {
+        "id": "DE_SALZGITTER_SALCOS",
+        "name": "SALCOS — Salzgitter",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "Salzgitter AG",
+        "functions": [
+          "steel_use",
+          "hydrogen_demand"
+        ],
+        "technology": "hydrogen-based direct reduction",
+        "status": "under_development",
+        "story_function_it": "Uso industriale dell'idrogeno per sostituire progressivamente il carbone nella produzione dell'acciaio.",
+        "layer": "06_hydrogen_use",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.34,
+          48.29
+        ]
+      },
+      "properties": {
+        "id": "AT_LINZ_VOESTALPINE",
+        "name": "voestalpine Linz Hydrogen/Steel Site",
+        "country": "Austria",
+        "country_code": "AT",
+        "operator": "voestalpine",
+        "functions": [
+          "steel_use",
+          "hydrogen_demand",
+          "demonstration"
+        ],
+        "technology": "hydrogen metallurgy",
+        "status": "operational_demonstration_and_transition",
+        "story_function_it": "Impiego e sperimentazione dell'idrogeno nella trasformazione della siderurgia verso processi a minori emissioni.",
+        "layer": "06_hydrogen_use",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6,
+          52.47
+        ]
+      },
+      "properties": {
+        "id": "NL_IJMUIDEN_TATA",
+        "name": "Tata Steel IJmuiden",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "operator": "Tata Steel Nederland",
+        "functions": [
+          "steel_use",
+          "future_hydrogen_demand"
+        ],
+        "technology": "planned hydrogen-based steelmaking",
+        "status": "transition_project",
+        "story_function_it": "Grande potenziale utilizzatore industriale di idrogeno nella futura trasformazione della produzione siderurgica.",
+        "layer": "06_hydrogen_use",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4,
+          51.2
+        ]
+      },
+      "properties": {
+        "id": "BE_FLEMISH_HYDROGEN_PORTS_VALLEY",
+        "name": "Flemish Hydrogen Ports Valley",
+        "country": "Belgium",
+        "country_code": "BE",
+        "operator": "regional consortium",
+        "functions": [
+          "hydrogen_valley",
+          "production",
+          "distribution",
+          "industrial_use",
+          "port_logistics"
+        ],
+        "technology": "integrated hydrogen ecosystem",
+        "status": "ongoing",
+        "story_function_it": "Ecosistema regionale che collega produzione, logistica portuale, distribuzione e utilizzatori finali.",
+        "layer": "07_hydrogen_valleys",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.55,
+          45.65
+        ]
+      },
+      "properties": {
+        "id": "IT_NORTH_ADRIATIC_HYDROGEN_VALLEY",
+        "name": "North Adriatic Hydrogen Valley",
+        "country": "Italy-Slovenia-Croatia",
+        "country_code": "EU",
+        "operator": "transnational consortium",
+        "functions": [
+          "hydrogen_valley",
+          "production",
+          "distribution",
+          "industrial_use"
+        ],
+        "technology": "integrated transnational hydrogen ecosystem",
+        "status": "ongoing",
+        "story_function_it": "Valle transfrontaliera dell'idrogeno tra Italia, Slovenia e Croazia, con produzione e impieghi distribuiti.",
+        "layer": "07_hydrogen_valleys",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.95,
+          39.61
+        ]
+      },
+      "properties": {
+        "id": "ES_GREEN_HYSland",
+        "name": "Green Hysland — Mallorca",
+        "country": "Spain",
+        "country_code": "ES",
+        "operator": "project consortium",
+        "functions": [
+          "hydrogen_valley",
+          "production",
+          "mobility",
+          "heat",
+          "power"
+        ],
+        "technology": "island hydrogen ecosystem",
+        "status": "ongoing",
+        "story_function_it": "Ecosistema insulare che integra produzione rinnovabile di idrogeno e diversi usi energetici.",
+        "layer": "07_hydrogen_valleys",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+.
+├── export.txt
+├── images
+├── index.html
+├── layers
+│   ├── 01_hydrogen_industrial_use_51.js
+│   ├── 01_uranium_extraction_61.js
+│   ├── 02_hydrogen_import_hubs_52.js
+│   ├── 02_uranium_conversion_62.js
+│   ├── 03_h2med_barmar_53.js
+│   ├── 03_uranium_enrichment_63.js
+│   ├── 04_fuel_fabrication_64.js
+│   ├── 04_puglia_green_hydrogen_54.js
+│   ├── 05_reprocessing_recycling_65.js
+│   ├── 05_south2_corridor_55.js
+│   ├── 06_hydrogen_research_italy_56.js
+│   ├── 06_interim_storage_66.js
+│   ├── 07_fuel_cell_europe_57.js
+│   ├── 07_geological_repositories_67.js
+│   ├── 08_hydrogen_external_links_58.js
+│   ├── 08_nuclear_research_68.js
+│   ├── 09_nuclear_power_switzerland_69.js
+│   ├── ai_actors_74.js
+│   ├── ai_compute_relations_70.js
+│   ├── ai_factories_73.js
+│   ├── ai_relations_72.js
+│   ├── ai_supercomputers_71.js
+│   ├── alice_prologostory_points_25.js
+│   ├── building_43.js
+│   ├── building_44.js
+│   ├── casa_caterina_26.js
+│   ├── casa_caterina_27.js
+│   ├── cnot17_events_33.js
+│   ├── cnotbuilding_38.js
+│   ├── cnotEdifici_45.js
+│   ├── cnoteurope_80.js
+│   ├── cnotparcheggiodroni_49.js
+│   ├── cnot_quantum_reactor_story_points_50.js
+│   ├── cnotstrade_1_37.js
+│   ├── cnotstrade_2_39.js
+│   ├── cnotTinyhouses_48.js
+│   ├── convitto_base_localConvittoCardinalMoraesempiobase_35.js
+│   ├── convitto_base_localConvittoCardinalMoraesempiobase_36.js
+│   ├── datacenter_78.js
+│   ├── digital_infrastructureBCE_digital_infrastructure_18.js
+│   ├── digital_infrastructureCommissione_Europea_digital_infrastructure_15.js
+│   ├── digital_infrastructureENISA_digital_infrastructure_12.js
+│   ├── digital_infrastructureeuLISA_digital_infrastructure_9.js
+│   ├── digital_infrastructureEUROJUST_digital_infrastructure_6.js
+│   ├── digital_infrastructureEUROPOL_digital_infrastructure_21.js
+│   ├── digital_infrastructureFRONTEX_digital_infrastructure_3.js
+│   ├── energy_opsd_all_except_nuclear_60.js
+│   ├── eu_membership_timeline_1.js
+│   ├── european_integration_places_2.js
+│   ├── FilieraAlimentarepuntodidistribuzione_24.js
+│   ├── fpga_infrastructures_europe_79.js
+│   ├── highway_40.js
+│   ├── highway_41.js
+│   ├── highway_42.js
+│   ├── layers.js
+│   ├── legacy_infrastructure_2050_32.js
+│   ├── ne_10m_admin_0_countries_0.js
+│   ├── nuclear_reactors_europe_all_59.js
+│   ├── qt_actors_77.js
+│   ├── qt_infrastructures_76.js
+│   ├── qt_relations_75.js
+│   ├── relationsBCE_relations_19.js
+│   ├── relationsCommissione_Europea_relations_16.js
+│   ├── relationsENISA_relations_13.js
+│   ├── relationseuLISA_relations_10.js
+│   ├── relationsEUROJUST_relations_7.js
+│   ├── relationsEUROPOL_relations_22.js
+│   ├── relationsFRONTEX_relations_4.js
+│   ├── Semafori_47.js
+│   ├── sitesBCE_sites_20.js
+│   ├── sitesCommissione_Europea_sites_17.js
+│   ├── sitesENISA_sites_14.js
+│   ├── siteseuLISA_sites_11.js
+│   ├── sitesEUROJUST_sites_8.js
+│   ├── sitesEUROPOL_sites_23.js
+│   ├── sitesFRONTEX_sites_5.js
+│   ├── stanza_Aliceroom_Alice_30.js
+│   ├── stanza_Aliceroom_Alice_31.js
+│   ├── Telecamere_46.js
+│   ├── tiny_laura_28.js
+│   ├── tiny_laura_29.js
+│   └── visa_data_flows_34.js
+├── resources
+│   ├── Autolinker.min.js
+│   ├── Autolinker.min.js.map
+│   ├── fontawesome-all.min.css
+│   ├── functions.js
+│   ├── horsey.min.css
+│   ├── horsey.min.js
+│   ├── ic_location_on_128_28437.png
+│   ├── lds-roller.gif
+│   ├── marker.png
+│   ├── measure-control.png
+│   ├── ol.css
+│   ├── ol.js
+│   ├── ol-layerswitcher.css
+│   ├── ol-layerswitcher.js
+│   ├── olms.js
+│   ├── ol-search-layer.css
+│   ├── ol-search-layer.js
+│   ├── ol-search-layer.min.css
+│   ├── photon-geocoder-autocomplete.min.css
+│   ├── photon-geocoder-autocomplete.min.js
+│   ├── proj4.js
+│   ├── qgis2web.css
+│   ├── qgis2web_expressions.js
+│   └── qgis2web.js
+├── styles
+│   ├── 01_hydrogen_industrial_use_51_style.js
+│   ├── 01_uranium_extraction_61_style.js
+│   ├── 02_hydrogen_import_hubs_52_style.js
+│   ├── 02_uranium_conversion_62_style.js
+│   ├── 03_h2med_barmar_53_style.js
+│   ├── 03_uranium_enrichment_63_style.js
+│   ├── 04_fuel_fabrication_64_style.js
+│   ├── 04_puglia_green_hydrogen_54_style.js
+│   ├── 05_reprocessing_recycling_65_style.js
+│   ├── 05_south2_corridor_55_style.js
+│   ├── 06_hydrogen_research_italy_56_style.js
+│   ├── 06_interim_storage_66_style.js
+│   ├── 07_fuel_cell_europe_57_style.js
+│   ├── 07_geological_repositories_67_style.js
+│   ├── 08_hydrogen_external_links_58_style.js
+│   ├── 08_nuclear_research_68_style.js
+│   ├── 09_nuclear_power_switzerland_69_style.js
+│   ├── accommodation_house_1.svg
+│   ├── accommodation_house.svg
+│   ├── ai_actors_74_style.js
+│   ├── ai_compute_relations_70_style.js
+│   ├── ai_factories_73_style.js
+│   ├── ai_relations_72_style.js
+│   ├── ai_supercomputers_71_style.js
+│   ├── alice_prologostory_points_25_style.js
+│   ├── building_43_style.js
+│   ├── building_44_style.js
+│   ├── casa_caterina_26_style.js
+│   ├── casa_caterina_27_style.js
+│   ├── cnot17_events_33_style.js
+│   ├── cnotbuilding_38_style.js
+│   ├── cnotEdifici_45_style.js
+│   ├── cnoteurope_80_style.js
+│   ├── cnotparcheggiodroni_49_style.js
+│   ├── cnot_quantum_reactor_story_points_50_style.js
+│   ├── cnotstrade_1_37_style.js
+│   ├── cnotstrade_2_39_style.js
+│   ├── cnotTinyhouses_48_style.js
+│   ├── convitto_base_localConvittoCardinalMoraesempiobase_35_style.js
+│   ├── convitto_base_localConvittoCardinalMoraesempiobase_36_style.js
+│   ├── datacenter_78_style.js
+│   ├── digital_infrastructureBCE_digital_infrastructure_18_style.js
+│   ├── digital_infrastructureCommissione_Europea_digital_infrastructure_15_style.js
+│   ├── digital_infrastructureENISA_digital_infrastructure_12_style.js
+│   ├── digital_infrastructureeuLISA_digital_infrastructure_9_style.js
+│   ├── digital_infrastructureEUROJUST_digital_infrastructure_6_style.js
+│   ├── digital_infrastructureEUROPOL_digital_infrastructure_21_style.js
+│   ├── digital_infrastructureFRONTEX_digital_infrastructure_3_style.js
+│   ├── energy_opsd_all_except_nuclear_60_style.js
+│   ├── eu_membership_timeline_1_style.js
+│   ├── european_integration_places_2_style.js
+│   ├── FilieraAlimentarepuntodidistribuzione_24_style.js
+│   ├── fpga_infrastructures_europe_79_style.js
+│   ├── highway_40_style.js
+│   ├── highway_41_style.js
+│   ├── highway_42_style.js
+│   ├── legacy_infrastructure_2050_32_style.js
+│   ├── legend
+│   │   ├── 01_hydrogen_industrial_use_51.png
+│   │   ├── 01_uranium_extraction_61.png
+│   │   ├── 02_hydrogen_import_hubs_52.png
+│   │   ├── 02_uranium_conversion_62.png
+│   │   ├── 03_h2med_barmar_53.png
+│   │   ├── 03_uranium_enrichment_63.png
+│   │   ├── 04_fuel_fabrication_64.png
+│   │   ├── 04_puglia_green_hydrogen_54.png
+│   │   ├── 05_reprocessing_recycling_65.png
+│   │   ├── 05_south2_corridor_55.png
+│   │   ├── 06_hydrogen_research_italy_56.png
+│   │   ├── 06_interim_storage_66.png
+│   │   ├── 07_fuel_cell_europe_57.png
+│   │   ├── 07_geological_repositories_67.png
+│   │   ├── 08_hydrogen_external_links_58.png
+│   │   ├── 08_nuclear_research_68.png
+│   │   ├── 09_nuclear_power_switzerland_69.png
+│   │   ├── ai_actors_74_0.png
+│   │   ├── ai_actors_74_1.png
+│   │   ├── ai_actors_74_2.png
+│   │   ├── ai_actors_74_3.png
+│   │   ├── ai_compute_relations_70.png
+│   │   ├── ai_factories_73.png
+│   │   ├── ai_relations_72.png
+│   │   ├── ai_supercomputers_71.png
+│   │   ├── alice_prologostory_points_25.png
+│   │   ├── building_43.png
+│   │   ├── building_44.png
+│   │   ├── casa_caterina_26.png
+│   │   ├── casa_caterina_27.png
+│   │   ├── cnot17_events_33.png
+│   │   ├── cnotbuilding_38.png
+│   │   ├── cnotEdifici_45.png
+│   │   ├── cnoteurope_80.png
+│   │   ├── cnotparcheggiodroni_49.png
+│   │   ├── cnot_quantum_reactor_story_points_50.png
+│   │   ├── cnotstrade_1_37.png
+│   │   ├── cnotstrade_2_39.png
+│   │   ├── cnotTinyhouses_48.png
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_35.png
+│   │   ├── convitto_base_localConvittoCardinalMoraesempiobase_36.png
+│   │   ├── datacenter_78.png
+│   │   ├── digital_infrastructureBCE_digital_infrastructure_18.png
+│   │   ├── digital_infrastructureCommissione_Europea_digital_infrastructure_15.png
+│   │   ├── digital_infrastructureENISA_digital_infrastructure_12.png
+│   │   ├── digital_infrastructureeuLISA_digital_infrastructure_9.png
+│   │   ├── digital_infrastructureEUROJUST_digital_infrastructure_6.png
+│   │   ├── digital_infrastructureEUROPOL_digital_infrastructure_21.png
+│   │   ├── digital_infrastructureFRONTEX_digital_infrastructure_3.png
+│   │   ├── energy_opsd_all_except_nuclear_60_0.png
+│   │   ├── energy_opsd_all_except_nuclear_60_1.png
+│   │   ├── energy_opsd_all_except_nuclear_60_2.png
+│   │   ├── energy_opsd_all_except_nuclear_60_3.png
+│   │   ├── energy_opsd_all_except_nuclear_60_4.png
+│   │   ├── energy_opsd_all_except_nuclear_60_5.png
+│   │   ├── energy_opsd_all_except_nuclear_60_6.png
+│   │   ├── energy_opsd_all_except_nuclear_60_7.png
+│   │   ├── eu_membership_timeline_1_0.png
+│   │   ├── eu_membership_timeline_1_10.png
+│   │   ├── eu_membership_timeline_1_11.png
+│   │   ├── eu_membership_timeline_1_12.png
+│   │   ├── eu_membership_timeline_1_13.png
+│   │   ├── eu_membership_timeline_1_14.png
+│   │   ├── eu_membership_timeline_1_15.png
+│   │   ├── eu_membership_timeline_1_16.png
+│   │   ├── eu_membership_timeline_1_17.png
+│   │   ├── eu_membership_timeline_1_18.png
+│   │   ├── eu_membership_timeline_1_19.png
+│   │   ├── eu_membership_timeline_1_1.png
+│   │   ├── eu_membership_timeline_1_20.png
+│   │   ├── eu_membership_timeline_1_21.png
+│   │   ├── eu_membership_timeline_1_22.png
+│   │   ├── eu_membership_timeline_1_23.png
+│   │   ├── eu_membership_timeline_1_24.png
+│   │   ├── eu_membership_timeline_1_25.png
+│   │   ├── eu_membership_timeline_1_26.png
+│   │   ├── eu_membership_timeline_1_27.png
+│   │   ├── eu_membership_timeline_1_28.png
+│   │   ├── eu_membership_timeline_1_2.png
+│   │   ├── eu_membership_timeline_1_3.png
+│   │   ├── eu_membership_timeline_1_4.png
+│   │   ├── eu_membership_timeline_1_5.png
+│   │   ├── eu_membership_timeline_1_6.png
+│   │   ├── eu_membership_timeline_1_7.png
+│   │   ├── eu_membership_timeline_1_8.png
+│   │   ├── eu_membership_timeline_1_9.png
+│   │   ├── european_integration_places_2.png
+│   │   ├── FilieraAlimentarepuntodidistribuzione_24.png
+│   │   ├── fpga_infrastructures_europe_79.png
+│   │   ├── highway_40.png
+│   │   ├── highway_41.png
+│   │   ├── highway_42.png
+│   │   ├── legacy_infrastructure_2050_32.png
+│   │   ├── ne_10m_admin_0_countries_0.png
+│   │   ├── nuclear_reactors_europe_all_59.png
+│   │   ├── qt_actors_77_0.png
+│   │   ├── qt_actors_77_1.png
+│   │   ├── qt_actors_77_2.png
+│   │   ├── qt_actors_77_3.png
+│   │   ├── qt_actors_77_4.png
+│   │   ├── qt_actors_77_5.png
+│   │   ├── qt_infrastructures_76_0.png
+│   │   ├── qt_infrastructures_76_1.png
+│   │   ├── qt_infrastructures_76_2.png
+│   │   ├── qt_infrastructures_76_3.png
+│   │   ├── qt_infrastructures_76_4.png
+│   │   ├── qt_relations_75_0.png
+│   │   ├── qt_relations_75_1.png
+│   │   ├── qt_relations_75_2.png
+│   │   ├── qt_relations_75_3.png
+│   │   ├── qt_relations_75_4.png
+│   │   ├── relationsBCE_relations_19.png
+│   │   ├── relationsCommissione_Europea_relations_16.png
+│   │   ├── relationsENISA_relations_13.png
+│   │   ├── relationseuLISA_relations_10.png
+│   │   ├── relationsEUROJUST_relations_7.png
+│   │   ├── relationsEUROPOL_relations_22.png
+│   │   ├── relationsFRONTEX_relations_4.png
+│   │   ├── Semafori_47.png
+│   │   ├── sitesBCE_sites_20.png
+│   │   ├── sitesCommissione_Europea_sites_17.png
+│   │   ├── sitesENISA_sites_14.png
+│   │   ├── siteseuLISA_sites_11.png
+│   │   ├── sitesEUROJUST_sites_8.png
+│   │   ├── sitesEUROPOL_sites_23.png
+│   │   ├── sitesFRONTEX_sites_5.png
+│   │   ├── stanza_Aliceroom_Alice_30.png
+│   │   ├── stanza_Aliceroom_Alice_31.png
+│   │   ├── Telecamere_46.png
+│   │   ├── tiny_laura_28.png
+│   │   ├── tiny_laura_29.png
+│   │   └── visa_data_flows_34.png
+│   ├── ne_10m_admin_0_countries_0_style.js
+│   ├── nuclear_reactors_europe_all_59_style.js
+│   ├── qt_actors_77_style.js
+│   ├── qt_infrastructures_76_style.js
+│   ├── qt_relations_75_style.js
+│   ├── relationsBCE_relations_19_style.js
+│   ├── relationsCommissione_Europea_relations_16_style.js
+│   ├── relationsENISA_relations_13_style.js
+│   ├── relationseuLISA_relations_10_style.js
+│   ├── relationsEUROJUST_relations_7_style.js
+│   ├── relationsEUROPOL_relations_22_style.js
+│   ├── relationsFRONTEX_relations_4_style.js
+│   ├── Semafori_47_style.js
+│   ├── sitesBCE_sites_20_style.js
+│   ├── sitesCommissione_Europea_sites_17_style.js
+│   ├── sitesENISA_sites_14_style.js
+│   ├── siteseuLISA_sites_11_style.js
+│   ├── sitesEUROJUST_sites_8_style.js
+│   ├── sitesEUROPOL_sites_23_style.js
+│   ├── sitesFRONTEX_sites_5_style.js
+│   ├── stanza_Aliceroom_Alice_30_style.js
+│   ├── stanza_Aliceroom_Alice_31_style.js
+│   ├── Telecamere_46_style.js
+│   ├── tiny_laura_28_style.js
+│   ├── tiny_laura_29_style.js
+│   └── visa_data_flows_34_style.js
+└── webfonts
+    ├── fa-solid-900.ttf
+    └── fa-solid-900.woff2
+
+6 directories, 325 files

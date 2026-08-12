@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "name": "07_hydrogen_valleys",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "07_hydrogen_valleys"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4,
+          51.2
+        ]
+      },
+      "properties": {
+        "id": "BE_FLEMISH_HYDROGEN_PORTS_VALLEY",
+        "name": "Flemish Hydrogen Ports Valley",
+        "country": "Belgium",
+        "country_code": "BE",
+        "operator": "regional consortium",
+        "functions": [
+          "hydrogen_valley",
+          "production",
+          "distribution",
+          "industrial_use",
+          "port_logistics"
+        ],
+        "technology": "integrated hydrogen ecosystem",
+        "status": "ongoing",
+        "story_function_it": "Ecosistema regionale che collega produzione, logistica portuale, distribuzione e utilizzatori finali.",
+        "layer": "07_hydrogen_valleys",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.55,
+          45.65
+        ]
+      },
+      "properties": {
+        "id": "IT_NORTH_ADRIATIC_HYDROGEN_VALLEY",
+        "name": "North Adriatic Hydrogen Valley",
+        "country": "Italy-Slovenia-Croatia",
+        "country_code": "EU",
+        "operator": "transnational consortium",
+        "functions": [
+          "hydrogen_valley",
+          "production",
+          "distribution",
+          "industrial_use"
+        ],
+        "technology": "integrated transnational hydrogen ecosystem",
+        "status": "ongoing",
+        "story_function_it": "Valle transfrontaliera dell'idrogeno tra Italia, Slovenia e Croazia, con produzione e impieghi distribuiti.",
+        "layer": "07_hydrogen_valleys",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.95,
+          39.61
+        ]
+      },
+      "properties": {
+        "id": "ES_GREEN_HYSland",
+        "name": "Green Hysland — Mallorca",
+        "country": "Spain",
+        "country_code": "ES",
+        "operator": "project consortium",
+        "functions": [
+          "hydrogen_valley",
+          "production",
+          "mobility",
+          "heat",
+          "power"
+        ],
+        "technology": "island hydrogen ecosystem",
+        "status": "ongoing",
+        "story_function_it": "Ecosistema insulare che integra produzione rinnovabile di idrogeno e diversi usi energetici.",
+        "layer": "07_hydrogen_valleys",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

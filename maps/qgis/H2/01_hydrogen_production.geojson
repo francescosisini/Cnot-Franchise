@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "name": "01_hydrogen_production",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "01_hydrogen_production"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.116,
+          38.687
+        ]
+      },
+      "properties": {
+        "id": "ES_PUERTOLLANO_IBERDROLA",
+        "name": "Puertollano Green Hydrogen Plant",
+        "country": "Spain",
+        "country_code": "ES",
+        "operator": "Iberdrola / Fertiberia",
+        "functions": [
+          "hydrogen_production",
+          "fertiliser_use"
+        ],
+        "technology": "PEM electrolysis",
+        "status": "operational",
+        "story_function_it": "Produzione di idrogeno rinnovabile tramite elettrolisi, destinato principalmente all'industria dei fertilizzanti.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.79,
+          50.82
+        ]
+      },
+      "properties": {
+        "id": "DE_RHEINLAND_REFHYNE",
+        "name": "REFHYNE — Energy and Chemicals Park Rheinland",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "Shell",
+        "functions": [
+          "hydrogen_production",
+          "refinery_use"
+        ],
+        "technology": "PEM electrolysis",
+        "status": "operational_and_expanding",
+        "story_function_it": "Produzione industriale di idrogeno mediante elettrolisi all'interno di un grande polo energetico e chimico.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.62,
+          59.12
+        ]
+      },
+      "properties": {
+        "id": "NO_HEROYA_YARA",
+        "name": "Yara Herøya Renewable Hydrogen Plant",
+        "country": "Norway",
+        "country_code": "NO",
+        "operator": "Yara",
+        "functions": [
+          "hydrogen_production",
+          "ammonia_production",
+          "fertiliser_use"
+        ],
+        "technology": "water electrolysis",
+        "status": "operational",
+        "story_function_it": "Produzione di idrogeno rinnovabile integrata nella produzione di ammoniaca e fertilizzanti.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.69,
+          65.83
+        ]
+      },
+      "properties": {
+        "id": "SE_BODEN_STEGRA",
+        "name": "Stegra Boden",
+        "country": "Sweden",
+        "country_code": "SE",
+        "operator": "Stegra",
+        "functions": [
+          "hydrogen_production",
+          "steel_use"
+        ],
+        "technology": "large-scale electrolysis",
+        "status": "under_development",
+        "story_function_it": "Grande produzione prevista di idrogeno verde integrata con la produzione di acciaio a basse emissioni.",
+        "layer": "01_hydrogen_production",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "name": "06_hydrogen_use",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "06_hydrogen_use"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.33,
+          52.17
+        ]
+      },
+      "properties": {
+        "id": "DE_SALZGITTER_SALCOS",
+        "name": "SALCOS — Salzgitter",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "Salzgitter AG",
+        "functions": [
+          "steel_use",
+          "hydrogen_demand"
+        ],
+        "technology": "hydrogen-based direct reduction",
+        "status": "under_development",
+        "story_function_it": "Uso industriale dell'idrogeno per sostituire progressivamente il carbone nella produzione dell'acciaio.",
+        "layer": "06_hydrogen_use",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.34,
+          48.29
+        ]
+      },
+      "properties": {
+        "id": "AT_LINZ_VOESTALPINE",
+        "name": "voestalpine Linz Hydrogen/Steel Site",
+        "country": "Austria",
+        "country_code": "AT",
+        "operator": "voestalpine",
+        "functions": [
+          "steel_use",
+          "hydrogen_demand",
+          "demonstration"
+        ],
+        "technology": "hydrogen metallurgy",
+        "status": "operational_demonstration_and_transition",
+        "story_function_it": "Impiego e sperimentazione dell'idrogeno nella trasformazione della siderurgia verso processi a minori emissioni.",
+        "layer": "06_hydrogen_use",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6,
+          52.47
+        ]
+      },
+      "properties": {
+        "id": "NL_IJMUIDEN_TATA",
+        "name": "Tata Steel IJmuiden",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "operator": "Tata Steel Nederland",
+        "functions": [
+          "steel_use",
+          "future_hydrogen_demand"
+        ],
+        "technology": "planned hydrogen-based steelmaking",
+        "status": "transition_project",
+        "story_function_it": "Grande potenziale utilizzatore industriale di idrogeno nella futura trasformazione della produzione siderurgica.",
+        "layer": "06_hydrogen_use",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

@@ -102,7 +102,50 @@
   \par
 }
 
+
+\definecolor{terminalblack}{HTML}{101410}
+\definecolor{phosphorgreen}{HTML}{66FF66}
+
 \newtcblisting{terminalbox}{
+  listing only,
+  colback=terminalblack,
+  colframe=terminalblack,
+  arc=1mm,
+  boxrule=0pt,
+  left=8pt,
+  right=8pt,
+  top=7pt,
+  bottom=7pt,
+  listing options={
+    basicstyle=\ttfamily\small\bfseries\color{phosphorgreen},
+    breaklines=true,
+    columns=fixed,
+    keepspaces=true,
+    showstringspaces=false
+  }
+}
+
+\definecolor{phosphoramber}{HTML}{D39A2E}
+\definecolor{mygreen}{HTML}{8DBB47}
+
+\newtcblisting{terminalbox_gi}{
+  listing only,
+  colback=mygreen,
+  colframe=mygreen,
+  arc=2mm,
+  boxrule=0pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  listing options={
+    basicstyle=\ttfamily\small\color{black},
+    breaklines=true,
+    columns=fullflexible
+  }
+}
+
+\newtcblisting{terminalbox_k}{
   listing only,
   colback=black,
   colframe=black,
@@ -119,6 +162,22 @@
   }
 }
 
+\newtcblisting{terminalbox_ambra}{
+  listing only,
+  colback=phosphoramber,
+  colframe=phosphoramber,
+  arc=2mm,
+  boxrule=0pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  listing options={
+    basicstyle=\ttfamily\small\color{black},
+    breaklines=true,
+    columns=fullflexible
+  }
+}
 
 % ---------- Dati del libro ----------
 \title{\textbf{Cnot 1.7}}

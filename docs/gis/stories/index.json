@@ -4,69 +4,6 @@
   "last_update": "2041-09-13",
   "stories": [
     {
-      "id": "cnot_17",
-      "title": "Cnot 1.7 dentro all' ex convitto",
-      "author": "Francesco Sisini",
-      "date": "2041-09-03",
-      "latitude": 44.82747829,
-      "longitude": 11.61067217,
-      "location_name": "Ex Convitto Cardial Mora",
-      "archive": "CNOT",
-      "tags": [
-        "urbex",
-        "usa",
-        "tecs",
-        "visto"
-      ],
-      "type": "story",
-      "language": "it",
-      "file": "stories/vendetta_in_sol_maggiore.html"
-    },
-    {
-      "id": "fpga_infrastructures_europe_it",
-      "title": "Dalla FPGA al data center",
-      "file": "stories/fpga_infrastructures_europe_it.html",
-      "language": "it",
-      "description": "Una storia cartografica che collega il benchmark medico su Alveo U55C alle infrastrutture FPGA europee documentate.",
-      "type": "story"
-    },
-    {
-      "id": "europe-in-six-places",
-      "title": "Europe in Six Places",
-      "subtitle": "A small GIS story about European integration through symbolic places.",
-      "author": "Francesco Sisini",
-      "language": "en",
-      "file": "stories/europe_in_six_places.html",
-      "layer": "european_integration_places",
-      "tags": [
-        "europe",
-        "integration",
-        "treaties",
-        "institutions",
-        "demo"
-      ],
-      "type": "story"
-    },
-    {
-      "id": "europa-membership-timeline",
-      "title": "La costruzione dell’Europa",
-      "subtitle": "Timeline di adesione europea",
-      "file": "stories/europa.html",
-      "description": "Storia interattiva basata sul layer GIS eu_membership_timeline: mostra i paesi membri per ondate di adesione.",
-      "tags": [
-        "Europa",
-        "Unione Europea",
-        "timeline",
-        "GIS"
-      ],
-      "layer_refs": [
-        "eu_membership_timeline"
-      ],
-      "bridge": "CNOTAtlasBridge",
-      "type": "story",
-      "language": "it"
-    },
-    {
       "id": "europa-membership-timeline-en",
       "title": "The construction of Europe",
       "subtitle": "European accession timeline",

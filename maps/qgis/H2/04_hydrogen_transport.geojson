@@ -1,0 +1,177 @@
+{
+  "type": "FeatureCollection",
+  "name": "04_hydrogen_transport",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "04_hydrogen_transport"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.17,
+            41.39
+          ],
+          [
+            3.0,
+            42.3
+          ],
+          [
+            4.0,
+            42.8
+          ],
+          [
+            5.37,
+            43.3
+          ]
+        ]
+      },
+      "properties": {
+        "id": "H2MED_BARMAR",
+        "name": "H2med — BarMar",
+        "country": "Spain-France",
+        "country_code": "EU",
+        "operator": "Enagás / Teréga / GRTgaz and partners",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "offshore hydrogen pipeline",
+        "status": "planned",
+        "story_function_it": "Interconnessione marittima prevista tra Barcellona e Marsiglia, asse centrale del corridoio H2med.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -8.42,
+            41.16
+          ],
+          [
+            -7.0,
+            41.3
+          ],
+          [
+            -5.67,
+            41.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "H2MED_CELZA",
+        "name": "H2med — CelZa",
+        "country": "Portugal-Spain",
+        "country_code": "EU",
+        "operator": "REN / Enagás",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "hydrogen pipeline",
+        "status": "planned",
+        "story_function_it": "Interconnessione prevista tra Portogallo e Spagna per collegare la produzione iberica alla rete europea.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.49,
+            37.8
+          ],
+          [
+            12.5,
+            41.9
+          ],
+          [
+            11.3,
+            46.5
+          ],
+          [
+            12.3,
+            47.3
+          ],
+          [
+            11.58,
+            48.14
+          ]
+        ]
+      },
+      "properties": {
+        "id": "SOUTH2_CORRIDOR",
+        "name": "SoutH2 Corridor",
+        "country": "Italy-Austria-Germany",
+        "country_code": "EU",
+        "operator": "Snam / TAG / Gas Connect Austria / bayernets",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "repurposed and new hydrogen pipelines",
+        "status": "planned",
+        "story_function_it": "Corridoio previsto dal Mediterraneo italiano verso Austria e Germania, in larga parte basato su infrastrutture riconvertite.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.94,
+            60.17
+          ],
+          [
+            24.75,
+            59.44
+          ],
+          [
+            24.1,
+            56.95
+          ],
+          [
+            25.28,
+            54.69
+          ],
+          [
+            21.01,
+            52.23
+          ],
+          [
+            14.35,
+            51.84
+          ]
+        ]
+      },
+      "properties": {
+        "id": "NORDIC_BALTIC_H2_CORRIDOR",
+        "name": "Nordic-Baltic Hydrogen Corridor",
+        "country": "Finland-Estonia-Latvia-Lithuania-Poland-Germany",
+        "country_code": "EU",
+        "operator": "regional transmission system operators",
+        "functions": [
+          "hydrogen_transport"
+        ],
+        "technology": "hydrogen backbone",
+        "status": "planned",
+        "story_function_it": "Corridoio previsto per collegare produzione rinnovabile nordica e baltica con i mercati dell'Europa centrale.",
+        "layer": "04_hydrogen_transport",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

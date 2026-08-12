@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "name": "03_robot_manufacturing",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "universal_robots_odense",
+        "name": "Universal Robots — Odense",
+        "country": "Denmark",
+        "city": "Odense",
+        "stage": "manufacturing",
+        "category": "robot_manufacturing",
+        "organisation": "Universal Robots A/S",
+        "function": "Development and manufacturing of collaborative industrial robots",
+        "description": "Universal Robots is a Danish collaborative-robot company based in Odense; robot production is carried out in Odense.",
+        "address": "Energivej 51, 5260 Odense S, Denmark",
+        "source_label": "Universal Robots — Odense",
+        "source_url": "https://www.universal-robots.com/",
+        "coordinate_precision": "address-level"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3851177,
+          55.3414106
+        ]
+      }
+    }
+  ]
+}

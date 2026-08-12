@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "name": "05_hydrogen_storage",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "05_hydrogen_storage"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.88,
+          53.1
+        ]
+      },
+      "properties": {
+        "id": "NL_ZUIDWENDING_HYSTOCK",
+        "name": "HyStock — Zuidwending",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "operator": "Gasunie / HyStock",
+        "functions": [
+          "hydrogen_storage"
+        ],
+        "technology": "salt cavern",
+        "status": "development_and_demonstration",
+        "story_function_it": "Stoccaggio sotterraneo dell'idrogeno in cavità saline per compensare produzione e domanda nel tempo.",
+        "layer": "05_hydrogen_storage",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.17,
+          46.34
+        ]
+      },
+      "properties": {
+        "id": "FR_ETREZ_HYPSTER",
+        "name": "HyPSTER — Etrez",
+        "country": "France",
+        "country_code": "FR",
+        "operator": "Storengy and project partners",
+        "functions": [
+          "hydrogen_storage",
+          "demonstration"
+        ],
+        "technology": "salt cavern",
+        "status": "demonstration",
+        "story_function_it": "Dimostrazione europea dello stoccaggio di idrogeno in cavità saline.",
+        "layer": "05_hydrogen_storage",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9,
+          53.47
+        ]
+      },
+      "properties": {
+        "id": "DE_ETZEL_H2CAST",
+        "name": "H2CAST Etzel",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "STORAG ETZEL and partners",
+        "functions": [
+          "hydrogen_storage",
+          "demonstration"
+        ],
+        "technology": "salt cavern",
+        "status": "development_and_testing",
+        "story_function_it": "Conversione e sperimentazione di cavità saline esistenti per lo stoccaggio su larga scala di idrogeno.",
+        "layer": "05_hydrogen_storage",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}

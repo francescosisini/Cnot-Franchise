@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "name": "03_hydrogen_import",
+  "metadata": {
+    "period": "2025-2027",
+    "dataset_region": "Europe",
+    "coordinate_precision": "narrative GIS / site or city level",
+    "security_note": "Coordinates describe public infrastructure at site/city scale, not sensitive internal plant geometry.",
+    "layer": "03_hydrogen_import"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.14,
+          53.53
+        ]
+      },
+      "properties": {
+        "id": "DE_WILHELMSHAVEN_H2_IMPORT",
+        "name": "Wilhelmshaven Hydrogen Import Hub",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "multiple project developers",
+        "functions": [
+          "hydrogen_import",
+          "ammonia_import",
+          "energy_hub"
+        ],
+        "technology": "marine terminal / hydrogen carriers",
+        "status": "projects_and_existing_port",
+        "story_function_it": "Grande nodo del Mare del Nord destinato all'ingresso in Germania di idrogeno e derivati importati.",
+        "layer": "03_hydrogen_import",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.14,
+          53.9
+        ]
+      },
+      "properties": {
+        "id": "DE_BRUNSBUETTEL_H2_IMPORT",
+        "name": "Brunsbüttel Hydrogen Import Area",
+        "country": "Germany",
+        "country_code": "DE",
+        "operator": "multiple project developers",
+        "functions": [
+          "hydrogen_import",
+          "ammonia_import"
+        ],
+        "technology": "marine terminal / hydrogen carriers",
+        "status": "projects_and_existing_port",
+        "story_function_it": "Area portuale strategica per l'importazione futura di idrogeno e vettori come l'ammoniaca.",
+        "layer": "03_hydrogen_import",
+        "period": "2025-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.45,
+          36.13
+        ]
+      },
+      "properties": {
+        "id": "ES_ALGECIRAS_H2_GATEWAY",
+        "name": "Port of Algeciras Hydrogen Gateway",
+        "country": "Spain",
+        "country_code": "ES",
+        "operator": "Port ecosystem",
+        "functions": [
+          "hydrogen_import",
+          "hydrogen_export",
+          "maritime_bunkering"
+        ],
+        "technology": "port hydrogen logistics",
+        "status": "developing",
+        "story_function_it": "Nodo mediterraneo e atlantico per scambi, logistica marittima e futuri flussi di idrogeno.",
+        "layer": "03_hydrogen_import",
+        "period": "2025-2027"
+      }
+    }
+  ]
+}
