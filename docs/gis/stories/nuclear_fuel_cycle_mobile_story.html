@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Nuclear Fuel Cycle</title>
+
+  <style>
+    :root {
+      --bg:#020402;
+      --ink:#eaffea;
+      --muted:#9fc79a;
+      --line:rgba(57,255,20,.28);
+      --accent:#39ff14;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(57,255,20,.07), transparent 34%),
+        linear-gradient(rgba(57,255,20,.02) 50%, rgba(0,0,0,.02) 50%),
+        var(--bg);
+      background-size:auto,100% 4px,auto;
+      font-family:Georgia,"Times New Roman",serif;
+      line-height:1.72;
+    }
+
+    main {
+      max-width:760px;
+      margin:0 auto;
+      padding:28px 24px 70px;
+    }
+
+    h1, h2 {
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+
+    h1 {
+      font-size:clamp(2rem,5vw,3.25rem);
+      line-height:1.05;
+      margin:0 0 12px;
+      text-shadow:0 0 16px rgba(57,255,20,.16);
+    }
+
+    h2 {
+      margin:0 0 .8rem;
+      font-size:1.28rem;
+      line-height:1.25;
+    }
+
+    p { margin:0 0 1.05em; }
+
+    code {
+      color:#baffad;
+      background:rgba(57,255,20,.08);
+      border:1px solid rgba(57,255,20,.18);
+      border-radius:5px;
+      padding:0 .25em;
+    }
+
+    .kicker {
+      margin:0 0 6px;
+      color:var(--muted);
+      font:600 .78rem/1.35 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+
+    .lead {
+      color:#dfffdc;
+      margin-bottom:1.4rem;
+    }
+
+    .note {
+      border-left:3px solid var(--accent);
+      padding:.8rem 1rem;
+      margin:1.5rem 0 2.3rem;
+      background:rgba(57,255,20,.05);
+      color:#d7ffd2;
+      font: .92rem/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+
+    .stage {
+      margin:2.4rem 0;
+      padding-top:1.1rem;
+      border-top:1px dashed rgba(57,255,20,.28);
+    }
+
+    .stage-kicker {
+      display:block;
+      margin-bottom:.3rem;
+      color:var(--accent);
+      font:600 .78rem/1.35 monospace;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+
+    .story-action {
+      margin:.75rem 0 1.2rem;
+    }
+
+    .action-btn {
+      appearance:none;
+      display:inline-block;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(0,0,0,.52);
+      color:var(--ink);
+      padding:8px 12px;
+      font:600 .84rem system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      text-decoration:none;
+      cursor:pointer;
+      letter-spacing:.015em;
+      touch-action:manipulation;
+      -webkit-tap-highlight-color:transparent;
+    }
+
+    .action-btn:hover,
+    .action-btn.is-active {
+      border-color:var(--accent);
+      background:rgba(57,255,20,.12);
+      color:#fff;
+    }
+
+    .facts {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin:.9rem 0 0;
+    }
+
+    .chip {
+      display:inline-flex;
+      align-items:center;
+      border:1px solid rgba(57,255,20,.22);
+      background:rgba(57,255,20,.06);
+      border-radius:999px;
+      padding:5px 9px;
+      color:#dfffdc;
+      font: .78rem/1.3 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+
+    .scene-break {
+      text-align:center;
+      color:var(--accent);
+      font-size:1.5rem;
+      margin:2.3rem 0;
+      opacity:.85;
+    }
+
+    .story-status {
+      position:sticky;
+      bottom:10px;
+      margin:28px auto 0;
+      width:max-content;
+      max-width:100%;
+      padding:6px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(2,7,2,.94);
+      color:var(--muted);
+      font:11px/1.3 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      opacity:.96;
+    }
+
+    .foot {
+      margin-top:2rem;
+      color:var(--muted);
+      font: .82rem/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+
+    @media (max-width:600px) {
+      main {
+        padding:22px 18px 60px;
+      }
+
+      .stage {
+        margin:2rem 0;
+      }
+
+      .action-btn {
+        width:100%;
+        text-align:left;
+        padding:10px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main data-story-id="nuclear-fuel-cycle">
+
+  <p class="kicker">Narrative archive · Nuclear geography</p>
+  <h1>The Nuclear Fuel Cycle</h1>
+
+  <p class="lead">
+    A GIS story that follows nuclear fuel from uranium extraction to conversion,
+    enrichment, fabrication, reactor use, spent-fuel management and geological disposal.
+    A reactor is only one node in a much wider industrial geography.
+  </p>
+
+  <div class="note">
+    Read the story from top to bottom. At each stage, the button opens that part of
+    the nuclear geography on the atlas. On mobile this replaces the former control
+    dashboard with the same simple interaction used by the narrative stories.
+  </div>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 1 · Extraction</span>
+    <h2>The fuel cycle begins underground</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('extraction', this)">
+        ⌖ Show uranium extraction
+      </button>
+    </p>
+
+    <p>
+      Before a reactor can produce heat, uranium must first be recovered from a
+      geological deposit. The extraction layer shows mining sites where
+      uranium-bearing material enters the industrial chain.
+    </p>
+    <p>
+      Modern uranium production can include in-situ recovery, where chemical
+      solutions circulate through the ore body and bring dissolved uranium to
+      the surface.
+    </p>
+    <p>
+      The location of the mine already shows that the nuclear fuel cycle is
+      international: material can travel thousands of kilometres before it ever
+      reaches a reactor.
+    </p>
+
+    <div class="facts">
+      <span class="chip">01_uranium_extraction</span>
+      <span class="chip">Primary uranium production</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 2 · Conversion</span>
+    <h2>From concentrate to uranium hexafluoride</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('conversion', this)">
+        ⌖ Show uranium conversion
+      </button>
+    </p>
+
+    <p>
+      Mining does not produce reactor fuel. Uranium concentrates must first be
+      purified and chemically converted. In the European chain shown here,
+      Malvési represents conversion toward UF4 and Tricastin the subsequent
+      production of UF6.
+    </p>
+    <p>
+      UF6 matters because it can be handled as a gas in centrifuge enrichment
+      plants. Conversion is therefore the chemical bridge between mining and
+      isotope separation.
+    </p>
+
+    <div class="facts">
+      <span class="chip">02_uranium_conversion</span>
+      <span class="chip">Key chemical form: UF6</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 3 · Enrichment</span>
+    <h2>Changing the isotopic composition</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('enrichment', this)">
+        ⌖ Show uranium enrichment
+      </button>
+    </p>
+
+    <p>
+      Natural uranium contains too little U-235 for most light-water power
+      reactors. Centrifuge plants separate isotopes and increase the U-235
+      fraction in the product stream.
+    </p>
+    <p>
+      The map reveals that enrichment is a distinct industrial stage,
+      geographically separated from both mining and fuel fabrication.
+    </p>
+
+    <div class="facts">
+      <span class="chip">03_uranium_enrichment</span>
+      <span class="chip">Technology: gas centrifuges</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 4 · Fuel fabrication</span>
+    <h2>Uranium becomes a reactor component</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('fabrication', this)">
+        ⌖ Show fuel fabrication
+      </button>
+    </p>
+
+    <p>
+      Enriched uranium is still not a fuel assembly. Fuel factories transform
+      uranium compounds into ceramic fuel, pellets, rods and finally assemblies
+      engineered for a specific reactor design.
+    </p>
+    <p>
+      Fuel geometry, cladding and assembly design are reactor-specific, linking
+      nuclear material directly to reactor engineering.
+    </p>
+
+    <div class="facts">
+      <span class="chip">04_fuel_fabrication</span>
+      <span class="chip">Pellets · rods · assemblies</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 5 · Reactor use</span>
+    <h2>The reactor is the middle of the chain, not the beginning</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('reactors', this)">
+        ⌖ Show reactor use
+      </button>
+    </p>
+
+    <p>
+      Only now does the fuel enter the reactor. Fission produces heat and
+      electricity, while the isotopic and chemical composition of the fuel
+      changes continuously under irradiation.
+    </p>
+    <p>
+      The Swiss power-reactor layer also distinguishes operating sites from a
+      plant already in decommissioning.
+    </p>
+    <p>
+      After irradiation, the fuel leaves the reactor with a radically different
+      isotopic inventory and becomes the input to the back end of the fuel cycle.
+    </p>
+
+    <div class="facts">
+      <span class="chip">09_nuclear_power_switzerland</span>
+      <span class="chip">Irradiation and fission</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 6 · Reprocessing</span>
+    <h2>Spent fuel can become an industrial feedstock again</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('reprocessing', this)">
+        ⌖ Show reprocessing
+      </button>
+    </p>
+
+    <p>
+      At La Hague, spent fuel can be treated chemically. Uranium and plutonium
+      are separated from highly radioactive fission products, allowing selected
+      materials to re-enter the fuel cycle.
+    </p>
+    <p>
+      Reprocessing changes the boundary between resource and waste: some
+      materials are recovered, while others enter dedicated waste-management
+      streams.
+    </p>
+
+    <div class="facts">
+      <span class="chip">05_reprocessing_recycling</span>
+      <span class="chip">Example: La Hague</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 7 · Interim storage</span>
+    <h2>Waste management is a chain of its own</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('storage', this)">
+        ⌖ Show interim storage
+      </button>
+    </p>
+
+    <p>
+      Spent fuel and radioactive waste require controlled storage before final
+      disposal or further treatment. Switzerland is especially useful here
+      because the map distinguishes central storage at ZWILAG from on-site
+      storage at nuclear plants.
+    </p>
+    <p>
+      Interim storage is not the same thing as a geological repository. Storage
+      provides time for cooling, shielding and institutional control; it is an
+      engineered waiting stage, not the final destination.
+    </p>
+
+    <div class="facts">
+      <span class="chip">06_interim_storage</span>
+      <span class="chip">ZWILAG · Beznau · Gösgen</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 8 · Research</span>
+    <h2>Nuclear infrastructure is not only power generation</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('research', this)">
+        ⌖ Show nuclear research
+      </button>
+    </p>
+
+    <p>
+      Research facilities form another branch of nuclear geography. PSI hosts
+      neutron facilities and laboratories for highly radioactive materials,
+      while EPFL's CROCUS is a very-low-power teaching and experimental reactor.
+    </p>
+    <p>
+      These sites explain why a nuclear map must distinguish power plants,
+      research reactors and laboratories.
+    </p>
+
+    <div class="facts">
+      <span class="chip">08_nuclear_research</span>
+      <span class="chip">PSI · CROCUS</span>
+    </div>
+  </section>
+
+  <section class="stage">
+    <span class="stage-kicker">Stage 9 · Geological disposal</span>
+    <h2>The final stage moves underground again</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showStage('repository', this)">
+        ⌖ Show geological repositories
+      </button>
+    </p>
+
+    <p>
+      The end of the chain is not a surface warehouse. Geological repositories
+      are designed to isolate long-lived radioactive material deep underground
+      using engineered and geological barriers.
+    </p>
+    <p>
+      ONKALO, Forsmark and Switzerland's Nördlich Lägern project show three
+      European approaches at different implementation stages.
+    </p>
+    <p>
+      The repository closes the map by returning the material underground, now
+      inside a deliberately engineered system designed for isolation over very
+      long timescales.
+    </p>
+
+    <div class="facts">
+      <span class="chip">07_geological_repositories</span>
+      <span class="chip">Long-term isolation</span>
+    </div>
+  </section>
+
+  <div class="scene-break">❦</div>
+
+  <section class="stage">
+    <span class="stage-kicker">Complete chain</span>
+    <h2>One reactor, many places</h2>
+
+    <p class="story-action">
+      <button type="button" class="action-btn"
+              onclick="showAllNuclear(this)">
+        ⌖ Show the complete nuclear fuel cycle
+      </button>
+    </p>
+
+    <p>
+      With all layers visible, nuclear power becomes a continental logistics
+      and industrial system rather than a single dot on the map.
+    </p>
+    <p>
+      The geography spans extraction, chemistry, isotopic separation,
+      manufacturing, electricity generation, research, recycling, storage and
+      geological disposal.
+    </p>
+  </section>
+
+  <p class="foot">
+    GIS API used by this story:
+    <code>GIS.hideAllLayersExcept()</code>,
+    <code>GIS.showLayer()</code>,
+    <code>GIS.goto()</code> / <code>gotoGIS()</code>.
+  </p>
+
+  <div class="story-status" id="storyStatus">
+    GIS ready · select a stage in the story
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var BASE_LAYERS = [
+    "ne_10m_admin_0_countries",
+    "cnoteurope"
+  ];
+
+  /*
+   * Ogni fase associa il layer a un punto di lettura rappresentativo.
+   * Lo zoom è volutamente moderato: sul cellulare deve vedersi il luogo
+   * nel suo contesto geografico, non il singolo edificio.
+   */
+  var STAGES = {
+    extraction: {
+      layer: "01_uranium_extraction",
+      lat: 45.4333, lon: 67.4833, zoom: 6
+    },
+    conversion: {
+      layer: "02_uranium_conversion",
+      lat: 44.3357, lon: 4.72249, zoom: 7
+    },
+    enrichment: {
+      layer: "03_uranium_enrichment",
+      lat: 52.3210, lon: 6.7006, zoom: 7
+    },
+    fabrication: {
+      layer: "04_fuel_fabrication",
+      lat: 59.6503, lon: 16.6237, zoom: 7
+    },
+    reactors: {
+      layer: "09_nuclear_power_switzerland",
+      lat: 47.25, lon: 8.20, zoom: 7
+    },
+    reprocessing: {
+      layer: "05_reprocessing_recycling",
+      lat: 49.68, lon: -1.88, zoom: 7
+    },
+    storage: {
+      layer: "06_interim_storage",
+      lat: 47.54, lon: 8.23, zoom: 8
+    },
+    research: {
+      layer: "08_nuclear_research",
+      lat: 47.53916, lon: 8.22327, zoom: 8
+    },
+    repository: {
+      layer: "07_geological_repositories",
+      lat: 61.24, lon: 21.44, zoom: 7
+    }
+  };
+
+  var NUCLEAR_LAYERS = Object.keys(STAGES).map(function (key) {
+    return STAGES[key].layer;
+  });
+
+  function getGIS() {
+    if (window.GIS) return window.GIS;
+    if (window.parent && window.parent.GIS) return window.parent.GIS;
+    return null;
+  }
+
+  function setStatus(message) {
+    var el = document.getElementById("storyStatus");
+    if (el) el.textContent = message;
+  }
+
+  function setActive(button) {
+    document.querySelectorAll(".action-btn.is-active").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+    if (button) button.classList.add("is-active");
+  }
+
+  function applySingleLayer(GIS, target) {
+    /*
+     * Fast path: one atlas command instead of 9 hideLayer() calls + 1 showLayer().
+     * This is especially important on mobile.
+     */
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS.concat([target]));
+      return;
+    }
+
+    /*
+     * Compatibility path for readers exposing applyAtlasCommand().
+     */
+    if (window.parent && typeof window.parent.applyAtlasCommand === "function") {
+      window.parent.applyAtlasCommand({
+        layers_off: NUCLEAR_LAYERS.filter(function (name) {
+          return name !== target;
+        }),
+        layers_on: [target]
+      });
+      return;
+    }
+
+    /*
+     * Legacy fallback.
+     */
+    NUCLEAR_LAYERS.forEach(function (layerName) {
+      if (layerName !== target && typeof GIS.hideLayer === "function") {
+        GIS.hideLayer(layerName);
+      }
+    });
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(target);
+    }
+  }
+
+  function locateStage(GIS, stage) {
+    /*
+     * Stesso schema usato da Quantum Reactor: oltre ad accendere il layer,
+     * centra la mappa e richiude il reader. Lo zoom resta volutamente largo.
+     */
+    if (typeof GIS.goto === "function") {
+      GIS.goto(stage.lat, stage.lon, stage.zoom);
+      return;
+    }
+
+    if (typeof GIS.gotoGIS === "function") {
+      GIS.gotoGIS(stage.lat, stage.lon, stage.zoom);
+      return;
+    }
+
+    if (window.parent && typeof window.parent.gotoGIS === "function") {
+      window.parent.gotoGIS(stage.lat, stage.lon, stage.zoom);
+      return;
+    }
+
+    if (window.parent && typeof window.parent.applyAtlasCommand === "function") {
+      window.parent.applyAtlasCommand({
+        goto: {
+          lat: stage.lat,
+          lon: stage.lon,
+          zoom: stage.zoom
+        }
+      });
+      return;
+    }
+
+    /*
+     * Ultimo fallback: se il reader non espone goto, almeno facciamo
+     * il fit sul layer.
+     */
+    if (typeof GIS.fitToLayer === "function") {
+      GIS.fitToLayer(stage.layer);
+    }
+  }
+
+  window.showStage = function (key, button) {
+    var GIS = getGIS();
+    var stage = STAGES[key];
+
+    setActive(button);
+
+    if (!GIS) {
+      setStatus("GIS not available in reader");
+      return;
+    }
+
+    if (!stage) {
+      setStatus("Unknown nuclear stage");
+      return;
+    }
+
+    applySingleLayer(GIS, stage.layer);
+    locateStage(GIS, stage);
+    setStatus("GIS · " + stage.layer);
+  };
+
+  window.showAllNuclear = function (button) {
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      setStatus("GIS not available in reader");
+      return;
+    }
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS.concat(NUCLEAR_LAYERS));
+    } else if (window.parent && typeof window.parent.applyAtlasCommand === "function") {
+      window.parent.applyAtlasCommand({
+        layers_on: NUCLEAR_LAYERS
+      });
+    } else {
+      NUCLEAR_LAYERS.forEach(function (layerName) {
+        if (typeof GIS.showLayer === "function") {
+          GIS.showLayer(layerName);
+        }
+      });
+    }
+
+    /*
+     * Vista continentale finale: abbastanza larga da leggere la filiera
+     * come sistema europeo.
+     */
+    var allView = { lat: 50.0, lon: 10.0, zoom: 4 };
+
+    if (typeof GIS.goto === "function") {
+      GIS.goto(allView.lat, allView.lon, allView.zoom);
+    } else if (typeof GIS.gotoGIS === "function") {
+      GIS.gotoGIS(allView.lat, allView.lon, allView.zoom);
+    } else if (window.parent && typeof window.parent.gotoGIS === "function") {
+      window.parent.gotoGIS(allView.lat, allView.lon, allView.zoom);
+    }
+
+    setStatus("GIS · complete nuclear fuel cycle");
+  };
+
+})();
+</script>
+</body>
+</html>

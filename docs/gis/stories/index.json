@@ -30,7 +30,7 @@
       "subtitle": "From uranium extraction to geological disposal",
       "author": "Francesco Sisini",
       "language": "en",
-      "file": "stories/nuclear_fuel_cycle.html",
+      "file": "stories/nuclear_fuel_cycle_mobile_story.html",
       "description": "A cumulative GIS story showing nuclear energy as a geographically distributed fuel cycle: extraction, conversion, enrichment, fuel fabrication, reactor use, reprocessing, storage, research and geological disposal.",
       "tags": [
         "nuclear",
