@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "name": "04_robotics_deployment",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bmw_leipzig_aeon_humanoid_robot",
+        "name": "BMW Group Plant Leipzig — AEON humanoid robotics pilot",
+        "country": "Germany",
+        "city": "Leipzig",
+        "stage": "deployment",
+        "category": "robotics_deployment",
+        "organisation": "BMW Group",
+        "robot_system": "AEON humanoid robot",
+        "technology_provider": "Hexagon Robotics",
+        "function": "Humanoid robotics pilot in automotive production",
+        "application": "Battery assembly and component manufacturing",
+        "status": "pilot",
+        "year": 2026,
+        "description": "BMW Group Plant Leipzig is hosting the BMW Group's first European pilot project involving a humanoid robot in production. The AEON system is being tested in battery assembly and component manufacturing.",
+        "address": "BMW Allee 1, 04349 Leipzig, Germany",
+        "source_label": "BMW Group — First humanoid robot introduced in Plant Leipzig",
+        "source_url": "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html",
+        "coordinate_source_label": "Publicly documented BMW Plant Leipzig location",
+        "coordinate_precision": "site-level approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.44354,
+          51.408027
+        ]
+      }
+    }
+  ]
+}
