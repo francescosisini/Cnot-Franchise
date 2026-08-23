@@ -3,18 +3,18 @@
 %Ha lasciato Valentina in casa da sola per cercare Rocky.\\
 %Ma nei pressi di casa non lo trova.
 %Adesso si trova di fronte a un dilemma: proseguire la sua intrusione etica ed aiutare l’amica nel poco tempo rimasto, o cercare il suo cucciolo prima che si ritrovi in qualche guaio?
-«Rocky! Rocky!» il richiamo di Laura si perde nel silenzio, assorbito dalla boscaglia. Si allontana qualche metro, Valentina dorme, la zona è tranquilla, ma ha solo otto anni, pochi per restare in casa da sola. Torna in casa, il collare-GPS è lì, appeso alla parete ormai da mesi, non è al collo dove dovrebbe essere: «Non sono stata brava.»\\
-Torna dentro, riempie la ciotola con un po' di croccantini: «Vediamo così.» Percorre il perimetro della casa agitando la ciotola e chiamandolo. Niente. «Dove è andato?» Un barlume: «Il chip del canile. Potrebbe aver lasciato delle tracce.»
+«Rocky! Rocky!» Il richiamo di Laura si perde nel silenzio, assorbito dalla boscaglia. Si allontana qualche metro, Valentina dorme, la zona \`e tranquilla, ma ha solo otto anni, pochi per restare in casa da sola. Torna in casa, il collare-GPS \`e l\`i, appeso alla parete ormai da mesi, non \`e al collo dove dovrebbe essere: «Non sono stata brava.»\\
+Torna dentro, riempie la ciotola con un po' di croccantini: «Vediamo cos\`i.» Percorre il perimetro della casa agitando la ciotola e chiamandolo. Niente. «Dove \`e andato?» Un barlume: «Il chip del canile. Potrebbe aver lasciato delle tracce.»
 
 
 \par\medskip
-«Cate, ho bisogno di un favore. Rocky è scappato.»\\
+«Cate, ho bisogno di un favore. Rocky \`e scappato.»\\
 «Oddio, quando?»\\
 «Non lo so. Forse quando sono entrata per prenderti la giacca. Comunque devo andare a cercarlo. Però ho bisogno per Vale, non posso lasciarla da sola in casa.»\\
 «Certo. Dammi dieci minuti che arrivo.»
 
 \par\medskip
-«Dove ho messo il codice...» Laura cerca il documento di Rocky, dal codice identificativo potrà verificare se qualche scanner urbano ha rilevato il suo chip e provare a ricostruire la posizione.\\
+«Dove ho messo il codice...» Laura cerca il documento di Rocky. Dal codice identificativo potrà verificare se qualche scanner urbano ha rilevato il suo chip e provare a ricostruire la posizione.\\
 «Eccolo: 1889. Adesso proviamo ad accedere al registro... »
 \begin{terminalbox}
 kali@dpl:~$ telnet gates.ith56.it 2323
@@ -32,21 +32,21 @@ laura@gates-legacy:~$ grep "$CHIP" dog-registry.log | tail -n 5
 02Z gate=ITH56-T3-019 reader=rfid-b01 chip=1889 rssi=-72 direction=OUT
 laura@gates-legacy:~$ tail -F dog-registry.log | grep --line-buffered "$CHIP"
 \end{terminalbox}
-«Bene, il chip è ancora visibile» si alza e va a prendere un dispositivo palmare, lo connette al computer «integriamo le coordinate dei varchi al GPS...» un rumore, Caterina e Alice stanno atterrando. Entrano: «Laura mi dispiace tanto.»\\
-«Ma cosa dici, tu non c'entri, dovevo stare più attenta.»\\
+«Bene, il chip \`e ancora visibile.» Laura si alza e va a prendere un dispositivo palmare, lo connette al computer «integriamo le coordinate dei varchi al GPS» Un rumore dall'esterno: Caterina e Alice stanno atterrando. Entrano: «Laura mi dispiace tanto.»\\
+«Ma cosa dici, tu non c'entri, dovevo stare pi\`u attenta.»\\
 «Quando sei rientrata c'era un cane, ma non era Rocky, sono sicura.»\\
 «Un cane libero o con un padrone?»\\
-«Era solo, però non so, non ho visto nessuno.»\\
-Alice vede un'icona pulsare sul palmare di Laura: «Lo stai tracciando? Ha il GPS?» le chiede amabilmente. Caterina vorrebbe farle notare che non è mai così gentile con lei, ma non è il momento.\\
-«Non proprio Alice, però posso vedere la sua posizione quando passa vicino ai varchi urbani. Hanno un lettore RFID e i dati sugli animali domestici sono accessibili in anonimo.» Alice
+«Era solo, per\`o non so, non ho visto nessuno.»\\
+Alice vede un'icona pulsare sul palmare di Laura: «Lo stai tracciando? Ha il GPS?» le chiede amabilmente. Caterina vorrebbe farle notare che non \`e mai cos\`i gentile con lei, ma non \`e il momento.\\
+«Non proprio Alice, per\`o posso vedere la sua posizione quando passa vicino ai varchi urbani. Hanno un lettore RFID e i dati sugli animali domestici sono accessibili in anonimo.» Alice
 annuisce, Caterina la guarda: «Tu hai capito?»\\
 «Ho capito che qui vede la posizione del cane, giusto? Non fare la maestrina Cate.» \\
-«Ma \'e qui vicino Laura?»\\
-«Direi di sì, ma non lo vedo mentre si muove» prende il dispositivo e indica le bandierine verdi sulla mappa della città,  «Questi sono i varchi, io vedo solo se e quando li raggiunge, purtroppo in questa zona ormai ne rimangono pochi di attivi.» Rende il palmare ad Alice, «Datemi un minuto, mi metto una tuta, potrebbe esserci da graffiarsi nei cespugli.»\\
-In punta dei piedi entra in camera mentre Valentina dorme.  Fruga nel suo armadio, prima prende la tuta, richiude, apre uno sportello più in alto, sceglie alcuni strumenti, e un cinturone.
+«Ma \`e qui vicino Laura?»\\
+«Direi di sì, ma non lo vedo mentre si muove», prende il dispositivo e indica le bandierine verdi sulla mappa della città,  «Questi sono i varchi, io vedo solo se e quando li raggiunge, purtroppo in questa zona ormai ne rimangono pochi di attivi.» Rende il palmare ad Alice, «Datemi un minuto; mi metto una tuta, potrebbe esserci da graffiarsi nei cespugli.»\\
+In punta dei piedi entra in camera mentre Valentina dorme.  Fruga nel suo armadio, prima prende la tuta, richiude, apre uno sportello pi\`u in alto, sceglie alcuni strumenti, e un cinturone.
 
 \par\medskip
-%I problemi si risolvono creando ordine: Laura sistema il suo zaino tattico perché il suo contenuto determinerà il successo della missione. Come a scuola: infilare nello zaino il %quaderno sbagliato potrebbe compromettere la giornata!\\
+%I problemi si risolvono creando ordine: Laura sistema il suo zaino tattico perch\'e il suo contenuto determinerà il successo della missione. Come a scuola: infilare nello zaino il %quaderno sbagliato potrebbe compromettere la giornata!\\
 %– una corda in microfibra nano tessuta,\\
 %– una carrucola smart a riduzione di carico,\\
 %– guanti grip GECO,\\
@@ -67,8 +67,8 @@ Laura sorride, senza reagire: «Rocky dovrebbe essere qui vicino. Spero di fare 
 Caterina indossa una minigonna, una camicetta e un paio di scarpette con un po’ di tacco.  \\
 «Ok, mi raccomando, Alice.» Si assicura Caterina, ma
 la sorella non risponde. Accenna un sorriso, entra in casa e le guarda dalla vetrata.\\
-«Andiamo Cate, attraversiamo la strada.» Da lì si avviano a piedi lungo la capezzagna e   raggiungono  l'incrocio a T.
-«L'ultima registrazione dà Rocky  davanti a noi,  circa ad ottanta metri, però è strano:» Laura osserva il palmare, «Deve aver passato un varco, ma nella mia mappa non risultano edifici lì.»
+«Andiamo Cate, attraversiamo la strada.» Da l\`i si avviano a piedi lungo la capezzagna e   raggiungono  l'incrocio a T.
+«L'ultima registrazione colloca Rocky  davanti a noi,  circa ad ottanta metri, per\`o \`e strano:» Laura osserva il palmare, «Deve aver passato un varco, ma nella mia mappa non risultano edifici l\`i.»
 
 \par\medskip
 \begin{center}
@@ -77,16 +77,16 @@ la sorella non risponde. Accenna un sorriso, entra in casa e le guarda dalla vet
 
 \par\medskip
 «Dobbiamo passare per il campo?»\\
-«...Sì, però se  prendiamo qui a sinistra, seguendo la strada, ci possiamo avvicinare un po’.
+«...Sì, per\`o se  prendiamo qui a sinistra, seguendo la strada, ci possiamo avvicinare un po’.
 Ma alla fine credo che dovremmo comunque entrare. Rocky mi sembra in mezzo al campo.»\\
 «Di quanto la allunghiamo?»\\
-«Circa seicento metri, direi. Solo cinque minuti. Cosa ne dici?»\\
+«Circa seicento metri, direi. Solo sette minuti. Cosa ne dici?»\\
 «Decidi tu, Laura.»\\
 Guarda le scarpe dell'amica: «Avviciniamoci seguendo la strada, poi valutiamo.»\\
 Dopo alcuni metri Laura si ferma di nuovo:
 «Qui svoltiamo a destra.»\\
-«Ehi! È messa male questa strada.»\\
-«Tutta l’area ormai è un po’ andata.»\\
+«Ehi! \`E messa male questa strada.»\\
+«Tutta l’area ormai \`e un po’ andata.»\\
 Proseguono:
 «Ecco, di nuovo a destra e tra un centinaio di metri dovremmo esserci.»\\
 «Non siamo mai venute qui insieme, vero?»\\
@@ -94,12 +94,12 @@ Proseguono:
 Forse l’ultima volta sono venuta con mio padre, poco prima che nascesse Valentina.»\\
 «A proposito, chissà come se la cavano quelle due.»\\
 
-Laura non risponde alla domanda, ha visto qualcosa che ha attirato la sua attenzione:
-«Dietro il cespuglio c’è un cancello, ma non mi risulta nella mappa. Comunque Rocky dovrebbe essere qui a trenta metri, cerchiamo un punto per entrare.» Le ragazze si addentrano tra i rovi e seguono la recinzione: «Qui, Laura»  chiama Caterina eccitata. Laura la raggiunge, c'è un cancello metallico semi aperto con una catena appesa.
+Laura non risponde alla domanda. Ha visto qualcosa che ha attirato la sua attenzione:
+«Dietro il cespuglio c’\`e un cancello, ma non mi risulta nella mappa. Comunque Rocky dovrebbe essere qui a trenta metri, cerchiamo un punto per entrare.» Le ragazze si addentrano tra i rovi e seguono la recinzione: «Qui, Laura»  chiama Caterina eccitata. Laura la raggiunge, c'\`e un cancello metallico semi aperto con una catena appesa.
 «Bene, sono contenta che tu sia venuta con me.»\\
 «Dai, proviamo a entrare.»\\
-«Aspetta, vedi, c’è una scritta: Convitto San Giorgio.
-Lavori di ricostruzione. Ma la data è del 2022! Ecco perché non è più nella mappa.»\\
+«Aspetta, vedi, c’\`e una scritta: Convitto San Giorgio.
+Lavori di ricostruzione. Ma la data \`e del 2022! Ecco perch\'e non \`e pi\`u nella mappa.»\\
 «Quindi Rocky sarà qui dentro.»\\
 «Ora lo scopriamo.»
 
