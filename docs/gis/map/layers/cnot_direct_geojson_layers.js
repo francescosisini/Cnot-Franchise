@@ -1,13 +1,16 @@
 /*
- * CNOT GIS — direct GeoJSON layer test
+ * CNOT GIS — direct GeoJSON layers
  *
- * First layer loaded directly by OpenLayers, without qgis2web export.
- * Data source:
- *   geojson/04_robotics_deployment.geojson
+ * Loaded directly by OpenLayers, without qgis2web export.
  *
  * This file must be loaded AFTER layers/layers.js
  * and BEFORE resources/qgis2web.js.
  */
+
+
+/* ============================================================
+ * ROBOTICS
+ * ============================================================ */
 
 var source_04_robotics_deployment = new ol.source.Vector({
     url: './geojson/04_robotics_deployment.geojson',
@@ -21,7 +24,10 @@ var lyr_04_robotics_deployment = new ol.layer.Vector({
     interactive: true
 });
 
-lyr_04_robotics_deployment.set('cnotId', 'robotics_deployment');
+lyr_04_robotics_deployment.set(
+    'cnotId',
+    'robotics_deployment'
+);
 
 lyr_04_robotics_deployment.set('fieldAliases', {
     'id': 'id',
@@ -107,36 +113,32 @@ if (!layersList.includes(group_Robotics)) {
 
 
 /* ============================================================
- * DORSALE SPAZIO — layer GeoJSON caricati direttamente
- *
- * GeoJSON canonici attesi in:
- *   ./geojson/spazio_centri_esa_2026.geojson
- *   ./geojson/spazio_galileo_euspa_2026.geojson
- *
- * Struttura nel layer switcher:
- *
- * 11_SPAZIO
- * ├── 01_CENTRI_ESA
- * │   └── spazio_centri_esa_2026
- * └── 02_GALILEO_EUSPA
- *     └── spazio_galileo_euspa_2026
+ * DORSALE SPAZIO — utility gruppi
  * ============================================================ */
 
-
-/* ---------- piccole utility per i gruppi ---------- */
-
 function cnotFindGroup(collection, title) {
-    var items = (typeof collection.getArray === 'function')
+
+    var items = (
+        collection &&
+        typeof collection.getArray === 'function'
+    )
         ? collection.getArray()
         : collection;
 
+    if (!items) {
+        return null;
+    }
+
     for (var i = 0; i < items.length; i++) {
+
         var item = items[i];
 
-        if (item &&
+        if (
+            item &&
             typeof item.get === 'function' &&
             item.get('title') === title &&
-            typeof item.getLayers === 'function') {
+            typeof item.getLayers === 'function'
+        ) {
             return item;
         }
     }
@@ -144,8 +146,13 @@ function cnotFindGroup(collection, title) {
     return null;
 }
 
+
 function cnotEnsureTopLevelGroup(title, cnotId) {
-    var existing = cnotFindGroup(layersList, title);
+
+    var existing = cnotFindGroup(
+        layersList,
+        title
+    );
 
     if (existing) {
         return existing;
@@ -157,15 +164,27 @@ function cnotEnsureTopLevelGroup(title, cnotId) {
         title: title
     });
 
-    group.set('cnotId', cnotId);
+    group.set(
+        'cnotId',
+        cnotId
+    );
+
     layersList.push(group);
 
     return group;
 }
 
+
 function cnotEnsureChildGroup(parentGroup, title, cnotId) {
-    var collection = parentGroup.getLayers();
-    var existing = cnotFindGroup(collection, title);
+
+    var collection =
+        parentGroup.getLayers();
+
+    var existing =
+        cnotFindGroup(
+            collection,
+            title
+        );
 
     if (existing) {
         return existing;
@@ -177,16 +196,27 @@ function cnotEnsureChildGroup(parentGroup, title, cnotId) {
         title: title
     });
 
-    group.set('cnotId', cnotId);
+    group.set(
+        'cnotId',
+        cnotId
+    );
+
     collection.push(group);
 
     return group;
 }
 
-function cnotAddLayerOnce(group, layer) {
-    var collection = group.getLayers();
 
-    if (!collection.getArray().includes(layer)) {
+function cnotAddLayerOnce(group, layer) {
+
+    var collection =
+        group.getLayers();
+
+    if (
+        !collection
+            .getArray()
+            .includes(layer)
+    ) {
         collection.push(layer);
     }
 }
@@ -194,18 +224,28 @@ function cnotAddLayerOnce(group, layer) {
 
 /* ============================================================
  * STILE DORSALE SPAZIO
- * Etichetta presa dal campo "name"
+ *
+ * Usa "label" se disponibile.
+ * Altrimenti usa "name".
  * ============================================================ */
 
 function cnotSpacePointStyle(feature) {
-    var label = feature.get('name') || '';
+
+    var label =
+        feature.get('label') ||
+        feature.get('name') ||
+        '';
 
     return new ol.style.Style({
+
         image: new ol.style.Circle({
+
             radius: 6,
+
             fill: new ol.style.Fill({
                 color: '#39ff14'
             }),
+
             stroke: new ol.style.Stroke({
                 color: '#071007',
                 width: 2
@@ -213,8 +253,11 @@ function cnotSpacePointStyle(feature) {
         }),
 
         text: new ol.style.Text({
+
             text: label,
+
             offsetY: -14,
+
             font: '600 12px sans-serif',
 
             fill: new ol.style.Fill({
@@ -226,7 +269,12 @@ function cnotSpacePointStyle(feature) {
                 width: 3
             }),
 
-            padding: [2, 3, 2, 3]
+            padding: [
+                2,
+                3,
+                2,
+                3
+            ]
         })
     });
 }
@@ -236,27 +284,47 @@ function cnotSpacePointStyle(feature) {
  * 01_CENTRI_ESA
  * ============================================================ */
 
-var source_spazio_centri_esa_2026 = new ol.source.Vector({
-    url: './geojson/spazio_centri_esa_2026.geojson',
-    format: new ol.format.GeoJSON()
-});
+var source_spazio_centri_esa_2026 =
+    new ol.source.Vector({
 
-var lyr_spazio_centri_esa_2026 = new ol.layer.Vector({
-    source: source_spazio_centri_esa_2026,
-    title: 'spazio_centri_esa_2026',
-    popuplayertitle: 'Centri ESA · 2026',
-    interactive: true,
-    style: cnotSpacePointStyle
-});
+        url:
+            './geojson/spazio_centri_esa_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+
+var lyr_spazio_centri_esa_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_centri_esa_2026,
+
+        title:
+            'spazio_centri_esa_2026',
+
+        popuplayertitle:
+            'Centri ESA · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
 
 lyr_spazio_centri_esa_2026.set(
     'cnotId',
     'spazio_centri_esa_2026'
 );
 
+
 lyr_spazio_centri_esa_2026.set('fieldAliases', {
     'id': 'id',
     'name': 'name',
+    'label': 'label',
     'dorsal': 'dorsal',
     'layer_status': 'layer_status',
     'place': 'place',
@@ -265,9 +333,11 @@ lyr_spazio_centri_esa_2026.set('fieldAliases', {
     'source': 'source'
 });
 
+
 lyr_spazio_centri_esa_2026.set('fieldImages', {
     'id': 'TextEdit',
     'name': 'TextEdit',
+    'label': 'TextEdit',
     'dorsal': 'TextEdit',
     'layer_status': 'TextEdit',
     'place': 'TextEdit',
@@ -276,9 +346,11 @@ lyr_spazio_centri_esa_2026.set('fieldImages', {
     'source': 'TextEdit'
 });
 
+
 lyr_spazio_centri_esa_2026.set('fieldLabels', {
     'id': 'no label',
     'name': 'no label',
+    'label': 'no label',
     'dorsal': 'no label',
     'layer_status': 'no label',
     'place': 'no label',
@@ -287,34 +359,56 @@ lyr_spazio_centri_esa_2026.set('fieldLabels', {
     'source': 'no label'
 });
 
-lyr_spazio_centri_esa_2026.setVisible(true);
+
+lyr_spazio_centri_esa_2026
+    .setVisible(true);
 
 
 /* ============================================================
  * 02_GALILEO_EUSPA
  * ============================================================ */
 
-var source_spazio_galileo_euspa_2026 = new ol.source.Vector({
-    url: './geojson/spazio_galileo_euspa_2026.geojson',
-    format: new ol.format.GeoJSON()
-});
+var source_spazio_galileo_euspa_2026 =
+    new ol.source.Vector({
 
-var lyr_spazio_galileo_euspa_2026 = new ol.layer.Vector({
-    source: source_spazio_galileo_euspa_2026,
-    title: 'spazio_galileo_euspa_2026',
-    popuplayertitle: 'Galileo / EUSPA · 2026',
-    interactive: true,
-    style: cnotSpacePointStyle
-});
+        url:
+            './geojson/spazio_galileo_euspa_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+
+var lyr_spazio_galileo_euspa_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_galileo_euspa_2026,
+
+        title:
+            'spazio_galileo_euspa_2026',
+
+        popuplayertitle:
+            'Galileo / EUSPA · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
 
 lyr_spazio_galileo_euspa_2026.set(
     'cnotId',
     'spazio_galileo_euspa_2026'
 );
 
+
 lyr_spazio_galileo_euspa_2026.set('fieldAliases', {
     'id': 'id',
     'name': 'name',
+    'label': 'label',
     'dorsal': 'dorsal',
     'subgroup': 'subgroup',
     'layer_status': 'layer_status',
@@ -327,9 +421,11 @@ lyr_spazio_galileo_euspa_2026.set('fieldAliases', {
     'note': 'note'
 });
 
+
 lyr_spazio_galileo_euspa_2026.set('fieldImages', {
     'id': 'TextEdit',
     'name': 'TextEdit',
+    'label': 'TextEdit',
     'dorsal': 'TextEdit',
     'subgroup': 'TextEdit',
     'layer_status': 'TextEdit',
@@ -342,9 +438,11 @@ lyr_spazio_galileo_euspa_2026.set('fieldImages', {
     'note': 'TextEdit'
 });
 
+
 lyr_spazio_galileo_euspa_2026.set('fieldLabels', {
     'id': 'no label',
     'name': 'no label',
+    'label': 'no label',
     'dorsal': 'no label',
     'subgroup': 'no label',
     'layer_status': 'no label',
@@ -357,36 +455,159 @@ lyr_spazio_galileo_euspa_2026.set('fieldLabels', {
     'note': 'no label'
 });
 
-lyr_spazio_galileo_euspa_2026.setVisible(true);
+
+lyr_spazio_galileo_euspa_2026
+    .setVisible(true);
 
 
 /* ============================================================
- * Inserimento nella gerarchia dei gruppi
+ * 03_COPERNICUS_EUMETSAT
  * ============================================================ */
 
-var group_11_SPAZIO_direct = cnotEnsureTopLevelGroup(
-    '11_SPAZIO',
-    'spazio'
+var source_spazio_copernicus_eumetsat_2026 =
+    new ol.source.Vector({
+
+        url:
+            './geojson/spazio_copernicus_eumetsat_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+
+var lyr_spazio_copernicus_eumetsat_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_copernicus_eumetsat_2026,
+
+        title:
+            'spazio_copernicus_eumetsat_2026',
+
+        popuplayertitle:
+            'Copernicus / EUMETSAT · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
+
+lyr_spazio_copernicus_eumetsat_2026.set(
+    'cnotId',
+    'spazio_copernicus_eumetsat_2026'
 );
 
-var group_01_CENTRI_ESA_direct = cnotEnsureChildGroup(
-    group_11_SPAZIO_direct,
-    '01_CENTRI_ESA',
-    'spazio_centri_esa'
-);
 
-var group_02_GALILEO_EUSPA_direct = cnotEnsureChildGroup(
-    group_11_SPAZIO_direct,
-    '02_GALILEO_EUSPA',
-    'spazio_galileo_euspa'
-);
+lyr_spazio_copernicus_eumetsat_2026.set('fieldAliases', {
+    'id': 'id',
+    'name': 'name',
+    'label': 'label',
+    'place': 'place',
+    'organisation': 'organisation',
+    'role': 'role',
+    'services': 'services',
+    'layer_status': 'layer_status',
+    'address': 'address',
+    'coordinate_precision': 'coordinate_precision',
+    'source_primary': 'source_primary',
+    'source_address': 'source_address',
+    'source_role': 'source_role'
+});
+
+
+lyr_spazio_copernicus_eumetsat_2026.set('fieldImages', {
+    'id': 'TextEdit',
+    'name': 'TextEdit',
+    'label': 'TextEdit',
+    'place': 'TextEdit',
+    'organisation': 'TextEdit',
+    'role': 'TextEdit',
+    'services': 'TextEdit',
+    'layer_status': 'TextEdit',
+    'address': 'TextEdit',
+    'coordinate_precision': 'TextEdit',
+    'source_primary': 'TextEdit',
+    'source_address': 'TextEdit',
+    'source_role': 'TextEdit'
+});
+
+
+lyr_spazio_copernicus_eumetsat_2026.set('fieldLabels', {
+    'id': 'no label',
+    'name': 'no label',
+    'label': 'no label',
+    'place': 'no label',
+    'organisation': 'no label',
+    'role': 'no label',
+    'services': 'no label',
+    'layer_status': 'no label',
+    'address': 'no label',
+    'coordinate_precision': 'no label',
+    'source_primary': 'no label',
+    'source_address': 'no label',
+    'source_role': 'no label'
+});
+
+
+lyr_spazio_copernicus_eumetsat_2026
+    .setVisible(true);
+
+
+/* ============================================================
+ * STRUTTURA GRUPPI SPAZIO
+ * ============================================================ */
+
+var group_11_SPAZIO_direct =
+    cnotEnsureTopLevelGroup(
+        '11_SPAZIO',
+        'spazio'
+    );
+
+
+var group_01_CENTRI_ESA_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '01_CENTRI_ESA',
+        'spazio_centri_esa'
+    );
+
+
+var group_02_GALILEO_EUSPA_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '02_GALILEO_EUSPA',
+        'spazio_galileo_euspa'
+    );
+
+
+var group_03_COPERNICUS_EUMETSAT_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '03_COPERNICUS_EUMETSAT',
+        'spazio_copernicus_eumetsat'
+    );
+
+
+/* ============================================================
+ * INSERIMENTO LAYER NEI GRUPPI
+ * ============================================================ */
 
 cnotAddLayerOnce(
     group_01_CENTRI_ESA_direct,
     lyr_spazio_centri_esa_2026
 );
 
+
 cnotAddLayerOnce(
     group_02_GALILEO_EUSPA_direct,
     lyr_spazio_galileo_euspa_2026
+);
+
+
+cnotAddLayerOnce(
+    group_03_COPERNICUS_EUMETSAT_direct,
+    lyr_spazio_copernicus_eumetsat_2026
 );

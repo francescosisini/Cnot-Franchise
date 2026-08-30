@@ -1,0 +1,159 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_copernicus_eumetsat_2026",
+  "metadata": {
+    "reference_date": "2026-08-30",
+    "crs": "EPSG:4326",
+    "qgis_group": "11_SPAZIO/03_COPERNICUS_EUMETSAT",
+    "status": "REAL_2026",
+    "note": "Layer funzionale Copernicus/EUMETSAT. ESA ESRIN non è duplicato: è già presente nel layer spazio_centri_esa_2026 e va trattato come nodo trasversale Earth Observation/Copernicus.",
+    "cross_reference_existing_layers": [
+      "spazio_centri_esa_2026"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6272,
+          49.8686
+        ]
+      },
+      "properties": {
+        "id": "COP-EUMETSAT-DARMSTADT",
+        "name": "EUMETSAT Headquarters",
+        "label": "EUMETSAT",
+        "place": "Darmstadt, Germania",
+        "organisation": "EUMETSAT",
+        "role": "Mission Control Centre e ground segment per satelliti meteorologici e missioni Copernicus operate da EUMETSAT",
+        "services": "Copernicus / meteorologia / clima / ambiente",
+        "layer_status": "REAL_2026",
+        "address": "Eumetsat Allee 1, D-64295 Darmstadt, Germany",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.eumetsat.int/ground-segment",
+        "source_address": "https://www.eumetsat.int/contact-eumetsat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1388,
+          50.7044
+        ]
+      },
+      "properties": {
+        "id": "COP-ECMWF-BONN",
+        "name": "ECMWF Bonn",
+        "label": "ECMWF Bonn",
+        "place": "Bonn, Germania",
+        "organisation": "ECMWF",
+        "role": "Sede focalizzata sulle attività ECMWF in partnership con l'UE; ECMWF implementa CAMS e C3S",
+        "services": "Copernicus Atmosphere Monitoring Service (CAMS); Copernicus Climate Change Service (C3S)",
+        "layer_status": "REAL_2026",
+        "address": "Robert-Schuman-Platz 3, 53175 Bonn, Germany",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.ecmwf.int/en/about/location",
+        "source_role": "https://www.ecmwf.int/en/about/what-we-do/environmental-services/copernicus-climate-change-service"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3558,
+          44.516
+        ]
+      },
+      "properties": {
+        "id": "COP-ECMWF-BOLOGNA",
+        "name": "ECMWF Data Centre Bologna",
+        "label": "ECMWF Bologna",
+        "place": "Bologna, Italia",
+        "organisation": "ECMWF",
+        "role": "Data centre ECMWF presso il DAMA - Tecnopolo di Bologna",
+        "services": "calcolo, archiviazione ed elaborazione dati meteorologici e Copernicus",
+        "layer_status": "REAL_2026",
+        "address": "Via Stalingrado 84/3, 40128 Bologna, Italy",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.ecmwf.int/en/about/location/ecmwf-bologna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.58658,
+          55.68115
+        ]
+      },
+      "properties": {
+        "id": "COP-EEA-COPENHAGEN",
+        "name": "European Environment Agency",
+        "label": "EEA",
+        "place": "Copenaghen, Danimarca",
+        "organisation": "European Environment Agency (EEA)",
+        "role": "Implementazione del Copernicus Land Monitoring Service e della componente In Situ",
+        "services": "Copernicus Land Monitoring Service; Copernicus In Situ",
+        "layer_status": "REAL_2026",
+        "address": "Kongens Nytorv 6, 1050 Copenhagen K, Denmark",
+        "coordinate_precision": "address",
+        "source_primary": "https://www.eea.europa.eu/en/about/key-partners/copernicus",
+        "source_address": "https://www.eea.europa.eu/en/about/contact-us"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4809,
+          43.5718
+        ]
+      },
+      "properties": {
+        "id": "COP-MOI-TOULOUSE",
+        "name": "Mercator Ocean International",
+        "label": "Mercator Ocean",
+        "place": "Tolosa, Francia",
+        "organisation": "Mercator Ocean International",
+        "role": "Entità incaricata dell'implementazione del Copernicus Marine Service",
+        "services": "Copernicus Marine Service; ocean monitoring and forecasting",
+        "layer_status": "REAL_2026",
+        "address": "2 avenue de l'Aérodrome de Montaudran, 31400 Toulouse, France",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://marine.copernicus.eu/",
+        "source_role": "https://www.mercator-ocean.eu/legal-notice/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6277,
+          45.812
+        ]
+      },
+      "properties": {
+        "id": "COP-JRC-ISPRA",
+        "name": "Joint Research Centre — Ispra",
+        "label": "JRC Ispra",
+        "place": "Ispra, Italia",
+        "organisation": "European Commission — Joint Research Centre",
+        "role": "Supporto e coordinamento tecnico del Copernicus Emergency Management Service",
+        "services": "Copernicus Emergency Management Service (CEMS)",
+        "layer_status": "REAL_2026",
+        "address": "Via Enrico Fermi 2749, 21027 Ispra (VA), Italy",
+        "coordinate_precision": "site_approx",
+        "source_primary": "https://joint-research-centre.ec.europa.eu/projects-and-activities/space-technologies-disaster-risk-reduction-and-response_en",
+        "source_address": "https://joint-research-centre.ec.europa.eu/about-us/jrc-sites-across-europe/jrc-ispra-italy_en"
+      }
+    }
+  ]
+}

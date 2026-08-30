@@ -292,7 +292,7 @@
   <div class="note">
     Questo documentario descrive esclusivamente lo stato reale documentato al 2026.
     I pulsanti comandano i layer GIS già presenti nel progetto. I layer ancora in
-    costruzione — accesso allo spazio, sicurezza, connettività
+    costruzione — Copernicus/EUMETSAT, accesso allo spazio, sicurezza, connettività
     sicura e industria — verranno collegati a questa pagina quando saranno importati.
   </div>
 
@@ -307,8 +307,7 @@
     <button type="button" class="step-btn" onclick="prepareSpace(this)">Prepara mappa</button>
     <button type="button" class="step-btn" onclick="showESA(this)">1 · Centri ESA</button>
     <button type="button" class="step-btn" onclick="showGalileo(this)">2 · Galileo / EUSPA</button>
-    <button type="button" class="step-btn" onclick="showCopernicus(this)">3 · Copernicus / Terra</button>
-    <button type="button" class="step-btn" onclick="showBoth(this)">4 · Rete spaziale europea</button>
+    <button type="button" class="step-btn" onclick="showBoth(this)">3 · Rete spaziale europea</button>
     <button type="button" class="step-btn" onclick="restoreMap(this)">Ripristina mappa</button>
   </nav>
 
@@ -484,25 +483,7 @@
   </section>
 
   <section class="section">
-    <h2>7. Copernicus: lo spazio diventa osservazione della Terra</h2>
-    <p>
-      Copernicus collega il segmento spaziale a una rete terrestre di centri,
-      organizzazioni e servizi che trasformano le osservazioni satellitari in
-      informazioni operative su atmosfera, clima, mare, territorio ed emergenze.
-    </p>
-    <p>
-      Il layer GIS comprende EUMETSAT a Darmstadt, ECMWF a Bonn e Bologna,
-      l'European Environment Agency a Copenaghen, Mercator Ocean a Tolosa
-      e il Joint Research Centre di Ispra.
-    </p>
-    <p>
-      Il layer GIS corrispondente è
-      <code>spazio_copernicus_eumetsat_2026</code>.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>8. Le connessioni con le altre dorsali</h2>
+    <h2>7. Le connessioni con le altre dorsali</h2>
 
     <div class="crosslinks">
       <div><strong>Spazio ↔ Trasporti</strong><br>Galileo, EGNOS, aviazione, droni, logistica.</div>
@@ -515,12 +496,13 @@
   </section>
 
   <section class="section future">
-    <h2>9. Layer GIS successivi</h2>
+    <h2>8. Layer GIS successivi</h2>
     <p>
       Questi temi fanno già parte del documentario ma non vengono ancora comandati
       dalla pagina finché i relativi layer non saranno costruiti e importati:
     </p>
     <ul>
+      <li><code>03_COPERNICUS_EUMETSAT</code></li>
       <li><code>04_ACCESSO_ALLO_SPAZIO</code></li>
       <li><code>05_SICUREZZA_SPAZIALE</code></li>
       <li><code>06_CONNETTIVITA_SICURA</code></li>
@@ -563,8 +545,7 @@
 
   var SPACE_LAYERS = {
     esa: "spazio_centri_esa_2026",
-    galileo: "spazio_galileo_euspa_2026",
-    copernicus: "spazio_copernicus_eumetsat_2026"
+    galileo: "spazio_galileo_euspa_2026"
   };
 
   function getGIS() {
@@ -633,21 +614,6 @@
   }
 
 
-  function hideAllSpaceLayers(GIS) {
-
-    if (typeof GIS.hideLayer === "function") {
-      GIS.hideLayer(SPACE_LAYERS.esa);
-      GIS.hideLayer(SPACE_LAYERS.galileo);
-      GIS.hideLayer(SPACE_LAYERS.copernicus);
-      return;
-    }
-
-    if (typeof GIS.hideAllLayersExcept === "function") {
-      GIS.hideAllLayersExcept(BASE_LAYERS);
-    }
-  }
-
-
   /* ============================================
    * PREPARA MAPPA
    * ============================================ */
@@ -662,8 +628,6 @@
       alert("GIS non disponibile");
       return;
     }
-
-    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
       GIS.hideAllLayersExcept(BASE_LAYERS);
@@ -684,22 +648,23 @@
     setActive(button);
 
     if (!GIS) {
-      alert("GIS non disponibile");
-      return;
+        alert("GIS non disponibile");
+        return;
     }
-
-    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
-      GIS.hideAllLayersExcept(BASE_LAYERS);
+        GIS.hideAllLayersExcept(
+            BASE_LAYERS.concat([SPACE_LAYERS.esa])
+        );
     }
 
+    /* Accendiamolo esplicitamente */
     if (typeof GIS.showLayer === "function") {
-      GIS.showLayer(SPACE_LAYERS.esa);
+        GIS.showLayer(SPACE_LAYERS.esa);
     }
 
     gotoMap(GIS, 50.0, 8.0, 4);
-  };
+};
 
 
   /* ============================================
@@ -713,55 +678,27 @@
     setActive(button);
 
     if (!GIS) {
-      alert("GIS non disponibile");
-      return;
+        alert("GIS non disponibile");
+        return;
     }
-
-    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
-      GIS.hideAllLayersExcept(BASE_LAYERS);
+        GIS.hideAllLayersExcept(
+            BASE_LAYERS.concat([SPACE_LAYERS.galileo])
+        );
     }
 
+    /* Accendiamolo esplicitamente */
     if (typeof GIS.showLayer === "function") {
-      GIS.showLayer(SPACE_LAYERS.galileo);
+        GIS.showLayer(SPACE_LAYERS.galileo);
     }
 
     gotoMap(GIS, 58.0, 8.0, 3);
-  };
+};
 
 
   /* ============================================
-   * COPERNICUS / EUMETSAT
-   * ============================================ */
-
-  window.showCopernicus = function (button) {
-
-    var GIS = getGIS();
-
-    setActive(button);
-
-    if (!GIS) {
-      alert("GIS non disponibile");
-      return;
-    }
-
-    hideAllSpaceLayers(GIS);
-
-    if (typeof GIS.hideAllLayersExcept === "function") {
-      GIS.hideAllLayersExcept(BASE_LAYERS);
-    }
-
-    if (typeof GIS.showLayer === "function") {
-      GIS.showLayer(SPACE_LAYERS.copernicus);
-    }
-
-    gotoMap(GIS, 50.5, 8.0, 4);
-  };
-
-
-  /* ============================================
-   * RETE SPAZIALE EUROPEA
+   * ENTRAMBI I LAYER
    * ============================================ */
 
  window.showBoth = function (button) {
@@ -771,24 +708,27 @@
     setActive(button);
 
     if (!GIS) {
-      alert("GIS non disponibile");
-      return;
+        alert("GIS non disponibile");
+        return;
     }
-
-    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
-      GIS.hideAllLayersExcept(BASE_LAYERS);
+        GIS.hideAllLayersExcept(
+            BASE_LAYERS.concat([
+                SPACE_LAYERS.esa,
+                SPACE_LAYERS.galileo
+            ])
+        );
     }
 
+    /* Accendiamo esplicitamente entrambi */
     if (typeof GIS.showLayer === "function") {
-      GIS.showLayer(SPACE_LAYERS.esa);
-      GIS.showLayer(SPACE_LAYERS.galileo);
-      GIS.showLayer(SPACE_LAYERS.copernicus);
+        GIS.showLayer(SPACE_LAYERS.esa);
+        GIS.showLayer(SPACE_LAYERS.galileo);
     }
 
     gotoMap(GIS, 55.0, 8.0, 3);
-  };
+};
 
 
   /* ============================================
@@ -805,8 +745,6 @@
       alert("GIS non disponibile");
       return;
     }
-
-    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
       GIS.hideAllLayersExcept(BASE_LAYERS);
