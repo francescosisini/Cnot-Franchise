@@ -1,0 +1,35 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "trasporti",
+  "dorsal": {
+    "reality_2026": [
+      "TEN-T come rete fisica continentale",
+      "9 European Transport Corridors",
+      "2 priorità orizzontali: ERTMS ed European Maritime Space"
+    ],
+    "corridors": [
+      "Atlantic",
+      "Baltic Sea - Adriatic Sea",
+      "Mediterranean",
+      "North Sea - Baltic",
+      "Baltic Sea - Black Sea - Aegean Sea",
+      "Western Balkans - Eastern Mediterranean",
+      "North Sea - Rhine - Mediterranean",
+      "Rhine - Danube",
+      "Scandinavian - Mediterranean"
+    ],
+    "milestones": {
+      "2027": "431 nodi urbani TEN-T devono adottare un Sustainable Urban Mobility Plan",
+      "2030": "core network",
+      "2040": "extended core network",
+      "2050": "comprehensive network"
+    },
+    "sources": [
+      "https://transport.ec.europa.eu/transport-themes/infrastructure-and-investment/trans-european-transport-network-ten-t_en",
+      "https://transport.ec.europa.eu/transport-themes/infrastructure-and-investment/trans-european-transport-network-ten-t/ten-t-governance_en"
+    ]
+  }
+}

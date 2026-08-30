@@ -1,0 +1,39 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "spazio",
+  "dorsal": {
+    "reality_2026": [
+      "Copernicus: osservazione della Terra",
+      "Galileo + EGNOS: navigazione e timing",
+      "GOVSATCOM: comunicazioni governative sicure; hub in operazioni iniziali dal 2026",
+      "IRIS²: futura connettività satellitare sicura multi-orbita",
+      "SSA/SST/STM: sorveglianza e sicurezza del traffico spaziale",
+      "Ariane 6 e Vega-C: accesso europeo allo spazio"
+    ],
+    "nodes": [
+      "ESA HQ Parigi",
+      "ESTEC Noordwijk",
+      "ESOC Darmstadt",
+      "ESRIN Frascati",
+      "EAC Colonia",
+      "ESAC Madrid",
+      "ESEC Redu",
+      "ECSAT Harwell",
+      "Europe's Spaceport - Guyana francese"
+    ],
+    "milestones": {
+      "2026-2028": "upgrade GOVSATCOM Hub",
+      "2027": "servizi commerciali fidati nel catalogo GOVSATCOM",
+      "2029": "Final Operational Capability prevista per GOVSATCOM; servizi IRIS² progressivi"
+    },
+    "sources": [
+      "https://eu-space.europa.eu/programmes",
+      "https://eu-space.europa.eu/secure-connectivity/govsatcom",
+      "https://www.euspa.europa.eu/eu-space-programme/secure-satcom/iris2",
+      "https://www.esa.int/About_Us/Corporate_news/Establishments_and_facilities"
+    ]
+  }
+}

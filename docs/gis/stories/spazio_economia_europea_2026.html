@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dorsale Spazio · L'economia spaziale europea</title>
+
+  <style>
+    :root {
+      --bg: #020402;
+      --card: #071007;
+      --ink: #eaffea;
+      --muted: #9fc79a;
+      --line: rgba(57, 255, 20, 0.28);
+      --line-strong: rgba(57, 255, 20, 0.62);
+      --accent: #39ff14;
+      --accent-soft: rgba(57, 255, 20, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
+        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
+        var(--bg);
+      background-size: auto, 100% 4px, auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: #baffad; }
+
+    code {
+      color: #baffad;
+      background: rgba(57, 255, 20, 0.08);
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 5px;
+      padding: 0 0.25em;
+    }
+
+    .story {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .kicker {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.04;
+      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+    }
+
+    h2 { margin-top: 0; }
+    h3 { margin-bottom: 0.45rem; color: #dfffdc; }
+
+    .lead {
+      margin: 0 0 18px;
+      max-width: 78ch;
+      color: #dfffdc;
+      font-size: 1.04rem;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 16px 0 20px;
+      color: #d7ffd2;
+      font-size: 0.94rem;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      margin: 0 -12px 18px;
+      background: rgba(2, 7, 2, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+    }
+
+    .step-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: var(--ink);
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.91rem;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, color 120ms ease;
+    }
+
+    .step-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--line-strong);
+      background: rgba(57, 255, 20, 0.10);
+    }
+
+    .step-btn.is-active {
+      background: var(--accent);
+      color: #041004;
+      border-color: var(--accent);
+      font-weight: 750;
+      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+    }
+
+    .current {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: -4px 0 16px;
+    }
+
+    .current-command {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .section {
+      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 0 16px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(57, 255, 20, 0.03);
+    }
+
+    .storybox {
+      border-color: var(--line-strong);
+      background:
+        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+      background-size: 100% 4px, auto;
+    }
+
+    .story-kicker {
+      margin: 0 0 6px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .story-body {
+      color: #e6ffe3;
+      max-width: 82ch;
+    }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(57, 255, 20, 0.24);
+      background: rgba(57, 255, 20, 0.07);
+      border-radius: 999px;
+      padding: 5px 9px;
+      color: #dfffdc;
+      font-size: 0.82rem;
+    }
+
+    .chain {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 14px 0 4px;
+    }
+
+    .chain div {
+      text-align: center;
+      border: 1px solid rgba(57, 255, 20, 0.18);
+      border-radius: 9px;
+      padding: 9px 6px;
+      font-size: 0.76rem;
+      color: #d7ffd2;
+      background: rgba(57, 255, 20, 0.045);
+    }
+
+    .chain div::after {
+      content: "→";
+      float: right;
+      color: var(--muted);
+      margin-right: -11px;
+    }
+
+    .chain div:last-child::after { content: ""; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: rgba(57, 255, 20, 0.04);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.15rem;
+      margin-bottom: 3px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .crosslinks {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .crosslinks div {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: rgba(57, 255, 20, 0.035);
+    }
+
+    .future {
+      opacity: 0.78;
+      border-style: dashed;
+    }
+
+    .sources li { margin-bottom: 7px; }
+
+    .foot {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .chain,
+      .metrics,
+      .crosslinks {
+        grid-template-columns: 1fr;
+      }
+      .chain div::after { content: ""; }
+    }
+  </style>
+</head>
+
+<body>
+<main class="story" data-story-id="spazio-economia-europea-2026">
+
+  <p class="kicker">Dorsali Europee · Dorsale Spazio · realtà 2026</p>
+  <h1>Lo spazio europeo e la sua economia</h1>
+
+  <p class="lead">
+    Una lettura GIS dell'ecosistema spaziale europeo: istituzioni, infrastrutture,
+    centri operativi, mercato upstream e downstream e collegamenti con le altre
+    infrastrutture strategiche del continente.
+  </p>
+
+  <div class="note">
+    Questo documentario descrive esclusivamente lo stato reale documentato al 2026.
+    I pulsanti comandano i layer GIS già presenti nel progetto. I layer ancora in
+    costruzione — Copernicus/EUMETSAT, accesso allo spazio, sicurezza, connettività
+    sicura e industria — verranno collegati a questa pagina quando saranno importati.
+  </div>
+
+  <div class="chain" aria-label="Filiera dell'economia spaziale">
+    <div>Ricerca e industria</div>
+    <div>Infrastruttura spaziale</div>
+    <div>Ground segment</div>
+    <div>Servizi downstream</div>
+  </div>
+
+  <nav class="controls" aria-label="Comandi GIS Dorsale Spazio">
+    <button type="button" class="step-btn" onclick="prepareSpace(this)">Prepara mappa</button>
+    <button type="button" class="step-btn" onclick="showESA(this)">1 · Centri ESA</button>
+    <button type="button" class="step-btn" onclick="showGalileo(this)">2 · Galileo / EUSPA</button>
+    <button type="button" class="step-btn" onclick="showBoth(this)">3 · Rete spaziale europea</button>
+    <button type="button" class="step-btn" onclick="restoreMap(this)">Ripristina mappa</button>
+  </nav>
+
+  <p class="current">
+    Comando selezionato:
+    <span class="current-command">nessuno</span>
+  </p>
+
+  <section class="section storybox" aria-live="polite">
+    <p class="story-kicker" id="storyKicker">La dorsale come sistema</p>
+    <h2 id="storyTitle">Lo spazio non è un punto sulla mappa</h2>
+    <div class="story-body" id="storyBody">
+      <p>
+        Lo spazio europeo non coincide con un'agenzia o con una costellazione.
+        È una rete di istituzioni, centri tecnici, infrastrutture terrestri,
+        satelliti e servizi che attraversa l'intero continente.
+      </p>
+      <p>
+        Usa i comandi sopra per far emergere progressivamente la geografia
+        operativa oggi già presente nel GIS.
+      </p>
+    </div>
+    <div class="facts" id="storyFacts">
+      <span class="chip">Stato: REAL_2026</span>
+      <span class="chip">Story mode: layer GIS reali</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>1. Lo spazio europeo non è un solo sistema</h2>
+
+    <h3>Unione europea</h3>
+    <p>
+      Il programma spaziale dell'UE comprende Galileo, EGNOS, Copernicus,
+      GOVSATCOM, IRIS² e le attività legate alla sicurezza dell'ambiente spaziale.
+      Il programma 2021–2027 dispone di un bilancio di circa
+      <strong>14,88 miliardi di euro</strong>.
+    </p>
+
+    <h3>ESA</h3>
+    <p>
+      L'European Space Agency non è un'istituzione dell'Unione europea:
+      è un'organizzazione intergovernativa con propri Stati membri e propri programmi.
+      Il suo budget annuale nel 2025 era pari a circa
+      <strong>7,68 miliardi di euro</strong>.
+    </p>
+
+    <h3>EUSPA</h3>
+    <p>
+      La European Union Agency for the Space Programme è invece un'agenzia dell'UE.
+      Opera sul lato dei servizi, degli utenti, della sicurezza e dell'utilizzo
+      economico delle infrastrutture spaziali europee.
+    </p>
+
+    <h3>EUMETSAT e agenzie nazionali</h3>
+    <p>
+      EUMETSAT gestisce sistemi meteorologici satellitari europei, mentre i singoli
+      Stati mantengono programmi e agenzie nazionali. La geografia spaziale europea
+      è quindi strutturalmente distribuita.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>2. Che cosa significa “economia dello spazio”</h2>
+    <p>
+      La space economy comprende le attività che producono valore attraverso
+      l'esplorazione, lo studio, la gestione e l'utilizzo dello spazio.
+      Una distinzione utile separa <strong>upstream</strong> e
+      <strong>downstream</strong>.
+    </p>
+
+    <h3>Upstream</h3>
+    <p>
+      Ricerca e sviluppo, componentistica, satelliti, payload, piattaforme,
+      stazioni terrestri professionali, lanciatori e servizi di lancio.
+    </p>
+
+    <h3>Downstream</h3>
+    <p>
+      Navigazione, telecomunicazioni, osservazione della Terra, meteorologia,
+      agricoltura, trasporti, logistica, assicurazioni, energia, emergenze e
+      servizi digitali che utilizzano dati o segnali satellitari.
+    </p>
+
+    <div class="metrics">
+      <div class="metric">
+        <strong>~€75 mld</strong>
+        <span>mercato upstream mondiale 2025</span>
+      </div>
+      <div class="metric">
+        <strong>~€490 mld</strong>
+        <span>mercato downstream mondiale 2025</span>
+      </div>
+      <div class="metric">
+        <strong>~€13,5 mld</strong>
+        <span>budget spaziali pubblici europei 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>3. L'industria europea</h2>
+    <p>
+      Eurospace misura la parte manifatturiera dell'ecosistema: progettazione,
+      sviluppo e produzione di sistemi spaziali. Nel 2024 riportava circa
+      <strong>€8,835 miliardi di vendite finali</strong> e
+      <strong>66.061 addetti diretti FTE</strong>.
+    </p>
+    <p>
+      Nel 2025 le vendite finali dell'industria spaziale europea sono salite
+      vicino agli <strong>€11 miliardi</strong>. Una quota molto rilevante del
+      mercato upstream europeo continua a dipendere dalla domanda istituzionale.
+    </p>
+    <p>
+      Parallelamente cresce un ecosistema di start-up, PMI e operatori New Space.
+      Nel 2025 le imprese spaziali europee hanno raccolto circa
+      <strong>€1,4 miliardi</strong> di investimenti privati.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>4. Il vero mercato è a Terra</h2>
+    <p>
+      Lo spazio produce valore economico quando i segnali e i dati diventano
+      servizi terrestri. Il GNSS entra in telefoni, automobili, ferrovie, droni,
+      logistica, emergenza e sincronizzazione. L'osservazione della Terra entra
+      in agricoltura, clima, assicurazioni, pianificazione urbana e gestione
+      delle catastrofi.
+    </p>
+
+    <div class="metrics">
+      <div class="metric">
+        <strong>€3,5 → 7,9 mld</strong>
+        <span>Earth Observation globale, 2024 → 2034</span>
+      </div>
+      <div class="metric">
+        <strong>€300 → 580 mld</strong>
+        <span>GNSS globale, 2024 → 2034</span>
+      </div>
+      <div class="metric">
+        <strong>&gt;€0,2 → ~1,2 mld</strong>
+        <span>Secure SATCOM utenti UE, 2025 → 2040</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>5. Galileo: una rete spaziale e terrestre</h2>
+    <p>
+      Galileo comprende un segmento spaziale, un segmento di terra e un segmento
+      utente. La rete terrestre mappata comprende la sede EUSPA di Praga,
+      i due Galileo Security Monitoring Centres, il GNSS Service Centre,
+      il Galileo Reference Centre, i due Galileo Control Centres e stazioni
+      remote nelle regioni artiche.
+    </p>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_galileo_euspa_2026</code>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>6. ESA: la geografia della conoscenza spaziale</h2>
+    <p>
+      ESTEC, ESOC, ESRIN, EAC, ESAC, ESEC ed ECSAT svolgono funzioni differenti:
+      ingegneria, operazioni, osservazione della Terra, astronauti, scienza,
+      sicurezza, telecomunicazioni e innovazione.
+    </p>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_centri_esa_2026</code>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>7. Le connessioni con le altre dorsali</h2>
+
+    <div class="crosslinks">
+      <div><strong>Spazio ↔ Trasporti</strong><br>Galileo, EGNOS, aviazione, droni, logistica.</div>
+      <div><strong>Spazio ↔ Ambiente</strong><br>Copernicus, clima, oceani, territorio.</div>
+      <div><strong>Spazio ↔ Digitale</strong><br>IRIS², GOVSATCOM, cloud, AI, ground segment.</div>
+      <div><strong>Spazio ↔ Energia</strong><br>monitoraggio, sincronizzazione, resilienza.</div>
+      <div><strong>Spazio ↔ Sicurezza</strong><br>SSA, comunicazioni protette, infrastrutture critiche.</div>
+      <div><strong>Spazio ↔ Ricerca</strong><br>astronomia, fisica, osservazione, tecnologia.</div>
+    </div>
+  </section>
+
+  <section class="section future">
+    <h2>8. Layer GIS successivi</h2>
+    <p>
+      Questi temi fanno già parte del documentario ma non vengono ancora comandati
+      dalla pagina finché i relativi layer non saranno costruiti e importati:
+    </p>
+    <ul>
+      <li><code>03_COPERNICUS_EUMETSAT</code></li>
+      <li><code>04_ACCESSO_ALLO_SPAZIO</code></li>
+      <li><code>05_SICUREZZA_SPAZIALE</code></li>
+      <li><code>06_CONNETTIVITA_SICURA</code></li>
+      <li><code>07_INDUSTRIA_SPAZIALE</code></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Fonti principali</h2>
+    <ul class="sources">
+      <li><a href="https://www.esa.int/About_Us/Business_with_ESA/ESA_releases_2026_Space_Economy_Report" target="_blank" rel="noopener">ESA Space Economy Report 2026</a></li>
+      <li><a href="https://www.esa.int/About_Us/Corporate_news/ESA_facts" target="_blank" rel="noopener">ESA facts</a></li>
+      <li><a href="https://www.euspa.europa.eu/eu-space-programme" target="_blank" rel="noopener">EU Space Programme / EUSPA</a></li>
+      <li><a href="https://www.euspa.europa.eu/market-report" target="_blank" rel="noopener">EU Space Market Report 2026</a></li>
+      <li><a href="https://eurospace.org/publication/eurospace-facts-figures/" target="_blank" rel="noopener">Eurospace Facts &amp; Figures</a></li>
+      <li><a href="https://www.eumetsat.int/about-us/who-we-are" target="_blank" rel="noopener">EUMETSAT</a></li>
+    </ul>
+  </section>
+
+  <p class="foot">
+    GIS API:
+    <code>GIS.showLayer()</code>,
+    <code>GIS.showOnlyLayer()</code>,
+    <code>GIS.hideLayer()</code>,
+    <code>GIS.hideAllLayersExcept()</code>,
+    <code>GIS.saveState()</code>,
+    <code>GIS.restoreState()</code>.
+  </p>
+
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var BASE_LAYERS = [
+    "ne_10m_admin_0_countries",
+    "cnoteurope"
+  ];
+
+  var SPACE_LAYERS = {
+    esa: "spazio_centri_esa_2026",
+    galileo: "spazio_galileo_euspa_2026"
+  };
+
+  function getGIS() {
+    if (window.GIS) return window.GIS;
+    if (window.parent && window.parent.GIS) return window.parent.GIS;
+    return null;
+  }
+
+  function setActive(button) {
+    document.querySelectorAll(".step-btn.is-active").forEach(function (el) {
+      el.classList.remove("is-active");
+    });
+
+    if (button) button.classList.add("is-active");
+
+    var label = document.querySelector(".current-command");
+    if (label && button) {
+      label.textContent = button.textContent.trim();
+    }
+  }
+
+  function gotoMap(GIS, lat, lon, zoom) {
+
+    if (typeof GIS.goto === "function") {
+      GIS.goto(lat, lon, zoom);
+      return;
+    }
+
+    if (typeof GIS.gotoGIS === "function") {
+      GIS.gotoGIS(lat, lon, zoom);
+      return;
+    }
+
+    if (window.parent &&
+        typeof window.parent.gotoGIS === "function") {
+
+      window.parent.gotoGIS(lat, lon, zoom);
+      return;
+    }
+
+    if (window.parent &&
+        typeof window.parent.applyAtlasCommand === "function") {
+
+      window.parent.applyAtlasCommand({
+        goto: {
+          lat: lat,
+          lon: lon,
+          zoom: zoom
+        }
+      });
+    }
+  }
+
+  function showOnlySpaceLayer(GIS, target) {
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(
+        BASE_LAYERS.concat([target])
+      );
+      return;
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(target);
+    }
+  }
+
+
+  /* ============================================
+   * PREPARA MAPPA
+   * ============================================ */
+
+  window.prepareSpace = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    gotoMap(GIS, 51.0, 10.0, 4);
+  };
+
+
+  /* ============================================
+   * CENTRI ESA
+   * ============================================ */
+
+  window.showESA = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    showOnlySpaceLayer(
+      GIS,
+      SPACE_LAYERS.esa
+    );
+
+    /*
+     * Vista europea sui principali centri ESA
+     */
+    gotoMap(GIS, 50.0, 8.0, 4);
+  };
+
+
+  /* ============================================
+   * GALILEO / EUSPA
+   * ============================================ */
+
+  window.showGalileo = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    showOnlySpaceLayer(
+      GIS,
+      SPACE_LAYERS.galileo
+    );
+
+    /*
+     * Vista più larga perché comprende anche
+     * Jan Mayen e Svalbard.
+     */
+    gotoMap(GIS, 58.0, 8.0, 3);
+  };
+
+
+  /* ============================================
+   * ENTRAMBI I LAYER
+   * ============================================ */
+
+  window.showBoth = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+
+      GIS.hideAllLayersExcept(
+        BASE_LAYERS.concat([
+          SPACE_LAYERS.esa,
+          SPACE_LAYERS.galileo
+        ])
+      );
+
+    } else {
+
+      if (typeof GIS.showLayer === "function") {
+        GIS.showLayer(SPACE_LAYERS.esa);
+        GIS.showLayer(SPACE_LAYERS.galileo);
+      }
+    }
+
+    gotoMap(GIS, 55.0, 8.0, 3);
+  };
+
+
+  /* ============================================
+   * RIPRISTINO MINIMO
+   * ============================================ */
+
+  window.restoreMap = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    gotoMap(GIS, 51.0, 10.0, 4);
+  };
+
+})();
+</script>
+
+</body>
+</html>

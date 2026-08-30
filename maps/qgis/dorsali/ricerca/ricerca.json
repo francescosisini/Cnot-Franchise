@@ -1,0 +1,21 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "ricerca",
+  "dorsal": {
+    "reality_2026": [
+      "Horizon Europe work programme 2026-2027",
+      "European Strategy on Research and Technology Infrastructures",
+      "ESFRI",
+      "EuroHPC come infrastruttura scientifica e industriale"
+    ],
+    "current_2026": "La Commissione indica €14 miliardi per il work programme Horizon Europe 2026-2027.",
+    "sources": [
+      "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/horizon-europe-work-programmes_en",
+      "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-strategy-research-and-technology-infrastructures_en",
+      "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-research-infrastructures/esfri_en"
+    ]
+  }
+}

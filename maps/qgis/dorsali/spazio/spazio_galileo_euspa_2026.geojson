@@ -1,0 +1,217 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_galileo_euspa_2026",
+  "metadata": {
+    "reference_date": "2026-08-30",
+    "crs": "EPSG:4326",
+    "group_qgis": "11_SPAZIO/02_GALILEO_EUSPA",
+    "note": "Nodi operativi EUSPA/Galileo selezionati dalla situazione reale 2026. Le precisioni delle coordinate sono dichiarate per feature."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4348754,
+          50.0979545
+        ]
+      },
+      "properties": {
+        "id": "EUSPA-HQ-PRAGUE",
+        "name": "EUSPA Headquarters",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Praga, Cechia",
+        "function": "Sede dell'European Union Agency for the Space Programme (EUSPA)",
+        "address": "Janovského 438/2, 170 00 Prague 7, Czechia",
+        "coordinate_precision": "address",
+        "source_primary": "https://www.euspa.europa.eu/pressroom/media-kit",
+        "source_coordinates": "https://regiony.kurzy.cz/praha/janovskeho/438-2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.080561,
+          48.913786
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GSMC-FR",
+        "name": "Galileo Security Monitoring Centre — France",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Saint-Germain-en-Laye, Francia",
+        "function": "GSMC: monitoraggio della sicurezza e cybersecurity del sistema Galileo",
+        "address": "8 avenue du Président Kennedy, Saint-Germain-en-Laye, France",
+        "coordinate_precision": "address",
+        "source_primary": "https://www.euspa.europa.eu/eu-space-programme/galileo/galileo-security-monitoring-centre",
+        "source_coordinates": "https://entreprises.annuairefrancais.fr/78100/centre-de-surveillance-de-la-securite-galileo-saint-germain-en-laye-78-yvelines-130021082-00016.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.56602,
+          40.27794
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GSMC-ES",
+        "name": "Galileo Security Monitoring Centre — Spain",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "San Martín de la Vega, Spagna",
+        "function": "Secondo sito GSMC; sicurezza e continuità operativa Galileo",
+        "address": "INTA / La Marañosa, San Martín de la Vega, Madrid, Spain",
+        "coordinate_precision": "host_site",
+        "source_primary": "https://www.euspa.europa.eu/eu-space-programme/galileo/galileo-security-monitoring-centre",
+        "source_coordinates": "https://mapcarta.com/W86364509"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.464294,
+          40.492703
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GSC",
+        "name": "European GNSS Service Centre",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Torrejón de Ardoz, Spagna",
+        "function": "Interfaccia tra Galileo e gli utenti dei servizi GNSS europei",
+        "address": "INTA, Carretera de Ajalvir km 4.2, 28850 Torrejón de Ardoz, Madrid, Spain",
+        "coordinate_precision": "site",
+        "source_primary": "https://www.euspa.europa.eu/eu-space-programme/galileo/european-gnss-service-centre",
+        "source_coordinates": "https://commons.wikimedia.org/wiki/File:Galileo_on_your_pocket.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.428151,
+          52.216769
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GRC",
+        "name": "Galileo Reference Centre",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Noordwijk, Paesi Bassi",
+        "function": "Monitoraggio indipendente delle prestazioni dei servizi Galileo e GNSS",
+        "address": "Zwarteweg 53, 2201 AA Noordwijk, Netherlands",
+        "coordinate_precision": "address",
+        "source_primary": "https://www.euspa.europa.eu/eu-space-programme/galileo/galileo-reference-centre",
+        "source_coordinates": "https://www.postcode-adresboek.nl/pand-zwarteweg-53-noordwijk-zh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.60191,
+          41.97895
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GCC-FUCINO",
+        "name": "Galileo Control Centre — Fucino",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Fucino, Italia",
+        "function": "Uno dei due principali centri di controllo del segmento terrestre Galileo",
+        "coordinate_precision": "site",
+        "source_primary": "https://www.euspa.europa.eu/publications-multimedia/image-galleries/euspa-locations",
+        "source_coordinates": "https://www.esa.int/Applications/Satellite_navigation/Galileo/Galileo_IOV_ground_stations_Fucino"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2790367,
+          48.0853986
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GCC-OBER",
+        "name": "Galileo Control Centre — Oberpfaffenhofen",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Oberpfaffenhofen / Weßling, Germania",
+        "function": "Uno dei due principali centri di controllo del segmento terrestre Galileo",
+        "address": "DLR Oberpfaffenhofen, Münchener Straße 20, 82234 Weßling, Germany",
+        "coordinate_precision": "host_site",
+        "source_primary": "https://www.euspa.europa.eu/publications-multimedia/image-galleries/euspa-locations",
+        "source_coordinates": "https://www.dlr.de/de/gk/ueber-uns/standorte/oberpfaffenhofen-und-anreise"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.72,
+          70.92
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GS-JAN-MAYEN",
+        "name": "Galileo Ground Station — Jan Mayen",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Jan Mayen, Norvegia",
+        "function": "Stazione terrestre/sensore Galileo in area artica",
+        "coordinate_precision": "island_site_approx",
+        "source_primary": "https://www.euspa.europa.eu/publications-multimedia/image-galleries/euspa-locations",
+        "source_coordinates": "https://www.esa.int/ESA_Multimedia/Images/2024/12/Jan_Mayen_Galileo_Ground_Station",
+        "note": "Coordinate rappresentative del sito/isola; non pubblicate da EUSPA come coordinate ufficiali del punto."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.399,
+          78.228
+        ]
+      },
+      "properties": {
+        "id": "GALILEO-GS-SVALBARD",
+        "name": "Galileo Ground Station — Svalbard",
+        "dorsal": "spazio",
+        "subgroup": "02_GALILEO_EUSPA",
+        "layer_status": "REAL_2026",
+        "place": "Svalbard, Norvegia",
+        "function": "Stazione terrestre Galileo ULS/GSS in area artica",
+        "coordinate_precision": "official_esa_station",
+        "source_primary": "https://www.euspa.europa.eu/publications-multimedia/image-galleries/euspa-locations",
+        "source_coordinates": "https://www.esa.int/Applications/Satellite_navigation/Galileo/Galileo_IOV_ground_stations_Svalbard"
+      }
+    }
+  ]
+}

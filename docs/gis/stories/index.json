@@ -84,6 +84,31 @@
       "type": "story"
     },
     {
+  "id": "dorsale-spazio-economia-europea-2026",
+  "title": "Lo spazio europeo e la sua economia",
+  "subtitle": "Istituzioni, infrastrutture e mercato della Dorsale Spazio",
+  "author": "Francesco Sisini",
+  "language": "it",
+  "file": "stories/spazio_economia_europea_2026.html",
+  "description": "Documentario GIS sulla Dorsale Spazio europea reale nel 2026: ESA, EUSPA, Galileo, infrastrutture terrestri, economia upstream e downstream e collegamenti con le altre dorsali europee.",
+  "tags": [
+    "spazio",
+    "Europa",
+    "ESA",
+    "EUSPA",
+    "Galileo",
+    "space economy",
+    "GIS",
+    "Dorsali Europee"
+  ],
+  "layer_refs": [
+    "spazio_centri_esa_2026",
+    "spazio_galileo_euspa_2026"
+  ],
+  "bridge": "GIS",
+  "type": "story"
+},
+    {
       "id": "cnot-quantum-reactor-en",
       "title": "C-Not Quantum Reactor",
       "subtitle": "An investigation through uranium, quantum fission and an impossible paper",

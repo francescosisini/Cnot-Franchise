@@ -1,0 +1,24 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "type": "dorsals_index",
+  "files": [
+    "spazio.json",
+    "sanita.json",
+    "digitale_ai.json",
+    "energia.json",
+    "trasporti.json",
+    "ambiente_clima.json",
+    "ricerca.json"
+  ],
+  "cross_links": [
+    "Spazio <-> digitale: IRIS², GOVSATCOM, EuroQCI",
+    "Spazio <-> ambiente: Copernicus",
+    "Sanità <-> digitale: EHDS, AI, identità digitale, cybersecurity",
+    "Digitale <-> energia: EuroQCI e infrastrutture critiche; data center e calcolo",
+    "Trasporti <-> energia: elettrificazione, combustibili alternativi e TEN-T",
+    "Ricerca <-> tutte le dorsali: Horizon Europe, ESFRI ed EuroHPC"
+  ],
+  "next_step": "Costruire per ogni dorsale una proiezione 2026->2056 mantenendo esplicito il legame con questi antecedenti reali."
+}

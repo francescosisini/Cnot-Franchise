@@ -1,0 +1,26 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "sanita",
+  "dorsal": {
+    "reality_2026": [
+      "European Health Data Space (EHDS)",
+      "MyHealth@EU per uso primario dei dati",
+      "HealthData@EU per uso secondario",
+      "European Health Union e HERA"
+    ],
+    "milestones": {
+      "2025-03-26": "entrata in vigore EHDS",
+      "2027-03": "atti di esecuzione chiave",
+      "2029-03": "patient summaries ed ePrescriptions/eDispensations in tutti gli Stati membri",
+      "2031-03": "immagini mediche, laboratorio, dimissioni; ampliamento uso secondario",
+      "2035-03": "possibile adesione di paesi terzi a HealthData@EU"
+    },
+    "sources": [
+      "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en",
+      "https://health.ec.europa.eu/ehealth-digital-health-and-care/ehds-action_en"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "energia",
+  "dorsal": {
+    "reality_2026": [
+      "TEN-E e lista di Projects of Common Interest/Mutual Interest",
+      "235 progetti energetici transfrontalieri nella lista UE pubblicata nell'aprile 2026",
+      "European Hydrogen Bank",
+      "EU Hydrogen Mechanism per domanda, offerta e test di infrastrutture"
+    ],
+    "sources": [
+      "https://energy.ec.europa.eu/news/235-key-cross-border-energy-projects-boost-europes-interconnectivity-2026-04-09_en",
+      "https://energy.ec.europa.eu/topics/eus-energy-system/hydrogen/european-hydrogen-bank_en",
+      "https://energy.ec.europa.eu/news/eu-hydrogen-mechanism-call-interest-test-hydrogen-infrastructure-2026-07-22_en"
+    ]
+  }
+}

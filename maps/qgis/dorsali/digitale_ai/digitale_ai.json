@@ -1,0 +1,35 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "digitale_ai",
+  "dorsal": {
+    "reality_2026": [
+      "AI Act: enforcement avviato dal 2 agosto 2026 per varie disposizioni",
+      "EuroHPC: rete europea di supercalcolo",
+      "19 AI Factories e 13 AI Factory Antennas",
+      "AI Gigafactories: call 2026 per fino a 7 grandi infrastrutture",
+      "European Digital Identity Wallet: almeno un wallet per Stato membro entro fine 2026",
+      "EuroQCI: rete quantistica terrestre + segmento spaziale integrato in IRIS²"
+    ],
+    "italy": [
+      "IT4LIA AI Factory - Tecnopolo DAMA/CINECA Bologna",
+      "INNOVATE - primo supercomputer industriale EuroHPC previsto a Bologna"
+    ],
+    "milestones": {
+      "2026-08-02": "trasparenza AI Act e enforcement",
+      "2026-12": "wallet di identità digitale europei disponibili tramite gli Stati membri",
+      "2027-12-02": "regole per diversi sistemi AI ad alto rischio Annex III",
+      "2028-08-02": "regole per AI ad alto rischio integrata in prodotti regolamentati",
+      "late-2027": "lancio previsto di Eagle-1 per EuroQCI"
+    },
+    "sources": [
+      "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "https://www.eurohpc-ju.europa.eu/ai-factories_en",
+      "https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en",
+      "https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation",
+      "https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci"
+    ]
+  }
+}

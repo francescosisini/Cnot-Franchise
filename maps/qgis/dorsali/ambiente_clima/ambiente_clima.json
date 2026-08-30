@@ -1,0 +1,24 @@
+{
+  "project": "Dorsali Europee",
+  "version": "0.1-real-2026",
+  "verified_on": "2026-08-30",
+  "rule": "Questa versione contiene solo realtà europea verificabile al 2026. La proiezione narrativa 2026-2056 sarà un livello separato.",
+  "dorsal_id": "ambiente_clima",
+  "dorsal": {
+    "reality_2026": [
+      "European Climate Law",
+      "Nature Restoration Regulation",
+      "Copernicus come infrastruttura di monitoraggio ambientale"
+    ],
+    "targets": {
+      "2030": "almeno -55% emissioni nette rispetto al 1990; ripristino su almeno 20% delle terre e 20% dei mari UE",
+      "2040": "-90% emissioni nette rispetto al 1990",
+      "2050": "neutralità climatica; misure di ripristino per tutti gli ecosistemi che ne hanno bisogno"
+    },
+    "sources": [
+      "https://climate.ec.europa.eu/eu-action/climate-strategies-targets/2040-climate-target_en",
+      "https://environment.ec.europa.eu/news/nature-restoration-law-enters-force-2024-08-15_en",
+      "https://eu-space.europa.eu/earth-observation"
+    ]
+  }
+}

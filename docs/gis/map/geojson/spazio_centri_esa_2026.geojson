@@ -1,0 +1,146 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_centri_esa_2026",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4163,
+          52.2164
+        ]
+      },
+      "properties": {
+        "id": "SPACE-ESTEC",
+        "name": "ESA ESTEC",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Noordwijk, Paesi Bassi",
+        "function": "Centro europeo di ricerca e tecnologia spaziale ESA",
+        "coordinate_precision": "approx_site",
+        "source": "https://www.esa.int/About_Us/ESTEC/European_Space_Research_and_Technology_Centre_ESTEC2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.623394,
+          49.870598
+        ]
+      },
+      "properties": {
+        "id": "SPACE-ESOC",
+        "name": "ESA ESOC",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Darmstadt, Germania",
+        "function": "European Space Operations Centre",
+        "coordinate_precision": "site",
+        "source": "https://www.esa.int/About_Us/ESOC/Getting_here"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674122,
+          41.826947
+        ]
+      },
+      "properties": {
+        "id": "SPACE-ESRIN",
+        "name": "ESA ESRIN",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Frascati, Italia",
+        "function": "Osservazione della Terra, dati, sistemi informativi e programmi ESA",
+        "coordinate_precision": "site",
+        "source": "https://www.esa.int/About_Us/ESRIN/Contact_us"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.131706,
+          50.852456
+        ]
+      },
+      "properties": {
+        "id": "SPACE-EAC",
+        "name": "ESA European Astronaut Centre",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Colonia, Germania",
+        "function": "Centro ESA per astronauti e volo umano",
+        "coordinate_precision": "site",
+        "source": "https://www.esa.int/About_Us/EAC/How_to_reach_us"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9529,
+          40.4438
+        ]
+      },
+      "properties": {
+        "id": "SPACE-ESAC",
+        "name": "ESA ESAC",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Villanueva de la Cañada, Spagna",
+        "function": "European Space Astronomy Centre",
+        "coordinate_precision": "official_gps",
+        "source": "https://www.esa.int/About_Us/ESAC/Como_llegar_a_ESAC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.145,
+          50.001
+        ]
+      },
+      "properties": {
+        "id": "SPACE-ESEC",
+        "name": "ESA ESEC",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Redu, Belgio",
+        "function": "Space security, cyber security, ground segment, education",
+        "coordinate_precision": "official_gps",
+        "source": "https://www.esa.int/About_Us/Corporate_news/Where_to_find_ESA_ESEC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3076,
+          51.5763
+        ]
+      },
+      "properties": {
+        "id": "SPACE-ECSAT",
+        "name": "ESA ECSAT",
+        "dorsal": "spazio",
+        "layer_status": "REAL_2026",
+        "place": "Harwell, Regno Unito",
+        "function": "Telecomunicazioni, applicazioni, connettività e innovazione spaziale",
+        "coordinate_precision": "postcode_site",
+        "source": "https://www.esa.int/About_Us/Corporate_news/Where_to_find_ESA_ECSAT"
+      }
+    }
+  ]
+}
