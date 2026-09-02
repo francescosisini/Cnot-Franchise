@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_accesso_spazio_2026",
+  "metadata": {
+    "reference_date": "2026-08-31",
+    "crs": "EPSG:4326",
+    "qgis_group": "11_SPAZIO/04_ACCESSO_ALLO_SPAZIO",
+    "status": "REAL_2026",
+    "scope": "Principali infrastrutture europee di accesso allo spazio e lancio orbitale/suborbitale nel 2026.",
+    "design_note": "La filiera industriale di Ariane 6 e Vega-C resta separata e verrà trattata nel layer 07_INDUSTRIA_SPAZIALE."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.768861,
+          5.230722
+        ]
+      },
+      "properties": {
+        "id": "ACCESS-CSG-KOUROU",
+        "name": "Europe's Spaceport — Centre Spatial Guyanais",
+        "label": "Kourou / CSG",
+        "country": "Francia — Guyana francese",
+        "place": "Kourou, Guyana francese",
+        "operator": "CNES / ESA / Arianespace",
+        "access_type": "orbital launch",
+        "launchers": "Ariane 6; Vega-C",
+        "status_2026": "operational",
+        "role": "Principale base europea per l'accesso autonomo all'orbita; ospita le infrastrutture di lancio di Ariane 6 e Vega-C.",
+        "geospatial_note": "Situato in Sud America, su territorio francese, circa 5° a nord dell'equatore.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "spaceport",
+        "source_primary": "https://www.esa.int/Enabling_Support/Space_Transportation/Europe_s_Spaceport",
+        "source_status": "https://www.esa.int/Enabling_Support/Space_Transportation/Launch_vehicles/Ariane_6_overview",
+        "source_coordinates": "https://fr.wikipedia.org/wiki/Centre_spatial_guyanais"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.020833,
+          69.294167
+        ]
+      },
+      "properties": {
+        "id": "ACCESS-ANDOYA-NORWAY",
+        "name": "Andøya Spaceport",
+        "label": "Andøya",
+        "country": "Norvegia",
+        "place": "Andøya, Nordland",
+        "operator": "Andøya Space",
+        "access_type": "orbital launch",
+        "launchers": "Spectrum / Isar Aerospace",
+        "status_2026": "operational launch site; qualification campaign",
+        "role": "Accesso a orbite polari e sun-synchronous da territorio europeo; infrastruttura per piccoli satelliti.",
+        "geospatial_note": "La posizione artica consente traiettorie verso nord con scarso traffico aereo e marittimo.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "spaceport",
+        "source_primary": "https://andoyaspace.no/spaceport/",
+        "source_status": "https://www.esa.int/Enabling_Support/Space_Transportation/Boost/Spectrum_s_qualifying_second_launch",
+        "source_coordinates": "https://www.wikidata.org/wiki/Q124478301"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.175,
+          67.876
+        ]
+      },
+      "properties": {
+        "id": "ACCESS-ESRANGE-SWEDEN",
+        "name": "Esrange Space Center",
+        "label": "Esrange",
+        "country": "Svezia",
+        "place": "Kiruna, Norrbotten",
+        "operator": "SSC Space",
+        "access_type": "suborbital launch; rocket testing; orbital capability under development",
+        "launchers": "sounding rockets; Themis demonstrator; future Alpha / Firefly",
+        "status_2026": "operational suborbital/test; orbital infrastructure in development",
+        "role": "Storico centro di lancio suborbitale e test; nel 2026 costruzione e preparazione della capacità di lancio orbitale.",
+        "geospatial_note": "Sopra il Circolo Polare Artico, con ampie aree scarsamente popolate e spazio aereo dedicato.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "spaceport",
+        "source_primary": "https://sscspace.com/",
+        "source_status": "https://sscspace.com/news/",
+        "source_coordinates": "https://www.luftfartstilsynet.no/globalassets/dokumenter/romfart/report_orbital-launches-from-esrange-space-center.pdf"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.792444,
+          60.818056
+        ]
+      },
+      "properties": {
+        "id": "ACCESS-SAXAVORD-UK",
+        "name": "SaxaVord Spaceport",
+        "label": "SaxaVord",
+        "country": "Regno Unito",
+        "place": "Unst, Shetland",
+        "operator": "SaxaVord Spaceport",
+        "access_type": "orbital and suborbital launch",
+        "launchers": "RFA ONE; HyImpulse SR75 and other launch providers",
+        "status_2026": "licensed; launch preparation and test campaigns",
+        "role": "Spaceport verticale per orbite polari e sun-synchronous; nel 2026 ospita la preparazione del lanciatore RFA ONE.",
+        "geospatial_note": "Posizione settentrionale con traiettorie libere verso il Nord Atlantico.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "spaceport",
+        "source_primary": "https://saxavord.com/launch/",
+        "source_status": "https://www.esa.int/ESA_Multimedia/Images/2026/03/RFA_One_in_Saxavord_Spaceport",
+        "source_coordinates": "https://www.gov.uk/government/publications/brochure-a-guide-to-the-uks-commercial-spaceports/a-guide-to-the-uks-commercial-spaceports"
+      }
+    }
+  ]
+}

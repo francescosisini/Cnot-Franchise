@@ -7,14 +7,17 @@
 
   <style>
     :root {
-      --bg: #020402;
-      --card: #071007;
-      --ink: #eaffea;
-      --muted: #9fc79a;
-      --line: rgba(57, 255, 20, 0.28);
-      --line-strong: rgba(57, 255, 20, 0.62);
-      --accent: #39ff14;
-      --accent-soft: rgba(57, 255, 20, 0.10);
+      --bg: #02050d;
+      --bg-deep: #01030a;
+      --card: rgba(6, 12, 26, 0.92);
+      --ink: #eef8ff;
+      --muted: #9eb4c8;
+      --line: rgba(88, 181, 255, 0.26);
+      --line-strong: rgba(111, 210, 255, 0.58);
+      --accent: #62d8ff;
+      --accent-2: #8b7dff;
+      --data: #78ffb3;
+      --accent-soft: rgba(98, 216, 255, 0.10);
     }
 
     * { box-sizing: border-box; }
@@ -25,20 +28,60 @@
       margin: 0;
       color: var(--ink);
       background:
-        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
-        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
-        var(--bg);
-      background-size: auto, 100% 4px, auto;
+        radial-gradient(circle at 50% -8%, rgba(90, 175, 255, 0.22), transparent 30%),
+        radial-gradient(circle at 85% 12%, rgba(128, 92, 255, 0.12), transparent 24%),
+        radial-gradient(circle at 15% 22%, rgba(70, 215, 255, 0.08), transparent 28%),
+        linear-gradient(180deg, #030816 0%, #02050d 38%, #01030a 100%);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.55;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
     }
 
-    a { color: #baffad; }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.82) 0 1px, transparent 1.2px),
+        radial-gradient(circle, rgba(124,205,255,.52) 0 1px, transparent 1.2px),
+        radial-gradient(circle, rgba(255,255,255,.36) 0 1px, transparent 1.2px);
+      background-size: 173px 173px, 251px 251px, 337px 337px;
+      background-position: 21px 37px, 111px 89px, 53px 191px;
+      opacity: .30;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      left: -10vw;
+      right: -10vw;
+      top: -34vw;
+      height: 46vw;
+      min-height: 330px;
+      border-radius: 0 0 50% 50%;
+      pointer-events: none;
+      z-index: -1;
+      border-bottom: 1px solid rgba(104, 207, 255, .26);
+      box-shadow:
+        0 14px 70px rgba(71, 168, 255, .18),
+        0 28px 140px rgba(56, 104, 255, .10);
+      background:
+        radial-gradient(ellipse at center bottom,
+          rgba(31, 104, 176, .18) 0%,
+          rgba(12, 31, 66, .10) 42%,
+          transparent 67%);
+    }
+
+    a { color: #9fe3ff; }
 
     code {
-      color: #baffad;
-      background: rgba(57, 255, 20, 0.08);
-      border: 1px solid rgba(57, 255, 20, 0.18);
+      color: #9fe3ff;
+      background: rgba(98, 216, 255, 0.08);
+      border: 1px solid rgba(98, 216, 255, 0.18);
       border-radius: 5px;
       padding: 0 0.25em;
     }
@@ -61,16 +104,16 @@
       margin: 0 0 10px;
       font-size: clamp(1.9rem, 4vw, 3rem);
       line-height: 1.04;
-      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+      text-shadow: 0 0 12px rgba(98, 216, 255, 0.18);
     }
 
     h2 { margin-top: 0; }
-    h3 { margin-bottom: 0.45rem; color: #dfffdc; }
+    h3 { margin-bottom: 0.45rem; color: #deeffb; }
 
     .lead {
       margin: 0 0 18px;
       max-width: 78ch;
-      color: #dfffdc;
+      color: #deeffb;
       font-size: 1.04rem;
     }
 
@@ -80,7 +123,7 @@
       padding: 10px 12px;
       border-radius: 8px;
       margin: 16px 0 20px;
-      color: #d7ffd2;
+      color: #d4eaf7;
       font-size: 0.94rem;
     }
 
@@ -93,18 +136,18 @@
       gap: 8px;
       padding: 12px;
       margin: 0 -12px 18px;
-      background: rgba(2, 7, 2, 0.92);
+      background: rgba(3, 8, 20, 0.88);
       border: 1px solid var(--line);
       border-radius: 14px;
       backdrop-filter: blur(8px);
-      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+      box-shadow: 0 0 22px rgba(98, 216, 255, 0.06);
     }
 
     .step-btn {
       appearance: none;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(0, 0, 0, 0.55);
+      background: rgba(2, 7, 18, 0.68);
       color: var(--ink);
       padding: 8px 12px;
       font: inherit;
@@ -116,15 +159,15 @@
     .step-btn:hover {
       transform: translateY(-1px);
       border-color: var(--line-strong);
-      background: rgba(57, 255, 20, 0.10);
+      background: rgba(98, 216, 255, 0.10);
     }
 
     .step-btn.is-active {
       background: var(--accent);
-      color: #041004;
+      color: #020814;
       border-color: var(--accent);
       font-weight: 750;
-      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+      box-shadow: 0 0 16px rgba(98, 216, 255, 0.22);
     }
 
     .current {
@@ -139,19 +182,19 @@
     }
 
     .section {
-      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      background: linear-gradient(180deg, rgba(8, 17, 36, 0.94), rgba(3, 8, 19, 0.96));
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 18px;
       margin: 0 0 16px;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(57, 255, 20, 0.03);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.50), inset 0 0 28px rgba(98, 216, 255, 0.025);
     }
 
     .storybox {
       border-color: var(--line-strong);
       background:
-        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
-        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+        linear-gradient(rgba(98, 216, 255, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(9, 22, 45, 0.97), rgba(3, 8, 20, 0.98));
       background-size: 100% 4px, auto;
     }
 
@@ -165,7 +208,7 @@
     }
 
     .story-body {
-      color: #e6ffe3;
+      color: #e8f5ff;
       max-width: 82ch;
     }
 
@@ -179,11 +222,11 @@
     .chip {
       display: inline-flex;
       align-items: center;
-      border: 1px solid rgba(57, 255, 20, 0.24);
+      border: 1px solid rgba(98, 216, 255, 0.24);
       background: rgba(57, 255, 20, 0.07);
       border-radius: 999px;
       padding: 5px 9px;
-      color: #dfffdc;
+      color: #deeffb;
       font-size: 0.82rem;
     }
 
@@ -196,12 +239,12 @@
 
     .chain div {
       text-align: center;
-      border: 1px solid rgba(57, 255, 20, 0.18);
+      border: 1px solid rgba(98, 216, 255, 0.18);
       border-radius: 9px;
       padding: 9px 6px;
       font-size: 0.76rem;
-      color: #d7ffd2;
-      background: rgba(57, 255, 20, 0.045);
+      color: #d4eaf7;
+      background: rgba(98, 216, 255, 0.045);
     }
 
     .chain div::after {
@@ -224,7 +267,7 @@
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 12px;
-      background: rgba(57, 255, 20, 0.04);
+      background: rgba(98, 216, 255, 0.04);
     }
 
     .metric strong {
@@ -250,7 +293,7 @@
       border: 1px solid var(--line);
       border-radius: 10px;
       padding: 10px;
-      background: rgba(57, 255, 20, 0.035);
+      background: rgba(98, 216, 255, 0.035);
     }
 
     .future {
@@ -264,6 +307,116 @@
       color: var(--muted);
       font-size: 0.88rem;
       margin-top: 18px;
+    }
+
+
+    .story {
+      position: relative;
+    }
+
+    .story::before,
+    .story::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      z-index: -1;
+      border: 1px solid rgba(98, 216, 255, 0.10);
+      border-radius: 50%;
+    }
+
+    .story::before {
+      width: 760px;
+      height: 180px;
+      top: 90px;
+      right: -340px;
+      transform: rotate(-12deg);
+    }
+
+    .story::after {
+      width: 520px;
+      height: 120px;
+      top: 160px;
+      right: -230px;
+      border-color: rgba(139, 125, 255, 0.09);
+      transform: rotate(17deg);
+    }
+
+    .hero-space {
+      position: relative;
+      overflow: hidden;
+      margin: 0 0 18px;
+      padding: 23px 22px 21px;
+      border: 1px solid rgba(98, 216, 255, 0.22);
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(98,216,255,.12), transparent 28%),
+        radial-gradient(circle at 15% 90%, rgba(139,125,255,.11), transparent 30%),
+        linear-gradient(135deg, rgba(7,17,39,.90), rgba(3,8,19,.94));
+      box-shadow: 0 18px 50px rgba(0,0,0,.48);
+    }
+
+    .hero-space::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      right: -88px;
+      bottom: -140px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 30%,
+          rgba(122, 212, 255, .34),
+          rgba(27, 88, 154, .28) 32%,
+          rgba(8, 30, 65, .20) 56%,
+          transparent 68%);
+      box-shadow:
+        0 -10px 30px rgba(102, 204, 255, .16),
+        inset 0 0 40px rgba(110, 195, 255, .10);
+    }
+
+    .hero-space .lead {
+      margin-bottom: 0;
+      max-width: 68ch;
+    }
+
+    .human-distance {
+      margin: 14px 0 0;
+      max-width: 70ch;
+      color: #b9cee0;
+      font-size: .95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .human-distance strong {
+      color: var(--data);
+      font-weight: 700;
+    }
+
+    .story-kicker,
+    .metric strong {
+      color: var(--accent);
+    }
+
+    .note {
+      border-left-color: var(--data);
+      background: linear-gradient(90deg, rgba(120,255,179,.07), rgba(98,216,255,.05));
+    }
+
+    .step-btn.is-active {
+      background: linear-gradient(90deg, var(--accent), #8ee7ff);
+    }
+
+    .section {
+      backdrop-filter: blur(3px);
+    }
+
+    .section h2::before {
+      content: "✦";
+      color: rgba(98, 216, 255, .60);
+      font-size: .72em;
+      margin-right: .5em;
+      vertical-align: .08em;
     }
 
     @media (max-width: 760px) {
@@ -280,20 +433,29 @@
 <body>
 <main class="story" data-story-id="spazio-economia-europea-2026">
 
-  <p class="kicker">Dorsali Europee · Dorsale Spazio · realtà 2026</p>
-  <h1>Lo spazio europeo e la sua economia</h1>
+  <section class="hero-space">
+    <p class="kicker">Dorsali Europee · Dorsale Spazio · realtà 2026</p>
+    <h1>Lo spazio europeo e la sua economia</h1>
 
-  <p class="lead">
-    Una lettura GIS dell'ecosistema spaziale europeo: istituzioni, infrastrutture,
-    centri operativi, mercato upstream e downstream e collegamenti con le altre
-    infrastrutture strategiche del continente.
-  </p>
+    <p class="lead">
+      Una lettura GIS dell'ecosistema spaziale europeo: istituzioni, infrastrutture,
+      centri operativi, mercato upstream e downstream e collegamenti con le altre
+      infrastrutture strategiche del continente.
+    </p>
+
+    <p class="human-distance">
+      Lo spazio sembra lontano. In realtà entra ogni giorno nelle nostre vite:
+      <strong>nel telefono che ci localizza, nelle previsioni del tempo, nei trasporti,
+      nell'agricoltura, nelle emergenze e nelle reti digitali</strong>.
+      Questa mappa prova a rendere visibile ciò che normalmente resta sopra le nostre teste.
+    </p>
+  </section>
 
   <div class="note">
     Questo documentario descrive esclusivamente lo stato reale documentato al 2026.
     I pulsanti comandano i layer GIS già presenti nel progetto. I layer ancora in
-    costruzione — Copernicus/EUMETSAT, accesso allo spazio, sicurezza, connettività
-    sicura e industria — verranno collegati a questa pagina quando saranno importati.
+    costruzione — industria —
+    verrà collegata a questa pagina quando sarà importata.
   </div>
 
   <div class="chain" aria-label="Filiera dell'economia spaziale">
@@ -307,7 +469,11 @@
     <button type="button" class="step-btn" onclick="prepareSpace(this)">Prepara mappa</button>
     <button type="button" class="step-btn" onclick="showESA(this)">1 · Centri ESA</button>
     <button type="button" class="step-btn" onclick="showGalileo(this)">2 · Galileo / EUSPA</button>
-    <button type="button" class="step-btn" onclick="showBoth(this)">3 · Rete spaziale europea</button>
+    <button type="button" class="step-btn" onclick="showCopernicus(this)">3 · Copernicus / Terra</button>
+    <button type="button" class="step-btn" onclick="showAccess(this)">4 · Accesso allo spazio</button>
+    <button type="button" class="step-btn" onclick="showSafety(this)">5 · Sicurezza spaziale</button>
+    <button type="button" class="step-btn" onclick="showSecureConnectivity(this)">6 · Connettività sicura</button>
+    <button type="button" class="step-btn" onclick="showBoth(this)">7 · Rete spaziale europea</button>
     <button type="button" class="step-btn" onclick="restoreMap(this)">Ripristina mappa</button>
   </nav>
 
@@ -321,13 +487,15 @@
     <h2 id="storyTitle">Lo spazio non è un punto sulla mappa</h2>
     <div class="story-body" id="storyBody">
       <p>
-        Lo spazio europeo non coincide con un'agenzia o con una costellazione.
-        È una rete di istituzioni, centri tecnici, infrastrutture terrestri,
-        satelliti e servizi che attraversa l'intero continente.
+        Quando guardiamo il cielo, quasi nulla di questa infrastruttura è visibile.
+        Eppure sopra l'Europa operano satelliti, segnali e sistemi che dipendono da una
+        rete molto concreta di centri, antenne, sale di controllo, data centre e persone
+        distribuite sul continente.
       </p>
       <p>
-        Usa i comandi sopra per far emergere progressivamente la geografia
-        operativa oggi già presente nel GIS.
+        I comandi sopra fanno emergere, un layer alla volta, questa geografia nascosta:
+        la parte terrestre dello spazio europeo, quella che rende possibile ciò che in orbita
+        appare remoto e quasi astratto.
       </p>
     </div>
     <div class="facts" id="storyFacts">
@@ -483,7 +651,121 @@
   </section>
 
   <section class="section">
-    <h2>7. Le connessioni con le altre dorsali</h2>
+    <h2>7. Copernicus: lo spazio diventa osservazione della Terra</h2>
+    <p>
+      Copernicus collega il segmento spaziale a una rete terrestre di centri,
+      organizzazioni e servizi che trasformano le osservazioni satellitari in
+      informazioni operative su atmosfera, clima, mare, territorio ed emergenze.
+    </p>
+    <p>
+      Il layer GIS comprende EUMETSAT a Darmstadt, ECMWF a Bonn e Bologna,
+      l'European Environment Agency a Copenaghen, Mercator Ocean a Tolosa
+      e il Joint Research Centre di Ispra.
+    </p>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_copernicus_eumetsat_2026</code>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>8. L'accesso allo spazio: dove l'Europa lascia la Terra</h2>
+    <p>
+      Prima che un satellite diventi un segnale, un'immagine o un servizio,
+      deve esserci un luogo da cui partire. La geografia europea dell'accesso
+      allo spazio è fatta di pochi nodi molto specializzati, collocati ai margini
+      geografici del sistema.
+    </p>
+    <p>
+      Il nodo principale è il <strong>Centre Spatial Guyanais di Kourou</strong>,
+      nella Guyana francese: politicamente europeo, geograficamente sudamericano,
+      vicino all'equatore e quindi particolarmente favorevole ai lanci orbitali.
+      Da qui operano Ariane 6 e Vega-C.
+    </p>
+    <p>
+      Più a nord, <strong>Andøya</strong> in Norvegia, <strong>Esrange</strong>
+      in Svezia e <strong>SaxaVord</strong> nelle Shetland rappresentano la nuova
+      geografia dei lanciatori leggeri, delle orbite polari, dei test e del New Space europeo.
+    </p>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_accesso_spazio_2026</code>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>9. Lo spazio va sorvegliato</h2>
+    <p>
+      Una volta raggiunta l'orbita, il problema non è soltanto far funzionare
+      un satellite. Bisogna sapere <strong>che cosa gli passa vicino</strong>,
+      prevedere possibili collisioni, seguire i detriti, osservare i rientri
+      nell'atmosfera e capire quando il Sole può disturbare comunicazioni,
+      navigazione e reti tecnologiche a Terra.
+    </p>
+    <p>
+      La sicurezza spaziale europea è quindi una rete di osservazione e calcolo.
+      Il <strong>EU SST Front Desk</strong> distribuisce servizi di sorveglianza
+      e tracciamento; lo <strong>Space Debris Office</strong> dell'ESA a Darmstadt
+      studia l'ambiente dei detriti; il <strong>NEO Coordination Centre</strong>
+      di Frascati segue asteroidi e comete vicini alla Terra.
+    </p>
+    <p>
+      A Bruxelles viene coordinata la rete europea per lo
+      <strong>space weather</strong>, mentre a Tenerife telescopi e sistemi laser
+      osservano oggetti artificiali e naturali nel cielo. È una parte dello spazio
+      che raramente vediamo: una sorveglianza continua che rende possibile usare
+      l'orbita come infrastruttura.
+    </p>
+    <div class="facts">
+      <span class="chip">SST · oggetti e collisioni</span>
+      <span class="chip">SWE · meteo spaziale</span>
+      <span class="chip">NEO · asteroidi e comete</span>
+    </div>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_sicurezza_spaziale_2026</code>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>10. Quando lo spazio diventa rete</h2>
+    <p>
+      C'è un punto in cui la Dorsale Spazio smette quasi di sembrare “spaziale”.
+      I satelliti diventano <strong>infrastruttura di comunicazione</strong>:
+      collegano istituzioni, servizi pubblici e reti critiche quando i collegamenti
+      terrestri non bastano o non sono disponibili.
+    </p>
+    <p>
+      Nel 2026 <strong>EU GOVSATCOM</strong> è già entrato nella fase operativa iniziale.
+      Il sistema non nasce da una nuova costellazione unica: mette in comune capacità
+      satellitari sicure già disponibili e le distribuisce agli utenti governativi
+      attraverso un'infrastruttura europea comune.
+    </p>
+    <p>
+      <strong>IRIS²</strong> rappresenta il passo successivo. Nel 2026 è in fase di
+      implementazione: non è ancora una costellazione operativa, ma è il progetto con cui
+      l'Unione europea punta a costruire una propria infrastruttura multi-orbitale di
+      connettività sicura. I primi lanci sono previsti dal 2029.
+    </p>
+    <p>
+      Nella geografia terrestre di questa rete compaiono la sede EUSPA di Praga,
+      la Commissione europea a Bruxelles e i futuri hub permanenti GOVSATCOM di
+      <strong>Colonia</strong> e <strong>Agios Ioannis</strong> in Grecia.
+      È qui che lo spazio comincia a sovrapporsi alla Dorsale Digitale.
+    </p>
+    <div class="facts">
+      <span class="chip">GOVSATCOM · operativo iniziale 2026</span>
+      <span class="chip">IRIS² · implementazione</span>
+      <span class="chip">Primi lanci IRIS² · dal 2029</span>
+    </div>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_connettivita_sicura_2026</code>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>11. Le connessioni con le altre dorsali</h2>
 
     <div class="crosslinks">
       <div><strong>Spazio ↔ Trasporti</strong><br>Galileo, EGNOS, aviazione, droni, logistica.</div>
@@ -496,16 +778,12 @@
   </section>
 
   <section class="section future">
-    <h2>8. Layer GIS successivi</h2>
+    <h2>12. Layer GIS successivi</h2>
     <p>
       Questi temi fanno già parte del documentario ma non vengono ancora comandati
       dalla pagina finché i relativi layer non saranno costruiti e importati:
     </p>
     <ul>
-      <li><code>03_COPERNICUS_EUMETSAT</code></li>
-      <li><code>04_ACCESSO_ALLO_SPAZIO</code></li>
-      <li><code>05_SICUREZZA_SPAZIALE</code></li>
-      <li><code>06_CONNETTIVITA_SICURA</code></li>
       <li><code>07_INDUSTRIA_SPAZIALE</code></li>
     </ul>
   </section>
@@ -545,7 +823,11 @@
 
   var SPACE_LAYERS = {
     esa: "spazio_centri_esa_2026",
-    galileo: "spazio_galileo_euspa_2026"
+    galileo: "spazio_galileo_euspa_2026",
+    copernicus: "spazio_copernicus_eumetsat_2026",
+    access: "spazio_accesso_spazio_2026",
+    safety: "spazio_sicurezza_spaziale_2026",
+    secureConnectivity: "spazio_connettivita_sicura_2026"
   };
 
   function getGIS() {
@@ -614,6 +896,24 @@
   }
 
 
+  function hideAllSpaceLayers(GIS) {
+
+    if (typeof GIS.hideLayer === "function") {
+      GIS.hideLayer(SPACE_LAYERS.esa);
+      GIS.hideLayer(SPACE_LAYERS.galileo);
+      GIS.hideLayer(SPACE_LAYERS.copernicus);
+      GIS.hideLayer(SPACE_LAYERS.access);
+      GIS.hideLayer(SPACE_LAYERS.safety);
+      GIS.hideLayer(SPACE_LAYERS.secureConnectivity);
+      return;
+    }
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+  }
+
+
   /* ============================================
    * PREPARA MAPPA
    * ============================================ */
@@ -628,6 +928,8 @@
       alert("GIS non disponibile");
       return;
     }
+
+    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
       GIS.hideAllLayersExcept(BASE_LAYERS);
@@ -648,23 +950,22 @@
     setActive(button);
 
     if (!GIS) {
-        alert("GIS non disponibile");
-        return;
+      alert("GIS non disponibile");
+      return;
     }
+
+    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
-        GIS.hideAllLayersExcept(
-            BASE_LAYERS.concat([SPACE_LAYERS.esa])
-        );
+      GIS.hideAllLayersExcept(BASE_LAYERS);
     }
 
-    /* Accendiamolo esplicitamente */
     if (typeof GIS.showLayer === "function") {
-        GIS.showLayer(SPACE_LAYERS.esa);
+      GIS.showLayer(SPACE_LAYERS.esa);
     }
 
     gotoMap(GIS, 50.0, 8.0, 4);
-};
+  };
 
 
   /* ============================================
@@ -678,27 +979,142 @@
     setActive(button);
 
     if (!GIS) {
-        alert("GIS non disponibile");
-        return;
+      alert("GIS non disponibile");
+      return;
     }
+
+    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
-        GIS.hideAllLayersExcept(
-            BASE_LAYERS.concat([SPACE_LAYERS.galileo])
-        );
+      GIS.hideAllLayersExcept(BASE_LAYERS);
     }
 
-    /* Accendiamolo esplicitamente */
     if (typeof GIS.showLayer === "function") {
-        GIS.showLayer(SPACE_LAYERS.galileo);
+      GIS.showLayer(SPACE_LAYERS.galileo);
     }
 
     gotoMap(GIS, 58.0, 8.0, 3);
-};
+  };
 
 
   /* ============================================
-   * ENTRAMBI I LAYER
+   * COPERNICUS / EUMETSAT
+   * ============================================ */
+
+  window.showCopernicus = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.copernicus);
+    }
+
+    gotoMap(GIS, 50.5, 8.0, 4);
+  };
+
+
+  /* ============================================
+   * ACCESSO ALLO SPAZIO
+   * ============================================ */
+
+  window.showAccess = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.access);
+    }
+
+    gotoMap(GIS, 42.0, -8.0, 2);
+  };
+
+
+  /* ============================================
+   * SICUREZZA SPAZIALE
+   * ============================================ */
+
+  window.showSafety = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.safety);
+    }
+
+    gotoMap(GIS, 47.0, 4.0, 4);
+  };
+
+
+  /* ============================================
+   * CONNETTIVITA SICURA
+   * ============================================ */
+
+  window.showSecureConnectivity = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.secureConnectivity);
+    }
+
+    gotoMap(GIS, 50.0, 10.0, 4);
+  };
+
+
+  /* ============================================
+   * RETE SPAZIALE EUROPEA
    * ============================================ */
 
  window.showBoth = function (button) {
@@ -708,27 +1124,27 @@
     setActive(button);
 
     if (!GIS) {
-        alert("GIS non disponibile");
-        return;
+      alert("GIS non disponibile");
+      return;
     }
+
+    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
-        GIS.hideAllLayersExcept(
-            BASE_LAYERS.concat([
-                SPACE_LAYERS.esa,
-                SPACE_LAYERS.galileo
-            ])
-        );
+      GIS.hideAllLayersExcept(BASE_LAYERS);
     }
 
-    /* Accendiamo esplicitamente entrambi */
     if (typeof GIS.showLayer === "function") {
-        GIS.showLayer(SPACE_LAYERS.esa);
-        GIS.showLayer(SPACE_LAYERS.galileo);
+      GIS.showLayer(SPACE_LAYERS.esa);
+      GIS.showLayer(SPACE_LAYERS.galileo);
+      GIS.showLayer(SPACE_LAYERS.copernicus);
+      GIS.showLayer(SPACE_LAYERS.access);
+      GIS.showLayer(SPACE_LAYERS.safety);
+      GIS.showLayer(SPACE_LAYERS.secureConnectivity);
     }
 
-    gotoMap(GIS, 55.0, 8.0, 3);
-};
+    gotoMap(GIS, 42.0, -8.0, 2);
+  };
 
 
   /* ============================================
@@ -745,6 +1161,8 @@
       alert("GIS non disponibile");
       return;
     }
+
+    hideAllSpaceLayers(GIS);
 
     if (typeof GIS.hideAllLayersExcept === "function") {
       GIS.hideAllLayersExcept(BASE_LAYERS);

@@ -1,0 +1,2221 @@
+CNOT 1.7
+
+Francesco Sisini
+
+Illustrazioni a cura di Annalisa Pazzi
+
+[image]
+
+Proemio
+
+    ANSA – 27 maggio 2018
+
+    Bruxelles.
+
+    A pochi giorni dall'entrata in vigore del GDPR, 
+    la Commissione Europea annuncia nuovi investimenti 
+    nella cooperazione digitale tra gli Stati membri.
+
+    L'obiettivo \`e migliorare la condivisione delle 
+    informazioni e la risposta coordinata alle minacce 
+    informatiche che colpiscono 
+    infrastrutture critiche e servizi pubblici.
+
+[image]
+
+    ANSA – 15 maggio 2021
+
+    Bruxelles.
+
+    L'attacco ransomware che ha colpito il sistema 
+    sanitario irlandese riaccende il dibattito 
+    sulla sicurezza delle infrastrutture 
+    digitali europee.
+
+    La Commissione Europea ha chiesto a ENISA 
+    ed eu-LISA di valutare nuove forme 
+    di coordinamento operativo tra i sistemi nazionali.
+
+    Secondo fonti comunitarie, l'incidente dimostra 
+    che una vulnerabilità locale pu\`o rapidamente 
+    assumere dimensioni continentali.
+
+[image]
+
+    Email interna – eu-LISA
+
+    7 marzo 2022
+
+    Oggetto: Impatti della crisi ucraina
+
+    A seguito dell'invasione russa dell'Ucraina \`e stato
+    richiestoun monitoraggio rafforzato
+    delle infrastrutture digitali europee.
+
+    Si raccomanda di mantenere attivi i sistemi
+    legacy di interscambio dati fino al completamento
+    delle verifiche di sicurezza.
+
+    Le procedure di dismissione previste per il terzo trimestre 
+    vengono sospese.
+
+
+                                         
+                                    Infrastructure Coordination Office
+
+[image]
+
+    ANSA – 22 dicembre 2023
+
+    Bruxelles.
+
+    Dopo una serie di attacchi contro enti pubblici
+     e operatori di servizi essenziali, il Parlamento 
+    Europeo approva l'attuazione della direttiva NIS2.
+
+    Le nuove disposizioni rafforzano il ruolo di ENISA 
+    e introducono obblighi pi\`u stringenti 
+    per la protezione delle infrastrutture 
+    digitali strategiche.
+
+    Secondo gli osservatori, il numero crescente 
+    di sistemi informativi interconnessi rende 
+    sempre pi\`u difficile separare le competenze 
+    tra sicurezza nazionale e sicurezza europea.
+
+[image]
+
+    Estratto dal Rapporto della Corte dei Conti Europea
+
+    14 aprile 2025
+
+    L'analisi evidenzia una crescente sovrapposizione
+    tra piattaforme informative nazionali, sistemi europei
+    di cooperazione e infrastrutture digitali condivise.
+
+    In numerosi casi i nuovi servizi sono stati
+    implementati senza la completa
+    dismissione dei precedenti.
+
+    Persistono dipendenze tecniche da sistemi sviluppati
+    oltre dieci anni fa, la cui sostituzione comporterebbe
+    rischi operativi significativi.
+
+    L'ecosistema digitale europeo presenta oggi
+    caratteristiche di elevata resilienza,
+    ma anche di crescente complessità.
+
+[image]
+
+    European Anti Poverty Network — EAPN
+    Social Fragmentation Monitor — 2036
+
+    In diverse aree urbane europee si registra
+    la crescitadi insediamenti abitativi
+    non censiti, spesso collocati
+    in edifici dismessi, margini agricoli
+    e strutture pubbliche
+    uscite dall’uso amministrativo.
+
+[image]
+
+    European Environmental Bureau
+    Urban Adaptation Assessment — 2038
+
+    In alcune periferie europee l’adattamento
+    climatico non assume la forma prevista
+    dai programmi pubblici,ma quella di
+    economie locali di necessità: recupero alimentare,
+    orti residuali, energia intermittente
+    e riuso di edifici dismessi.
+
+[image]
+
+[image]
+
+    Caritas Europa
+    Nota interna sul lavoro di prossimità — 2040
+
+    Le équipe territoriali segnalano un aumento di
+    presenze stabili in strutture abbandonate, con
+    nuclei non sempre registrati e bisogni che
+    intrecciano alimentazione, salute, documenti,
+    mediazione e protezione personale.
+
+[image]
+
+    Associazioni contro la povertà, organizzazioni
+    per il supporto ai pi\`u fragili,
+    programmi europei di contenimento
+    dell’alienazione urbana.
+
+    Tutto sembra cos\`i patologico, cos\`i amministrato,
+    come se ogni vita ai margini dovesse prima
+    diventare un problema
+    per poter essere vista.
+
+    Eppure anche gli ultimi
+    hanno un posto che chiamano casa.
+
+[image]
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+L’amore di una donna per un uomo è più forte del suo desiderio di
+affermazione personale? Le scelte ideologiche si applicano a tutte le
+scale o solo ad alcune? La libertà paga o paghi per averla?
+
+Tieni presente queste tre domande mentre leggi il mio resoconto di
+questa avventura che vede unite Laura e Caterina. Ho cercato in ogni
+modo di non condizionare il tuo giudizio; ti chiedo in cambio di
+pensarmi quando avrai finito di leggerlo, di farlo con intensità, in
+modo che l’universo abbia le tue risposte.
+
+Lacrime in cameretta
+
+Alice resta chiusa in camera, al riparo, senza che nessuno possa vedere,
+minimizzare, giudicare.
+Prende un quaderno, una penna e la chitarra che le ha regalato suo padre
+dopo il saggio di flauto.
+Non l’ha studiata molto, ma conosce gli accordi maggiori e quelli
+minori, e qualcosa su quelli di settima nona. A quanto pare sa anche
+come si scrive una canzone partendo da un testo; non uno di quelli più o
+meno scontati che si trovano in streaming, ma un testo che sa parlare a
+una sola persona, che sa avvicinarla con delicatezza, farle aprire le
+porte del cuore per poi piantarci un coltello.
+Già, proprio come ha fatto Caterina con lei.
+
+[image]
+
+Questa è Alice, quasi grande ma ancora adolescente; a vederla nel suo
+vestitino skater non sembra capace di parole così taglienti.
+
+[image]
+
+Vendetta in SOL maggiore
+
+Caterina è la sorella di Alice. Non abita con lei. È più grande e
+possiede un appartamento. In camera sua ha una poltroncina, e su quella
+è seduta Laura, che la sta aiutando a sbrigare un po’ della
+corrispondenza: decine di lettere arretrate a cui rispondere.
+
+[image]
+
+Lettere: messaggi scritti di pugno e consegnati nella buchetta di casa
+per mezzo di un servizio postale. Per molte persone hanno un significato
+simbolico: indicano l’appartenenza al gruppo di chi non ha dimenticato.
+In molti si sono convinti che la carta non sia il male del mondo ed
+esprimono con le parole il loro dolore per il pianeta che soffre,
+scrivendole con la matita, sulla carta. Una matita fatta di legno sulla
+carta di cellulosa. Parole fatte di albero, spedite a destinatari
+incaricati di sorreggere il peso dell’angoscia collettiva.
+
+  «Cara Caterina,
+  ti scrivo con le mani sporche di terra e il cuore in fiamme.
+  Ogni giorno mi sveglio con l’ansia che il cielo sia un po’ più basso,
+  che il vento porti con sé un alto grido soffocato di una specie che
+  non c’è più.
+  Eppure continuo a lottare, perché se ci sei tu,
+  tu che hai il coraggio che io non ho...»
+
+«Vuoi che continui, Cate? Non mi sembra aggiunga nulla di nuovo alla
+discussione…»
+«Ma sì, dai, mi sembra così angosciata, poverina. Leggimi cosa scrive.»
+
+Caterina sceglie dall’armadio i vestiti da mettere in valigia.
+
+[image]
+
+«...allora io posso», Laura riprende a leggere, «ancora sperare...». Si
+ferma e osserva Alice, seduta sul letto, quasi di fronte a lei. Sul suo
+viso si alternano sorrisi, lacrime e smorfie, mentre il corpo è
+tranquillo, a gambe incrociate, perfettamente a suo agio nell’ambiente
+familiare della camera di sua sorella.
+
+Una camera ordinata e spaziosa, un insieme di parti con una chiara
+relazione; un piccolo ecosistema. Dalla camera di una ragazza si può
+capire molto di lei.
+
+[image]
+
+L’ampio spazio al centro racconta del suo cuore e della libertà di cui
+necessita per battere. I mobili accostati alle pareti testimoniano il
+bisogno di organizzazione e sicurezza fisica e affettiva. Il baricentro
+emotivo è il letto, proprio dove si trova Alice in un punto di
+equilibrio instabile. Dalla poltroncina Laura ne è attratta, si avvicina
+per sbirciare cosa stia facendo, ma Alice, con una piccola rotazione, si
+sottrae al suo sguardo.
+
+«Scusami, sai!» la rimprovera per l’indiscrezione. Poi incolla il testo
+nella sezione Lyrics:
+
+Lyrics
+
+  She leaves and I stay
+  like a folder left open
+  half full, half erased
+  I blink, and she’s already gone
+
+«Qui capirai quanto ci sono rimasta male» sussurra con un filo di voce.
+
+Style Description
+
+  Bilingual emotional synth-pop with ambient textures, cinematic flow,
+  and AI female vocals.
+  Slow build. Glitchy, dreamlike, bittersweet. Like diary pages sung in
+  code.
+
+«Non preoccuparti Laura, lasciala perdere, è arrabbiata con me perché
+vado da Mark.»
+
+«Non sono arrabbiata, solo che voglio finire una cosa.» Alice risponde
+senza sollevare lo sguardo dal suo lavoro.
+«Ha ragione, sono io che sono troppo curiosa. Comunque si è fatto un po’
+tardi, è ora che vado a prendere Valentina.»
+«No, aspetta Laura, solo un attimo, ti prego.» Alice ora la guarda: «Ora
+la scarico, colleghiamo le casse e voilà!»
+
+Le note di pianoforte sintetico arpeggiano velocemente un motivo in Sol
+maggiore e dopo sei battute, un respiro sussurrato annuncia il primo
+verso:
+
+Verse 1
+
+  She leaves and I stay
+  like a folder left open
+  half full, half erased
+  I blink, and she’s already gone
+
+Alice commenta la sua composizione: «Questa è la scena prima della
+crisi.»
+
+[image]
+
+Verse 2
+
+  She goes to New York
+  I stay with a lamp shaped like a heart
+  plastic love, three settings
+  warm, cold, ambient — mine is blinking
+
+«E qui voglio vederti piangere!» E sembrerebbe sadica se non stesse
+piangendo lei per prima.
+
+  I’m not angry, I’m just here
+
+Caterina continua ad ordinare le cose da mettere in valigia, mentre una
+lacrima le riga il viso. Laura la vede scendere piano fino alla guancia;
+lì Caterina la ferma, pulendosi con i polpastrelli.
+«Certo che le semplifichi proprio la partenza, tu.»
+Caterina appoggia l’asciugacapelli e si avvicina alla sorella per
+abbracciarla.
+«Non ci provare!» le urla Alice.
+Si ferma, la guarda. Non reagisce. È abituata. Alice si libera le
+ginocchia dal PC e lo poggia sul letto.
+
+«Io esco, mangio qualcosa con le mie amiche.»
+
+Caterina si asciuga gli occhi. Ormai è inutile simulare.
+
+«Va bene, ma torna a casa per le dieci. È l’ultima sera che passiamo
+insieme.»
+Laura si alza e si sistema i vestiti: «Devo andare anch’io, Cate.»
+«Va bene Laura, grazie di essere venuta.»
+«Ciao Cate. Ciao Alice.»
+Prima di chiudere la porta, Laura ha un attimo di esitazione. C’era
+ancora una cosa, anzi, era il motivo principale per cui aveva raggiunto
+Caterina.
+
+«Ma non sai ancora nulla del visto?»
+«Non preoccuparti, Laura. Vedrai che non ci saranno problemi. In ogni
+caso, se ci fossero difficoltà ti chiamo.»
+
+Saluta l’amica con un bacio e corre a prendere Vale. Per fortuna manca
+ancora qualche anno alla sua adolescenza.
+
+[image]
+
+Si sta facendo sera
+
+Caterina è impegnata nei preparativi per il suo volo transoceanico con
+cui spargerà dieci quintali di CO₂ nell’atmosfera. Giovanni attende con
+Ipparchia un po’ di cibo recuperato dalla distribuzione ordinaria. La
+sua impronta di carbonio è bassa per necessità, non per scelta. Vive
+nell’ex convitto "San Giorgio", senza i comfort di un’abitazione
+urbanizzata, e produrre più CO₂ di quella che espira è quasi
+impossibile.
+
+Ipparchia è seduta sotto una quercia vicino all’uscita sul retro, la
+dumpster zone. Da un momento all’altro i commessi usciranno per le
+pulizie e quello sarà il segnale. Giovanni aspetta con calma, pronto a
+contrattare qualche prodotto in scadenza.
+La porta si apre: Ipparchia capta il segnale e si fa avanti. Giovanni
+attende, non si muove subito: aspetta un cenno di invito. Ripensa alle
+parole di sua madre, un mantra: La prima regola è la buona educazione.
+Quando la ragazza lo chiama, Giovanni ricambia con un sorriso. Lei
+rientra per uscire di nuovo con un cartone che non deve essere troppo
+pesante a giudicare dalla nonchalance con cui lo destreggia.
+
+[image]
+
+Lo appoggia al pianerottolo delle scale di servizio. Ipparchia tira
+Giovanni e i due si avviano verso di lei, in equilibrio tra zelo e
+prudenza. Lei li aspetta e mentre si avvicinano accende una sigaretta. È
+tanto giovane da credersi immortale.
+
+«Ciao Giò, ciao bella!»
+
+Ipparchia accetta la carezza e ricambia il saluto ricevuto.
+
+«Ti fa male fumare», le dice sorridendo.
+
+Lei lo guarda per un istante. Tira ancora qualche boccata poi la spegne.
+
+«Torno dentro!»
+«Ti ho rovinato la sigaretta.»
+«Macché, devo riprendere il turno.» Apre il portone. «A presto, vi
+aspetto.»
+«Grazie, prendo il pacco!»
+
+Adesso deve portare il pacco al convitto. La strada non è lunga, ma
+Giovanni deve ricordarla a memoria. Nella mente ha catalogato strade,
+stradelli, edifici, alberi e piante, organizzati in strati come nelle
+mappe governative digitali.
+
+La vegetazione però cresce rapidamente, l’edera inghiotte metri di
+strada ogni mese, i rami delle siepi invadono i marciapiedi, e la
+topografia ufficiale resta sempre un passo indietro rispetto al mondo
+vivo.
+
+Ma tra i neuroni naturali di Giovanni si annidano connessioni che lo
+strato cognitivo del tecnocene non ha ancora registrato.
+
+Lui ha esplorato siepi campestri, corridoi ecologici, fasce ripariali e
+margini di bosco. Quei luoghi sono lì, dentro di lui, con i loro merli,
+le capinere, i ricci, le arvicole, i fagiani, i ramarri e gli
+impollinatori. I nidi di quegli insetti non sono presenti nei database,
+ma il Prunus cerasifera fruttifica anche grazie a loro, e Giovanni ne
+mangia chili ogni estate.
+
+Questa è la mappa che Giovanni ha nel cervello: odori, superfici,
+distanze misurate a passi e colpi di bastone. Una mappa che va
+aggiornata di continuo: dove la memoria vacilla, ci sono il fiuto e gli
+occhi di Ipparchia.
+
+[image]
+
+Ipparchia è al suo fianco da quando Giovanni è diventato un senza fissa
+dimora. Anche lei vagava sola e il loro incontro sarebbe stato degno di
+una nota nei rotocalchi se qualche giornalista lo avesse testimoniato.
+Questa è la vita di strada, capita di tutto, ma nessuno se ne cura.
+Ipparchia non lo tradirebbe mai.
+
+Un fagiano, disturbato dalla loro presenza, esce da una siepe e gli
+taglia la strada. Giovanni sente solo un fruscio veloce dell’erba,
+Ipparchia si lancia dietro al fagiano e i due scompaiono nel corridoio
+ecologico.
+
+Giovanni è solo, con uno scatolone in mano e la sua compagna da
+ritrovare prima che corra in un luogo fuori dalle sue mappe.
+
+Il silenzio si stende, pesante, tra le erbacce. Giovanni ascolta il suo
+stesso respiro, poi si rimette in cammino.
+
+Il ricorso
+
+Ed eccoci a casa di Laura. È arrivata in tempo a prendere la sorella e
+ora Valentina sta finalmente sul tappeto con le sue matite e i suoi
+pennarelli. Laura invece è al lavello che prepara la cena. Con un
+orecchio teso cerca di decifrare i borbottii e i sussurri che riesce a
+captare. Mezze frasi, accenni a mondi fantastici. Continenti a forma di
+frutta, paesi costellati da piccoli laghetti, villaggi fatti solo da
+alberi, terre aride e disastrate dove vivono popolazioni tornate alla
+barbarie. Tutto in un foglio di una cinquantina di centimetri per
+quaranta.
+
+Poi, quando l’odore delle zucchine raggiunge il naso della piccola, un
+pensiero più concreto sospende temporaneamente la sua attività,
+lasciando la priorità alla contingenza: «Cosa prepari per cena?»
+domanda.
+«Tu cosa avresti voglia di mangiare?»
+
+[image]
+
+«I bastoncini fritti! Prepari i bastoncini fritti?»
+«Infatti.»
+«Davvero ci sono i bastoncini?»
+«No, c’è il riso integrale con le verdure.»
+«Perché sempre le verdure?»
+«Perché ce ne abbiamo nell’orto, sono buone, fanno bene e non escono dal
+tubo.»
+«Blaa...il pastone...» Valentina fa una smorfia. «Ma io ho voglia di
+bastoncini. Quando li mangiamo?»
+«Venerdì. A fine settimana acquisterò del cibo. Dobbiamo mangiare tutti
+i principi nutritivi.»
+
+Da sotto il tavolo Rocky si alza e si avvicina alla porta. Laura lo
+segue con lo sguardo: «Cosa hai visto?»
+Rocky abbaia. Laura si ferma di tagliare: «Guarda, arriva Caterina. Non
+farle vedere che fai i capricci per la cena.»
+«Non è vero che faccio i capricci.» Intanto l’amica è arrivata alla
+porta, bussa e fa scorrere l’anta di vetro, ma si arresta sull’uscio.
+«Ciao, Caterina. Vieni dentro», la invita Valentina.
+«Ma guarda che confusione!» La voce di Caterina ha qualche accento di
+rimprovero. «Penne, pennarelli», continua, «lapis, fogli da disegno mi
+sbarrano la strada e un Cerbero feroce non mi lascia passare! Come posso
+entrare, signorina?»
+«Salta!», le risponde, «E tu seduto, Rocky!».
+
+[image]
+
+Si alza dal tappeto, prende Caterina per mano, la trascina dentro con un
+piccolo salto sopra la distesa mentre Rocky torna a sdraiarsi sotto il
+tavolo. Valentina lo guarda: «Non ha tre teste...» protesta.
+Il grande foglio che hanno appena saltato attira l’attenzione dell’amica
+che vi si inginocchia vicino.
+
+«Cosa disegni? È un compito?»
+Valentina scuote veloce la testa da una parte all’altra come una
+campana: «Anche, ma non solo. Stavo disegnando una cosa. Vedi questo
+mare?»
+Caterina si avvicina: «Si, lo vedo» conferma.
+«Divide due regni. Da una parte ci stanno i buoni» ed indica il disegno
+di due uomini visibilmente forti, «dall’altra loro, che sono i cattivi.»
+Questa volta sposta il dito su tre figure maschili con tratti feroci.
+
+«Fanno proprio paura» conferma Caterina cercando Laura con lo sguardo.
+Lei è ancora intenta alla preparazione della cena, ma colta una vena di
+preoccupazione nella voce dell’amica, la tranquillizza: «Fanno paura
+anche a me,» le conferma, «ma ha trovato la libreria manga dei miei e
+adesso non la ferma più nessuno.»
+Caterina non risponde, Valentina le ha preso un braccio tirandosela
+vicina. «Ti fanno paura? Davvero?»
+«Il tuo disegno è bello, ma loro sono davvero brutti. Quindi?» Le
+chiede, «In che regno sarebbero questi brutti mostri?»
+Valentina appoggia il foglio, «Loro abitano nella terra degli Shura.»
+«E dove si trova?» le chiede.
+Lo riprende in mano e indica la regione dove abitano gli eroi buoni: «Se
+questo è il Giappone, questa cosa sarà mai?»
+Le orecchie di Laura si tendono verso la sorella: «Non fare la maestrina
+con Caterina.» Valentina la ignora e continua: «Dai, che paese si trova
+a sinistra del Giappone?»
+«Allora... abbiamo detto che questo è il Giappone? Direi che questa
+dovrebbe essere» attende un attimio, «dovrebbe essere la Corea» esclama,
+sicura della correttezza della risposta, ma la delusione non tarda ad
+arrivare.
+«Hai studiato geografia da piccola? Lì c’è la Cina» e ciò detto indica
+con il dito la vicinanza tra le due terre. «Hai ragione Vale, la Corea è
+un po’ più in là.» Caterina si inginocchia, pronta ad ascoltare la
+storia di quei luoghi che sicuramente non è ancora conclusa. Valentina
+infatti non sembra proprio aver esaurito gli argomenti:
+
+«Ecco, vedi, qui in Giappone invece sono buoni. Loro studiano sempre le
+arti marziali, in questa scuola» e indica una casetta. Caterina avvicina
+gli occhi al disegno.
+
+«Sì? E in questa scuola c’è anche un maestro?»
+«Certo, è il padre dei tre fratelli. Adesso ti spiego bene» e parlando
+si posiziona veloce un cuscino sotto le ginocchia, ma viene interrotta
+dalla sorella: «Vale, forse Caterina doveva dirmi qualcosa. Sentiamo?»
+Caterina sorride, «Si, ma lascia prima che mi racconti. È passato tanto
+tempo da quando Alice mi mostrava i suoi disegni. Non pensavo mi
+mancasse così tanto.»
+«Anche Alice fa i disegni? La prossima volta voglio vederli.»
+«Li faceva da piccola, tesoro, adesso mi scrive le canzoni.»
+«Che bello, allora le voglio ascoltare!»
+Caterina le sorride e appoggia il disegno sul tavolo seguita dallo
+sguardo corrucciato di Valentina che prontamente lo va a riprendere.
+«È andata male.» Il tono è quello riservato a Laura, non parla più con
+Valentina. «Mi hanno negato il visto. Ho tempo fino alle ventiquattro
+per fare ricorso.»
+Laura appoggia il coltello sul tagliere e guarda verso l’amica:
+
+«Quando l’hai saputo?»
+«Due ore fa eri a casa mia e non lo sapevo ancora... quindi?»
+«Hai ragione, Cate, scusami.»
+«No, scusami tu. Sono stata acida. È che sono disperata.»
+«Ma hai già sentito Mark?»
+«Sì, è stato lui a dirmi della possibilità di fare ricorso.»
+«Oh, Laura, come facciamo?»
+
+Laura si avvicina all’amica e la prende delicatamente per le braccia:
+
+«Cate, ne abbiamo passate di peggio. Se il tempo stringe, vediamo prima
+il ricorso, poi mangiamo.»
+Valentina le ascolta distrattamente: «Non ceniamo?» chiede, ma non
+ricevendo risposta dimentica la fame come solo i bambini sanno fare e
+ritorna a colorare.
+In camera da letto ha un tavolino basso, lo prende insieme al suo
+computer portatile e lo appoggia tra il tappeto e il frigo: «Mi fai un
+po’ di posto Vale?»
+«Cosa fate con il computer? Posso vedere?»
+«Cose da grandi» le risponde Laura. Valentina non replica, si siede a
+fianco di Caterina. Laura collega il dispositivo ad una rete dati
+separata da quella domestica:
+
+«Vediamo, quindi Mark lavora per la SAGA-M, giusto?» La connessione è
+stabilita e Laura accede a un servizio di informazioni basato su un
+protocollo dati testuale, un po’ datato ma ancora in uso. È alla ricerca
+della SAGA-M. Caterina allunga il collo verso lo schermo: «Sì, perché?
+Cosa stai cercando?»
+«Voglio capire cosa le interessa e cosa invece la preoccupa...»
+«Laura ti prego sii più chiara... mi stai facendo salire l’ansia, non
+guardiamo la procedura per il ricorso?»
+Laura chiude alcune schede poi avvia un monitor a caratteri, uno sguardo
+rapido all’amica: «Scusami... hai ragione. Adesso... vedi, tu non sei
+mai stata negli Stati Uniti, giusto?»
+«No, è...», si ferma, «sarebbe la prima volta», risponde Caterina.
+Valentina si sdraia sul tappeto, prende un pennarello e si disegna un
+cuore sulla mano.
+«Quindi non hai commesso nulla là che possa precludere il tuo visto...
+Però è possibile che un’informazione su di te attivi un qualche flag di
+allarme...»
+«Ma la privacy?»
+«...La privacy riguarda la tua sfera privata, non quello che fai in
+pubblico...»
+«Non capisco bene il ragionamento, Laura...» L’attenzione per un attimo
+è attratta da Valentina, si è tolta le calze e si sta colorando anche i
+piedi, Caterina non vorrebbe, ma le scappa da ridere. Si riprende, è
+preoccupata per il suo viaggio: «Ti servono informazioni per fare
+ricorso?»
+«La possibilità di fare ricorso è più apparenza che sostanza, nella
+pratica è un algoritmo che decide e se non capiamo davvero cosa abbia
+scatenato il rifiuto...» Laura marca alcune schede dati per
+l’elaborazione, «ecco la scheda della compagnia...»
+
+EU Transparency Register Entry extract / Interests represented
+Reference: EUTR/SAGA-M/ENER/2041-06 Registrant: SAGA-M European Affairs
+Office
+
+Settore: energia, reti intelligenti, resilienza urbana. Policy UE: Green
+Deal, AI Act, infrastrutture energetiche. Comunicazione: autonomia
+abitativa, mobilita’ individuale, riduzione della dipendenza da nuclei
+familiari stabili.
+
+Campagne: - Single by design - Non devi nulla a nessuno - La cura e’ un
+servizio, non un legame
+
+«Quindi?»
+Laura inspira profondamente, guarda l’amica: «Cosa c’entra il "Single by
+Design" con il Green Deal?»
+«Laura, mi stai confondendo...»
+La fissa per un istante, poi abbassa lo sguardo sullo schermo.
+«Anche io sono confusa, ma se non hai commesso reati e non sei mai stata
+là, il tuo visto è compromesso dalla tua relazione con Mark e dal suo
+lavoro... Almeno... Comunque adesso vediamo la procedura per il ricorso,
+ma poi dobbiamo individuare il nodo che ti ha bloccata, altrimenti il
+ricorso sarà inutile.»
+
+Ipparchia dove sei?
+
+«Ippa! Ippa! Ipparchia!»
+La chiama forte, ma lei non torna.
+
+Si siede sul muretto di cinta di un edificio in rovina che non ha mai
+esplorato, per via di un odore che lo preoccupa: una punta sottile di
+solvente, insidiosa, che ogni volta gli fa prudere le narici come se
+volesse raggiungergli il cervello.
+
+Non sa cosa sia stato abbandonato oltre quel muretto e non ha mai
+cercato di scoprirlo.
+
+Appoggia il cartone sulle ginocchia e aspetta.
+
+Una volta, poco dopo aver perso la vista, gli dissero di attendere il
+medico: sarebbe arrivato a momenti. Giovanni attese due ore, seduto
+buono, finché un’infermiera si accorse di lui e lo accompagnò alla
+visita.
+
+Da allora aveva imparato che “a momenti” può voler dire molte cose.
+Così, quando deve aspettare, recita i suoi autori preferiti. Spesso
+Schopenhauer, L’arte di ottenere ragione.
+
+«Stratagemma numero uno...»
+
+Lo ripete tutto e, alla fine, sa che è passato circa un minuto. Se fosse
+stato un matematico avrebbe contato: uno, due, tre. Ma la matematica non
+era la sua passione.
+
+Arriva allo stratagemma trentotto: è passata un’ora, e Ipparchia non è
+ancora tornata.
+
+Dietro di lui, un luogo ignoto. Alla sua destra, la strada da cui è
+arrivato; a sinistra, la strada verso casa. Davanti, una via
+semi-inesplorata costeggiata da una fascia ecologica, il margine vivo in
+cui Ipparchia deve essersi infilata seguendo il fagiano. È la direzione
+più probabile. Si incammina, continuando a chiamarla.
+
+La strada diventa bianca: l’asfalto finisce e comincia la terra battuta.
+La fascia ripariale, però, non si interrompe, continua come un corridoio
+di odori, il percorso più probabile lungo cui Ipparchia può aver
+proseguito l’inseguimento.
+
+Quando era scattata dietro al fagiano erano circa le otto di sera; ora è
+quasi buio. Per Giovanni cambia poco, ma i cani usano anche la vista.
+
+Arriva a un incrocio: la strada bianca curva a destra e la fascia si
+interrompe, mentre davanti a lui l’asfalto ricomincia.
+
+«Ippa! Dove sei andata?»
+
+Giovanni tiene la destra e si addentra in campagna. Gli alberi
+continuano a costeggiare la strada, ne conta nove, poi all’improvviso
+l’asfalto ritorna.
+
+[image]
+
+Attende qualche minuto. Sente passare un veicolo. La strada che ha
+incontrato taglia quella bianca: deve essere una via principale.
+
+Sta per tornare indietro, quando dall’altra parte arriva un latrato
+familiare.
+
+«Ippa!»
+
+Attraversa senza esitazione.
+
+«Ippa!»
+
+Le va incontro. Lei rimane ferma. Quando la raggiunge, capisce: il
+guinzaglio di corda è rimasto incastrato in qualche anfratto. Giovanni
+lo libera facilmente.
+
+Ipparchia gli lecca la mano.
+
+Ma le lingue sono due.
+
+Un altro cane è accanto a lei.
+
+«C’è un altro cane qui...»
+
+Chiama più volte:
+
+«C’è un cane qui! È di qualcuno questo cane?»
+
+Nessuna risposta.
+Aspetta ancora un poco. Non abbastanza da arrivare di nuovo allo
+stratagemma trentotto.
+«Andiamo, Ippa.»
+
+Giovanni si rivolge solo a lei, ma la coppia ha fatto un acquisto:
+qualcuno li segue scodinzolando.
+
+Raggiungono di nuovo la strada bianca. Giovanni si inginocchia e
+accarezza il nuovo arrivato.
+
+«E tu? Ci segui?»
+
+Si gratta la testa.
+
+«In ogni caso, non saprei come altro aiutarti per ora. Va bene: andiamo
+a casa, poi vedremo.»
+
+Ripercorre la strada dell’andata, passo dopo passo, rumore dopo rumore,
+odore dopo odore.
+«Coraggio, è tardi, ma si va a cena.»
+
+Giovanni regge il pacco per le ultime decine di metri che lo separano
+dal loro rifugio.
+L’odore delle rose dell’ultima abitazione si mescola alla lavanda
+spontanea che cresce nel parco abbandonato dell’ex convitto.
+Avanza tra spine di more e ciuffi di rosmarino, che pungono le gambe e
+coprono l’odore di Ippa e dell’altro cane. Un dedalo verde che è la sua
+protezione segreta.
+
+Le braccia gli pesano, ma ormai ce l’ha fatta.
+
+Tra le foglie filtra un filo di luce. Viene da una candela accesa nel
+convitto, passa tra le assi che chiudono una finestra senza vetro e
+arriva fino a lui. Poche cose come una luce accesa sanno dire “casa”
+senza parole.
+
+Ma Giovanni non la può vedere. Come non può vedere altre cose intorno a
+lui, ma ci sente benissimo: un rametto secco si spezza a pochi metri da
+lui. Non è un gatto né un riccio, troppo leggeri.
+«Ehi, c’è qualcuno?»
+Silenzio.
+
+Nessuna risposta.
+
+Fa un passo verso la scala antincendio, ma alle sue spalle una voce lo
+ferma:
+«Appoggia il pacco, amico.»
+
+Giovanni resta immobile.
+«Mi hai trovato.»
+Lo dice lentamente, come una battuta preparata da anni.
+
+Poi posa il pacco sul primo pianerottolo e lascia scorrere la mano verso
+il fianco, quasi senza muoversi.
+
+«Io non lo farei.»
+La voce è leggermente coperta dal nuovo amico di Ipparchia che ringhia
+sommessamente. Ha il pelo irto, le zampe piantate a terra, lo sguardo
+fisso verso il buio alle sue spalle.
+
+«Tu non sei me» dice Giovanni. «Perché tu sei...»
+Un passo nel buio. Qualcosa striscia tra le foglie secche, appena oltre
+il cerchio di luce.
+
+Giovanni stringe le mascelle.
+
+Ipparchia si sdraia, l’altro cane ringhia più forte.
+
+Poi la voce, ferma e bassa:
+
+«…un uomo morto.»
+
+Un colpo secco, come legno che batte sul metallo, rompe il silenzio.
+
+Che lavoro fa Mark?
+
+«Bene, allora lo inoltriamo.»
+«Sì... grazie.» La voce di Caterina è un sospiro. Con un dito Laura
+chiude la procedura e con una mano il computer portatile. «Questa è
+fatta, però non è sufficiente. Bisognerà sbloccare la situazione,
+altrimenti vedrai che te lo negheranno ancora.»
+«Grazie Laura, vediamo cosa succede allora.»
+«Sì, vediamo. Adesso però ceniamo.» Si gira verso la sorella che tra le
+dita dei piedi ha infilato i cappucci dei pennarelli. Trattiene un moto
+di impazienza, li sfila e tappa i colori: «Vale vai a lavarti le mani...
+e i piedi!»
+«Deve venire anche Caterina però!»
+«Sì, vengo anche io. E Cerbero? Non si lava le zampe?» Laura sorride
+all’amica, Caterina è più rilassata e si vede. A volte Caterina si agita
+per un nonnulla e si tranquillizza per ancora meno.
+Laura, ora sola in cucina, aggiunge piatto, posate e bicchiere per
+l’amica. Guarda il computer sul tavolino, la aspetta un dopocena in una
+rete di connessioni impalpabili che Gibson avrebbe definito cyberspazio.
+
+Rocky è seduto ai piedi di Cate. Gli occhi sono attenti, lui ha già
+dimenticato ogni boccone trafugato e briciola caduta. Conta solo il
+presente. Segue ogni movimento della cena che, suo malgrado, è ormai
+giunta al termine. «Bene», dice Laura mentre si alza per sparecchiare,
+ma non fa in tempo a voltarsi che la sorella scappa sul tappeto per
+finire i suoi disegni. Un «Torna subito qui» va a vuoto ed è Caterina
+che l’aiuta con i piatti.
+«Dì quello che hai in mente, sono tre minuti che asciughi lo stesso
+bicchiere.»
+Lo ripone nella credenza e si lascia andare: «Lo sapevo che il lavoro di
+Mark prima o poi mi avrebbe ostacolata.»
+«Cosa ti preoccupa di più, il corso o Mark?»
+«Non lo so, però non sono contenta. Sarebbe un problema anche spiegare
+che non ho avuto il visto...»
+«Ma nel tuo fascicolo alla Pet-Micro-Robots risulta il tuo passato di
+attivista?»
+«In parte... certo non gli ho raccontato dell’arresto.»
+Laura spalanca gli occhi e per un attimo lascia scorrere l’acqua senza
+fermarla: «Cosa? Ti hanno arrestata?»
+«Sì, ci hanno portato alla centrale della Polizia Locale, ma non siamo
+stati denunciati, solo... come si dice, ci hanno preso le generalità.»
+«In che occasione?» Laura deve approfondire perché forse la spiegazione
+è vicina.
+«Cioè cosa stavamo facendo? Niente, una manifestazione contro i nuovi
+impianti di micro reattori in aree T1.»
+«Tre anni fa? La protesta contro la SAGA-M?»
+Caterina si stringe nell’imbarazzo: «All’epoca il nome non mi diceva
+nulla... ma sì, in effetti erano della SAGA-M.» Appoggia il piatto sulla
+tavola. «Quindi? È per quello?» le mani le tremano. Laura chiude l’acqua
+del lavello e con le mani ancora bagnate stringe le sue: «Aspetta, stai
+tranquilla...»
+«Sarebbe il colmo, non posso andare al mio corso perché non vado a genio
+alla compagnia del mio ragazzo.»
+«Cate...»
+«...scusami, non ce l’ho con te. Adesso mi calmo.»
+«Cate, non è ancora tutto perduto.»
+«Ma Laura: potrei perdere il mio lavoro. Tu sai che avventura abbiamo
+vissuto per averlo[1].»
+Uno sguardo, un sorriso e si abbracciano: «Appunto, ce la siamo cavata,
+no?»
+Dal tappeto Valentina si gira per guardarle: «Dovete compiere un’altra
+missione? Posso venire anche io?»
+Valentina ha le palpebre pesanti. «Vai a lavare i denti che è quasi
+ora...»
+«Non voglio andare a letto» protesta. «Dai, dimmi cosa dovete fare.»
+«Te lo dico domani, adesso corri in bagno.»
+Caterina si toglie il grembiule e sistema le maniche della camicetta.
+Espira forte, come ha imparato dal maestro di yoga: «Sì, vado anche io.
+Fra poco torna a casa anche Alice.»
+Laura le accarezza i capelli: «Un episodio di tre anni fa che risulta
+ancora visibile è... non dico strano ma, particolare.»
+«Quindi non è quello?»
+«Potrebbe, ma non dovrebbe. La metto a letto poi cerco di capire, ok? Tu
+vai a casa da Alice, se mi serve qualcosa ti chiamo.»
+«Ma Laura, non volevo disturbarti ancora.»
+«Non preoccuparti, è solo allenamento per il prossimo esame.»
+
+Casa di Laura è un po’ in periferia, una zona scura, con poche luci
+artificiali. Caterina cerca l’Orsa Maggiore. Valentina l’aveva
+rappresentata nel cielo del suo disegno e le aveva raccontato una
+leggenda a riguardo. I satelliti artificiali però percorrendo le loro
+orbite alterano le relazioni tra le stelle fisse; ogni epoca ha le sue
+difficoltà. Finalmente riconosce la Polare e poi il Carro, ma un
+satellite ne attraversa lentamente la coda. Ecco cosa le aveva detto: «È
+un segno di mutamento, annuncia una cosa grossa!». Un brivido o una
+brezza leggera le sfiora le spalle: «Fa fresco» le sfugge.
+«Mi sa che hai dimenticato la giacca in casa. Te la prendo» risponde
+prontamente Laura.
+
+Caterina rimane sola. Poco lontano vede un cane camminare da solo, forse
+è randagio, o forse si è perso. Vuole dirlo a Laura ma un movimento
+rapido in cielo la distrae; alza lo sguardo di nuovo verso le stelle: è
+solo un drone come tanti.
+«Eccolo, Cate.»
+«Grazie.»
+«Allora, mi aggiorni?»
+«Certo.»
+
+Caterina si dirige verso casa, da Alice, mentre Laura chiude la vetrata
+e blocca la porta di ingresso.
+
+«Andiamo a letto?»
+La voce di Valentina la raggiunge. La sente forte, come un rimprovero.
+
+I futon sono già stesi per terra. Valentina ha in mano un tankōbon di
+Buonanotte, Punpun che apparteneva alla loro mamma. Laura ha fermato
+alcune pagine con le graffette e lo legge ogni sera insieme a lei prima
+di dormire.
+«Hai proprio sonno!»
+«No, è che voglio leggere Punpun. Dai, vieni.»
+«Ma... ok, però solo un capitolo, perché poi devo fare una cosa per
+Cate.»
+«Cosa devi fare? La vostra avventura?»
+«Sì, proprio quello. Domani ti racconto tutto.»
+
+Leggono cinque pagine, poi Vale sbadiglia: «Hai sonno? Finiamo il
+capitolo?»
+«È lo stesso, adesso dormo. Tu cosa fai?» «Devo fare quella cosa per
+Caterina te l’ho detto.»
+«Posso venire con te?»
+«Ma non hai detto che hai sonno?»
+«Sì, ma voglio vedere che...» Non finisce la frase. Laura è abituata a
+vederla crollare di sera.
+Lascia la porta della loro stanza socchiusa. Prende la caraffa di tè
+freddo dal frigo e se ne versa un bicchiere. Il computer è già sul
+tavolo, Punpun è tornato nella libreria. «Vediamo la situazione»:
+
+kali@dpl: dig + shortpolizialocale.ith56.it203.0.113.42203.0.113.57203.0.113.81203.0.113.96kali@dpl: 
+
+[image]
+
+«128 minuti per mappare l’infrastruttura e segnare i punti deboli. Prima
+una perlustrazione, vediamo le porte vintage. Se va bene trovo anche una
+SQL injection... Ce la possiamo fare, Rocky.»
+
+Allunga la mano, d’istinto, verso la cuccia.
+
+«Rocky? Dove sei, Rocky?»
+
+Le regole del convitto
+
+«Muori Hanzaki!»
+Giovanni schiva per un centimetro un fendente che finisce la sua corsa
+contro la scala. «Sei lento, sei sempre stato lento. Non mi serve
+vederti, posso anticipare ogni tua mossa: questo è il segreto di Kage.»
+
+«Allora ferma questo colpo», grida, e scatta brandendo il bastone sopra
+la testa.
+
+I due cani lo guardano avvicinarsi e raggiunge la giusta distanza, «Mi
+hai lasciato raggiungere ma-ai, ora non potrai fermarmi.» I suoi
+movimenti si fanno prima lenti e poi veloci, ma quando il bastone ha
+ormai raggiunto Giovanni, lui abbassa di poco la testa, alza le mani e
+rapidamente lo blocca.
+
+Osservandolo sembra che stia pregando. Ha le mani chiuse, palmo contro
+palmo, e in mezzo c’è il bastone, questa è un vera contromossa ninja.
+
+[image]
+
+Ipparchia si avvicina alla scena, lo sconosciuto depone il bastone e le
+accarezza il pelo sotto la gola. Giovanni accarezza invece la sua testa,
+scompigliandogli i capelli: «Dai, adesso aiutami. Prendi il pacco, Luca.
+Hai visto come ho fatto tardi...»
+«Infatti, ma questo cane? Dove lo hai preso?»
+«Non lo so. Ha seguito Ipparchia.»
+«E come si chiama?»
+«Non lo so.»
+
+Luca si ferma e controlla: «Ecco, è scritto sul collare: Rocky.»
+
+Rocky lo guarda.
+«C’è un numero da chiamare?»
+«Sì, è qui, guarda.»
+
+Passa qualche istante.
+«Scusa, comunque c’è.»
+«Bene, allora domani lo accompagneremo dai vigili. Ci penseranno loro.
+Portiamolo dentro per ora.»
+«Lo leghiamo?»
+
+Giovanni attende. Non risponde subito.
+«No, prima la libertà.»
+
+È un grande onore quello che Giovanni ha riservato a Luca: portare il
+pacco dentro al convitto. Certo, è Giovanni che ha fatto la strada
+maggiore, ma portarlo dentro significa qualcosa. Gli occhi nel buio lo
+scruteranno e sapranno che lui, Luca, ha portato il mangiare dentro.
+
+Però la strada è ancora in salita. Percorrere quella vecchia scala
+ferrata aggrappandosi con entrambe le mani è un conto; reggere in
+equilibrio quel pacco di viveri, cercando di non volare giù, è un altro.
+Ogni passo può tradirlo. La ruggine ha corroso i gradini e, un po’ per
+il buio, un po’ per il pacco che gli impedisce la vista, Luca deve
+andare a tentoni per non infilare il piede in una trappola.
+
+Giovanni, a questo, è abituato.
+
+«Cosa hai preso di buono, Giovanni?» gli domanda.
+
+«Una settimana di vita.»
+
+«Stai attento a non inciampare.»
+
+Quelle parole suonano quasi come una profezia.
+
+Un rumore secco, forse una sbarra che cede. Luca sta per perdere
+l’equilibrio.
+
+Giovanni si gira di scatto e lo afferra con precisione, evitandogli la
+caduta.
+
+«Wow!» esclama Luca. «Grazie!»
+
+«Tranquillo. Erano solo pochi metri. Però è sempre meglio evitare di
+cadere.»
+
+«Già.»
+
+«Eccoci.»
+
+Giovanni allunga una mano e trova a tastoni il telaio della porta
+finestra.
+
+«Siamo arrivati al primo piano. Aspetta...» Giovanni afferra qualcosa
+che gli sbarra la strada. Lo tira leggermente, poi ne tasta il
+contenuto: un carrello della spesa carico di stracci e prodotti per le
+pulizie blocca l’entrata. Non è un carrello in buone condizioni. Mancano
+diverse sfere dai cuscinetti delle ruote, ma sarebbe comodo per portare
+la spesa. Ormai di carrelli non se ne trovano più. Giovanni però non ha
+mai pensato di usarlo a quello scopo.
+
+«Meglio salire al secondo piano» sentenzia.
+«Ci sono le pulizie?»
+«Mi sa di sì.»
+«Ok, saliamo.»
+«Ci segue anche Rocky?»
+«Sì, è dietro Ippa.»
+«Speriamo non facciano storie… già si lamentano di lei.»
+
+«Dovrebbero essere in aula uno. Una volta entrati scendiamo dritti per
+lo scalone, non lo vedranno neanche.»
+«Hai ragione.»
+
+Giovanni rallenta il passo per assicurarsi del terreno sotto i piedi,
+perché non conosce bene la seconda rampa delle scale. Entrare al primo
+piano è molto più semplice, ma adesso le casalinghe stanno facendo le
+pulizie, e a memoria di convitto, nessuno ha mai calpestato dove stanno
+pulendo.
+
+Sarebbe un errore irreparabile, perché significativo di ignoranza delle
+regole elementari di appartenenza a una comunità rispettabile. Basta
+riconoscere alcuni segnali elementari per non creare situazioni
+problematiche, e uno di questi è la presenza del carrello dei prodotti:
+un segnale universale di pulizia in corso. Impensabile spostarlo per
+passare.
+
+Missione per Rocky
+
+«Rocky! Rocky!» Il richiamo di Laura si perde nel silenzio, assorbito
+dalla boscaglia. Si allontana qualche metro, Valentina dorme, la zona è
+tranquilla, ma ha solo otto anni, pochi per restare in casa da sola.
+Torna in casa, il collare-GPS è lì, appeso alla parete ormai da mesi,
+non è al collo dove dovrebbe essere: «Non sono stata brava.»
+Torna dentro, riempie la ciotola con un po’ di croccantini: «Vediamo
+così.» Percorre il perimetro della casa agitando la ciotola e
+chiamandolo. Niente. «Dove è andato?» Un barlume: «Il chip del canile.
+Potrebbe aver lasciato delle tracce.»
+
+«Cate, ho bisogno di un favore. Rocky è scappato.»
+«Oddio, quando?»
+«Non lo so. Forse quando sono entrata per prenderti la giacca. Comunque
+devo andare a cercarlo. Però ho bisogno per Vale, non posso lasciarla da
+sola in casa.»
+«Certo. Dammi dieci minuti che arrivo.»
+
+«Dove ho messo il codice...» Laura cerca il documento di Rocky. Dal
+codice identificativo potrà verificare se qualche scanner urbano ha
+rilevato il suo chip e provare a ricostruire la posizione.
+«Eccolo: 1889. Adesso proviamo ad accedere al registro... »
+
+kali@dpl: telnetgates.ith56.it2323Trying203.0.113.57...Connectedtogates.ith56.it.Escapecharacteris′^(])′.ITH56urban − gateslegacyconsolelogin : lauraPassword : laura@gates − legacy: 
+CHIP=1889 laura@gates-legacy: $grep "$CHIP" dog-registry.log | tail -n 5
+18Z gate=ITH56-T3-017 reader=rfid-a03 chip=1889 rssi=-67 direction=OUT
+02Z gate=ITH56-T3-019 reader=rfid-b01 chip=1889 rssi=-72 direction=OUT
+laura@gates-legacy: $tail -F dog-registry.log | grep --line-buffered "$CHIP"
+
+«Bene, il chip è ancora visibile.» Laura si alza e va a prendere un
+dispositivo palmare, lo connette al computer «integriamo le coordinate
+dei varchi al GPS» Un rumore dall’esterno: Caterina e Alice stanno
+atterrando. Entrano: «Laura mi dispiace tanto.»
+«Ma cosa dici, tu non c’entri, dovevo stare più attenta.»
+«Quando sei rientrata c’era un cane, ma non era Rocky, sono sicura.»
+«Un cane libero o con un padrone?»
+«Era solo, però non so, non ho visto nessuno.»
+Alice vede un’icona pulsare sul palmare di Laura: «Lo stai tracciando?
+Ha il GPS?» le chiede amabilmente. Caterina vorrebbe farle notare che
+non è mai così gentile con lei, ma non è il momento.
+«Non proprio Alice, però posso vedere la sua posizione quando passa
+vicino ai varchi urbani. Hanno un lettore RFID e i dati sugli animali
+domestici sono accessibili in anonimo.» Alice annuisce, Caterina la
+guarda: «Tu hai capito?»
+«Ho capito che qui vede la posizione del cane, giusto? Non fare la
+maestrina Cate.»
+«Ma è qui vicino Laura?»
+«Direi di sì, ma non lo vedo mentre si muove», prende il dispositivo e
+indica le bandierine verdi sulla mappa della città, «Questi sono i
+varchi, io vedo solo se e quando li raggiunge, purtroppo in questa zona
+ormai ne rimangono pochi di attivi.» Rende il palmare ad Alice, «Datemi
+un minuto; mi metto una tuta, potrebbe esserci da graffiarsi nei
+cespugli.»
+In punta dei piedi entra in camera mentre Valentina dorme. Fruga nel suo
+armadio, prima prende la tuta, richiude, apre uno sportello più in alto,
+sceglie alcuni strumenti, e un cinturone.
+
+«Wow! Ma...» si lascia sfuggire Alice «Sembri la Croft!»
+Laura sorride, senza reagire: «Rocky dovrebbe essere qui vicino. Spero
+di fare presto.»
+«Laura, posso venire con te? Può restare Alice con Vale?»
+«In effetti...» Laura sospira «mi farebbe piacere.» Guarda Alice: «Sì,
+ci penso io.»
+Caterina indossa una minigonna, una camicetta e un paio di scarpette con
+un po’ di tacco.
+«Ok, mi raccomando, Alice.» Si assicura Caterina, ma la sorella non
+risponde. Accenna un sorriso, entra in casa e le guarda dalla vetrata.
+«Andiamo Cate, attraversiamo la strada.» Da lì si avviano a piedi lungo
+la capezzagna e raggiungono l’incrocio a T. «L’ultima registrazione
+colloca Rocky davanti a noi, circa ad ottanta metri, però è strano:»
+Laura osserva il palmare, «Deve aver passato un varco, ma nella mia
+mappa non risultano edifici lì.»
+
+[image]
+
+«Dobbiamo passare per il campo?»
+«...Sì, però se prendiamo qui a sinistra, seguendo la strada, ci
+possiamo avvicinare un po’. Ma alla fine credo che dovremmo comunque
+entrare. Rocky mi sembra in mezzo al campo.»
+«Di quanto la allunghiamo?»
+«Circa seicento metri, direi. Solo sette minuti. Cosa ne dici?»
+«Decidi tu, Laura.»
+Guarda le scarpe dell’amica: «Avviciniamoci seguendo la strada, poi
+valutiamo.»
+Dopo alcuni metri Laura si ferma di nuovo: «Qui svoltiamo a destra.»
+«Ehi! È messa male questa strada.»
+«Tutta l’area ormai è un po’ andata.»
+Proseguono: «Ecco, di nuovo a destra e tra un centinaio di metri
+dovremmo esserci.»
+«Non siamo mai venute qui insieme, vero?»
+«No, ci siamo fermate alla panchina. Comunque anch’io non facevo questa
+strada da anni. Forse l’ultima volta sono venuta con mio padre, poco
+prima che nascesse Valentina.»
+«A proposito, chissà come se la cavano quelle due.»
+Laura non risponde alla domanda. Ha visto qualcosa che ha attirato la
+sua attenzione: «Dietro il cespuglio c’è un cancello, ma non mi risulta
+nella mappa. Comunque Rocky dovrebbe essere qui a trenta metri,
+cerchiamo un punto per entrare.» Le ragazze si addentrano tra i rovi e
+seguono la recinzione: «Qui, Laura» chiama Caterina eccitata. Laura la
+raggiunge, c’è un cancello metallico semi aperto con una catena appesa.
+«Bene, sono contenta che tu sia venuta con me.»
+«Dai, proviamo a entrare.»
+«Aspetta, vedi, c’è una scritta: Convitto San Giorgio. Lavori di
+ricostruzione. Ma la data è del 2022! Ecco perché non è più nella
+mappa.»
+«Quindi Rocky sarà qui dentro.»
+«Ora lo scopriamo.»
+
+Laura e Caterina superano il cancello, lasciandosi alle spalle la
+sicurezza e la legalità
+
+Il tranello della mensa
+
+Aspetta qualche istante che gli occhi si abituino al buio, poi Luca
+elabora la sua strategia per raggiungere le scale: «Potremmo passare per
+la sala giochi? Cosa ne dici?»
+«Intendi la palestra, vero? Per me va bene, fai tu strada.»
+
+[image]
+
+I quattro imboccano la stessa scorciatoia che usavano un tempo le
+ragazze per scendere in mensa senza farsi vedere dai maschi. La
+portafinestra di emergenza da cui sono entrati si apre nell’ex camerata
+femminile e, da lì, un’uscita laterale conduce a un corridoio sul quale
+si affaccia una delle due porte della palestra. L’altra dà direttamente
+sul pianerottolo delle scale.
+
+Nella camerata ci sono ancora letti semidistrutti e materassi lasciati
+alla rinfusa sul pavimento, ostacoli da superare evitando di fare
+rumore. Per fortuna Ipparchia e Rocky li seguono senza abbaiare, ma il
+loro obiettivo di segretezza sembra appeso a un filo.
+Giovanni procede con cautela. Luca gli afferra la mano.
+«Passiamo di qua.»
+Pochi passi ancora e raggiungono il corridoio. Lì una luce tremolante
+filtra dalla palestra. Proviene da un bidone di latta: uno stoppino
+fatto di stracci imbevuti di olio esausto continua a bruciare
+lentamente. Giovanni annusa. Conosce bene quell’odore. Ogni tanto scende
+dal secondo piano e gli pizzica il naso.
+Non gli piace.
+È sintetico, acre, tossico.
+Però fa luce.
+
+E la luce, a lui, non serve.
+
+«Un attimo...»
+
+Luca controlla che tutti lo abbiano seguito, poi appoggia il cartone a
+terra per sistemarsi la cintura. Fatto questo, ripartono.
+
+La porta della palestra è aperta. Anzi, la porta non c’è più da anni. Il
+varco però è inconfondibile: dove prima c’era un battente, ora si apre
+un portale di luce soffusa e suoni attenuati.
+
+Dall’interno arrivano musichette elettroniche, jingle brevi e chiptune
+di vecchie console. Suoni familiari, le frasi corte e simmetriche del
+Pac-Man, il basso ostinato di Space Invaders, e le percussioni marziali
+di Halo. Giovanni sorride.
+
+Entrano con cautela. Nella palestra diversi ragazzini tengono in mano
+joystick e controller e giocano davanti a monitor recuperati.
+Luca li saluta con un cenno, ma non si ferma.
+L’attenzione di tutti è rivolta verso Rocky: la curiosità è alta, ma
+nessuno lascia la console, anche se gli occhi vanno e vengono dal cane.
+Attraversano l’ex palestra fino a raggiungere la seconda porta. Nella
+mappa mentale che Giovanni sta tracciando, le due porte sono allineate
+creando una particolare connessione che permette di entrare nella
+palestra da una porta e uscire dall’altra. Se loro fossero in un
+videogioco di quelli in esecuzione sulle console, come Pac-Man,
+attraversandolo si ritroverebbero al punto di partenza. Ma non è così, e
+quando attraversano il portale nel verso opposto l’aura rosa-azzurra che
+rifletteva sui loro volti li abbandona e tornano ad essere ombre scure
+nel convitto. Raggiungono il pianerottolo. Luca si avvicina all’amico:
+«Stai attento per le scale, ci sono diversi buchi».
+
+[image]
+
+Giovanni, radente al muro, misurando i passi uno ad uno raggiunge il
+primo piano. La presenza delle casalinghe è palpabile e udibile. il
+ritmo quasi isterico con cui gli oggetti vengono presi, puliti e riposti
+è una traccia inconfondibile. Tutti i piani sono soggetti alle loro
+cure, ma sempre uno alla volta a partire dal piano terra salendo fino al
+secondo. Comunque sono tutte indaffarate nelle aule, così basta passare
+in un attimo: leggeri come il vento e continuare a scendere le scale.
+
+Tasta i gradini con la punta del piede: questo è un buco.
+
+«Occhio ai buchi, Ippa», gli sfugge un sussurro.
+
+Procede cauto, ascoltando i passi di Luca. Le casalinghe, per ora, non
+hanno reagito né al loro passaggio né al nuovo arrivato. Ma questo non
+significa che non li abbiano notati.
+
+Non sono impulsive. Le loro punizioni arrivano sempre dopo: ben
+ponderate, nel tempo e nei modi.
+
+Un’altra rampa e raggiungono la hall al piano terra.
+
+[image]
+
+«Casa» si lascia sfuggire.
+
+«Vuoi che lo porti io, ora?»
+«No, no, ce la faccio» lo rassicura.
+
+Una luce tenue e tremante guida Luca verso la mensa. Giovanni e i due
+cani lo seguono: la meta è ormai vicina. Il perimetro della hall è
+costellato di cavalletti per dipingere. Ippa passa oltre senza degnarli
+di uno sguardo; Rocky, invece, ne è subito attratto. Devono sembrargli
+ottimi bersagli, ma per fortuna non ne approfitta. Intanto Luca ha
+raggiunto la porta, o meglio la soglia che resta perché anche il legno
+del telaio è stato riciclato come gli altri. La varca.
+
+Una candela è accesa su un tavolo apparecchiato. Sopra la pagina
+sportiva di un giornale c’è un piatto con qualcosa dentro che fuma e una
+lattina. È la candela che ha guidato Luca fin lì e che tiene compagnia a
+un solitario avventore del ristorante "Al Convitto". Luca non lo conosce
+e passa avanti senza fermarsi a salutare. Ippa non cede al richiamo
+dell’odore, ma Rocky non è ancora altrettanto disciplinato. Si distacca
+dalla comitiva e va verso il tavolino.
+
+Luca lo guarda. E anticipa nella sua mente quello che sta per capitare:
+«No, Rocky, fermo!»
+
+È rapido. Non è ancora un ninja, ma ha la prontezza di lasciare andare i
+beni sostituibili per provare a salvare una vita non sostituibile. Il
+pacco cade mentre lui si lancia per afferrare il nuovo amico.
+
+Dopo sessanta secondi la situazione è questa: in mensa è rimasto solo
+Giovanni. Chi stava mangiando ha raccolto il suo piatto e se n’è andato.
+
+Luca è vigile e cosciente, ma è malamente incastrato e non riesce a far
+forza per risalire. Giovanni parla con lui, mentre Rocky abbaia.
+
+«L’acqua mi arriva alla bocca. Non riesco a tenere su la testa.»
+«Stai tranquillo, non salirà di livello.»
+«Sì, sì.»
+«Ci sono io, ti faccio uscire.»
+
+Giovanni chiama ancora aiuto, ma non riceve risposta. Anche qui, nel
+convitto, certe cose sembrano andare come fuori.
+
+«Vado a chiamare qualcuno. Torno subito.»
+«Non lasciarmi da solo!»
+«C’è Rocky. Arrivo subito.»
+
+Ippa lo segue. Giovanni corre nella hall e poi verso l’entrata
+principale. Solleva la barra e si fa giusto lo spazio per passare.
+
+«Ehi, amico, che succede?»
+Una voce lo coglie appena si fa fuori.
+«Ho bisogno. Uno dei ragazzini è finito nel pozzo.»
+
+Intrappolate
+
+«Ahi, mi sono graffiata.»
+«Di qua, Cate, c’è un passaggio.»
+«Ah, ma perché ho sempre la gonna? Arrivo, Laura.»
+«Certo che questo giardino non vede un giardiniere da un bel po’ di
+tempo.»
+«Giardiniere? Qui ci vorrebbe... non farmelo dire, non sarebbe
+ecologico. Guarda, lì c’è un bidone con una rete. Forse ci vive
+qualcuno?»
+«Non lo so, questo edificio non è neanche sulla mappa. Andiamo a vedere.
+Rocky dovrebbe essere vicinissimo ormai.»
+«Il bidone è caldo, qualcuno dimora qui. Cosa facciamo, Laura? Rocky
+potrebbe essere dentro, proviamo a chiamarlo?»
+«È meglio di no. Se c’è qualcuno, potremmo mettergli paura, farlo
+scappare e Rocky con lui. Capiamo se riusciamo a guardare dentro e se
+c’è un punto di accesso sicuro.» Laura si leva lo zaino e prende il
+drone da rilevamento. «Cosa fai?»
+«Cerchiamo un accesso con il drone.» Attiva il drone e fa un volo di
+prova. «Ma la porta è un po’ aperta, mi sembra.»
+«Non va bene, ci serve un’entrata che non ci faccia notare. Meglio non
+rischiare.»
+
+Caterina si avvicina alla scala antincendio, afferra il corrimano e lo
+scuote. L’intera struttura vibra e risuona alla sua manovra. Appoggia un
+piede sul primo gradino. I successivi presentano ferri sporgenti e
+qualche fessurazione. «Laura, qui, vieni», le sussurra.
+
+«Cate, sei già salita!» Laura spegne il drone e lo riaggancia allo
+zaino.
+«Coraggio, seguimi.»
+
+Caterina avanza per le scale, il tacco ogni tanto si intrappola tra le
+grate delle scale, ma sembra non curarsene troppo. Laura la segue con
+passi misurati, senza fare rumore. L’amica si volta verso di lei: «Hai
+assolutamente ragione a non entrare nella porta principale. Non stiamo
+entrando in una proprietà privata» le sussurra con una punta di
+complicità: «Questo è proprio un altro ecosistema, e la prima regola è:
+non perturbarlo» si interrompe: «...ma guarda dove c’è un carrello della
+spesa!»
+Con gesto deciso lo spinge via.
+«Ecco, adesso il passaggio è libero» sussurra, divertita. «E senza
+esserci fatte notare.»
+
+Laura la raggiunge sul pianerottolo che si piega leggermente: «Non
+sembra regga bene...»
+È buio ma superano la portafinestra e sono dentro. Laura afferra l’amica
+per un braccio: «Fermiamoci un attimo.» Si leva lo zaino, sgancia il
+drone e dalla tasca laterale sinistra prende il controller.
+«Cosa vuoi fare?» Caterina le sussurra vicino all’orecchio: «Siamo già
+dentro, no?»
+«Lo attivo comunque. Potrebbe servirci.»
+
+Il LED RX lampeggia: «Niente connettività, solo registrazione locale.
+Non basta per la mappa 3D», sussurra.
+«Qualche problema?»
+«Non proprio. Avrei voluto costruire una mappa 3D, ma non c’è
+connessione al satellite.»
+«Wow, Laura! Volevi una mappa di questo posto in 3D? È fantastico, ma
+non sarebbe meglio se cercassimo subito Rocky?»
+«Hai ragione, forse sono troppo prudente»
+
+Improvvisamente arriva un latrato poi un urlo, una voce maschile
+
+[image]
+
+«Questo è Rocky» Attende un istante, poi riprende: «Sembra venga da
+sotto. Andiamo a vedere.»
+«Ma hai sentito quella voce?»
+«Sì l’ho sentita, adesso sappiamo che non siamo sole di sicuro.» Laura
+avanza, la stanza è buia, lentamente si fanno strada tra una distesa di
+scranni e banchi in legno massiccio. La disposizione ricorda quelle di
+batterie di barricate. Sono pesanti da spostare, ma non così fitti da
+non poter essere aggirati. Raggiungono il corridoio, pochi passi, poi
+Laura trae tre o quattro respiri veloci per saggiare l’aria: «Odora di
+limone.» Accende la torcia laser, osserva il soffitto senza illuminare
+l’ambiente: «Non ci sono pozzanghere», commenta. «Non è acqua
+infiltrata. Poi il soffitto è asciutto, perché il pavimento è bagnato?»
+
+Ancora un latrato. Si dirigono verso le scale. Intorno non vedono
+nessuno, nessun rumore, tranne quelli provenienti dal piano inferiore.
+Nessuna luce, tranne i LED RX del ricevitore di Laura.
+
+«Scendiamo, Cate. Attenta...» le dice, le scale non sono tanto sicure.
+L’ultima rampa le conduce in una grande hall. Da una stanza proviene una
+luce tremolante, che le permette di distinguere alcuni cartoni a terra e
+delle strutture in legno lungo il perimetro principale. Laura cataloga
+tutto nel cervello, ma la costruzione della mappa mentale è interrotta
+da un altro latrato. Il suono non è lontano, ma arriva sordo,
+rimbombante. Accanto alla tromba delle scale ci sono due porte, una per
+lato. Quella a destra: da lì proviene il suono.
+Entrano: sono i bagni del convitto. Un lavello comune e tre ritirate,
+due hanno le porte ridotte come le altre a nudi passaggi la terza è
+ancora integra e chiusa. Il suono proviene dal basso, forse da una delle
+turche. Caterina apre la porta ed entra in uno dei gabinetti, Laura ne
+ispeziona un altro, ma lì non percepisce alcun rumore. «Vieni a sentire»
+la chiama Caterina con un filo di voce: «da qui, arriva un respiro.»
+
+«Fammi sentire» si abbassa ai piedi dell’amica ma in un attimo… sbam! La
+porta si chiude e scatta una serratura.
+
+Caterina grida. Qualcuno le ha chiuse dentro.
+
+La via nascosta
+
+Giovanni è inginocchiato sul bordo del buco; il suo coinquilino invece
+si è sdraiato e si sporge con la testa, allunga il collo, vuole vedere
+dove sono caduti.
+
+«Non li vedo. Non vedo nulla. Comunque ci serve una corda.»
+«Dobbiamo chiamare aiuto. È troppo pericoloso per Luca stare nel pozzo.»
+«Giovanni, sono d’accordo, ma tu non ci vedi. Io zoppico. Prima di
+riuscire ad avvertire qualcuno, Luca potrebbe» non finisce la frase:
+«Aiuto, credo che l’acqua stia salendo» lo raggiungono le grida di Luca.
+L’uomo parla sottovoce: «Non abbiamo mezz’ora, forse neanche dieci
+minuti, dobbiamo tirarlo fuori.»
+
+Caterina afferra il pomello della porta, è lucido, per nulla
+arrugginito. È salda e i cardini non cedono sotto la sua pressione:
+«Laura, ho paura, non si apre.»
+Anche Laura ne testa la solidità con lo stesso risultato. «Stiamo calme,
+Cate. Una via d’uscita la troviamo.»
+«Ma la porta è bloccata dall’esterno, non si muove neanche di un
+millimetro.»
+Di nuovo leva lo zaino, lo appoggia a terra, in una toilette, sotto lo
+sguardo raccappricciato dell’amica. Lo apre: «Cerchi un cacciavite?» le
+chiede. «No» Poi passa a Caterina un piccolo piede di porco. «Forziamo
+la porta?»
+«Non sappiamo chi ci ha chiuse dentro Cate. Forse uscire subito non è la
+scelta migliore.» Continua a cercare, «Ah, ecco: la radio», sussurra
+soddisfatta.
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+Non ha chiesto il permesso, ma in fondo che male c‘è solo a guardare?
+Alice è stesa sul tappeto, come lo era Valentina due ore prima. Ha tra
+le mani un album di foto stampate, alcune su carta lucida, altre, in
+bianco e nero, su carta opaca. Riconosce Laura da bambina, deve essere
+lei, per forza: è uguale ad ora. C‘è una donna vicina a lei, la stringe
+leggermente. Non c‘è Valentina. Il papà deve aver fatto lo scatto. Che
+belle queste foto, sembrano quasi vive, le sembra quasi di vederle
+muovere. Le sembra che gli occhi della mamma brillino. Non solo, le
+sembra di sentire una musica, una melodia semplice, una sola nota: un
+cicalino!
+«È Laura! Rispondi. Non vedi la spia?»
+«Vale, ti sei svegliata? Ma... in che senso è Laura?»
+«Alla radio. Aspetta, faccio io.» Solleva il microfono, spinge il tasto
+per parlare: «Tatona, cosa hai fatto?»
+«Vale, sei con Alice?»
+«Sì, siamo qui. Cosa stai facendo? E Rocky dov’è? Perché non è qui?»
+«Ascoltami, Vale. Va tutto bene, ma abbiamo bisogno di voi per
+trovarlo.»
+«C’è anche Cate? Stai bene?»
+«Ragazze, dovrete fare una cosa per noi, ok? Vale, passa la radio da
+modalità VOICE a VOICE+DATA. Vedi la levetta?»
+Valentina avvicina gli occhi ancora assonnati alla pulsantiera della
+radio, e mentre sta cercando la scritta, Alice commuta la radio come
+richiesto da Laura: «Fatto! Credo...» risponde avvicinandosi al
+microfono. «Brava, Alice. Ora sotto la radio c’è un altro dispositivo,
+lo vedi? È un modem radio. Prova ad accenderlo.»
+Il tasto on/off reagisce con un gradevole suono metallico «Ecco!» si
+lascia sfuggire Alice soddisfatta.
+«Vicino al pulsante dovrebbe esserci una spia con scritto SERVER LINK.
+La vedi?»
+«Sì la vedo, ma è spenta.»
+«Non è un problema. Vuol dire che il cavo del server non è inserito.
+Guarda dietro, dovrebbe esserci un cavo bianco. Lo vedi?»
+Valentina guarda dietro la radio: «Sì, c’è» conferma ad Alice. «Sì, lo
+abbiamo trovato» conferma a sua volta a Laura.
+«Bene, inseritelo nella porta.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«Luca, mi senti? Prova ad afferrare la corda.»
+«Aiuto, non riesco a prenderla. C’è il cane sopra di me.»
+«Dobbiamo legare una massa alla cima della corda per farla scendere fino
+a lui.»
+«Un sasso? Cosa ne dici?»
+«No, aspetta. In cucina c’è la bilancia, il peso da un chilogrammo ha il
+pomello, possiamo legarlo lì. Vado a prenderlo.»
+
+Alice annuisce e Valentina lo preme dentro. Simultaneamente la spia
+diventa verde: «Eccola, si è accesa» esulta Alice.
+Dopo un attimo la spia RX della radio comincia a lampeggiare e continua
+ininterrotta per una quarantina di secondi. Poi la spia RX e la spia TX
+accanto rimangono spente per alcuni secondi mentre un ronzio debolissimo
+riverbera nella stanza. Quando cessa, la spia TX inizia a lampeggaire:
+uno, due... trentotto secondi: «Abbiamo la mappa, ragazze. Bravissime. A
+dopo.» Laura chiude la comunicazione.
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+Giovanni si allontana.
+«Stai tranquillo, Luca, ti liberiamo.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«Ecco, vediamo la mappa.» I dati raccolti dal LiDAR del microdrone e
+ricostruiti sul server di Laura sono finalmente organizzati in una
+grafica 3D. «Come pensavo, c’è un’intercapedine ispezionabile.
+Probabilmente Rocky è qui sotto.»
+«Qui sotto? Sotto la turca?»
+«Sì, credo di sì. Aiutami, vediamo se si sposta.»
+«Cosa?»
+Laura afferra il paranco e solleva la turca di qualche centimetro.
+«Aiutami, Cate!»
+«Wow, ma è vuoto qui sotto!»
+
+[image]
+
+«Sì, è un cavedio tecnico, un classico anni Settanta.»
+«Laura, ho paura.»
+«Cate, ora devi aiutarmi. Io entro nel pozzetto. Tu tieni la radio e
+rimani in ascolto.»
+«Va bene, io ti aspetto qui.» Le mani le tremano, ma è sempre la nostra
+Caterina, possiamo contare su di lei.
+
+Laura indossa lo zaino e prova a calarsi, ma i piedi non toccano. Si
+lascia scivolare fino a terra, dove l’acqua le raggiunge quasi
+l’inguine.
+
+«Cavolo, è tutto allagato qui sotto.»
+«Laura, aiuto! Qualcuno sta cercando di entrare!»
+
+Incontri nel buio
+
+«Qualcosa si sta avvicinando.» Giovanni è andato a prendere il peso da
+un chilogrammo per calare la corda a Luca; è compito del vagabondo
+tranquillizzare Luca: «Stai calmo, non è niente. Forse un pesce.»
+«Non è un pesce. Sento muovere l’acqua. Si sta avvicinando.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«C’è qualcuno qui dentro? C’è qualcuno? C’è qualcuno?» La porta del
+bagno trema sotto una forza esterna. Isl pomello della maniglia scatta
+avanti e indietro.
+«Cate, mi senti? Chi sta cercando di entrare?»
+«Non lo so! Ti prego, torna su!»
+«Non riesco, Cate. Sono in un cunicolo stretto. Dammi un attimo.»
+Caterina è chiusa nel gabinetto. Sotto di lei un pozzetto che conduce ad
+un condotto allagato. Alla porta qualcuno sta cercando di entrare,
+qualcuno di sconosciuto: «Ecco, adesso apro» le annuncia da dietro la
+porta. Poi si apre all’improvviso. Caterina resta immobile. Osserva lo
+sconosciuto di fronte a lei.
+«C’è qualcuno chiuso dentro?»
+Caterina istintivamente si avvicina: «Tu non mi vedi?»
+«Ah, ecco! Sentivo qualcuno. Stai bene? Ti hanno chiusa dentro le
+casalinghe, immagino.»
+
+«Cate, con chi stai parlando?»
+«Puoi dirle che sono Giovanni e che non corri alcun pericolo?»
+Da un po’ ha dimenticato di sbattere le palpebre, ma ora lo fa. Poi un
+lieve sorriso, quasi incredulo: «Mi dice di dirti che si chiama
+Giovanni, Laura, e che non corro alcun pericolo. Ha aperto lui la
+porta.»
+«Bene, Cate. Se riesci, fatti condurre nella mensa. Io raggiungo Rocky
+da qui sotto e poi cerchiamo di recuperarlo.»
+
+Giovanni anticipa la richiesta, le prende un polso, delicatamente: «Ho
+sentito, Cate. Forse siamo nello stesso guaio. Vieni, andiamo nella
+mensa. Ti guido io.»
+La candela si è spenta, ma, a questo punto della storia, è chiaro che
+non un problema per lui.
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+Il vagabondo si sporge nel pozzo: «Ehi, ma chi sta parlando?»
+Anche Rocky sente la voce di Laura e comincia ad abbaiare.
+
+«Chi c’è laggiù? Puoi aiutarci?»
+Giovanni e Caterina hanno raggiunto la mensa. Il vagabondo è sdraiato e
+sta cercando di comunicare con Laura.
+«Sì, credo possano aiutarci.»
+«Giovanni, chi è questa ragazza con te?»
+«Sì, si chiama Cate... Caterina?»
+«Cate, sei lassù?»
+Luca riprende coraggio: «Non è un pesce, è una ragazza con la torcia.»
+«Ma chi c’è nel buco oltre Rocky?»
+«È Luca, è un nostro amico. È finito dentro con Rocky.»
+
+La luce della torcia gli punta il viso. Fa una smorfia, ma la guarda:
+«Finalmente! Grazie, avevo paura di restare qui sotto.»
+Rocky tenta di raggiungere la padrona. Ha la pettorina incastrata, non
+ci riesce, ma non importa: in un attimo Laura li ha raggiunti. «Non so
+come siete finiti qui... ma conoscendo Rocky non mi stupisco. Tu stai
+bene?»
+Laura prende Luca per la mano: «Sei incastrato?»
+«Sì, ho la caviglia infilata da qualche parte, non riesco a sollevarmi.»
+«Ho capito.» Alza il viso verso la luce del pozzo. «Cate, qui c’è un
+ragazzino incastrato insieme a Rocky.» Mentre parla si leva di nuovo lo
+zaino ed estrae rapidamente un piccolo paranco.
+
+Si arrampica fino a raggiungere l’uscita. «Prendi.» Trattiene il gancio
+e passa il corpo dello strumento a Caterina. «Tienilo.» Poi guarda verso
+Giovanni e fa un cenno di saluto, non corrisposto, per ovvi motivi,
+mentre il vagabondo la saluta con un cenno del capo. Appoggia i palmi
+sul bordo e si tira su, lasciando una piccola pozzanghera. «Troviamo un
+punto dove appenderlo.»
+Il vagabondo indica con il dito una putrella sopra le loro teste. Laura
+gli sorride. Lui prende una sedia, la sistema in prossimità
+dell’apertura, ci sale in piedi e guarda Caterina, che subito gli porge
+il paranco. Lui lo studia per pochi secondi, prende la cinghia di
+sospensione e la passa intorno alla putrella. Aggancia la cinghia: «Ci
+siamo.»
+Laura ringrazia con un cenno e torna nel pozzo: «Pronti a tirare»
+avverte.
+
+[image]
+
+Rocky abbaia. I movimenti della padrona lo eccitano, Luca ha smesso di
+lamentarsi. Laura scende con attenzione, cercando di non scivolare.
+«Eccoci» li ha raggiunti. «Iniziamo con Rocky, visto che ti sta sopra!»
+Aggancia la pettorina. «Tirate piano, devo vedere dove si è incastrata.»
+Sfruttando il paranco sollevano il cane fino allo stop di Laura: «Ecco,
+un attimo e lo libero.»
+«Rocky...» A Caterina sfugge una lacrima quando intravede le orecchie
+tese del disperso. Quanto sono lontani, adesso, il visto e i problemi
+ambientali. Il vagabondo si sporge verso il pozzo per prenderlo e per un
+attimo la presa gli sfugge. Caterina si stringe involontariamente verso
+Giovanni, lui si gira verso di lei. «Scusami, ho preso paura.» Ma non
+serve giustificarsi. Sei umana, Caterina.
+«È al sicuro» la informa il vagabondo. «Grazie; adesso lego il bimbo.»
+«Non sono un bimbo, ho tredici anni.»
+«Peccato, a quattordici ti sarebbe già cresciuta l’asola di aggancio!»
+Gli mostra il gancio. «Questo dove lo mettiamo?»
+«Mi sento nel livello della cisterna.» Laura lo guarda interrogativa. Il
+riflesso della torcia le taglia il viso e sembra eccitare ancora di più
+la fantasia di Luca. «Sei sua figlia, vero? La figlia di Lord Richard?»
+«Non so di cosa parli, ma se non vuoi restare qui sotto, chiudi la bocca
+e fai come ti dico.» Gli fa scorrere la corda intorno al bacino, poi
+crea un’asola che dalla spalla sinistra passa sotto l’ascella destra.
+Infine due asole fra le cosce. «Sei pronto?»
+«Sì, ma non sono un bimbo.»
+«Ti ho chiesto solo se sei pronto.»
+«Io sono nato pronto.» Laura stringe la corda; di nuovo ha l’impressione
+che tra le righe qualcosa le sfugga. «Sollevate.»
+
+La torta di mezzanotte
+
+Con un colpo secco e forza ben calibrata, ne sbatte uno contro lo
+spigolo del tavolo. Lo guarda colare dalla frattura. Nella mano sinistra
+regge un pacchetto di farina, che aggiunge al burro e all’uovo.
+
+«Ora mescoliamo per bene.»
+
+«Sì!»
+
+Valentina è entusiasta. Laura cucina raramente con lei dei dolci, mentre
+Alice sembra esperta.
+
+«Vuoi provare? Spingi bene in modo che si sciolga il burro.»
+«Così?»
+«Sì, così va bene. Vale, continua a mescolare.»
+
+Mentre Valentina mescola, Alice, a suo agio, sceglie la musica per
+accompagnare la preparazione.
+
+[image]
+
+«Ci siamo, Vale? Adesso in frigo per dieci minuti.»
+
+Si lavano le mani e insieme riprendono a guardare la foto dove Alice
+aveva interrotto.
+
+«Questa sei tu, piccolina?»
+«Sì, ero appena nata. E quella è Laura, con la mamma. Il papà sta
+facendo la foto.»
+«Ti mancano tanto?»
+«Non li ricordo più tanto.»
+
+Il timer suona. Il burro si è raffreddato. E ora hanno un bel panetto di
+farina, uova, zucchero e burro, da trasformare in pasta frolla.
+
+«E quello?»
+«Con questo ci facciamo i bigoli. Non hai mai mangiato la crostata?»
+«Ah, sì, adesso ho capito. Quelli sopra la marmellata?»
+«Esatto.»
+«Questa l’abbiamo preparata io e Laura.»
+«Fantastico. Adesso la spalmiamo…»
+«E intanto facciamo i bigoli.»
+«Bravissima. Ora in forno trenta minuti.»
+«Chissà che sorpresa quando tornano.»
+
+Vale va a prendere il suo futon in camera e lo porta in soggiorno. Si
+sdraiano insieme, lei e Alice.
+
+«Laura ti assomiglia molto da piccola.»
+«E tu e Caterina vi assomigliate?»
+«Non tanto», le dice, «io ho i capelli lisci.»
+«Allora vi assomigliate solo quando avete i capelli bagnati.»
+«È vero, almeno così ci assomigliamo.»
+«Sei simpatica, Alice.»
+«Anche tu sei simpatica.»
+
+Valentina si addormenta, mentre Alice aspetta perché vuole controllare
+la cottura. Sono ormai le ventitré. Alle ventiquattro sarà troppo tardi
+per la revisione del visto, ma di questo Alice non sa nulla.
+
+Le parole della sua canzone le risuonano nella mente. Hanno
+cristallizzato il suo dolore, ma il profumo della crostata la riporta
+alla vita che non si cristallizza, a una serata che potrebbe finire con
+un dolce da mangiare insieme. Anche insieme a sua sorella.
+
+Pane e giustizia
+
+«Finalmente…»
+
+C’è una candela sul loro tavolo. Giovanni e il vagabondo stanno per
+condividere il cibo del pacco sulla mensa rischiarata dalla sua luce.
+Nella sala ora ci sono solo loro quattro: tre umani e un cane, Ippa. Chi
+stava cenando quando Luca è caduto nel pozzo ha preferito mantenersi
+alla larga.
+
+Dividono il contenuto del pacco e tengono da parte quello che si può per
+i prossimi giorni.
+
+Luca è vestito solo con un asciugamano. I suoi vestiti sono appesi
+fuori. Il sole del mattino li asciugherà.
+
+«Guarda, Ippa, c’è anche la scatoletta per te, che gentili.»
+
+«Grazie, Luca. Io l’avevo scambiata per pomodori in scatola.»
+
+«Peccato non possa mangiarlo con Rocky…»
+
+«Una bocca in meno da sfamare.»
+
+«Se non ci aiutavano Laura e Caterina ci sarebbero state due bocche in
+meno da sfamare.»
+
+«Sì, ma se ti ascoltavano e restavano a cena ora c’erano due bocche in
+più da sfamare.» Luca ride.
+
+«Ridi perché non comprendi, caro Luca, ma, Dare da mangiare è il primo
+gesto di giustizia.»
+
+Luca apre i bocconcini e ne dà un po’ a Ippa. Lei si avvicina con il
+muso alla ciotola ed ogni boccone ritrae la testa di qualche centimetro.
+Si guarda rapidamente intorno e torna a mangiare.
+
+«Così mangiamo tutti insieme da veri amici.»
+
+«Ma l’amicizia non è nutrire. È digiunare insieme.»
+
+«Non vi sopporto voi filosofi. La prossima volta mangio con le
+casalinghe.»
+
+«Ti mangiano loro.»
+
+Giovanni tasta il braccio di Luca.
+
+«Sei bello pienotto.»
+
+«Mi sa che, se non la liberavi tu, anche Caterina, finiva mangiata.»
+
+Un verso agghiacciante riecheggia nella stanza per un brevissimo
+istante. «Sono i miei amici, devono aver dimenticato le cuffie»
+rassicura Luca. Al secondo piano stanno giocando a Bushido Blade,
+agganciati in qualche modo a un generatore elettrico.
+
+Questo convitto è un ecosistema a parte. A quanto pare Caterina aveva
+ragione quando l’ha detto, anche se ha avuto qualche difficoltà nel
+passare dalla teoria alla pratica.
+
+Comunque, ovunque siate, se un carrello della spesa vi sbarra la strada,
+aspettate a spingerlo via. Potrebbe non essere la scelta migliore.
+
+[image]
+
+Guerra di rete
+
+«Che schifo! Non mi leccare le orecchie.»
+
+Rocky saluta entusiasta Valentina e Alice. È un cane di taglia media: se
+Laura non gi limasse le unghie, le sue feste lascierebbero dei ricordi
+netti sulla pelle. Per fortuna sono ben arrotondate, così, tranne
+qualche batterio, non lascia spiacevoli graffi sulle ragazzine.
+Laura si spoglia della tuta, un po’ calda per la stagione, e si infila
+una magliettina. «Non era mai successo che si allontanasse da solo.
+Evidentemente deve aver subito il fascino della piccola vagabonda.»
+
+«Già... Dai, è andata bene...»
+Laura guarda l’amica: «Era un sospiro quello?» Valentina si stropiccia
+gli occhi e prova ad abbracciare Rocky, che si sottrae agilmente e si
+accuccia ai piedi del futon.
+
+«Rocky! Cos’è successo? State bene? Ma è tutto baganto!»
+«È una storia lunga, ma dopo ve la raccontiamo.»
+«Sì, ragazze, adesso abbiamo bisogno che ci aiutate. Tra trenta minuti
+scade la possibilità di salvare il viaggio di Caterina. Quindi abbiamo
+bisogno di concetrazione assoluta.»
+Alice guarda la sorella: «E se va male? Resti a casa?»
+«Preferiresti?» le chiede. La osserva. Alice non risponde, ma è Laura a
+parlare: «Adesso non distraiamoci. Dobbiamo completare alcune...
+procedure informatiche. Quindi mi raccomando.»
+Valentina le corre vicino: «Devi hackerare un sito, tata?»
+
+Alice spalanca gli occhi, gli hacker hanno perso il diritto di cronca
+prima che lei nascesse, però dove conta se ne parla ancora, e una
+ragazza intelligente non si lascia sfuggire certi dettagli: «Cosa? Sei
+anche un’hacker? Ma è fantastico!»
+Laura non si sforza di negare, ma una precisazione è dovuta: «Vista la
+rete in cui devo entrare diciamo che non è proprio hacking, è più
+archeologia digitale... Ragazze, è meglio se di queste cose non ne
+parliamo con nessuno, ok?»
+«Vogliamo solo capire perché mi hanno negato il visto» completa
+Caterina.
+«Cos’è il visto? A proposito, ma ci stiamo dimenticando della...» A
+Valentina manca un grosso pezzo della storia, però ha chiara in mente
+un’altra faccenda, peccato che il suo entusiasmo venga fermato dalla
+consorella minore che la pizzica, le strizza l’occhio e si avvicina al
+suo orecchio: «Dai, non dire niente che facciamo una sorpresa alla
+fine.»
+Valentina ricambia il gesto confidenziale: «Ok», le conferma e sigilla
+il patto con un pizzicotto meno trattenuto che la fa sobbalzare.
+
+«Va bene. Prepariamo gli strumenti.» Laura ha poco tempo e molto bisogno
+di concentrazione.
+«Ma da quando sei una hacker?» le chiede Alice. Si sposta vicino a lei.
+«Questo allora è un sistema operativo per voi... hacker?»
+Laura la guarda, le sorride. Il tempo stringe. «Sì, è un sistema
+dedicato...»
+«Mi fai vedere come funziona?» Alice guarda la sorella. La contrazione
+delle labbra di Caterina esprime il suo rimprovero, ma poi il rimprovero
+diventa verbale: «Alice, abbiamo davvero poco tempo.»
+«Ho fame, mangiamo un dolce?» Valentina torna alla carica. Nonostante la
+raccomandazione della consorella minore, il pensiero della crostata le
+stimola l’appetito.
+Laura chiude gli occhi, prende un respiro. Conta sottovoce fino a
+cinque, solleva le dita dalla tastiera: «Avrei bisogno che per dieci
+minuti steste in riga, brave e ordinate, ok? Poi rispondo a tutte.»
+Il sorriso di Valentina illumina la stanza più del monitor di Laura:
+«Giochiamo all’intrusione? Ti prego, Tata, fai le vocine.»
+«Non mi hai capito, Valentina», la voce è ferma e leggermente bassa, «ho
+detto che abbiamo i minuti contati, non abbiamo tempo di giocare.»
+Guarda una per una le tre ragazze: «Per questo abbiamo bisogno di...
+pianificare perfettamente l’operazione. Mappare l’infrastruttura per
+identificare i punti deboli e sondare il terreno con una perlustrazione
+a bassa intensità.»
+A quanto pare la missione è iniziata e il capitano della squadra è
+indiscutibilmente Laura. I comandi diventano armi, il terminale una
+mappa, le righe di codice corridoi da attraversare. Ma dietro il gioco
+la partita è vera: non contro qualcuno, ma contro il tempo.
+
+[image]
+
+«Sì!» la incita Valentina. Alice si avvicina alla sorella e segue la
+scena con lei.
+
+Laura esegue una scansione delle porte del vecchio sistema informatico
+della polizia locale.
+
+«Bene. Procediamo con uno script veloce. Prendiamo il binocolo tattico e
+osserviamo le linee nemiche...»
+
+«Vai Laura!»
+
+«Fuoco!»
+
+Laura è decisa e schiaccia il tasto INVIO con determinazione ma senza
+forza. La sensibilità è importante. Un comando non deve partire per
+sbaglio.
+
+laura@dpl: nmap − sS − p21, 8035.228.xxx.xxxStartingNmap7.80(https : //nmap.org)at2041 − 10 − 0323 : 32CESTNmapscanreportfor35.228.xxx.xxxHostisup(0.088slatency).PORTSTATESERVICE21/tcpopenftp80/tcpopenhttplaura@dpl: 
+
+«Bene. Abbiamo trovato. Ci sono due porte aperte. Procediamo.»
+
+Alice sta stringendo la mano a Caterina. Chissà se se ne è accorta o se
+lo ha fatto automaticamente. Ma mentre racconto, Laura è già pronta per
+la sua prossima mossa.
+
+«Prepariamo il grimaldello... questo no, troppo invadente... questo
+no...», Laura verifica diversi comandi al terminale. «Ah! Eccolo, il mio
+preferito, si insinua come un’Idra e apre le porte ordinarie senza farsi
+sentire.»
+
+«Cosa fai, Tata?»
+
+«Abbiamo trovato un varco nella loro recinzione, una porta mal
+sorvegliata e adesso proviamo a vedere che serratura ha.»
+
+Il silenzio si potrebbe pesare. Anche Rocky è immobile, ma forse già
+dorme. Alice fissa Laura che intanto ha ottenuto qualche nuova
+informazione:
+
+laura@dpl: hydra − lftpuser − Ppassword.txtftp : //35.228.xxx.xxxHydrav9.2startingat2041 − 10 − 0323 : 34 : 11[DATA]max16tasksper1server[DATA]102logintries : 1user/102passwords[DATA]attackingftp : //35.228.xxx.xxx : 21/[21][ftp]host : 35.228.xxx.xxxlogin : ftpuserpassword : ftppass1of1targetsuccessfullycompleted.1validpasswordfound.Hydrafinishedat2041 − 10 − 0323 : 34 : 19laura@dpl: 
+
+«Davvero? Queste credenziali cancellano i miei sensi di colpa. La
+polizia locale se l’è cercata.»
+Caterina sgrana gli occhi e apre leggermente le labbra. Ma Laura le
+strizza l’occhio e le sussurra: «È un gioco, Cate. Non faremo danni.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+La sala di controllo della polizia è tranquilla. È quasi mezzanotte. Gli
+agenti sono al termine del loro turno. Ore passate a sorvegliare sistemi
+informatici diventati obsoleti, ma ancora funzionanti. Sottobosco
+digitale, pullulante di attività tutto sommato innoqua e di scarsa
+rilevanza.
+Un agente nota un cursore cambiare colore e spostarsi a destra lasciando
+una scia di lettere alla sua sinistra. Si avvicina, osserva il monitor:
+«Attacco BruteForce sul server 35.228...»
+Il capitano sta prendendo un caffè. Lo appoggia, si avvicina all’agente:
+«Fa’ vedere. È una cosa seria?»
+Sbadiglia: «Identificate l’IP e vediamo da dove arriva. Sarà ancora uno
+di quei retrò.»
+
+L’eterno mutamento
+
+«A cosa stai pensando?»
+«Niente. Guardavo le stelle.»
+«Che costellazione vedi, Giovanni?»
+«Non le riconosco più. Pensi che i cieli stiano cambiando?»
+
+Gli occhi di Giovanni sono chiusi e la testa è rivolta al cielo. Il
+Grande Carro è quasi sdraiato sotto la Stella Polare, lui invece è
+sdraiato sulla rete del vagabondo. Fa caldo, ma hanno acceso un fuoco
+dentro uno dei bidoni.
+
+«Quando mai sono rimasti uguali a se stessi?»
+«E ora? In cosa muteranno?»
+«Te lo chiedi perché il mondo è tornato a interessarti? Vuoi capire se
+tu puoi averci ancora a che fare?»
+«Quante domande fai per essere uno che non ama parlare? Non lo so. È che
+mi chiedo se questa volta il mondo sia cambiato più del solito. È lo
+stesso cambiamento o è un cambiamento diverso?»
+«Tu cosa pensi? So che se me lo chiedi...»
+«No, non ho già una mia idea. Ho rinunciato alle idee. Le idee mutano in
+fretta. È inutile possederle. Chiamiamo idea un processo mentale...»
+«Già, ma dimmi, Giovanni, quale mutamento delle tue abitudini ti ha così
+turbato? Senti bisogno di una cate...chesi?»
+«Lascia perdere. Quando la vista ha iniziato a calarmi è stato l’olfatto
+il senso che ho sviluppato maggiormente. Un odore può parlarmi per ore e
+io posso stare ore ad ascoltarlo.»
+
+«Ad ascoltarla, vuoi dire. Io comunque odorerei volentieri una bella
+torta. Il dolce è l’unica cosa che mancava stasera.»
+
+La Stella Polare è rimasta ferma, mentre le sette stelle del Carro si
+trovano in una posizione diversa ora. La loro distanza relativa è la
+stessa: nel complesso l’intera costellazione non ha cambiato forma. È
+stata una trasformazione isometrica, una rotazione delle stelle attorno
+alla Polare. Per questo lei è rimasta ferma.
+
+«Comunque io credo che il mondo, la biosfera, Gaia, gli dèi, il Tao,
+tutto si trasformi, ma che qualcosa rimanga sempre tale e quale. E quel
+qualcosa sai cos’è?»
+
+Giovanni ascolta l’amico e si gira verso di lui. Questa piega della
+conversazione deve averlo incuriosito.
+
+«Il tempo?»
+
+[image]
+
+Nel mirino della Polizia
+
+Alice stringe la mano di Caterina. Chissà se tra sé sta ancora
+canticchiando i versi che le ha scritto solo sette ore fa.
+Valentina non riesce a stare ferma e saltella sul cuscino con
+un’emozione esplosiva reattiva ai comandi parabellici impartiti dalla
+sorella.
+
+«Bene, cambiamo arma. Via il grimaldello e attiviamo un fucile di
+precisione. Possiamo sparare usando le informazioni ottenute: sbagliare
+non è un’opzione in questa missione.»
+
+Preme INVIO.
+
+laura@dpl:  ftp 35.228.xxx.xxx Connected to 35.228.xxx.xxx. 220 (vsFTPd
+3.0.3) Name (35.228.xxx.xxx:laura): ftpuser 331 Please specify the
+password. Password: 230 Login successful. Remote system type is UNIX.
+Using binary mode to transfer files. ftp>
+
+«Accesso autorizzato. I cancelli sono aperti, iniziamo l’esplorazione.
+Massima attenzione... tutte! Abbiamo trovato un fascicolo. C’è
+qualcosa.»
+Valentina si agita vicino alla sorella: «Tata!»
+«Che succede, soldato?»
+«Niente, niente, continua.»
+«Ti scappa la pipì, soldato?»
+«No, no, la tengo!»
+«Brava! Adesso vediamo un po’ cosa c’è scritto qui dentro:»
+
+ftp> less ftpuser/readme.txt
+
+LEGACY DATA INDEX Last update: 2041-09-28 Maintainer: local-admin
+
+The following paths are still used by legacy services. Do not rename or
+move files without updating the corresponding jobs.
+
+Main files:
+
+/data/in/cassa.csv foreign accounts import /data/war/bann.txt banned
+subjects list /etc/conf/mys.txt local security configuration
+/var/lib/mysql-files/flag.txt registered organizations export
+/data/cnt/crb.csv contact records backup
+
+Notes: - Files under /data/in/ are read by the nightly import task. -
+Files under /data/war/ are checked before access validation. -
+/etc/conf/mys.txt is required by the old MySQL connector. -
+/var/lib/mysql-files/ is exposed only to the database service. -
+/data/cnt/ contains temporary contact exports.
+
+ftp>
+
+«Gli hai tracciati?»
+«Sì. Il collegamento è da una cittadina in Polonia, ma è sicuramente una
+falsa uscita della VPN.»
+«Analizza le impronte. Vediamo da dove arriva davvero.»
+«Sì, lo sto facendo. Anche se tra poco finirei il turno, forse...» non
+finisce la frase, il suo capitano è di un altro avviso.
+«Coraggio, quest’anno avremo il premio di produzione. La faremo vedere
+noi a quegli appendi multe del reparto droni.»
+«Ok capo! L’hai detto. Premio di produzione! Ecco, ci sono quasi. Ho la
+time zone. E non è quella polacca.»
+
+«Cos’hai trovato Laura?» Caterina prova a stare al gioco, ma la voce
+tradisce l’emozione, ha paura di non farcela, di non riuscire a partire,
+anche se forse ora è attratta anche da quello che potrebbe trovare
+restando.
+Laura mantiene la calma, non può uscire ora dal suo ruolo: «Soldato, non
+sei autorizzata a fare domande. Mantieni il bersaglio sotto tiro. Ho
+individuato la directory e il file che stavamo cercando. Lì ci
+dovrebbero essere i dati freschi per il TECS, il database principale del
+Dipartimento per la Sicurezza Nazionale degli Stati Uniti. Aprirlo è il
+nostro obiettivo. Deve essere un’operazione silenziosa.»
+«Ho pipì, puoi aspettare?» Laura guarda Valentina fissa negli occhi:
+«Operazione autorizzata, soldato. Hai 33 secondi da ora.»
+Il bagno non è lontano dal soggiorno e in un attimo Valentina è di
+ritorno.
+
+«Acqua?»
+«Tirata.»
+«Mani?»
+Valentina torna in bagno e dopo pochi secondi è a rapporto: «Lavate.»
+«Bene, allora possiamo procedere.»
+«Che succede, Laura? Dici che ce la facciamo?»
+«Credo di sì. Se nessuno si mette a rompere le uova nel paniere.»
+
+[image]
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«Capo, la combinazione di fingerprint corrisponde ad un agente ostile
+che risulta già profilato. Il server da cui sta uscendo è già
+compromesso. Se mi dai pochi minuti, forse lo vedremo in diretta dalla
+sua webcam.»
+La polizia "ha fatto i compiti" o forse Laura ha fatto il passo più
+lungo della gamba.
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«Tento l’accesso, silenzio assoluto:»
+
+laura@dpl: $sqlmap --flush-session
+-u "http://35.228.xxx.xxx/DVWA/vulnerabilities/sqli/?id=1&Submit=Submit"
+--cookie="PHPSESSID=********; security=low"
+--batch --no-cast
+--file-read="/var/lib/mysql-files/flag.txt"
+
+[INFO] GET parameter 'id' appears to be injectable
+[INFO] GET parameter 'id' is vulnerable
+[INFO] the back-end DBMS is MySQL
+[INFO] fetching file: '/var/lib/mysql-files/flag.txt'
+[INFO] local copy and remote file have the same size: 627 B
+
+files saved to:
+[*] /home/laura/.local/share/sqlmap/output/35.228.xxx.xxx/files/_var_lib_mysql-files_flag.txt
+
+laura@dpl:~$
+
+«Ottimo, vediamo cosa c’hanno scritto dentro.»
+
+1. Clara Whitmore | Green Force | Surveillance: Yes 2. Thomas Hale | NO
+Artificial Intelligence | Surveillance: No 3. Eleanor Price | No Vax
+Enthusiasts | Surveillance: Yes 4. Margaret Collins | Animal Rights
+Advocates | Surveillance: No 5. Daniel Mercer | Digital Freedom Fighters
+| Surveillance: Yes 6. Rebecca Stone | Climate Action Now |
+Surveillance: No 7. Hannah Reed | Anti-Surveillance League |
+Surveillance: Yes 8. Arthur Bennett | Renewable Future Coalition |
+Surveillance: No 9. Julia Hart | Cyber Privacy Watch | Surveillance: Yes
+10. Samuel Grant | Human Rights Front | Surveillance: No 11. Caterina
+xxx | Green Force | Surveillance: Yes
+
+«Cos’hai trovato Laura?»
+«Il tuo nome.»
+«Ma dice sorveglianza: sì! Cosa significa?»
+«Esattamente non lo sappiamo, ma questo file probabilmente raggiungerà
+il DHS tra meno di cinque minuti. Se mi autorizzi, io cambierei quel sì
+in un no.»
+«Il DHS? Cosa sarebbe, Laura?»
+«Cate, il DHS è il Dipartimento per la Sicurezza Interna degli Stati
+Uniti. Raccolgono tutti i dati possibili, anche le tracce disperse dai
+vecchi sistemi locali, come quello che ti deve aver segnalato dopo il
+vostro» si ferma, tentenna un attimo, «arresto?» A Laura scappa una
+risatina. «Probabilmente nessuno ce l’ha con te, ma questa informazione
+esiste e alla SAGA-M potrebbe non piacere. Dobbiamo correggerla prima di
+mezzanotte, se vogliamo dare una chance al tuo visto.»
+«Ho capito. Va bene, spero tu non ti metta nei guai per me.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«Ho trovato la webcam. Il flusso è accessibile.»
+«E la spia?»
+«Firmware, passa dallo stesso controller. Posso escluderla prima di
+avviare il video.»
+«Fallo. Vediamo cosa c’è dall’altra parte.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+Una riga del registro attira l’attenzione di Laura. Si fa seria per un
+attimo, ma non dice nulla. Apre un secondo terminale e verifica i
+dispositivi connessi. Un sorriso, un comando. Invio.
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+Sul monitor della polizia si compone lentamente una figura, byte dopo
+byte.
+«Ci siamo! Sembrano essere più di una persona!»
+L’immagine mostra due sagome, forse due hacker mascherati. Indossano
+vestiti degli stessi colori. La definizione non è ancora buona, ma ogni
+pochi secondi emergono nuovi dettagli. I due hanno camicie uguali, quasi
+divise.
+«Sono due. Direi agenti, ma...» L’agente si blocca. «Accidenti. Addio
+premio di produzione. Io chiudo, capo.»
+
+∼  ∼  ∼ * ∼  ∼  ∼
+
+«Bene, e ora il colpo finale. Mettiamo via le armi da fuoco e passiamo
+all’arma bianca.»
+
+Laura apre il file in modalità di modifica e cambia Yes in No:
+«Ecco fatto. Così non risulti più in sorveglianza per quella
+manifestazione.»
+«Che manifestazione, Cate?»
+«Niente, Alice, una conferenza sit-in sull’ambiente che non sembra
+essere gradita agli “amici” di Mark.»
+Laura guarda Caterina, lei abbassa lo sguardo. È stata cattiva... e lo
+sa.
+
+Mancano 40 secondi alle 24:00:00 NTP. Forse è meglio che Laura completi.
+
+«Caricamento tattico e via: il payload è in volo. File trasferito.»
+«Ce l’hai fatta?»
+«No, ce l’abbiamo fatta», risponde Laura.
+Cate abbraccia l’amica. Alice apre le braccia, poi anche Valentina. Ora
+sono tutte abbracciate. Chissà se si ricordano della torta.
+
+Ombre sulla vittoria
+
+Sono le sette del mattino, il sole è già sorto e le casalinghe hanno
+iniziato le prime pulizie. Sono arrivate delle artiste e nei paraggi
+stanno preparando gli intonaci per le loro street art. Giovanni ha
+dormito vicino al vagabondo, non dentro, fuori, su una rete metallica
+arrugginita. Ippa è sotto, esce e punta i rovi di cinta. Le orecchie
+sono tese. Qualcuno sta penetrando nel convitto.
+
+«Saranno le artiste che cercano un posto esotico per le loro creazioni.
+Dai, Ippa, abbaia, così scappano e non vengono a romperci l’anima.»
+
+I latrati non vanno a vuoto e ricevono in risposta un altro latrato.
+Giovanni sorride. Dal tunnel di rovi escono Laura, Valentina, Alice,
+Rocky e Caterina, che porta una torta.
+
+«Buongiorno, siamo passati a salutarvi.»
+«Ragazze, buongiorno. Vedo che non venite a mani vuote.»
+
+Giovanni si alza e insieme a Ippa e si avvicina al gruppo.
+
+«Abbiamo portato la colazione.»
+«Sì, è una crostata», Valentina precisa.
+«Bisogna chiamare Luca. Il bambino che avete aiutato.»
+«Non sono un bambino.»
+
+Luca sbuca dalle scale antincendio, coperto ancora solo da un
+asciugamano. Dallo zainetto Caterina prende una stuoia da picnic, una
+tovaglia, piattini e bicchieri e apparecchia per la colazione. La
+crostata deve essere buona perché sparisce quasi tutta in pochi minuti,
+insieme al succo di frutta.
+
+Giovanni cerca un tovagliolo e tastando incontra la mano di Caterina.
+
+ «E il tuo viaggio?»
+«Non sono più sicura di voler partire.»
+«Avevo capito che fosse importante.»
+«Lo sarebbe, ma forse non è la cosa giusta da fare.»
+
+Giovanni ascolta Caterina, che continua a parlare. A lungo.
+Rocky e Ippa si rincorrono nei pochi metri quadrati di erba senza
+penetrare tra i cespugli. Le casalinghe osservano il gruppo dalla
+finestra del secondo piano.
+
+Fin qui, tutto bene.
+
+[image]
+
+Epilogo
+
+Niente resta mai davvero fermo. Anche la quiete del mattino, anche la
+luce sulle foglie. Non sapeva che il mondo soffrisse anche vicino a lei
+e forse la sua risposta al grido di aiuto della Terra potrebbe essere
+già attesa da qualcuno. Ma adesso è una mattina fresca e piacevole,
+mangiamo la crostata e aspettiamo che il tempo porti il futuro.
+
+    Le fascie ripariali
+    sono l'ultimo rifugio
+    di diverse specie animali
+
+[image]
+
+Edizioni Tradizionali
+Prima edizione: settembre 2026
+ISBN: 9791298631809
+
+Copertina: Annalisa Pazzi
+Consulenza informatica: Valentina Sisini
+Progetto editoriale, impaginazione e design: Edizioni Tradizionali
+
+© 2026 Francesco Sisini.
+
+Alcuni diritti riservati.
+
+Quest’opera è distribuita con licenza Creative Commons
+Attribuzione–Condividi allo stesso modo 4.0 Internazionale (CC BY-SA
+4.0). È consentito condividerla e adattarla, anche per scopi
+commerciali, attribuendone correttamente la paternità e distribuendo le
+opere derivate con la stessa licenza.
+https://creativecommons.org/licenses/by-sa/4.0/deed.it
+
+Uso dell’intelligenza artificiale: l’opera è stata ideata e scritta da
+Francesco Sisini. Strumenti di IA sono stati utilizzati, sotto il
+controllo e la revisione dell’autore, come supporto all’analisi della
+coerenza narrativa, alla revisione redazionale e alla verifica di
+aspetti tecnici.
+
+Progetto e sorgenti:
+https://github.com/francescosisini/Cnot-Franchise
+
+[1] Gli eventi cui Caterina fa riferimento sono narrati in CNOT – Fuga
+dal computer quantistico, attualmente disponibile in versione digitale
+su GitHub: https://github.com/francescosisini/Cnot-Franchise.

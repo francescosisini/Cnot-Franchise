@@ -1,0 +1,151 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_sicurezza_spaziale_2026",
+  "metadata": {
+    "reference_date": "2026-08-31",
+    "crs": "EPSG:4326",
+    "qgis_group": "11_SPAZIO/05_SICUREZZA_SPAZIALE",
+    "status": "REAL_2026",
+    "scope": "Nodi pubblici e documentati della space safety / Space Situational Awareness europea.",
+    "terminology_note": "In questo layer 'sicurezza spaziale' indica soprattutto Space Safety e SSA: SST, space debris, space weather e Near-Earth Objects; non è una mappa di infrastrutture militari.",
+    "eu_ssa_pillars": [
+      "SST",
+      "SWE",
+      "NEO"
+    ],
+    "eu_sst_2026": {
+      "partnership_member_states": 19,
+      "organisations_receiving_services": "400+",
+      "satellites_safeguarded": "690+ / 700+ depending on publication date"
+    },
+    "duplication_note": "Madrid/GSMC, ESOC e ESRIN coincidono con nodi già presenti in altri layer. La duplicazione è intenzionale: evidenzia che gli stessi luoghi fisici svolgono più funzioni nella dorsale."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.56602,
+          40.27794
+        ]
+      },
+      "properties": {
+        "id": "SPACE-SAFETY-EUSST-FRONTDESK",
+        "name": "EU SST Front Desk — EUSPA",
+        "label": "EU SST Front Desk",
+        "place": "Madrid area, Spagna",
+        "organisation": "EUSPA / EU SST Partnership",
+        "pillar": "SST",
+        "role": "Punto centrale di accesso ai servizi EU Space Surveillance and Tracking: collision avoidance, re-entry analysis e fragmentation analysis.",
+        "status_2026": "operational",
+        "network_note": "Il Front Desk è ospitato presso il Galileo Security Monitoring Centre (GSMC) in Spagna.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "existing_project_node",
+        "source_primary": "https://www.euspa.europa.eu/sst",
+        "source_2026": "https://www.euspa.europa.eu/newsroom-events/news/eu-sst-10-keeping-watch-over-crowded-sky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.623394,
+          49.870598
+        ]
+      },
+      "properties": {
+        "id": "SPACE-SAFETY-ESA-DEBRIS-ESOC",
+        "name": "ESA Space Debris Office — ESOC",
+        "label": "Space Debris Office",
+        "place": "Darmstadt, Germania",
+        "organisation": "European Space Agency",
+        "pillar": "Space debris / SST support",
+        "role": "Analisi del rischio di collisione, rientri, modellazione dell'ambiente dei detriti e supporto operativo alle missioni.",
+        "status_2026": "operational",
+        "network_note": "Nodo già presente nel layer Centri ESA come ESOC; qui compare per la sua funzione specifica di space safety.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "existing_project_node",
+        "source_primary": "https://www.esa.int/Space_Safety/Space_Debris/About_the_Space_Debris_Office",
+        "source_2026": "https://www.sdo.esoc.esa.int/environment_report/Space_Environment_Report_latest.pdf"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674122,
+          41.826947
+        ]
+      },
+      "properties": {
+        "id": "SPACE-SAFETY-ESA-NEOCC",
+        "name": "ESA Near-Earth Object Coordination Centre — ESRIN",
+        "label": "NEOCC",
+        "place": "Frascati, Italia",
+        "organisation": "European Space Agency",
+        "pillar": "NEO",
+        "role": "Centro operativo della Planetary Defence Office ESA per osservazione, calcolo orbitale, impact monitoring e valutazione del rischio da asteroidi e comete vicini alla Terra.",
+        "status_2026": "operational",
+        "network_note": "Nodo già presente nel layer Centri ESA come ESRIN; qui compare per la sua funzione di planetary defence.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "existing_project_node",
+        "source_primary": "https://neo.ssa.esa.int/en/about-neocc",
+        "source_role": "https://www.esa.int/Space_Safety/Planetary_Defence/Near-Earth_Object_Coordination_Centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3583,
+          50.7985
+        ]
+      },
+      "properties": {
+        "id": "SPACE-SAFETY-ESA-SSCC-BRUSSELS",
+        "name": "ESA Space Weather Coordination Centre",
+        "label": "Space Weather",
+        "place": "Space Pole, Uccle/Bruxelles, Belgio",
+        "organisation": "European Space Agency / Space Weather Service Network",
+        "pillar": "SWE",
+        "role": "Coordina la rete europea di servizi di space weather e il relativo helpdesk; supporta utenti di satelliti, reti elettriche, navigazione, comunicazioni e aviazione.",
+        "status_2026": "operational service network / development",
+        "network_note": "Coordina cinque Expert Service Centres e oltre 40 team europei.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "address_approx",
+        "address": "Avenue Circulaire - Ringlaan 3, 1180 Uccle, Belgium",
+        "source_primary": "https://www.esa.int/Space_Safety/Space_weather/Space_Weather_Office",
+        "source_address": "https://swe.ssa.esa.int/contact"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.5106,
+          28.3006
+        ]
+      },
+      "properties": {
+        "id": "SPACE-SAFETY-ESA-TEIDE",
+        "name": "ESA Optical Ground Station / Izaña-1 — Teide",
+        "label": "Teide Tracking",
+        "place": "Tenerife, Spagna",
+        "organisation": "European Space Agency / Instituto de Astrofísica de Canarias",
+        "pillar": "SST / NEO",
+        "role": "Osservazione ottica e laser per il tracking di satelliti, detriti spaziali e near-Earth asteroids.",
+        "status_2026": "operational",
+        "network_note": "Il sito ospita l'Optical Ground Station e la stazione laser Izaña-1.",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "observatory_approx",
+        "source_primary": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_s_site_for_laser_and_quantum_links_marks_25_years",
+        "source_tracking": "https://esoc.esa.int/index.php/content/esa%E2%80%99s-iza%C3%B1a-1-laser-ranging-station-satellite-debris-tracking"
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_industria_spaziale_2026",
+  "metadata": {
+    "reference_date": "2026-09-02",
+    "crs": "EPSG:4326",
+    "qgis_group": "11_SPAZIO/07_INDUSTRIA_SPAZIALE",
+    "status": "REAL_2026",
+    "scope": "Selezione di siti industriali rappresentativi della filiera spaziale europea nel 2026.",
+    "selection_note": "Il layer non è un censimento completo. Seleziona nodi fisici rappresentativi per coprire lanciatori, propulsione, satelliti, infrastrutture orbitali, strutture e New Space.",
+    "overlap_note": "I siti industriali sono separati dai layer di accesso allo spazio: qui interessa dove si progetta, produce, integra e testa; 04_ACCESSO_ALLO_SPAZIO descrive invece dove si lancia."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.913,
+          48.991
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-ARIANEGROUP-LES-MUREAUX",
+        "name": "ArianeGroup — Les Mureaux",
+        "label": "ArianeGroup · Les Mureaux",
+        "place": "Les Mureaux, Francia",
+        "organisation": "ArianeGroup",
+        "segment": "launchers",
+        "industrial_role": "Sviluppo, produzione e integrazione di Ariane 6; assemblaggio finale dello stadio principale criogenico.",
+        "programmes_2026": "Ariane 6; Themis",
+        "status_2026": "operational industrial site",
+        "layer_status": "REAL_2026",
+        "address": "66 Route de Verneuil, 78130 Les Mureaux, France",
+        "coordinate_precision": "site_approx",
+        "source_primary": "https://www.ariane.group/en/our-sites/",
+        "source_programme": "https://www.ariane.group/en/space-transportation/ariane-6/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.006,
+          41.728
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-AVIO-COLLEFERRO",
+        "name": "Avio — Colleferro",
+        "label": "Avio · Colleferro",
+        "place": "Colleferro (Roma), Italia",
+        "organisation": "Avio",
+        "segment": "launchers / propulsion",
+        "industrial_role": "Prime contractor Vega e Vega-C; produzione di motori a propellente solido e sottosistemi di lancio.",
+        "programmes_2026": "Vega-C; Vega-E; P120C; Zefiro",
+        "status_2026": "operational industrial site",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "industrial_area_approx",
+        "source_primary": "https://www.avio.com/",
+        "source_programme": "https://www.avio.com/it"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.488,
+          43.565
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-AIRBUS-TOULOUSE",
+        "name": "Airbus Defence and Space — Toulouse",
+        "label": "Airbus Space · Toulouse",
+        "place": "Toulouse, Francia",
+        "organisation": "Airbus Defence and Space",
+        "segment": "satellites / constellations",
+        "industrial_role": "Produzione e integrazione di satelliti; nel 2026 ospita la nuova linea industriale per i satelliti LEO OneWeb di Eutelsat.",
+        "programmes_2026": "OneWeb LEO; telecomunicazioni; Earth observation; secure communications",
+        "status_2026": "operational industrial site / production ramp-up",
+        "layer_status": "REAL_2026",
+        "address": "31 Rue des Cosmonautes, 31400 Toulouse, France",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.airbus.com/en/airbus-contact-us",
+        "source_2026": "https://www.airbus.com/en/newsroom/press-releases/2026-01-airbus-awarded-eutelsat-contract-for-further-340-low-earth-orbit"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.628,
+          45.076
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-THALES-TORINO",
+        "name": "Thales Alenia Space — Torino",
+        "label": "Thales Alenia Space · Torino",
+        "place": "Torino, Italia",
+        "organisation": "Thales Alenia Space",
+        "segment": "space infrastructure / science / exploration",
+        "industrial_role": "Moduli pressurizzati, infrastrutture orbitali, satelliti scientifici, sonde di esplorazione e servicing in orbita.",
+        "programmes_2026": "exploration; orbital infrastructure; science satellites",
+        "status_2026": "operational industrial site / expansion",
+        "layer_status": "REAL_2026",
+        "address": "Strada Antica di Collegno 253, Torino, Italia",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.thalesaleniaspace.com/it",
+        "source_2026": "https://www.comune.torino.it/novita/comunicati/torino-citta-dellaerospazio-thales-alenia-space-propone-realizzazione-un-nuovo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.854,
+          53.107
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-OHB-BREMEN",
+        "name": "OHB — Bremen",
+        "label": "OHB · Bremen",
+        "place": "Bremen, Germania",
+        "organisation": "OHB",
+        "segment": "satellite systems",
+        "industrial_role": "Sistemi satellitari completi, payload e attività di Assembly, Integration & Testing per osservazione, navigazione, telecomunicazioni e missioni scientifiche.",
+        "programmes_2026": "space systems; navigation; Earth observation; telecommunications",
+        "status_2026": "operational industrial site",
+        "layer_status": "REAL_2026",
+        "address": "Manfred-Fuchs-Platz 2-4, 28359 Bremen, Germany",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.ohb.de/en/business-segments/space-systems",
+        "source_address": "https://www.ohb.de/en/legal-notice"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3,
+          47.073
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-BEYOND-GRAVITY-EMMEN",
+        "name": "Beyond Gravity — Emmen",
+        "label": "Beyond Gravity · Emmen",
+        "place": "Emmen, Svizzera",
+        "organisation": "Beyond Gravity",
+        "segment": "launcher structures / components",
+        "industrial_role": "Centro di competenza e produzione per strutture di lanciatori europei e asiatici.",
+        "programmes_2026": "Ariane 6 supply chain; launcher structures",
+        "status_2026": "operational industrial site",
+        "layer_status": "REAL_2026",
+        "address": "Seetalstrasse 175, 6032 Emmen, Switzerland",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://www.beyondgravity.com/en/our-locations",
+        "source_2026": "https://www.beyondgravity.com/en/news/arianegroup-and-beyond-gravity-sign-major-contract-securing-long-term-supply-ariane-6-payload"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.665,
+          48.064
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-ISAR-OTTOBRUNN",
+        "name": "Isar Aerospace — Ottobrunn",
+        "label": "Isar Aerospace · Ottobrunn",
+        "place": "Ottobrunn, Germania",
+        "organisation": "Isar Aerospace",
+        "segment": "New Space launchers",
+        "industrial_role": "Sviluppo e produzione integrata del lanciatore Spectrum, realizzato e testato in larga parte internamente.",
+        "programmes_2026": "Spectrum",
+        "status_2026": "operational production facility",
+        "layer_status": "REAL_2026",
+        "address": "Caroline-Herschel-Straße 2, 85521 Ottobrunn, Germany",
+        "coordinate_precision": "address_approx",
+        "source_primary": "https://isaraerospace.com/press/german-minister-of-defence-boris-pistorius-visits-isar-aerospace-underscoring-strategic-priority-of-sovereign-access-to-space-for-defence-and-deterrence",
+        "source_address": "https://isaraerospace.com/legal-notice"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9275415,
+          48.367028
+        ]
+      },
+      "properties": {
+        "id": "SPACE-IND-RFA-AUGSBURG",
+        "name": "Rocket Factory Augsburg — Augsburg",
+        "label": "RFA · Augsburg",
+        "place": "Augsburg, Germania",
+        "organisation": "Rocket Factory Augsburg",
+        "segment": "New Space launchers",
+        "industrial_role": "Sviluppo, produzione e test del lanciatore RFA ONE e dei suoi stadi.",
+        "programmes_2026": "RFA ONE",
+        "status_2026": "operational production and test site",
+        "layer_status": "REAL_2026",
+        "address": "Berliner Allee 65, 86153 Augsburg, Germany",
+        "coordinate_precision": "official_coordinates",
+        "source_primary": "https://www.rfa.space/rfa-ships-stages-to-saxavord-spaceport/",
+        "source_address": "https://www.rfa.space/contact/"
+      }
+    }
+  ]
+}

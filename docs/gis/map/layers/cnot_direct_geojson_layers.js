@@ -224,9 +224,6 @@ function cnotAddLayerOnce(group, layer) {
 
 /* ============================================================
  * STILE DORSALE SPAZIO
- *
- * Usa "label" se disponibile.
- * Altrimenti usa "name".
  * ============================================================ */
 
 function cnotSpacePointStyle(feature) {
@@ -269,12 +266,7 @@ function cnotSpacePointStyle(feature) {
                 width: 3
             }),
 
-            padding: [
-                2,
-                3,
-                2,
-                3
-            ]
+            padding: [2, 3, 2, 3]
         })
     });
 }
@@ -293,7 +285,6 @@ var source_spazio_centri_esa_2026 =
         format:
             new ol.format.GeoJSON()
     });
-
 
 var lyr_spazio_centri_esa_2026 =
     new ol.layer.Vector({
@@ -314,54 +305,12 @@ var lyr_spazio_centri_esa_2026 =
             cnotSpacePointStyle
     });
 
-
 lyr_spazio_centri_esa_2026.set(
     'cnotId',
     'spazio_centri_esa_2026'
 );
 
-
-lyr_spazio_centri_esa_2026.set('fieldAliases', {
-    'id': 'id',
-    'name': 'name',
-    'label': 'label',
-    'dorsal': 'dorsal',
-    'layer_status': 'layer_status',
-    'place': 'place',
-    'function': 'function',
-    'coordinate_precision': 'coordinate_precision',
-    'source': 'source'
-});
-
-
-lyr_spazio_centri_esa_2026.set('fieldImages', {
-    'id': 'TextEdit',
-    'name': 'TextEdit',
-    'label': 'TextEdit',
-    'dorsal': 'TextEdit',
-    'layer_status': 'TextEdit',
-    'place': 'TextEdit',
-    'function': 'TextEdit',
-    'coordinate_precision': 'TextEdit',
-    'source': 'TextEdit'
-});
-
-
-lyr_spazio_centri_esa_2026.set('fieldLabels', {
-    'id': 'no label',
-    'name': 'no label',
-    'label': 'no label',
-    'dorsal': 'no label',
-    'layer_status': 'no label',
-    'place': 'no label',
-    'function': 'no label',
-    'coordinate_precision': 'no label',
-    'source': 'no label'
-});
-
-
-lyr_spazio_centri_esa_2026
-    .setVisible(true);
+lyr_spazio_centri_esa_2026.setVisible(true);
 
 
 /* ============================================================
@@ -377,7 +326,6 @@ var source_spazio_galileo_euspa_2026 =
         format:
             new ol.format.GeoJSON()
     });
-
 
 var lyr_spazio_galileo_euspa_2026 =
     new ol.layer.Vector({
@@ -398,66 +346,12 @@ var lyr_spazio_galileo_euspa_2026 =
             cnotSpacePointStyle
     });
 
-
 lyr_spazio_galileo_euspa_2026.set(
     'cnotId',
     'spazio_galileo_euspa_2026'
 );
 
-
-lyr_spazio_galileo_euspa_2026.set('fieldAliases', {
-    'id': 'id',
-    'name': 'name',
-    'label': 'label',
-    'dorsal': 'dorsal',
-    'subgroup': 'subgroup',
-    'layer_status': 'layer_status',
-    'place': 'place',
-    'function': 'function',
-    'address': 'address',
-    'coordinate_precision': 'coordinate_precision',
-    'source_primary': 'source_primary',
-    'source_coordinates': 'source_coordinates',
-    'note': 'note'
-});
-
-
-lyr_spazio_galileo_euspa_2026.set('fieldImages', {
-    'id': 'TextEdit',
-    'name': 'TextEdit',
-    'label': 'TextEdit',
-    'dorsal': 'TextEdit',
-    'subgroup': 'TextEdit',
-    'layer_status': 'TextEdit',
-    'place': 'TextEdit',
-    'function': 'TextEdit',
-    'address': 'TextEdit',
-    'coordinate_precision': 'TextEdit',
-    'source_primary': 'TextEdit',
-    'source_coordinates': 'TextEdit',
-    'note': 'TextEdit'
-});
-
-
-lyr_spazio_galileo_euspa_2026.set('fieldLabels', {
-    'id': 'no label',
-    'name': 'no label',
-    'label': 'no label',
-    'dorsal': 'no label',
-    'subgroup': 'no label',
-    'layer_status': 'no label',
-    'place': 'no label',
-    'function': 'no label',
-    'address': 'no label',
-    'coordinate_precision': 'no label',
-    'source_primary': 'no label',
-    'source_coordinates': 'no label',
-    'note': 'no label'
-});
-
-
-lyr_spazio_galileo_euspa_2026
-    .setVisible(true);
+lyr_spazio_galileo_euspa_2026.setVisible(true);
 
 
 /* ============================================================
@@ -473,7 +367,6 @@ var source_spazio_copernicus_eumetsat_2026 =
         format:
             new ol.format.GeoJSON()
     });
-
 
 var lyr_spazio_copernicus_eumetsat_2026 =
     new ol.layer.Vector({
@@ -494,66 +387,366 @@ var lyr_spazio_copernicus_eumetsat_2026 =
             cnotSpacePointStyle
     });
 
-
 lyr_spazio_copernicus_eumetsat_2026.set(
     'cnotId',
     'spazio_copernicus_eumetsat_2026'
 );
 
+lyr_spazio_copernicus_eumetsat_2026.setVisible(true);
 
-lyr_spazio_copernicus_eumetsat_2026.set('fieldAliases', {
+
+/* ============================================================
+ * 04_ACCESSO_ALLO_SPAZIO
+ * ============================================================ */
+
+var source_spazio_accesso_spazio_2026 =
+    new ol.source.Vector({
+
+        url:
+            './geojson/spazio_accesso_spazio_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+var lyr_spazio_accesso_spazio_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_accesso_spazio_2026,
+
+        title:
+            'spazio_accesso_spazio_2026',
+
+        popuplayertitle:
+            'Accesso allo spazio · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
+lyr_spazio_accesso_spazio_2026.set(
+    'cnotId',
+    'spazio_accesso_spazio_2026'
+);
+
+lyr_spazio_accesso_spazio_2026.setVisible(true);
+
+
+/* ============================================================
+ * 05_SICUREZZA_SPAZIALE
+ * ============================================================ */
+
+var source_spazio_sicurezza_spaziale_2026 =
+    new ol.source.Vector({
+
+        url:
+            './geojson/spazio_sicurezza_spaziale_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+var lyr_spazio_sicurezza_spaziale_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_sicurezza_spaziale_2026,
+
+        title:
+            'spazio_sicurezza_spaziale_2026',
+
+        popuplayertitle:
+            'Sicurezza spaziale · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
+lyr_spazio_sicurezza_spaziale_2026.set(
+    'cnotId',
+    'spazio_sicurezza_spaziale_2026'
+);
+
+lyr_spazio_sicurezza_spaziale_2026.set('fieldAliases', {
     'id': 'id',
     'name': 'name',
     'label': 'label',
     'place': 'place',
     'organisation': 'organisation',
+    'pillar': 'pillar',
     'role': 'role',
-    'services': 'services',
+    'status_2026': 'status_2026',
+    'network_note': 'network_note',
     'layer_status': 'layer_status',
-    'address': 'address',
     'coordinate_precision': 'coordinate_precision',
+    'address': 'address',
     'source_primary': 'source_primary',
+    'source_2026': 'source_2026',
+    'source_role': 'source_role',
     'source_address': 'source_address',
-    'source_role': 'source_role'
+    'source_tracking': 'source_tracking'
 });
 
-
-lyr_spazio_copernicus_eumetsat_2026.set('fieldImages', {
+lyr_spazio_sicurezza_spaziale_2026.set('fieldImages', {
     'id': 'TextEdit',
     'name': 'TextEdit',
     'label': 'TextEdit',
     'place': 'TextEdit',
     'organisation': 'TextEdit',
+    'pillar': 'TextEdit',
     'role': 'TextEdit',
-    'services': 'TextEdit',
+    'status_2026': 'TextEdit',
+    'network_note': 'TextEdit',
     'layer_status': 'TextEdit',
-    'address': 'TextEdit',
     'coordinate_precision': 'TextEdit',
+    'address': 'TextEdit',
     'source_primary': 'TextEdit',
+    'source_2026': 'TextEdit',
+    'source_role': 'TextEdit',
     'source_address': 'TextEdit',
-    'source_role': 'TextEdit'
+    'source_tracking': 'TextEdit'
 });
 
-
-lyr_spazio_copernicus_eumetsat_2026.set('fieldLabels', {
+lyr_spazio_sicurezza_spaziale_2026.set('fieldLabels', {
     'id': 'no label',
     'name': 'no label',
     'label': 'no label',
     'place': 'no label',
     'organisation': 'no label',
+    'pillar': 'no label',
     'role': 'no label',
-    'services': 'no label',
+    'status_2026': 'no label',
+    'network_note': 'no label',
+    'layer_status': 'no label',
+    'coordinate_precision': 'no label',
+    'address': 'no label',
+    'source_primary': 'no label',
+    'source_2026': 'no label',
+    'source_role': 'no label',
+    'source_address': 'no label',
+    'source_tracking': 'no label'
+});
+
+lyr_spazio_sicurezza_spaziale_2026.setVisible(true);
+
+
+
+
+/* ============================================================
+ * 06_CONNETTIVITA_SICURA
+ * ============================================================ */
+
+var source_spazio_connettivita_sicura_2026 =
+    new ol.source.Vector({
+
+        url:
+            './geojson/spazio_connettivita_sicura_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+var lyr_spazio_connettivita_sicura_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_connettivita_sicura_2026,
+
+        title:
+            'spazio_connettivita_sicura_2026',
+
+        popuplayertitle:
+            'Connettività sicura · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
+lyr_spazio_connettivita_sicura_2026.set(
+    'cnotId',
+    'spazio_connettivita_sicura_2026'
+);
+
+lyr_spazio_connettivita_sicura_2026.set('fieldAliases', {
+    'id': 'id',
+    'name': 'name',
+    'label': 'label',
+    'place': 'place',
+    'organisation': 'organisation',
+    'node_type': 'node_type',
+    'programme': 'programme',
+    'role': 'role',
+    'status_2026': 'status_2026',
+    'layer_status': 'layer_status',
+    'address': 'address',
+    'coordinate_precision': 'coordinate_precision',
+    'coordinate_note': 'coordinate_note',
+    'source_primary': 'source_primary',
+    'source_iris2': 'source_iris2',
+    'source_site': 'source_site',
+    'source_legal': 'source_legal',
+    'source_greece': 'source_greece',
+    'milestone_2026': 'milestone_2026',
+    'note': 'note'
+});
+
+lyr_spazio_connettivita_sicura_2026.set('fieldImages', {
+    'id': 'TextEdit',
+    'name': 'TextEdit',
+    'label': 'TextEdit',
+    'place': 'TextEdit',
+    'organisation': 'TextEdit',
+    'node_type': 'TextEdit',
+    'programme': 'TextEdit',
+    'role': 'TextEdit',
+    'status_2026': 'TextEdit',
+    'layer_status': 'TextEdit',
+    'address': 'TextEdit',
+    'coordinate_precision': 'TextEdit',
+    'coordinate_note': 'TextEdit',
+    'source_primary': 'TextEdit',
+    'source_iris2': 'TextEdit',
+    'source_site': 'TextEdit',
+    'source_legal': 'TextEdit',
+    'source_greece': 'TextEdit',
+    'milestone_2026': 'TextEdit',
+    'note': 'TextEdit'
+});
+
+lyr_spazio_connettivita_sicura_2026.set('fieldLabels', {
+    'id': 'no label',
+    'name': 'no label',
+    'label': 'no label',
+    'place': 'no label',
+    'organisation': 'no label',
+    'node_type': 'no label',
+    'programme': 'no label',
+    'role': 'no label',
+    'status_2026': 'no label',
+    'layer_status': 'no label',
+    'address': 'no label',
+    'coordinate_precision': 'no label',
+    'coordinate_note': 'no label',
+    'source_primary': 'no label',
+    'source_iris2': 'no label',
+    'source_site': 'no label',
+    'source_legal': 'no label',
+    'source_greece': 'no label',
+    'milestone_2026': 'no label',
+    'note': 'no label'
+});
+
+lyr_spazio_connettivita_sicura_2026.setVisible(true);
+
+
+
+
+/* ============================================================
+ * 07_INDUSTRIA_SPAZIALE
+ * ============================================================ */
+
+var source_spazio_industria_spaziale_2026 =
+    new ol.source.Vector({
+
+        url:
+            './geojson/spazio_industria_spaziale_2026.geojson',
+
+        format:
+            new ol.format.GeoJSON()
+    });
+
+var lyr_spazio_industria_spaziale_2026 =
+    new ol.layer.Vector({
+
+        source:
+            source_spazio_industria_spaziale_2026,
+
+        title:
+            'spazio_industria_spaziale_2026',
+
+        popuplayertitle:
+            'Industria spaziale · 2026',
+
+        interactive:
+            true,
+
+        style:
+            cnotSpacePointStyle
+    });
+
+lyr_spazio_industria_spaziale_2026.set(
+    'cnotId',
+    'spazio_industria_spaziale_2026'
+);
+
+lyr_spazio_industria_spaziale_2026.set('fieldAliases', {
+    'id': 'id',
+    'name': 'name',
+    'label': 'label',
+    'place': 'place',
+    'organisation': 'organisation',
+    'segment': 'segment',
+    'industrial_role': 'industrial_role',
+    'programmes_2026': 'programmes_2026',
+    'status_2026': 'status_2026',
+    'layer_status': 'layer_status',
+    'address': 'address',
+    'coordinate_precision': 'coordinate_precision',
+    'source_primary': 'source_primary',
+    'source_programme': 'source_programme',
+    'source_2026': 'source_2026',
+    'source_address': 'source_address'
+});
+
+lyr_spazio_industria_spaziale_2026.set('fieldImages', {
+    'id': 'TextEdit',
+    'name': 'TextEdit',
+    'label': 'TextEdit',
+    'place': 'TextEdit',
+    'organisation': 'TextEdit',
+    'segment': 'TextEdit',
+    'industrial_role': 'TextEdit',
+    'programmes_2026': 'TextEdit',
+    'status_2026': 'TextEdit',
+    'layer_status': 'TextEdit',
+    'address': 'TextEdit',
+    'coordinate_precision': 'TextEdit',
+    'source_primary': 'TextEdit',
+    'source_programme': 'TextEdit',
+    'source_2026': 'TextEdit',
+    'source_address': 'TextEdit'
+});
+
+lyr_spazio_industria_spaziale_2026.set('fieldLabels', {
+    'id': 'no label',
+    'name': 'no label',
+    'label': 'no label',
+    'place': 'no label',
+    'organisation': 'no label',
+    'segment': 'no label',
+    'industrial_role': 'no label',
+    'programmes_2026': 'no label',
+    'status_2026': 'no label',
     'layer_status': 'no label',
     'address': 'no label',
     'coordinate_precision': 'no label',
     'source_primary': 'no label',
-    'source_address': 'no label',
-    'source_role': 'no label'
+    'source_programme': 'no label',
+    'source_2026': 'no label',
+    'source_address': 'no label'
 });
 
-
-lyr_spazio_copernicus_eumetsat_2026
-    .setVisible(true);
+lyr_spazio_industria_spaziale_2026.setVisible(true);
 
 
 /* ============================================================
@@ -566,14 +759,12 @@ var group_11_SPAZIO_direct =
         'spazio'
     );
 
-
 var group_01_CENTRI_ESA_direct =
     cnotEnsureChildGroup(
         group_11_SPAZIO_direct,
         '01_CENTRI_ESA',
         'spazio_centri_esa'
     );
-
 
 var group_02_GALILEO_EUSPA_direct =
     cnotEnsureChildGroup(
@@ -582,12 +773,39 @@ var group_02_GALILEO_EUSPA_direct =
         'spazio_galileo_euspa'
     );
 
-
 var group_03_COPERNICUS_EUMETSAT_direct =
     cnotEnsureChildGroup(
         group_11_SPAZIO_direct,
         '03_COPERNICUS_EUMETSAT',
         'spazio_copernicus_eumetsat'
+    );
+
+var group_04_ACCESSO_ALLO_SPAZIO_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '04_ACCESSO_ALLO_SPAZIO',
+        'spazio_accesso_spazio'
+    );
+
+var group_05_SICUREZZA_SPAZIALE_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '05_SICUREZZA_SPAZIALE',
+        'spazio_sicurezza_spaziale'
+    );
+
+var group_06_CONNETTIVITA_SICURA_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '06_CONNETTIVITA_SICURA',
+        'spazio_connettivita_sicura'
+    );
+
+var group_07_INDUSTRIA_SPAZIALE_direct =
+    cnotEnsureChildGroup(
+        group_11_SPAZIO_direct,
+        '07_INDUSTRIA_SPAZIALE',
+        'spazio_industria_spaziale'
     );
 
 
@@ -600,14 +818,32 @@ cnotAddLayerOnce(
     lyr_spazio_centri_esa_2026
 );
 
-
 cnotAddLayerOnce(
     group_02_GALILEO_EUSPA_direct,
     lyr_spazio_galileo_euspa_2026
 );
 
-
 cnotAddLayerOnce(
     group_03_COPERNICUS_EUMETSAT_direct,
     lyr_spazio_copernicus_eumetsat_2026
+);
+
+cnotAddLayerOnce(
+    group_04_ACCESSO_ALLO_SPAZIO_direct,
+    lyr_spazio_accesso_spazio_2026
+);
+
+cnotAddLayerOnce(
+    group_05_SICUREZZA_SPAZIALE_direct,
+    lyr_spazio_sicurezza_spaziale_2026
+);
+
+cnotAddLayerOnce(
+    group_06_CONNETTIVITA_SICURA_direct,
+    lyr_spazio_connettivita_sicura_2026
+);
+
+cnotAddLayerOnce(
+    group_07_INDUSTRIA_SPAZIALE_direct,
+    lyr_spazio_industria_spaziale_2026
 );

@@ -1,0 +1,144 @@
+{
+  "type": "FeatureCollection",
+  "name": "spazio_connettivita_sicura_2026",
+  "metadata": {
+    "reference_date": "2026-08-31",
+    "crs": "EPSG:4326",
+    "qgis_group": "11_SPAZIO/06_CONNETTIVITA_SICURA",
+    "status": "MIXED_REAL_2026_REAL_MILESTONE_PROGRAMMATO",
+    "scope": "Nodi pubblici della connettività satellitare sicura europea: GOVSATCOM operativo nel 2026 e infrastrutture/istituzioni che preparano IRIS².",
+    "architecture_note": "GOVSATCOM e IRIS² non sono la stessa cosa. GOVSATCOM nel 2026 aggrega e distribuisce capacità satellitare sicura esistente; IRIS² è la futura infrastruttura multi-orbitale sovrana che alimenterà progressivamente questi servizi.",
+    "govsatcom_2026": {
+      "initial_operations": "January 2026",
+      "first_operational_use": "Cyprus, March 2026",
+      "capacity_contributors": [
+        "France",
+        "Greece",
+        "Italy",
+        "Luxembourg",
+        "Spain"
+      ],
+      "permanent_hubs": [
+        "Cologne, Germany",
+        "Agios Ioannis, Greece"
+      ]
+    },
+    "iris2_2026": {
+      "phase": "implementation",
+      "implementation_agreement": "7 August 2026",
+      "main_constellation_satellites": 348,
+      "first_launches": "planned from 2029",
+      "operational_note": "IRIS² is not represented as an operational satellite network in 2026."
+    },
+    "security_note": "Il layer contiene soltanto ubicazioni e ruoli già pubblicati da fonti istituzionali; non tenta di ricostruire infrastrutture sensibili non pubbliche.",
+    "duplication_note": "EUSPA Prague è già presente in un altro layer: la duplicazione è intenzionale per evidenziare la funzione trasversale del nodo."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4348754,
+          50.0979545
+        ]
+      },
+      "properties": {
+        "id": "SECURE-CONNECT-EUSPA-PRAGUE",
+        "name": "EUSPA Headquarters",
+        "label": "EUSPA · Secure SATCOM",
+        "place": "Praga, Cechia",
+        "organisation": "European Union Agency for the Space Programme",
+        "node_type": "service_management",
+        "programme": "GOVSATCOM / IRIS²",
+        "role": "Gestione dei servizi GOVSATCOM e preparazione della futura erogazione dei servizi governativi IRIS², inclusi requisiti utenti, operazioni e sicurezza/accreditamento.",
+        "status_2026": "operational institutional node",
+        "layer_status": "REAL_2026",
+        "address": "Janovského 438/2, 170 00 Praha 7–Holešovice, Czechia",
+        "coordinate_precision": "address",
+        "source_primary": "https://www.euspa.europa.eu/govsatcom-hub",
+        "source_iris2": "https://www.euspa.europa.eu/eu-space-programme/secure-satcom/iris2",
+        "note": "Nodo già presente nel layer Galileo/EUSPA; qui compare per la funzione specifica di secure connectivity."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3826,
+          50.8431
+        ]
+      },
+      "properties": {
+        "id": "SECURE-CONNECT-EC-BRUSSELS",
+        "name": "European Commission — Secure Connectivity Programme",
+        "label": "Commissione UE · IRIS²",
+        "place": "Bruxelles, Belgio",
+        "organisation": "European Commission",
+        "node_type": "programme_management",
+        "programme": "IRIS² / GOVSATCOM",
+        "role": "Gestione politica e programmatica della connettività satellitare sicura dell'UE; nel 2026 coordina con ESA, EUSPA e SpaceRISE la fase di implementazione IRIS².",
+        "status_2026": "IRIS² implementation phase",
+        "layer_status": "REAL_MILESTONE",
+        "coordinate_precision": "institution_approx",
+        "source_primary": "https://defence-industry-space.ec.europa.eu/eu-govsatcom-securing-europe-ground-space-2026-02-26_en",
+        "source_iris2": "https://www.euspa.europa.eu/newsroom-events/news/commission-accelerates-iris2-deployment-enhanced-security-and-expanded",
+        "milestone_2026": "7 agosto 2026: accordo di implementazione IRIS²; costellazione principale portata a 348 satelliti; primi lanci previsti dal 2029."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1205,
+          50.8529
+        ]
+      },
+      "properties": {
+        "id": "SECURE-CONNECT-GOVSATCOM-COLOGNE",
+        "name": "EU GOVSATCOM Hub — Cologne",
+        "label": "GOVSATCOM Hub · Colonia",
+        "place": "DLR, Linder Höhe, Colonia, Germania",
+        "organisation": "EUSPA / DLR",
+        "node_type": "permanent_ground_hub",
+        "programme": "GOVSATCOM / future IRIS² service delivery",
+        "role": "Uno dei due siti permanenti del GOVSATCOM Hub. Le due strutture opereranno come un unico sistema ridondante per collegare utenti governativi e capacità satellitari sicure.",
+        "status_2026": "construction started 16 June 2026",
+        "layer_status": "REAL_MILESTONE",
+        "address": "DLR, Linder Höhe, 51147 Köln, Germany",
+        "coordinate_precision": "site_approx",
+        "source_primary": "https://defence-industry-space.ec.europa.eu/eu-govsatcom-hub-site-cologne-further-strengthen-europes-secure-satellite-communications-2026-06-25_en",
+        "source_site": "https://www.dlr.de/en/latest/news/2026/groundbreaking-ceremony-at-dlr-european-hub-for-secure-satellite-communications-to-be-built-in-cologne",
+        "source_legal": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024D3195"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "id": "SECURE-CONNECT-GOVSATCOM-AGIOS-IOANNIS",
+        "name": "EU GOVSATCOM Hub — Agios Ioannis",
+        "label": "GOVSATCOM Hub · Grecia",
+        "place": "Agios Ioannis, regione di Atene, Grecia",
+        "organisation": "EUSPA / Hellenic authorities",
+        "node_type": "permanent_ground_hub",
+        "programme": "GOVSATCOM / future IRIS² service delivery",
+        "role": "Secondo sito permanente del GOVSATCOM Hub, scelto insieme a Colonia per ridondanza, continuità operativa e sicurezza del servizio.",
+        "status_2026": "designated permanent hub site / deployment toward final configuration",
+        "layer_status": "PROGRAMMATO",
+        "coordinate_precision": "Athens_region_approx",
+        "coordinate_note": "Le fonti pubbliche citano Agios Ioannis nella regione di Atene ma non pubblicano nel materiale consultato una coordinata tecnica del sito; il punto GIS rappresenta quindi soltanto la regione.",
+        "source_primary": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024D3195",
+        "source_greece": "https://www.mod.mil.gr/en/communication-of-the-minister-of-national-defence-nikos-dendias-with/"
+      }
+    }
+  ]
+}

@@ -7,14 +7,17 @@
 
   <style>
     :root {
-      --bg: #020402;
-      --card: #071007;
-      --ink: #eaffea;
-      --muted: #9fc79a;
-      --line: rgba(57, 255, 20, 0.28);
-      --line-strong: rgba(57, 255, 20, 0.62);
-      --accent: #39ff14;
-      --accent-soft: rgba(57, 255, 20, 0.10);
+      --bg: #02050d;
+      --bg-deep: #01030a;
+      --card: rgba(6, 12, 26, 0.92);
+      --ink: #eef8ff;
+      --muted: #9eb4c8;
+      --line: rgba(88, 181, 255, 0.26);
+      --line-strong: rgba(111, 210, 255, 0.58);
+      --accent: #62d8ff;
+      --accent-2: #8b7dff;
+      --data: #78ffb3;
+      --accent-soft: rgba(98, 216, 255, 0.10);
     }
 
     * { box-sizing: border-box; }
@@ -25,20 +28,60 @@
       margin: 0;
       color: var(--ink);
       background:
-        radial-gradient(circle at 20% 0%, rgba(57, 255, 20, 0.08), transparent 34%),
-        linear-gradient(rgba(57, 255, 20, 0.025) 50%, rgba(0, 0, 0, 0.025) 50%),
-        var(--bg);
-      background-size: auto, 100% 4px, auto;
+        radial-gradient(circle at 50% -8%, rgba(90, 175, 255, 0.22), transparent 30%),
+        radial-gradient(circle at 85% 12%, rgba(128, 92, 255, 0.12), transparent 24%),
+        radial-gradient(circle at 15% 22%, rgba(70, 215, 255, 0.08), transparent 28%),
+        linear-gradient(180deg, #030816 0%, #02050d 38%, #01030a 100%);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.55;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
     }
 
-    a { color: #baffad; }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.82) 0 1px, transparent 1.2px),
+        radial-gradient(circle, rgba(124,205,255,.52) 0 1px, transparent 1.2px),
+        radial-gradient(circle, rgba(255,255,255,.36) 0 1px, transparent 1.2px);
+      background-size: 173px 173px, 251px 251px, 337px 337px;
+      background-position: 21px 37px, 111px 89px, 53px 191px;
+      opacity: .30;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      left: -10vw;
+      right: -10vw;
+      top: -34vw;
+      height: 46vw;
+      min-height: 330px;
+      border-radius: 0 0 50% 50%;
+      pointer-events: none;
+      z-index: -1;
+      border-bottom: 1px solid rgba(104, 207, 255, .26);
+      box-shadow:
+        0 14px 70px rgba(71, 168, 255, .18),
+        0 28px 140px rgba(56, 104, 255, .10);
+      background:
+        radial-gradient(ellipse at center bottom,
+          rgba(31, 104, 176, .18) 0%,
+          rgba(12, 31, 66, .10) 42%,
+          transparent 67%);
+    }
+
+    a { color: #9fe3ff; }
 
     code {
-      color: #baffad;
-      background: rgba(57, 255, 20, 0.08);
-      border: 1px solid rgba(57, 255, 20, 0.18);
+      color: #9fe3ff;
+      background: rgba(98, 216, 255, 0.08);
+      border: 1px solid rgba(98, 216, 255, 0.18);
       border-radius: 5px;
       padding: 0 0.25em;
     }
@@ -61,16 +104,16 @@
       margin: 0 0 10px;
       font-size: clamp(1.9rem, 4vw, 3rem);
       line-height: 1.04;
-      text-shadow: 0 0 12px rgba(57, 255, 20, 0.18);
+      text-shadow: 0 0 12px rgba(98, 216, 255, 0.18);
     }
 
     h2 { margin-top: 0; }
-    h3 { margin-bottom: 0.45rem; color: #dfffdc; }
+    h3 { margin-bottom: 0.45rem; color: #deeffb; }
 
     .lead {
       margin: 0 0 18px;
       max-width: 78ch;
-      color: #dfffdc;
+      color: #deeffb;
       font-size: 1.04rem;
     }
 
@@ -80,7 +123,7 @@
       padding: 10px 12px;
       border-radius: 8px;
       margin: 16px 0 20px;
-      color: #d7ffd2;
+      color: #d4eaf7;
       font-size: 0.94rem;
     }
 
@@ -93,18 +136,18 @@
       gap: 8px;
       padding: 12px;
       margin: 0 -12px 18px;
-      background: rgba(2, 7, 2, 0.92);
+      background: rgba(3, 8, 20, 0.88);
       border: 1px solid var(--line);
       border-radius: 14px;
       backdrop-filter: blur(8px);
-      box-shadow: 0 0 22px rgba(57, 255, 20, 0.06);
+      box-shadow: 0 0 22px rgba(98, 216, 255, 0.06);
     }
 
     .step-btn {
       appearance: none;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(0, 0, 0, 0.55);
+      background: rgba(2, 7, 18, 0.68);
       color: var(--ink);
       padding: 8px 12px;
       font: inherit;
@@ -116,15 +159,15 @@
     .step-btn:hover {
       transform: translateY(-1px);
       border-color: var(--line-strong);
-      background: rgba(57, 255, 20, 0.10);
+      background: rgba(98, 216, 255, 0.10);
     }
 
     .step-btn.is-active {
       background: var(--accent);
-      color: #041004;
+      color: #020814;
       border-color: var(--accent);
       font-weight: 750;
-      box-shadow: 0 0 16px rgba(57, 255, 20, 0.22);
+      box-shadow: 0 0 16px rgba(98, 216, 255, 0.22);
     }
 
     .current {
@@ -139,19 +182,19 @@
     }
 
     .section {
-      background: linear-gradient(180deg, rgba(11, 22, 11, 0.96), rgba(5, 10, 5, 0.96));
+      background: linear-gradient(180deg, rgba(8, 17, 36, 0.94), rgba(3, 8, 19, 0.96));
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 18px;
       margin: 0 0 16px;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(57, 255, 20, 0.03);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.50), inset 0 0 28px rgba(98, 216, 255, 0.025);
     }
 
     .storybox {
       border-color: var(--line-strong);
       background:
-        linear-gradient(rgba(57, 255, 20, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
-        linear-gradient(180deg, rgba(10, 24, 10, 0.98), rgba(3, 8, 3, 0.98));
+        linear-gradient(rgba(98, 216, 255, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(9, 22, 45, 0.97), rgba(3, 8, 20, 0.98));
       background-size: 100% 4px, auto;
     }
 
@@ -165,7 +208,7 @@
     }
 
     .story-body {
-      color: #e6ffe3;
+      color: #e8f5ff;
       max-width: 82ch;
     }
 
@@ -179,12 +222,17 @@
     .chip {
       display: inline-flex;
       align-items: center;
-      border: 1px solid rgba(57, 255, 20, 0.24);
-      background: rgba(57, 255, 20, 0.07);
-      border-radius: 999px;
-      padding: 5px 9px;
-      color: #dfffdc;
-      font-size: 0.82rem;
+      border: 0;
+      border-left: 3px solid rgba(120, 255, 179, 0.72);
+      background: rgba(120, 255, 179, 0.055);
+      border-radius: 3px;
+      padding: 4px 8px 4px 9px;
+      color: #a9c4d3;
+      font-size: 0.74rem;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      cursor: default;
+      box-shadow: none;
     }
 
     .chain {
@@ -196,12 +244,12 @@
 
     .chain div {
       text-align: center;
-      border: 1px solid rgba(57, 255, 20, 0.18);
+      border: 1px solid rgba(98, 216, 255, 0.18);
       border-radius: 9px;
       padding: 9px 6px;
       font-size: 0.76rem;
-      color: #d7ffd2;
-      background: rgba(57, 255, 20, 0.045);
+      color: #d4eaf7;
+      background: rgba(98, 216, 255, 0.045);
     }
 
     .chain div::after {
@@ -224,7 +272,7 @@
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 12px;
-      background: rgba(57, 255, 20, 0.04);
+      background: rgba(98, 216, 255, 0.04);
     }
 
     .metric strong {
@@ -250,7 +298,7 @@
       border: 1px solid var(--line);
       border-radius: 10px;
       padding: 10px;
-      background: rgba(57, 255, 20, 0.035);
+      background: rgba(98, 216, 255, 0.035);
     }
 
     .future {
@@ -264,6 +312,165 @@
       color: var(--muted);
       font-size: 0.88rem;
       margin-top: 18px;
+    }
+
+
+    .story {
+      position: relative;
+    }
+
+    .story::before,
+    .story::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      z-index: -1;
+      border: 1px solid rgba(98, 216, 255, 0.10);
+      border-radius: 50%;
+    }
+
+    .story::before {
+      width: 760px;
+      height: 180px;
+      top: 90px;
+      right: -340px;
+      transform: rotate(-12deg);
+    }
+
+    .story::after {
+      width: 520px;
+      height: 120px;
+      top: 160px;
+      right: -230px;
+      border-color: rgba(139, 125, 255, 0.09);
+      transform: rotate(17deg);
+    }
+
+    .hero-space {
+      position: relative;
+      overflow: hidden;
+      margin: 0 0 18px;
+      padding: 23px 22px 21px;
+      border: 1px solid rgba(98, 216, 255, 0.22);
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(98,216,255,.12), transparent 28%),
+        radial-gradient(circle at 15% 90%, rgba(139,125,255,.11), transparent 30%),
+        linear-gradient(135deg, rgba(7,17,39,.90), rgba(3,8,19,.94));
+      box-shadow: 0 18px 50px rgba(0,0,0,.48);
+    }
+
+    .hero-space::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      right: -88px;
+      bottom: -140px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 30%,
+          rgba(122, 212, 255, .34),
+          rgba(27, 88, 154, .28) 32%,
+          rgba(8, 30, 65, .20) 56%,
+          transparent 68%);
+      box-shadow:
+        0 -10px 30px rgba(102, 204, 255, .16),
+        inset 0 0 40px rgba(110, 195, 255, .10);
+    }
+
+    .hero-space .lead {
+      margin-bottom: 0;
+      max-width: 68ch;
+    }
+
+    .human-distance {
+      margin: 14px 0 0;
+      max-width: 70ch;
+      color: #b9cee0;
+      font-size: .95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .human-distance strong {
+      color: var(--data);
+      font-weight: 700;
+    }
+
+    .story-kicker,
+    .metric strong {
+      color: var(--accent);
+    }
+
+    .note {
+      border-left-color: var(--data);
+      background: linear-gradient(90deg, rgba(120,255,179,.07), rgba(98,216,255,.05));
+    }
+
+    .step-btn.is-active {
+      background: linear-gradient(90deg, var(--accent), #8ee7ff);
+    }
+
+    .section {
+      backdrop-filter: blur(3px);
+    }
+
+    .section h2::before {
+      content: "✦";
+      color: rgba(98, 216, 255, .60);
+      font-size: .72em;
+      margin-right: .5em;
+      vertical-align: .08em;
+    }
+
+
+    .problem {
+      margin: 10px 0 15px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--data);
+      background: linear-gradient(90deg, rgba(120,255,179,.065), rgba(98,216,255,.025));
+      border-radius: 9px;
+      color: #e6f5fb;
+    }
+
+    .problem strong {
+      color: var(--data);
+    }
+
+    .plain-language {
+      color: #c9dcea;
+    }
+
+    .inline-map-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 2px;
+      padding-top: 11px;
+      border-top: 1px solid rgba(98, 216, 255, 0.13);
+    }
+
+    .inline-map-actions::before {
+      content: "Guarda sulla mappa";
+      width: 100%;
+      color: var(--muted);
+      font-size: 0.74rem;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .inline-map-btn {
+      font-size: 0.84rem;
+      padding: 7px 11px;
+      background: rgba(98, 216, 255, 0.075);
+      border-color: rgba(98, 216, 255, 0.42);
+    }
+
+    .inline-map-btn::before {
+      content: "→";
+      margin-right: 0.42em;
+      font-weight: 800;
     }
 
     @media (max-width: 760px) {
@@ -280,20 +487,31 @@
 <body>
 <main class="story" data-story-id="spazio-economia-europea-2026">
 
-  <p class="kicker">Dorsali Europee · Dorsale Spazio · realtà 2026</p>
-  <h1>Lo spazio europeo e la sua economia</h1>
+  <section class="hero-space">
+    <p class="kicker">Dorsali Europee · Dorsale Spazio · realtà 2026</p>
+    <h1>Lo spazio europeo e la sua economia</h1>
 
-  <p class="lead">
-    Una lettura GIS dell'ecosistema spaziale europeo: istituzioni, infrastrutture,
-    centri operativi, mercato upstream e downstream e collegamenti con le altre
-    infrastrutture strategiche del continente.
-  </p>
+    <p class="lead">
+      Perché l'Europa investe nello spazio? Non soltanto per esplorare il cielo.
+      Una parte della vita quotidiana dipende già da infrastrutture spaziali:
+      posizione, tempo preciso, previsioni meteorologiche, comunicazioni,
+      osservazione del territorio e gestione delle emergenze.
+    </p>
+
+    <p class="human-distance">
+      Il punto difficile è che questa infrastruttura resta quasi invisibile finché funziona.
+      <strong>Se un segnale manca, una rete si interrompe o un satellite viene perso,
+      il problema arriva immediatamente a Terra.</strong>
+      Questa storia usa il GIS per mostrare le persone, i centri, gli impianti e le industrie
+      che rendono possibile lo spazio europeo.
+    </p>
+  </section>
 
   <div class="note">
     Questo documentario descrive esclusivamente lo stato reale documentato al 2026.
-    I pulsanti comandano i layer GIS già presenti nel progetto. I layer ancora in
-    costruzione — accesso allo spazio, sicurezza, connettività
-    sicura e industria — verranno collegati a questa pagina quando saranno importati.
+    Puoi usare i pulsanti in alto per esplorare liberamente i layer oppure seguire
+    il racconto: dentro le sezioni troverai piccoli pulsanti che aprono sulla mappa
+    proprio ciò di cui stai leggendo. Tutti richiamano le stesse funzioni GIS già esistenti.
   </div>
 
   <div class="chain" aria-label="Filiera dell'economia spaziale">
@@ -308,7 +526,11 @@
     <button type="button" class="step-btn" onclick="showESA(this)">1 · Centri ESA</button>
     <button type="button" class="step-btn" onclick="showGalileo(this)">2 · Galileo / EUSPA</button>
     <button type="button" class="step-btn" onclick="showCopernicus(this)">3 · Copernicus / Terra</button>
-    <button type="button" class="step-btn" onclick="showBoth(this)">4 · Rete spaziale europea</button>
+    <button type="button" class="step-btn" onclick="showAccess(this)">4 · Accesso allo spazio</button>
+    <button type="button" class="step-btn" onclick="showSafety(this)">5 · Sicurezza spaziale</button>
+    <button type="button" class="step-btn" onclick="showSecureConnectivity(this)">6 · Connettività sicura</button>
+    <button type="button" class="step-btn" onclick="showIndustry(this)">7 · Industria spaziale</button>
+    <button type="button" class="step-btn" onclick="showBoth(this)">8 · Rete spaziale europea</button>
     <button type="button" class="step-btn" onclick="restoreMap(this)">Ripristina mappa</button>
   </nav>
 
@@ -318,27 +540,113 @@
   </p>
 
   <section class="section storybox" aria-live="polite">
-    <p class="story-kicker" id="storyKicker">La dorsale come sistema</p>
-    <h2 id="storyTitle">Lo spazio non è un punto sulla mappa</h2>
+    <p class="story-kicker" id="storyKicker">Prima domanda</p>
+    <h2 id="storyTitle">Che cosa c'entra lo spazio con la nostra giornata?</h2>
     <div class="story-body" id="storyBody">
       <p>
-        Lo spazio europeo non coincide con un'agenzia o con una costellazione.
-        È una rete di istituzioni, centri tecnici, infrastrutture terrestri,
-        satelliti e servizi che attraversa l'intero continente.
+        Quando pensiamo allo spazio immaginiamo razzi, astronauti e pianeti lontani.
+        Ma la parte che usiamo ogni giorno è molto più vicina: un telefono che calcola
+        una posizione, un aereo che naviga, una previsione del tempo o la mappa di un incendio
+        possono dipendere da sistemi spaziali.
       </p>
       <p>
-        Usa i comandi sopra per far emergere progressivamente la geografia
-        operativa oggi già presente nel GIS.
+        E i satelliti non lavorano da soli. Prima bisogna calcolare l'orbita che devono
+        seguire; poi occorre sapere continuamente dove si trovano. Servono centri di controllo,
+        antenne, tecnici, reti di dati, industrie, sistemi di sicurezza e luoghi da cui
+        essere lanciati. Il GIS rende visibile proprio questa parte terrestre.
       </p>
     </div>
     <div class="facts" id="storyFacts">
       <span class="chip">Stato: REAL_2026</span>
-      <span class="chip">Story mode: layer GIS reali</span>
+      <span class="chip">Infrastrutture documentate</span>
+    </div>
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showESA(this)">Comincia dai centri ESA</button>
+      <button type="button" class="step-btn inline-map-btn" onclick="showBoth(this)">Guarda tutta la rete</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Prima di tutto: che cos'è un'orbita?</h2>
+
+    <div class="problem">
+      <strong>La domanda più semplice:</strong> se un satellite è nello spazio,
+      perché non cade sulla Terra? E chi decide la strada che deve seguire?
+    </div>
+
+    <p>
+      Un'<strong>orbita</strong> è il percorso che un oggetto segue mentre cade continuamente
+      verso un corpo più grande — per esempio la Terra — ma possiede anche una velocità
+      laterale sufficiente a continuare a “mancarla”.
+    </p>
+
+    <p class="plain-language">
+      Immagina di lanciare una palla in avanti. Cade a Terra. Se potessi lanciarla
+      molto più velocemente, mentre cade la superficie terrestre si incurverebbe sotto di lei.
+      A una certa velocità la palla continuerebbe a cadere senza raggiungere il suolo:
+      sarebbe in orbita.
+    </p>
+
+    <p>
+      Questo significa che un satellite <strong>non resta fermo sopra la Terra</strong>.
+      Si muove continuamente. A seconda della missione può passare più vicino o più lontano,
+      sopra zone diverse del pianeta e con tempi di rivoluzione differenti.
+    </p>
+
+    <h3>Chi decide l'orbita?</h3>
+    <p>
+      Prima del lancio, ingegneri di <strong>mission analysis</strong> e
+      <strong>flight dynamics</strong> calcolano quale orbita serve alla missione:
+      per esempio osservare tutta la Terra, fornire navigazione, comunicare con una regione
+      specifica o raggiungere un altro corpo celeste.
+    </p>
+
+    <p>
+      Il calcolo usa la meccanica orbitale: massa della Terra, gravità, velocità,
+      quota, inclinazione dell'orbita, momento del lancio e perturbazioni dovute anche
+      alla forma non perfettamente sferica della Terra, alla Luna, al Sole e all'atmosfera
+      residua alle quote più basse.
+    </p>
+
+    <h3>E dopo il lancio, come sappiamo dov'è davvero?</h3>
+    <p>
+      Le stazioni a Terra misurano il satellite tramite segnali radio, radar o sistemi ottici.
+      Da queste misure i team di dinamica del volo ricostruiscono continuamente la sua
+      posizione e la sua velocità: è la cosiddetta <strong>determinazione orbitale</strong>.
+      Se necessario vengono pianificate piccole correzioni di traiettoria.
+    </p>
+
+    <p class="plain-language">
+      Quindi l'orbita non è una linea disegnata una volta per tutte: è una traiettoria
+      calcolata, misurata e aggiornata durante la vita della missione.
+    </p>
+
+    <div class="facts">
+      <span class="chip">Concetto · caduta continua</span>
+      <span class="chip">Calcolo · flight dynamics</span>
+      <span class="chip">Controllo · stazioni a Terra</span>
+    </div>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showAccess(this)">Da dove partono i satelliti</button>
+      <button type="button" class="step-btn inline-map-btn" onclick="showESA(this)">Chi li controlla e gestisce</button>
     </div>
   </section>
 
   <section class="section">
     <h2>1. Lo spazio europeo non è un solo sistema</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> quando diciamo “Europa nello spazio” sembra che esista
+      un unico ente che decide, costruisce e controlla tutto. In realtà le responsabilità
+      sono distribuite: bisogna capire chi finanzia, chi sviluppa, chi gestisce i servizi
+      e chi trasforma i dati spaziali in qualcosa di utile.
+    </div>
+    <p class="plain-language">
+      Un modo semplice per orientarsi è pensare a una squadra: UE, ESA, EUSPA,
+      EUMETSAT e agenzie nazionali fanno lavori diversi ma devono cooperare.
+    </p>
+
 
     <h3>Unione europea</h3>
     <p>
@@ -369,10 +677,26 @@
       Stati mantengono programmi e agenzie nazionali. La geografia spaziale europea
       è quindi strutturalmente distribuita.
     </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showESA(this)">Centri ESA</button>
+      <button type="button" class="step-btn inline-map-btn" onclick="showGalileo(this)">Galileo / EUSPA</button>
+    </div>
   </section>
 
   <section class="section">
     <h2>2. Che cosa significa “economia dello spazio”</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> un satellite può costare moltissimo, ma il suo valore
+      non sta soltanto nell'oggetto in orbita. Bisogna capire che cosa produce per la vita
+      e per l'economia una volta che comincia a inviare segnali e dati.
+    </div>
+    <p class="plain-language">
+      In parole semplici: l'upstream costruisce la strada verso lo spazio;
+      il downstream usa ciò che da quella strada ritorna sulla Terra.
+    </p>
+
     <p>
       La space economy comprende le attività che producono valore attraverso
       l'esplorazione, lo studio, la gestione e l'utilizzo dello spazio.
@@ -407,10 +731,26 @@
         <span>budget spaziali pubblici europei 2025</span>
       </div>
     </div>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showIndustry(this)">Dove viene costruito</button>
+      <button type="button" class="step-btn inline-map-btn" onclick="showBoth(this)">Intera rete</button>
+    </div>
   </section>
 
   <section class="section">
     <h2>3. L'industria europea</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> possedere programmi spaziali non basta se non si sa
+      anche costruire satelliti, motori, strutture e lanciatori. Senza una filiera industriale
+      europea, una parte dell'autonomia spaziale resterebbe soltanto sulla carta.
+    </div>
+    <p class="plain-language">
+      Dietro ogni missione ci sono fabbriche, camere bianche, componenti, test e migliaia
+      di persone: la mappa industriale serve a rendere visibile proprio questo livello.
+    </p>
+
     <p>
       Eurospace misura la parte manifatturiera dell'ecosistema: progettazione,
       sviluppo e produzione di sistemi spaziali. Nel 2024 riportava circa
@@ -427,10 +767,25 @@
       Nel 2025 le imprese spaziali europee hanno raccolto circa
       <strong>€1,4 miliardi</strong> di investimenti privati.
     </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showIndustry(this)">Apri l'industria spaziale</button>
+    </div>
   </section>
 
   <section class="section">
     <h2>4. Il vero mercato è a Terra</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> usiamo servizi spaziali senza accorgercene.
+      Proprio per questo è facile sottovalutare quanto trasporti, agricoltura,
+      emergenze, meteo e servizi digitali dipendano da segnali e dati provenienti dall'orbita.
+    </div>
+    <p class="plain-language">
+      Il satellite è l'inizio della catena, non il prodotto finale: il risultato può essere
+      una posizione sul telefono, una previsione, una rotta o un'allerta.
+    </p>
+
     <p>
       Lo spazio produce valore economico quando i segnali e i dati diventano
       servizi terrestri. Il GNSS entra in telefoni, automobili, ferrovie, droni,
@@ -453,10 +808,26 @@
         <span>Secure SATCOM utenti UE, 2025 → 2040</span>
       </div>
     </div>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showGalileo(this)">Navigazione Galileo</button>
+      <button type="button" class="step-btn inline-map-btn" onclick="showCopernicus(this)">Osservazione Copernicus</button>
+    </div>
   </section>
 
   <section class="section">
     <h2>5. Galileo: una rete spaziale e terrestre</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> come fa un telefono, un veicolo o un sistema di emergenza
+      a sapere con precisione dove si trova? E come può l'Europa evitare di dipendere
+      completamente da sistemi di navigazione controllati altrove?
+    </div>
+    <p class="plain-language">
+      Galileo risponde a questa esigenza. Ma i satelliti da soli non bastano:
+      devono essere controllati, sincronizzati, verificati e protetti da una rete terrestre.
+    </p>
+
     <p>
       Galileo comprende un segmento spaziale, un segmento di terra e un segmento
       utente. La rete terrestre mappata comprende la sede EUSPA di Praga,
@@ -468,10 +839,25 @@
       Il layer GIS corrispondente è
       <code>spazio_galileo_euspa_2026</code>.
     </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showGalileo(this)">Mostra Galileo</button>
+    </div>
   </section>
 
   <section class="section">
     <h2>6. ESA: la geografia della conoscenza spaziale</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> una missione spaziale richiede competenze molto diverse:
+      ingegneria, controllo missione, scienza, osservazione della Terra, addestramento
+      astronauti e telecomunicazioni. Un solo centro non può fare tutto.
+    </div>
+    <p class="plain-language">
+      I centri ESA sono quindi specializzati: la distanza fra loro mostra come la capacità
+      spaziale europea sia una rete di competenze distribuite.
+    </p>
+
     <p>
       ESTEC, ESOC, ESRIN, EAC, ESAC, ESEC ed ECSAT svolgono funzioni differenti:
       ingegneria, operazioni, osservazione della Terra, astronauti, scienza,
@@ -481,10 +867,25 @@
       Il layer GIS corrispondente è
       <code>spazio_centri_esa_2026</code>.
     </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showESA(this)">Esplora i centri ESA</button>
+    </div>
   </section>
 
   <section class="section">
     <h2>7. Copernicus: lo spazio diventa osservazione della Terra</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> incendi, siccità, alluvioni, stato del mare e qualità
+      dell'aria non rispettano i confini nazionali. Per seguirli servono osservazioni
+      grandi, ripetute e confrontabili nel tempo.
+    </div>
+    <p class="plain-language">
+      Copernicus non è soltanto “fare fotografie dallo spazio”: il lavoro decisivo è
+      trasformare quelle osservazioni in informazioni che possano essere usate a Terra.
+    </p>
+
     <p>
       Copernicus collega il segmento spaziale a una rete terrestre di centri,
       organizzazioni e servizi che trasformano le osservazioni satellitari in
@@ -499,10 +900,221 @@
       Il layer GIS corrispondente è
       <code>spazio_copernicus_eumetsat_2026</code>.
     </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showCopernicus(this)">Mostra Copernicus</button>
+    </div>
   </section>
 
   <section class="section">
-    <h2>8. Le connessioni con le altre dorsali</h2>
+    <h2>8. L'accesso allo spazio: dove l'Europa lascia la Terra</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> possiamo progettare il miglior satellite del mondo,
+      ma finché rimane in un capannone non serve. Bisogna portarlo in orbita:
+      servono lanciatori, infrastrutture, sicurezza e siti adatti.
+    </div>
+    <p class="plain-language">
+      “Accesso autonomo allo spazio” significa quindi poter completare l'intera catena,
+      dalla costruzione al lancio, senza dover dipendere sempre da uno spazioporto esterno.
+    </p>
+
+    <p>
+      Prima che un satellite diventi un segnale, un'immagine o un servizio,
+      deve esserci un luogo da cui partire. La geografia europea dell'accesso
+      allo spazio è fatta di pochi nodi molto specializzati, collocati ai margini
+      geografici del sistema.
+    </p>
+    <p>
+      Il nodo principale è il <strong>Centre Spatial Guyanais di Kourou</strong>,
+      nella Guyana francese: politicamente europeo, geograficamente sudamericano,
+      vicino all'equatore e quindi particolarmente favorevole ai lanci orbitali.
+      Da qui operano Ariane 6 e Vega-C.
+    </p>
+    <p>
+      Più a nord, <strong>Andøya</strong> in Norvegia, <strong>Esrange</strong>
+      in Svezia e <strong>SaxaVord</strong> nelle Shetland rappresentano la nuova
+      geografia dei lanciatori leggeri, delle orbite polari, dei test e del New Space europeo.
+    </p>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_accesso_spazio_2026</code>.
+    </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showAccess(this)">Mostra gli spazioporti</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>9. Lo spazio va sorvegliato</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> l'orbita non è vuota. Satelliti attivi, vecchi oggetti
+      e detriti si muovono a velocità enormi; inoltre il Sole può disturbare radio,
+      navigazione e altre infrastrutture tecnologiche.
+    </div>
+    <p class="plain-language">
+      Prima di proteggere un satellite bisogna sapere che cosa gli sta intorno:
+      sicurezza spaziale significa soprattutto osservare, prevedere e avvertire in tempo.
+    </p>
+
+    <p>
+      Una volta raggiunta l'orbita, il problema non è soltanto far funzionare
+      un satellite. Bisogna sapere <strong>che cosa gli passa vicino</strong>,
+      prevedere possibili collisioni, seguire i detriti, osservare i rientri
+      nell'atmosfera e capire quando il Sole può disturbare comunicazioni,
+      navigazione e reti tecnologiche a Terra.
+    </p>
+    <p>
+      La sicurezza spaziale europea è quindi una rete di osservazione e calcolo.
+      Il <strong>EU SST Front Desk</strong> distribuisce servizi di sorveglianza
+      e tracciamento; lo <strong>Space Debris Office</strong> dell'ESA a Darmstadt
+      studia l'ambiente dei detriti; il <strong>NEO Coordination Centre</strong>
+      di Frascati segue asteroidi e comete vicini alla Terra.
+    </p>
+    <p>
+      A Bruxelles viene coordinata la rete europea per lo
+      <strong>space weather</strong>, mentre a Tenerife telescopi e sistemi laser
+      osservano oggetti artificiali e naturali nel cielo. È una parte dello spazio
+      che raramente vediamo: una sorveglianza continua che rende possibile usare
+      l'orbita come infrastruttura.
+    </p>
+    <div class="facts">
+      <span class="chip">SST · oggetti e collisioni</span>
+      <span class="chip">SWE · meteo spaziale</span>
+      <span class="chip">NEO · asteroidi e comete</span>
+    </div>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_sicurezza_spaziale_2026</code>.
+    </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showSafety(this)">Mostra la rete di sicurezza</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>10. Quando lo spazio diventa rete</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> che cosa succede se una rete terrestre non arriva,
+      viene interrotta oppure non è abbastanza sicura per una comunicazione governativa
+      o di emergenza? In alcuni casi serve un secondo percorso: il satellite.
+    </div>
+    <p class="plain-language">
+      GOVSATCOM e IRIS² vanno letti in questa chiave: non come “altri satelliti”,
+      ma come infrastrutture pensate per rendere più resilienti comunicazioni importanti.
+    </p>
+
+    <p>
+      C'è un punto in cui la Dorsale Spazio smette quasi di sembrare “spaziale”.
+      I satelliti diventano <strong>infrastruttura di comunicazione</strong>:
+      collegano istituzioni, servizi pubblici e reti critiche quando i collegamenti
+      terrestri non bastano o non sono disponibili.
+    </p>
+    <p>
+      Nel 2026 <strong>EU GOVSATCOM</strong> è già entrato nella fase operativa iniziale.
+      Il sistema non nasce da una nuova costellazione unica: mette in comune capacità
+      satellitari sicure già disponibili e le distribuisce agli utenti governativi
+      attraverso un'infrastruttura europea comune.
+    </p>
+    <p>
+      <strong>IRIS²</strong> rappresenta il passo successivo. Nel 2026 è in fase di
+      implementazione: non è ancora una costellazione operativa, ma è il progetto con cui
+      l'Unione europea punta a costruire una propria infrastruttura multi-orbitale di
+      connettività sicura. I primi lanci sono previsti dal 2029.
+    </p>
+    <p>
+      Nella geografia terrestre di questa rete compaiono la sede EUSPA di Praga,
+      la Commissione europea a Bruxelles e i futuri hub permanenti GOVSATCOM di
+      <strong>Colonia</strong> e <strong>Agios Ioannis</strong> in Grecia.
+      È qui che lo spazio comincia a sovrapporsi alla Dorsale Digitale.
+    </p>
+    <div class="facts">
+      <span class="chip">GOVSATCOM · operativo iniziale 2026</span>
+      <span class="chip">IRIS² · implementazione</span>
+      <span class="chip">Primi lanci IRIS² · dal 2029</span>
+    </div>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_connettivita_sicura_2026</code>.
+    </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showSecureConnectivity(this)">Mostra GOVSATCOM / IRIS²</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>11. Dove lo spazio viene costruito</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> una strategia spaziale resta astratta finché qualcuno
+      non trasforma progetti e finanziamenti in hardware reale. Servono stabilimenti,
+      fornitori, test, integrazione e capacità produttiva.
+    </div>
+    <p class="plain-language">
+      Questo layer non è un elenco di aziende: mostra alcuni luoghi fisici per far vedere
+      dove una parte significativa della capacità industriale europea prende forma.
+    </p>
+
+    <p>
+      Prima di diventare orbita, segnale o servizio, lo spazio passa attraverso
+      officine, camere bianche, linee di integrazione, banchi prova e stabilimenti.
+      È qui che la Dorsale Spazio assume la forma più concreta: <strong>metallo,
+      elettronica, propulsione, software e produzione industriale</strong>.
+    </p>
+    <p>
+      La geografia industriale europea è distribuita. A <strong>Les Mureaux</strong>
+      ArianeGroup lavora sui lanciatori Ariane; a <strong>Colleferro</strong> Avio
+      sviluppa Vega e i sistemi di propulsione; a <strong>Toulouse</strong> Airbus
+      integra satelliti e costellazioni; a <strong>Torino</strong> Thales Alenia Space
+      realizza moduli, infrastrutture orbitali e sistemi per l'esplorazione.
+    </p>
+    <p>
+      A <strong>Bremen</strong> OHB costruisce sistemi satellitari, mentre
+      <strong>Beyond Gravity</strong> a Emmen produce strutture e componenti per
+      lanciatori. Accanto ai grandi gruppi cresce il New Space europeo:
+      <strong>Isar Aerospace</strong> a Ottobrunn e <strong>Rocket Factory Augsburg</strong>
+      sviluppano nuovi lanciatori leggeri.
+    </p>
+    <p>
+      Questo layer non vuole censire ogni impresa spaziale europea: mostra alcuni
+      nodi fisici rappresentativi per rendere visibile una filiera che normalmente
+      resta nascosta dietro il nome di una missione o di un satellite.
+    </p>
+    <div class="facts">
+      <span class="chip">Lanciatori</span>
+      <span class="chip">Satelliti</span>
+      <span class="chip">Propulsione</span>
+      <span class="chip">Infrastrutture orbitali</span>
+      <span class="chip">New Space</span>
+    </div>
+    <p>
+      Il layer GIS corrispondente è
+      <code>spazio_industria_spaziale_2026</code>.
+    </p>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showIndustry(this)">Mostra i siti industriali</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>12. Le connessioni con le altre dorsali</h2>
+
+    <div class="problem">
+      <strong>Il problema:</strong> lo spazio non è davvero un settore separato.
+      Diventa strategico proprio perché trasporti, ambiente, digitale, energia,
+      sicurezza e ricerca iniziano a dipendere dai suoi servizi.
+    </div>
+    <p class="plain-language">
+      È questo il senso della parola “dorsale”: non una collezione di punti,
+      ma un'infrastruttura che sostiene e attraversa altre infrastrutture europee.
+    </p>
+
 
     <div class="crosslinks">
       <div><strong>Spazio ↔ Trasporti</strong><br>Galileo, EGNOS, aviazione, droni, logistica.</div>
@@ -512,21 +1124,14 @@
       <div><strong>Spazio ↔ Sicurezza</strong><br>SSA, comunicazioni protette, infrastrutture critiche.</div>
       <div><strong>Spazio ↔ Ricerca</strong><br>astronomia, fisica, osservazione, tecnologia.</div>
     </div>
+
+    <div class="inline-map-actions">
+      <button type="button" class="step-btn inline-map-btn" onclick="showBoth(this)">Mostra tutta la Dorsale Spazio</button>
+      <button type="button" class="step-btn inline-map-btn" onclick="restoreMap(this)">Ripristina mappa</button>
+    </div>
   </section>
 
-  <section class="section future">
-    <h2>9. Layer GIS successivi</h2>
-    <p>
-      Questi temi fanno già parte del documentario ma non vengono ancora comandati
-      dalla pagina finché i relativi layer non saranno costruiti e importati:
-    </p>
-    <ul>
-      <li><code>04_ACCESSO_ALLO_SPAZIO</code></li>
-      <li><code>05_SICUREZZA_SPAZIALE</code></li>
-      <li><code>06_CONNETTIVITA_SICURA</code></li>
-      <li><code>07_INDUSTRIA_SPAZIALE</code></li>
-    </ul>
-  </section>
+
 
   <section class="section">
     <h2>Fonti principali</h2>
@@ -537,6 +1142,11 @@
       <li><a href="https://www.euspa.europa.eu/market-report" target="_blank" rel="noopener">EU Space Market Report 2026</a></li>
       <li><a href="https://eurospace.org/publication/eurospace-facts-figures/" target="_blank" rel="noopener">Eurospace Facts &amp; Figures</a></li>
       <li><a href="https://www.eumetsat.int/about-us/who-we-are" target="_blank" rel="noopener">EUMETSAT</a></li>
+      <li><a href="https://www.ariane.group/en/our-sites/" target="_blank" rel="noopener">ArianeGroup · siti industriali</a></li>
+      <li><a href="https://www.avio.com/" target="_blank" rel="noopener">Avio</a></li>
+      <li><a href="https://www.airbus.com/en/airbus-contact-us" target="_blank" rel="noopener">Airbus Space</a></li>
+      <li><a href="https://www.thalesaleniaspace.com/it" target="_blank" rel="noopener">Thales Alenia Space</a></li>
+      <li><a href="https://www.ohb.de/en/business-segments/space-systems" target="_blank" rel="noopener">OHB Space Systems</a></li>
     </ul>
   </section>
 
@@ -564,7 +1174,11 @@
   var SPACE_LAYERS = {
     esa: "spazio_centri_esa_2026",
     galileo: "spazio_galileo_euspa_2026",
-    copernicus: "spazio_copernicus_eumetsat_2026"
+    copernicus: "spazio_copernicus_eumetsat_2026",
+    access: "spazio_accesso_spazio_2026",
+    safety: "spazio_sicurezza_spaziale_2026",
+    secureConnectivity: "spazio_connettivita_sicura_2026",
+    industry: "spazio_industria_spaziale_2026"
   };
 
   function getGIS() {
@@ -639,6 +1253,10 @@
       GIS.hideLayer(SPACE_LAYERS.esa);
       GIS.hideLayer(SPACE_LAYERS.galileo);
       GIS.hideLayer(SPACE_LAYERS.copernicus);
+      GIS.hideLayer(SPACE_LAYERS.access);
+      GIS.hideLayer(SPACE_LAYERS.safety);
+      GIS.hideLayer(SPACE_LAYERS.secureConnectivity);
+      GIS.hideLayer(SPACE_LAYERS.industry);
       return;
     }
 
@@ -761,6 +1379,122 @@
 
 
   /* ============================================
+   * ACCESSO ALLO SPAZIO
+   * ============================================ */
+
+  window.showAccess = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.access);
+    }
+
+    gotoMap(GIS, 42.0, -8.0, 2);
+  };
+
+
+  /* ============================================
+   * SICUREZZA SPAZIALE
+   * ============================================ */
+
+  window.showSafety = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.safety);
+    }
+
+    gotoMap(GIS, 47.0, 4.0, 4);
+  };
+
+
+  /* ============================================
+   * CONNETTIVITA SICURA
+   * ============================================ */
+
+  window.showSecureConnectivity = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.secureConnectivity);
+    }
+
+    gotoMap(GIS, 50.0, 10.0, 4);
+  };
+
+
+  /* ============================================
+   * INDUSTRIA SPAZIALE
+   * ============================================ */
+
+  window.showIndustry = function (button) {
+
+    var GIS = getGIS();
+
+    setActive(button);
+
+    if (!GIS) {
+      alert("GIS non disponibile");
+      return;
+    }
+
+    hideAllSpaceLayers(GIS);
+
+    if (typeof GIS.hideAllLayersExcept === "function") {
+      GIS.hideAllLayersExcept(BASE_LAYERS);
+    }
+
+    if (typeof GIS.showLayer === "function") {
+      GIS.showLayer(SPACE_LAYERS.industry);
+    }
+
+    gotoMap(GIS, 48.0, 7.0, 4);
+  };
+
+
+  /* ============================================
    * RETE SPAZIALE EUROPEA
    * ============================================ */
 
@@ -785,9 +1519,13 @@
       GIS.showLayer(SPACE_LAYERS.esa);
       GIS.showLayer(SPACE_LAYERS.galileo);
       GIS.showLayer(SPACE_LAYERS.copernicus);
+      GIS.showLayer(SPACE_LAYERS.access);
+      GIS.showLayer(SPACE_LAYERS.safety);
+      GIS.showLayer(SPACE_LAYERS.secureConnectivity);
+      GIS.showLayer(SPACE_LAYERS.industry);
     }
 
-    gotoMap(GIS, 55.0, 8.0, 3);
+    gotoMap(GIS, 42.0, -8.0, 2);
   };
 
 
