@@ -506,6 +506,19 @@
       text-transform: uppercase;
     }
 
+    .archive-type-filters { display:flex; gap:6px; margin-top:8px; pointer-events:auto; }
+    .archive-type-button { flex:1; background:rgba(0,0,0,.72); color:#39ff14; border:1px solid rgba(57,255,20,.6); font:11px monospace; padding:5px 6px; cursor:pointer; text-transform:uppercase; }
+    .archive-type-button.active { background:rgba(57,255,20,.14); box-shadow:inset 0 0 10px rgba(57,255,20,.10); }
+    .archive-meta-entry { display:grid; grid-template-columns:auto 1fr; column-gap:10px; }
+    .archive-meta-content { min-width:0; }
+    .archive-meta-thumb { width:58px; height:58px; object-fit:cover; border:1px solid rgba(57,255,20,.55); margin-top:2px; }
+    .archive-meta-entry.dossier .archive-meta-title { color:#ffb000; text-shadow:0 0 7px rgba(255,176,0,.25); }
+    .archive-meta-entry.dossier .archive-meta-thumb { border-color:#ffb000; }
+    .archive-type-label { display:inline-block; margin-bottom:3px; font-size:10px; text-transform:uppercase; opacity:.9; }
+    .archive-meta-entry.dossier .archive-type-label { color:#ffb000; }
+    .archive-load-more { width:100%; margin-top:10px; background:rgba(0,0,0,.72); color:#39ff14; border:1px solid rgba(57,255,20,.62); font:11px monospace; padding:7px; cursor:pointer; text-transform:uppercase; }
+    .archive-load-more:hover { background:rgba(57,255,20,.14); }
+
    @media (max-width: 900px) {
 
   #cnotOverlay {
@@ -614,6 +627,12 @@
           <button id="mapLayersOn" class="map-layer-button" type="button">Accendi tutto</button>
         </div>
 
+        <div class="archive-type-filters" aria-label="Filtra tipo contenuto">
+          <button class="archive-type-button active" type="button" data-archive-type="all">Tutti</button>
+          <button class="archive-type-button" type="button" data-archive-type="story">Racconti</button>
+          <button class="archive-type-button" type="button" data-archive-type="dossier">Dossier</button>
+        </div>
+
         <div class="cnot-overlay-box" id="archiveMetaBox">
           Nessun JSON caricato.
         </div>
@@ -701,6 +720,9 @@
 
     let archiveItems = [];
     let filteredArchiveItems = [];
+    let archiveTypeFilter = "all";
+    let archiveVisibleCount = 6;
+    const ARCHIVE_PAGE_SIZE = 6;
 
     function escapeHtml(value) {
       return String(value ?? "")
@@ -742,9 +764,21 @@
 
     
 const LANGUAGE_LABELS={it:"Italian",en:"English",fr:"Français",de:"Deutsch",es:"Español"};
-const TYPE_LABELS={story:"Story",paper:"Paper",dataset:"Dataset",map:"Map",video:"Video",music:"Music",image:"Image",other:"Other"};
+const TYPE_LABELS={story:"Racconto",dossier:"Dossier",paper:"Paper",dataset:"Dataset",map:"Map",video:"Video",music:"Music",image:"Image",other:"Other"};
 function getArchiveLanguage(item){return LANGUAGE_LABELS[item.language]||item.language||"Unknown";}
-function getArchiveType(item){return TYPE_LABELS[item.type]||item.type||"Story";}
+
+// Retrocompatibilità: tutti i record privi di type sono racconti.
+function getArchiveTypeKey(item){
+  const raw = String(item?.type || "story").trim().toLowerCase();
+  return raw === "dossier" ? "dossier" : "story";
+}
+function getArchiveType(item){return TYPE_LABELS[getArchiveTypeKey(item)];}
+
+// Immagine opzionale: se il campo manca, la scheda non riserva spazio.
+function getArchiveImage(item){
+  const raw = item?.image || item?.thumbnail || item?.cover || "";
+  return String(raw).trim();
+}
 
 
     function getArchiveTags(item) {
@@ -790,8 +824,10 @@ function getArchiveType(item){return TYPE_LABELS[item.type]||item.type||"Story";
       const query = (archiveSearchInput?.value || "").trim().toLowerCase();
       const sortMode = archiveSortSelect?.value || "date_desc";
 
+      archiveVisibleCount = ARCHIVE_PAGE_SIZE;
       filteredArchiveItems = archiveItems
         .filter(item => !query || buildArchiveSearchText(item).includes(query))
+        .filter(item => archiveTypeFilter === "all" || getArchiveTypeKey(item) === archiveTypeFilter)
         .sort((a, b) => compareArchiveItems(a, b, sortMode));
 
       renderArchiveItems(filteredArchiveItems, { preserveArchiveItems: true });
@@ -1076,39 +1112,41 @@ function getArchiveType(item){return TYPE_LABELS[item.type]||item.type||"Story";
 
       if (!items.length) {
         archiveQueryStatus.textContent = "nessun risultato";
-        archiveMetaBox.innerHTML = `
-          <div class="archive-meta-entry">
-            <div class="archive-meta-title">Nessuna traccia compatibile</div>
-            <div class="archive-meta-line">Modifica la query o cambia ordinamento.</div>
-          </div>
-          <div class="archive-result-count">0 / ${archiveItems.length} nodi</div>
-        `;
+        archiveMetaBox.innerHTML = `<div class="archive-meta-entry"><div class="archive-meta-content"><div class="archive-meta-title">Nessuna traccia compatibile</div><div class="archive-meta-line">Modifica la query o cambia filtro.</div></div></div><div class="archive-result-count">0 / ${archiveItems.length} nodi</div>`;
         return;
       }
 
       archiveQueryStatus.textContent = "archivio sincronizzato";
-      archiveMetaBox.innerHTML = items.slice(0, 8).map(item => {
+      const visibleItems = items.slice(0, archiveVisibleCount);
+      archiveMetaBox.innerHTML = visibleItems.map(item => {
         const archiveIndex = archiveItems.indexOf(item);
         const hasCoordinates = Boolean(getArchiveLatLon(item));
         const storyUrl = getArchiveStoryUrl(item);
-
+        const typeKey = getArchiveTypeKey(item);
+        const image = getArchiveImage(item);
+        const imageHtml = image ? `<img class="archive-meta-thumb" src="${escapeHtml(image)}" alt="" loading="lazy" onerror="this.remove()">` : "";
         return `
-          <div class="archive-meta-entry">
-            <div class="archive-meta-title">${escapeHtml(getArchiveTitle(item))}</div>
-            <div class="archive-meta-line">${escapeHtml(getArchiveType(item))} · ${escapeHtml(getArchiveLanguage(item))}</div>
-            <div class="archive-meta-line">${escapeHtml(getArchiveAuthor(item))}</div>
-            <div class="archive-meta-line archive-meta-date">${escapeHtml(getArchiveDate(item) || "non indicata")}</div>
-            <div class="archive-meta-line">Luogo: ${escapeHtml(getArchivePlace(item) || "non indicato")}</div>
-            <div class="archive-meta-line">GPS: ${escapeHtml(getArchiveCoordinates(item))}</div>
-            <div class="archive-meta-actions">
-              <button class="archive-action-button" type="button" data-action="goto" data-archive-index="${archiveIndex}" ${hasCoordinates ? "" : "disabled"}>Vai al nodo</button>
-              <button class="archive-action-button" type="button" data-action="read" data-archive-index="${archiveIndex}" ${storyUrl ? "" : "disabled"}>Leggi</button>
+          <div class="archive-meta-entry ${typeKey === "dossier" ? "dossier" : "story"}">
+            ${imageHtml}
+            <div class="archive-meta-content">
+              <div class="archive-type-label">${escapeHtml(getArchiveType(item))}</div>
+              <div class="archive-meta-title">${escapeHtml(getArchiveTitle(item))}</div>
+              <div class="archive-meta-line">${escapeHtml(getArchiveLanguage(item))}</div>
+              <div class="archive-meta-line">${escapeHtml(getArchiveAuthor(item))}</div>
+              <div class="archive-meta-line archive-meta-date">${escapeHtml(getArchiveDate(item) || "non indicata")}</div>
+              <div class="archive-meta-line">Luogo: ${escapeHtml(getArchivePlace(item) || "non indicato")}</div>
+              <div class="archive-meta-line">GPS: ${escapeHtml(getArchiveCoordinates(item))}</div>
+              <div class="archive-meta-actions">
+                <button class="archive-action-button" type="button" data-action="goto" data-archive-index="${archiveIndex}" ${hasCoordinates ? "" : "disabled"}>Vai al nodo</button>
+                <button class="archive-action-button" type="button" data-action="read" data-archive-index="${archiveIndex}" ${storyUrl ? "" : "disabled"}>Leggi</button>
+              </div>
             </div>
-          </div>
-        `;
-      }).join("") + `
-        <div class="archive-result-count">${items.length} / ${archiveItems.length} nodi · mostrati max 8</div>
-      `;
+          </div>`;
+      }).join("");
+
+      const shown = Math.min(archiveVisibleCount, items.length);
+      if (shown < items.length) archiveMetaBox.innerHTML += `<button id="archiveLoadMore" class="archive-load-more" type="button">Carica altri [${Math.min(ARCHIVE_PAGE_SIZE, items.length-shown)}]</button>`;
+      archiveMetaBox.innerHTML += `<div class="archive-result-count">${shown} / ${items.length} visualizzati · ${archiveItems.length} record archivio</div>`;
     }
 
     async function fetchJsonIfExists(url) {
@@ -1188,7 +1226,21 @@ function getArchiveType(item){return TYPE_LABELS[item.type]||item.type||"Story";
     archiveSearchInput.addEventListener("input", applyArchiveFilters);
     archiveSortSelect.addEventListener("change", applyArchiveFilters);
 
+    document.querySelectorAll(".archive-type-button").forEach(button => {
+      button.addEventListener("click", () => {
+        archiveTypeFilter = button.dataset.archiveType || "all";
+        document.querySelectorAll(".archive-type-button").forEach(b => b.classList.toggle("active", b === button));
+        applyArchiveFilters();
+      });
+    });
+
     archiveMetaBox.addEventListener("click", event => {
+      const loadMore = event.target.closest("#archiveLoadMore");
+      if (loadMore) {
+        archiveVisibleCount += ARCHIVE_PAGE_SIZE;
+        renderArchiveItems(filteredArchiveItems, { preserveArchiveItems: true });
+        return;
+      }
       const button = event.target.closest("button[data-action][data-archive-index]");
       if (!button) return;
 

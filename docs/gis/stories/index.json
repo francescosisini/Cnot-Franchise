@@ -6,6 +6,7 @@
     {
       "id": "europa-membership-timeline-en",
       "title": "The construction of Europe",
+      "type": "dossier",
       "subtitle": "European accession timeline",
       "author": "Francesco Sisini",
       "file": "stories/europa_en.html",
@@ -21,7 +22,6 @@
         "eu_membership_timeline"
       ],
       "bridge": "CNOTAtlasBridge",
-      "type": "story",
       "language": "it"
     },
     {
@@ -30,6 +30,7 @@
       "subtitle": "From uranium extraction to geological disposal",
       "author": "Francesco Sisini",
       "language": "en",
+      "type": "dossier",
       "file": "stories/nuclear_fuel_cycle_mobile_story.html",
       "description": "A cumulative GIS story showing nuclear energy as a geographically distributed fuel cycle: extraction, conversion, enrichment, fuel fabrication, reactor use, reprocessing, storage, research and geological disposal.",
       "tags": [
@@ -51,12 +52,12 @@
         "nuclear_research",
         "geological_repositories"
       ],
-      "bridge": "GIS",
-      "type": "story"
+      "bridge": "GIS"
     },
     {
       "id": "cnot-quantum-reactor",
       "title": "C-Not Quantum Reactor",
+
       "subtitle": "Un'indagine tra uranio, fissione quantistica e un paper impossibile",
       "author": "Francesco Sisini",
       "language": "it",
@@ -84,30 +85,30 @@
       "type": "story"
     },
     {
-  "id": "dorsale-spazio-economia-europea-2026",
-  "title": "Lo spazio europeo e la sua economia",
-  "subtitle": "Istituzioni, infrastrutture e mercato della Dorsale Spazio",
-  "author": "Francesco Sisini",
-  "language": "it",
-  "file": "stories/spazio_economia_europea_2026.html",
-  "description": "Documentario GIS sulla Dorsale Spazio europea reale nel 2026: ESA, EUSPA, Galileo, infrastrutture terrestri, economia upstream e downstream e collegamenti con le altre dorsali europee.",
-  "tags": [
-    "spazio",
-    "Europa",
-    "ESA",
-    "EUSPA",
-    "Galileo",
-    "space economy",
-    "GIS",
-    "Dorsali Europee"
-  ],
-  "layer_refs": [
-    "spazio_centri_esa_2026",
-    "spazio_galileo_euspa_2026"
-  ],
-  "bridge": "GIS",
-  "type": "story"
-},
+      "id": "dorsale-spazio-economia-europea-2026",
+      "title": "La Conquista dello SPAZIO",
+      "subtitle": "Istituzioni, infrastrutture e mercato della Dorsale Spazio",
+      "author": "Francesco Sisini",
+      "language": "it",
+      "file": "stories/spazio_economia_europea_2026.html",
+      "description": "Documentario GIS sulla Dorsale Spazio europea reale nel 2026: ESA, EUSPA, Galileo, infrastrutture terrestri, economia upstream e downstream e collegamenti con le altre dorsali europee.",
+      "tags": [
+        "spazio",
+        "Europa",
+        "ESA",
+        "EUSPA",
+        "Galileo",
+        "space economy",
+        "GIS",
+        "Dorsali Europee"
+      ],
+      "layer_refs": [
+        "spazio_centri_esa_2026",
+        "spazio_galileo_euspa_2026"
+      ],
+      "bridge": "GIS",
+      "type": "dossier"
+    },
     {
       "id": "cnot-quantum-reactor-en",
       "title": "C-Not Quantum Reactor",

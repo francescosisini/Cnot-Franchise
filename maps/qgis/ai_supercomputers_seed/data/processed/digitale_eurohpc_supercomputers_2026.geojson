@@ -1,0 +1,355 @@
+{
+  "type": "FeatureCollection",
+  "name": "digitale_eurohpc_supercomputers_2026",
+  "metadata": {
+    "reference_date": "2026-09-02",
+    "crs": "EPSG:4326",
+    "qgis_group": "01_DATI_INFRASTRUTTURA_DIGITALE/01_EUROHPC_SUPERCOMPUTER",
+    "status": "MIXED_REAL_2026_REAL_MILESTONE_PROGRAMMATO",
+    "scope": "Supercomputer EuroHPC procured and publicly documented as of 2026-09-02.",
+    "selection_note": "The layer follows EuroHPC's official 'Our Supercomputers' portfolio. Operational systems are distinguished from systems in commissioning and future deployment.",
+    "coordinate_note": "Coordinates are intentionally approximate at city/campus level unless a public hosting site is unambiguous. They are for continental GIS visualization, not facility-level navigation.",
+    "architecture_note": "This layer maps physical HPC capacity. AI Factories, quantum computers, cloud/data centres and AI Gigafactories are separate layers to avoid conceptual duplication."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.36,
+          50.92
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-JUPITER-JUELICH",
+        "name": "JUPITER",
+        "label": "JUPITER · Jülich",
+        "city": "Jülich",
+        "country": "Germania",
+        "host": "Jülich Supercomputing Centre (JSC)",
+        "site": "Forschungszentrum Jülich",
+        "class": "exascale",
+        "sustained_performance": "1 exaflop",
+        "peak_performance": "1226.28 petaflops",
+        "top500_june_2026": "#5",
+        "applications": "large-scale simulation; AI; digital twins; climate; materials; quantum validation",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city/campus_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.73,
+          64.23
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-LUMI-KAJAANI",
+        "name": "LUMI",
+        "label": "LUMI · Kajaani",
+        "city": "Kajaani",
+        "country": "Finlandia",
+        "host": "CSC – IT Center for Science",
+        "site": "CSC Kajaani data centre",
+        "class": "pre-exascale",
+        "sustained_performance": "386 petaflops",
+        "peak_performance": "539.13 petaflops",
+        "top500_june_2026": "#11",
+        "applications": "AI; deep learning; large-scale simulation; data analytics",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.34,
+          44.51
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-LEONARDO-BOLOGNA",
+        "name": "LEONARDO",
+        "label": "LEONARDO · Bologna",
+        "city": "Bologna",
+        "country": "Italia",
+        "host": "CINECA",
+        "site": "Tecnopolo di Bologna",
+        "class": "pre-exascale",
+        "sustained_performance": "249.04 petaflops",
+        "peak_performance": "315.74 petaflops",
+        "top500_june_2026": "#12",
+        "applications": "HPC; AI; data analysis; urgent computing; cloud-style workloads",
+        "status_2026": "operational; LISA upgrade inaugurated June 2026",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city/site_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "source_2026": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-call-tender-new-industrial-supercomputer-bologna-italy-2026-07-16_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.12,
+          41.39
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-MARENOSTRUM5-BARCELONA",
+        "name": "MareNostrum 5",
+        "label": "MareNostrum 5 · Barcelona",
+        "city": "Barcelona",
+        "country": "Spagna",
+        "host": "Barcelona Supercomputing Center (BSC)",
+        "site": "BSC",
+        "class": "pre-exascale",
+        "sustained_performance": "215.40 petaflops combined",
+        "peak_performance": "314 petaflops",
+        "top500_june_2026": "ACC #16; GPP #61",
+        "applications": "AI; deep learning; digital twins; medicine; drug discovery; energy",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city/campus_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.07,
+          49.79
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-MELUXINA-BISSEN",
+        "name": "MeluXina",
+        "label": "MeluXina · Bissen",
+        "city": "Bissen",
+        "country": "Lussemburgo",
+        "host": "LuxProvide",
+        "site": "LuxProvide data centre",
+        "class": "petascale",
+        "sustained_performance": "12.81 petaflops",
+        "peak_performance": "18.29 petaflops",
+        "top500_june_2026": "#177",
+        "applications": "AI; digital twins; HPC; quantum simulation",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.16,
+          49.83
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-KAROLINA-OSTRAVA",
+        "name": "Karolina",
+        "label": "Karolina · Ostrava",
+        "city": "Ostrava",
+        "country": "Cechia",
+        "host": "IT4Innovations National Supercomputing Center",
+        "site": "IT4Innovations",
+        "class": "petascale",
+        "sustained_performance": "9.59 petaflops",
+        "peak_performance": "12.91 petaflops",
+        "top500_june_2026": "GPU #250; CPU #476",
+        "applications": "HPC; AI; Big Data; cloud services",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city/campus_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.65,
+          46.56
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-VEGA-MARIBOR",
+        "name": "Vega",
+        "label": "Vega · Maribor",
+        "city": "Maribor",
+        "country": "Slovenia",
+        "host": "IZUM",
+        "site": "IZUM",
+        "class": "petascale",
+        "sustained_performance": "6.92 petaflops",
+        "peak_performance": "10.05 petaflops",
+        "top500_june_2026": "CPU #365; GPU #438",
+        "applications": "HPC; AI; Big Data; large-scale data processing",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.37,
+          42.65
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-DISCOVERER-SOFIA",
+        "name": "Discoverer",
+        "label": "Discoverer · Sofia",
+        "city": "Sofia",
+        "country": "Bulgaria",
+        "host": "Sofia Tech Park",
+        "site": "Sofia Tech Park",
+        "class": "petascale",
+        "sustained_performance": "4.52 petaflops",
+        "peak_performance": "5.94 petaflops",
+        "top500_june_2026": "#317",
+        "applications": "AI; drug discovery; materials; climate; machine learning",
+        "status_2026": "operational; Discoverer+ upgrade active",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city/site_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3,
+          41.45
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-DEUCALION-GUIMARAES",
+        "name": "Deucalion",
+        "label": "Deucalion · Guimarães",
+        "city": "Guimarães",
+        "country": "Portogallo",
+        "host": "FCT / CNCA",
+        "site": "Minho Advanced Computing Centre",
+        "class": "petascale",
+        "sustained_performance": "7.48 petaflops",
+        "peak_performance": "9.76 petaflops",
+        "top500_june_2026": "#353",
+        "applications": "HPC; AI; Big Data",
+        "status_2026": "operational",
+        "layer_status": "REAL_2026",
+        "coordinate_precision": "city/campus_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.06,
+          37.71
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-DAEDALUS-LAVRIO",
+        "name": "DAEDALUS",
+        "label": "DAEDALUS · Lavrio",
+        "city": "Lavrio",
+        "country": "Grecia",
+        "host": "GRNET",
+        "site": "Lavrion Technological and Cultural Park",
+        "class": "mid-range / petascale",
+        "sustained_performance": "89 petaflops (published target/benchmark)",
+        "peak_performance": "115 petaflops",
+        "top500_june_2026": "#31",
+        "applications": "HPC; AI; Big Data; Pharos AI Factory",
+        "status_2026": "early operational / commissioning; TOP500 June 2026",
+        "layer_status": "REAL_MILESTONE",
+        "coordinate_precision": "city/site_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "source_2026": "https://www.eurohpc-ju.europa.eu/two-new-eurohpc-systems-join-top500-jupiter-remains-among-worlds-fastest-supercomputers-2026-06-23_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.62,
+          58.41
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-ARRHENIUS-LINKOPING",
+        "name": "Arrhenius",
+        "label": "Arrhenius · Linköping",
+        "city": "Linköping",
+        "country": "Svezia",
+        "host": "NAISS / Linköping University",
+        "site": "Linköping University",
+        "class": "mid-range",
+        "sustained_performance": "66.8 petaflops benchmark / >60 petaflops target",
+        "peak_performance": "84 petaflops",
+        "top500_june_2026": "#42",
+        "applications": "AI; personalised medicine; materials; life sciences; climate",
+        "status_2026": "early operational / commissioning; access available in 2026",
+        "layer_status": "REAL_MILESTONE",
+        "coordinate_precision": "city/campus_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en",
+        "source_2026": "https://www.eurohpc-ju.europa.eu/two-new-eurohpc-systems-join-top500-jupiter-remains-among-worlds-fastest-supercomputers-2026-06-23_en"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.19,
+          48.59
+        ]
+      },
+      "properties": {
+        "id": "EUROHPC-ALICE-RECOQUE-BRUYERES",
+        "name": "Alice Recoque",
+        "label": "Alice Recoque · Bruyères-le-Châtel",
+        "city": "Bruyères-le-Châtel",
+        "country": "Francia",
+        "host": "GENCI / CEA / Jules Verne consortium",
+        "site": "TGCC – Très Grand Centre de calcul",
+        "class": "exascale",
+        "sustained_performance": "1 exaflop expected",
+        "peak_performance": "to be announced",
+        "top500_june_2026": "not yet operational",
+        "applications": "HPC; AI; quantum; climate; materials; personalised medicine; foundation models",
+        "status_2026": "procured / future deployment",
+        "layer_status": "PROGRAMMATO",
+        "coordinate_precision": "city/site_approx",
+        "source_primary": "https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en"
+      }
+    }
+  ]
+}
