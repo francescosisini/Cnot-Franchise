@@ -187,13 +187,6 @@
         padding:10px 12px;
       }
     }
-
-    .review-status{margin:1.2rem 0 1.8rem;padding:.8rem 1rem;border:1px solid rgba(57,255,20,.28);background:rgba(57,255,20,.045);color:var(--muted);font:600 .78rem/1.5 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase}
-    .review-status .open{color:var(--accent)}
-    .feedback-box{margin:2.6rem 0 1.4rem;padding:1.1rem 1.2rem;border:1px solid rgba(57,255,20,.28);background:rgba(57,255,20,.05);font:.92rem/1.6 system-ui,sans-serif}
-    .feedback-box h2{color:var(--accent);margin-bottom:.65rem}
-    .feedback-box ol{margin:.7rem 0 0 1.25rem;padding:0}
-    .feedback-box li{margin:.35rem 0}
   </style>
 </head>
 
@@ -202,7 +195,6 @@
 
   <p class="kicker">Narrative archive · Nuclear geography</p>
   <h1>The Nuclear Fuel Cycle</h1>
-  <div class="review-status">Dossier 01 · Version 0.1 · September 2026 · <span class="open">● Open for review</span></div>
 
   <p class="lead">
     A GIS story that follows nuclear fuel from uranium extraction to conversion,
@@ -501,18 +493,6 @@
       manufacturing, electricity generation, research, recycling, storage and
       geological disposal.
     </p>
-  </section>
-
-  <section class="feedback-box" id="feedback">
-    <h2>Feedback and corrections are welcome</h2>
-    <p>This dossier is a work in progress. If you know the field, your comments can help improve the next version.</p>
-    <ol>
-      <li>Are there factual errors?</li>
-      <li>Is an important stage of the fuel cycle missing?</li>
-      <li>Is the geographical distribution represented correctly?</li>
-      <li>Is any simplification potentially misleading?</li>
-      <li>Which sources or datasets would you recommend adding?</li>
-    </ol>
   </section>
 
   <p class="foot">
