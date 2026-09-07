@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-  
-  
+
+
   #readerMinimize {
   background: transparent;
   color: #39ff14;
@@ -20,7 +20,7 @@
 }
 
 /* Regole minimizzazione spostate più sotto con selettore open.minimized */
-  
+
   #storyLaunchButton {
   position: fixed;
   left: 16px;
@@ -43,7 +43,7 @@
 #storyLaunchButton.visible {
   display: none !important;
 }
-  
+
     html, body {
       margin: 0;
       width: 100%;
@@ -582,7 +582,7 @@
   }
 
 }
-  
+
   /* Mobile: the whole archive panel scrolls, so the last card is always reachable. */
   @media (max-width: 900px) {
     #cnotOverlay {
@@ -626,7 +626,7 @@
   }
 
 </style>
-  
+
 </head>
 
 <body>
@@ -693,13 +693,13 @@
 
 
   <div id="readerError" role="alert"></div>
-  
+
   <button id="storyLaunchButton" type="button">Leggi racconto</button>
 
   <aside id="readerPanel">
     <div id="readerHeader">
       <div id="readerTitle">Reader</div>
-      
+
       <div>
  	 <button id="readerMinimize" type="button">−</button>
   	<button id="readerClose">×</button>
@@ -734,7 +734,7 @@
       Reader core: non applica più reset automatici di visibilità layer.
       La visibilità cartografica è responsabilità del GIS e del bridge.
     */
-    
+
     readerMinimize.addEventListener("click", () => {
   	readerPanel.classList.toggle("minimized");
   	readerMinimize.textContent = readerPanel.classList.contains("minimized") ? "+" : "−";
@@ -805,7 +805,7 @@
       return item.location_name || item.location || item.luogo || item.place || item.city || "";
     }
 
-    
+
 const LANGUAGE_LABELS={it:"Italian",en:"English",fr:"Français",de:"Deutsch",es:"Español"};
 const TYPE_LABELS={story:"Racconto",dossier:"Dossier",paper:"Paper",dataset:"Dataset",map:"Map",video:"Video",music:"Music",image:"Image",other:"Other"};
 function getArchiveLanguage(item){return LANGUAGE_LABELS[item.language]||item.language||"Unknown";}
@@ -1068,8 +1068,17 @@ function getArchiveImage(item){
     zoom: zoom
   });
 
-  readerPanel.classList.add("minimized");
-  readerMinimize.textContent = "+";
+  // Quando un contenuto aperto nel reader richiama un punto GIS:
+  // - mobile: chiudi completamente il reader, così la mappa resta libera;
+  // - desktop: mantieni il comportamento compatto/minimizzato.
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    readerPanel.classList.remove("open");
+    readerPanel.classList.remove("minimized");
+    readerMinimize.textContent = "−";
+  } else {
+    readerPanel.classList.add("minimized");
+    readerMinimize.textContent = "+";
+  }
 
   document.body.classList.add("cnot-overlay-collapsed");
   cnotOverlayToggle.textContent = "+";
@@ -1296,14 +1305,6 @@ function getArchiveImage(item){
       if (button.dataset.action === "goto") {
         focusMapOnArchiveItem(item);
 
-        // Mobile: dopo il salto GIS chiudi l’Archive Reader per lasciare
-        // tutta la superficie dello schermo alla mappa.
-        if (window.matchMedia("(max-width: 900px)").matches) {
-          document.body.classList.add("cnot-overlay-collapsed");
-          cnotOverlayToggle.textContent = "+";
-          cnotOverlayToggle.setAttribute("aria-expanded", "false");
-          cnotOverlayToggle.setAttribute("aria-label", "Riapri pannello Progetto CNOT");
-        }
 
         return;
       }
