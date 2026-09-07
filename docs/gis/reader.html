@@ -1295,6 +1295,16 @@ function getArchiveImage(item){
 
       if (button.dataset.action === "goto") {
         focusMapOnArchiveItem(item);
+
+        // Mobile: dopo il salto GIS chiudi l’Archive Reader per lasciare
+        // tutta la superficie dello schermo alla mappa.
+        if (window.matchMedia("(max-width: 900px)").matches) {
+          document.body.classList.add("cnot-overlay-collapsed");
+          cnotOverlayToggle.textContent = "+";
+          cnotOverlayToggle.setAttribute("aria-expanded", "false");
+          cnotOverlayToggle.setAttribute("aria-label", "Riapri pannello Progetto CNOT");
+        }
+
         return;
       }
 
