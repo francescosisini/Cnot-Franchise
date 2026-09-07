@@ -591,6 +591,21 @@
       overflow: hidden;
     }
 
+    /* When GIS navigation collapses the archive on mobile,
+       undo the full-height mobile layout. */
+    body.cnot-overlay-collapsed #cnotOverlay {
+      height: auto;
+      max-height: none;
+      min-height: 0;
+      width: auto;
+      overflow: hidden;
+    }
+
+    body.cnot-overlay-collapsed .cnot-overlay-inner {
+      height: auto;
+      min-height: 0;
+    }
+
     .cnot-overlay-inner {
       height: 100%;
       min-height: 0;
