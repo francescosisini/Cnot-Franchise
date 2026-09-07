@@ -1083,18 +1083,13 @@ function getArchiveImage(item){
     zoom: zoom
   });
 
-  // Quando un contenuto aperto nel reader richiama un punto GIS:
-  // - mobile: chiudi completamente il reader, così la mappa resta libera;
-  // - desktop: mantieni il comportamento compatto/minimizzato.
-  if (window.matchMedia("(max-width: 900px)").matches) {
-    readerPanel.classList.remove("open");
-    readerPanel.classList.remove("minimized");
-    readerMinimize.textContent = "−";
-  } else {
-    readerPanel.classList.add("minimized");
-    readerMinimize.textContent = "+";
-  }
+  // Il racconto NON viene chiuso: viene minimizzato.
+  // Rimane visibile il piccolo reader con il pulsante "+" per riaprirlo.
+  readerPanel.classList.add("open");
+  readerPanel.classList.add("minimized");
+  readerMinimize.textContent = "+";
 
+  // L'Archive Reader invece si collassa per lasciare libera la mappa.
   document.body.classList.add("cnot-overlay-collapsed");
   cnotOverlayToggle.textContent = "+";
   cnotOverlayToggle.setAttribute("aria-expanded", "false");
