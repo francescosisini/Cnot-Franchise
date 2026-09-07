@@ -582,7 +582,50 @@
   }
 
 }
-  </style>
+  
+  /* Mobile: the whole archive panel scrolls, so the last card is always reachable. */
+  @media (max-width: 900px) {
+    #cnotOverlay {
+      height: calc(100dvh - 24px);
+      max-height: calc(100dvh - 24px);
+      overflow: hidden;
+    }
+
+    .cnot-overlay-inner {
+      height: 100%;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cnot-overlay-head {
+      flex: 0 0 auto;
+    }
+
+    .cnot-overlay-body {
+      flex: 1 1 auto;
+      min-height: 0;
+      max-height: none;
+      overflow-y: auto;
+      overflow-x: hidden;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 110px;
+    }
+
+    #archiveMetaBox {
+      max-height: none;
+      min-height: 0;
+      overflow: visible;
+      padding-bottom: 24px;
+    }
+
+    #cnotStatusOverlay {
+      display: none;
+    }
+  }
+
+</style>
   
 </head>
 
