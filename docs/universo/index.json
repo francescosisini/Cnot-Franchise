@@ -1,0 +1,52 @@
+[
+{
+    "id": "cnot",
+    "title": "CNOT - Fuga dal computer quantistico",
+    "author": "Francesco Sisini",
+    "year": 2024,
+    "type": "libro",
+    "publisher": "",
+    "available": [
+      {
+        "type": "GitHub",
+        "label": "GitHub",
+        "url": "https://github.com/francescosisini/Cnot-Franchise/tree/main/books/cnot"
+      }
+    ]
+  },
+  {
+    "id": "cnot-quantum-reactor",
+    "title": "C-Not Quantum Reactor",
+    "author": "Francesco Sisini",
+    "year": 2026,
+    "type": "racconto",
+    "publisher": "",
+    "available": [
+      {
+        "type": "gis",
+        "label": "GIS narrativo",
+        "url": "../gis/reader.html"
+      }
+    ]
+  },
+  {
+    "id": "cnot-1-7",
+    "title": "CNOT 1.7",
+    "author": "Francesco Sisini",
+    "year": 2026,
+    "type": "libro",
+    "publisher": "Edizioni Tradizionali",
+    "available": [
+      {
+        "type": "amazon",
+        "label": "Amazon",
+        "url": "https://www.amazon.it/Cnot-1-7-Francesco-Sisini-ebook/dp/B0HHMTT9VD"
+      },
+      {
+        "type": "epub",
+        "label": "Libro/EPUB",
+        "url": ""
+      }
+    ]
+  }
+]
