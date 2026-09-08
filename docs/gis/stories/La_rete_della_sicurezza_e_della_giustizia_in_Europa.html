@@ -474,4 +474,145 @@
       }
       .chain div::after { content: ""; }
     }
-  </style></head><body><main class="story" data-story-id="europa-latitante-2026"><section class="hero-space"><p class="kicker">Dorsali Europee · Governance e sicurezza · realtà 2026</p><h1>Un uomo scompare in Europa</h1><p class="lead">Un ricercato lascia l’Italia e attraversa più paesi europei. Chi lo cerca? Chi coordina i magistrati? Quali sistemi informativi rendono visibile il suo passaggio?</p><p class="human-distance"><strong>Scenario inventato, rete reale.</strong> Il caso serve a leggere Europol, Eurojust, eu-LISA, Frontex, ENISA e la loro infrastruttura europea.</p></section><div class="note">Il latitante e gli spostamenti sono fittizi. Competenze, sistemi e infrastrutture sono riferiti al quadro europeo documentato nel 2026. Il GIS non rappresenta una catena di comando.</div><div class="chain"><div>Ricerca nazionale</div><div>Cooperazione UE</div><div>Sistemi informativi</div><div>Frontiera esterna</div></div><nav class="controls"><button class="step-btn" onclick="prepareGov(this)">Prepara mappa</button><button class="step-btn" onclick="showOrg(this,'europol')">1 · Europol</button><button class="step-btn" onclick="showOrg(this,'eurojust')">2 · Eurojust</button><button class="step-btn" onclick="showOrg(this,'eulisa')">3 · eu-LISA / SIS</button><button class="step-btn" onclick="showOrg(this,'frontex')">4 · Frontex</button><button class="step-btn" onclick="showOrg(this,'enisa')">5 · ENISA</button><button class="step-btn" onclick="showNonActors(this)">6 · Chi non interviene?</button><button class="step-btn" onclick="showAllGov(this)">7 · Intera rete</button><button class="step-btn" onclick="restoreMap(this)">Ripristina</button></nav><p class="current">Comando selezionato: <span class="current-command">nessuno</span></p><section class="section"><h2>1. Europol: collegare informazioni che stanno in paesi diversi</h2><div class="problem"><strong>Il problema:</strong> l’indagine non finisce al confine.</div><p class="plain-language">Europol sostiene le autorità nazionali con cooperazione, scambio informativo e analisi; non è una polizia federale europea.</p><p>Per i latitanti è rilevante anche ENFAST, rete di unità specializzate sostenuta da Europol. Nel caso simulato Europol aiuta a collegare informazioni distribuite fra Stati.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'europol')">Guarda sulla mappa</button></div></section><section class="section"><h2>2. Eurojust: quando il problema diventa giudiziario</h2><div class="problem"><strong>Il problema:</strong> localizzare una persona non basta: servono atti giudiziari coordinati fra Stati.</div><p class="plain-language">Eurojust sostiene la cooperazione giudiziaria transfrontaliera.</p><p>Se l’autorità competente emette un mandato d’arresto europeo e occorrono misure coordinate, Eurojust può facilitare il lavoro delle autorità giudiziarie coinvolte.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'eurojust')">Guarda sulla mappa</button></div></section><section class="section"><h2>3. eu-LISA e SIS: l’infrastruttura invisibile</h2><div class="problem"><strong>Il problema:</strong> come può un’autorità sapere che una persona è ricercata?</div><p class="plain-language">SIS consente alle autorità abilitate di consultare segnalazioni su persone e oggetti.</p><p>eu-LISA gestisce operativamente SIS e altri grandi sistemi europei. Gestisce l’infrastruttura: non conduce l’indagine e non decide il contenuto delle segnalazioni nazionali.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'eulisa')">Guarda sulla mappa</button></div></section><section class="section"><h2>4. Frontex: la frontiera esterna</h2><div class="problem"><strong>Il problema:</strong> il ricercato tenta di lasciare Schengen.</div><p class="plain-language">Frontex sostiene la gestione integrata delle frontiere esterne; non sostituisce automaticamente le autorità nazionali.</p><p>Qui controllo fisico e infrastruttura informativa si incontrano: una segnalazione può tradursi in un’azione concreta dell’autorità competente.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'frontex')">Guarda sulla mappa</button></div></section><section class="section"><h2>5. ENISA: non serve per trovare il latitante</h2><div class="problem"><strong>Il problema:</strong> ENISA è sulla stessa dorsale: interviene automaticamente? No.</div><p class="plain-language">ENISA è l’agenzia UE per la cibersicurezza, non un organismo di ricerca dei latitanti.</p><p>Diventa pertinente se il caso comprende un grave incidente cyber transfrontaliero; nel 2026 supporta la preparazione e risposta europea alle crisi cyber.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'enisa')">Guarda sulla mappa</button></div></section><section class="section"><h2>6. BCE e Commissione: essere sulla mappa non significa intervenire</h2><div class="problem"><strong>Il problema:</strong> una mappa densa può suggerire competenze che non esistono.</div><p class="plain-language">Nel caso base BCE e Commissione non cercano il ricercato e non dirigono l’operazione.</p><p>La lezione GIS è importante: una relazione geografica o digitale non equivale a una competenza operativa nel singolo caso.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showNonActors(this)">Guarda sulla mappa</button></div></section><section class="section"><h2>7. Una rete, non una super-agenzia</h2><div class="problem"><strong>Il problema:</strong> chi ha trovato il latitante?</div><p class="plain-language">La domanda utile è come hanno cooperato autorità nazionali, agenzie e infrastrutture.</p><p>Europol collega informazioni; Eurojust sostiene la cooperazione giudiziaria; eu-LISA mantiene sistemi informativi; Frontex opera nella gestione delle frontiere; ENISA appartiene alla dimensione cyber.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showAllGov(this)">Guarda sulla mappa</button></div></section><section class="section"><h2>Fonti principali</h2><ul class="sources"><li><a href="https://www.europol.europa.eu/partners-collaboration/networks/enfast" target="_blank">Europol · ENFAST</a></li><li><a href="https://www.eurojust.europa.eu/" target="_blank">Eurojust</a></li><li><a href="https://www.eulisa.europa.eu/about-us/who-we-are" target="_blank">eu-LISA</a></li><li><a href="https://www.frontex.europa.eu/" target="_blank">Frontex</a></li><li><a href="https://www.enisa.europa.eu/topics/eu-incident-response-and-cyber-crisis-management" target="_blank">ENISA</a></li></ul></section><p class="foot">GIS API: <code>GIS.showLayer()</code>, <code>GIS.hideLayer()</code>, <code>GIS.hideAllLayersExcept()</code>, <code>GIS.goto()</code>.</p></main><script>(function(){"use strict";var BASE=["ne_10m_admin_0_countries","cnoteurope"];var G={europol:["EUROPOL_sites","EUROPOL_relations","EUROPOL_digital_infrastructure"],eurojust:["EUROJUST_sites","EUROJUST_relations","EUROJUST_digital_infrastructure"],eulisa:["eu-LISA_sites","eu-LISA_relations","eu-LISA_digital_infrastructure"],frontex:["FRONTEX_sites","FRONTEX_relations","FRONTEX_digital_infrastructure"],enisa:["ENISA_sites","ENISA_relations","ENISA_digital_infrastructure"],bce:["BCE_sites","BCE_relations","BCE_digital_infrastructure"],commission:["Commissione_Europea_sites","Commissione_Europea_relations","Commissione_Europea_digital_infrastructure"]};function gis(){return window.GIS||(window.parent&&window.parent.GIS)||null}function active(b){document.querySelectorAll('.step-btn.is-active').forEach(e=>e.classList.remove('is-active'));if(b)b.classList.add('is-active');var x=document.querySelector('.current-command');if(x&&b)x.textContent=b.textContent.trim()}function go(g,a,o,z){if(g.goto)g.goto(a,o,z);else if(g.gotoGIS)g.gotoGIS(a,o,z);else if(window.parent&&window.parent.gotoGIS)window.parent.gotoGIS(a,o,z)}function names(){return Object.values(G).flat()}function clean(g){if(g.hideAllLayersExcept)g.hideAllLayersExcept(BASE);else if(g.hideLayer)names().forEach(n=>g.hideLayer(n))}function show(g,arr){if(g.showLayer)arr.forEach(n=>g.showLayer(n))}window.prepareGov=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);go(g,51,10,4)};window.showOrg=function(b,k){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,G[k]);go(g,k==='europol'||k==='eurojust'?52.08:k==='frontex'?52.23:k==='eulisa'?56:50,k==='europol'||k==='eurojust'?4.31:k==='frontex'?21.01:k==='eulisa'?15:12,4)};window.showNonActors=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,G.bce.concat(G.commission));go(g,50.5,7,4)};window.showAllGov=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,names());go(g,51,10,4)};window.restoreMap=window.prepareGov;})();</script></body></html>
+  </style></head><body><main class="story" data-story-id="europa-latitante-2026"><section class="hero-space"><p class="kicker">Dorsali Europee · Governance e sicurezza · realtà 2026</p><h1>Un uomo scompare in Europa</h1><p class="lead">Un ricercato lascia l’Italia e attraversa più paesi europei. Chi lo cerca? Chi coordina i magistrati? Quali sistemi informativi rendono visibile il suo passaggio?</p><p class="human-distance"><strong>Scenario inventato, rete reale.</strong> Il caso serve a leggere Europol, Eurojust, eu-LISA, Frontex, ENISA e la loro infrastruttura europea.</p></section><div class="note">Il latitante e gli spostamenti sono fittizi. Competenze, sistemi e infrastrutture sono riferiti al quadro europeo documentato nel 2026. Il GIS non rappresenta una catena di comando.</div><div class="chain"><div>Ricerca nazionale</div><div>Cooperazione UE</div><div>Sistemi informativi</div><div>Frontiera esterna</div></div><nav class="controls"><button class="step-btn" onclick="prepareGov(this)">Prepara mappa</button><button class="step-btn" onclick="showOrg(this,'europol')">1 · Europol</button><button class="step-btn" onclick="showOrg(this,'eurojust')">2 · Eurojust</button><button class="step-btn" onclick="showOrg(this,'eulisa')">3 · eu-LISA / SIS</button><button class="step-btn" onclick="showOrg(this,'frontex')">4 · Frontex</button><button class="step-btn" onclick="showOrg(this,'enisa')">5 · ENISA</button><button class="step-btn" onclick="showNonActors(this)">6 · Chi non interviene?</button><button class="step-btn" onclick="showAllGov(this)">7 · Intera rete</button><button class="step-btn" onclick="restoreMap(this)">Ripristina</button></nav><p class="current">Comando selezionato: <span class="current-command">nessuno</span></p><section class="section"><h2>1. Europol: collegare informazioni che stanno in paesi diversi</h2><div class="problem"><strong>Il problema:</strong> l’indagine non finisce al confine.</div><p class="plain-language">Europol sostiene le autorità nazionali con cooperazione, scambio informativo e analisi; non è una polizia federale europea.</p><p>Per i latitanti è rilevante anche ENFAST, rete di unità specializzate sostenuta da Europol. Nel caso simulato Europol aiuta a collegare informazioni distribuite fra Stati.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'europol')">Guarda sulla mappa</button></div></section><section class="section"><h2>2. Eurojust: quando il problema diventa giudiziario</h2><div class="problem"><strong>Il problema:</strong> localizzare una persona non basta: servono atti giudiziari coordinati fra Stati.</div><p class="plain-language">Eurojust sostiene la cooperazione giudiziaria transfrontaliera.</p><p>Se l’autorità competente emette un mandato d’arresto europeo e occorrono misure coordinate, Eurojust può facilitare il lavoro delle autorità giudiziarie coinvolte.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'eurojust')">Guarda sulla mappa</button></div></section><section class="section"><h2>3. eu-LISA e SIS: l’infrastruttura invisibile</h2><div class="problem"><strong>Il problema:</strong> come può un’autorità sapere che una persona è ricercata?</div><p class="plain-language">SIS consente alle autorità abilitate di consultare segnalazioni su persone e oggetti.</p><p>eu-LISA gestisce operativamente SIS e altri grandi sistemi europei. Gestisce l’infrastruttura: non conduce l’indagine e non decide il contenuto delle segnalazioni nazionali.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'eulisa')">Guarda sulla mappa</button></div></section><section class="section"><h2>4. Frontex: la frontiera esterna</h2><div class="problem"><strong>Il problema:</strong> il ricercato tenta di lasciare Schengen.</div><p class="plain-language">Frontex sostiene la gestione integrata delle frontiere esterne; non sostituisce automaticamente le autorità nazionali.</p><p>Qui controllo fisico e infrastruttura informativa si incontrano: una segnalazione può tradursi in un’azione concreta dell’autorità competente.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'frontex')">Guarda sulla mappa</button></div></section><section class="section"><h2>5. ENISA: non serve per trovare il latitante</h2><div class="problem"><strong>Il problema:</strong> ENISA è sulla stessa dorsale: interviene automaticamente? No.</div><p class="plain-language">ENISA è l’agenzia UE per la cibersicurezza, non un organismo di ricerca dei latitanti.</p><p>Diventa pertinente se il caso comprende un grave incidente cyber transfrontaliero; nel 2026 supporta la preparazione e risposta europea alle crisi cyber.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'enisa')">Guarda sulla mappa</button></div></section><section class="section"><h2>6. BCE e Commissione: essere sulla mappa non significa intervenire</h2><div class="problem"><strong>Il problema:</strong> una mappa densa può suggerire competenze che non esistono.</div><p class="plain-language">Nel caso base BCE e Commissione non cercano il ricercato e non dirigono l’operazione.</p><p>La lezione GIS è importante: una relazione geografica o digitale non equivale a una competenza operativa nel singolo caso.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showNonActors(this)">Guarda sulla mappa</button></div></section><section class="section"><h2>7. Una rete, non una super-agenzia</h2><div class="problem"><strong>Il problema:</strong> chi ha trovato il latitante?</div><p class="plain-language">La domanda utile è come hanno cooperato autorità nazionali, agenzie e infrastrutture.</p><p>Europol collega informazioni; Eurojust sostiene la cooperazione giudiziaria; eu-LISA mantiene sistemi informativi; Frontex opera nella gestione delle frontiere; ENISA appartiene alla dimensione cyber.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showAllGov(this)">Guarda sulla mappa</button></div></section>
+<section class="section storybox" id="caso-simulato">
+  <p class="story-kicker">CASO SIMULATO · 72 ORE</p>
+  <h2>Una fuga attraverso l’Europa</h2>
+
+  <p class="plain-language">
+    Fin qui abbiamo osservato separatamente agenzie, autorità e infrastrutture.
+    Ma cosa accade quando devono funzionare insieme? Immaginiamo un caso.
+    La persona, gli eventi e gli spostamenti sono inventati; il problema
+    organizzativo è invece concreto: un’indagine nazionale può diventare
+    rapidamente un problema transfrontaliero.
+  </p>
+
+  <h3>Giorno 1 · 06:40 · Ferrara</h3>
+  <p>
+    Quando gli investigatori entrano nell’appartamento di un uomo ricercato
+    nell’ambito di una grave indagine finanziaria, non trovano nessuno.
+    Il telefono è spento, l’auto è ancora nel garage. Alcune ore dopo emerge
+    però una traccia in Austria.
+  </p>
+  <div class="problem">
+    <strong>Il problema concreto:</strong> l’indagine è italiana, ma la persona
+    non è più necessariamente in Italia. Attraversare un confine non deve
+    significare uscire dal campo visivo delle autorità.
+  </div>
+  <p>
+    Da questo momento diventa essenziale la cooperazione fra forze di polizia
+    di Stati diversi. <strong>Europol</strong> può sostenere questo lavoro
+    facilitando lo scambio di informazioni e la loro analisi. Nel caso dei
+    latitanti è rilevante anche <strong>ENFAST</strong>, la rete europea delle
+    unità specializzate nella ricerca dei fuggitivi, sostenuta da Europol.
+  </p>
+  <p class="plain-language">
+    Europol, quindi, non diventa una “polizia europea” che prende in carico il
+    caso: aiuta le autorità nazionali a non lavorare come isole separate.
+  </p>
+
+  <h3>Giorno 1 · 18:10 · Vienna</h3>
+  <p>
+    Una telecamera e altri elementi investigativi permettono alle autorità
+    austriache di ricostruire parte degli spostamenti. L’uomo però è già
+    ripartito. Gli investigatori ritengono che possa dirigersi verso un altro
+    Stato europeo.
+  </p>
+  <div class="problem">
+    <strong>Il problema concreto:</strong> sapere dove si trova una persona non
+    basta. Per arrestarla, perquisire luoghi, acquisire prove o eseguire
+    provvedimenti occorrono procedure giudiziarie valide e coordinate fra
+    Stati differenti.
+  </div>
+  <p>
+    Qui entra in gioco <strong>Eurojust</strong>. Se più autorità giudiziarie
+    nazionali devono agire sullo stesso caso, Eurojust può sostenerne il
+    coordinamento. Un eventuale <strong>mandato d’arresto europeo</strong>
+    rimane un provvedimento delle autorità giudiziarie competenti: Eurojust
+    facilita la cooperazione necessaria alla sua esecuzione.
+  </p>
+
+  <h3>Giorno 2 · 07:45 · Praga</h3>
+  <p>
+    Durante un controllo, un’autorità consulta i sistemi a cui è autorizzata
+    ad accedere. Il nome dell’uomo risulta associato a una segnalazione.
+  </p>
+  <div class="problem">
+    <strong>Il problema concreto:</strong> una segnalazione inserita in uno
+    Stato deve poter essere disponibile, quando previsto dalla legge, anche
+    all’autorità competente che effettua un controllo in un altro Stato.
+  </div>
+  <p>
+    È qui che diventa visibile il ruolo del
+    <strong>Sistema d’informazione Schengen (SIS)</strong>. Le autorità
+    abilitate possono consultare le segnalazioni presenti nel sistema.
+  </p>
+  <p>
+    Dietro SIS esiste però un’altra struttura: <strong>eu-LISA</strong>,
+    l’agenzia che gestisce operativamente grandi sistemi informativi europei.
+  </p>
+  <p class="plain-language">
+    La distinzione è fondamentale: eu-LISA non sta inseguendo il ricercato,
+    non conduce l’indagine e non decide chi debba essere segnalato. Mantiene
+    funzionante l’infrastruttura attraverso cui le autorità autorizzate
+    possono accedere alle informazioni.
+  </p>
+
+  <h3>Giorno 3 · 16:30 · Frontiera esterna</h3>
+  <p>
+    Dopo altri spostamenti, l’uomo tenta di lasciare lo spazio Schengen
+    utilizzando un documento falso. Al controllo di frontiera la sua identità
+    viene verificata e la segnalazione emerge.
+  </p>
+  <div class="problem">
+    <strong>Il problema concreto:</strong> la frontiera esterna è il punto nel
+    quale cooperazione di polizia, informazioni e controllo fisico possono
+    convergere in un’azione concreta.
+  </div>
+  <p>
+    <strong>Frontex</strong> sostiene la gestione integrata delle frontiere
+    esterne europee. Anche qui bisogna evitare un equivoco: Frontex non
+    sostituisce automaticamente le autorità nazionali e non diventa
+    l’organismo che dirige l’intera indagine.
+  </p>
+
+  <h3>17:05 · La cattura</h3>
+  <p>
+    L’uomo viene fermato dall’autorità competente. Dopo quasi tre giorni la
+    fuga è terminata.
+  </p>
+  <div class="problem">
+    <strong>Ma chi lo ha catturato?</strong> È proprio questa domanda,
+    apparentemente semplice, a mostrare come funziona la rete europea.
+  </div>
+  <p>
+    Non esiste una singola super-agenzia che abbia seguito l’uomo da Ferrara
+    fino alla frontiera. Le autorità nazionali hanno condotto indagini e
+    controlli; <strong>Europol</strong> può sostenere la cooperazione di
+    polizia; <strong>Eurojust</strong> quella giudiziaria; il
+    <strong>SIS</strong> rende disponibili le segnalazioni alle autorità
+    abilitate; <strong>eu-LISA</strong> mantiene l’infrastruttura informatica;
+    <strong>Frontex</strong> appartiene al sistema europeo di gestione delle
+    frontiere esterne.
+  </p>
+
+  <h3>E le altre strutture presenti sulla mappa?</h3>
+  <p>
+    Anche ciò che <em>non</em> accade è importante. <strong>ENISA</strong> non
+    interviene nella ricerca del latitante: diventerebbe pertinente se il caso
+    coinvolgesse, per esempio, un grave incidente di cibersicurezza. La
+    <strong>BCE</strong> non ricerca il fuggitivo. La
+    <strong>Commissione europea</strong> non dirige l’operazione di polizia.
+  </p>
+
+  <div class="problem">
+    <strong>La lezione della mappa:</strong> una rete europea non è una catena
+    di comando. È un insieme di autorità nazionali, agenzie, procedure e
+    infrastrutture con competenze differenti che possono cooperare sullo
+    stesso problema.
+    <br><br>
+    Il ricercato attraversa le frontiere. Le competenze restano distinte, ma
+    <strong>le informazioni e la cooperazione possono attraversarle con lui.</strong>
+  </div>
+</section>
+<section class="section"><h2>Fonti principali</h2><ul class="sources"><li><a href="https://www.europol.europa.eu/partners-collaboration/networks/enfast" target="_blank">Europol · ENFAST</a></li><li><a href="https://www.eurojust.europa.eu/" target="_blank">Eurojust</a></li><li><a href="https://www.eulisa.europa.eu/about-us/who-we-are" target="_blank">eu-LISA</a></li><li><a href="https://www.frontex.europa.eu/" target="_blank">Frontex</a></li><li><a href="https://www.enisa.europa.eu/topics/eu-incident-response-and-cyber-crisis-management" target="_blank">ENISA</a></li></ul></section><p class="foot">GIS API: <code>GIS.showLayer()</code>, <code>GIS.hideLayer()</code>, <code>GIS.hideAllLayersExcept()</code>, <code>GIS.goto()</code>.</p></main><script>(function(){"use strict";var BASE=["ne_10m_admin_0_countries","cnoteurope"];var G={europol:["EUROPOL_sites","EUROPOL_relations","EUROPOL_digital_infrastructure"],eurojust:["EUROJUST_sites","EUROJUST_relations","EUROJUST_digital_infrastructure"],eulisa:["eu-LISA_sites","eu-LISA_relations","eu-LISA_digital_infrastructure"],frontex:["FRONTEX_sites","FRONTEX_relations","FRONTEX_digital_infrastructure"],enisa:["ENISA_sites","ENISA_relations","ENISA_digital_infrastructure"],bce:["BCE_sites","BCE_relations","BCE_digital_infrastructure"],commission:["Commissione_Europea_sites","Commissione_Europea_relations","Commissione_Europea_digital_infrastructure"]};function gis(){return window.GIS||(window.parent&&window.parent.GIS)||null}function active(b){document.querySelectorAll('.step-btn.is-active').forEach(e=>e.classList.remove('is-active'));if(b)b.classList.add('is-active');var x=document.querySelector('.current-command');if(x&&b)x.textContent=b.textContent.trim()}function go(g,a,o,z){if(g.goto)g.goto(a,o,z);else if(g.gotoGIS)g.gotoGIS(a,o,z);else if(window.parent&&window.parent.gotoGIS)window.parent.gotoGIS(a,o,z)}function names(){return Object.values(G).flat()}function clean(g){if(g.hideAllLayersExcept)g.hideAllLayersExcept(BASE);else if(g.hideLayer)names().forEach(n=>g.hideLayer(n))}function show(g,arr){if(g.showLayer)arr.forEach(n=>g.showLayer(n))}window.prepareGov=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);go(g,51,10,4)};window.showOrg=function(b,k){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,G[k]);go(g,k==='europol'||k==='eurojust'?52.08:k==='frontex'?52.23:k==='eulisa'?56:50,k==='europol'||k==='eurojust'?4.31:k==='frontex'?21.01:k==='eulisa'?15:12,4)};window.showNonActors=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,G.bce.concat(G.commission));go(g,50.5,7,4)};window.showAllGov=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,names());go(g,51,10,4)};window.restoreMap=window.prepareGov;})();</script></body></html>

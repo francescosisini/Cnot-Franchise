@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "name": "latitante_movements_2026",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "latitante_01",
+        "sequence": 1,
+        "name": "Ferrara",
+        "time": "06:40 · Giorno 1",
+        "stage": "La scomparsa",
+        "scenario": "fictional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6198,
+          44.8381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "latitante_02",
+        "sequence": 2,
+        "name": "Vienna",
+        "time": "18:10 · Giorno 1",
+        "stage": "Il caso attraversa il confine",
+        "scenario": "fictional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "latitante_03",
+        "sequence": 3,
+        "name": "Praga",
+        "time": "07:45 · Giorno 2",
+        "stage": "Una segnalazione diventa visibile",
+        "scenario": "fictional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.0755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "latitante_04",
+        "sequence": 4,
+        "name": "Aeroporto di Varsavia-Chopin",
+        "time": "16:30 · Giorno 3",
+        "stage": "Il tentativo di lasciare Schengen",
+        "scenario": "fictional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9671,
+          52.1657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "latitante_route",
+        "name": "Percorso simulato del ricercato",
+        "scenario": "fictional"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.6198,
+            44.8381
+          ],
+          [
+            16.3738,
+            48.2082
+          ],
+          [
+            14.4378,
+            50.0755
+          ],
+          [
+            20.9671,
+            52.1657
+          ]
+        ]
+      }
+    }
+  ]
+}
