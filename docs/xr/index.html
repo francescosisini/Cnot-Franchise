@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CNOT // Virtual Spaces</title>
+<style>
+:root{--bg:#050608;--text:#f2f2f2;--muted:#9ca3af;--orange:#ff8a1f;--green:#39ff88;--cyan:#38d9ff;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(rgba(5,6,8,.88),rgba(5,6,8,.98)),radial-gradient(circle at 50% 10%,rgba(56,217,255,.14),transparent 32%),#050608;color:var(--text);font-family:"Courier New",monospace}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.025) 0,rgba(255,255,255,.025) 1px,transparent 1px,transparent 4px);opacity:.35}
+main{width:min(920px,calc(100% - 32px));margin:auto;padding:44px 0 72px;position:relative;z-index:1}
+header{padding-bottom:28px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--green);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+h1{margin:0;color:var(--cyan);font-size:clamp(2.4rem,7vw,5.2rem);line-height:.95;letter-spacing:-.055em;text-transform:uppercase;text-shadow:0 0 18px rgba(56,217,255,.35)}
+.intro{margin:18px 0 0;max-width:720px;color:var(--muted);line-height:1.6}
+.directory{margin-top:34px}
+.entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:start;padding:26px 0;border-bottom:1px solid var(--line)}
+.entry:first-child{border-top:1px solid var(--line)}
+.entry-title{margin:0 0 12px;color:var(--orange);font-size:1.45rem}
+.meta{color:var(--muted);font-size:.88rem;line-height:1.75}
+.meta strong{color:#d8d8d8;font-weight:normal}
+.status{color:var(--green);text-transform:uppercase}
+.actions{min-width:200px;text-align:right}
+.actions-label{display:block;margin-bottom:9px;color:var(--green);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+.modes{margin-bottom:12px;color:var(--muted);font-size:.78rem}
+.enter{display:inline-block;padding:8px 12px;border:1px solid rgba(56,217,255,.45);color:var(--cyan);background:rgba(56,217,255,.04);text-decoration:none;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase}
+.enter:hover{border-color:var(--cyan);box-shadow:0 0 14px rgba(56,217,255,.18);color:#fff}
+.empty,.error{padding:28px 0;color:var(--muted)}
+footer{margin-top:32px;color:var(--muted);font-size:.78rem;letter-spacing:.05em}
+@media(max-width:680px){.entry{grid-template-columns:1fr;gap:16px}.actions{text-align:left;min-width:0}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">CNOT // Virtual Spaces</div>
+<h1>XR Directory</h1>
+<p class="intro">Ambienti immersivi appartenenti all'universo CNOT. Ogni spazio può essere collegato a luoghi, eventi e storie del franchise.</p>
+</header>
+<section class="directory" id="directory"><div class="empty">Caricamento indice…</div></section>
+<footer>Data source: xr/index.json</footer>
+</main>
+<script>
+const box=document.getElementById("directory");
+const esc=v=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
+const statusLabel=v=>({prototype:"prototype",beta:"beta",available:"esplorabile"}[v]||v||"—");
+const modeLabel=v=>({desktop:"Desktop",mobile:"Mobile",vr:"VR"}[v]||v);
+function entry(x){
+ const modes=Array.isArray(x.mode)?x.mode.map(modeLabel).join(" · "):"—";
+ return `<article class="entry">
+ <div><h2 class="entry-title">${esc(x.title)}</h2><div class="meta">
+ <div><strong>Anno:</strong> ${esc(x.year)}</div>
+ <div><strong>Tipo:</strong> ${esc(x.type)}</div>
+ <div><strong>Collegato a:</strong> ${esc(x.related_story||"—")}</div>
+ <div><strong>Stato:</strong> <span class="status">${esc(statusLabel(x.status))}</span></div>
+ </div></div>
+ <div class="actions"><span class="actions-label">Modalità</span><div class="modes">${esc(modes)}</div>
+ <a class="enter" href="${esc(x.url)}">Entra ↗</a></div></article>`;
+}
+fetch("index.json").then(r=>{if(!r.ok)throw new Error();return r.json()}).then(items=>{
+ box.innerHTML=Array.isArray(items)&&items.length?items.map(entry).join(""):'<div class="empty">Nessuno spazio XR nell’indice.</div>';
+}).catch(()=>box.innerHTML='<div class="error">Errore nel caricamento dell’indice XR.</div>');
+</script>
+</body>
+</html>

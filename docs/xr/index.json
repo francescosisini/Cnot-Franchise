@@ -1,0 +1,16 @@
+[
+  {
+    "id": "convitto",
+    "title": "Il Convitto",
+    "year": 2026,
+    "type": "WebXR",
+    "related_story": "CNOT 1.7",
+    "status": "available",
+    "mode": [
+      "desktop",
+      "mobile",
+      "vr"
+    ],
+    "url": "convitto/"
+  }
+]
