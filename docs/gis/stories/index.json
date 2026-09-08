@@ -55,6 +55,53 @@
       "bridge": "GIS"
     },
     {
+      "id": "sicurezza-europea",
+      "title": "La rete della sicurezza e della giustizia in Europa",
+      "subtitle": "Un caso, molte frontiere, una rete europea.",
+      "author": "Francesco Sisini",
+      "language": "it",
+      "type": "dossier",
+      "file": "stories/La_rete_della_sicurezza_e_della_giustizia_in_Europa.html",
+      "description": "Un latitante attraversa l’Europa. Seguendo il suo percorso, il dossier mostra come cooperano autorità nazionali, Europol, Eurojust, eu-LISA e Frontex e quale ruolo svolgono le infrastrutture digitali europee.",
+      "tags": [
+  "security",
+  "justice",
+  "Europol",
+  "Eurojust",
+  "eu-LISA",
+  "Frontex",
+  "cybersecurity",
+  "GIS",
+  "Europe"
+],
+"layer_refs": [
+  "EUROPOL_sites",
+  "EUROPOL_relations",
+  "EUROPOL_digital_infrastructure",
+  "EUROJUST_sites",
+  "EUROJUST_relations",
+  "EUROJUST_digital_infrastructure",
+  "eu-LISA_sites",
+  "eu-LISA_relations",
+  "eu-LISA_digital_infrastructure",
+  "FRONTEX_sites",
+  "FRONTEX_relations",
+  "FRONTEX_digital_infrastructure",
+  "ENISA_sites",
+  "ENISA_relations",
+  "ENISA_digital_infrastructure",
+  "BCE_sites",
+  "BCE_relations",
+  "BCE_digital_infrastructure",
+  "Commissione_Europea_sites",
+  "Commissione_Europea_relations",
+  "Commissione_Europea_digital_infrastructure"
+],
+      "bridge": "GIS"
+    },
+
+
+    {
       "id": "cnot-quantum-reactor",
       "title": "C-Not Quantum Reactor",
 

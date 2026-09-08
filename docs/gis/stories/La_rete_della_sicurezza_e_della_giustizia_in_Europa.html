@@ -1,0 +1,477 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dorsali Europee · Un uomo scompare in Europa</title><style>
+    :root {
+      --bg: #02050d;
+      --bg-deep: #01030a;
+      --card: rgba(6, 12, 26, 0.92);
+      --ink: #eef8ff;
+      --muted: #9eb4c8;
+      --line: rgba(88, 181, 255, 0.26);
+      --line-strong: rgba(111, 210, 255, 0.58);
+      --accent: #62d8ff;
+      --accent-2: #8b7dff;
+      --data: #78ffb3;
+      --accent-soft: rgba(98, 216, 255, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 50% -8%, rgba(90, 175, 255, 0.22), transparent 30%),
+        radial-gradient(circle at 85% 12%, rgba(128, 92, 255, 0.12), transparent 24%),
+        radial-gradient(circle at 15% 22%, rgba(70, 215, 255, 0.08), transparent 28%),
+        linear-gradient(180deg, #030816 0%, #02050d 38%, #01030a 100%);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.82) 0 1px, transparent 1.2px),
+        radial-gradient(circle, rgba(124,205,255,.52) 0 1px, transparent 1.2px),
+        radial-gradient(circle, rgba(255,255,255,.36) 0 1px, transparent 1.2px);
+      background-size: 173px 173px, 251px 251px, 337px 337px;
+      background-position: 21px 37px, 111px 89px, 53px 191px;
+      opacity: .30;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      left: -10vw;
+      right: -10vw;
+      top: -34vw;
+      height: 46vw;
+      min-height: 330px;
+      border-radius: 0 0 50% 50%;
+      pointer-events: none;
+      z-index: -1;
+      border-bottom: 1px solid rgba(104, 207, 255, .26);
+      box-shadow:
+        0 14px 70px rgba(71, 168, 255, .18),
+        0 28px 140px rgba(56, 104, 255, .10);
+      background:
+        radial-gradient(ellipse at center bottom,
+          rgba(31, 104, 176, .18) 0%,
+          rgba(12, 31, 66, .10) 42%,
+          transparent 67%);
+    }
+
+    a { color: #9fe3ff; }
+
+    code {
+      color: #9fe3ff;
+      background: rgba(98, 216, 255, 0.08);
+      border: 1px solid rgba(98, 216, 255, 0.18);
+      border-radius: 5px;
+      padding: 0 0.25em;
+    }
+
+    .story {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .kicker {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.04;
+      text-shadow: 0 0 12px rgba(98, 216, 255, 0.18);
+    }
+
+    h2 { margin-top: 0; }
+    h3 { margin-bottom: 0.45rem; color: #deeffb; }
+
+    .lead {
+      margin: 0 0 18px;
+      max-width: 78ch;
+      color: #deeffb;
+      font-size: 1.04rem;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 16px 0 20px;
+      color: #d4eaf7;
+      font-size: 0.94rem;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      margin: 0 -12px 18px;
+      background: rgba(3, 8, 20, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 22px rgba(98, 216, 255, 0.06);
+    }
+
+    .step-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(2, 7, 18, 0.68);
+      color: var(--ink);
+      padding: 8px 12px;
+      font: inherit;
+      font-size: 0.91rem;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, color 120ms ease;
+    }
+
+    .step-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--line-strong);
+      background: rgba(98, 216, 255, 0.10);
+    }
+
+    .step-btn.is-active {
+      background: var(--accent);
+      color: #020814;
+      border-color: var(--accent);
+      font-weight: 750;
+      box-shadow: 0 0 16px rgba(98, 216, 255, 0.22);
+    }
+
+    .current {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: -4px 0 16px;
+    }
+
+    .current-command {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .section {
+      background: linear-gradient(180deg, rgba(8, 17, 36, 0.94), rgba(3, 8, 19, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 0 16px;
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.50), inset 0 0 28px rgba(98, 216, 255, 0.025);
+    }
+
+    .storybox {
+      border-color: var(--line-strong);
+      background:
+        linear-gradient(rgba(98, 216, 255, 0.035) 50%, rgba(0, 0, 0, 0.035) 50%),
+        linear-gradient(180deg, rgba(9, 22, 45, 0.97), rgba(3, 8, 20, 0.98));
+      background-size: 100% 4px, auto;
+    }
+
+    .story-kicker {
+      margin: 0 0 6px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .story-body {
+      color: #e8f5ff;
+      max-width: 82ch;
+    }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border: 0;
+      border-left: 3px solid rgba(120, 255, 179, 0.72);
+      background: rgba(120, 255, 179, 0.055);
+      border-radius: 3px;
+      padding: 4px 8px 4px 9px;
+      color: #a9c4d3;
+      font-size: 0.74rem;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      cursor: default;
+      box-shadow: none;
+    }
+
+    .chain {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 14px 0 4px;
+    }
+
+    .chain div {
+      text-align: center;
+      border: 1px solid rgba(98, 216, 255, 0.18);
+      border-radius: 9px;
+      padding: 9px 6px;
+      font-size: 0.76rem;
+      color: #d4eaf7;
+      background: rgba(98, 216, 255, 0.045);
+    }
+
+    .chain div::after {
+      content: "→";
+      float: right;
+      color: var(--muted);
+      margin-right: -11px;
+    }
+
+    .chain div:last-child::after { content: ""; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: rgba(98, 216, 255, 0.04);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.15rem;
+      margin-bottom: 3px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .crosslinks {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .crosslinks div {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: rgba(98, 216, 255, 0.035);
+    }
+
+    .future {
+      opacity: 0.78;
+      border-style: dashed;
+    }
+
+    .sources li { margin-bottom: 7px; }
+
+    .foot {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+
+
+    .story {
+      position: relative;
+    }
+
+    .story::before,
+    .story::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      z-index: -1;
+      border: 1px solid rgba(98, 216, 255, 0.10);
+      border-radius: 50%;
+    }
+
+    .story::before {
+      width: 760px;
+      height: 180px;
+      top: 90px;
+      right: -340px;
+      transform: rotate(-12deg);
+    }
+
+    .story::after {
+      width: 520px;
+      height: 120px;
+      top: 160px;
+      right: -230px;
+      border-color: rgba(139, 125, 255, 0.09);
+      transform: rotate(17deg);
+    }
+
+    .hero-space {
+      position: relative;
+      overflow: hidden;
+      margin: 0 0 18px;
+      padding: 23px 22px 21px;
+      border: 1px solid rgba(98, 216, 255, 0.22);
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(98,216,255,.12), transparent 28%),
+        radial-gradient(circle at 15% 90%, rgba(139,125,255,.11), transparent 30%),
+        linear-gradient(135deg, rgba(7,17,39,.90), rgba(3,8,19,.94));
+      box-shadow: 0 18px 50px rgba(0,0,0,.48);
+    }
+
+    .hero-space::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      right: -88px;
+      bottom: -140px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 30%,
+          rgba(122, 212, 255, .34),
+          rgba(27, 88, 154, .28) 32%,
+          rgba(8, 30, 65, .20) 56%,
+          transparent 68%);
+      box-shadow:
+        0 -10px 30px rgba(102, 204, 255, .16),
+        inset 0 0 40px rgba(110, 195, 255, .10);
+    }
+
+    .hero-space .lead {
+      margin-bottom: 0;
+      max-width: 68ch;
+    }
+
+    .human-distance {
+      margin: 14px 0 0;
+      max-width: 70ch;
+      color: #b9cee0;
+      font-size: .95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .human-distance strong {
+      color: var(--data);
+      font-weight: 700;
+    }
+
+    .story-kicker,
+    .metric strong {
+      color: var(--accent);
+    }
+
+    .note {
+      border-left-color: var(--data);
+      background: linear-gradient(90deg, rgba(120,255,179,.07), rgba(98,216,255,.05));
+    }
+
+    .step-btn.is-active {
+      background: linear-gradient(90deg, var(--accent), #8ee7ff);
+    }
+
+    .section {
+      backdrop-filter: blur(3px);
+    }
+
+    .section h2::before {
+      content: "✦";
+      color: rgba(98, 216, 255, .60);
+      font-size: .72em;
+      margin-right: .5em;
+      vertical-align: .08em;
+    }
+
+
+    .problem {
+      margin: 10px 0 15px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--data);
+      background: linear-gradient(90deg, rgba(120,255,179,.065), rgba(98,216,255,.025));
+      border-radius: 9px;
+      color: #e6f5fb;
+    }
+
+    .problem strong {
+      color: var(--data);
+    }
+
+    .plain-language {
+      color: #c9dcea;
+    }
+
+    .inline-map-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 2px;
+      padding-top: 11px;
+      border-top: 1px solid rgba(98, 216, 255, 0.13);
+    }
+
+    .inline-map-actions::before {
+      content: "Guarda sulla mappa";
+      width: 100%;
+      color: var(--muted);
+      font-size: 0.74rem;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .inline-map-btn {
+      font-size: 0.84rem;
+      padding: 7px 11px;
+      background: rgba(98, 216, 255, 0.075);
+      border-color: rgba(98, 216, 255, 0.42);
+    }
+
+    .inline-map-btn::before {
+      content: "→";
+      margin-right: 0.42em;
+      font-weight: 800;
+    }
+
+    @media (max-width: 760px) {
+      .chain,
+      .metrics,
+      .crosslinks {
+        grid-template-columns: 1fr;
+      }
+      .chain div::after { content: ""; }
+    }
+  </style></head><body><main class="story" data-story-id="europa-latitante-2026"><section class="hero-space"><p class="kicker">Dorsali Europee · Governance e sicurezza · realtà 2026</p><h1>Un uomo scompare in Europa</h1><p class="lead">Un ricercato lascia l’Italia e attraversa più paesi europei. Chi lo cerca? Chi coordina i magistrati? Quali sistemi informativi rendono visibile il suo passaggio?</p><p class="human-distance"><strong>Scenario inventato, rete reale.</strong> Il caso serve a leggere Europol, Eurojust, eu-LISA, Frontex, ENISA e la loro infrastruttura europea.</p></section><div class="note">Il latitante e gli spostamenti sono fittizi. Competenze, sistemi e infrastrutture sono riferiti al quadro europeo documentato nel 2026. Il GIS non rappresenta una catena di comando.</div><div class="chain"><div>Ricerca nazionale</div><div>Cooperazione UE</div><div>Sistemi informativi</div><div>Frontiera esterna</div></div><nav class="controls"><button class="step-btn" onclick="prepareGov(this)">Prepara mappa</button><button class="step-btn" onclick="showOrg(this,'europol')">1 · Europol</button><button class="step-btn" onclick="showOrg(this,'eurojust')">2 · Eurojust</button><button class="step-btn" onclick="showOrg(this,'eulisa')">3 · eu-LISA / SIS</button><button class="step-btn" onclick="showOrg(this,'frontex')">4 · Frontex</button><button class="step-btn" onclick="showOrg(this,'enisa')">5 · ENISA</button><button class="step-btn" onclick="showNonActors(this)">6 · Chi non interviene?</button><button class="step-btn" onclick="showAllGov(this)">7 · Intera rete</button><button class="step-btn" onclick="restoreMap(this)">Ripristina</button></nav><p class="current">Comando selezionato: <span class="current-command">nessuno</span></p><section class="section"><h2>1. Europol: collegare informazioni che stanno in paesi diversi</h2><div class="problem"><strong>Il problema:</strong> l’indagine non finisce al confine.</div><p class="plain-language">Europol sostiene le autorità nazionali con cooperazione, scambio informativo e analisi; non è una polizia federale europea.</p><p>Per i latitanti è rilevante anche ENFAST, rete di unità specializzate sostenuta da Europol. Nel caso simulato Europol aiuta a collegare informazioni distribuite fra Stati.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'europol')">Guarda sulla mappa</button></div></section><section class="section"><h2>2. Eurojust: quando il problema diventa giudiziario</h2><div class="problem"><strong>Il problema:</strong> localizzare una persona non basta: servono atti giudiziari coordinati fra Stati.</div><p class="plain-language">Eurojust sostiene la cooperazione giudiziaria transfrontaliera.</p><p>Se l’autorità competente emette un mandato d’arresto europeo e occorrono misure coordinate, Eurojust può facilitare il lavoro delle autorità giudiziarie coinvolte.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'eurojust')">Guarda sulla mappa</button></div></section><section class="section"><h2>3. eu-LISA e SIS: l’infrastruttura invisibile</h2><div class="problem"><strong>Il problema:</strong> come può un’autorità sapere che una persona è ricercata?</div><p class="plain-language">SIS consente alle autorità abilitate di consultare segnalazioni su persone e oggetti.</p><p>eu-LISA gestisce operativamente SIS e altri grandi sistemi europei. Gestisce l’infrastruttura: non conduce l’indagine e non decide il contenuto delle segnalazioni nazionali.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'eulisa')">Guarda sulla mappa</button></div></section><section class="section"><h2>4. Frontex: la frontiera esterna</h2><div class="problem"><strong>Il problema:</strong> il ricercato tenta di lasciare Schengen.</div><p class="plain-language">Frontex sostiene la gestione integrata delle frontiere esterne; non sostituisce automaticamente le autorità nazionali.</p><p>Qui controllo fisico e infrastruttura informativa si incontrano: una segnalazione può tradursi in un’azione concreta dell’autorità competente.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'frontex')">Guarda sulla mappa</button></div></section><section class="section"><h2>5. ENISA: non serve per trovare il latitante</h2><div class="problem"><strong>Il problema:</strong> ENISA è sulla stessa dorsale: interviene automaticamente? No.</div><p class="plain-language">ENISA è l’agenzia UE per la cibersicurezza, non un organismo di ricerca dei latitanti.</p><p>Diventa pertinente se il caso comprende un grave incidente cyber transfrontaliero; nel 2026 supporta la preparazione e risposta europea alle crisi cyber.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showOrg(this,'enisa')">Guarda sulla mappa</button></div></section><section class="section"><h2>6. BCE e Commissione: essere sulla mappa non significa intervenire</h2><div class="problem"><strong>Il problema:</strong> una mappa densa può suggerire competenze che non esistono.</div><p class="plain-language">Nel caso base BCE e Commissione non cercano il ricercato e non dirigono l’operazione.</p><p>La lezione GIS è importante: una relazione geografica o digitale non equivale a una competenza operativa nel singolo caso.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showNonActors(this)">Guarda sulla mappa</button></div></section><section class="section"><h2>7. Una rete, non una super-agenzia</h2><div class="problem"><strong>Il problema:</strong> chi ha trovato il latitante?</div><p class="plain-language">La domanda utile è come hanno cooperato autorità nazionali, agenzie e infrastrutture.</p><p>Europol collega informazioni; Eurojust sostiene la cooperazione giudiziaria; eu-LISA mantiene sistemi informativi; Frontex opera nella gestione delle frontiere; ENISA appartiene alla dimensione cyber.</p><div class="inline-map-actions"><button class="step-btn inline-map-btn" onclick="showAllGov(this)">Guarda sulla mappa</button></div></section><section class="section"><h2>Fonti principali</h2><ul class="sources"><li><a href="https://www.europol.europa.eu/partners-collaboration/networks/enfast" target="_blank">Europol · ENFAST</a></li><li><a href="https://www.eurojust.europa.eu/" target="_blank">Eurojust</a></li><li><a href="https://www.eulisa.europa.eu/about-us/who-we-are" target="_blank">eu-LISA</a></li><li><a href="https://www.frontex.europa.eu/" target="_blank">Frontex</a></li><li><a href="https://www.enisa.europa.eu/topics/eu-incident-response-and-cyber-crisis-management" target="_blank">ENISA</a></li></ul></section><p class="foot">GIS API: <code>GIS.showLayer()</code>, <code>GIS.hideLayer()</code>, <code>GIS.hideAllLayersExcept()</code>, <code>GIS.goto()</code>.</p></main><script>(function(){"use strict";var BASE=["ne_10m_admin_0_countries","cnoteurope"];var G={europol:["EUROPOL_sites","EUROPOL_relations","EUROPOL_digital_infrastructure"],eurojust:["EUROJUST_sites","EUROJUST_relations","EUROJUST_digital_infrastructure"],eulisa:["eu-LISA_sites","eu-LISA_relations","eu-LISA_digital_infrastructure"],frontex:["FRONTEX_sites","FRONTEX_relations","FRONTEX_digital_infrastructure"],enisa:["ENISA_sites","ENISA_relations","ENISA_digital_infrastructure"],bce:["BCE_sites","BCE_relations","BCE_digital_infrastructure"],commission:["Commissione_Europea_sites","Commissione_Europea_relations","Commissione_Europea_digital_infrastructure"]};function gis(){return window.GIS||(window.parent&&window.parent.GIS)||null}function active(b){document.querySelectorAll('.step-btn.is-active').forEach(e=>e.classList.remove('is-active'));if(b)b.classList.add('is-active');var x=document.querySelector('.current-command');if(x&&b)x.textContent=b.textContent.trim()}function go(g,a,o,z){if(g.goto)g.goto(a,o,z);else if(g.gotoGIS)g.gotoGIS(a,o,z);else if(window.parent&&window.parent.gotoGIS)window.parent.gotoGIS(a,o,z)}function names(){return Object.values(G).flat()}function clean(g){if(g.hideAllLayersExcept)g.hideAllLayersExcept(BASE);else if(g.hideLayer)names().forEach(n=>g.hideLayer(n))}function show(g,arr){if(g.showLayer)arr.forEach(n=>g.showLayer(n))}window.prepareGov=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);go(g,51,10,4)};window.showOrg=function(b,k){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,G[k]);go(g,k==='europol'||k==='eurojust'?52.08:k==='frontex'?52.23:k==='eulisa'?56:50,k==='europol'||k==='eurojust'?4.31:k==='frontex'?21.01:k==='eulisa'?15:12,4)};window.showNonActors=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,G.bce.concat(G.commission));go(g,50.5,7,4)};window.showAllGov=function(b){var g=gis();active(b);if(!g)return alert('GIS non disponibile');clean(g);show(g,names());go(g,51,10,4)};window.restoreMap=window.prepareGov;})();</script></body></html>
