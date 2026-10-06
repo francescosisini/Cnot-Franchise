@@ -43,9 +43,9 @@
         "url": "https://www.amazon.it/Cnot-1-7-Francesco-Sisini-ebook/dp/B0HHMTT9VD"
       },
       {
-        "type": "epub",
-        "label": "Libro/EPUB",
-        "url": ""
+        "type": "Universp",
+        "label": "Universp narrativo",
+        "url": "cnot17"
       }
     ]
   }
