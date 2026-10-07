@@ -11,6 +11,11 @@
         "type": "GitHub",
         "label": "GitHub",
         "url": "https://github.com/francescosisini/Cnot-Franchise/tree/main/books/cnot"
+      },
+      {
+        "type": "Universo",
+        "label": "Universo narrativo",
+        "url": "cnot"
       }
     ]
   },
@@ -43,8 +48,8 @@
         "url": "https://www.amazon.it/Cnot-1-7-Francesco-Sisini-ebook/dp/B0HHMTT9VD"
       },
       {
-        "type": "Universp",
-        "label": "Universp narrativo",
+        "type": "Universo",
+        "label": "Universo narrativo",
         "url": "cnot17"
       }
     ]
