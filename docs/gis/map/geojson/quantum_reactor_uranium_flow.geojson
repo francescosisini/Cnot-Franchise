@@ -1,0 +1,246 @@
+{
+  "type": "FeatureCollection",
+  "name": "quantum_reactor_uranium_flow",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "inkai",
+      "properties": {
+        "id": "inkai",
+        "name": "Inkai · Kazakhstan",
+        "kind": "site",
+        "stage": 1,
+        "role": "industrial",
+        "description": "Estrazione in situ e concentrazione dell’uranio.",
+        "label": "Inkai · Kazakhstan\nEstrazione in situ e concentrazione dell’uranio.",
+        "source_url": "https://www.cameco.com/businesses/uranium-operations/kazakhstan/inkai",
+        "coordinate_precision": "approximate_site",
+        "coordinate_note": "Coordinate GIS del progetto; Inkai usa il punto del layer estrattivo. Non usare per navigazione locale.",
+        "relation_type": "not_applicable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.535106,
+          45.259072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tricastin",
+      "properties": {
+        "id": "tricastin",
+        "name": "Tricastin · Francia",
+        "kind": "site",
+        "stage": 2,
+        "role": "industrial",
+        "description": "Conversione UF₄ → UF₆ presso Philippe Coste. Malvési è il passaggio intermedio che prepara UF₄ dai concentrati minerari.",
+        "label": "Tricastin · Francia\nConversione UF₄ → UF₆ presso Philippe Coste. Malvési è il passaggio intermedio che prepara UF₄ dai concentrati minerari.",
+        "source_url": "https://www.orano.group/en/nuclear-expertise/orano-s-sites-around-the-world/uranium-transformation/tricastin",
+        "coordinate_precision": "approximate_site",
+        "coordinate_note": "Coordinate GIS del progetto; Inkai usa il punto del layer estrattivo. Non usare per navigazione locale.",
+        "relation_type": "not_applicable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.72249,
+          44.3357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "almelo",
+      "properties": {
+        "id": "almelo",
+        "name": "Almelo · Paesi Bassi",
+        "kind": "site",
+        "stage": 3,
+        "role": "industrial",
+        "description": "Arricchimento dell’UF₆: le centrifughe aumentano la quota di U-235. Si separa anche UF₆ impoverito.",
+        "label": "Almelo · Paesi Bassi\nArricchimento dell’UF₆: le centrifughe aumentano la quota di U-235. Si separa anche UF₆ impoverito.",
+        "source_url": "https://www.urenco.com/about/nuclear-fuel-cycle",
+        "coordinate_precision": "approximate_site",
+        "coordinate_note": "Coordinate GIS del progetto; Inkai usa il punto del layer estrattivo. Non usare per navigazione locale.",
+        "relation_type": "not_applicable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7006,
+          52.321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vasteras",
+      "properties": {
+        "id": "vasteras",
+        "name": "Västerås · Svezia",
+        "kind": "site",
+        "stage": 4,
+        "role": "industrial",
+        "description": "UF₆ arricchito → UO₂ → pastiglie sinterizzate → barre → assemblaggi di combustibile.",
+        "label": "Västerås · Svezia\nUF₆ arricchito → UO₂ → pastiglie sinterizzate → barre → assemblaggi di combustibile.",
+        "source_url": "https://westinghousenuclear.com/sweden",
+        "coordinate_precision": "approximate_site",
+        "coordinate_note": "Coordinate GIS del progetto; Inkai usa il punto del layer estrattivo. Non usare per navigazione locale.",
+        "relation_type": "not_applicable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6237,
+          59.6503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "psi",
+      "properties": {
+        "id": "psi",
+        "name": "PSI · Villigen",
+        "kind": "site",
+        "stage": 0,
+        "role": "research",
+        "description": "Ricerca su materiali e combustibili nucleari. Non è la destinazione industriale indicata dal flusso.",
+        "label": "PSI · Villigen\nRicerca su materiali e combustibili nucleari. Non è la destinazione industriale indicata dal flusso.",
+        "source_url": "https://www.psi.ch/en/cnm",
+        "coordinate_precision": "approximate_site",
+        "coordinate_note": "Coordinate GIS del progetto; Inkai usa il punto del layer estrattivo. Non usare per navigazione locale.",
+        "relation_type": "not_applicable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.22327,
+          47.53916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cern",
+      "properties": {
+        "id": "cern",
+        "name": "CERN · Meyrin",
+        "kind": "site",
+        "stage": 0,
+        "role": "research",
+        "description": "Fisica delle particelle. Sito del racconto fuori dalla filiera industriale del combustibile.",
+        "label": "CERN · Meyrin\nFisica delle particelle. Sito del racconto fuori dalla filiera industriale del combustibile.",
+        "source_url": "https://home.cern/about",
+        "coordinate_precision": "approximate_site",
+        "coordinate_note": "Coordinate GIS del progetto; Inkai usa il punto del layer estrattivo. Non usare per navigazione locale.",
+        "relation_type": "not_applicable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055692,
+          46.233058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "inkai_tricastin",
+      "properties": {
+        "id": "inkai_tricastin",
+        "name": "Concentrati → conversione",
+        "label": "Concentrati → conversione",
+        "kind": "flow",
+        "stage": 2,
+        "role": "industrial",
+        "from_id": "inkai",
+        "to_id": "tricastin",
+        "description": "Sequenza funzionale con passaggio intermedio a Malvési: concentrati → UF₄; Philippe Coste: UF₄ → UF₆.",
+        "relation_type": "process_sequence",
+        "transport_verified": false,
+        "note": "Collegamento schematico fra lavorazioni reali; non rappresenta un contratto, una spedizione verificata o un itinerario logistico.",
+        "source_url": "https://www.urenco.com/about/nuclear-fuel-cycle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            67.535106,
+            45.259072
+          ],
+          [
+            4.72249,
+            44.3357
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tricastin_almelo",
+      "properties": {
+        "id": "tricastin_almelo",
+        "name": "UF₆ naturale",
+        "label": "UF₆ naturale",
+        "kind": "flow",
+        "stage": 3,
+        "role": "industrial",
+        "from_id": "tricastin",
+        "to_id": "almelo",
+        "description": "L’UF₆ naturale alimenta la fase di arricchimento isotopico.",
+        "relation_type": "process_sequence",
+        "transport_verified": false,
+        "note": "Collegamento schematico fra lavorazioni reali; non rappresenta un contratto, una spedizione verificata o un itinerario logistico.",
+        "source_url": "https://www.urenco.com/about/nuclear-fuel-cycle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.72249,
+            44.3357
+          ],
+          [
+            6.7006,
+            52.321
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "almelo_vasteras",
+      "properties": {
+        "id": "almelo_vasteras",
+        "name": "UF₆ arricchito",
+        "label": "UF₆ arricchito",
+        "kind": "flow",
+        "stage": 4,
+        "role": "industrial",
+        "from_id": "almelo",
+        "to_id": "vasteras",
+        "description": "L’UF₆ arricchito alimenta la fabbricazione del combustibile.",
+        "relation_type": "process_sequence",
+        "transport_verified": false,
+        "note": "Collegamento schematico fra lavorazioni reali; non rappresenta un contratto, una spedizione verificata o un itinerario logistico.",
+        "source_url": "https://www.urenco.com/about/nuclear-fuel-cycle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.7006,
+            52.321
+          ],
+          [
+            16.6237,
+            59.6503
+          ]
+        ]
+      }
+    }
+  ]
+}
